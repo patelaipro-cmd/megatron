@@ -1,2 +1,2 @@
 # megatron
-auto construction mzchine d'analyse de football
+auto construction machine d'analyse de football
