@@ -384,7 +384,7 @@ prefecthq/prefect,Pipelines Python simples et résilients (idéal collecte quoti
 preset-io/agor,Espace multijoueur humains + agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
 primaryobjects/ai-programmer,Algorithme génétique qui écrit des programmes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
 primeintellect-ai/prime-agent,Agent de code auto-améliorant pour tâches longues,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
-probberechts/soccerdata,"Collecte de données (FBref, Understat, ClubElo, etc.)","PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15",Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources,Python 3.13 OK selon métadonnées ; non installé,TESTER,source de xG historiques nécessaire pour alimenter l'agent Stats et le backtest,football,True
+probberechts/soccerdata,"Collecte de données (FBref, Understat, ClubElo, etc.)","PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15 ; sites sources (FBref, Understat, football-data.co.uk) bloqués par le proxy de l'environnement cloud",Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources,Python 3.13 OK selon métadonnées ; non installé,TESTER,"source de xG utile, mais inutilisable depuis l'environnement cloud ; à tester depuis un poste local",football,True
 pseudo-r/public-sofascore-api,Doc non officielle des endpoints Sofascore,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
 pseudo-r/sportly,SDK multi-sources (ESPN…),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
 pskoett/self-improving-agent,"Capture des leçons, erreurs et demandes",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
@@ -496,7 +496,7 @@ wlrwx/football-engine,Dixon-Coles + Monte Carlo automatisé par GitHub Actions,a
 woongbinchoi/english-premier-league-prediction,ML Premier League,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
 wshobson/agents,Marketplace de plugins/agents multi-outils,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
 wzk1015/worldcuparena,Benchmark des LLM sur pronostics réels,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
-xgabora/club-football-match-data,"Résultats, stats, cotes, 27 pays",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+xgabora/club-football-match-data,"Source historique : résultats et cotes Bet365 de 38 divisions, 2000 à 09/2026","27/10/2026 : README et LICENSE lus via raw.githubusercontent.com, data/Matches.csv téléchargé (SHA-256 consigné dans data/SOURCE.md), extrait Top 5 utilisé dans EXP-001",MIT (fichier LICENSE) ; données d'origine Football-Data.co.uk,"CSV, aucune dépendance",INTÉGRER,seule source de résultats et de cotes accessible depuis l'environnement ; a permis le premier backtest réel,football,True
 xviniette/flappylearning,Démo pédagogique : Flappy Bird par neuroévolution,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
 xzhangfox/football-prediction-by-bayesian-method,Modèle bayésien (R),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
 yamadashy/repomix,Empaquette un dépôt (avec option de compression),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False

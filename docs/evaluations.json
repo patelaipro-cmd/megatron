@@ -17,11 +17,11 @@
   },
   "probberechts/soccerdata": {
     "role": "Collecte de données (FBref, Understat, ClubElo, etc.)",
-    "verifications": "PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15",
+    "verifications": "PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15 ; sites sources (FBref, Understat, football-data.co.uk) bloqués par le proxy de l'environnement cloud",
     "licence": "Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources",
     "compatibilite": "Python 3.13 OK selon métadonnées ; non installé",
     "classement": "TESTER",
-    "motif": "source de xG historiques nécessaire pour alimenter l'agent Stats et le backtest"
+    "motif": "source de xG utile, mais inutilisable depuis l'environnement cloud ; à tester depuis un poste local"
   },
   "ml-kuleuven/socceraction": {
     "role": "Valorisation des actions (VAEP, xT) sur données événementielles",
@@ -46,5 +46,13 @@
     "compatibilite": "lourd ; le registre JSONL de MEGATRON couvre le besoin actuel",
     "classement": "RÉFÉRENCE",
     "motif": "à reconsidérer si le nombre d'expériences dépasse ce qu'un journal JSONL gère bien"
+  },
+  "xgabora/club-football-match-data": {
+    "role": "Source historique : résultats et cotes Bet365 de 38 divisions, 2000 à 09/2026",
+    "verifications": "27/10/2026 : README et LICENSE lus via raw.githubusercontent.com, data/Matches.csv téléchargé (SHA-256 consigné dans data/SOURCE.md), extrait Top 5 utilisé dans EXP-001",
+    "licence": "MIT (fichier LICENSE) ; données d'origine Football-Data.co.uk",
+    "compatibilite": "CSV, aucune dépendance",
+    "classement": "INTÉGRER",
+    "motif": "seule source de résultats et de cotes accessible depuis l'environnement ; a permis le premier backtest réel"
   }
 }

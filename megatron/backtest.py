@@ -1,0 +1,73 @@
+"""Backtest chronologique : chaque match est prédit avec le seul passé."""
+
+from __future__ import annotations
+
+import csv
+import math
+import random
+from itertools import groupby
+from pathlib import Path
+
+from . import models
+from .data import Match, season_of
+from .ledger import OUTCOMES, score
+
+BASELINES = ("frequences", "bookmaker")
+Config = tuple[float, float, bool]  # demi-vie, rétrécissement, Dixon-Coles
+
+
+def predict_seasons(matches: list[Match], division: str, seasons: set[str],
+                    configs: dict[str, Config]) -> list[dict]:
+    league = [m for m in matches if m.division == division]
+    rows = []
+    for day, group in groupby((m for m in league if season_of(m.day) in seasons), key=lambda m: m.day):
+        history = [m for m in league if m.day < day]
+        fits = {name: models.fit_maher(history, day, half_life=hl, shrink=k, dixon_coles=dc)
+                for name, (hl, k, dc) in configs.items()}
+        freq = models.frequencies(history, day)
+        for m in group:
+            row = {"match_id": m.match_id, "saison": season_of(m.day), "issue": m.result,
+                   "frequences": freq, "bookmaker": models.bookmaker(m)}
+            row.update({name: models.predict_1x2(fit, m) for name, fit in fits.items()})
+            rows.append(row)
+    return rows
+
+
+def model_names(rows: list[dict]) -> list[str]:
+    return [k for k in rows[0] if k not in ("match_id", "saison", "issue")] if rows else []
+
+
+def summarize(rows: list[dict]) -> dict[str, dict]:
+    """Scores par modèle, sur les matchs où tous les modèles ont une prévision."""
+    names = model_names(rows)
+    common = [r for r in rows if all(r[k] for k in names)]
+    return {k: score([(r[k], r["issue"]) for r in common]) for k in names}
+
+
+def grid_search(matches: list[Match], division: str, seasons: set[str], half_lives: list[float],
+                shrinks: list[float], dixon_coles: list[bool]) -> list[dict]:
+    configs = {f"{hl}|{k}|{dc}": (hl, k, dc) for hl in half_lives for k in shrinks for dc in dixon_coles}
+    s = summarize(predict_seasons(matches, division, seasons, configs))
+    out = [{"half_life": hl, "shrink": k, "dixon_coles": dc, "log_loss": s[name]["log_loss"],
+            "rps": s[name]["rps"], "n": s[name]["n"]} for name, (hl, k, dc) in configs.items()]
+    return sorted(out, key=lambda r: r["log_loss"])
+
+
+def paired_bootstrap(rows: list[dict], a: str, b: str, draws: int = 2000, seed: int = 1) -> dict:
+    """Écart moyen de log-loss a − b et intervalle à 95 % (rééchantillonnage des matchs)."""
+    diffs = [math.log(max(r[b][r["issue"]], 1e-15)) - math.log(max(r[a][r["issue"]], 1e-15))
+             for r in rows if r[a] and r[b]]
+    rng = random.Random(seed)
+    means = sorted(sum(rng.choice(diffs) for _ in diffs) / len(diffs) for _ in range(draws))
+    return {"n": len(diffs), "ecart": round(sum(diffs) / len(diffs), 5),
+            "ic95": [round(means[int(0.025 * draws)], 5), round(means[int(0.975 * draws) - 1], 5)]}
+
+
+def write_predictions(rows: list[dict], path: Path) -> None:
+    names = model_names(rows)
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["match_id", "saison", "issue"] + [f"{m}_{o}" for m in names for o in OUTCOMES])
+        for r in rows:
+            w.writerow([r["match_id"], r["saison"], r["issue"]]
+                       + [f"{r[m][o]:.4f}" if r[m] else "" for m in names for o in OUTCOMES])

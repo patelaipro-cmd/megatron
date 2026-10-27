@@ -6,7 +6,7 @@ les vérifications se consignent dans `docs/evaluations.json`.
 - Entrées dans les inventaires : **542** (depots-github-autoevolutif.md: 102, depots-github-football.md: 140, depots-github-multi-llm.md: 89, depots-github-orchestration.md: 108, depots-github-reduction-tokens.md: 103)
 - Dépôts uniques : **516**
 - Dépôts présents dans plusieurs inventaires : **24**
-- Dépôts évalués : **6** ; les autres restent « À VÉRIFIER ».
+- Dépôts évalués : **7** ; les autres restent « À VÉRIFIER ».
 
 ## Dépôts évalués
 
@@ -17,7 +17,8 @@ les vérifications se consignent dans `docs/evaluations.json`.
 | ml-kuleuven/socceraction | Valorisation des actions (VAEP, xT) sur données événementielles | PyPI 27/10/2026 : v1.5.3, Python >=3.9,<3.13 | MIT (déclarée sur PyPI) | incompatible avec Python 3.13 de cet environnement | **RÉFÉRENCE** : utile pour l'analyse tactique plus tard, mais contrainte de version Python |
 | mlflow/mlflow | Suivi d'expériences | PyPI 27/10/2026 : v3.17.2, 60 dépendances déclarées | Apache-2.0 (classifieur PyPI) | lourd ; le registre JSONL de MEGATRON couvre le besoin actuel | **RÉFÉRENCE** : à reconsidérer si le nombre d'expériences dépasse ce qu'un journal JSONL gère bien |
 | optuna/optuna | Optimisation d'hyperparamètres pour les expériences | PyPI 27/10/2026 : v5.0.0, Python >=3.9 | MIT (classifieur PyPI) | Python 3.13 OK selon métadonnées | **RÉFÉRENCE** : prématuré : aucun modèle ni jeu de backtest à optimiser pour l'instant |
-| probberechts/soccerdata | Collecte de données (FBref, Understat, ClubElo, etc.) | PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15 | Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources | Python 3.13 OK selon métadonnées ; non installé | **TESTER** : source de xG historiques nécessaire pour alimenter l'agent Stats et le backtest |
+| probberechts/soccerdata | Collecte de données (FBref, Understat, ClubElo, etc.) | PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15 ; sites sources (FBref, Understat, football-data.co.uk) bloqués par le proxy de l'environnement cloud | Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources | Python 3.13 OK selon métadonnées ; non installé | **TESTER** : source de xG utile, mais inutilisable depuis l'environnement cloud ; à tester depuis un poste local |
+| xgabora/club-football-match-data | Source historique : résultats et cotes Bet365 de 38 divisions, 2000 à 09/2026 | 27/10/2026 : README et LICENSE lus via raw.githubusercontent.com, data/Matches.csv téléchargé (SHA-256 consigné dans data/SOURCE.md), extrait Top 5 utilisé dans EXP-001 | MIT (fichier LICENSE) ; données d'origine Football-Data.co.uk | CSV, aucune dépendance | **INTÉGRER** : seule source de résultats et de cotes accessible depuis l'environnement ; a permis le premier backtest réel |
 
 ## Doublons entre inventaires
 

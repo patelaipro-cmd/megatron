@@ -90,23 +90,39 @@ class Ledger:
         pairs = [(p.value["probs"], results[p.value["match_id"]])
                  for p in self._predictions(model_version=model_version)
                  if p.value["match_id"] in results]
-        n = len(pairs)
-        if n == 0:
-            return {"model_version": model_version, "n": 0, "brier": None, "log_loss": None, "calibration": []}
-        brier = sum(sum((probs[o] - (o == y)) ** 2 for o in OUTCOMES) for probs, y in pairs) / n
-        log_loss = -sum(math.log(max(probs[y], EPS)) for probs, y in pairs) / n
-        # calibration : toutes les probabilités (une par issue) regroupées par tranche
-        buckets = [[0, 0.0, 0] for _ in range(bins)]  # effectif, somme des p, réalisations
-        for probs, y in pairs:
-            for o in OUTCOMES:
-                b = min(int(probs[o] * bins), bins - 1)
-                buckets[b][0] += 1
-                buckets[b][1] += probs[o]
-                buckets[b][2] += o == y
-        calibration = [
-            {"tranche": f"{i / bins:.1f}-{(i + 1) / bins:.1f}", "n": c,
-             "p_moyenne": round(s / c, 4), "frequence_observee": round(k / c, 4)}
-            for i, (c, s, k) in enumerate(buckets) if c
-        ]
-        return {"model_version": model_version, "n": n, "brier": round(brier, 6),
-                "log_loss": round(log_loss, 6), "calibration": calibration}
+        return {"model_version": model_version, **score(pairs, bins)}
+
+
+def rps(probs: dict[str, float], outcome: str) -> float:
+    """Ranked probability score pour l'issue ordonnée H < D < A."""
+    cum_p = cum_o = total = 0.0
+    for o in OUTCOMES[:-1]:
+        cum_p += probs[o]
+        cum_o += o == outcome
+        total += (cum_p - cum_o) ** 2
+    return total / (len(OUTCOMES) - 1)
+
+
+def score(pairs: list[tuple[dict[str, float], str]], bins: int = 5) -> dict:
+    """Brier multiclasse, log-loss, RPS et calibration de couples (probabilités, issue)."""
+    n = len(pairs)
+    if n == 0:
+        return {"n": 0, "brier": None, "log_loss": None, "rps": None, "calibration": []}
+    brier = sum(sum((probs[o] - (o == y)) ** 2 for o in OUTCOMES) for probs, y in pairs) / n
+    log_loss = -sum(math.log(max(probs[y], EPS)) for probs, y in pairs) / n
+    mean_rps = sum(rps(probs, y) for probs, y in pairs) / n
+    # calibration : toutes les probabilités (une par issue) regroupées par tranche
+    buckets = [[0, 0.0, 0] for _ in range(bins)]  # effectif, somme des p, réalisations
+    for probs, y in pairs:
+        for o in OUTCOMES:
+            b = min(int(probs[o] * bins), bins - 1)
+            buckets[b][0] += 1
+            buckets[b][1] += probs[o]
+            buckets[b][2] += o == y
+    calibration = [
+        {"tranche": f"{i / bins:.1f}-{(i + 1) / bins:.1f}", "n": c,
+         "p_moyenne": round(s / c, 4), "frequence_observee": round(k / c, 4)}
+        for i, (c, s, k) in enumerate(buckets) if c
+    ]
+    return {"n": n, "brier": round(brier, 6), "log_loss": round(log_loss, 6),
+            "rps": round(mean_rps, 6), "calibration": calibration}

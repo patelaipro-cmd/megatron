@@ -153,3 +153,106 @@ class InventoryTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ModelTests(unittest.TestCase):
+    @staticmethod
+    def _m(day, home, away, hg, ag):
+        from datetime import date, datetime, timezone
+        from megatron.data import Match
+        d = date.fromisoformat(day)
+        res = "H" if hg > ag else "A" if ag > hg else "D"
+        return Match("X1", d, datetime(d.year, d.month, d.day, 12, tzinfo=timezone.utc),
+                     home, away, hg, ag, res, (2.0, 3.5, 4.0))
+
+    def _league(self):
+        teams = ["Fort", "B", "C", "D"]
+        out, day = [], 1
+        for _ in range(5):
+            for h in teams:
+                for a in teams:
+                    if h != a:
+                        hg, ag = (3, 0) if h == "Fort" else (0, 2) if a == "Fort" else (1, 1)
+                        out.append(self._m(f"2024-01-{day:02d}", h, a, hg, ag) if day <= 28
+                                   else self._m(f"2024-02-{day - 28:02d}", h, a, hg, ag))
+                        day = day % 56 + 1
+        return sorted(out, key=lambda m: m.day)
+
+    def test_history_on_match_day_is_rejected(self):
+        from datetime import date
+        from megatron import models
+        hist = [self._m("2024-03-01", "A", "B", 1, 0)]
+        with self.assertRaises(AssertionError):
+            models.fit_maher(hist, date(2024, 3, 1), half_life=180, shrink=1)
+        with self.assertRaises(AssertionError):
+            models.frequencies(hist, date(2024, 3, 1))
+
+    def test_maher_ranks_dominant_team(self):
+        from datetime import date
+        from megatron import models
+        fit = models.fit_maher(self._league(), date(2024, 6, 1), half_life=365, shrink=1)
+        self.assertGreater(fit.attack["Fort"], 1.5)
+        self.assertLess(fit.defence["Fort"], 0.5)
+        p = models.predict_1x2(fit, self._m("2024-06-01", "Fort", "B", 0, 0))
+        self.assertGreater(p["H"], 0.7)
+        self.assertAlmostEqual(sum(p.values()), 1.0, places=9)
+
+    def test_bookmaker_margin_removed(self):
+        from megatron import models
+        p = models.bookmaker(self._m("2024-06-01", "A", "B", 0, 0))
+        self.assertAlmostEqual(sum(p.values()), 1.0, places=9)
+        self.assertGreater(p["H"], p["A"])
+
+    def test_rps(self):
+        from megatron.ledger import rps
+        self.assertAlmostEqual(rps({"H": 1, "D": 0, "A": 0}, "H"), 0.0)
+        self.assertAlmostEqual(rps({"H": 1, "D": 0, "A": 0}, "A"), 1.0)
+        self.assertAlmostEqual(rps({"H": .5, "D": .3, "A": .2}, "D"), (0.25 + 0.04) / 2)
+
+    def test_season_and_data_file(self):
+        from datetime import date
+        from megatron import data
+        self.assertEqual(data.season_of(date(2024, 8, 10)), "2024/25")
+        self.assertEqual(data.season_of(date(2025, 5, 10)), "2024/25")
+        ms = data.load(divisions={"F1"})
+        self.assertEqual(len([m for m in ms if data.season_of(m.day) == "2022/23"]), 380)
+        self.assertEqual(ms, sorted(ms, key=lambda m: (m.kickoff, m.match_id)))
+
+
+class StatsAgentHistoryTests(unittest.TestCase):
+    def test_poisson_v1_from_history(self):
+        r = StatsAgent().ask({"division": "F1", "home": "Paris SG", "away": "Le Havre", "date": "2026-08-01"})
+        self.assertEqual(r.status, "ok", r.raison)
+        self.assertIn("poisson-v1", r.conclusion)
+        self.assertGreater(r.probs["H"], 0.6)
+
+    def test_invalid_date_is_error_not_invented(self):
+        r = StatsAgent().ask({"division": "F1", "home": "x", "away": "y", "date": "pas-une-date"})
+        self.assertEqual(r.status, "erreur")
+
+
+class DixonColesTests(unittest.TestCase):
+    def test_rho_zero_equals_poisson(self):
+        from megatron.models import dixon_coles_1x2
+        p, q = dixon_coles_1x2(1.4, 1.1, 0.0), poisson_1x2(1.4, 1.1)
+        for o in "HDA":
+            self.assertAlmostEqual(p[o], q[o], places=12)
+
+    def test_negative_rho_raises_draws(self):
+        from megatron.models import dixon_coles_1x2
+        self.assertGreater(dixon_coles_1x2(1.4, 1.1, -0.1)["D"], poisson_1x2(1.4, 1.1)["D"])
+        self.assertAlmostEqual(sum(dixon_coles_1x2(1.4, 1.1, -0.1).values()), 1.0, places=9)
+
+    def test_rho_estimated_negative_when_low_draws_overrepresented(self):
+        from megatron.models import MaherFit, estimate_rho
+        fit = MaherFit(1.2, 1.0, {"A": 1.0, "B": 1.0}, {"A": 1.0, "B": 1.0})
+        rows = [("A", "B", 0, 0, 1.0)] * 30 + [("A", "B", 1, 1, 1.0)] * 30 + [("A", "B", 1, 0, 1.0)] * 10
+        self.assertLess(estimate_rho(fit, rows), 0)
+
+    def test_paired_bootstrap_sign(self):
+        from megatron.backtest import paired_bootstrap
+        good, bad = {"H": .6, "D": .2, "A": .2}, {"H": .2, "D": .2, "A": .6}
+        rows = [{"issue": "H", "a": good, "b": bad}] * 20 + [{"issue": "A", "a": bad, "b": good}] * 5
+        res = paired_bootstrap(rows, "a", "b", draws=200)
+        self.assertLess(res["ecart"], 0)
+        self.assertLess(res["ic95"][1], 0)
