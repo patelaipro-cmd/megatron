@@ -46,3 +46,55 @@ Grille d'hyperparamètres (choix par log-loss sur le développement uniquement) 
 ## Retour arrière
 
 La promotion se limite à la version par défaut du modèle utilisée par l'agent Stats ; revenir en arrière consiste à rétablir `stats-v0` (fonction `poisson_1x2` sur xG fournis), qui reste disponible.
+
+---
+
+## Résultats (exécution du 27/10/2026, ajoutés après le protocole)
+
+Commande : `python -m megatron backtest --division F1 --sortie docs/experiences/EXP-001`. Détails : `EXP-001/resultats.json`, prévisions match par match : `EXP-001/predictions.csv`.
+
+Hyperparamètres choisis sur le développement : demi-vie **90 jours**, rétrécissement **3**. 90 jours est la borne basse de la grille : une demi-vie plus courte pourrait faire mieux, ce sera à tester dans une prochaine expérience, pas en modifiant celle-ci.
+
+Ligue 1, matchs où les trois modèles ont une prévision (plus bas = meilleur) :
+
+| Période | n | Log-loss Poisson | Log-loss fréquences | Log-loss bookmaker | RPS Poisson | RPS fréquences | RPS bookmaker |
+|---|---|---|---|---|---|---|---|
+| Dev 2022/23 | 380 | 0,9795 | 1,0749 | 0,9712 | 0,2009 | 0,2335 | 0,1984 |
+| Validation 2023/24 | 306 | 1,0488 | 1,0891 | 1,0138 | 0,2184 | 0,2328 | 0,2063 |
+| **Test 2024/25 + 2025/26** | 611 | **0,9952** | 1,0605 | 0,9661 | **0,2105** | 0,2330 | 0,2012 |
+
+Sur le test (bootstrap apparié, 2 000 tirages, intervalle à 95 %), l'écart de log-loss de Poisson est de −0,065 [−0,094 ; −0,036] contre les fréquences, et de +0,029 [+0,015 ; +0,044] contre le bookmaker.  Calcul ponctuel (graine 1) à partir de `predictions.csv`, pas encore intégré à la ligne de commande.
+
+Calibration sur le test (toutes issues confondues) :
+
+| Tranche prédite | n | p moyenne | Fréquence observée |
+|---|---|---|---|
+| 0,0-0,2 | 311 | 0,155 | 0,183 |
+| 0,2-0,4 | 991 | 0,275 | 0,266 |
+| 0,4-0,6 | 373 | 0,490 | 0,512 |
+| 0,6-0,8 | 147 | 0,668 | 0,612 |
+| 0,8-1,0 | 11 | 0,848 | 0,818 |
+
+Le modèle est un peu trop sûr de lui sur les gros favoris (0,6-0,8) et sous-estime les outsiders (0,0-0,2).
+
+Réplication sur les mêmes saisons de test, mêmes hyperparamètres (log-loss Poisson / fréquences / bookmaker) :
+
+| Ligue | n | Poisson | Fréquences | Bookmaker |
+|---|---|---|---|---|
+| Premier League | 760 | 1,0109 | 1,0833 | 0,9946 |
+| Bundesliga | 612 | 1,0138 | 1,0838 | 0,9700 |
+| Liga | 760 | 0,9867 | 1,0618 | 0,9584 |
+| Serie A | 760 | 0,9978 | 1,0900 | 0,9670 |
+
+## Décision
+
+- C1 tenu (0,9952 < 1,0605), C2 tenu (0,2105 < 0,2330), C3 tenu (validation 1,0488 < 1,0891).
+- **`poisson-v1` est promu** modèle par défaut de l'agent Stats. `stats-v0` reste disponible en repli (tâche avec `xg_home` et `xg_away`).
+- Le marché reste nettement meilleur. Rien dans cette expérience ne justifie de parier contre les cotes.
+
+## Limites
+
+- Équipes promues traitées comme des équipes moyennes (pas de données de deuxième division dans l'extrait).
+- Ni absences, ni calendrier, ni enjeu, ni xG : seuls les buts passés sont utilisés.
+- Cotes Bet365 à un instant non précisé avant le match (pas forcément la cote de clôture).
+- Heures de coup d'envoi non vérifiées ; le garde-fou anti-fuite travaille à la journée (historique strictement antérieur à la date du match).

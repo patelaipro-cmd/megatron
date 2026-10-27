@@ -18,7 +18,7 @@ Ressources manquantes (signalées, travaux indépendants poursuivis) :
 | Clé Qwen (`DASHSCOPE_API_KEY`) | absente | idem |
 | Clé Claude API (`ANTHROPIC_API_KEY`) | absente (seule une URL de base est définie) | agent Claude API indisponible ; Claude n'intervient ici que comme développeur |
 | github.com / api.github.com | proxy 403 depuis cet environnement | dépôts des inventaires vérifiés via PyPI uniquement |
-| Données de matchs historiques | aucune dans le dépôt | pas encore de backtest possible |
+| Données de matchs historiques | aucune dans le dépôt | pas encore de backtest possible (résolu le 27/10 : `data/`, EXP-001) |
 
 ## 2. Architecture et interfaces
 
@@ -31,7 +31,10 @@ megatron/
   ledger.py      Prévisions avant match + résultats, garde-fous anti-fuite, Brier/log-loss/calibration
   agents.py      Interface Agent commune, agent Stats (Poisson), agents LLM, Méthode de Fusion
   inventory.py   Analyse des inventaires et registre d'évaluation
-  __main__.py    CLI : reprise | inventaire | fusion
+  data.py        Chargement des matchs historiques (data/), saisons
+  models.py      Fréquences, bookmaker, modèle de Maher (poisson-v1), garde-fou anti-fuite
+  backtest.py    Protocole chronologique dev / validation / test
+  __main__.py    CLI : reprise | inventaire | fusion | backtest
 memoire/         État persistant versionné dans git (lisible, diffable)
 docs/            Inventaires, évaluations, registre généré, ce document
 ```
@@ -46,11 +49,14 @@ docs/            Inventaires, évaluations, registre généré, ce document
 
 ## 3. Plan d'intégration priorisé
 
-1. **Données** : tester `probberechts/soccerdata` pour extraire des xG historiques d'une ligue (une saison de développement, une de validation, une de test, dans l'ordre chronologique).
-2. **Référence prédictive** : backtest chronologique de l'agent Stats (Poisson) dans le registre, Brier et log-loss par saison.
-3. **Expérience n°1** : `martineastwood/penaltyblog` (Dixon-Coles) contre Poisson, critères fixés avant l'exécution (licence à confirmer d'abord).
-4. **Accès LLM** : dès qu'une clé Gemini ou DeepSeek est fournie, brancher `LLMAgent` via LiteLLM avec budget d'appels et comptage de tokens mesuré.
-5. **Cache et index** : cache des sorties d'agents invalidé par version de modèle, de règles et de données.
+Mis à jour le 27/10/2026 après EXP-001 (voir `docs/experiences/EXP-001-poisson-ligue1.md`).
+
+1. ~~Données historiques~~ : fait avec xgabora/Club-Football-Match-Data (soccerdata est bloqué par le proxy de l'environnement cloud).
+2. ~~Référence prédictive~~ : `poisson-v1` promu ; il bat les fréquences sur les 5 grands championnats, et reste derrière le bookmaker.
+3. **EXP-002** : demi-vie plus courte (la borne basse de la grille a été retenue) et Dixon-Coles (correction des scores faibles), mêmes découpages et critères.
+4. **EXP-003** : traitement des promus (prior plus faible pour une équipe sans historique).
+5. **Accès LLM** : dès qu'une clé Gemini ou DeepSeek est fournie, brancher `LLMAgent` via LiteLLM avec budget d'appels et comptage de tokens mesuré.
+6. **Cache et index** : cache des sorties d'agents invalidé par version de modèle, de règles et de données.
 
 ## 4. Première implémentation exécutable
 
@@ -58,6 +64,8 @@ docs/            Inventaires, évaluations, registre généré, ce document
 python -m megatron reprise                     # état utile de la dernière session
 python -m megatron inventaire                  # régénère docs/registre-depots.{md,csv}
 python -m megatron fusion '{"match_id": "demo", "xg_home": 1.6, "xg_away": 0.9}'
+python -m megatron fusion '{"match_id": "x", "division": "F1", "home": "Paris SG", "away": "Le Havre", "date": "2026-08-01"}'
+python -m megatron backtest --division F1      # protocole EXP-001
 ```
 
 Exemple réel de `fusion` ci-dessus : H 53,8 %, N 25,0 %, E 21,2 %, mode `degrade`, agents manquants `deepseek` et `gemini` (clés absentes). Ce chiffre illustre le calcul, ce n'est pas une prévision : les xG sont fictifs.

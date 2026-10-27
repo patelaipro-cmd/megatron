@@ -1,17 +1,16 @@
 {
   "version": "0.1.0",
-  "commit": "53d78bd",
-  "date": "2026-10-27T18:54:11+00:00",
-  "resume": "Socle MEGATRON CORE posé : mémoire, checkpoint, registre de prévisions, agents/fusion, registre des dépôts. Aucune donnée réelle ni agent LLM branché.",
+  "commit": "102d58e",
+  "date": "2026-10-27T19:23:02+00:00",
+  "resume": "EXP-001 terminé : poisson-v1 promu (bat les fréquences sur 5 ligues, reste derrière le bookmaker). Données Top 5 2020-2026 dans data/.",
   "prochaines_actions": [
-    "Tester soccerdata sur une ligue et 3 saisons chronologiques (dev/val/test)",
-    "Backtest de l'agent Stats Poisson dans le registre (Brier, log-loss)",
-    "Expérience Dixon-Coles (penaltyblog) vs Poisson après vérification de licence",
+    "EXP-002 : demi-vie < 90 j et Dixon-Coles, même protocole",
+    "EXP-003 : prior pour les équipes promues",
     "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie"
   ],
   "blocages": [
     "Aucune clé Gemini/DeepSeek/Qwen/Claude API",
-    "github.com bloqué par le proxy de l'environnement cloud"
+    "Sources de xG (FBref, Understat) bloquées depuis l'environnement cloud"
   ],
   "decisions_actives": [
     {
@@ -30,11 +29,6 @@
       "id": "2daaba5c70ae"
     },
     {
-      "cle": "modele_reference",
-      "valeur": "agent Stats Poisson 1X2 à partir de xG pré-match",
-      "id": "8ee5ca9a1aec"
-    },
-    {
       "cle": "fusion",
       "valeur": "Gemini + DeepSeek + Stats ; mode dégradé documenté si un agent manque ; désaccord > 15 pts à vérifier",
       "id": "2595278585f7"
@@ -43,15 +37,25 @@
       "cle": "metriques",
       "valeur": "Brier multiclasse, log-loss, calibration par tranches",
       "id": "9aee9cf8fbd1"
+    },
+    {
+      "cle": "modele_reference",
+      "valeur": "poisson-v1 : Maher pondéré (demi-vie 90 j, rétrécissement 3) ajusté sur les matchs antérieurs ; stats-v0 en repli",
+      "id": "892277104f62"
+    },
+    {
+      "cle": "protocole_experiences",
+      "valeur": "protocole et critères commités avant exécution ; dev / validation / test chronologiques ; résultats ajoutés sans modifier le protocole",
+      "id": "fa2d41595b99"
     }
   ],
   "contradictions": {},
   "effectifs": {
-    "travail": 1,
-    "decisions": 6,
-    "football": 0,
-    "performances": 0,
+    "travail": 2,
+    "decisions": 7,
+    "football": 1,
+    "performances": 1,
     "technique": 4
   },
-  "id": "ckpt-8e6a5e41e9"
+  "id": "ckpt-eb39463e21"
 }

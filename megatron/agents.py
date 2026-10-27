@@ -76,27 +76,62 @@ def poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 10) -> dict[s
 class StatsAgent(Agent):
     """Agent Python déterministe : aucun token consommé.
 
-    Attend ``task["xg_home"]`` et ``task["xg_away"]`` (buts attendus estimés à
-    partir de données antérieures au match). Modèle de référence volontairement
-    simple ; Dixon-Coles (penaltyblog) est candidat à l'expérimentation.
+    Modèle par défaut ``poisson-v1`` (promu par EXP-001) : la tâche fournit
+    ``division``, ``home``, ``away`` et ``date`` (AAAA-MM-JJ) ; le modèle de
+    Maher est ajusté sur les seuls matchs antérieurs de ``data/``.
+    Repli ``stats-v0`` : si ``xg_home`` et ``xg_away`` sont fournis, Poisson
+    direct sur ces buts attendus.
     """
 
     name = "stats"
+    HALF_LIFE, SHRINK = 90.0, 3.0  # figés par EXP-001 sur la Ligue 1 2022/23
 
     def ask(self, task: dict) -> AgentResponse:
+        if "xg_home" in task or "xg_away" in task:
+            return self._from_xg(task)
+        try:
+            return self._from_history(task)
+        except (KeyError, ValueError) as exc:
+            return AgentResponse(agent=self.name, status="erreur", raison=f"entrée invalide : {exc}")
+
+    def _from_history(self, task: dict) -> AgentResponse:
+        from datetime import date
+
+        from . import data, models
+
+        day = date.fromisoformat(task["date"])
+        history = [m for m in data.load(divisions={task["division"]}) if m.day < day]
+        fit = models.fit_maher(history, day, half_life=self.HALF_LIFE, shrink=self.SHRINK)
+        lh, la = fit.rates(task["home"], task["away"])
+        unknown = [t for t in (task["home"], task["away"]) if t not in fit.attack]
+        return self._response(
+            poisson_1x2(lh, la), task, version="poisson-v1",
+            preuves=[f"{len(history)} matchs antérieurs au {day}, dernier le "
+                     f"{max(m.day for m in history) if history else 'aucun'}",
+                     f"buts attendus {lh:.2f} - {la:.2f}"],
+            incertitudes=["équipes sans historique traitées comme moyennes : " + ", ".join(unknown)] if unknown else [],
+            sources=["data/matches_top5_2020-2026.csv"],
+        )
+
+    def _from_xg(self, task: dict) -> AgentResponse:
         try:
             lh, la = float(task["xg_home"]), float(task["xg_away"])
         except (KeyError, TypeError, ValueError) as exc:
             return AgentResponse(agent=self.name, status="erreur", raison=f"entrée manquante : {exc}")
-        probs = poisson_1x2(lh, la)
+        return self._response(poisson_1x2(lh, la), task, version="stats-v0",
+                              preuves=[f"xG domicile {lh}, xG extérieur {la}"], incertitudes=[],
+                              sources=list(task.get("sources", ["stats"])))
+
+    def _response(self, probs, task, *, version, preuves, incertitudes, sources) -> AgentResponse:
         fav = max(probs, key=probs.get)
         return AgentResponse(
             agent=self.name, status="ok", probs=probs,
-            conclusion=f"issue la plus probable {fav} ({probs[fav]:.0%})",
-            preuves=[f"xG domicile {lh}, xG extérieur {la}"],
+            conclusion=f"[{version}] issue la plus probable {fav} ({probs[fav]:.0%})",
+            preuves=preuves,
             hypotheses=["buts indépendants, loi de Poisson"],
-            incertitudes=["pas de correction des scores faibles (Dixon-Coles)"],
-            sources=list(task.get("sources", ["stats"])),
+            incertitudes=incertitudes + ["pas de correction des scores faibles (Dixon-Coles)",
+                                         "ni absences, ni calendrier, ni enjeu pris en compte"],
+            sources=sources,
             tokens_entree=0, tokens_sortie=0, tokens_mesure="mesure",
         )
 
