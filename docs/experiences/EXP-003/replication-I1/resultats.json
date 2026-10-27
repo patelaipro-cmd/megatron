@@ -1,0 +1,452 @@
+{
+  "division": "I1",
+  "donnees": "matches_top5_2020-2026.csv",
+  "modeles": {
+    "candidat": {
+      "half_life": 90.0,
+      "shrink": 3.0,
+      "dixon_coles": false,
+      "a_priori": "faibles3"
+    },
+    "reference": {
+      "half_life": 90.0,
+      "shrink": 3.0,
+      "dixon_coles": false
+    }
+  },
+  "dev": {
+    "saisons": "2022/23",
+    "frequences": {
+      "n": 380,
+      "brier": 0.655326,
+      "log_loss": 1.081923,
+      "rps": 0.230515,
+      "calibration": [
+        {
+          "tranche": "0.2-0.4",
+          "n": 893,
+          "p_moyenne": 0.3134,
+          "frequence_observee": 0.318
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 247,
+          "p_moyenne": 0.4055,
+          "frequence_observee": 0.3887
+        }
+      ]
+    },
+    "bookmaker": {
+      "n": 380,
+      "brier": 0.584837,
+      "log_loss": 0.980167,
+      "rps": 0.196706,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 187,
+          "p_moyenne": 0.1493,
+          "frequence_observee": 0.1283
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 641,
+          "p_moyenne": 0.2823,
+          "frequence_observee": 0.2886
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 224,
+          "p_moyenne": 0.4932,
+          "frequence_observee": 0.4732
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 83,
+          "p_moyenne": 0.6811,
+          "frequence_observee": 0.7229
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 5,
+          "p_moyenne": 0.8159,
+          "frequence_observee": 1.0
+        }
+      ]
+    },
+    "candidat": {
+      "n": 380,
+      "brier": 0.59119,
+      "log_loss": 0.990316,
+      "rps": 0.199419,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 178,
+          "p_moyenne": 0.1501,
+          "frequence_observee": 0.1404
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 634,
+          "p_moyenne": 0.2771,
+          "frequence_observee": 0.276
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 234,
+          "p_moyenne": 0.4868,
+          "frequence_observee": 0.5043
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 90,
+          "p_moyenne": 0.6705,
+          "frequence_observee": 0.6444
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 4,
+          "p_moyenne": 0.8299,
+          "frequence_observee": 1.0
+        }
+      ]
+    },
+    "reference": {
+      "n": 380,
+      "brier": 0.592353,
+      "log_loss": 0.992429,
+      "rps": 0.200053,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 171,
+          "p_moyenne": 0.1529,
+          "frequence_observee": 0.1462
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 646,
+          "p_moyenne": 0.2788,
+          "frequence_observee": 0.2709
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 237,
+          "p_moyenne": 0.4882,
+          "frequence_observee": 0.519
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 82,
+          "p_moyenne": 0.6678,
+          "frequence_observee": 0.6463
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 4,
+          "p_moyenne": 0.8254,
+          "frequence_observee": 1.0
+        }
+      ]
+    },
+    "bootstrap_candidat_moins_reference": {
+      "n": 380,
+      "ecart": -0.00211,
+      "ic95": [
+        -0.00633,
+        0.00208
+      ]
+    }
+  },
+  "validation": {
+    "saisons": "2023/24",
+    "frequences": {
+      "n": 380,
+      "brier": 0.658827,
+      "log_loss": 1.087554,
+      "rps": 0.225048,
+      "calibration": [
+        {
+          "tranche": "0.2-0.4",
+          "n": 760,
+          "p_moyenne": 0.2913,
+          "frequence_observee": 0.2908
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 380,
+          "p_moyenne": 0.4174,
+          "frequence_observee": 0.4184
+        }
+      ]
+    },
+    "bookmaker": {
+      "n": 380,
+      "brier": 0.577103,
+      "log_loss": 0.968155,
+      "rps": 0.185106,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 188,
+          "p_moyenne": 0.1514,
+          "frequence_observee": 0.1117
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 637,
+          "p_moyenne": 0.2837,
+          "frequence_observee": 0.2716
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 229,
+          "p_moyenne": 0.4885,
+          "frequence_observee": 0.5502
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 80,
+          "p_moyenne": 0.6751,
+          "frequence_observee": 0.7125
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 6,
+          "p_moyenne": 0.8206,
+          "frequence_observee": 0.5
+        }
+      ]
+    },
+    "candidat": {
+      "n": 380,
+      "brier": 0.590238,
+      "log_loss": 0.990107,
+      "rps": 0.191548,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 187,
+          "p_moyenne": 0.1485,
+          "frequence_observee": 0.123
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 627,
+          "p_moyenne": 0.2794,
+          "frequence_observee": 0.2727
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 239,
+          "p_moyenne": 0.4873,
+          "frequence_observee": 0.5481
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 78,
+          "p_moyenne": 0.6807,
+          "frequence_observee": 0.641
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 9,
+          "p_moyenne": 0.835,
+          "frequence_observee": 0.5556
+        }
+      ]
+    },
+    "reference": {
+      "n": 380,
+      "brier": 0.590334,
+      "log_loss": 0.990271,
+      "rps": 0.191594,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 182,
+          "p_moyenne": 0.1493,
+          "frequence_observee": 0.1209
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 630,
+          "p_moyenne": 0.2787,
+          "frequence_observee": 0.2698
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 246,
+          "p_moyenne": 0.4877,
+          "frequence_observee": 0.5528
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 73,
+          "p_moyenne": 0.6818,
+          "frequence_observee": 0.6438
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 9,
+          "p_moyenne": 0.8339,
+          "frequence_observee": 0.5556
+        }
+      ]
+    },
+    "bootstrap_candidat_moins_reference": {
+      "n": 380,
+      "ecart": -0.00016,
+      "ic95": [
+        -0.00359,
+        0.00368
+      ]
+    }
+  },
+  "test": {
+    "saisons": "2024/25,2025/26",
+    "frequences": {
+      "n": 760,
+      "brier": 0.660901,
+      "log_loss": 1.089987,
+      "rps": 0.231067,
+      "calibration": [
+        {
+          "tranche": "0.2-0.4",
+          "n": 1794,
+          "p_moyenne": 0.3119,
+          "frequence_observee": 0.3188
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 486,
+          "p_moyenne": 0.4125,
+          "frequence_observee": 0.3868
+        }
+      ]
+    },
+    "bookmaker": {
+      "n": 760,
+      "brier": 0.575656,
+      "log_loss": 0.966989,
+      "rps": 0.190189,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 420,
+          "p_moyenne": 0.1489,
+          "frequence_observee": 0.1286
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 1245,
+          "p_moyenne": 0.2859,
+          "frequence_observee": 0.2771
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 402,
+          "p_moyenne": 0.4901,
+          "frequence_observee": 0.5199
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 207,
+          "p_moyenne": 0.6742,
+          "frequence_observee": 0.7053
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 6,
+          "p_moyenne": 0.8217,
+          "frequence_observee": 1.0
+        }
+      ]
+    },
+    "candidat": {
+      "n": 760,
+      "brier": 0.596582,
+      "log_loss": 0.996979,
+      "rps": 0.199781,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 336,
+          "p_moyenne": 0.1536,
+          "frequence_observee": 0.1548
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 1306,
+          "p_moyenne": 0.2787,
+          "frequence_observee": 0.2772
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 481,
+          "p_moyenne": 0.4953,
+          "frequence_observee": 0.501
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 153,
+          "p_moyenne": 0.6721,
+          "frequence_observee": 0.6667
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 4,
+          "p_moyenne": 0.8318,
+          "frequence_observee": 0.75
+        }
+      ]
+    },
+    "reference": {
+      "n": 760,
+      "brier": 0.596837,
+      "log_loss": 0.997805,
+      "rps": 0.199984,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 326,
+          "p_moyenne": 0.1548,
+          "frequence_observee": 0.1595
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 1315,
+          "p_moyenne": 0.2792,
+          "frequence_observee": 0.2745
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 490,
+          "p_moyenne": 0.4934,
+          "frequence_observee": 0.502
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 145,
+          "p_moyenne": 0.6715,
+          "frequence_observee": 0.6759
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 4,
+          "p_moyenne": 0.8256,
+          "frequence_observee": 0.75
+        }
+      ]
+    },
+    "bootstrap_candidat_moins_reference": {
+      "n": 760,
+      "ecart": -0.00083,
+      "ic95": [
+        -0.00313,
+        0.0016
+      ]
+    }
+  }
+}

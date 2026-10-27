@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "commit": "119b27c",
-  "date": "2026-10-27T19:57:30+00:00",
-  "resume": "EXP-002 terminé sans promotion : poisson-v1 reste la référence. Bootstrap apparié et Dixon-Coles disponibles dans le code.",
+  "commit": "86043ee",
+  "date": "2026-10-27T20:14:08+00:00",
+  "resume": "EXP-003 rejetée : l'a priori promus n'améliore pas poisson-v1 hors du dev. Le retard sur le bookmaker (~0,03 de log-loss) vient d'informations absentes du modèle, pas des promus.",
   "prochaines_actions": [
-    "EXP-003 : prior plus faible pour les équipes sans historique (promus)",
-    "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie",
+    "EXP-004 : tirs et tirs cadrés des matchs passés (présents dans le jeu source) comme indicateur proche des xG",
+    "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie (absences, contexte)",
     "Tester Dixon-Coles sur les marchés de score / moins de 2,5 buts"
   ],
   "blocages": [
@@ -50,8 +50,8 @@
     },
     {
       "cle": "pistes_rejetees",
-      "valeur": "demi-vie < 90 j et Dixon-Coles pour le 1X2 (EXP-002) : ne pas retester sans nouvelle donnée ou nouveau marché",
-      "id": "9ad4d0794b9e"
+      "valeur": "demi-vie < 90 j et Dixon-Coles pour le 1X2 (EXP-002) ; a priori faibles3 pour les promus (EXP-003) : ne pas retester sans nouvelle donnée ou nouveau marché",
+      "id": "b91a60b10272"
     }
   ],
   "contradictions": {},
@@ -59,8 +59,8 @@
     "travail": 2,
     "decisions": 8,
     "football": 1,
-    "performances": 2,
+    "performances": 3,
     "technique": 4
   },
-  "id": "ckpt-c39c05ef34"
+  "id": "ckpt-61ac1cfe85"
 }
