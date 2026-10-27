@@ -13,7 +13,7 @@ from .data import Match, season_of
 from .ledger import OUTCOMES, score
 
 BASELINES = ("frequences", "bookmaker")
-Config = tuple[float, float, bool]  # demi-vie, rétrécissement, Dixon-Coles
+Config = tuple  # demi-vie, rétrécissement, Dixon-Coles[, a priori des nouveaux]
 
 
 def predict_seasons(matches: list[Match], division: str, seasons: set[str],
@@ -22,8 +22,9 @@ def predict_seasons(matches: list[Match], division: str, seasons: set[str],
     rows = []
     for day, group in groupby((m for m in league if season_of(m.day) in seasons), key=lambda m: m.day):
         history = [m for m in league if m.day < day]
-        fits = {name: models.fit_maher(history, day, half_life=hl, shrink=k, dixon_coles=dc)
-                for name, (hl, k, dc) in configs.items()}
+        fits = {name: models.fit_maher(history, day, half_life=c[0], shrink=c[1], dixon_coles=c[2],
+                                       newcomer_prior=c[3] if len(c) > 3 else "moyenne")
+                for name, c in configs.items()}
         freq = models.frequencies(history, day)
         for m in group:
             row = {"match_id": m.match_id, "saison": season_of(m.day), "issue": m.result,
@@ -45,11 +46,13 @@ def summarize(rows: list[dict]) -> dict[str, dict]:
 
 
 def grid_search(matches: list[Match], division: str, seasons: set[str], half_lives: list[float],
-                shrinks: list[float], dixon_coles: list[bool]) -> list[dict]:
-    configs = {f"{hl}|{k}|{dc}": (hl, k, dc) for hl in half_lives for k in shrinks for dc in dixon_coles}
+                shrinks: list[float], dixon_coles: list[bool],
+                priors: tuple[str, ...] = ("moyenne",)) -> list[dict]:
+    configs = {f"{hl}|{k}|{dc}|{p}": (hl, k, dc, p)
+               for hl in half_lives for k in shrinks for dc in dixon_coles for p in priors}
     s = summarize(predict_seasons(matches, division, seasons, configs))
-    out = [{"half_life": hl, "shrink": k, "dixon_coles": dc, "log_loss": s[name]["log_loss"],
-            "rps": s[name]["rps"], "n": s[name]["n"]} for name, (hl, k, dc) in configs.items()]
+    out = [{"half_life": hl, "shrink": k, "dixon_coles": dc, "a_priori": p, "log_loss": s[name]["log_loss"],
+            "rps": s[name]["rps"], "n": s[name]["n"]} for name, (hl, k, dc, p) in configs.items()]
     return sorted(out, key=lambda r: r["log_loss"])
 
 
@@ -61,6 +64,18 @@ def paired_bootstrap(rows: list[dict], a: str, b: str, draws: int = 2000, seed: 
     means = sorted(sum(rng.choice(diffs) for _ in diffs) / len(diffs) for _ in range(draws))
     return {"n": len(diffs), "ecart": round(sum(diffs) / len(diffs), 5),
             "ic95": [round(means[int(0.025 * draws)], 5), round(means[int(0.975 * draws) - 1], 5)]}
+
+
+def read_predictions(path: Path) -> list[dict]:
+    """Relit un predictions.csv sous la forme produite par predict_seasons."""
+    rows = []
+    with path.open(newline="", encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            row = {"match_id": r["match_id"], "saison": r["saison"], "issue": r["issue"]}
+            for name in {k.rsplit("_", 1)[0] for k in r if k.endswith("_H")}:
+                row[name] = {o: float(r[f"{name}_{o}"]) for o in OUTCOMES} if r[f"{name}_H"] else None
+            rows.append(row)
+    return rows
 
 
 def write_predictions(rows: list[dict], path: Path) -> None:

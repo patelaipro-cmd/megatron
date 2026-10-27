@@ -256,3 +256,55 @@ class DixonColesTests(unittest.TestCase):
         res = paired_bootstrap(rows, "a", "b", draws=200)
         self.assertLess(res["ecart"], 0)
         self.assertLess(res["ic95"][1], 0)
+
+
+class NewcomerPriorTests(unittest.TestCase):
+    def _m(self, day, home, away, hg, ag):
+        return ModelTests._m(day, home, away, hg, ag)
+
+    def _history(self):
+        # saison 2023/24 : 4 équipes établies, Faible très faible ; saison 2024/25 : Promu arrive
+        teams = ["Fort", "B", "C", "Faible"]
+        goals = {"Fort": 3, "B": 1, "C": 1, "Faible": 0}
+        out = []
+        for i in range(40):
+            h, a = teams[i % 4], teams[(i + 1 + i // 4) % 4]
+            if h != a:
+                out.append(self._m(f"2023-{9 + i // 10:02d}-{1 + i % 10:02d}", h, a, goals[h], goals[a]))
+        out.append(self._m("2024-08-10", "Promu", "B", 1, 1))
+        return out
+
+    def test_moyenne_prior_reproduces_v1(self):
+        from datetime import date
+        from megatron import models
+        h = self._history()
+        a = models.fit_maher(h, date(2024, 8, 20), half_life=90, shrink=3)
+        b = models.fit_maher(h, date(2024, 8, 20), half_life=90, shrink=3, newcomer_prior="moyenne")
+        self.assertEqual(a, b)
+
+    def test_faibles3_pulls_newcomer_down(self):
+        from datetime import date
+        from megatron import models
+        h = self._history()
+        v1 = models.fit_maher(h, date(2024, 8, 20), half_life=90, shrink=3)
+        v3 = models.fit_maher(h, date(2024, 8, 20), half_life=90, shrink=3, newcomer_prior="faibles3")
+        self.assertLess(v3.attack["Promu"] / v3.defence["Promu"], v1.attack["Promu"] / v1.defence["Promu"])
+        self.assertLess(v3.new_attack / v3.new_defence, 1.0)
+        self.assertEqual((v1.new_attack, v1.new_defence), (1.0, 1.0))
+
+    def test_unknown_prior_rejected(self):
+        from datetime import date
+        from megatron import models
+        with self.assertRaises(ValueError):
+            models.fit_maher([], date(2024, 1, 1), half_life=90, shrink=3, newcomer_prior="x")
+
+    def test_read_predictions_roundtrip(self):
+        from megatron import backtest
+        rows = [{"match_id": "m", "saison": "2024/25", "issue": "H", "frequences": {"H": .5, "D": .3, "A": .2},
+                 "bookmaker": None, "candidat": {"H": .6, "D": .2, "A": .2}}]
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "p.csv"
+            backtest.write_predictions(rows, path)
+            back = backtest.read_predictions(path)
+        self.assertIsNone(back[0]["bookmaker"])
+        self.assertAlmostEqual(back[0]["candidat"]["H"], 0.6)

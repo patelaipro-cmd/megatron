@@ -31,9 +31,15 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--half-lives", default="90,180,365,730")
     b.add_argument("--shrinks", default="1,3,10")
     b.add_argument("--dixon-coles", default="0", help="valeurs testées sur le dev, ex. 0,1")
-    b.add_argument("--fixe", help="candidat déjà figé, ex. 90,3,0 : saute la recherche sur le dev")
+    b.add_argument("--a-priori", default="moyenne", help="a priori des équipes nouvelles testés, ex. moyenne,faibles3")
+    b.add_argument("--fixe", help="candidat déjà figé, ex. 90,3,0 ou 90,3,0,faibles3 : saute la recherche sur le dev")
     b.add_argument("--reference", help="modèle de référence évalué en parallèle, ex. 90,3,0")
     b.add_argument("--sortie", help="dossier où écrire resultats.json et predictions.csv")
+    bs = sub.add_parser("bootstrap", help="bootstrap apparié groupé sur plusieurs predictions.csv")
+    bs.add_argument("fichiers", nargs="+")
+    bs.add_argument("--saisons", default="2024/25,2025/26")
+    bs.add_argument("--a", default="candidat")
+    bs.add_argument("--b", default="reference")
     args = parser.parse_args(argv)
 
     if args.cmd == "reprise":
@@ -53,12 +59,17 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(result, indent=2, ensure_ascii=False))
     elif args.cmd == "backtest":
         print(json.dumps(run_backtest(args), indent=2, ensure_ascii=False))
+    elif args.cmd == "bootstrap":
+        keep = set(args.saisons.split(","))
+        rows = [r for f in args.fichiers for r in backtest.read_predictions(Path(f)) if r["saison"] in keep]
+        print(json.dumps(backtest.paired_bootstrap(rows, args.a, args.b), ensure_ascii=False))
     return 0
 
 
 def _config(text: str) -> backtest.Config:
-    hl, k, *dc = text.split(",")
-    return float(hl), float(k), bool(int(dc[0])) if dc else False
+    hl, k, *rest = text.split(",")
+    dc = bool(int(rest[0])) if rest else False
+    return (float(hl), float(k), dc) + ((rest[1],) if len(rest) > 1 else ())
 
 
 def run_backtest(args) -> dict:
@@ -70,13 +81,15 @@ def run_backtest(args) -> dict:
         grid = backtest.grid_search(matches, args.division, {args.dev},
                                     [float(x) for x in args.half_lives.split(",")],
                                     [float(x) for x in args.shrinks.split(",")],
-                                    [bool(int(x)) for x in args.dixon_coles.split(",")])
+                                    [bool(int(x)) for x in args.dixon_coles.split(",")],
+                                    tuple(args.a_priori.split(",")))
         out["grille_dev"] = grid
-        candidate = (grid[0]["half_life"], grid[0]["shrink"], grid[0]["dixon_coles"])
+        candidate = (grid[0]["half_life"], grid[0]["shrink"], grid[0]["dixon_coles"], grid[0]["a_priori"])
     configs = {"candidat": candidate}
     if args.reference:
         configs["reference"] = _config(args.reference)
-    out["modeles"] = {name: dict(zip(("half_life", "shrink", "dixon_coles"), c)) for name, c in configs.items()}
+    out["modeles"] = {name: dict(zip(("half_life", "shrink", "dixon_coles", "a_priori"), c))
+                      for name, c in configs.items()}
     all_rows = []
     for role, seasons in (("dev", args.dev), ("validation", args.val), ("test", args.test)):
         rows = backtest.predict_seasons(matches, args.division, set(seasons.split(",")), configs)
@@ -90,6 +103,7 @@ def run_backtest(args) -> dict:
         backtest.write_predictions(all_rows, folder / "predictions.csv")
         (folder / "resultats.json").write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return out
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

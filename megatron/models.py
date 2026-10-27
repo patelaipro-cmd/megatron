@@ -47,22 +47,29 @@ class MaherFit:
     attack: dict[str, float]
     defence: dict[str, float]
     rho: float = 0.0  # correction Dixon-Coles des petits scores (0 = Poisson indépendant)
+    new_attack: float = 1.0  # valeurs d'une équipe jamais vue dans la division
+    new_defence: float = 1.0
 
     def rates(self, home: str, away: str) -> tuple[float, float]:
         a, d = self.attack, self.defence
-        lam_h = self.mu * self.home_adv * a.get(home, 1.0) * d.get(away, 1.0)
-        lam_a = self.mu * a.get(away, 1.0) * d.get(home, 1.0)
+        lam_h = self.mu * self.home_adv * a.get(home, self.new_attack) * d.get(away, self.new_defence)
+        lam_a = self.mu * a.get(away, self.new_attack) * d.get(home, self.new_defence)
         return lam_h, lam_a
 
 
 def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: float,
-              dixon_coles: bool = False, max_age_days: int = 1095, iterations: int = 40) -> MaherFit:
+              dixon_coles: bool = False, newcomer_prior: str = "moyenne",
+              max_age_days: int = 1095, iterations: int = 40) -> MaherFit:
     """Modèle de Maher (attaque × défense × terrain), pondéré dans le temps.
 
-    ``shrink`` ajoute ce nombre de matchs fictifs « moyens » à chaque équipe,
-    ce qui ramène vers 1 les équipes peu observées. Une équipe sans historique
-    vaut 1 (équipe moyenne) : les promus sont donc surestimés.
+    ``shrink`` ajoute ce nombre de matchs fictifs à chaque équipe, ce qui la
+    ramène vers son a priori quand elle est peu observée. L'a priori vaut 1
+    (équipe moyenne), sauf avec ``newcomer_prior="faibles3"`` pour une équipe
+    sans match dans la division avant le 1er juillet de la saison en cours :
+    elle est alors tirée vers la moyenne des 3 équipes établies les plus faibles.
     """
+    if newcomer_prior not in ("moyenne", "faibles3"):
+        raise ValueError(f"a priori inconnu : {newcomer_prior!r}")
     _check_past(history, day)
     rows = []
     for m in history:
@@ -77,7 +84,20 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
     w_tot = sum(r[4] for r in rows)
     mu = sum(w * (hg + ag) for _, _, hg, ag, w in rows) / (2 * w_tot)
     gamma = 1.2
+    season_start = date(day.year if day.month >= 7 else day.year - 1, 7, 1)
+    newcomers = set()
+    if newcomer_prior == "faibles3":
+        seen_before = {t for m in history if m.day < season_start for t in (m.home, m.away)}
+        newcomers = teams - seen_before
+    established = sorted(teams - newcomers)
+    a0 = d0 = 1.0
     for _ in range(iterations):
+        if newcomers and len(established) >= 3:
+            weakest = sorted(established, key=lambda t: att[t] / dfn[t])[:3]
+            a0 = sum(att[t] for t in weakest) / 3
+            d0 = sum(dfn[t] for t in weakest) / 3
+        prior_a = {t: a0 if t in newcomers else 1.0 for t in teams}
+        prior_d = {t: d0 if t in newcomers else 1.0 for t in teams}
         g_for = dict.fromkeys(teams, 0.0)
         e_for = dict.fromkeys(teams, 0.0)
         for h, a, hg, ag, w in rows:
@@ -85,7 +105,7 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
             e_for[h] += w * mu * gamma * dfn[a]
             g_for[a] += w * ag
             e_for[a] += w * mu * dfn[h]
-        att = {t: (g_for[t] + shrink * mu) / (e_for[t] + shrink * mu) for t in teams}
+        att = {t: (g_for[t] + shrink * mu * prior_a[t]) / (e_for[t] + shrink * mu) for t in teams}
         g_ag = dict.fromkeys(teams, 0.0)
         e_ag = dict.fromkeys(teams, 0.0)
         for h, a, hg, ag, w in rows:
@@ -93,7 +113,7 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
             e_ag[a] += w * mu * gamma * att[h]
             g_ag[h] += w * ag
             e_ag[h] += w * mu * att[a]
-        dfn = {t: (g_ag[t] + shrink * mu) / (e_ag[t] + shrink * mu) for t in teams}
+        dfn = {t: (g_ag[t] + shrink * mu * prior_d[t]) / (e_ag[t] + shrink * mu) for t in teams}
         ma = sum(att.values()) / len(teams)
         md = sum(dfn.values()) / len(teams)
         att = {t: v / ma for t, v in att.items()}
@@ -103,6 +123,10 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
         mu = (sum(w * (hg + ag) for _, _, hg, ag, w in rows)
               / sum(w * (gamma * att[h] * dfn[a] + att[a] * dfn[h]) for h, a, _, _, w in rows))
     fit = MaherFit(mu, gamma, att, dfn)
+    if newcomer_prior == "faibles3" and len(established) >= 3:
+        weakest = sorted(established, key=lambda t: att[t] / dfn[t])[:3]
+        fit.new_attack = sum(att[t] for t in weakest) / 3
+        fit.new_defence = sum(dfn[t] for t in weakest) / 3
     if dixon_coles:
         fit.rho = estimate_rho(fit, rows)
     return fit
