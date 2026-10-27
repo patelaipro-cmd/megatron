@@ -30,7 +30,9 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--test", default="2024/25,2025/26")
     b.add_argument("--half-lives", default="90,180,365,730")
     b.add_argument("--shrinks", default="1,3,10")
-    b.add_argument("--fixe", help="hyperparamètres déjà figés, ex. 365,3 : saute la recherche sur le dev")
+    b.add_argument("--dixon-coles", default="0", help="valeurs testées sur le dev, ex. 0,1")
+    b.add_argument("--fixe", help="candidat déjà figé, ex. 90,3,0 : saute la recherche sur le dev")
+    b.add_argument("--reference", help="modèle de référence évalué en parallèle, ex. 90,3,0")
     b.add_argument("--sortie", help="dossier où écrire resultats.json et predictions.csv")
     args = parser.parse_args(argv)
 
@@ -54,30 +56,40 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
+def _config(text: str) -> backtest.Config:
+    hl, k, *dc = text.split(",")
+    return float(hl), float(k), bool(int(dc[0])) if dc else False
+
+
 def run_backtest(args) -> dict:
     matches = data.load(divisions={args.division})
     out = {"division": args.division, "donnees": str(data.DEFAULT_CSV.name)}
     if args.fixe:
-        hl, k = (float(x) for x in args.fixe.split(","))
+        candidate = _config(args.fixe)
     else:
         grid = backtest.grid_search(matches, args.division, {args.dev},
                                     [float(x) for x in args.half_lives.split(",")],
-                                    [float(x) for x in args.shrinks.split(",")])
+                                    [float(x) for x in args.shrinks.split(",")],
+                                    [bool(int(x)) for x in args.dixon_coles.split(",")])
         out["grille_dev"] = grid
-        hl, k = grid[0]["half_life"], grid[0]["shrink"]
-    out["hyperparametres"] = {"half_life": hl, "shrink": k}
+        candidate = (grid[0]["half_life"], grid[0]["shrink"], grid[0]["dixon_coles"])
+    configs = {"candidat": candidate}
+    if args.reference:
+        configs["reference"] = _config(args.reference)
+    out["modeles"] = {name: dict(zip(("half_life", "shrink", "dixon_coles"), c)) for name, c in configs.items()}
     all_rows = []
     for role, seasons in (("dev", args.dev), ("validation", args.val), ("test", args.test)):
-        rows = backtest.predict_seasons(matches, args.division, set(seasons.split(",")), half_life=hl, shrink=k)
+        rows = backtest.predict_seasons(matches, args.division, set(seasons.split(",")), configs)
         all_rows += rows
         out[role] = {"saisons": seasons, **backtest.summarize(rows)}
+        if args.reference:
+            out[role]["bootstrap_candidat_moins_reference"] = backtest.paired_bootstrap(rows, "candidat", "reference")
     if args.sortie:
         folder = Path(args.sortie)
         folder.mkdir(parents=True, exist_ok=True)
         backtest.write_predictions(all_rows, folder / "predictions.csv")
         (folder / "resultats.json").write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return out
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

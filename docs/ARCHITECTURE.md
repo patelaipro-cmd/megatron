@@ -53,7 +53,7 @@ Mis à jour le 27/10/2026 après EXP-001 (voir `docs/experiences/EXP-001-poisson
 
 1. ~~Données historiques~~ : fait avec xgabora/Club-Football-Match-Data (soccerdata est bloqué par le proxy de l'environnement cloud).
 2. ~~Référence prédictive~~ : `poisson-v1` promu ; il bat les fréquences sur les 5 grands championnats, et reste derrière le bookmaker.
-3. **EXP-002** : demi-vie plus courte (la borne basse de la grille a été retenue) et Dixon-Coles (correction des scores faibles), mêmes découpages et critères.
+3. ~~EXP-002~~ : demi-vie plus courte et Dixon-Coles testées, sans promotion (`poisson-v1` reste meilleur sur le dev).
 4. **EXP-003** : traitement des promus (prior plus faible pour une équipe sans historique).
 5. **Accès LLM** : dès qu'une clé Gemini ou DeepSeek est fournie, brancher `LLMAgent` via LiteLLM avec budget d'appels et comptage de tokens mesuré.
 6. **Cache et index** : cache des sorties d'agents invalidé par version de modèle, de règles et de données.

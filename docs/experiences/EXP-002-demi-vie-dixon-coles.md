@@ -36,3 +36,33 @@ Si la meilleure combinaison du développement est exactement `poisson-v1`, l'exp
 ## Retour arrière
 
 Rétablir les réglages `poisson-v1` dans `StatsAgent` (demi-vie 90, rétrécissement 3, sans correction).
+
+---
+
+## Résultats (exécution du 27/10/2026, ajoutés après le protocole)
+
+Commande : `python -m megatron backtest --division F1 --half-lives 30,45,60,90 --shrinks 1,3,10 --dixon-coles 0,1 --reference 90,3,0 --sortie docs/experiences/EXP-002`. Détails dans `EXP-002/resultats.json` ; les prévisions ne sont pas recopiées, car elles sont identiques à celles d'EXP-001.
+
+La meilleure combinaison des 24 testées sur le développement est **exactement `poisson-v1`** (demi-vie 90, rétrécissement 3, sans correction ; log-loss 0,97948). Les suivantes :
+
+| Demi-vie | Rétrécissement | Dixon-Coles | Log-loss dev | RPS dev |
+|---|---|---|---|---|
+| 90 | 3 | non | **0,97948** | 0,20091 |
+| 90 | 1 | non | 0,98036 | 0,20114 |
+| 90 | 3 | oui | 0,98092 | 0,20105 |
+| 60 | 3 | non | 0,98135 | 0,20135 |
+| 60 | 1 | non | 0,98194 | 0,20140 |
+
+Les demi-vies de 30 et 45 jours font moins bien. La correction Dixon-Coles dégrade légèrement chaque configuration. Le ρ estimé reste pourtant dans la fourchette habituelle (entre −0,12 et −0,06 sur quatre dates du développement).
+
+## Décision
+
+- Conformément au protocole, l'expérience conclut **sans promotion** : `poisson-v1` reste le modèle de l'agent Stats.
+- Les critères C1 à C4 ne sont pas évalués, puisqu'aucun candidat distinct ne sort du développement. Aucune variante n'a été essayée sur le test.
+- Hypothèse 1 rejetée sur le développement : une demi-vie plus courte que 90 jours n'aide pas.
+- Hypothèse 2 rejetée sur le développement : la correction des petits scores n'améliore pas l'issue 1X2 sur la Ligue 1 2022/23. Elle pourrait servir pour les marchés de score exact ou de moins de 2,5 buts, ce qui n'a pas été testé.
+
+## Limites
+
+- Un seul championnat et une seule saison pour le choix : un écart de 0,0015 de log-loss est inférieur au bruit attendu sur 380 matchs.
+- ρ est estimé en deux temps (taux fixés), pas conjointement.

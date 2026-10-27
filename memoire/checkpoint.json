@@ -1,12 +1,12 @@
 {
   "version": "0.1.0",
-  "commit": "102d58e",
-  "date": "2026-10-27T19:23:02+00:00",
-  "resume": "EXP-001 terminé : poisson-v1 promu (bat les fréquences sur 5 ligues, reste derrière le bookmaker). Données Top 5 2020-2026 dans data/.",
+  "commit": "119b27c",
+  "date": "2026-10-27T19:57:30+00:00",
+  "resume": "EXP-002 terminé sans promotion : poisson-v1 reste la référence. Bootstrap apparié et Dixon-Coles disponibles dans le code.",
   "prochaines_actions": [
-    "EXP-002 : demi-vie < 90 j et Dixon-Coles, même protocole",
-    "EXP-003 : prior pour les équipes promues",
-    "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie"
+    "EXP-003 : prior plus faible pour les équipes sans historique (promus)",
+    "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie",
+    "Tester Dixon-Coles sur les marchés de score / moins de 2,5 buts"
   ],
   "blocages": [
     "Aucune clé Gemini/DeepSeek/Qwen/Claude API",
@@ -47,15 +47,20 @@
       "cle": "protocole_experiences",
       "valeur": "protocole et critères commités avant exécution ; dev / validation / test chronologiques ; résultats ajoutés sans modifier le protocole",
       "id": "fa2d41595b99"
+    },
+    {
+      "cle": "pistes_rejetees",
+      "valeur": "demi-vie < 90 j et Dixon-Coles pour le 1X2 (EXP-002) : ne pas retester sans nouvelle donnée ou nouveau marché",
+      "id": "9ad4d0794b9e"
     }
   ],
   "contradictions": {},
   "effectifs": {
     "travail": 2,
-    "decisions": 7,
+    "decisions": 8,
     "football": 1,
-    "performances": 1,
+    "performances": 2,
     "technique": 4
   },
-  "id": "ckpt-eb39463e21"
+  "id": "ckpt-c39c05ef34"
 }

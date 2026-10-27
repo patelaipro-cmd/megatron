@@ -6,6 +6,7 @@ d'historique daté du jour du match ou après (garde-fou anti-fuite).
 
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
 from datetime import date
 
@@ -45,6 +46,7 @@ class MaherFit:
     home_adv: float
     attack: dict[str, float]
     defence: dict[str, float]
+    rho: float = 0.0  # correction Dixon-Coles des petits scores (0 = Poisson indépendant)
 
     def rates(self, home: str, away: str) -> tuple[float, float]:
         a, d = self.attack, self.defence
@@ -54,7 +56,7 @@ class MaherFit:
 
 
 def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: float,
-              max_age_days: int = 1095, iterations: int = 40) -> MaherFit:
+              dixon_coles: bool = False, max_age_days: int = 1095, iterations: int = 40) -> MaherFit:
     """Modèle de Maher (attaque × défense × terrain), pondéré dans le temps.
 
     ``shrink`` ajoute ce nombre de matchs fictifs « moyens » à chaque équipe,
@@ -100,8 +102,59 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
                  / sum(w * mu * att[h] * dfn[a] for h, a, _, _, w in rows))
         mu = (sum(w * (hg + ag) for _, _, hg, ag, w in rows)
               / sum(w * (gamma * att[h] * dfn[a] + att[a] * dfn[h]) for h, a, _, _, w in rows))
-    return MaherFit(mu, gamma, att, dfn)
+    fit = MaherFit(mu, gamma, att, dfn)
+    if dixon_coles:
+        fit.rho = estimate_rho(fit, rows)
+    return fit
 
 
-def poisson_v1(fit: MaherFit, match: Match) -> dict[str, float]:
+RHO_GRID = [round(-0.25 + 0.01 * i, 2) for i in range(36)]  # -0,25 à 0,10
+
+
+def _tau(hg: int, ag: int, lam_h: float, lam_a: float, rho: float) -> float:
+    if hg == 0 and ag == 0:
+        return 1 - lam_h * lam_a * rho
+    if hg == 0 and ag == 1:
+        return 1 + lam_h * rho
+    if hg == 1 and ag == 0:
+        return 1 + lam_a * rho
+    if hg == 1 and ag == 1:
+        return 1 - rho
+    return 1.0
+
+
+def estimate_rho(fit: MaherFit, rows: list[tuple]) -> float:
+    """ρ maximisant la vraisemblance pondérée des petits scores, taux de buts fixés."""
+    low = [(fit.rates(h, a), hg, ag, w) for h, a, hg, ag, w in rows if hg <= 1 and ag <= 1]
+    best, best_ll = 0.0, -math.inf
+    for rho in RHO_GRID:
+        ll = 0.0
+        for (lh, la), hg, ag, w in low:
+            t = _tau(hg, ag, lh, la, rho)
+            if t <= 0:
+                ll = -math.inf
+                break
+            ll += w * math.log(t)
+        if ll > best_ll:
+            best, best_ll = rho, ll
+    return best
+
+
+def dixon_coles_1x2(lam_home: float, lam_away: float, rho: float, max_goals: int = 10) -> dict[str, float]:
+    def pmf(k, lam):
+        return math.exp(-lam) * lam ** k / math.factorial(k)
+    ph = [pmf(k, lam_home) for k in range(max_goals + 1)]
+    pa = [pmf(k, lam_away) for k in range(max_goals + 1)]
+    out = {"H": 0.0, "D": 0.0, "A": 0.0}
+    for i in range(max_goals + 1):
+        for j in range(max_goals + 1):
+            p = max(_tau(i, j, lam_home, lam_away, rho), 0.0) * ph[i] * pa[j]
+            out["H" if i > j else "D" if i == j else "A"] += p
+    total = sum(out.values())
+    return {o: v / total for o, v in out.items()}
+
+
+def predict_1x2(fit: MaherFit, match: Match) -> dict[str, float]:
+    if fit.rho:
+        return dixon_coles_1x2(*fit.rates(match.home, match.away), fit.rho)
     return poisson_1x2(*fit.rates(match.home, match.away))

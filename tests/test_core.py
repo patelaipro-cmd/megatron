@@ -193,7 +193,7 @@ class ModelTests(unittest.TestCase):
         fit = models.fit_maher(self._league(), date(2024, 6, 1), half_life=365, shrink=1)
         self.assertGreater(fit.attack["Fort"], 1.5)
         self.assertLess(fit.defence["Fort"], 0.5)
-        p = models.poisson_v1(fit, self._m("2024-06-01", "Fort", "B", 0, 0))
+        p = models.predict_1x2(fit, self._m("2024-06-01", "Fort", "B", 0, 0))
         self.assertGreater(p["H"], 0.7)
         self.assertAlmostEqual(sum(p.values()), 1.0, places=9)
 
@@ -229,3 +229,30 @@ class StatsAgentHistoryTests(unittest.TestCase):
     def test_invalid_date_is_error_not_invented(self):
         r = StatsAgent().ask({"division": "F1", "home": "x", "away": "y", "date": "pas-une-date"})
         self.assertEqual(r.status, "erreur")
+
+
+class DixonColesTests(unittest.TestCase):
+    def test_rho_zero_equals_poisson(self):
+        from megatron.models import dixon_coles_1x2
+        p, q = dixon_coles_1x2(1.4, 1.1, 0.0), poisson_1x2(1.4, 1.1)
+        for o in "HDA":
+            self.assertAlmostEqual(p[o], q[o], places=12)
+
+    def test_negative_rho_raises_draws(self):
+        from megatron.models import dixon_coles_1x2
+        self.assertGreater(dixon_coles_1x2(1.4, 1.1, -0.1)["D"], poisson_1x2(1.4, 1.1)["D"])
+        self.assertAlmostEqual(sum(dixon_coles_1x2(1.4, 1.1, -0.1).values()), 1.0, places=9)
+
+    def test_rho_estimated_negative_when_low_draws_overrepresented(self):
+        from megatron.models import MaherFit, estimate_rho
+        fit = MaherFit(1.2, 1.0, {"A": 1.0, "B": 1.0}, {"A": 1.0, "B": 1.0})
+        rows = [("A", "B", 0, 0, 1.0)] * 30 + [("A", "B", 1, 1, 1.0)] * 30 + [("A", "B", 1, 0, 1.0)] * 10
+        self.assertLess(estimate_rho(fit, rows), 0)
+
+    def test_paired_bootstrap_sign(self):
+        from megatron.backtest import paired_bootstrap
+        good, bad = {"H": .6, "D": .2, "A": .2}, {"H": .2, "D": .2, "A": .6}
+        rows = [{"issue": "H", "a": good, "b": bad}] * 20 + [{"issue": "A", "a": bad, "b": good}] * 5
+        res = paired_bootstrap(rows, "a", "b", draws=200)
+        self.assertLess(res["ecart"], 0)
+        self.assertLess(res["ic95"][1], 0)
