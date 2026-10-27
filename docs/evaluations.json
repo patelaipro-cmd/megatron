@@ -1,0 +1,50 @@
+{
+  "berriai/litellm": {
+    "role": "Passerelle unique vers Claude, Gemini, DeepSeek, Qwen ; comptage des tokens",
+    "verifications": "PyPI 27/10/2026 : v1.106.4, Python >=3.10,<3.15 ; dépôt GitHub non consulté (proxy 403)",
+    "licence": "MIT (déclarée sur PyPI)",
+    "compatibilite": "Python 3.13 OK ; à brancher derrière LLMAgent quand des clés existeront",
+    "classement": "TESTER",
+    "motif": "candidat n°1 pour l'interface commune ; inutile tant qu'aucune clé Gemini/DeepSeek n'est disponible"
+  },
+  "martineastwood/penaltyblog": {
+    "role": "Modèles de buts (Poisson, Dixon-Coles), scraping, métriques",
+    "verifications": "PyPI 27/10/2026 : v1.13.1, Python >=3.10, 48 dépendances déclarées",
+    "licence": "non déclarée sur PyPI : à confirmer sur le dépôt",
+    "compatibilite": "Python 3.13 OK selon métadonnées ; non installé",
+    "classement": "TESTER",
+    "motif": "candidat challenger de l'agent Stats (Poisson de référence) dans une expérience chronologique"
+  },
+  "probberechts/soccerdata": {
+    "role": "Collecte de données (FBref, Understat, ClubElo, etc.)",
+    "verifications": "PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15",
+    "licence": "Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources",
+    "compatibilite": "Python 3.13 OK selon métadonnées ; non installé",
+    "classement": "TESTER",
+    "motif": "source de xG historiques nécessaire pour alimenter l'agent Stats et le backtest"
+  },
+  "ml-kuleuven/socceraction": {
+    "role": "Valorisation des actions (VAEP, xT) sur données événementielles",
+    "verifications": "PyPI 27/10/2026 : v1.5.3, Python >=3.9,<3.13",
+    "licence": "MIT (déclarée sur PyPI)",
+    "compatibilite": "incompatible avec Python 3.13 de cet environnement",
+    "classement": "RÉFÉRENCE",
+    "motif": "utile pour l'analyse tactique plus tard, mais contrainte de version Python"
+  },
+  "optuna/optuna": {
+    "role": "Optimisation d'hyperparamètres pour les expériences",
+    "verifications": "PyPI 27/10/2026 : v5.0.0, Python >=3.9",
+    "licence": "MIT (classifieur PyPI)",
+    "compatibilite": "Python 3.13 OK selon métadonnées",
+    "classement": "RÉFÉRENCE",
+    "motif": "prématuré : aucun modèle ni jeu de backtest à optimiser pour l'instant"
+  },
+  "mlflow/mlflow": {
+    "role": "Suivi d'expériences",
+    "verifications": "PyPI 27/10/2026 : v3.17.2, 60 dépendances déclarées",
+    "licence": "Apache-2.0 (classifieur PyPI)",
+    "compatibilite": "lourd ; le registre JSONL de MEGATRON couvre le besoin actuel",
+    "classement": "RÉFÉRENCE",
+    "motif": "à reconsidérer si le nombre d'expériences dépasse ce qu'un journal JSONL gère bien"
+  }
+}

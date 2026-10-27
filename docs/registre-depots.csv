@@ -1,0 +1,517 @@
+depot,role,verifications,licence,compatibilite,classement,motif,inventaires,recommande_inventaire
+3dagentworld/toolkit-for-prompt-compression,Boîte à outils de méthodes de compression (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+567-labs/instructor,"Sorties structurées (JSON validé) avec n'importe quel modèle, idéal pour des pronostics chiffrés",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+777genius/agent-teams-ai,Agents en équipe qui se répartissent les tâches,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+99xagency/godmodeskill,Revue croisée multi-LLM dans Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+a-evo-lab/a-evolve,"« L'évolution agentique », code de l'article",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+a5c-ai/babysitter,Discipline d'équipes d'agents sur longues tâches,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+abdullahtarek/football_analysis,YOLO + suivi + possession à partir de vidéos,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+abhi1693/openclaw-mission-control,Tableau de bord d'orchestration,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+acredjb/fbp,Projet chinois de prédiction (big data + ML),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+activeing123/mcptoon,CLI unique pour serveurs MCP et skills,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+adaline/gateway,« Super SDK » local unifié,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+adaptive-intelligent-robotics/qdax,Qualité-diversité accélérée,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+adror1/nwslr,Données NWSL (féminin US),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+agenta-ai/agenta,Construire et évaluer agents et automatisations,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+agentjido/jido,Agents autonomes distribués,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+agentsmesh/agentsmesh,Centaine d'agents sur tes machines,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+agno-agi/agno,Plateforme d'agents qui s'améliorent,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"autoevolutif, orchestration",False
+agusrdz/chop,Compresseur de sorties CLI pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+ahmedfgad/geneticalgorithmpython,PyGAD : algorithmes génétiques simples en Python,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+ai-boost/awesome-harness-engineering,Outils et patterns de harnais d'agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+aider-ai/aider,"Agent de code en terminal, tous modèles, mode « architecte + éditeur » à deux modèles",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+aimeos/prisma,Intégration multi-LLM en PHP,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+aiming-lab/agent0,Agents qui évoluent sans données initiales,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+aiwaves-cn/agents,Agents de langage auto-évolutifs centrés sur les données,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+aklivity/zilla,Passerelle multi-protocoles en streaming,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+alan-turing-institute/footballtournamentprediction,Prédiction de tournois internationaux,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+alek050/databallpy,Synchronisation événements + tracking,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+alexgreensh/token-optimizer,"Trouve les « tokens fantômes » (CLAUDE.md, MCP, skills chargés pour rien)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+algorithmicsuperintelligence/openevolve,Version open source d'AlphaEvolve : un LLM fait évoluer un programme pour maximiser un score (ex. log-loss des pronostics),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+alishahryar1/free-claude-code,Claude Code et autres outils sur des modèles gratuits,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+alvinunreal/oh-my-opencode-slim,Suite multi-agents pour OpenCode,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+amap-ml/skillclaw,Skills qui évoluent collectivement,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+amar0302/footballmatchpredictionpoisson,Poisson sur historique,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+amosbastian/understat,Client asynchrone Understat (xG),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+anative-lab/awesome-self-evolving-agents,Panorama des agents auto-évolutifs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+anative-lab/evoagentx,Écosystème d'agents qui évoluent,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"autoevolutif, orchestration",False
+andrewrowlinson/mplsoccer,"Terrains, cartes de tirs, radars (matplotlib)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+andrewsimplebet/expected_goals_deep_dive,Calibration des modèles xG,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+andrewyng/aisuite,Interface unifiée très simple (Andrew Ng),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+andyrewlee/awesome-agent-orchestrators,Liste d'orchestrateurs d'agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+anthropics/claude-agent-sdk-python,SDK officiel pour piloter Claude comme agent dans ton code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+anthropics/claude-code,"Claude Code (sous-agents, hooks, skills intégrés)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+antonio86itna/claude-code-efficiency-guide,Guide pour réduire le gaspillage dans Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+anyoptimization/pymoo,Optimisation multi-objectifs (ex. précision ET rendement des paris),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+apache/airflow,La référence des pipelines planifiés (DAG),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+apache/dolphinscheduler,Ordonnanceur de données,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+apache/hop,Plateforme d'orchestration ETL,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+apdmatos/sofascore-api,Client API Sofascore (TypeScript),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+apiparklab/apipark,Passerelle IA et API cloud native,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+architv/soccer-cli,Scores en ligne de commande,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+argoproj/argo-workflows,Workflows sur Kubernetes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+arztsamuel/applying_eanns,Voitures qui apprennent à conduire (démo Unity),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+autogluon/autogluon,AutoML tabulaire très performant (3 lignes de code),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+automl/auto-sklearn,AutoML scikit-learn avec méta-apprentissage,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+automl/smac3,Optimisation bayésienne polyvalente,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+awslabs/cli-agent-orchestrator,Orchestration de CLI d'agents (AWS),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+axiomcodeai/axiomcodegraph,Code en graphe de connaissances,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+aymenfurter/microagents,Micro-agents auto-améliorants,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+bencmorrison/modelguild,Claude Code consulte d'autres LLM via opencode,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+berriai/litellm,"Passerelle unique vers Claude, Gemini, DeepSeek, Qwen ; comptage des tokens","PyPI 27/10/2026 : v1.106.4, Python >=3.10,<3.15 ; dépôt GitHub non consulté (proxy 403)",MIT (déclarée sur PyPI),Python 3.13 OK ; à brancher derrière LLMAgent quand des clés existeront,TESTER,candidat n°1 pour l'interface commune ; inutile tant qu'aucune clé Gemini/DeepSeek n'est disponible,"multi-llm, reduction-tokens",True
+bloopai/vibe-kanban,Kanban pour piloter plusieurs agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+bradleygrantham/pl-predictions-using-fifa,Réseau de neurones sur notes FIFA,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+bricks-cloud/bricksllm,Limites de coût et de débit par clé (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+bug-ops/mcp-execution,Génère des outils TypeScript à partir de MCP,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+builderz-labs/mission-control,"Dispatcher des tâches, suivre les coûts",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+callumfm/dixon-coles,Implémentation rapide de Dixon-Coles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+camel-ai/camel,Framework multi-agents de recherche,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+camel-ai/owl,Main-d'œuvre multi-agents pour tâches réelles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+casdoor/casdoor,"Identité et accès, avec passerelle LLM/MCP",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+catlog22/claude-code-workflow,Équipe multi-agents pilotée par JSON,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+charlesq9/self-evolving-agents,Liste de travaux sur les agents auto-évolutifs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+charmbracelet/crush,Agent de code en terminal multi-modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+chatboxai/chatbox,Client de bureau multi-modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+chatgptnextweb/nextchat,Client multi-modèles multiplateforme,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+chatlunalab/chatluna,Plugin de chatbot multi-modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+cheaper-inference/omniroute,Point d'accès unique vers 375 fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+cherryhq/cherry-studio,"Studio de bureau, accès unifié aux modèles de pointe",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+chesterra/cccc,Coordination d'agents façon messagerie,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+chonalchendo/footcrawl,Crawler multi-sources,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+chrismusson/fbref_db,Base SQLite à partir de FBref,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+chrisworsey55/atlas-gic,Agents de trading auto-améliorants (proche des paris),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+cline/cline,Agent de code compatible avec tous les fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+cma-es/pycma,"CMA-ES, la stratégie d'évolution de référence",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+coaidev/coai,Solution multi-locataires avec facturation,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+cocoindex-io/cocoindex,Indexation incrémentale pour agents longs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+codefuse-ai/modelcache,Cache sémantique (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+coderamp-labs/gitingest,Remplace « hub » par « ingest » dans une URL GitHub,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+codereclaimers/neat-python,NEAT : fait évoluer structure et poids des réseaux,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+colbymchenry/codegraph,Graphe de code pré-indexé pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+colgreen/sharpneat,NEAT en C#,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+commonstackai/uncommonroute,Routeur automatique orienté coût,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+congvmit/awesome-llm-token-reduction,"Techniques, outils et recherches de réduction de tokens",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+context-engine-ai/context-engine,Suite de compression de contexte (MCP),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+continuedev/continue,Assistant de code open source multi-modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+cookpete/soccer-predictor,Bibliothèque JS de pronostics simples,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+crewaiinc/crewai,"Équipes d'agents à rôles (ex. « scout », « analyste », « parieur »)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+ctrlb-hq/ctrlb-decompose,Résumés de logs lisibles par un LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+cytostack/openwolf,Mémoire de projet portable + économies de tokens,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+czl0325/football_frontend,Prédiction par cotes historiques (handicap asiatique),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+dagbolade/all_leagues-_prediction,Plateforme open source de prédiction,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+dagster-io/dagster,Orchestration centrée sur les données (assets),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+dagucloud/dagu,Orchestrateur ultra-léger (cron + DAG en YAML),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+danau5tin/multi-agent-coding-system,Orchestrateur + explorateur + codeur,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+datasets/football-datasets,Datasets football sur datahub.io,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+dato-futbol/passing-networks,Réseaux de passes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+dato-futbol/xg-model,Modèle xG en R (Wyscout),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+davidecolombo/local-mcp,Délègue les lectures de fichiers à un modèle local,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+dbos-inc/dbos-transact-py,Workflows durables adossés à Postgres,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+dcaribou/transfermarkt-datasets,Datasets Transfermarkt propres et mis à jour,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+deanpatel2/webscraper-premdata,Scraper FotMob,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+deap/deap,La référence Python des algorithmes évolutionnaires,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+decolua/9router,Connecte les outils de code à des modèles gratuits,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+deepset-ai/haystack,Orchestration IA et RAG en production,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+demondamon/agenticx,Plateforme multi-agents SDK + CLI,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+devinpleuler/analytics-handbook,Manuel pour débuter en analyse football (Python),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+dezoito/ollama-grid-search,Comparer des modèles et des prompts côte à côte,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+dfkhelper/token-goat,Réducteur de consommation multi-agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+didierrlopes/momentum-football-bets,Paris basés sur la dynamique,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+diegopastor/awesome-football-analytics,"Liste « awesome » : articles, livres, outils",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+docling-project/docling,Préparation de documents pour l'IA,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+doriandarko/make-it-heavy,Plusieurs agents en parallèle puis synthèse,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+dosinga/football_predictions,Prédiction de tournois,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+eddwebster/football_analytics,"Énorme collection de projets, données et liens d'analyse football",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+edouard-claude/snip,Proxy CLI à filtres YAML,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+efrenbl/code-navigator,Navigation de code économe pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+ekkolearnai/ekko-studio,Espace local multi-agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+elusznik/mcp-server-code-execution-mode,Exécute du code au lieu d'enchaîner les appels d'outils,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+emi-group/evox,Calcul évolutionnaire accéléré sur GPU,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+emi-group/tensorneat,NEAT accéléré sur GPU,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+emiyaaaaa/hivemind,Runtime multi-agents avec état persistant,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+enterpilot/gomodel,Passerelle compatible OpenAI,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+epistasislab/tpot,AutoML : fait évoluer des pipelines scikit-learn complets par programmation génétique,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+evermind-ai/raven,Harnais d'auto-amélioration récursive,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+evomap/evolver,Moteur d'évolution auditable pour agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+ewenme/transfers,Transferts européens,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+exo-explore/exo,Répartir un gros modèle sur plusieurs machines,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+facebookresearch/drzero,Agents de recherche auto-évolutifs sans données,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+facebookresearch/hyperagents,Agents auto-référents qui optimisent une tâche calculable,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+facebookresearch/nevergrad,Optimisation sans gradient (Meta),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+fajarhide/omni,Évite de repayer une sortie déjà vue,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+farion1231/cc-switch,"Basculer de fournisseur pour Claude Code, Codex, OpenCode…",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+fcrstats/coordinatefc,Effort de standards communs open source,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+fcrstats/statsbomb_womensdata,Données StatsBomb féminines,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+felipeall/transfermarkt-api,API Transfermarkt,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+fkiene/llmtrim,Proxy local qui compresse les requêtes API,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+flooorent/football-elo-ratings,Elo des clubs européens,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+flowiseai/flowise,Agents en glisser-déposer (**archivé**),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+flowuenne/soccer_data_analytics_resources,Sites et outils d'analyse,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+flyteorg/flyte,Pipelines ML et agents typés,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+footballcsv/england,Données Angleterre en CSV,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+frescodicredito/rasputin,Conseil Gemini + GPT + Mistral pour Claude Code via MCP,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+friends-of-tracking-data-fotd/laurieontracking,Code de référence sur données Metrica,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+friends-of-tracking-data-fotd/soccermaticsforpython,Cours Soccermatics en Python,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+gallagheraiden/footballsimulationengine,Moteur de simulation de match (Node.js),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+gastownhall/gascity,SDK de workflows de code multi-agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+gatalifeltd/economizer-skills,Règles d'économie de tokens pour agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+gepa-ai/gepa,Optimisation réflexive et évolutive de prompts et de code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+getzep/graphiti,Graphes de connaissances temps réel,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+gglucass/headroom-desktop,Headroom en app de barre de menus,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+ggml-org/llama.cpp,Moteur d'inférence local de référence,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+giacomelli/geneticsharp,Algorithmes génétiques en C#,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+gman1911/claude-cognitive,Mémoire de travail pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+google-deepmind/alphaevolve_results,Résultats publiés d'AlphaEvolve (DeepMind),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+google/adk-go,ADK Google en Go,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+google/adk-java,ADK Google en Java,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+google/adk-python,Agent Development Kit de Google,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+google/evojax,Neuroévolution matérielle accélérée (archivé),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+googlecloudplatform/ipython-soccer-predictions,Notebook de pronostics (Google),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+graphify-labs/graphify,Transforme un projet en graphe interrogeable,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+green-pt/honey-for-devs,Skill multi-outils qui réduit les tokens générés,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+greerviau/snakeai,Snake appris par algorithme génétique (démo),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+greyhaven-ai/autocontext,Harnais récursif d'auto-amélioration,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+growth4u-systems/claude-token-hygiene,Audit du coût caché de chaque conversation,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+gsd-build/get-shit-done,Développement piloté par spécifications,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+guofei9987/scikit-opt,"AG, essaims de particules, recuit simulé, colonies de fourmis",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+handcraftsman/geneticalgorithmswithpython,Code du livre « Genetic Algorithms with Python »,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+hansichan/soccerpredictor,Prédiction du nombre de buts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+hansipie/ecotokens,"Compression de sorties shell (Claude Code, Gemini CLI)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+hatchet-dev/hatchet,"Tâches de fond, agents, workflows durables",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+headroomlabs-ai/headroom,"Compresse logs, fichiers, sorties d'outils et morceaux RAG avant qu'ils n'atteignent le LLM",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+helicone/ai-gateway,Passerelle légère (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+herdrdev/herdr,Runtime pour agents de code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+hesreallyhim/awesome-claude-code,Ressources Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+hexo-ai/sia,Framework d'IA auto-améliorante,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+hicruben/world-cup-2026-prediction-model,Elo + Dixon-Coles + Monte Carlo,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+hkuds/autoagent,Framework d'agents entièrement automatisé,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+hmzbo/football-analytics-with-deep-learning-and-computer-vision,Deep learning sur vidéo,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+hoangp8/tokless,Configuration d'agent économe en 30 secondes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+hoyishian/footballwebscraper,Scraper FBref top 5 championnats,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+hudl/open-data,Données événementielles gratuites StatsBomb,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+hudl/statsbombpy,Client Python officiel StatsBomb,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+hugomathien/football-data-collection,Scraper de la base Kaggle « European Soccer »,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+human-agent-society/coral,Recherche autonome menée par des agents de code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+human-agent-society/reef,Infrastructure d'agents à amélioration continue,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+hyperopt/hyperopt,Optimisation bayésienne distribuée,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+hyunsungkim-ds/soccercpd,Détection de changements de formation (KDD 2022),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+icaros-usc/pyribs,Optimisation qualité-diversité (MAP-Elites),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+iflytek/astron-agent,Plateforme de workflows agentiques,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+ikislay/copium,Couche d'optimisation de contexte,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+impectapi/open-data,Données gratuites Impect,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+inker/draw,Simulateur de tirage Ligue des champions,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+inngest/inngest,Fonctions par étapes avec état,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+internlm/mindsearch,Moteur de recherche multi-agents (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+intrect-io/openswarm,Équipe de dev autonome sur Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+iofficeai/aionui,"Interface pour Claude Code, Codex, OpenCode…",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+irsooti/football-data-scraper,Scraper football-data.co.uk,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+iyadhkhalfallah/clauditor,Empêche Claude Code de griller le quota trop vite,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jakeyk11/football-data-analytics,Outils d'analyse et de visualisation,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+jalapic/engsoccerdata,Résultats anglais et européens 1871-2022 (R),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+janhq/jan,"Alternative à ChatGPT 100 % hors ligne, plus API distantes",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+janvanhaaren/soccer-analytics-resources,"Références, jeux de données, bibliothèques",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+jaseziv/worldfootballr,"Équivalent R : FBref, Transfermarkt, Understat",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+jayminwest/overstory,Orchestration avec adaptateurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+jaypokale/chisle,"Prose sobre, code minimal, contexte réduit",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jenetics/jenetics,Algorithmes génétiques en Java,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+jennyzzt/dgm,Darwin Gödel Machine : des agents qui réécrivent leur propre code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+jetbrains/koog,Agents JVM tolérants aux pannes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+jetqiao/football-prediction-skill,"Skill Claude : Dixon-Coles, value, backtest, rapport HTML",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+jfjelstul/worldcup,Base complète Coupe du monde H/F,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+jgravelle/jcodemunch-mcp,"Récupère un symbole précis, pas un fichier entier",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jgravelle/jdatamunch-mcp,MCP qui interroge des CSV/Excel au lieu de les charger entiers,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+jgravelle/jdocmunch-mcp,Exploration de documentation économe,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jia-gao/leanctx,Compression de prompts prête pour la production,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jihoo-kim/awesome-context-engineering,Bibliothèques d'ingénierie de contexte (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jim-schwoebel/awesome_ai_agents,1500+ ressources sur les agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+jogall/soccermatics,Analyse tracking/événements en R,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+johunsang/semble_rs,Recherche de code hybride BM25 + sémantique,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+jokecamp/footballdata,Données JSON/CSV variées,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+jonigl/mcp-client-for-ollama,Client MCP pour modèles Ollama,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+jrbadiabo/bet-on-sibyl,ML multi-sports,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+juliusbrussee/caveman,Skill + proxy pour des réponses ultra-concises (« why use many token when few token do trick »),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+justlovemaki/aiclient2api,Proxy multi-protocoles à partir de clients IA,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+juyterman1000/entroly,Réduction de contexte vérifiable et réversible,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+karpathy/autoresearch,Agents qui mènent seuls des expériences d'entraînement,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+karpathy/llm-council,"Plusieurs LLM répondent, se notent entre eux, puis un « président » synthétise. Parfait pour un pronostic par consensus",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+katanemo/plano,Proxy IA avec routage intelligent,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+kedro-org/kedro,Structure de projets data science reproductibles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+keras-team/keras-tuner,Réglage d'hyperparamètres pour Keras,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+kestra-io/kestra,Workflows déclaratifs en YAML,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+kgt24k/mcp-tool-search,Chargement paresseux des outils MCP,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+kingedwardi/second-opinion,Second avis via OpenRouter avec classement des modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+kingstar-omega/claude-token-optimizer,Skills économes pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+kittors/clirelay,Passerelle auto-hébergée pour les CLI de code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+kochlisgit/prophitbet-soccer-bets-predictor,Application ML de pronostics avec analyse de forme,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+kocoro-lab/shannon,Orchestration multi-agents pour la production,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+kseligga/qatar2022-elo-simulation,Simulation Monte Carlo par Elo,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+kulaxyz/self-learning-skills,Skill qui fait apprendre Claude Code de ses erreurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+kyegomez/swarms,Orchestration multi-agents « entreprise »,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+labring/fastgpt,Plateforme de connaissances + workflows,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+langchain-ai/langgraph,"Agents sous forme de graphes avec état, très utilisé en production",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+langgenius/dify,Workflows IA multi-modèles en visuel,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",False
+langroid/langroid,Programmation multi-agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+lap-platform/lap,Specs d'API compactes pour agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+larsmaurath/soccer-analytics-library,Bibliothèque de recherches publiées,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+leeroo-ai/mergoo,Fusionner plusieurs LLM experts (2024),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+letta-ai/letta,Agents à mémoire persistante qui apprennent (ex-MemGPT),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+liamculligan/football-data-scraper,Scraping vers MySQL,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+lidge-jun/opencodex,Proxy pour utiliser n'importe quel LLM dans Codex/Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+linshenkx/prompt-optimizer,Outil interactif d'amélioration de prompts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+ljvmiranda921/pyswarms,Optimisation par essaims de particules,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+lm-sys/fastchat,Plateforme de Chatbot Arena : comparer des modèles côte à côte,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+lm-sys/routellm,"Questions simples vers un petit modèle, dures vers un gros (2024)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+lobehub/awesome-rsi,Carte de la recherche sur l'auto-amélioration récursive,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+lobehub/lobehub,Espace d'agents multi-fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+lofcz/llmtornado,"Agents .NET, 30+ connecteurs",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+looplj/axonhub,"N'importe quel SDK vers 100+ LLM, avec bascule automatique",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+lsdefine/genericagent,Agent qui fait pousser son propre arbre de compétences,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+lsv/fifa-worldcup-2018,Données JSON Mondial 2018,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+lucasrosati/claude-code-memory-setup,Obsidian + graphe pour réduire les tokens par session,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+lucidrains/lion-pytorch,"Optimiseur Lion, découvert par recherche génétique",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+ludwig-ai/ludwig,Construire des modèles en low-code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+lupantech/agentflow,Optimisation de systèmes agentiques,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+luukhopman/football-logos,Logos des 25 premiers championnats UEFA,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+m3mons/flashscorescraper,Scraper Flashscore en ligne de commande,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+machina-sports/sports-skills,Skills d'agent IA pour données sportives en direct,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+maciek-roboblog/claude-code-usage-monitor,Suivi de consommation en temps réel avec prévisions,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+mage-ai/mage-ai,Pipelines ETL avec interface,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+manojmallick/sigmap,"Carte de signatures du code, 38 langages",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+manucabral/easysoccerdata,"Stats en direct (Sofascore, FBref, Promiedos)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+martineastwood/penaltyblog,"Modèles de buts (Poisson, Dixon-Coles), scraping, métriques","PyPI 27/10/2026 : v1.13.1, Python >=3.10, 48 dépendances déclarées",non déclarée sur PyPI : à confirmer sur le dépôt,Python 3.13 OK selon métadonnées ; non installé,TESTER,candidat challenger de l'agent Stats (Poisson de référence) dans une expérience chronologique,football,True
+martj42/international_results,Tous les matchs internationaux depuis 1872,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+massgen/massgen,Mise à l'échelle multi-agents en terminal,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+mastra-ai/mastra,Framework d'agents multi-modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",False
+masurii/pi-rtk-optimizer,Extension RTK pour Pi,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+matiasmascioto/awesome-soccer-analytics,Liste « awesome » de ressources,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+mauroandretta/aifootballpredictions,Prédiction Over 2.5 buts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+maxhalford/eaopt,Optimisation évolutionnaire en Go,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+maximhq/bifrost,"Passerelle haute performance, cache sémantique",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+meirtz/awesome-context-engineering,Panorama de l'ingénierie de contexte,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+mem0ai/mem0,Couche de mémoire pour agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+memtensor/memos,OS de mémoire auto-évolutif pour LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"autoevolutif, reduction-tokens",False
+messkan/prompt-cache,"Cache intelligent, −80 % de coûts annoncés",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+meta-llama/prompt-ops,Optimisation de prompts (Meta),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+metauto-ai/gptswarm,Agents auto-améliorants par RL et optimisation de prompts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+mhaythornthwaite/football_prediction_project,Pronostics Premier League via api-football,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+microsoft/agent-framework,"Construire, orchestrer et déployer des agents",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+microsoft/agent-framework-go,Agent Framework en Go,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+microsoft/autogen,Framework d'IA agentique de Microsoft,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+microsoft/flaml,AutoML rapide et léger,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+microsoft/llmlingua,"Compression de prompts de référence (Microsoft, jusqu'à 20x)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+microsoft/markitdown,"Convertit PDF, Word, Excel… en Markdown léger",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+microsoft/nni,AutoML et recherche d'architectures (archivé),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+microsoft/promptwizard,Optimisation de prompts pilotée par agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+microsoft/sammo,Optimisation structurée de prompts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+microsoft/skillopt,Entraîne des skills réutilisables en langage naturel,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+mikekelly/agentk,Agent modulaire auto-évolutif,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+mikhail-tokarev/greenbelt,Hooks de suivi de consommation,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+mindsdb/anton,Agent auto-améliorant (MindsDB),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+mintplex-labs/anything-llm,"Tout-en-un local : chat, RAG, agents, tous LLM",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+mirrowel/llm-api-key-proxy,"Une API pour tous les LLM, compatible OpenAI/Anthropic",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+mjhajharia/pydata21,Modèles bayésiens hiérarchiques PyMC,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+mksglu/context-mode,Isole les sorties d'outils hors du contexte de Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+ml-kuleuven/etsy,Synchronisation événements/tracking,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+ml-kuleuven/soccer_xg,Entraîner et analyser des modèles xG,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+ml-kuleuven/socceraction,"Valorisation des actions (VAEP, xT) sur données événementielles","PyPI 27/10/2026 : v1.5.3, Python >=3.9,<3.13",MIT (déclarée sur PyPI),incompatible avec Python 3.13 de cet environnement,RÉFÉRENCE,"utile pour l'analyse tactique plus tard, mais contrainte de version Python",football,True
+mlflow/mlflow,Suivi d'expériences,"PyPI 27/10/2026 : v3.17.2, 60 dépendances déclarées",Apache-2.0 (classifieur PyPI),lourd ; le registre JSONL de MEGATRON couvre le besoin actuel,RÉFÉRENCE,à reconsidérer si le nombre d'expériences dépasse ce qu'un journal JSONL gère bien,autoevolutif,True
+mnfst/llm-gateway,Passerelle LLM open source,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+moazbuilds/codemachine-cli,Agents de code en workflows reproductibles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+modelscope/agentevolver,Système d'agents auto-évolutifs efficace,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+monomania/foot,Collecte + prédiction automatisée (Go),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+morvanzhou/evolutionary-algorithm,Tutoriels d'algorithmes évolutionnaires,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+mostafamoq/tooner,Hook Claude Code qui convertit le JSON en TOON,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+mozilla-ai/any-llm,Interface unique (Mozilla),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+mozilla-ai/otari,Passerelle compatible OpenAI (Mozilla),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+mradovic38/football-analysis,Analyse de performance à partir de vidéos,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+msoczi/football_predictions,Championnats européens,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+mudler/localai,Remplaçant local de l'API OpenAI,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+mufeedvh/code2prompt,Code → prompt unique avec arborescence,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+musistudio/claude-code-router,Faire tourner Claude Code sur d'autres modèles selon la tâche,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration, reduction-tokens",True
+mvschwarz/openrig,Réseaux d'agents persistants,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+n8n-io/n8n,Automatisation avec nœuds pour tous les LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",True
+nadimtuhin/claude-token-optimizer,Réduit ce que Claude Code charge au démarrage,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+nadirrouter/nadirclaw,Routeur et optimiseur de coûts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+nanako0129/pilotfish,"Le gros modèle planifie, les modèles moins chers exécutent",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration, reduction-tokens",False
+netflix/maestro,Orchestrateur de Netflix,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+netflix/metaflow,Systèmes ML/IA de bout en bout,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+nickcirv/engram,Colonne vertébrale de contexte multi-IDE,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+nickpadd/europeanfootballleaguepredictor,Probabilités pour les championnats européens,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+nirdiamant/agents-towards-production,Tutoriels d'agents en production,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+nirdiamant/genai_agents,50+ tutoriels d'agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+nnaisense/evotorch,Calcul évolutionnaire sur PyTorch,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+nomic-ai/gpt4all,LLM locaux sur tout appareil (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+nousresearch/hermes-agent-self-evolution,Auto-amélioration évolutive de skills et prompts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+nvidia-nemo/switchyard,Routage du trafic entre modèles et fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, reduction-tokens",False
+octosport/octopy,"Poisson, méthode de Shin (cotes), etc.",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+ofirmg/football2vec,Embeddings de joueurs et d'actions,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+ojuschugh1/sqz,Compresse la sortie des outils avant le modèle,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+oliveirabruno01/babyagi-asi,BabyAGI auto-améliorant,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+ollama/ollama,"Lancer des modèles open source en local (Qwen, DeepSeek, Gemma…)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+omarbadrani/football-scraper-pro,Scraping + analyse (en français),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+omnigent-ai/omnigent,Méta-harnais pour orchestrer Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+online-ml/river,Apprentissage en ligne : le modèle se met à jour après chaque match et détecte les changements de tendance,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+ooples/token-optimizer-mcp,Mesure les économies de tokens par agent,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+open-compress/claw-compactor,Pipeline de compression réversible en 14 étapes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+open-mercato/cezar,"Orchestrateur de Claude Code, Codex, OpenCode",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+open-multi-agent/open-multi-agent,Runtime d'agents avec validations durables,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+open-webui/open-webui,"Interface web auto-hébergée pour Ollama, OpenAI, Claude… avec comparaison de modèles",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+openai/codex-plugin-cc,"Déléguer à Codex depuis Claude Code (relecture, tâches)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",False
+openai/openai-agents-python,SDK d'agents compatible avec d'autres fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",False
+openai/swarm,Orchestration multi-agents légère (éducatif),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+openai/tiktoken,Compter les tokens d'un texte,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+openfootball/england,Données Angleterre,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+openfootball/football.json,Calendriers et résultats des grands championnats en JSON,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+openfootball/openfootball.github.io,Site du projet football.db,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+openfootball/worldcup,Coupes du monde (format Football.TXT),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+openfootball/worldcup.json,Coupes du monde en JSON,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+openfootmanager/openfootmanager,Jeu de gestion open source,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+optuna/optuna,Optimisation d'hyperparamètres pour les expériences,"PyPI 27/10/2026 : v5.0.0, Python >=3.9",MIT (classifieur PyPI),Python 3.13 OK selon métadonnées,RÉFÉRENCE,prématuré : aucun modèle ni jeu de backtest à optimiser pour l'instant,autoevolutif,True
+oraios/serena,"MCP de recherche sémantique : lit une fonction, pas tout le fichier",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+orchestratorinc/agent-orchestrator,"Orchestrateur pour Claude Code, Codex et 30+ agents",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+oriveo/oriveo,"Client multi-modèles mobile, avec tes propres clés",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+os-copilot/os-copilot,Agent auto-améliorant intégré à l'OS,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+oseymour/scraperfc,"Scraper multi-sources (Sofascore, FBref, Understat…)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+osvaldomx/underdata,Client Understat rapide,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+othmanadi/planning-with-files,Planification persistante dans des fichiers,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"orchestration, reduction-tokens",False
+oxygen-fragment/claude-modular,Framework modulaire avec optimisation de tokens,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+paperclipai/paperclip,Gestion d'agents au travail,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+paradevai/paradev,IDE pour 100+ agents en parallèle,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+paritok-official/paritok-4b-v1,Passerelle de compression non destructive,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+peter-ch/multineat,Bibliothèque NEAT portable,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+portkey-ai/gateway,Passerelle rapide vers 1 600+ LLM avec garde-fous,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+prefecthq/prefect,Pipelines Python simples et résilients (idéal collecte quotidienne),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+preset-io/agor,Espace multijoueur humains + agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+primaryobjects/ai-programmer,Algorithme génétique qui écrit des programmes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+primeintellect-ai/prime-agent,Agent de code auto-améliorant pour tâches longues,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+probberechts/soccerdata,"Collecte de données (FBref, Understat, ClubElo, etc.)","PyPI 27/10/2026 : v2026.43.0, Python >=3.10,<3.15",Apache-2.0 (déclarée sur PyPI) ; respecter les CGU des sites sources,Python 3.13 OK selon métadonnées ; non installé,TESTER,source de xG historiques nécessaire pour alimenter l'agent Stats et le backtest,football,True
+pseudo-r/public-sofascore-api,Doc non officielle des endpoints Sofascore,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+pseudo-r/sportly,SDK multi-sources (ESPN…),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+pskoett/self-improving-agent,"Capture des leçons, erreurs et demandes",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+pydantic/pydantic-ai,Agents typés multi-fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",True
+pysport/kloppy,Standardise les données événements/tracking de tous fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+quantaalpha/quantaalpha,"Découverte évolutive de facteurs prédictifs (finance, transposable aux features football)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+quantumnous/new-api,Hub unifié d'agrégation et de distribution de modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+ratel-ai/ratel,"Évite la surcharge d'outils, −80 % de tokens annoncés",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+ravinperera/ai-token-efficiency-playbook,Instructions et workflows économes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+ray-project/ray,"Calcul distribué, avec Ray Tune (dont Population-Based Training)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+rcortx/kiwiq,Agents définis en JSON,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+redhat-et/ripwire,« ripgrep » du contexte IA (CLI + MCP),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+rezarahiminia/free-api-worldcup2022,API gratuite Mondial 2022,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+rjtavares/football-crunching,Analyses et datasets,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+roberttlange/evosax,Stratégies d'évolution en JAX,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+roboflow/sports,Détection et suivi des joueurs (référence du domaine),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+rohitg00/pro-workflow,Claude Code apprend de tes corrections,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+ronyka77/soccerpredictor_byrichardszita,Pipeline ML avancé,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+router-for-me/cliproxyapi,Transforme des abonnements CLI en API,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+rtk-ai/rtk,"Proxy CLI qui compacte la sortie des commandes courantes (git, tests, ls…) : −60 à 90 % annoncés",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+ruvnet/ruflo,Essaims d'agents coordonnés,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+rvdmaazen/fivethirtyeight-soccer-predictions,Analyse des pronostics FiveThirtyEight,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+ryanscodes/dixon-coles-football-predictor,Dixon-Coles en notebook,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+ryo-n7/soccer_ggplots,Visualisations de matchs et championnats,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+s1m0n38/soccerapi,Scraper de cotes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+sakanaai/ai-scientist,Découverte scientifique automatisée de bout en bout,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+sakanaai/evolutionary-model-merge,Fusion de modèles optimisée par évolution,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+sakanaai/shinkaevolve,Évolution de programmes économe en essais,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+salesforceairesearch/promptomatix,Optimisation automatique de prompts,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+salikfaisal/club_soccer_season_projections,Projections de saison par xG,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+salimt/football-datasets,Datalake de 93 000 joueurs Transfermarkt,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+salutaris91/llm-council-mcp-server,LLM Council de Karpathy en serveur MCP pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+sashml/betalytics,Framework data science pour paris,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+scikit-optimize/scikit-optimize,Optimisation séquentielle (archivé),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+sdcb/chats,Interface + passerelle LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+seemseam/claude_codex_bridge,"Espace CLI mêlant Codex, Claude, Gemini, Kimi, Qwen…",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+selfimproving-agent/awesome-self-improving-agents,Auto-amélioration des systèmes agentiques,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+sepandhaghighi/wc2026,Benchmark LLM Mondial 2026,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+shanraisshan/claude-code-best-practice,Bonnes pratiques Claude Code (dont gestion du contexte),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+shengranhu/adas,Conception automatique de systèmes d'agents (ICLR 2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+simonw/llm,"Tous les LLM en ligne de commande, avec plugins",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+skibidiskib/ai-codex,Index compact du code pour assistants,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+skillcorner/opendata,10 matchs de données de tracking,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+slopus/happy,"Piloter Claude, Codex et Grok depuis une app",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",False
+smg-project/smg,Compatible API OpenAI et Anthropic,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+soccernet/sn-gamestate,Reconstitution de l'état du jeu depuis la vidéo,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+solaceproducts/solace-agent-mesh,Maillage d'agents événementiel,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+songquanpeng/one-api,"Gestion et distribution d'API (OpenAI, Claude, Gemini, DeepSeek…)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+sportdb/sport.db,Base sportive ouverte en ligne de commande,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+spotify/luigi,Pipelines batch avec dépendances,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+ssusnic/machine-learning-flappy-bird,Réseau + algorithme génétique (démo),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+stablyai/orca,Piloter une flotte d'agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+stanfordnlp/dspy,Programmer les LLM et optimiser automatiquement leurs prompts sur des exemples,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+stellarlinkco/myclaude,Workflow Claude Code + Codex + Gemini + OpenCode,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,"multi-llm, orchestration",False
+strands-agents/harness-sdk,SDK d'agents en production (AWS),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+swayoleg/football-catalogs,"Catalogue de datasets, dépôts et scrapers",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tadeq/flashscore-scraper,Historique Flashscore,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tanamsethi31/footymodel,"Dixon-Coles + compositions, validation walk-forward",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tanjt107/football-prediction,Modèle de notation multiplicatif,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tarun7r/premier-league-api,Client API Premier League,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tbphp/gpt-load,Multi-canaux et rotation de clés API,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+temporalio/temporal,"Exécution durable, reprise après panne",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+tensorzero/tensorzero,Passerelle + observabilité + évaluation + expériences A/B entre modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,True
+the-open-engine/zeroshot,Méta-harnais : workflows et relecteurs sur mesure,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+theagentrouter/agent-router,Accès unifié bâti sur Envoy,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+thedotmack/claude-mem,Mémoire entre sessions : moins de contexte à répéter,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+theopenco/llmgateway,Routage et analyse des requêtes multi-fournisseurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+thg-muc/tip-genius,Pronostics par LLM + cotes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+thu-nics/c2c,Communication directe entre caches de modèles (ICLR 2026),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+tintinweb/pi-subagents,Sous-agents et workflows parallèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+togethercomputer/moa,Mixture-of-Agents : combiner plusieurs modèles open source (2025),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+tom-draper/pldashboard,Tableau de bord Premier League,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+toon-format/toon,TOON : alternative compacte au JSON pour les tableaux. Idéal pour envoyer des stats de matchs à un LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+topoteretes/cognee,Plateforme de mémoire IA,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+torvaney/ggsoccer,Terrains pour ggplot2 (R),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+trevorstephens/gplearn,Régression symbolique : découvre des formules lisibles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,True
+triggerdotdev/trigger.dev,Tâches de fond et agents durables,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+tryolabs/soccer-video-analytics,Possession calculée automatiquement,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tunjayoff/sofascore_scraper,Plateforme Sofascore auto-hébergée,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+turingism/worldcup-predictor,Moteur de probabilités auto-calibré,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+tyktechnologies/tyk,"Passerelle API et IA (REST, gRPC, MCP)",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+uber-research/deep-neuroevolution,Neuroévolution profonde (Uber AI),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+umitkaanusta/mactahminbotu,Bot de pronostics par régression de Poisson,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+unclecode/crawl4ai,Scraping web en Markdown propre pour LLM (ex. pages d'avant-match),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,True
+unravelsports/fast-forward,Chargement rapide (Rust) des données de position,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+unravelsports/unravelsports,Graphes et ML sur données de position,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+upstash/semantic-cache,Cache par similarité (2024),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+ussoccerfederation/ussf_ssac_23_soccer_gnn,Réseaux de neurones sur graphes (Sloan 2023),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+vdutts7/skills-not-mcp,Skills + shell au lieu de MCP,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+vectifyai/pageindex,Index de documents pour RAG sans vecteurs,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+vercel/ai,AI SDK : tous les fournisseurs en TS/JS,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+vercel/workflow,SDK de workflows durables,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+victorstdev/sofascore-api-stats,Collecte de matchs via Sofascore,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+viktoraxelsen/memskill,Skills de mémoire qui évoluent (NeurIPS 2026),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+vllm-project/vllm,Serveur haute performance compatible OpenAI,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+volcengine/openviking,Base de contexte auto-évolutive pour agents,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+voltagent/awesome-claude-code-subagents,100+ sous-agents spécialisés prêts à l'emploi,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+vrsen/agency-swarm,Orchestration multi-agents fiable,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+wandb/wandb,Suivi d'expériences et balayages d'hyperparamètres,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+wanshuiyin/auto-claude-code-research-in-sleep,Skills Claude Code pour la recherche autonome la nuit,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+wcesarpsv/flashscorerepo,Cotes et matchs Flashscore,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+windmill-labs/windmill,"Scripts, workflows et agents auto-hébergés",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+withqwerty/football-docs,"Doc des fournisseurs de données, pensée pour agents IA",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+withqwerty/nutmeg,Boîte à outils d'analyse football pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+withqwerty/open-football,Carte des données football ouvertes et des scrapers,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+withqwerty/reep,Correspondance des identifiants joueurs/équipes entre 25+ sources,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+wkqdzkd/awesome-reliable-self-evolving-agents,Agents auto-évolutifs fiables,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+wlrwx/football-engine,Dixon-Coles + Monte Carlo automatisé par GitHub Actions,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+woongbinchoi/english-premier-league-prediction,ML Premier League,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+wshobson/agents,Marketplace de plugins/agents multi-outils,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+wzk1015/worldcuparena,Benchmark des LLM sur pronostics réels,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+xgabora/club-football-match-data,"Résultats, stats, cotes, 27 pays",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,True
+xviniette/flappylearning,Démo pédagogique : Flappy Bird par neuroévolution,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+xzhangfox/football-prediction-by-bayesian-method,Modèle bayésien (R),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+yamadashy/repomix,Empaquette un dépôt (avec option de compression),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+yeachan-heo/oh-my-claudecode,Orchestration multi-agents en équipe pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,True
+yixuuuan/pm-watcher,Calibration des marchés de prédiction,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+yohey-w/multi-agent-shogun,Tâches parallèles pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+yonk-labs/abe,Débat multi-modèles et second avis,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+yttrium400/reducethemtokens,Squelette compact d'un dépôt,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+yvgude/lean-ctx,Passerelle qui ne garde que le contexte utile,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+zdk/lowfat,Allège la sortie des commandes,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+zekda96/football-scrapers,"WhoScored, FBref, Sofascore",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False
+zenml-io/zenml,"MLOps, des pipelines aux agents",aucune,non vérifiée,non vérifiée,À VÉRIFIER,,orchestration,False
+zhnt/loushang,Harnais de code avec orchestration multi-modèles,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,multi-llm,False
+zilliztech/claude-context,Recherche de code MCP pour Claude Code,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+zilliztech/gptcache,Cache sémantique pour LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+zipengwu365/tomc,Compression de contexte et mémoire de tâches,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,reduction-tokens,False
+zou-group/textgrad,« Gradients textuels » pour améliorer un système LLM,aucune,non vérifiée,non vérifiée,À VÉRIFIER,,autoevolutif,False
+zoxexivo/open-football,Moteur type Football Manager (Rust),aucune,non vérifiée,non vérifiée,À VÉRIFIER,,football,False

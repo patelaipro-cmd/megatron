@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "commit": "53d78bd",
+  "date": "2026-10-27T18:54:11+00:00",
+  "resume": "Socle MEGATRON CORE posé : mémoire, checkpoint, registre de prévisions, agents/fusion, registre des dépôts. Aucune donnée réelle ni agent LLM branché.",
+  "prochaines_actions": [
+    "Tester soccerdata sur une ligue et 3 saisons chronologiques (dev/val/test)",
+    "Backtest de l'agent Stats Poisson dans le registre (Brier, log-loss)",
+    "Expérience Dixon-Coles (penaltyblog) vs Poisson après vérification de licence",
+    "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie"
+  ],
+  "blocages": [
+    "Aucune clé Gemini/DeepSeek/Qwen/Claude API",
+    "github.com bloqué par le proxy de l'environnement cloud"
+  ],
+  "decisions_actives": [
+    {
+      "cle": "stack",
+      "valeur": "Python stdlib uniquement ; bibliothèques ajoutées une par une via expérience",
+      "id": "acea8671c357"
+    },
+    {
+      "cle": "stockage_memoire",
+      "valeur": "JSONL append-only versionné dans git, remplacement par chaînage supersedes",
+      "id": "4d8d35390877"
+    },
+    {
+      "cle": "anti_fuite",
+      "valeur": "prévisions immuables, enregistrées avant coup d'envoi, data_cutoff < coup d'envoi",
+      "id": "2daaba5c70ae"
+    },
+    {
+      "cle": "modele_reference",
+      "valeur": "agent Stats Poisson 1X2 à partir de xG pré-match",
+      "id": "8ee5ca9a1aec"
+    },
+    {
+      "cle": "fusion",
+      "valeur": "Gemini + DeepSeek + Stats ; mode dégradé documenté si un agent manque ; désaccord > 15 pts à vérifier",
+      "id": "2595278585f7"
+    },
+    {
+      "cle": "metriques",
+      "valeur": "Brier multiclasse, log-loss, calibration par tranches",
+      "id": "9aee9cf8fbd1"
+    }
+  ],
+  "contradictions": {},
+  "effectifs": {
+    "travail": 1,
+    "decisions": 6,
+    "football": 0,
+    "performances": 0,
+    "technique": 4
+  },
+  "id": "ckpt-8e6a5e41e9"
+}
