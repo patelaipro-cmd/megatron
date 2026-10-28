@@ -32,6 +32,7 @@ class AgentResponse:
     tokens_sortie: int | None = None
     tokens_mesure: str = "indisponible"  # mesure | estimation | indisponible
     raison: str = ""
+    version: str = ""  # modèle exact ayant produit l'avis (ex. poisson-v4, gemini/gemini-flash-lite-latest)
 
 
 class Agent:
@@ -92,7 +93,8 @@ class LLMAgent(Agent):
         except (ValueError, KeyError, TypeError) as exc:
             return AgentResponse(status="erreur", raison=f"réponse non conforme : {exc}", **base)
         fav = max(probs, key=probs.get)
-        return AgentResponse(status="ok", probs=probs, conclusion=f"[{rep.model}] {fav} ({probs[fav]:.0%})",
+        return AgentResponse(status="ok", probs=probs, version=rep.model,
+                             conclusion=f"[{rep.model}] {fav} ({probs[fav]:.0%})",
                              preuves=[str(out.get("raison", ""))], sources=list(out.get("sources") or [rep.model]),
                              incertitudes=["avis de modèle de langage, non calibré"], **base)
 
@@ -171,7 +173,7 @@ class StatsAgent(Agent):
     def _response(self, probs, task, *, version, preuves, incertitudes, sources) -> AgentResponse:
         fav = max(probs, key=probs.get)
         return AgentResponse(
-            agent=self.name, status="ok", probs=probs,
+            agent=self.name, status="ok", probs=probs, version=version,
             conclusion=f"[{version}] issue la plus probable {fav} ({probs[fav]:.0%})",
             preuves=preuves,
             hypotheses=["buts indépendants, loi de Poisson"],

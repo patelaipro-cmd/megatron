@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm, systeme
+from . import backtest, checkpoint, data, inventory, llm, suivi, systeme
 from .agents import fuse
 from .store import MemoryStore
 
@@ -26,6 +26,14 @@ def main(argv: list[str] | None = None) -> int:
     lp.add_argument("--fournisseur", default="gemini", choices=sorted(llm.PROVIDERS))
     f = sub.add_parser("fusion", help="Méthode de Fusion sur un match (JSON)")
     f.add_argument("tache", help='ex. {"match_id": "x", "xg_home": 1.6, "xg_away": 0.9}')
+    pv = sub.add_parser("prevoir", help="fusion puis prévision immuable dans le registre, avant le coup d'envoi")
+    pv.add_argument("tache", help='ex. {"match_id": "F1:2026-11-01:Lens-Lille", "division": "F1", "home": "Lens", "away": "Lille", "date": "2026-11-01"}')
+    pv.add_argument("--coup-envoi", required=True, help="date-heure avec fuseau, ex. 2026-11-01T20:00:00+00:00")
+    rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
+    rs.add_argument("match_id")
+    rs.add_argument("score", help="H, D, A ou score 2-1")
+    rs.add_argument("--source", required=True, help="provenance du résultat, ex. URL")
+    sub.add_parser("bilan", help="scores par version, matchs communs, résultats à saisir")
     sub.add_parser("systeme", help="test système de bout en bout sur un match fictif (Fusion + registre)")
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
     b.add_argument("--division", default="F1")
@@ -69,6 +77,18 @@ def main(argv: list[str] | None = None) -> int:
         result = fuse(json.loads(args.tache))
         result["reponses"] = [asdict(r) for r in result["reponses"]]
         print(json.dumps(result, indent=2, ensure_ascii=False))
+    elif args.cmd in ("prevoir", "resultat"):
+        try:
+            if args.cmd == "prevoir":
+                out = suivi.prevoir(MemoryStore(args.memoire), json.loads(args.tache), args.coup_envoi)
+            else:
+                out = suivi.resultat(MemoryStore(args.memoire), args.match_id, args.score, source=args.source).value
+        except ValueError as exc:  # anti-fuite, doublon, saisie invalide : rien n'est écrit
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
+    elif args.cmd == "bilan":
+        print(json.dumps(suivi.bilan(MemoryStore(args.memoire)), indent=2, ensure_ascii=False))
     elif args.cmd == "systeme":
         rapport = systeme.run()
         print(json.dumps(rapport, indent=2, ensure_ascii=False))
