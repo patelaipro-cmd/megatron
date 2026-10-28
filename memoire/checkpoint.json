@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
-  "commit": "94bfe1e",
-  "date": "2026-10-28T16:46:11+00:00",
-  "resume": "Données étendues : 2000-2026 (45 559 matchs, xgabora) + saison 2026/27 jusqu'au 20/09 (151 matchs, openfootball, noms reliés et vérifiés sur 1 850 matchs communs).",
+  "commit": "59264dc",
+  "date": "2026-10-28T17:13:51+00:00",
+  "resume": "EXP-005 : poisson-v4 confirmé sur 2008-2020 (5/5 ligues, 12/12 saisons, −0,0039 log-loss [−0,0046 ; −0,0032]).",
   "prochaines_actions": [
-    "Backtests sur plus de saisons (--donnees complet) pour revalider poisson-v4 hors 2022-2026, protocole commité avant",
+    "Réajuster demi-vie / rétrécissement / w sur 2008-2020 (plus de données) puis tester sur 2022-2026, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
   ],
@@ -90,8 +90,8 @@
     "travail": 2,
     "decisions": 14,
     "football": 1,
-    "performances": 3,
+    "performances": 4,
     "technique": 5
   },
-  "id": "ckpt-dc683bbb60"
+  "id": "ckpt-5344bd6193"
 }
