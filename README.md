@@ -9,6 +9,8 @@ registre de prévisions anti-fuite temporelle, interface d'agents et Méthode de
 ```bash
 python -m megatron reprise      # reprendre là où la dernière session s'est arrêtée
 python -m megatron inventaire   # registre d'évaluation des dépôts (docs/registre-depots.md)
+python -m megatron llm statut   # fournisseurs LLM : clé présente, réseau ouvert (pip install -r requirements-llm.txt)
+python -m megatron llm test --fournisseur gemini
 python -m megatron fusion '{"match_id": "demo", "xg_home": 1.6, "xg_away": 0.9}'
 python -m megatron backtest --division F1   # backtest chronologique (EXP-001)
 python -m unittest discover -s tests -t . -v

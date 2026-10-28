@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory
+from . import backtest, checkpoint, data, inventory, llm
 from .agents import fuse
 from .store import MemoryStore
 
@@ -21,6 +21,9 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="cmd", required=True)
     sub.add_parser("reprise", help="affiche le dernier checkpoint")
     sub.add_parser("inventaire", help="régénère docs/registre-depots.md")
+    lp = sub.add_parser("llm", help="connexion LLM : statut des fournisseurs ou appel de test")
+    lp.add_argument("action", choices=["statut", "test"])
+    lp.add_argument("--fournisseur", default="gemini", choices=sorted(llm.PROVIDERS))
     f = sub.add_parser("fusion", help="Méthode de Fusion sur un match (JSON)")
     f.add_argument("tache", help='ex. {"match_id": "x", "xg_home": 1.6, "xg_away": 0.9}')
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
@@ -53,6 +56,13 @@ def main(argv: list[str] | None = None) -> int:
             writer.writeheader()
             writer.writerows(rows)
         print(f"{sum(counts.values())} entrées, {len(rows)} dépôts uniques")
+    elif args.cmd == "llm":
+        if args.action == "statut":
+            print(json.dumps(llm.status(), indent=2, ensure_ascii=False))
+        else:
+            rep = llm.complete(args.fournisseur, [{"role": "user", "content": "Réponds juste : ok"}],
+                               max_tokens=5, use_cache=False)
+            print(json.dumps(asdict(rep), indent=2, ensure_ascii=False))
     elif args.cmd == "fusion":
         result = fuse(json.loads(args.tache))
         result["reponses"] = [asdict(r) for r in result["reponses"]]
