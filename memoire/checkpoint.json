@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
-  "commit": "1626bbb",
-  "date": "2026-10-28T16:36:52+00:00",
-  "resume": "EXP-004 promue : poisson-v4 (25 % de tirs cadrés convertis) bat poisson-v1 sur le test 5 ligues (−0,0042 log-loss, IC [−0,0060 ; −0,0026]) ; retard sur le bookmaker 0,029 → 0,025.",
+  "commit": "701636f",
+  "date": "2026-10-28T16:39:30+00:00",
+  "resume": "Boucle de suivi en ligne de commande : prevoir (fusion + avis de chaque agent, immuables, anti-fuite) → resultat → bilan. Testée sur fictif uniquement ; le registre réel est vide.",
   "prochaines_actions": [
-    "Étape infra suivante : à choisir (pas d'analyse de vrais matchs)",
+    "Rafraîchir data/ avant tout usage réel : dernier match 03/09/2026 (scripts/extraire_donnees.py sur le Matches.csv de xgabora)",
     "Relancer python -m megatron systeme une fois GEMINI_API_KEY dans l'env (mode avec Gemini)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
   ],
@@ -83,5 +83,5 @@
     "performances": 3,
     "technique": 5
   },
-  "id": "ckpt-e824ecab22"
+  "id": "ckpt-302e652750"
 }

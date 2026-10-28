@@ -391,3 +391,57 @@ class ProxyTirsTests(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             models.fit_maher(self.history, self.day, half_life=90, shrink=3, dixon_coles=True, proxy_weight=0.5)
+
+
+class SuiviTests(TmpStore):
+    """Boucle prévoir → résultat → bilan, sur un historique fictif."""
+
+    def setUp(self):
+        super().setUp()
+        from datetime import datetime, timezone
+
+        from megatron import systeme
+
+        self.csv = Path(self._tmp.name) / "fictif.csv"
+        last = systeme.synthetic_history(self.csv)
+        self.kickoff = datetime(last.year, last.month, last.day, 15, tzinfo=timezone.utc) + timedelta(days=7)
+        self.task = {"match_id": "FICTIF:1", "division": "FICTIF", "home": "Alpha FC", "away": "Zeta Rovers",
+                     "date": self.kickoff.date().isoformat()}
+        self.agents = [StatsAgent(self.csv), LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")]
+
+    def test_full_loop(self):
+        from megatron import suivi
+
+        before = self.kickoff - timedelta(hours=3)
+        out = suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
+        self.assertEqual(out["enregistre"], ["fusion-v0:stats", "agent:stats:poisson-v4"])
+        self.assertIn("gemini", out["indisponibles"])
+        with self.assertRaises(ValueError):  # pas de réécriture
+            suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
+        with self.assertRaises(TemporalLeakError):
+            suivi.resultat(self.store, "FICTIF:1", "2-0", source="t", observed_at=before)
+        suivi.resultat(self.store, "FICTIF:1", "2-0", source="t", observed_at=self.kickoff + timedelta(hours=2))
+        b = suivi.bilan(self.store, now=self.kickoff + timedelta(days=1))
+        self.assertEqual(b["versions"]["fusion-v0:stats"]["n"], 1)
+        self.assertEqual(b["communs"]["n"], 1)
+        self.assertEqual(b["resultats_a_saisir"], [])
+
+    def test_refused_after_kickoff_writes_nothing(self):
+        from megatron import suivi
+
+        with self.assertRaises(ValueError):
+            suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents,
+                          now=self.kickoff + timedelta(minutes=1))
+        self.assertEqual(self.store.active("performances"), [])
+
+    def test_pending_results_listed(self):
+        from megatron import suivi
+
+        suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=self.kickoff - timedelta(hours=1))
+        b = suivi.bilan(self.store, now=self.kickoff + timedelta(days=1))
+        self.assertEqual(b["resultats_a_saisir"], ["FICTIF:1"])
+
+    def test_outcome_parsing(self):
+        from megatron import suivi
+
+        self.assertEqual([suivi.outcome_of(x) for x in ("2-1", "0:0", "1-3", "d")], ["H", "D", "A", "D"])
