@@ -13,6 +13,7 @@ python -m megatron llm statut   # fournisseurs LLM : clé présente, réseau ouv
 python -m megatron llm test --fournisseur gemini
 scripts/llama_local.sh            # modèle local sans API (llama.cpp + Qwen3-4B, CPU) ; puis --fournisseur llamacpp
 python -m megatron fusion '{"match_id": "demo", "xg_home": 1.6, "xg_away": 0.9}'
+python -m megatron systeme     # test système sur un match FICTIF (Fusion + registre anti-fuite), mode dégradé sans clé
 python -m megatron backtest --division F1   # backtest chronologique (EXP-001)
 python -m unittest discover -s tests -t . -v
 ```

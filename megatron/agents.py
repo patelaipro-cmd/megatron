@@ -11,6 +11,7 @@ import json
 import math
 import os
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from .ledger import OUTCOMES
 
@@ -122,6 +123,9 @@ class StatsAgent(Agent):
     name = "stats"
     HALF_LIFE, SHRINK = 90.0, 3.0  # figés par EXP-001 sur la Ligue 1 2022/23
 
+    def __init__(self, csv_path=None):
+        self.csv_path = csv_path  # None = data/matches_top5_2020-2026.csv
+
     def ask(self, task: dict) -> AgentResponse:
         if "xg_home" in task or "xg_away" in task:
             return self._from_xg(task)
@@ -136,17 +140,20 @@ class StatsAgent(Agent):
         from . import data, models
 
         day = date.fromisoformat(task["date"])
-        history = [m for m in data.load(divisions={task["division"]}) if m.day < day]
+        path = self.csv_path or data.DEFAULT_CSV
+        history = [m for m in data.load(path, divisions={task["division"]}) if m.day < day]
+        if not history:
+            raise ValueError(f"aucun match de {task['division']} avant le {day}")
         fit = models.fit_maher(history, day, half_life=self.HALF_LIFE, shrink=self.SHRINK)
         lh, la = fit.rates(task["home"], task["away"])
         unknown = [t for t in (task["home"], task["away"]) if t not in fit.attack]
         return self._response(
             poisson_1x2(lh, la), task, version="poisson-v1",
             preuves=[f"{len(history)} matchs antérieurs au {day}, dernier le "
-                     f"{max(m.day for m in history) if history else 'aucun'}",
+                     f"{max(m.day for m in history)}",
                      f"buts attendus {lh:.2f} - {la:.2f}"],
             incertitudes=["équipes sans historique traitées comme moyennes : " + ", ".join(unknown)] if unknown else [],
-            sources=["data/matches_top5_2020-2026.csv"],
+            sources=[f"data/{Path(path).name}"],
         )
 
     def _from_xg(self, task: dict) -> AgentResponse:
