@@ -445,3 +445,29 @@ class SuiviTests(TmpStore):
         from megatron import suivi
 
         self.assertEqual([suivi.outcome_of(x) for x in ("2-1", "0:0", "1-3", "d")], ["H", "D", "A", "D"])
+
+
+class DonneesCompletesTests(unittest.TestCase):
+    def test_full_history_contains_experiment_extract(self):
+        from megatron import data
+
+        full = {m.match_id: m for m in data.load(data.CURRENT[0])}
+        exp = data.load()
+        self.assertTrue(all(full[m.match_id] == m for m in exp))
+        self.assertEqual(min(m.day for m in full.values()).year, 2000)
+
+    def test_current_season_complement_merges_without_duplicates(self):
+        from megatron import data
+
+        base, extra = (data.load(p) for p in data.CURRENT)
+        self.assertGreater(min(m.day for m in extra), max(m.day for m in base))
+        self.assertTrue(all(m.odds is None and m.shots is None for m in extra))
+        teams = {(m.division, t) for m in base for t in (m.home, m.away)}
+        self.assertTrue(all((m.division, t) in teams for m in extra for t in (m.home, m.away)))
+        self.assertEqual(len(data.load(data.CURRENT)), len(base) + len(extra))
+
+    def test_duplicate_files_refused(self):
+        from megatron import data
+
+        with self.assertRaises(ValueError):
+            data.load([data.DEFAULT_CSV, data.DEFAULT_CSV])

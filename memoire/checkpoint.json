@@ -1,17 +1,17 @@
 {
   "version": "0.1.0",
-  "commit": "701636f",
-  "date": "2026-10-28T16:39:30+00:00",
-  "resume": "Boucle de suivi en ligne de commande : prevoir (fusion + avis de chaque agent, immuables, anti-fuite) → resultat → bilan. Testée sur fictif uniquement ; le registre réel est vide.",
+  "commit": "94bfe1e",
+  "date": "2026-10-28T16:46:11+00:00",
+  "resume": "Données étendues : 2000-2026 (45 559 matchs, xgabora) + saison 2026/27 jusqu'au 20/09 (151 matchs, openfootball, noms reliés et vérifiés sur 1 850 matchs communs).",
   "prochaines_actions": [
-    "Rafraîchir data/ avant tout usage réel : dernier match 03/09/2026 (scripts/extraire_donnees.py sur le Matches.csv de xgabora)",
-    "Relancer python -m megatron systeme une fois GEMINI_API_KEY dans l'env (mode avec Gemini)",
+    "Backtests sur plus de saisons (--donnees complet) pour revalider poisson-v4 hors 2022-2026, protocole commité avant",
+    "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
   ],
   "blocages": [
-    "GEMINI_API_KEY absente de l'environnement cloud (clé à mettre dans Project settings)",
-    "DeepSeek, Qwen, presse, FBref, Understat bloqués par le réseau ; *.hf.co bloqué (llama.cpp, PR #5 ouverte)",
-    "Claude : clé sans crédit API"
+    "Gemini laissé de côté (choix de Luloki) : Fusion en mode dégradé",
+    "Complément 2026/27 sans cotes ni tirs ; openfootball s'arrête au 20/09/2026",
+    "DeepSeek, Qwen, presse, FBref, Understat bloqués par le réseau"
   ],
   "decisions_actives": [
     {
@@ -73,15 +73,25 @@
       "cle": "modele_reference",
       "valeur": "poisson-v4 : poisson-v1 ajusté sur pseudo-buts 0,75·buts + 0,25·k·tirs cadrés (k = conversion de la ligue sur l'historique) ; stats-v0 en repli",
       "id": "7fb0a0751cbd"
+    },
+    {
+      "cle": "donnees",
+      "valeur": "Agent Stats sur data.CURRENT : xgabora 2000-2026 + openfootball 2026/27 (après le 03/09/2026) ; extrait 2020-2026 figé pour reproduire EXP-001 à 004 (--donnees experiences)",
+      "id": "a74722e2c810"
+    },
+    {
+      "cle": "gemini",
+      "valeur": "laissé de côté à la demande de Luloki (28/10/2026) ; Fusion en mode dégradé (Stats seul)",
+      "id": "be58eaee99f5"
     }
   ],
   "contradictions": {},
   "effectifs": {
     "travail": 2,
-    "decisions": 12,
+    "decisions": 14,
     "football": 1,
     "performances": 3,
     "technique": 5
   },
-  "id": "ckpt-302e652750"
+  "id": "ckpt-dc683bbb60"
 }

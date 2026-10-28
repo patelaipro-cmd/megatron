@@ -12,3 +12,12 @@
 - SHA-256 de l'extrait : `fbcad524b16dc0571dbd4d85b6bea5f51002d1d88aa70b09b1404a7d255ce76c` (15 colonnes ; version à 11 colonnes : `1b821dd2…779bf727e`)
 
 Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion commerciale demanderait une vérification de ses conditions.
+
+## Historique complet et saison en cours (28/10/2026)
+
+- `matches_top5_2000-2026.csv` : même source, mêmes colonnes, matchs depuis le 01/07/2000 (45 559 lignes, SHA-256 `399f92c774a257dd68b680e709ae5b6b9cdaa8297ac4fb7056019b15d1ede01c`). `python scripts/extraire_donnees.py Matches.csv --depuis 2000-07-01 --sortie data/matches_top5_2000-2026.csv`. Tirs complets à partir de 2006/07 (partiels avant) ; heure absente avant 2019 (midi par défaut).
+- `complement_openfootball_2026-27.csv` : **openfootball/football.json** (CC0, domaine public), `https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/{en,fr,de,es,it}.1.json`, téléchargé le 28/10/2026. 151 matchs du 04/09 au 20/09/2026, buts seulement (ni cotes ni tirs). `python scripts/complement_openfootball.py`.
+  - Noms d'équipes reliés à ceux de xgabora par les matchs communs (même date, même score, saisons 2025-26 et 2026-27) : 1 850 matchs communs, 0 écart de score.
+  - Heures ramenées à la convention xgabora par le décalage médian mesuré (−1 h sauf Premier League 0 h).
+  - Source communautaire, non recoupée au-delà de ce contrôle.
+- `matches_top5_2020-2026.csv` reste l'extrait figé des expériences EXP-001 à EXP-004 ; l'agent Stats utilise les deux fichiers ci-dessus (`data.CURRENT`).
