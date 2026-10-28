@@ -1,7 +1,7 @@
 """Test système de bout en bout sur un match FICTIF : aucune donnée réelle analysée.
 
 Chaîne vérifiée : historique synthétique (graine fixe) → agent Stats
-(poisson-v1) + agents LLM → Méthode de Fusion → registre anti-fuite
+(poisson-v4) + agents LLM → Méthode de Fusion → registre anti-fuite
 (prévision avant coup d'envoi, résultat après, doublon refusé) → évaluation.
 Tout est écrit dans un dossier temporaire : la mémoire du projet n'est pas touchée.
 Sans clé LLM, la fusion tourne en mode dégradé et le rapport le dit.

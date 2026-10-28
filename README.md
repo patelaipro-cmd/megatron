@@ -15,6 +15,7 @@ scripts/llama_local.sh            # modèle local sans API (llama.cpp + Qwen3-4B
 python -m megatron fusion '{"match_id": "demo", "xg_home": 1.6, "xg_away": 0.9}'
 python -m megatron systeme     # test système sur un match FICTIF (Fusion + registre anti-fuite), mode dégradé sans clé
 python -m megatron backtest --division F1   # backtest chronologique (EXP-001)
+python -m megatron backtest --division F1 --fixe 90,3,0,moyenne,cadres,0.25 --reference 90,3,0   # poisson-v4 contre v1 (EXP-004)
 python -m unittest discover -s tests -t . -v
 ```
 

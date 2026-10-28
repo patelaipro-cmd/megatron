@@ -59,6 +59,7 @@ class MaherFit:
 
 def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: float,
               dixon_coles: bool = False, newcomer_prior: str = "moyenne",
+              proxy: str = "cadres", proxy_weight: float = 0.0,
               max_age_days: int = 1095, iterations: int = 40) -> MaherFit:
     """Modèle de Maher (attaque × défense × terrain), pondéré dans le temps.
 
@@ -67,15 +68,27 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
     (équipe moyenne), sauf avec ``newcomer_prior="faibles3"`` pour une équipe
     sans match dans la division avant le 1er juillet de la saison en cours :
     elle est alors tirée vers la moyenne des 3 équipes établies les plus faibles.
+
+    Avec ``proxy_weight = w > 0`` (EXP-004), chaque équipe compte des pseudo-buts
+    ``(1 − w) · buts + w · k · X``, X = tirs cadrés (``proxy="cadres"``) ou tirs
+    (``"tirs"``), k = buts / X pondérés sur ce seul historique. Un match sans tirs
+    connus garde ses buts.
     """
     if newcomer_prior not in ("moyenne", "faibles3"):
         raise ValueError(f"a priori inconnu : {newcomer_prior!r}")
+    if proxy not in PROXIES:
+        raise ValueError(f"proxy inconnu : {proxy!r}")
+    if dixon_coles and proxy_weight > 0:
+        raise ValueError("Dixon-Coles exige des buts entiers : incompatible avec les pseudo-buts")
     _check_past(history, day)
     rows = []
     for m in history:
         age = (day - m.day).days
         if age <= max_age_days:
             rows.append((m.home, m.away, m.home_goals, m.away_goals, 0.5 ** (age / half_life)))
+    if proxy_weight > 0:
+        rows = _pseudo_goals(rows, [m for m in history if (day - m.day).days <= max_age_days],
+                             PROXIES[proxy], proxy_weight)
     if not rows:
         return MaherFit(1.3, 1.2, {}, {})
     teams = {t for r in rows for t in r[:2]}
@@ -130,6 +143,27 @@ def fit_maher(history: list[Match], day: date, *, half_life: float, shrink: floa
     if dixon_coles:
         fit.rho = estimate_rho(fit, rows)
     return fit
+
+
+PROXIES = {"tirs": (0, 1), "cadres": (2, 3)}  # positions dans Match.shots (domicile, extérieur)
+
+
+def _pseudo_goals(rows: list[tuple], matches: list[Match], idx: tuple[int, int], w: float) -> list[tuple]:
+    num = den = 0.0
+    for (_, _, hg, ag, wt), m in zip(rows, matches):
+        if m.shots:
+            num += wt * (hg + ag)
+            den += wt * (m.shots[idx[0]] + m.shots[idx[1]])
+    if den <= 0:
+        return rows
+    k = num / den
+    out = []
+    for (h, a, hg, ag, wt), m in zip(rows, matches):
+        if m.shots:
+            hg = (1 - w) * hg + w * k * m.shots[idx[0]]
+            ag = (1 - w) * ag + w * k * m.shots[idx[1]]
+        out.append((h, a, hg, ag, wt))
+    return out
 
 
 RHO_GRID = [round(-0.25 + 0.01 * i, 2) for i in range(36)]  # -0,25 à 0,10

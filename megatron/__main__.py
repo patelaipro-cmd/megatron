@@ -36,7 +36,8 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--shrinks", default="1,3,10")
     b.add_argument("--dixon-coles", default="0", help="valeurs testées sur le dev, ex. 0,1")
     b.add_argument("--a-priori", default="moyenne", help="a priori des équipes nouvelles testés, ex. moyenne,faibles3")
-    b.add_argument("--fixe", help="candidat déjà figé, ex. 90,3,0 ou 90,3,0,faibles3 : saute la recherche sur le dev")
+    b.add_argument("--proxys", default="cadres:0", help="proxy:poids des pseudo-buts testés (EXP-004), ex. cadres:0,cadres:0.5,tirs:1")
+    b.add_argument("--fixe", help="candidat déjà figé, ex. 90,3,0 ou 90,3,0,faibles3 ou 90,3,0,moyenne,cadres,0.5 : saute la recherche sur le dev")
     b.add_argument("--reference", help="modèle de référence évalué en parallèle, ex. 90,3,0")
     b.add_argument("--sortie", help="dossier où écrire resultats.json et predictions.csv")
     bs = sub.add_parser("bootstrap", help="bootstrap apparié groupé sur plusieurs predictions.csv")
@@ -84,7 +85,10 @@ def main(argv: list[str] | None = None) -> int:
 def _config(text: str) -> backtest.Config:
     hl, k, *rest = text.split(",")
     dc = bool(int(rest[0])) if rest else False
-    return (float(hl), float(k), dc) + ((rest[1],) if len(rest) > 1 else ())
+    extra = (rest[1],) if len(rest) > 1 else ()
+    if len(rest) > 3:
+        extra += (rest[2], float(rest[3]))
+    return (float(hl), float(k), dc) + extra
 
 
 def run_backtest(args) -> dict:
@@ -97,13 +101,15 @@ def run_backtest(args) -> dict:
                                     [float(x) for x in args.half_lives.split(",")],
                                     [float(x) for x in args.shrinks.split(",")],
                                     [bool(int(x)) for x in args.dixon_coles.split(",")],
-                                    tuple(args.a_priori.split(",")))
+                                    tuple(args.a_priori.split(",")),
+                                    tuple((x.split(":")[0], float(x.split(":")[1])) for x in args.proxys.split(",")))
         out["grille_dev"] = grid
-        candidate = (grid[0]["half_life"], grid[0]["shrink"], grid[0]["dixon_coles"], grid[0]["a_priori"])
+        g = grid[0]
+        candidate = (g["half_life"], g["shrink"], g["dixon_coles"], g["a_priori"], g["proxy"], g["poids_proxy"])
     configs = {"candidat": candidate}
     if args.reference:
         configs["reference"] = _config(args.reference)
-    out["modeles"] = {name: dict(zip(("half_life", "shrink", "dixon_coles", "a_priori"), c))
+    out["modeles"] = {name: dict(zip(("half_life", "shrink", "dixon_coles", "a_priori", "proxy", "poids_proxy"), c))
                       for name, c in configs.items()}
     all_rows = []
     for role, seasons in (("dev", args.dev), ("validation", args.val), ("test", args.test)):

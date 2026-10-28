@@ -13,7 +13,7 @@ from .data import Match, season_of
 from .ledger import OUTCOMES, score
 
 BASELINES = ("frequences", "bookmaker")
-Config = tuple  # demi-vie, rétrécissement, Dixon-Coles[, a priori des nouveaux]
+Config = tuple  # demi-vie, rétrécissement, Dixon-Coles[, a priori des nouveaux[, proxy, poids du proxy]]
 
 
 def predict_seasons(matches: list[Match], division: str, seasons: set[str],
@@ -22,9 +22,7 @@ def predict_seasons(matches: list[Match], division: str, seasons: set[str],
     rows = []
     for day, group in groupby((m for m in league if season_of(m.day) in seasons), key=lambda m: m.day):
         history = [m for m in league if m.day < day]
-        fits = {name: models.fit_maher(history, day, half_life=c[0], shrink=c[1], dixon_coles=c[2],
-                                       newcomer_prior=c[3] if len(c) > 3 else "moyenne")
-                for name, c in configs.items()}
+        fits = {name: models.fit_maher(history, day, **fit_kwargs(c)) for name, c in configs.items()}
         freq = models.frequencies(history, day)
         for m in group:
             row = {"match_id": m.match_id, "saison": season_of(m.day), "issue": m.result,
@@ -32,6 +30,15 @@ def predict_seasons(matches: list[Match], division: str, seasons: set[str],
             row.update({name: models.predict_1x2(fit, m) for name, fit in fits.items()})
             rows.append(row)
     return rows
+
+
+def fit_kwargs(c: Config) -> dict:
+    kw = {"half_life": c[0], "shrink": c[1], "dixon_coles": c[2]}
+    if len(c) > 3:
+        kw["newcomer_prior"] = c[3]
+    if len(c) > 5:
+        kw["proxy"], kw["proxy_weight"] = c[4], c[5]
+    return kw
 
 
 def model_names(rows: list[dict]) -> list[str]:
@@ -47,12 +54,14 @@ def summarize(rows: list[dict]) -> dict[str, dict]:
 
 def grid_search(matches: list[Match], division: str, seasons: set[str], half_lives: list[float],
                 shrinks: list[float], dixon_coles: list[bool],
-                priors: tuple[str, ...] = ("moyenne",)) -> list[dict]:
-    configs = {f"{hl}|{k}|{dc}|{p}": (hl, k, dc, p)
-               for hl in half_lives for k in shrinks for dc in dixon_coles for p in priors}
+                priors: tuple[str, ...] = ("moyenne",),
+                proxies: tuple[tuple[str, float], ...] = (("cadres", 0.0),)) -> list[dict]:
+    configs = {f"{hl}|{k}|{dc}|{p}|{x}|{w}": (hl, k, dc, p, x, w)
+               for hl in half_lives for k in shrinks for dc in dixon_coles for p in priors for x, w in proxies}
     s = summarize(predict_seasons(matches, division, seasons, configs))
-    out = [{"half_life": hl, "shrink": k, "dixon_coles": dc, "a_priori": p, "log_loss": s[name]["log_loss"],
-            "rps": s[name]["rps"], "n": s[name]["n"]} for name, (hl, k, dc, p) in configs.items()]
+    out = [{"half_life": hl, "shrink": k, "dixon_coles": dc, "a_priori": p, "proxy": x, "poids_proxy": w,
+            "log_loss": s[name]["log_loss"], "rps": s[name]["rps"], "n": s[name]["n"]}
+           for name, (hl, k, dc, p, x, w) in configs.items()]
     return sorted(out, key=lambda r: r["log_loss"])
 
 

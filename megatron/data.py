@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+SHOT_COLUMNS = ("HomeShots", "AwayShots", "HomeTarget", "AwayTarget")
 DEFAULT_CSV = Path(__file__).resolve().parent.parent / "data" / "matches_top5_2020-2026.csv"
 
 
@@ -21,6 +22,7 @@ class Match:
     away_goals: int
     result: str  # H, D ou A
     odds: tuple[float, float, float] | None
+    shots: tuple[int, int, int, int] | None = None  # tirs dom., tirs ext., cadrés dom., cadrés ext.
 
     @property
     def match_id(self) -> str:
@@ -44,12 +46,15 @@ def load(path: str | Path = DEFAULT_CSV, divisions: set[str] | None = None) -> l
             odds = None
             if r["OddHome"] and r["OddDraw"] and r["OddAway"]:
                 odds = (float(r["OddHome"]), float(r["OddDraw"]), float(r["OddAway"]))
+            shots = None
+            if all(r.get(c) for c in SHOT_COLUMNS):
+                shots = tuple(int(float(r[c])) for c in SHOT_COLUMNS)
             matches.append(Match(
                 division=r["Division"], day=day,
                 kickoff=datetime(day.year, day.month, day.day, int(hh), int(mm), tzinfo=timezone.utc),
                 home=r["HomeTeam"], away=r["AwayTeam"],
                 home_goals=int(r["FTHome"]), away_goals=int(r["FTAway"]), result=r["FTResult"],
-                odds=odds,
+                odds=odds, shots=shots,
             ))
     matches.sort(key=lambda m: (m.kickoff, m.match_id))
     return matches
