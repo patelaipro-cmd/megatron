@@ -308,3 +308,35 @@ class NewcomerPriorTests(unittest.TestCase):
             back = backtest.read_predictions(path)
         self.assertIsNone(back[0]["bookmaker"])
         self.assertAlmostEqual(back[0]["candidat"]["H"], 0.6)
+
+
+class SystemeTests(unittest.TestCase):
+    def test_fictional_match_end_to_end_degraded(self):
+        from megatron import systeme
+
+        rep = systeme.run([LLMAgent("deepseek", "MEGATRON_TEST_ABSENT_KEY"),
+                           LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")])
+        self.assertTrue(rep["succes"], rep["verifications"])
+        self.assertEqual(rep["fusion_mode"], "degrade")
+        self.assertEqual(rep["version"], "fusion-v0:stats")
+
+    def test_fictional_match_full_mode_with_fake_llms(self):
+        import os
+        from types import SimpleNamespace
+        from unittest import mock
+
+        from megatron import systeme
+
+        def fake(**kw):
+            msg = SimpleNamespace(content='{"H":0.5,"D":0.3,"A":0.2,"raison":"fictif","sources":["faux"]}')
+            return SimpleNamespace(choices=[SimpleNamespace(message=msg)],
+                                   usage={"prompt_tokens": 10, "completion_tokens": 5})
+
+        env = {"DEEPSEEK_API_KEY": "faux", "GEMINI_API_KEY": "faux"}
+        with tempfile.TemporaryDirectory() as cache, mock.patch.dict(os.environ, env), \
+                mock.patch("megatron.llm.CACHE_DIR", Path(cache)):
+            rep = systeme.run([LLMAgent("deepseek", completion_fn=fake), LLMAgent("gemini", completion_fn=fake)])
+        self.assertTrue(rep["succes"], rep["verifications"])
+        self.assertEqual(rep["fusion_mode"], "complet")
+        self.assertEqual(rep["version"], "fusion-v0:deepseek+gemini+stats")
+        self.assertEqual(rep["avis_non_independants"], [["deepseek", "gemini"]])

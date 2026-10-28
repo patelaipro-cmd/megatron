@@ -1,17 +1,17 @@
 {
   "version": "0.1.0",
-  "commit": "2b5be7d",
-  "date": "2026-10-28T05:22:29+00:00",
-  "resume": "Refonte : 516 dépôts évalués un par un (données GitHub réelles), connexion LLM LiteLLM branchée (6 fournisseurs, cache, tokens mesurés). En attente des clés API.",
+  "commit": "c9ba1b1",
+  "date": "2026-10-28T16:30:33+00:00",
+  "resume": "Test système Fusion sur match fictif (python -m megatron systeme) : 11/11 contrôles OK en mode dégradé (Stats seul, GEMINI_API_KEY absente de l'env).",
   "prochaines_actions": [
-    "Recevoir les clés (Gemini, DeepSeek, Qwen, Claude) et lancer python -m megatron llm test",
-    "Ouvrir api.deepseek.com, dashscope-intl.aliyuncs.com et la presse dans l'environnement réseau",
-    "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
-    "TESTER P1 : instructor, TOON, caveman, reep, football.json, transfermarkt-datasets, optuna, penaltyblog"
+    "EXP-004 : tirs / tirs cadrés comme proxy xG (protocole commité avant exécution)",
+    "Relancer python -m megatron systeme une fois GEMINI_API_KEY dans l'env (mode avec Gemini)",
+    "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
   ],
   "blocages": [
-    "Aucune clé API LLM",
-    "DeepSeek, Qwen, OpenRouter et la presse bloqués par le réseau de l'environnement cloud"
+    "GEMINI_API_KEY absente de l'environnement cloud (clé à mettre dans Project settings)",
+    "DeepSeek, Qwen, presse, FBref, Understat bloqués par le réseau ; *.hf.co bloqué (llama.cpp, PR #5 ouverte)",
+    "Claude : clé sans crédit API"
   ],
   "decisions_actives": [
     {
@@ -83,5 +83,5 @@
     "performances": 3,
     "technique": 5
   },
-  "id": "ckpt-6c0b6c0e61"
+  "id": "ckpt-0d5358f51f"
 }

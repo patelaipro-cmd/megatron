@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm
+from . import backtest, checkpoint, data, inventory, llm, systeme
 from .agents import fuse
 from .store import MemoryStore
 
@@ -26,6 +26,7 @@ def main(argv: list[str] | None = None) -> int:
     lp.add_argument("--fournisseur", default="gemini", choices=sorted(llm.PROVIDERS))
     f = sub.add_parser("fusion", help="Méthode de Fusion sur un match (JSON)")
     f.add_argument("tache", help='ex. {"match_id": "x", "xg_home": 1.6, "xg_away": 0.9}')
+    sub.add_parser("systeme", help="test système de bout en bout sur un match fictif (Fusion + registre)")
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
     b.add_argument("--division", default="F1")
     b.add_argument("--dev", default="2022/23")
@@ -67,6 +68,10 @@ def main(argv: list[str] | None = None) -> int:
         result = fuse(json.loads(args.tache))
         result["reponses"] = [asdict(r) for r in result["reponses"]]
         print(json.dumps(result, indent=2, ensure_ascii=False))
+    elif args.cmd == "systeme":
+        rapport = systeme.run()
+        print(json.dumps(rapport, indent=2, ensure_ascii=False))
+        return 0 if rapport["succes"] else 1
     elif args.cmd == "backtest":
         print(json.dumps(run_backtest(args), indent=2, ensure_ascii=False))
     elif args.cmd == "bootstrap":
