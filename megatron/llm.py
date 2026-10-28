@@ -35,7 +35,7 @@ class Provider:
 
 
 PROVIDERS = {p.name: p for p in (
-    Provider("gemini", "GEMINI_API_KEY", "gemini/gemini-2.5-flash", "https://generativelanguage.googleapis.com"),
+    Provider("gemini", "GEMINI_API_KEY", "gemini/gemini-flash-lite-latest", "https://generativelanguage.googleapis.com"),
     Provider("deepseek", "DEEPSEEK_API_KEY", "deepseek/deepseek-chat", "https://api.deepseek.com"),
     Provider("qwen", "DASHSCOPE_API_KEY", "dashscope/qwen-plus", "https://dashscope-intl.aliyuncs.com"),
     Provider("claude", "ANTHROPIC_API_KEY", "anthropic/claude-sonnet-5-5", "https://api.anthropic.com"),
