@@ -8,7 +8,10 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 SHOT_COLUMNS = ("HomeShots", "AwayShots", "HomeTarget", "AwayTarget")
-DEFAULT_CSV = Path(__file__).resolve().parent.parent / "data" / "matches_top5_2020-2026.csv"
+DATA = Path(__file__).resolve().parent.parent / "data"
+DEFAULT_CSV = DATA / "matches_top5_2020-2026.csv"  # extrait figé des expériences EXP-001 à EXP-004
+# historique complet pour l'agent Stats : xgabora 2000-2026 + saison en cours (openfootball, sans cotes ni tirs)
+CURRENT = (DATA / "matches_top5_2000-2026.csv", DATA / "complement_openfootball_2026-27.csv")
 
 
 @dataclass(frozen=True)
@@ -35,7 +38,19 @@ def season_of(day: date) -> str:
     return f"{start}/{str(start + 1)[-2:]}"
 
 
-def load(path: str | Path = DEFAULT_CSV, divisions: set[str] | None = None) -> list[Match]:
+def load(path: str | Path | tuple | list = DEFAULT_CSV, divisions: set[str] | None = None) -> list[Match]:
+    """Un fichier ou plusieurs (fusionnés) ; un même match présent deux fois est une erreur."""
+    paths = [path] if isinstance(path, (str, Path)) else list(path)
+    matches = [m for p in paths for m in _load_one(p, divisions)]
+    ids = [m.match_id for m in matches]
+    if len(ids) != len(set(ids)):
+        dup = sorted({i for i in ids if ids.count(i) > 1})[:5]
+        raise ValueError(f"matchs en double entre fichiers : {dup}")
+    matches.sort(key=lambda m: (m.kickoff, m.match_id))
+    return matches
+
+
+def _load_one(path: str | Path, divisions: set[str] | None) -> list[Match]:
     matches = []
     with open(path, newline="", encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
@@ -56,5 +71,4 @@ def load(path: str | Path = DEFAULT_CSV, divisions: set[str] | None = None) -> l
                 home_goals=int(r["FTHome"]), away_goals=int(r["FTAway"]), result=r["FTResult"],
                 odds=odds, shots=shots,
             ))
-    matches.sort(key=lambda m: (m.kickoff, m.match_id))
     return matches

@@ -128,7 +128,7 @@ class StatsAgent(Agent):
     PROXY, PROXY_WEIGHT = "cadres", 0.25  # promus par EXP-004 ; poids 0 = retour à poisson-v1
 
     def __init__(self, csv_path=None):
-        self.csv_path = csv_path  # None = data/matches_top5_2020-2026.csv
+        self.csv_path = csv_path  # None = data.CURRENT (2000-2026 + saison en cours)
 
     def ask(self, task: dict) -> AgentResponse:
         if "xg_home" in task or "xg_away" in task:
@@ -144,7 +144,7 @@ class StatsAgent(Agent):
         from . import data, models
 
         day = date.fromisoformat(task["date"])
-        path = self.csv_path or data.DEFAULT_CSV
+        path = self.csv_path or data.CURRENT
         history = [m for m in data.load(path, divisions={task["division"]}) if m.day < day]
         if not history:
             raise ValueError(f"aucun match de {task['division']} avant le {day}")
@@ -158,7 +158,7 @@ class StatsAgent(Agent):
                      f"{max(m.day for m in history)}",
                      f"buts attendus {lh:.2f} - {la:.2f}"],
             incertitudes=["équipes sans historique traitées comme moyennes : " + ", ".join(unknown)] if unknown else [],
-            sources=[f"data/{Path(path).name}"],
+            sources=[f"data/{Path(p).name}" for p in ([path] if isinstance(path, (str, Path)) else path)],
         )
 
     def _from_xg(self, task: dict) -> AgentResponse:

@@ -37,6 +37,8 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("systeme", help="test système de bout en bout sur un match fictif (Fusion + registre)")
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
     b.add_argument("--division", default="F1")
+    b.add_argument("--donnees", default="experiences", choices=["experiences", "complet"],
+                   help="experiences = extrait 2020-2026 figé (EXP-001 à 004) ; complet = 2000-2026 + saison en cours")
     b.add_argument("--dev", default="2022/23")
     b.add_argument("--val", default="2023/24")
     b.add_argument("--test", default="2024/25,2025/26")
@@ -112,8 +114,10 @@ def _config(text: str) -> backtest.Config:
 
 
 def run_backtest(args) -> dict:
-    matches = data.load(divisions={args.division})
-    out = {"division": args.division, "donnees": str(data.DEFAULT_CSV.name)}
+    path = data.DEFAULT_CSV if args.donnees == "experiences" else data.CURRENT
+    matches = data.load(path, divisions={args.division})
+    out = {"division": args.division,
+           "donnees": path.name if args.donnees == "experiences" else [p.name for p in path]}
     if args.fixe:
         candidate = _config(args.fixe)
     else:
