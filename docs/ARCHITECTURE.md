@@ -49,6 +49,13 @@ docs/            Inventaires, évaluations, registre généré, ce document
 
 ## 3. Plan d'intégration priorisé
 
+Révisé le 28/10/2026 : **le système d'abord, les matchs en dernier.** Les 516 dépôts sont évalués un par un
+(`docs/evaluations.json`, métadonnées brutes dans `docs/evaluation/github-2026-10-28.csv`).
+Connexion LLM branchée (`megatron/llm.py`, LiteLLM) : en attente des clés. Ordre suivant :
+connexion LLM testée avec clés → collecte (presse + données) → TESTER P1 du registre → agents → fusion → matchs.
+
+Historique du 27/10/2026 :
+
 Mis à jour le 27/10/2026 après EXP-003 (voir `docs/experiences/`).
 
 1. ~~Données historiques~~ : fait avec xgabora/Club-Football-Match-Data (soccerdata est bloqué par le proxy de l'environnement cloud).

@@ -7,6 +7,7 @@ continue en mode dégradé sans jamais inventer son avis.
 
 from __future__ import annotations
 
+import json
 import math
 import os
 from dataclasses import dataclass, field
@@ -40,24 +41,59 @@ class Agent:
 
 
 class LLMAgent(Agent):
-    """Agent LLM distant. Sans clé d'accès, il se déclare indisponible.
+    """Agent LLM distant, branché via ``megatron.llm`` (LiteLLM).
 
-    Le client HTTP n'est pas encore branché (prochaine étape, via LiteLLM) :
-    même avec une clé, il répond « indisponible » plutôt que de simuler un avis.
+    Sans clé, sans LiteLLM ou sans réseau, il se déclare indisponible ou en
+    erreur avec la raison exacte ; il ne simule jamais un avis. La consigne
+    impose une réponse JSON courte (moins de tokens de sortie).
     """
 
-    def __init__(self, name: str, env_key: str):
+    SYSTEME = ("Analyste football. Réponds UNIQUEMENT en JSON : "
+               '{"H":p,"D":p,"A":p,"raison":"<=25 mots","sources":[]}. '
+               "p = probabilité 0-1, somme 1. Aucune info inventée : si tu ne sais pas, dis-le dans raison.")
+
+    def __init__(self, name: str, env_key: str = "", provider: str | None = None, completion_fn=None):
         self.name = name
+        self.provider = provider or name
         self.env_key = env_key
+        self.completion_fn = completion_fn
 
     def available(self) -> tuple[bool, str]:
-        if not os.environ.get(self.env_key):
-            return False, f"variable {self.env_key} absente de l'environnement"
-        return False, "client non branché (prévu via LiteLLM)"
+        from . import llm
+
+        key = self.env_key or llm.PROVIDERS[self.provider].env_key
+        if key and not os.environ.get(key):
+            return False, f"variable {key} absente de l'environnement"
+        if self.completion_fn is None and not llm.litellm_installed():
+            return False, "litellm non installé (pip install -r requirements-llm.txt)"
+        return True, ""
 
     def ask(self, task: dict) -> AgentResponse:
+        from . import llm
+
         ok, why = self.available()
-        return AgentResponse(agent=self.name, status="indisponible", raison=why)
+        if not ok:
+            return AgentResponse(agent=self.name, status="indisponible", raison=why)
+        messages = [{"role": "system", "content": self.SYSTEME},
+                    {"role": "user", "content": json.dumps(task, ensure_ascii=False, separators=(",", ":"))}]
+        rep = llm.complete(self.provider, messages, json_mode=True, completion_fn=self.completion_fn)
+        base = dict(agent=self.name, appels=0 if rep.cache else 1, tokens_entree=rep.tokens_entree,
+                    tokens_sortie=rep.tokens_sortie, tokens_mesure="mesure" if rep.tokens_entree is not None else "indisponible")
+        if rep.status != "ok":
+            return AgentResponse(status=rep.status, raison=rep.raison, **base)
+        try:
+            out = json.loads(rep.text)
+            probs = {o: float(out[o]) for o in OUTCOMES}
+            total = sum(probs.values())
+            if total <= 0 or any(v < 0 for v in probs.values()):
+                raise ValueError("probabilités invalides")
+            probs = {o: v / total for o, v in probs.items()}
+        except (ValueError, KeyError, TypeError) as exc:
+            return AgentResponse(status="erreur", raison=f"réponse non conforme : {exc}", **base)
+        fav = max(probs, key=probs.get)
+        return AgentResponse(status="ok", probs=probs, conclusion=f"[{rep.model}] {fav} ({probs[fav]:.0%})",
+                             preuves=[str(out.get("raison", ""))], sources=list(out.get("sources") or [rep.model]),
+                             incertitudes=["avis de modèle de langage, non calibré"], **base)
 
 
 def poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 10) -> dict[str, float]:

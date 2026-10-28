@@ -1,16 +1,17 @@
 {
   "version": "0.1.0",
-  "commit": "86043ee",
-  "date": "2026-10-27T20:14:08+00:00",
-  "resume": "EXP-003 rejetée : l'a priori promus n'améliore pas poisson-v1 hors du dev. Le retard sur le bookmaker (~0,03 de log-loss) vient d'informations absentes du modèle, pas des promus.",
+  "commit": "2b5be7d",
+  "date": "2026-10-28T05:22:29+00:00",
+  "resume": "Refonte : 516 dépôts évalués un par un (données GitHub réelles), connexion LLM LiteLLM branchée (6 fournisseurs, cache, tokens mesurés). En attente des clés API.",
   "prochaines_actions": [
-    "EXP-004 : tirs et tirs cadrés des matchs passés (présents dans le jeu source) comme indicateur proche des xG",
-    "Brancher LiteLLM dès qu'une clé Gemini ou DeepSeek est fournie (absences, contexte)",
-    "Tester Dixon-Coles sur les marchés de score / moins de 2,5 buts"
+    "Recevoir les clés (Gemini, DeepSeek, Qwen, Claude) et lancer python -m megatron llm test",
+    "Ouvrir api.deepseek.com, dashscope-intl.aliyuncs.com et la presse dans l'environnement réseau",
+    "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
+    "TESTER P1 : instructor, TOON, caveman, reep, football.json, transfermarkt-datasets, optuna, penaltyblog"
   ],
   "blocages": [
-    "Aucune clé Gemini/DeepSeek/Qwen/Claude API",
-    "Sources de xG (FBref, Understat) bloquées depuis l'environnement cloud"
+    "Aucune clé API LLM",
+    "DeepSeek, Qwen, OpenRouter et la presse bloqués par le réseau de l'environnement cloud"
   ],
   "decisions_actives": [
     {
@@ -52,15 +53,35 @@
       "cle": "pistes_rejetees",
       "valeur": "demi-vie < 90 j et Dixon-Coles pour le 1X2 (EXP-002) ; a priori faibles3 pour les promus (EXP-003) : ne pas retester sans nouvelle donnée ou nouveau marché",
       "id": "b91a60b10272"
+    },
+    {
+      "cle": "priorite",
+      "valeur": "système d'abord : aucune analyse de match tant que la structure n'est pas finie",
+      "id": "3775f1b01f2e"
+    },
+    {
+      "cle": "style_reponses",
+      "valeur": "réponses courtes, essentiel et limites seulement",
+      "id": "d736be352179"
+    },
+    {
+      "cle": "connexion_llm",
+      "valeur": "LiteLLM (megatron/llm.py) : brancher d'abord, puis demander les clés à Luloki ; jamais décider à sa place",
+      "id": "91722569fdab"
+    },
+    {
+      "cle": "evaluation_depots",
+      "valeur": "516/516 évalués avec métadonnées GitHub réelles (docs/evaluations.json) : 2 intégrer, 29 tester, 72 référence, 143 redondant, 270 rejeter",
+      "id": "2670dc7a7c5e"
     }
   ],
   "contradictions": {},
   "effectifs": {
     "travail": 2,
-    "decisions": 8,
+    "decisions": 12,
     "football": 1,
     "performances": 3,
-    "technique": 4
+    "technique": 5
   },
-  "id": "ckpt-61ac1cfe85"
+  "id": "ckpt-6c0b6c0e61"
 }

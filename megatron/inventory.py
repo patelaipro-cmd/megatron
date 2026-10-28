@@ -55,6 +55,7 @@ def registry(repos: dict[str, Repo], evaluations: dict[str, dict]) -> list[dict]
             raise ValueError(f"{slug} : classement inconnu {classe!r}")
         rows.append({
             "depot": slug,
+            "module": ev.get("module", ""),
             "role": ev.get("role") or (repo.descriptions[0] if repo.descriptions else ""),
             "verifications": ev.get("verifications", "aucune"),
             "licence": ev.get("licence", "non vérifiée"),
@@ -71,6 +72,7 @@ def render_markdown(rows: list[dict], counts: dict[str, int]) -> str:
     total = sum(counts.values())
     doublons = [r for r in rows if "," in r["inventaires"]]
     evalues = [r for r in rows if r["classement"] != "À VÉRIFIER"]
+    par_classe = {c: [r for r in rows if r["classement"] == c] for c in CLASSES}
     out = [
         "# Registre d'évaluation des dépôts",
         "",
@@ -79,19 +81,25 @@ def render_markdown(rows: list[dict], counts: dict[str, int]) -> str:
         "",
         f"- Entrées dans les inventaires : **{total}** "
         f"({', '.join(f'{k}: {v}' for k, v in sorted(counts.items()))})",
-        f"- Dépôts uniques : **{len(rows)}**",
-        f"- Dépôts présents dans plusieurs inventaires : **{len(doublons)}**",
-        f"- Dépôts évalués : **{len(evalues)}** ; les autres restent « À VÉRIFIER ».",
+        f"- Dépôts uniques : **{len(rows)}**, évalués : **{len(evalues)}**",
+        "- " + " · ".join(f"{c} : **{len(v)}**" for c, v in par_classe.items() if v),
         "",
-        "## Dépôts évalués",
-        "",
-        "| Dépôt | Rôle potentiel | Vérifications réalisées | Licence et contraintes | Compatibilité | Classement motivé |",
-        "|---|---|---|---|---|---|",
     ]
-    for r in evalues:
-        out.append(f"| {r['depot']} | {r['role']} | {r['verifications']} | {r['licence']} | "
-                   f"{r['compatibilite']} | **{r['classement']}** : {r['motif']} |")
-    out += ["", "## Doublons entre inventaires", "", "| Dépôt | Inventaires |", "|---|---|"]
+    for classe in ("INTÉGRER", "TESTER"):
+        lignes = sorted(par_classe[classe], key=lambda r: (r["motif"][:2], r["module"]))
+        if not lignes:
+            continue
+        out += [f"## {classe}", "", "| Dépôt | Module | Licence | Vérification | Motif |", "|---|---|---|---|---|"]
+        out += [f"| {r['depot']} | {r['module']} | {r['licence']} | {r['verifications']} | {r['motif']} |" for r in lignes]
+        out.append("")
+    for classe in ("RÉFÉRENCE", "REDONDANT", "REJETER", "À VÉRIFIER"):
+        lignes = sorted(par_classe[classe], key=lambda r: (r["module"], r["depot"]))
+        if not lignes:
+            continue
+        out += [f"## {classe} ({len(lignes)})", "", "| Dépôt | Module | Motif |", "|---|---|---|"]
+        out += [f"| {r['depot']} | {r['module']} | {r['motif']} |" for r in lignes]
+        out.append("")
+    out += ["## Doublons entre inventaires", "", "| Dépôt | Inventaires |", "|---|---|"]
     out += [f"| {r['depot']} | {r['inventaires']} |" for r in doublons]
     return "\n".join(out) + "\n"
 
