@@ -116,6 +116,7 @@ def complete(provider: str, messages: list[dict], *, max_tokens: int = 300, temp
         if not litellm_installed():
             return Reply(provider, model, "indisponible", raison="litellm non installé (pip install -r requirements-llm.txt)")
         import litellm
+        litellm.drop_params = True  # ex. Claude 5 refuse temperature=0 : le paramètre est retiré plutôt qu'en erreur
         completion_fn = litellm.completion
     params = {"max_tokens": max_tokens, "temperature": temperature}
     if json_mode:
