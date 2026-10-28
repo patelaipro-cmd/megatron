@@ -53,6 +53,26 @@ class LLMTest(unittest.TestCase):
         self.assertEqual(r.status, "erreur")
         self.assertIsNone(r.probs)
 
+    def test_gemini_falls_back_to_claude_and_says_so(self):
+        calls = []
+
+        def fn(model, messages, **params):
+            calls.append(model)
+            if model.startswith("gemini/"):
+                raise RuntimeError("503 surcharge")
+            return fake("ok", [])(model, messages)
+        with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "cle-de-test"}):
+            r = llm.complete_with_fallback("gemini", [{"role": "user", "content": "q"}], completion_fn=fn)
+        self.assertEqual((r.provider, r.status), ("claude", "ok"))
+        self.assertEqual(r.meta["repli_depuis"][0]["fournisseur"], "gemini")
+        self.assertEqual(len(calls), 2)
+
+    def test_fallback_can_be_disabled(self):
+        with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k", "MEGATRON_REPLI_GEMINI": ""}):
+            r = llm.complete_with_fallback("gemini", [{"role": "user", "content": "q"}],
+                                           completion_fn=lambda **kw: (_ for _ in ()).throw(RuntimeError("x")))
+        self.assertEqual((r.provider, r.status), ("gemini", "erreur"))
+
     def test_missing_key_never_calls(self):
         calls = []
         with mock.patch.dict(os.environ, {}, clear=True):

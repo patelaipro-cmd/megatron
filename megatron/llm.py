@@ -45,6 +45,17 @@ PROVIDERS = {p.name: p for p in (
 )}
 
 
+# Repli : si le fournisseur échoue (clé absente, quota, surcharge), on essaie le suivant.
+# Remplaçable par MEGATRON_REPLI_<NOM>="claude,deepseek" ; vide = pas de repli.
+REPLI = {"gemini": ("claude",)}
+
+
+def chain(provider: str) -> list[str]:
+    env = os.environ.get(f"MEGATRON_REPLI_{provider.upper()}")
+    repli = [x.strip() for x in env.split(",") if x.strip()] if env is not None else list(REPLI.get(provider, ()))
+    return [provider] + [x for x in repli if x in PROVIDERS and x != provider]
+
+
 @dataclass
 class Reply:
     provider: str
@@ -136,3 +147,17 @@ def complete(provider: str, messages: list[dict], *, max_tokens: int = 300, temp
         data = {k: v for k, v in reply.__dict__.items() if k != "cache"}
         path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     return reply
+
+
+def complete_with_fallback(provider: str, messages: list[dict], **kwargs) -> Reply:
+    """``complete`` sur la chaîne de repli ; la réponse dit quel fournisseur a répondu et pourquoi les autres non."""
+    echecs = []
+    for name in chain(provider):
+        rep = complete(name, messages, **kwargs)
+        if rep.status == "ok":
+            if echecs:
+                rep.meta["repli_depuis"] = echecs
+            return rep
+        echecs.append({"fournisseur": name, "status": rep.status, "raison": rep.raison})
+    rep.meta["repli_depuis"] = echecs[:-1]
+    return rep
