@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
-  "commit": "c9ba1b1",
-  "date": "2026-10-28T16:30:33+00:00",
-  "resume": "Test système Fusion sur match fictif (python -m megatron systeme) : 11/11 contrôles OK en mode dégradé (Stats seul, GEMINI_API_KEY absente de l'env).",
+  "commit": "1626bbb",
+  "date": "2026-10-28T16:36:52+00:00",
+  "resume": "EXP-004 promue : poisson-v4 (25 % de tirs cadrés convertis) bat poisson-v1 sur le test 5 ligues (−0,0042 log-loss, IC [−0,0060 ; −0,0026]) ; retard sur le bookmaker 0,029 → 0,025.",
   "prochaines_actions": [
-    "EXP-004 : tirs / tirs cadrés comme proxy xG (protocole commité avant exécution)",
+    "Étape infra suivante : à choisir (pas d'analyse de vrais matchs)",
     "Relancer python -m megatron systeme une fois GEMINI_API_KEY dans l'env (mode avec Gemini)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
   ],
@@ -40,11 +40,6 @@
       "id": "9aee9cf8fbd1"
     },
     {
-      "cle": "modele_reference",
-      "valeur": "poisson-v1 : Maher pondéré (demi-vie 90 j, rétrécissement 3) ajusté sur les matchs antérieurs ; stats-v0 en repli",
-      "id": "892277104f62"
-    },
-    {
       "cle": "protocole_experiences",
       "valeur": "protocole et critères commités avant exécution ; dev / validation / test chronologiques ; résultats ajoutés sans modifier le protocole",
       "id": "fa2d41595b99"
@@ -73,6 +68,11 @@
       "cle": "evaluation_depots",
       "valeur": "516/516 évalués avec métadonnées GitHub réelles (docs/evaluations.json) : 2 intégrer, 29 tester, 72 référence, 143 redondant, 270 rejeter",
       "id": "2670dc7a7c5e"
+    },
+    {
+      "cle": "modele_reference",
+      "valeur": "poisson-v4 : poisson-v1 ajusté sur pseudo-buts 0,75·buts + 0,25·k·tirs cadrés (k = conversion de la ligue sur l'historique) ; stats-v0 en repli",
+      "id": "7fb0a0751cbd"
     }
   ],
   "contradictions": {},
@@ -83,5 +83,5 @@
     "performances": 3,
     "technique": 5
   },
-  "id": "ckpt-0d5358f51f"
+  "id": "ckpt-e824ecab22"
 }

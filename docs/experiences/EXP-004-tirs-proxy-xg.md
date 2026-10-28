@@ -52,3 +52,58 @@ Remettre `w = 0` dans `StatsAgent`.
 
 - Tirs et tirs cadrés de Football-Data.co.uk : définition non documentée en détail, pas de distinction penalty / jeu, pas de position de tir. C'est un proxy grossier, pas un vrai xG.
 - Un seul mélange linéaire testé ; pas de modèle séparé tirs → buts par équipe (finition).
+
+---
+
+## Résultats (exécution du 28/10/2026, ajoutés après le protocole)
+
+Commandes : `python -m megatron backtest --division F1 --half-lives 90 --shrinks 3 --proxys cadres:0,cadres:0.25,cadres:0.5,cadres:0.75,cadres:1,tirs:0.25,tirs:0.5,tirs:0.75,tirs:1 --reference 90,3,0 --sortie docs/experiences/EXP-004`, puis `--fixe 90,3,0,moyenne,cadres,0.25 --reference 90,3,0` pour chaque ligue de réplication, et `python -m megatron bootstrap docs/experiences/EXP-004/predictions.csv docs/experiences/EXP-004/replication-*/predictions.csv` pour C4.
+
+Grille sur le développement (Ligue 1 2022/23, 380 matchs) :
+
+| X | w | Log-loss | RPS |
+|---|---|---|---|
+| **cadres** | **0,25** | **0,97925** | 0,20059 |
+| — (`poisson-v1`) | 0 | 0,97948 | 0,20091 |
+| tirs | 0,25 | 0,98101 | 0,20109 |
+| cadres | 0,5 | 0,98182 | 0,20116 |
+| cadres | 0,75 | 0,98730 | 0,20273 |
+| tirs | 0,5 | 0,98778 | 0,20297 |
+| cadres | 1 | 0,99580 | 0,20542 |
+| tirs | 0,75 | 1,00009 | 0,20686 |
+| tirs | 1 | 1,01837 | 0,21302 |
+
+Candidat retenu : `poisson-v4` = cadres, w = 0,25. Les tirs non cadrés et les poids forts dégradent : les buts gardent l'essentiel de l'information.
+
+| Ligue 1 | `poisson-v4` | `poisson-v1` | Bookmaker | Écart v4 − v1 [IC 95 %] |
+|---|---|---|---|---|
+| Dev, log-loss | 0,97925 | 0,97948 | 0,97119 | −0,0002 [−0,0055 ; +0,0048] |
+| Validation, log-loss | 1,04343 | 1,04884 | 1,01383 | −0,0054 [−0,0111 ; −0,0000] |
+| Test, log-loss | 0,99003 | 0,99521 | 0,96613 | −0,0052 [−0,0093 ; −0,0011] |
+| Test, RPS | 0,20883 | 0,21048 | 0,20115 | |
+
+Réplication sur le test (log-loss v4 / v1, écart [IC 95 %]) :
+
+| Ligue | v4 | v1 | Écart |
+|---|---|---|---|
+| Premier League | 1,0066 | 1,0109 | −0,0043 [−0,0077 ; −0,0010] |
+| Bundesliga | 1,0075 | 1,0138 | −0,0063 [−0,0105 ; −0,0022] |
+| Liga | 0,9839 | 0,9867 | −0,0028 [−0,0063 ; +0,0007] |
+| Serie A | 0,9946 | 0,9978 | −0,0032 [−0,0072 ; +0,0003] |
+
+Test des 5 ligues réunies (3 503 matchs) : écart −0,0042 [−0,0060 ; −0,0026].
+
+Information :
+- Écart avec le bookmaker sur le test des 5 ligues : +0,0291 [+0,0231 ; +0,0353] pour `poisson-v1`, +0,0249 [+0,0194 ; +0,0302] pour `poisson-v4`. Environ 15 % du retard comblé.
+- Validation 2023/24 hors Ligue 1 (non prévue dans les critères) : Premier League 0,9449 / 0,9493 (mieux), Bundesliga 0,9732 / 0,9729, Liga 0,9828 / 0,9816, Serie A 0,9912 / 0,9903 (légèrement moins bien). 5 ligues réunies en validation : −0,0014 [−0,0039 ; +0,0010]. Le gain est net sur 2024-2026, pas sur 2023/24 hors France et Angleterre.
+
+## Décision
+
+- C1 tenu (0,99003 < 0,99521), C2 tenu (0,20883 ≤ 0,21048), C3 tenu (1,04343 < 1,04884), C4 tenu (borne haute −0,0026 < 0).
+- **Promotion** : `poisson-v4` devient le modèle par défaut de l'agent Stats (`StatsAgent.PROXY_WEIGHT = 0.25`).
+
+## Limites
+
+- Gain modeste (−0,004 de log-loss) ; le bookmaker reste devant de ~0,025.
+- Instable en validation hors Ligue 1 et Premier League : à surveiller dans les prochaines expériences.
+- Un seul réglage de w choisi sur une saison de Ligue 1 ; w n'a pas été réajusté par ligue.

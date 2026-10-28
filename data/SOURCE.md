@@ -9,6 +9,6 @@
 - Colonnes conservées : `Division, MatchDate, MatchTime, HomeTeam, AwayTeam, FTHome, FTAway, FTResult, OddHome, OddDraw, OddAway`, plus `HomeShots, AwayShots, HomeTarget, AwayTarget` (tirs, tirs cadrés) depuis le 28/10/2026 (EXP-004).
 - Reconstruction : `python scripts/extraire_donnees.py Matches.csv` (comptes écrits en entiers).
 - `MatchTime` est à l'heure CET-1 selon le README d'origine (non vérifié).
-- SHA-256 de l'extrait : `fbcad524b16dc0571dbd4d85b6bea5f51002d1d88aa70b09b1404a7d255ce76c` (15 colonnes ; version à 11 colonnes : `1b821dd2…779bf727e`)`
+- SHA-256 de l'extrait : `fbcad524b16dc0571dbd4d85b6bea5f51002d1d88aa70b09b1404a7d255ce76c` (15 colonnes ; version à 11 colonnes : `1b821dd2…779bf727e`)
 
 Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion commerciale demanderait une vérification de ses conditions.

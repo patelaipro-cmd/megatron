@@ -220,10 +220,10 @@ class ModelTests(unittest.TestCase):
 
 
 class StatsAgentHistoryTests(unittest.TestCase):
-    def test_poisson_v1_from_history(self):
+    def test_poisson_v4_from_history(self):
         r = StatsAgent().ask({"division": "F1", "home": "Paris SG", "away": "Le Havre", "date": "2026-08-01"})
         self.assertEqual(r.status, "ok", r.raison)
-        self.assertIn("poisson-v1", r.conclusion)
+        self.assertIn("poisson-v4", r.conclusion)
         self.assertGreater(r.probs["H"], 0.6)
 
     def test_invalid_date_is_error_not_invented(self):
@@ -340,3 +340,54 @@ class SystemeTests(unittest.TestCase):
         self.assertEqual(rep["fusion_mode"], "complet")
         self.assertEqual(rep["version"], "fusion-v0:deepseek+gemini+stats")
         self.assertEqual(rep["avis_non_independants"], [["deepseek", "gemini"]])
+
+
+class ProxyTirsTests(unittest.TestCase):
+    """EXP-004 : pseudo-buts à partir des tirs, sans fuite temporelle."""
+
+    @classmethod
+    def setUpClass(cls):
+        from datetime import date
+
+        from megatron import data
+
+        cls.day = date(2023, 1, 15)
+        cls.history = [m for m in data.load(divisions={"F1"}) if m.day < cls.day]
+
+    def test_shots_loaded(self):
+        self.assertTrue(all(m.shots for m in self.history))
+
+    def test_zero_weight_is_poisson_v1(self):
+        from megatron import models
+
+        a = models.fit_maher(self.history, self.day, half_life=90, shrink=3)
+        b = models.fit_maher(self.history, self.day, half_life=90, shrink=3, proxy="tirs", proxy_weight=0.0)
+        self.assertEqual(a.rates("Paris SG", "Lens"), b.rates("Paris SG", "Lens"))
+
+    def test_pseudo_goals_keep_goal_scale(self):
+        from megatron import models
+
+        rows = [(m.home, m.away, m.home_goals, m.away_goals, 1.0) for m in self.history]
+        pseudo = models._pseudo_goals(rows, self.history, models.PROXIES["cadres"], 1.0)
+        self.assertAlmostEqual(sum(r[2] + r[3] for r in pseudo), sum(r[2] + r[3] for r in rows), places=6)
+
+    def test_future_shots_never_used(self):
+        from dataclasses import replace
+
+        from megatron import backtest, data
+
+        league = self.history
+        target = [m for m in data.load(divisions={"F1"}) if m.day == self.day]
+        self.assertTrue(target)
+        altered = [replace(m, shots=(99, 0, 99, 0)) for m in target]
+        cfg = {"v4": (90.0, 3.0, False, "moyenne", "cadres", 0.5)}
+        a = backtest.predict_seasons(league + target, "F1", {"2022/23"}, cfg)
+        b = backtest.predict_seasons(league + altered, "F1", {"2022/23"}, cfg)
+        self.assertEqual([r["v4"] for r in a if r["match_id"] in {m.match_id for m in target}],
+                         [r["v4"] for r in b if r["match_id"] in {m.match_id for m in target}])
+
+    def test_dixon_coles_refused_with_pseudo_goals(self):
+        from megatron import models
+
+        with self.assertRaises(ValueError):
+            models.fit_maher(self.history, self.day, half_life=90, shrink=3, dixon_coles=True, proxy_weight=0.5)

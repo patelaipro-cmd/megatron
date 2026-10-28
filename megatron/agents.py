@@ -113,7 +113,8 @@ def poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 10) -> dict[s
 class StatsAgent(Agent):
     """Agent Python déterministe : aucun token consommé.
 
-    Modèle par défaut ``poisson-v1`` (promu par EXP-001) : la tâche fournit
+    Modèle par défaut ``poisson-v4`` (EXP-004 : poisson-v1 ajusté sur des
+    pseudo-buts mêlant 25 % de tirs cadrés convertis) : la tâche fournit
     ``division``, ``home``, ``away`` et ``date`` (AAAA-MM-JJ) ; le modèle de
     Maher est ajusté sur les seuls matchs antérieurs de ``data/``.
     Repli ``stats-v0`` : si ``xg_home`` et ``xg_away`` sont fournis, Poisson
@@ -122,6 +123,7 @@ class StatsAgent(Agent):
 
     name = "stats"
     HALF_LIFE, SHRINK = 90.0, 3.0  # figés par EXP-001 sur la Ligue 1 2022/23
+    PROXY, PROXY_WEIGHT = "cadres", 0.25  # promus par EXP-004 ; poids 0 = retour à poisson-v1
 
     def __init__(self, csv_path=None):
         self.csv_path = csv_path  # None = data/matches_top5_2020-2026.csv
@@ -144,11 +146,12 @@ class StatsAgent(Agent):
         history = [m for m in data.load(path, divisions={task["division"]}) if m.day < day]
         if not history:
             raise ValueError(f"aucun match de {task['division']} avant le {day}")
-        fit = models.fit_maher(history, day, half_life=self.HALF_LIFE, shrink=self.SHRINK)
+        fit = models.fit_maher(history, day, half_life=self.HALF_LIFE, shrink=self.SHRINK,
+                               proxy=self.PROXY, proxy_weight=self.PROXY_WEIGHT)
         lh, la = fit.rates(task["home"], task["away"])
         unknown = [t for t in (task["home"], task["away"]) if t not in fit.attack]
         return self._response(
-            poisson_1x2(lh, la), task, version="poisson-v1",
+            poisson_1x2(lh, la), task, version="poisson-v4" if self.PROXY_WEIGHT else "poisson-v1",
             preuves=[f"{len(history)} matchs antérieurs au {day}, dernier le "
                      f"{max(m.day for m in history)}",
                      f"buts attendus {lh:.2f} - {la:.2f}"],
