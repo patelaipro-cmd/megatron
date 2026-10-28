@@ -35,7 +35,7 @@ class Provider:
 
 
 PROVIDERS = {p.name: p for p in (
-    Provider("gemini", "GEMINI_API_KEY", "gemini/gemini-2.5-flash", "https://generativelanguage.googleapis.com"),
+    Provider("gemini", "GEMINI_API_KEY", "gemini/gemini-flash-lite-latest", "https://generativelanguage.googleapis.com"),
     Provider("deepseek", "DEEPSEEK_API_KEY", "deepseek/deepseek-chat", "https://api.deepseek.com"),
     Provider("qwen", "DASHSCOPE_API_KEY", "dashscope/qwen-plus", "https://dashscope-intl.aliyuncs.com"),
     Provider("claude", "ANTHROPIC_API_KEY", "anthropic/claude-sonnet-5-5", "https://api.anthropic.com"),
@@ -43,6 +43,17 @@ PROVIDERS = {p.name: p for p in (
     Provider("ollama", "", "ollama/qwen2.5:7b", os.environ.get("OLLAMA_API_BASE", "http://localhost:11434")),
     Provider("llamacpp", "", "openai/qwen3-4b", LLAMACPP_BASE + "/models", api_base=LLAMACPP_BASE),
 )}
+
+
+# Repli : si le fournisseur échoue (clé absente, quota, surcharge), on essaie le suivant.
+# Remplaçable par MEGATRON_REPLI_<NOM>="claude,deepseek" ; vide = pas de repli.
+REPLI = {"gemini": ("claude",)}
+
+
+def chain(provider: str) -> list[str]:
+    env = os.environ.get(f"MEGATRON_REPLI_{provider.upper()}")
+    repli = [x.strip() for x in env.split(",") if x.strip()] if env is not None else list(REPLI.get(provider, ()))
+    return [provider] + [x for x in repli if x in PROVIDERS and x != provider]
 
 
 @dataclass
@@ -105,6 +116,7 @@ def complete(provider: str, messages: list[dict], *, max_tokens: int = 300, temp
         if not litellm_installed():
             return Reply(provider, model, "indisponible", raison="litellm non installé (pip install -r requirements-llm.txt)")
         import litellm
+        litellm.drop_params = True  # ex. Claude 5 refuse temperature=0 : le paramètre est retiré plutôt qu'en erreur
         completion_fn = litellm.completion
     params = {"max_tokens": max_tokens, "temperature": temperature}
     if json_mode:
@@ -136,3 +148,17 @@ def complete(provider: str, messages: list[dict], *, max_tokens: int = 300, temp
         data = {k: v for k, v in reply.__dict__.items() if k != "cache"}
         path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     return reply
+
+
+def complete_with_fallback(provider: str, messages: list[dict], **kwargs) -> Reply:
+    """``complete`` sur la chaîne de repli ; la réponse dit quel fournisseur a répondu et pourquoi les autres non."""
+    echecs = []
+    for name in chain(provider):
+        rep = complete(name, messages, **kwargs)
+        if rep.status == "ok":
+            if echecs:
+                rep.meta["repli_depuis"] = echecs
+            return rep
+        echecs.append({"fournisseur": name, "status": rep.status, "raison": rep.raison})
+    rep.meta["repli_depuis"] = echecs[:-1]
+    return rep

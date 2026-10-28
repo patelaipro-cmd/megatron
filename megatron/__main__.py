@@ -60,7 +60,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.action == "statut":
             print(json.dumps(llm.status(), indent=2, ensure_ascii=False))
         else:
-            rep = llm.complete(args.fournisseur, [{"role": "user", "content": "Réponds juste : ok"}],
+            rep = llm.complete_with_fallback(args.fournisseur, [{"role": "user", "content": "Réponds juste : ok"}],
                                max_tokens=5, use_cache=False)
             print(json.dumps(asdict(rep), indent=2, ensure_ascii=False))
     elif args.cmd == "fusion":

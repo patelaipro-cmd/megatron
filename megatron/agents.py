@@ -61,9 +61,9 @@ class LLMAgent(Agent):
     def available(self) -> tuple[bool, str]:
         from . import llm
 
-        key = self.env_key or llm.PROVIDERS[self.provider].env_key
-        if key and not os.environ.get(key):
-            return False, f"variable {key} absente de l'environnement"
+        keys = [self.env_key or llm.PROVIDERS[self.provider].env_key] + [llm.PROVIDERS[n].env_key for n in llm.chain(self.provider)[1:]]
+        if all(k and not os.environ.get(k) for k in keys):
+            return False, f"variable {' / '.join(keys)} absente de l'environnement"
         if self.completion_fn is None and not llm.litellm_installed():
             return False, "litellm non installé (pip install -r requirements-llm.txt)"
         return True, ""
@@ -76,7 +76,7 @@ class LLMAgent(Agent):
             return AgentResponse(agent=self.name, status="indisponible", raison=why)
         messages = [{"role": "system", "content": self.SYSTEME},
                     {"role": "user", "content": json.dumps(task, ensure_ascii=False, separators=(",", ":"))}]
-        rep = llm.complete(self.provider, messages, json_mode=True, completion_fn=self.completion_fn)
+        rep = llm.complete_with_fallback(self.provider, messages, json_mode=True, completion_fn=self.completion_fn)
         base = dict(agent=self.name, appels=0 if rep.cache else 1, tokens_entree=rep.tokens_entree,
                     tokens_sortie=rep.tokens_sortie, tokens_mesure="mesure" if rep.tokens_entree is not None else "indisponible")
         if rep.status != "ok":
