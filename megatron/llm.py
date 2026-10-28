@@ -1,4 +1,4 @@
-"""Connexion LLM via LiteLLM : Gemini, DeepSeek, Qwen, Claude, OpenRouter, Ollama.
+"""Connexion LLM via LiteLLM : Gemini, DeepSeek, Qwen, Claude, OpenRouter, Ollama, llama.cpp local.
 
 LiteLLM est une dépendance optionnelle (``pip install -r requirements-llm.txt``) :
 le socle reste en bibliothèque standard. Chaque appel renvoie les tokens
@@ -19,6 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE_DIR = Path(os.environ.get("MEGATRON_CACHE", ROOT / ".cache" / "llm"))
+LLAMACPP_BASE = os.environ.get("LLAMACPP_API_BASE", "http://127.0.0.1:8080/v1")  # voir scripts/llama_local.sh
 
 
 @dataclass(frozen=True)
@@ -27,6 +28,7 @@ class Provider:
     env_key: str  # variable d'environnement de la clé ("" = pas de clé, modèle local)
     model: str  # modèle LiteLLM par défaut, remplaçable par MEGATRON_MODEL_<NOM>
     host: str  # hôte testé pour savoir si le réseau laisse passer
+    api_base: str = ""  # serveur compatible OpenAI (modèle local) ; vide = point d'accès par défaut de LiteLLM
 
     def model_id(self) -> str:
         return os.environ.get(f"MEGATRON_MODEL_{self.name.upper()}", self.model)
@@ -39,6 +41,7 @@ PROVIDERS = {p.name: p for p in (
     Provider("claude", "ANTHROPIC_API_KEY", "anthropic/claude-sonnet-5-5", "https://api.anthropic.com"),
     Provider("openrouter", "OPENROUTER_API_KEY", "openrouter/deepseek/deepseek-chat", "https://openrouter.ai"),
     Provider("ollama", "", "ollama/qwen2.5:7b", os.environ.get("OLLAMA_API_BASE", "http://localhost:11434")),
+    Provider("llamacpp", "", "openai/qwen3-4b", LLAMACPP_BASE + "/models", api_base=LLAMACPP_BASE),
 )}
 
 
@@ -111,8 +114,9 @@ def complete(provider: str, messages: list[dict], *, max_tokens: int = 300, temp
     if use_cache and path.exists():
         hit = json.loads(path.read_text(encoding="utf-8"))
         return Reply(**{**hit, "cache": True})
+    extra = {"api_base": p.api_base, "api_key": "local"} if p.api_base else {}
     try:
-        resp = completion_fn(model=model, messages=messages, **params)
+        resp = completion_fn(model=model, messages=messages, **params, **extra)
     except Exception as exc:  # erreurs réseau, quota, clé refusée : remontées telles quelles
         return Reply(provider, model, "erreur", raison=f"{type(exc).__name__}: {str(exc)[:300]}")
     usage = getattr(resp, "usage", None) or {}
@@ -123,6 +127,8 @@ def complete(provider: str, messages: list[dict], *, max_tokens: int = 300, temp
         cost = litellm.completion_cost(completion_response=resp)
     except Exception:
         pass
+    if p.api_base:
+        cost = 0.0  # modèle local : aucun coût d'API
     reply = Reply(provider, model, "ok", text=resp.choices[0].message.content or "",
                   tokens_entree=get("prompt_tokens"), tokens_sortie=get("completion_tokens"), cout_usd=cost)
     if use_cache:

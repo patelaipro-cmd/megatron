@@ -51,7 +51,7 @@ docs/            Inventaires, évaluations, registre généré, ce document
 
 Révisé le 28/10/2026 : **le système d'abord, les matchs en dernier.** Les 516 dépôts sont évalués un par un
 (`docs/evaluations.json`, métadonnées brutes dans `docs/evaluation/github-2026-10-28.csv`).
-Connexion LLM branchée (`megatron/llm.py`, LiteLLM) : en attente des clés. Ordre suivant :
+Connexion LLM branchée (`megatron/llm.py`, LiteLLM) : en attente des clés. Modèle local sans clé : fournisseur `llamacpp` (`scripts/llama_local.sh`, llama-server + Qwen3-4B en CPU) ; exige huggingface.co dans le réseau autorisé. Ordre suivant :
 connexion LLM testée avec clés → collecte (presse + données) → TESTER P1 du registre → agents → fusion → matchs.
 
 Historique du 27/10/2026 :

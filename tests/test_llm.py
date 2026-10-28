@@ -60,6 +60,18 @@ class LLMTest(unittest.TestCase):
         self.assertEqual(r.status, "indisponible")
         self.assertEqual(calls, [])
 
+    def test_local_llamacpp_needs_no_key_and_targets_local_server(self):
+        seen = {}
+
+        def fn(model, messages, **params):
+            seen.update(params, model=model)
+            return fake("ok", [])(model, messages)
+        with mock.patch.dict(os.environ, {}, clear=True):
+            r = llm.complete("llamacpp", [{"role": "user", "content": "q"}], completion_fn=fn)
+        self.assertEqual((r.status, r.cout_usd), ("ok", 0.0))
+        self.assertEqual(seen["api_base"], llm.LLAMACPP_BASE)
+        self.assertTrue(seen["model"].startswith("openai/"))
+
     def test_status_lists_every_provider_without_network(self):
         rows = llm.status(check_network=False)
         self.assertEqual({r["fournisseur"] for r in rows}, set(llm.PROVIDERS))
