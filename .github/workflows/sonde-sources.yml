@@ -2,6 +2,10 @@ name: sonde-sources
 # Sonde manuelle des API candidates ; résultats dans externe/sondes/ de la branche donnees-externes.
 on:
   workflow_dispatch:
+    inputs:
+      urls:
+        description: "URL séparées par des virgules (vide : sonde ESPN par défaut)"
+        default: ""
 permissions:
   contents: write
 concurrency:
@@ -23,7 +27,9 @@ jobs:
           git fetch --depth 1 origin donnees-externes
           git worktree add -B donnees-externes donnees FETCH_HEAD
       - name: Sonder
-        run: python scripts/sonde_sources.py --sortie donnees/externe
+        env:
+          URLS: ${{ inputs.urls }}
+        run: python scripts/sonde_sources.py --sortie donnees/externe --urls "$URLS"
       - name: Publier
         run: |
           cd donnees
