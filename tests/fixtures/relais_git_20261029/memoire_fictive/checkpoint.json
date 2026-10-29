@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
-  "commit": "308f653",
-  "date": "2026-10-29T09:07:51+00:00",
-  "resume": "TEST FICTIF GIT : départ Codex ; prochain détenteur Claude",
+  "commit": "5830dbd",
+  "date": "2026-10-29T09:23:04+00:00",
+  "resume": "TEST FICTIF : étape Claude terminée, relais vers Codex",
   "prochaines_actions": [
-    "Reprendre via la branche Git, vérifier et ajouter les scores fictifs"
+    "Vérifier le paquet retourné dans Codex"
   ],
   "blocages": [],
   "decisions_actives": [
@@ -16,11 +16,11 @@
   ],
   "contradictions": {},
   "effectifs": {
-    "travail": 0,
+    "travail": 2,
     "decisions": 1,
     "football": 0,
-    "performances": 9,
+    "performances": 12,
     "technique": 0
   },
-  "id": "ckpt-d30b4df771"
+  "id": "ckpt-5cb771dd8d"
 }
