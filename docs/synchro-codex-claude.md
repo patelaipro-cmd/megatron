@@ -64,18 +64,26 @@ laisser deux prévisions actives ; `synchro verifier` les détecte après coup.
 
 ## Test de synchronisation par Git
 
-`scripts/synchro_git.py` rejoue un relais complet sur une mémoire fictive
-(`essais/synchro_git/memoire`, branches de test seulement, jamais dans main) :
+Relais de référence (29/10/2026) : Codex → Claude → Codex sur une mémoire
+fictive, `tests/fixtures/relais_git_20261029` (consignes dans son `LIRE_MOI.md`).
 
-1. Claude : `python scripts/synchro_git.py claude`, commit, push de sa branche.
-2. Codex : branche `codex/synchro-git` tirée de celle de Claude,
-   `python scripts/synchro_git.py codex --reference origin/<branche Claude>`, commit, push.
-3. Claude : fusion de `origin/codex/synchro-git`, `python scripts/synchro_git.py retour`.
+| Étape | Branche | État |
+|---|---|---|
+| départ Codex | `codex/relais-git-20261029` (5830dbd) | publié |
+| Claude | `claude/relais-git-20261029` (8695364) | publié, synchro verifier code 0 |
+| retour Codex | même branche, `relais.py --etape retour` | à exécuter par Codex |
+| preuves | PR vers `main`, puis contrôle de `main` | après le retour |
 
-`python scripts/synchro_git.py divergence` montre, dans un bac à sable local,
-que deux branches qui prévoient le même match produisent un conflit git, et
-que la résolution par union est refusée par `synchro verifier`.
+La synchronisation n'est validée qu'après le retour Codex et la fusion des
+preuves. Une simulation du retour côté Claude (code 0) ne la remplace pas.
+
+`scripts/synchro_git.py` reste un outil local : `divergence` montre, dans un bac
+à sable, que deux branches qui prévoient le même match produisent un conflit
+git et que la résolution par union est refusée par `synchro verifier`. Ses
+étapes `claude`/`codex`/`retour` écrivent dans `essais/synchro_git`, à garder
+sur des branches de test, jamais dans `main`.
 
 ## À construire
 
-- Jeton d'écriture explicite dans la mémoire (`travail`, clé `jeton_registre`).
+- Jeton d'écriture explicite dans la mémoire réelle (`travail`, clé
+  `jeton_registre`) ; aujourd'hui testé seulement sur mémoire fictive.
