@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, contexte_favori, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
+from . import backtest, checkpoint, data, contexte_favori, externe, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -33,7 +33,7 @@ def main(argv: list[str] | None = None) -> int:
                     help="stats par défaut : Python seul, aucun appel LLM ; multi-llm doit être demandé explicitement")
     pv.add_argument("--contexte-favori", help="JSON des angles morts ; aucune correction de probabilité")
     am = sub.add_parser("angles-morts", help="grille qualitative du favori, sans écriture ni appel réseau")
-    am.add_argument("action", choices=["modele", "verifier"])
+    am.add_argument("action", choices=["modele", "verifier", "externe"])
     am.add_argument("--fichier", help="contexte JSON à vérifier")
     am.add_argument("--match-id")
     am.add_argument("--home")
@@ -41,6 +41,9 @@ def main(argv: list[str] | None = None) -> int:
     am.add_argument("--favori", choices=["H", "A"])
     am.add_argument("--coup-envoi")
     am.add_argument("--au", help="date-heure de vérification avec fuseau")
+    am.add_argument("--dossier-externe", help="dossier externe/ de la branche donnees-externes (action externe)")
+    am.add_argument("--nom-home", help="nom de l'équipe à domicile dans les sources externes, s'il diffère")
+    am.add_argument("--nom-away", help="nom de l'équipe à l'extérieur dans les sources externes, s'il diffère")
     rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
     rs.add_argument("match_id")
     rs.add_argument("score", help="H, D, A ou score 2-1")
@@ -184,15 +187,21 @@ def main(argv: list[str] | None = None) -> int:
         try:
             if args.action == "modele":
                 out = contexte_favori.modele(args.match_id, args.home, args.away, args.favori, args.coup_envoi)
+            elif args.action == "externe":
+                if not (args.fichier and args.dossier_externe):
+                    raise ValueError("--fichier et --dossier-externe requis")
+                doc = contexte_favori.charger(args.fichier)
+                noms = {k: v for k, v in ((doc.get("home"), args.nom_home), (doc.get("away"), args.nom_away)) if v}
+                out = externe.enrichir(doc, Path(args.dossier_externe), at=args.au, noms=noms)
             else:
                 if not args.fichier:
                     raise ValueError("--fichier requis")
                 out = contexte_favori.verifier(contexte_favori.charger(args.fichier), at=args.au)
-        except (ValueError, TypeError, AttributeError) as exc:
+        except (ValueError, TypeError, AttributeError, KeyError) as exc:
             print(f"refus : {exc}")
             return 2
         print(json.dumps(out, indent=2, ensure_ascii=False))
-        return 0 if args.action == "modele" or out["ok"] else 1
+        return 0 if args.action != "verifier" or out["ok"] else 1
     elif args.cmd == "marges":
         try:
             out = marges.calculer(args.xg_home, args.xg_away)

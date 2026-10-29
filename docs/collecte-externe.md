@@ -45,6 +45,22 @@ python scripts/lire_externe.py --dossier ../megatron-externe/externe statut
 python scripts/lire_externe.py --dossier ../megatron-externe/externe joueurs --equipe '<nom Sofascore>' --avant '2026-11-01T20:00:00+01:00'
 ```
 
+## Branchement au moteur (grille du favori)
+
+```sh
+python -m megatron angles-morts modele --match-id <id> --home '<A>' --away '<B>' --favori H --coup-envoi '<date avec fuseau>' > ctx.json
+python -m megatron angles-morts externe --fichier ctx.json --dossier-externe ../megatron-externe/externe \
+  [--nom-home '<nom API-Football>'] [--nom-away '<nom>'] [--au '<date avec fuseau>'] > ctx_enrichi.json
+python -m megatron angles-morts verifier --fichier ctx_enrichi.json
+```
+
+`megatron/externe.py` lit le dernier instantané de blessures API-Football, la compo officielle
+et les statuts FPL collectés avant l'analyse et avant le coup d'envoi (± 12 h pour reconnaître le
+match), puis remplit l'angle `informations_manquantes` à l'état `a_verifier`. Les noms d'équipe
+diffèrent entre sources : une équipe introuvable est signalée dans les informations manquantes.
+Avec une seule famille de sources, la règle « trois sites et familles pour les absences » reste
+signalée. Aucune probabilité n'est modifiée.
+
 ## Limites connues (à lire avant usage)
 
 - **Premier run réel (29/10/2026 15:31 UTC, déclenchement manuel)** : FPL OK (199 joueurs non disponibles ou avec news), Understat OK (402 matchs, 5 ligues), ClubElo 502 (serveur ; 3 essais ajoutés ensuite), **Sofascore 403** sur les IP GitHub malgré curl_cffi. Contourner davantage la protection anti-bot de Sofascore n'est pas fait : compos et absences hors Premier League restent sans source automatique tant qu'une API autorisée (ex. API-Football avec clé) n'est pas branchée.
