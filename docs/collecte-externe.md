@@ -53,5 +53,6 @@ python scripts/lire_externe.py --dossier ../megatron-externe/externe joueurs --e
 - Sofascore et Understat peuvent bloquer les IP de GitHub (Cloudflare) : une source en échec n'arrête pas les autres ; l'erreur est commitée dans le manifeste.
 - Codes `reason` de Sofascore non documentés : gardés bruts (`code N`) quand il n'y a pas de description.
 - Une compo « probable » n'est pas collectée : seules les compos confirmées (`confirmed`) et les absents sont écrits.
+- **Premier run API-Football (29/10/2026 18:12 UTC)** : plan Free actif, 100 requêtes/jour, saison en cours accessible ; 17 matchs suivis sur J/J+1, 241 blessures/suspensions uniques (doublons J/J+1 retirés ensuite), 5 requêtes. Identifiants vérifiés dans `ligues_vues` : 40, 61, 62, 78, 79, 94, 135, 140, 144, 203. Pas encore vus (aucun match J/J+1) : 2, 3, 848, 39, 88, 136, 141, 179, 197.
 - API-Football : sans le secret, la source est « ignore ». Le plan gratuit peut refuser la saison en cours (réponse `errors`) : le premier run le dira dans `statut.json`/manifeste. La clé passe en en-tête, jamais dans l'URL ni les journaux.
 - Rien de tout cela ne modifie une probabilité : faits déclaratifs pour `contexte_favori`, aucune utilisation dans les modèles sans expérience validée.

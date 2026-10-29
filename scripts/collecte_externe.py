@@ -294,7 +294,10 @@ def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: 
         res["calendrier"] = len(cal)
     if nouveau_jour or d.hour % 6 == 0:
         jours = (jour, demain) if nouveau_jour else (jour,)
-        blessures = [l for j in jours for l in lignes_blessures(appel(f"/injuries?date={j}").get("response") or [], collecte_le)]
+        brut_b = [r for j in jours for r in appel(f"/injuries?date={j}").get("response") or []]
+        # J et J+1 renvoient en partie les mêmes lignes (vu au premier run réel : 482 lignes, 241 uniques)
+        uniques = {(l["fixture_id"], l["equipe"], l["joueur_id"], l["type"]): l for l in lignes_blessures(brut_b, collecte_le)}
+        blessures = sorted(uniques.values(), key=lambda x: (str(x["coup_envoi"]), str(x["fixture_id"]), str(x["equipe"]), str(x["joueur"])))
         res["blessures"] = len(blessures)
         res["fichier_blessures"] = ecrire_instantane(dossier, "apifootball/blessures", blessures, COLONNES_BLESSURES, maintenant, etat)
     compos = []
