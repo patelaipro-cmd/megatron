@@ -83,7 +83,9 @@ git et que la résolution par union est refusée par `synchro verifier`. Ses
 étapes `claude`/`codex`/`retour` écrivent dans `essais/synchro_git`, à garder
 sur des branches de test, jamais dans `main`.
 
-## À construire
+## Jeton d'écriture
 
-- Jeton d'écriture explicite dans la mémoire réelle (`travail`, clé
-  `jeton_registre`) ; aujourd'hui testé seulement sur mémoire fictive.
+Le contrôle coopératif `jeton_registre` et un verrou local protègent les
+écritures via Ledger et suivi. Voir [jeton-registre.md](jeton-registre.md).
+Activation en mémoire réelle non effectuée : les tests utilisent des mémoires
+temporaires. La publication Git et la relecture restent nécessaires.
