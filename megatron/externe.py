@@ -8,6 +8,9 @@ reste à juger.
 from __future__ import annotations
 
 import csv
+import json
+import re
+import unicodedata
 from datetime import timedelta
 from pathlib import Path
 
@@ -19,6 +22,39 @@ SOURCES = {
     "fpl": ("fpl", "https://fantasy.premierleague.com/api/bootstrap-static/"),
 }
 FENETRE = timedelta(hours=12)  # écart toléré entre le coup d'envoi déclaré et celui de la source
+ALIAS = Path(__file__).resolve().parent.parent / "data" / "noms_equipes.json"
+GENERIQUES = {"fc", "afc", "cf", "sc", "sv", "fsv", "ac", "as", "ss", "ssc", "us", "ud", "cd", "rcd", "sd", "vfb", "vfl",
+              "tsg", "1", "04", "05", "1899", "1846", "calcio", "club", "de", "city", "town", "united", "utd"}
+
+
+def _jetons(nom: str) -> frozenset:
+    sans_accent = unicodedata.normalize("NFKD", nom).encode("ascii", "ignore").decode().casefold()
+    return frozenset(t for t in re.split(r"[^a-z0-9]+", sans_accent) if t and t not in GENERIQUES)
+
+
+def charger_alias(path: Path = ALIAS) -> dict:
+    return {k: v for k, v in json.loads(path.read_text(encoding="utf-8")).items() if not k.startswith("_")}
+
+
+def resoudre(nom: str, candidats, alias: dict | None = None) -> tuple[str | None, str]:
+    """Nom de `candidats` désignant `nom`, et la méthode ; (None, raison) si absent ou ambigu."""
+    candidats = set(candidats)
+    alias = charger_alias() if alias is None else alias
+    if nom in candidats:
+        return nom, "exact"
+    if nom in alias:  # nom piégeux (ex. Paris FC / Paris SG) : seuls les alias déclarés valent
+        trouves = [c for c in alias[nom] if c in candidats]
+        return (trouves[0], "alias") if trouves else (None, "aucun alias présent")
+    cible = _jetons(nom)
+    if not cible:
+        return None, "nom vide après normalisation"
+    egaux = [c for c in candidats if _jetons(c) == cible]
+    if len(egaux) == 1:
+        return egaux[0], "normalise"
+    inclus = [c for c in candidats if cible <= _jetons(c) or (_jetons(c) and _jetons(c) <= cible)]
+    if len(egaux) > 1 or len(inclus) > 1:
+        return None, "ambigu : " + ", ".join(sorted(egaux or inclus))
+    return (inclus[0], "inclusion") if inclus else (None, "introuvable")
 
 
 def _lire(fichier: Path) -> list[dict]:
@@ -44,19 +80,33 @@ def _du_match(ligne: dict, equipe: str, kickoff) -> bool:
         return False
 
 
-def faits(dossier: Path, equipe: str, kickoff: str, at: str | None = None) -> dict:
+def faits(dossier: Path, equipe: str, kickoff: str, at: str | None = None, alias: dict | None = None) -> dict:
     """Absences (API-Football), compo officielle (API-Football) et statuts FPL d'une équipe pour un match."""
+    alias = charger_alias() if alias is None else alias
     ko = parse_dt(kickoff)
     avant = min(parse_dt(at or now_utc()), ko)
-    out = {"equipe": equipe, "absences": [], "compo": [], "fpl": []}
+    out = {"equipe": equipe, "absences": [], "compo": [], "fpl": [], "noms": {}}
+
+    def nom_source(cle, lignes, creneau):
+        # candidats : équipes de la source jouant dans le même créneau (FPL : toutes, sans coup d'envoi)
+        cands = {l.get("equipe") for l in lignes if not creneau or _du_match(l, l.get("equipe"), ko)} - {None, ""}
+        retenu, methode = resoudre(equipe, cands, alias)
+        out["noms"][cle] = {"nom": retenu, "methode": methode}
+        return retenu
+
     for snap in instantanes(dossier, "apifootball/blessures", avant)[:1]:
-        out["absences"] = [l for l in snap if _du_match(l, equipe, ko)]
+        n = nom_source("apifootball/blessures", snap, True)
+        out["absences"] = [l for l in snap if n and _du_match(l, n, ko)]
     for snap in instantanes(dossier, "apifootball/compos", avant):  # un instantané ne contient que les matchs de son heure
-        out["compo"] = [l for l in snap if _du_match(l, equipe, ko)]
-        if out["compo"]:
+        cands = {l.get("equipe") for l in snap if _du_match(l, l.get("equipe"), ko)} - {None, ""}
+        n, methode = resoudre(equipe, cands, alias)
+        if n:
+            out["noms"]["apifootball/compos"] = {"nom": n, "methode": methode}
+            out["compo"] = [l for l in snap if _du_match(l, n, ko)]
             break
     for snap in instantanes(dossier, "fpl", avant)[:1]:
-        out["fpl"] = [l for l in snap if l.get("equipe") == equipe]
+        n = nom_source("fpl", snap, False)
+        out["fpl"] = [l for l in snap if n and l.get("equipe") == n]
     return out
 
 
@@ -81,7 +131,8 @@ def _resume(f: dict) -> str:
     titulaires = [l for l in f["compo"] if l.get("statut") == "titulaire"]
     if titulaires:
         parts.append(f"compo officielle ({titulaires[0].get('formation') or '?'}) : " + ", ".join(l["joueur"] for l in titulaires))
-    return f"{f['equipe']} — " + ("; ".join(parts) if parts else "aucun fait collecté")
+    noms = ", ".join(f"{k} = {v['nom']} ({v['methode']})" for k, v in f["noms"].items() if v["nom"] and v["nom"] != f["equipe"])
+    return f"{f['equipe']}" + (f" [{noms}]" if noms else "") + " — " + ("; ".join(parts) if parts else "aucun fait collecté")
 
 
 def enrichir(doc: dict, dossier: Path, *, at: str | None = None, noms: dict | None = None) -> dict:
@@ -94,8 +145,11 @@ def enrichir(doc: dict, dossier: Path, *, at: str | None = None, noms: dict | No
         for s in _sources(f):
             if s not in sources:
                 sources.append(s)
+        for cle, n in f["noms"].items():
+            if n["nom"] is None and n["methode"].startswith("ambigu"):
+                manques.append(f"{f['equipe']} / {cle} : nom {n['methode']} (ajouter un alias dans data/noms_equipes.json)")
         if not (f["absences"] or f["compo"] or f["fpl"]):
-            manques.append(f"aucune donnée externe pour « {f['equipe']} » (nom différent dans la source ?)")
+            manques.append(f"aucune donnée externe pour « {f['equipe']} » (absent des sources ou nom à ajouter dans data/noms_equipes.json)")
         elif not f["compo"]:
             manques.append(f"compo officielle de {f['equipe']} non collectée")
     out = {**doc, "angles": [dict(a) for a in doc["angles"]]}

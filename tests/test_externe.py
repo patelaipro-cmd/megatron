@@ -88,5 +88,29 @@ class TestExterne(unittest.TestCase):
         self.assertIn('Blesse Fictif', buf.getvalue())
 
 
+class TestNoms(unittest.TestCase):
+    def test_resolution(self):
+        r = externe.resoudre
+        self.assertEqual(r('Paris SG', {'Paris Saint Germain', 'Lens'}), ('Paris Saint Germain', 'alias'))
+        self.assertEqual(r('Paris FC', {'Paris Saint Germain'})[0], None)  # jamais rapproché du PSG
+        self.assertEqual(r('Mainz', {'FSV Mainz 05', 'SV Elversberg'}), ('FSV Mainz 05', 'normalise'))
+        self.assertEqual(r('Hull', {'Hull City', 'Ipswich Town'}), ('Hull City', 'normalise'))
+        self.assertEqual(r('Monchengladbach', {'Borussia Mönchengladbach'}), ('Borussia Mönchengladbach', 'inclusion'))
+        self.assertEqual(r('Tottenham', {'Spurs', 'Arsenal'}), ('Spurs', 'alias'))
+        self.assertTrue(r('Borussia', {'Borussia Dortmund', 'Borussia Mönchengladbach'})[1].startswith('ambigu'))
+        self.assertEqual(r('Inconnu', {'Lens'}), (None, 'introuvable'))
+
+    def test_alias_valides(self):
+        alias = externe.charger_alias()
+        self.assertTrue(alias and all(isinstance(v, list) and v for v in alias.values()))
+
+    def test_faits_avec_nom_megatron(self):
+        with tempfile.TemporaryDirectory() as d:
+            ecrire(d, 'apifootball/blessures', '1200.csv', [blessure('2099-01-01T12:00:00+00:00', 'Paris Saint Germain', 'Blesse Fictif')])
+            f = externe.faits(Path(d), 'Paris SG', KO, at=AT)
+            self.assertEqual([l['joueur'] for l in f['absences']], ['Blesse Fictif'])
+            self.assertEqual(f['noms']['apifootball/blessures'], {'nom': 'Paris Saint Germain', 'methode': 'alias'})
+
+
 if __name__ == '__main__':
     unittest.main()
