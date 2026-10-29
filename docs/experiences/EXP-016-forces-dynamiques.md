@@ -55,3 +55,42 @@ Si l'optimum touche un bord de q, la grille est étendue d'un cran une seule foi
 
 - Test 2020-26 déjà vu par le projet (choix de v5) : pas un test vierge.
 - Approximation gaussienne du filtre ; aucune absence, coupe ni cote dans le modèle.
+
+## Résultats (exécution du 29/10/2026, `python scripts/exp016_dynamique.py --sortie docs/experiences/EXP-016`)
+
+**Verdict : REJETÉ (D1 et D2 non tenus). v5-cal reste.** Détail : `EXP-016/resultats.json`.
+
+Écarts au protocole, signalés :
+- La grille fait 192 réglages, pas 384 (erreur de compte dans le protocole : 4·3·2·2·2·2 = 192).
+  L'optimum touchait le bord q = 0,0002 : extension unique à q = 0,0001 (48 réglages), qui
+  l'emporte et touche à son tour le bord ; pas de seconde extension, conformément au protocole.
+- Bogue corrigé après une première exécution : avec a = −c, d = +c en absolu, c décalait toutes
+  les équipes à l'identique et s'annulait (c = 0 et c = 0,15 donnaient la même log-loss). Une équipe
+  nouvelle part désormais de la moyenne des équipes de la ligue vues dans l'année, − c / + c. La
+  première exécution est gardée (`EXP-016/resultats_v0_bogue_c.json`) ; même verdict, écarts
+  quasi identiques (test −0,00112 contre −0,00110).
+
+Réglage figé (dev 2008-16, 14 608 matchs) : q = 0,0001 ; q_saison = 0 ; P0 = 0,05 ; w = 0,35 ;
+c = 0,15 ; sans correction de variance. Log-loss dev brute 0,98925. Recalibration dev :
+b = 1,102393 ; c_H = 0,041573 ; c_D = 0,139098 (log-loss dev 0,98786).
+
+| | validation 2016-20 (6 982) | test 2020-26 (10 954) |
+|---|---:|---:|
+| log-loss dyn-v1-cal | 0,96698 | 0,98707 |
+| log-loss v5-cal | 0,96686 | 0,98816 |
+| écart dyn − v5 [IC 95 %] | +0,00012 [−0,00159 ; +0,00172] | −0,00110 [−0,00231 ; +0,00009] |
+| RPS dyn-v1-cal / v5-cal | 0,19606 / 0,19615 | 0,20039 / 0,20083 |
+| écart au bookmaker dyn / v5 | +0,0128 / +0,0127 | +0,0148 / +0,0159 |
+
+Par ligue, test (dyn − v5) : F1 −0,0012 ; E0 +0,0001 ; D1 −0,0026 ; SP1 −0,0005 ; I1 −0,0016.
+
+Critères : D1 non (borne haute +0,00172) ; D2 non (borne haute +0,00009) ; D3 oui (4/5) ; D4 oui.
+
+Lecture : le filtre optimal dérive très peu (q au plus bas, aucune dérive d'intersaison) ; il
+retrouve à peu près ce que fait v5 (pondération exponentielle), sans gain démontré. Le léger
+avantage en test n'existe pas en validation. Le retard sur le bookmaker reste ≈ 0,015 : l'écart
+ne viendra pas de la dynamique des forces, mais d'une information que le modèle n'a pas (cotes,
+xG, compositions). Étage suivant : fusion avec le marché (EXP-017).
+
+Niveaux de victoire du favori dyn-v1 (test, information, pas de comparaison v5 faute de λ dans
+EXP-008) : 1+ annoncé 52,2 % / observé 52,6 % ; 2+ 29,3 % / 28,6 % ; 3+ 13,8 % / 13,4 %.
