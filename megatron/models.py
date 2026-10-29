@@ -212,6 +212,16 @@ def dixon_coles_1x2(lam_home: float, lam_away: float, rho: float, max_goals: int
     return {o: v / total for o, v in out.items()}
 
 
+def calibrer_1x2(p: dict[str, float], b: float, c_h: float, c_d: float) -> dict[str, float]:
+    """Recalibration p'_o ∝ p_o^b · exp(c_o), c_A = 0 (EXP-010)."""
+    z = {"H": b * math.log(max(p["H"], 1e-6)) + c_h, "D": b * math.log(max(p["D"], 1e-6)) + c_d,
+         "A": b * math.log(max(p["A"], 1e-6))}
+    m = max(z.values())
+    e = {o: math.exp(v - m) for o, v in z.items()}
+    s = sum(e.values())
+    return {o: e[o] / s for o in OUTCOMES}
+
+
 def predict_1x2(fit: MaherFit, match: Match) -> dict[str, float]:
     if fit.rho:
         return dixon_coles_1x2(*fit.rates(match.home, match.away), fit.rho)

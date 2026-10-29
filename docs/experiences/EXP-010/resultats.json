@@ -1,0 +1,464 @@
+{
+  "parametres": {
+    "b": 1.160088,
+    "c_H": 0.016201,
+    "c_D": 0.150311
+  },
+  "n_dev": 14608,
+  "dev": {
+    "v5": {
+      "n": 14604,
+      "brier": 0.591245,
+      "log_loss": 0.991184,
+      "rps": 0.201248,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 5677,
+          "p_moyenne": 0.1494,
+          "frequence_observee": 0.1252
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 25825,
+          "p_moyenne": 0.279,
+          "frequence_observee": 0.2784
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 9378,
+          "p_moyenne": 0.4841,
+          "frequence_observee": 0.488
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 2668,
+          "p_moyenne": 0.67,
+          "frequence_observee": 0.708
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 264,
+          "p_moyenne": 0.8428,
+          "frequence_observee": 0.9053
+        }
+      ]
+    },
+    "v5_cal": {
+      "n": 14604,
+      "brier": 0.590325,
+      "log_loss": 0.98923,
+      "rps": 0.200873,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 7137,
+          "p_moyenne": 0.1408,
+          "frequence_observee": 0.1356
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 24600,
+          "p_moyenne": 0.2838,
+          "frequence_observee": 0.2863
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 8609,
+          "p_moyenne": 0.4872,
+          "frequence_observee": 0.4811
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 3022,
+          "p_moyenne": 0.677,
+          "frequence_observee": 0.6827
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 444,
+          "p_moyenne": 0.8508,
+          "frequence_observee": 0.8761
+        }
+      ]
+    },
+    "bookmaker": {
+      "n": 14604,
+      "brier": 0.582324,
+      "log_loss": 0.977441,
+      "rps": 0.197318
+    },
+    "cal_moins_brut": {
+      "n": 14608,
+      "ecart": -0.00196,
+      "ic95": [
+        -0.00296,
+        -0.00094
+      ]
+    },
+    "cal_moins_bookmaker": {
+      "n": 14604,
+      "ecart": 0.01179,
+      "ic95": [
+        0.00935,
+        0.01438
+      ]
+    },
+    "brut_moins_bookmaker": {
+      "n": 14604,
+      "ecart": 0.01374,
+      "ic95": [
+        0.01135,
+        0.0164
+      ]
+    },
+    "par_ligue": {
+      "F1": {
+        "n": 3040,
+        "ecart": -0.00192,
+        "ic95": [
+          -0.00409,
+          0.00029
+        ]
+      },
+      "E0": {
+        "n": 3040,
+        "ecart": -0.00231,
+        "ic95": [
+          -0.00451,
+          -0.00016
+        ]
+      },
+      "D1": {
+        "n": 2448,
+        "ecart": 0.0005,
+        "ic95": [
+          -0.00195,
+          0.00296
+        ]
+      },
+      "SP1": {
+        "n": 3040,
+        "ecart": -0.00193,
+        "ic95": [
+          -0.00418,
+          0.00043
+        ]
+      },
+      "I1": {
+        "n": 3040,
+        "ecart": -0.00367,
+        "ic95": [
+          -0.00569,
+          -0.00161
+        ]
+      }
+    }
+  },
+  "validation": {
+    "v5": {
+      "n": 6982,
+      "brier": 0.575963,
+      "log_loss": 0.969484,
+      "rps": 0.196743,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 3253,
+          "p_moyenne": 0.1465,
+          "frequence_observee": 0.1227
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 11755,
+          "p_moyenne": 0.2785,
+          "frequence_observee": 0.2736
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 4273,
+          "p_moyenne": 0.4851,
+          "frequence_observee": 0.4987
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 1489,
+          "p_moyenne": 0.6788,
+          "frequence_observee": 0.726
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 176,
+          "p_moyenne": 0.8379,
+          "frequence_observee": 0.8807
+        }
+      ]
+    },
+    "v5_cal": {
+      "n": 6982,
+      "brier": 0.574659,
+      "log_loss": 0.966857,
+      "rps": 0.196154,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 3859,
+          "p_moyenne": 0.1366,
+          "frequence_observee": 0.1327
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 11259,
+          "p_moyenne": 0.2827,
+          "frequence_observee": 0.2793
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 3906,
+          "p_moyenne": 0.4881,
+          "frequence_observee": 0.4946
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 1606,
+          "p_moyenne": 0.6838,
+          "frequence_observee": 0.6993
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 316,
+          "p_moyenne": 0.8463,
+          "frequence_observee": 0.8544
+        }
+      ]
+    },
+    "bookmaker": {
+      "n": 6982,
+      "brier": 0.565723,
+      "log_loss": 0.954142,
+      "rps": 0.192128
+    },
+    "cal_moins_brut": {
+      "n": 6982,
+      "ecart": -0.00263,
+      "ic95": [
+        -0.00398,
+        -0.00116
+      ]
+    },
+    "cal_moins_bookmaker": {
+      "n": 6982,
+      "ecart": 0.01272,
+      "ic95": [
+        0.00924,
+        0.01603
+      ]
+    },
+    "brut_moins_bookmaker": {
+      "n": 6982,
+      "ecart": 0.01534,
+      "ic95": [
+        0.01183,
+        0.01879
+      ]
+    },
+    "par_ligue": {
+      "F1": {
+        "n": 1419,
+        "ecart": -0.00185,
+        "ic95": [
+          -0.00503,
+          0.00158
+        ]
+      },
+      "E0": {
+        "n": 1454,
+        "ecart": -0.0037,
+        "ic95": [
+          -0.00682,
+          -0.0005
+        ]
+      },
+      "D1": {
+        "n": 1224,
+        "ecart": -0.00023,
+        "ic95": [
+          -0.00337,
+          0.00313
+        ]
+      },
+      "SP1": {
+        "n": 1463,
+        "ecart": -0.00343,
+        "ic95": [
+          -0.00664,
+          -0.00035
+        ]
+      },
+      "I1": {
+        "n": 1422,
+        "ecart": -0.00354,
+        "ic95": [
+          -0.00668,
+          -0.00054
+        ]
+      }
+    }
+  },
+  "test": {
+    "v5": {
+      "n": 10953,
+      "brier": 0.589972,
+      "log_loss": 0.990377,
+      "rps": 0.201248,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 4546,
+          "p_moyenne": 0.1536,
+          "frequence_observee": 0.1366
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 18923,
+          "p_moyenne": 0.2762,
+          "frequence_observee": 0.2732
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 7059,
+          "p_moyenne": 0.4874,
+          "frequence_observee": 0.492
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 2183,
+          "p_moyenne": 0.6708,
+          "frequence_observee": 0.7169
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 148,
+          "p_moyenne": 0.838,
+          "frequence_observee": 0.8378
+        }
+      ]
+    },
+    "v5_cal": {
+      "n": 10953,
+      "brier": 0.588803,
+      "log_loss": 0.988156,
+      "rps": 0.200817,
+      "calibration": [
+        {
+          "tranche": "0.0-0.2",
+          "n": 5549,
+          "p_moyenne": 0.1438,
+          "frequence_observee": 0.1411
+        },
+        {
+          "tranche": "0.2-0.4",
+          "n": 18071,
+          "p_moyenne": 0.2799,
+          "frequence_observee": 0.2809
+        },
+        {
+          "tranche": "0.4-0.6",
+          "n": 6450,
+          "p_moyenne": 0.4897,
+          "frequence_observee": 0.4853
+        },
+        {
+          "tranche": "0.6-0.8",
+          "n": 2503,
+          "p_moyenne": 0.6779,
+          "frequence_observee": 0.6892
+        },
+        {
+          "tranche": "0.8-1.0",
+          "n": 286,
+          "p_moyenne": 0.8448,
+          "frequence_observee": 0.8357
+        }
+      ]
+    },
+    "bookmaker": {
+      "n": 10953,
+      "brier": 0.57797,
+      "log_loss": 0.97229,
+      "rps": 0.19588
+    },
+    "cal_moins_brut": {
+      "n": 10954,
+      "ecart": -0.00222,
+      "ic95": [
+        -0.00333,
+        -0.00107
+      ]
+    },
+    "cal_moins_bookmaker": {
+      "n": 10953,
+      "ecart": 0.01587,
+      "ic95": [
+        0.0133,
+        0.01833
+      ]
+    },
+    "brut_moins_bookmaker": {
+      "n": 10953,
+      "ecart": 0.01809,
+      "ic95": [
+        0.01564,
+        0.02057
+      ]
+    },
+    "par_ligue": {
+      "F1": {
+        "n": 2057,
+        "ecart": -0.00076,
+        "ic95": [
+          -0.0032,
+          0.00172
+        ]
+      },
+      "E0": {
+        "n": 2346,
+        "ecart": -0.00053,
+        "ic95": [
+          -0.00312,
+          0.002
+        ]
+      },
+      "D1": {
+        "n": 1836,
+        "ecart": -0.00031,
+        "ic95": [
+          -0.00294,
+          0.00249
+        ]
+      },
+      "SP1": {
+        "n": 2337,
+        "ecart": -0.00345,
+        "ic95": [
+          -0.00596,
+          -0.00097
+        ]
+      },
+      "I1": {
+        "n": 2378,
+        "ecart": -0.00541,
+        "ic95": [
+          -0.00777,
+          -0.0031
+        ]
+      }
+    }
+  },
+  "criteres": {
+    "K1": true,
+    "K2": true,
+    "K3": true,
+    "K4": true
+  }
+}

@@ -117,8 +117,8 @@ def poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 10) -> dict[s
 class StatsAgent(Agent):
     """Agent Python déterministe : aucun token consommé.
 
-    Modèle 1X2 par défaut ``poisson-v5`` (EXP-008 : demi-vie 270, rétrécissement
-    2, pseudo-buts mêlant 35 % de tirs cadrés convertis) ; marchés 2+ / 3+ sur
+    Modèle 1X2 par défaut ``poisson-v5-cal`` (EXP-008 : demi-vie 270, rétrécissement
+    2, pseudo-buts mêlant 35 % de tirs cadrés convertis ; recalibré par EXP-010) ; marchés 2+ / 3+ sur
     un ajustement ``poisson-v4`` séparé (recalibration EXP-007) : la tâche fournit
     ``division``, ``home``, ``away`` et ``date`` (AAAA-MM-JJ) ; le modèle de
     Maher est ajusté sur les seuls matchs antérieurs de ``data/``.
@@ -129,7 +129,8 @@ class StatsAgent(Agent):
     name = "stats"
     HALF_LIFE, SHRINK = 270.0, 2.0  # promus par EXP-008 (retour arrière : 90, 3, 0,25 = poisson-v4)
     PROXY, PROXY_WEIGHT = "cadres", 0.35
-    VERSION = "poisson-v5"
+    CALIBRATION = (1.160088, 0.016201, 0.150311)  # b, c_H, c_D appris par EXP-010 sur 2008-2016 ; None = v5 brut
+    VERSION = "poisson-v5-cal"
 
     def __init__(self, csv_path=None):
         self.csv_path = csv_path  # None = data.CURRENT (2000-2026 + saison en cours)
@@ -157,7 +158,8 @@ class StatsAgent(Agent):
         lh, la = fit.rates(task["home"], task["away"])
         unknown = [t for t in (task["home"], task["away"]) if t not in fit.attack]
         rep = self._response(
-            poisson_1x2(lh, la), task, version=self.VERSION,
+            models.calibrer_1x2(poisson_1x2(lh, la), *self.CALIBRATION) if self.CALIBRATION else poisson_1x2(lh, la),
+            task, version=self.VERSION if self.CALIBRATION else "poisson-v5",
             preuves=[f"{len(history)} matchs antérieurs au {day}, dernier le "
                      f"{max(m.day for m in history)}",
                      f"buts attendus {lh:.2f} - {la:.2f}"],
