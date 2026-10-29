@@ -104,6 +104,14 @@ class TestAbsences(unittest.TestCase):
 
 
 class TestNiveaux(unittest.TestCase):
+    def test_recalibration_exp012_emboitee_et_brut_garde(self):
+        n = syndicate.niveaux(1.9, 0.8)
+        self.assertEqual(n["statut"], "RECALIBRE_EXP-012")
+        p, b = n["probabilites"], n["brut"]
+        self.assertGreaterEqual(p["victoire_simple"], p["victoire_par_2_ou_plus"])
+        self.assertGreaterEqual(p["victoire_par_2_ou_plus"], p["victoire_par_3_ou_plus"])
+        self.assertNotEqual(p, b)
+
     def test_victoire_simple_differente_de_victoire_large(self):
         n = syndicate.niveaux(2.2, 0.7)
         p = n["probabilites"]
@@ -149,6 +157,7 @@ class TestFicheEtDecision(Base):
         self.assertFalse(e["decision"]["activation_automatique"])
         self.assertFalse(syndicate.ACTIVATION_AUTOMATIQUE)
         self.assertIn(e["decision"]["decision"], ("GO", "SECURE", "WATCH", "PASS"))
+        from unittest import mock
         n = {"favori": "H", "statut": "EXPERIMENTAL_NON_CALIBRE",
              "probabilites": {"victoire_simple": 0.8, "victoire_par_2_ou_plus": 0.65, "victoire_par_3_ou_plus": 0.4}}
         fiche = e["fiche"]
@@ -159,7 +168,10 @@ class TestFicheEtDecision(Base):
         d = syndicate.decider(n, fiche, ctx)
         self.assertEqual(d["decision"], "SECURE")
         self.assertTrue(any("GO bloqué" in r for r in d["raisons"]))
-        self.assertEqual(syndicate.decider({**n, "statut": "RECALIBRE_EXP-012"}, fiche, ctx)["decision"], "GO")
+        d2 = syndicate.decider({**n, "statut": "RECALIBRE_EXP-012"}, fiche, ctx)
+        self.assertEqual(d2["decision"], "SECURE")  # zone P(2+) >= 60 % non validée par EXP-012
+        with mock.patch.object(syndicate, "ZONE_GO_VALIDEE", True):
+            self.assertEqual(syndicate.decider({**n, "statut": "RECALIBRE_EXP-012"}, fiche, ctx)["decision"], "GO")
 
     def test_risque_favori_faible_donne_pass(self):
         e = syndicate.evaluer(systeme.DIVISION, "Delta Town", "Epsilon SC", self.ko, at=self.ko - timedelta(hours=2),

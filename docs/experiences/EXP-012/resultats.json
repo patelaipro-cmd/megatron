@@ -1,0 +1,657 @@
+{
+ "variables_sha256": "52ce2b08c769793f775a0a385b72b47fbf77bed3d4da2d1b29e562662fd94f6f",
+ "matchs": 32544,
+ "exclus_sans_score": 0,
+ "effectifs": {
+  "reglage": 14608,
+  "calibration": 6982,
+  "test": 10954
+ },
+ "niveaux": {
+  "victoire_simple": {
+   "platt": {
+    "a": 0.079141,
+    "b": 1.173564
+   },
+   "test": {
+    "F": {
+     "n": 10954,
+     "log_loss": 0.69178,
+     "brier": 0.24932,
+     "frequence": 0.5254,
+     "p_moyenne": 0.5263,
+     "tranche_p60": {
+      "n": 0,
+      "frequence": null,
+      "p_moyenne": null
+     },
+     "calibration": [
+      {
+       "tranche": "0.4-0.5",
+       "n": 1653,
+       "p_moyenne": 0.4976,
+       "frequence": 0.5051
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 9301,
+       "p_moyenne": 0.5314,
+       "frequence": 0.529
+      }
+     ]
+    },
+    "B": {
+     "n": 10954,
+     "log_loss": 0.66255,
+     "brier": 0.23521,
+     "frequence": 0.5254,
+     "p_moyenne": 0.5136,
+     "tranche_p60": {
+      "n": 2330,
+      "frequence": 0.7249,
+      "p_moyenne": 0.6815
+     },
+     "calibration": [
+      {
+       "tranche": "0.3-0.4",
+       "n": 1566,
+       "p_moyenne": 0.3817,
+       "frequence": 0.3799
+      },
+      {
+       "tranche": "0.4-0.5",
+       "n": 4172,
+       "p_moyenne": 0.4477,
+       "frequence": 0.4535
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 2886,
+       "p_moyenne": 0.5448,
+       "frequence": 0.5471
+      },
+      {
+       "tranche": "0.6-0.7",
+       "n": 1570,
+       "p_moyenne": 0.6435,
+       "frequence": 0.6987
+      },
+      {
+       "tranche": "0.7-0.8",
+       "n": 612,
+       "p_moyenne": 0.7409,
+       "frequence": 0.7647
+      },
+      {
+       "tranche": "0.8-0.9",
+       "n": 141,
+       "p_moyenne": 0.8343,
+       "frequence": 0.844
+      },
+      {
+       "tranche": "0.9-1.0",
+       "n": 7,
+       "p_moyenne": 0.9153,
+       "frequence": 0.7143
+      }
+     ]
+    },
+    "C": {
+     "n": 10954,
+     "log_loss": 0.66213,
+     "brier": 0.235,
+     "frequence": 0.5254,
+     "p_moyenne": 0.5335,
+     "tranche_p60": {
+      "n": 3046,
+      "frequence": 0.6911,
+      "p_moyenne": 0.6985
+     },
+     "calibration": [
+      {
+       "tranche": "0.3-0.4",
+       "n": 1474,
+       "p_moyenne": 0.3794,
+       "frequence": 0.3758
+      },
+      {
+       "tranche": "0.4-0.5",
+       "n": 3649,
+       "p_moyenne": 0.4481,
+       "frequence": 0.4453
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 2785,
+       "p_moyenne": 0.5465,
+       "frequence": 0.5282
+      },
+      {
+       "tranche": "0.6-0.7",
+       "n": 1788,
+       "p_moyenne": 0.6465,
+       "frequence": 0.6493
+      },
+      {
+       "tranche": "0.7-0.8",
+       "n": 906,
+       "p_moyenne": 0.7439,
+       "frequence": 0.7196
+      },
+      {
+       "tranche": "0.8-0.9",
+       "n": 319,
+       "p_moyenne": 0.8383,
+       "frequence": 0.8307
+      },
+      {
+       "tranche": "0.9-1.0",
+       "n": 33,
+       "p_moyenne": 0.9211,
+       "frequence": 0.8182
+      }
+     ]
+    }
+   },
+   "calibration_periode": {
+    "f": 0.69054,
+    "p": 0.6532,
+    "c": 0.65158
+   },
+   "C_moins_F": {
+    "ecart": -0.02965,
+    "ic95": [
+     -0.03364,
+     -0.02592
+    ],
+    "grappes": 30
+   },
+   "B_moins_F": {
+    "ecart": -0.02923,
+    "ic95": [
+     -0.03266,
+     -0.02612
+    ],
+    "grappes": 30
+   },
+   "C_moins_B": {
+    "ecart": -0.00042,
+    "ic95": [
+     -0.00143,
+     0.00059
+    ],
+    "grappes": 30
+   },
+   "ligues_test": {
+    "D1": {
+     "f": 0.69282,
+     "p": 0.66336,
+     "c": 0.66673
+    },
+    "E0": {
+     "f": 0.69099,
+     "p": 0.65948,
+     "c": 0.65928
+    },
+    "F1": {
+     "f": 0.69325,
+     "p": 0.66502,
+     "c": 0.66433
+    },
+    "I1": {
+     "f": 0.69018,
+     "p": 0.6639,
+     "c": 0.66223
+    },
+    "SP1": {
+     "f": 0.69212,
+     "p": 0.66147,
+     "c": 0.65934
+    }
+   },
+   "ligues_C_meilleur_que_F": 5,
+   "criteres": {
+    "N1": true,
+    "N2": true,
+    "N3": true
+   },
+   "valide": true
+  },
+  "victoire_par_2_ou_plus": {
+   "platt": {
+    "a": 0.09015,
+    "b": 1.084905
+   },
+   "test": {
+    "F": {
+     "n": 10954,
+     "log_loss": 0.59874,
+     "brier": 0.2043,
+     "frequence": 0.2864,
+     "p_moyenne": 0.2883,
+     "tranche_p60": {
+      "n": 0,
+      "frequence": null,
+      "p_moyenne": null
+     },
+     "calibration": [
+      {
+       "tranche": "0.2-0.3",
+       "n": 7130,
+       "p_moyenne": 0.279,
+       "frequence": 0.2731
+      },
+      {
+       "tranche": "0.3-0.4",
+       "n": 3824,
+       "p_moyenne": 0.3057,
+       "frequence": 0.3112
+      }
+     ]
+    },
+    "B": {
+     "n": 10954,
+     "log_loss": 0.56927,
+     "brier": 0.19187,
+     "frequence": 0.2864,
+     "p_moyenne": 0.285,
+     "tranche_p60": {
+      "n": 152,
+      "frequence": 0.6645,
+      "p_moyenne": 0.6612
+     },
+     "calibration": [
+      {
+       "tranche": "0.1-0.2",
+       "n": 2452,
+       "p_moyenne": 0.1758,
+       "frequence": 0.1713
+      },
+      {
+       "tranche": "0.2-0.3",
+       "n": 4665,
+       "p_moyenne": 0.2456,
+       "frequence": 0.2409
+      },
+      {
+       "tranche": "0.3-0.4",
+       "n": 2280,
+       "p_moyenne": 0.3443,
+       "frequence": 0.3627
+      },
+      {
+       "tranche": "0.4-0.5",
+       "n": 1010,
+       "p_moyenne": 0.4423,
+       "frequence": 0.4465
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 395,
+       "p_moyenne": 0.5403,
+       "frequence": 0.5418
+      },
+      {
+       "tranche": "0.6-0.7",
+       "n": 123,
+       "p_moyenne": 0.6414,
+       "frequence": 0.6667
+      },
+      {
+       "tranche": "0.7-0.8",
+       "n": 26,
+       "p_moyenne": 0.736,
+       "frequence": 0.6154
+      },
+      {
+       "tranche": "0.8-0.9",
+       "n": 3,
+       "p_moyenne": 0.8233,
+       "frequence": 1.0
+      }
+     ]
+    },
+    "C": {
+     "n": 10954,
+     "log_loss": 0.56923,
+     "brier": 0.19185,
+     "frequence": 0.2864,
+     "p_moyenne": 0.288,
+     "tranche_p60": {
+      "n": 216,
+      "frequence": 0.625,
+      "p_moyenne": 0.6697
+     },
+     "calibration": [
+      {
+       "tranche": "0.1-0.2",
+       "n": 2687,
+       "p_moyenne": 0.1724,
+       "frequence": 0.1757
+      },
+      {
+       "tranche": "0.2-0.3",
+       "n": 4303,
+       "p_moyenne": 0.2456,
+       "frequence": 0.238
+      },
+      {
+       "tranche": "0.3-0.4",
+       "n": 2207,
+       "p_moyenne": 0.3446,
+       "frequence": 0.3539
+      },
+      {
+       "tranche": "0.4-0.5",
+       "n": 1069,
+       "p_moyenne": 0.4429,
+       "frequence": 0.4556
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 472,
+       "p_moyenne": 0.5431,
+       "frequence": 0.5042
+      },
+      {
+       "tranche": "0.6-0.7",
+       "n": 162,
+       "p_moyenne": 0.6432,
+       "frequence": 0.5988
+      },
+      {
+       "tranche": "0.7-0.8",
+       "n": 45,
+       "p_moyenne": 0.734,
+       "frequence": 0.7111
+      },
+      {
+       "tranche": "0.8-0.9",
+       "n": 9,
+       "p_moyenne": 0.8245,
+       "frequence": 0.6667
+      }
+     ]
+    }
+   },
+   "calibration_periode": {
+    "f": 0.60481,
+    "p": 0.56641,
+    "c": 0.56616
+   },
+   "C_moins_F": {
+    "ecart": -0.02951,
+    "ic95": [
+     -0.03385,
+     -0.02552
+    ],
+    "grappes": 30
+   },
+   "B_moins_F": {
+    "ecart": -0.02947,
+    "ic95": [
+     -0.03358,
+     -0.02576
+    ],
+    "grappes": 30
+   },
+   "C_moins_B": {
+    "ecart": -4e-05,
+    "ic95": [
+     -0.00036,
+     0.0003
+    ],
+    "grappes": 30
+   },
+   "ligues_test": {
+    "D1": {
+     "f": 0.62485,
+     "p": 0.59243,
+     "c": 0.59269
+    },
+    "E0": {
+     "f": 0.61858,
+     "p": 0.59154,
+     "c": 0.5917
+    },
+    "F1": {
+     "f": 0.59688,
+     "p": 0.57167,
+     "c": 0.57156
+    },
+    "I1": {
+     "f": 0.59113,
+     "p": 0.56019,
+     "c": 0.55974
+    },
+    "SP1": {
+     "f": 0.5677,
+     "p": 0.53584,
+     "c": 0.53586
+    }
+   },
+   "ligues_C_meilleur_que_F": 5,
+   "criteres": {
+    "N1": true,
+    "N2": true,
+    "N3": true
+   },
+   "valide": true
+  },
+  "victoire_par_3_ou_plus": {
+   "platt": {
+    "a": 0.024482,
+    "b": 0.964744
+   },
+   "test": {
+    "F": {
+     "n": 10954,
+     "log_loss": 0.39437,
+     "brier": 0.11622,
+     "frequence": 0.1343,
+     "p_moyenne": 0.1333,
+     "tranche_p60": {
+      "n": 0,
+      "frequence": null,
+      "p_moyenne": null
+     },
+     "calibration": [
+      {
+       "tranche": "0.1-0.2",
+       "n": 10954,
+       "p_moyenne": 0.1333,
+       "frequence": 0.1343
+      }
+     ]
+    },
+    "B": {
+     "n": 10954,
+     "log_loss": 0.37154,
+     "brier": 0.11038,
+     "frequence": 0.1343,
+     "p_moyenne": 0.1319,
+     "tranche_p60": {
+      "n": 7,
+      "frequence": 0.4286,
+      "p_moyenne": 0.635
+     },
+     "calibration": [
+      {
+       "tranche": "0.0-0.1",
+       "n": 4802,
+       "p_moyenne": 0.074,
+       "frequence": 0.0756
+      },
+      {
+       "tranche": "0.1-0.2",
+       "n": 4446,
+       "p_moyenne": 0.1388,
+       "frequence": 0.1406
+      },
+      {
+       "tranche": "0.2-0.3",
+       "n": 1228,
+       "p_moyenne": 0.2391,
+       "frequence": 0.2533
+      },
+      {
+       "tranche": "0.3-0.4",
+       "n": 350,
+       "p_moyenne": 0.3388,
+       "frequence": 0.34
+      },
+      {
+       "tranche": "0.4-0.5",
+       "n": 100,
+       "p_moyenne": 0.4437,
+       "frequence": 0.42
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 21,
+       "p_moyenne": 0.5354,
+       "frequence": 0.381
+      },
+      {
+       "tranche": "0.6-0.7",
+       "n": 6,
+       "p_moyenne": 0.6234,
+       "frequence": 0.3333
+      },
+      {
+       "tranche": "0.7-0.8",
+       "n": 1,
+       "p_moyenne": 0.7045,
+       "frequence": 1.0
+      }
+     ]
+    },
+    "C": {
+     "n": 10954,
+     "log_loss": 0.37176,
+     "brier": 0.11041,
+     "frequence": 0.1343,
+     "p_moyenne": 0.1416,
+     "tranche_p60": {
+      "n": 7,
+      "frequence": 0.4286,
+      "p_moyenne": 0.6362
+     },
+     "calibration": [
+      {
+       "tranche": "0.0-0.1",
+       "n": 3984,
+       "p_moyenne": 0.0774,
+       "frequence": 0.0738
+      },
+      {
+       "tranche": "0.1-0.2",
+       "n": 5008,
+       "p_moyenne": 0.1394,
+       "frequence": 0.127
+      },
+      {
+       "tranche": "0.2-0.3",
+       "n": 1395,
+       "p_moyenne": 0.2394,
+       "frequence": 0.248
+      },
+      {
+       "tranche": "0.3-0.4",
+       "n": 420,
+       "p_moyenne": 0.3377,
+       "frequence": 0.319
+      },
+      {
+       "tranche": "0.4-0.5",
+       "n": 117,
+       "p_moyenne": 0.4431,
+       "frequence": 0.4188
+      },
+      {
+       "tranche": "0.5-0.6",
+       "n": 23,
+       "p_moyenne": 0.5369,
+       "frequence": 0.3913
+      },
+      {
+       "tranche": "0.6-0.7",
+       "n": 6,
+       "p_moyenne": 0.625,
+       "frequence": 0.3333
+      },
+      {
+       "tranche": "0.7-0.8",
+       "n": 1,
+       "p_moyenne": 0.7032,
+       "frequence": 1.0
+      }
+     ]
+    }
+   },
+   "calibration_periode": {
+    "f": 0.41622,
+    "p": 0.38594,
+    "c": 0.3855
+   },
+   "C_moins_F": {
+    "ecart": -0.0226,
+    "ic95": [
+     -0.02662,
+     -0.01891
+    ],
+    "grappes": 30
+   },
+   "B_moins_F": {
+    "ecart": -0.02282,
+    "ic95": [
+     -0.02679,
+     -0.01927
+    ],
+    "grappes": 30
+   },
+   "C_moins_B": {
+    "ecart": 0.00022,
+    "ic95": [
+     -0.00025,
+     0.00069
+    ],
+    "grappes": 30
+   },
+   "ligues_test": {
+    "D1": {
+     "f": 0.45055,
+     "p": 0.42118,
+     "c": 0.4209
+    },
+    "E0": {
+     "f": 0.41707,
+     "p": 0.40036,
+     "c": 0.39994
+    },
+    "F1": {
+     "f": 0.38961,
+     "p": 0.36755,
+     "c": 0.36726
+    },
+    "I1": {
+     "f": 0.37175,
+     "p": 0.35309,
+     "c": 0.35413
+    },
+    "SP1": {
+     "f": 0.35462,
+     "p": 0.32592,
+     "c": 0.32679
+    }
+   },
+   "ligues_C_meilleur_que_F": 5,
+   "criteres": {
+    "N1": true,
+    "N2": true,
+    "N3": true
+   },
+   "valide": true
+  }
+ }
+}

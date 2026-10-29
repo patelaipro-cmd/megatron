@@ -3,21 +3,21 @@
 Niveaux (marges de victoire, jamais le total de buts ; voir docs/marges-victoire.md) :
 victoire simple, victoire par au moins deux buts, victoire par au moins trois buts. Ils sont
 emboîtés : P(3+) <= P(2+) <= P(victoire). Calcul sur la même matrice Poisson ``poisson-v5``
-(intensités de StatsAgent, matchs strictement antérieurs) ; recalibration par niveau seulement si
-EXP-012 l'a validée (``CALIBRATION_NIVEAUX``).
+(intensités de StatsAgent, matchs strictement antérieurs) ; recalibration de Platt par niveau validée par EXP-012
+(``CALIBRATION_NIVEAUX``) ; les valeurs brutes restent affichées.
 
 Décision GO / SECURE / WATCH / PASS : règles provisoires écrites ci-dessous, seuils non calibrés,
 **aucune activation automatique** (``ACTIVATION_AUTOMATIQUE`` est une constante fausse, aucune
-fonction ne place de pari ni n'envoie d'ordre). GO n'est jamais émis tant que les niveaux de marge
-ne sont pas validés : il est alors rétrogradé en SECURE avec la raison.
+fonction ne place de pari ni n'envoie d'ordre). GO n'est émis que si les niveaux sont recalibrés
+et la zone de décision P(2+) >= 60 % validée (``ZONE_GO_VALIDEE``, faux après EXP-012) : sinon
+il est rétrogradé en SECURE avec la raison.
 """
 from __future__ import annotations
 
-import math
 from datetime import datetime
 from pathlib import Path
 
-from . import angles_morts, contexte_favori, marges, wininvest
+from . import angles_morts, contexte_favori, marches, marges, wininvest
 from .agents import poisson_1x2
 from .models import calibrer_1x2
 from .store import now_utc, parse_dt
@@ -25,14 +25,17 @@ from .store import now_utc, parse_dt
 VERSION = "syndicate-domination-v1"
 ACTIVATION_AUTOMATIQUE = False
 NIVEAUX = ("victoire_simple", "victoire_par_2_ou_plus", "victoire_par_3_ou_plus")
-CALIBRATION_NIVEAUX: dict[str, tuple[float, float]] | None = None  # (a, b) de Platt par niveau, fixés par EXP-012
+# (a, b) de Platt par niveau : EXP-012 (calibration 2016/17-2019/20, critères N1-N3 tenus sur 2020/21-2025/26)
+CALIBRATION_NIVEAUX: dict[str, tuple[float, float]] | None = {
+    "victoire_simple": (0.079141, 1.173564),
+    "victoire_par_2_ou_plus": (0.09015, 1.084905),
+    "victoire_par_3_ou_plus": (0.024482, 0.964744),
+}
+# Zone de décision GO (P(2+) >= 0,60) : 216 matchs du test, moins des 500 exigés pour déclarer une tranche
+# calibrée, écart observé 4,5 points (EXP-012). GO reste rétrogradé en SECURE tant qu'elle n'est pas validée.
+ZONE_GO_VALIDEE = False
 CALIBRATION_1X2 = (1.160088, 0.016201, 0.150311)  # poisson-v5-cal (EXP-010), pour la référence 1X2
 SEUILS = {"favori_minimum": 0.50, "secure_victoire": 0.60, "go_marge_2": 0.60, "indice_absence_majeur": 0.15}
-
-
-def _platt(p: float, a: float, b: float) -> float:
-    p = min(max(p, 1e-12), 1 - 1e-12)
-    return 1 / (1 + math.exp(-(a + b * math.log(p / (1 - p)))))
 
 
 def niveaux(lam_home: float, lam_away: float) -> dict:
@@ -42,13 +45,16 @@ def niveaux(lam_home: float, lam_away: float) -> dict:
     p = dict(brut["niveaux"][side])
     statut = "EXPERIMENTAL_NON_CALIBRE"
     if CALIBRATION_NIVEAUX:
-        p = {k: _platt(v, *CALIBRATION_NIVEAUX[k]) for k, v in p.items()}
+        p = {k: marches.platt(v, *CALIBRATION_NIVEAUX[k])["oui"] if k in CALIBRATION_NIVEAUX else v for k, v in p.items()}
         p["victoire_par_2_ou_plus"] = min(p["victoire_par_2_ou_plus"], p["victoire_simple"])
         p["victoire_par_3_ou_plus"] = min(p["victoire_par_3_ou_plus"], p["victoire_par_2_ou_plus"])
-        statut = "RECALIBRE_EXP-012"
+        statut = "RECALIBRE_EXP-012" if set(CALIBRATION_NIVEAUX) == set(NIVEAUX) else "PARTIELLEMENT_RECALIBRE"
+    defaite, nul = brut["1X2"]["A" if side == "H" else "H"], brut["1X2"]["D"]
+    reste = (1 - p["victoire_simple"]) / (defaite + nul)  # nul et défaite rééchelonnés : les trois issues somment à 1
     return {"favori": side, "probabilites": {k: round(p[k], 4) for k in NIVEAUX}, "statut": statut,
             "brut": {k: round(brut["niveaux"][side][k], 4) for k in NIVEAUX},
-            "risques": {"defaite": round(brut["1X2"]["A" if side == "H" else "H"], 4), "nul": round(brut["1X2"]["D"], 4)}}
+            "risques": {"defaite": round(defaite * reste, 4), "nul": round(nul * reste, 4)},
+            "risques_bruts": {"defaite": round(defaite, 4), "nul": round(nul, 4)}}
 
 
 def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = None) -> dict:
@@ -80,9 +86,10 @@ def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = No
     elif raisons or p["victoire_simple"] < SEUILS["secure_victoire"]:
         decision = "WATCH"
     elif p["victoire_par_2_ou_plus"] >= SEUILS["go_marge_2"]:
-        decision = "GO" if n["statut"] == "RECALIBRE_EXP-012" else "SECURE"
+        decision = "GO" if n["statut"] == "RECALIBRE_EXP-012" and ZONE_GO_VALIDEE else "SECURE"
         if decision == "SECURE":
-            raisons.append("GO bloqué : probabilités de marge non validées (EXP-012)")
+            raisons.append("GO bloqué : zone P(2+) >= 60 % non validée (EXP-012 : 216 matchs, écart 4,5 points)"
+                           if n["statut"] == "RECALIBRE_EXP-012" else "GO bloqué : probabilités de marge non validées (EXP-012)")
     else:
         decision = "SECURE"
     return {"decision": decision, "bloquants": bloquants, "raisons": raisons, "seuils": SEUILS,

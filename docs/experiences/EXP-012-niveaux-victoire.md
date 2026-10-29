@@ -55,3 +55,44 @@ Périodes : réglage du modèle 2008/09-2015/16 (déjà fait par EXP-008), calib
 - Favori défini par le modèle, pas par le marché.
 - Aucune absence ni composition : `data/` n'a pas de données joueurs.
 - Une seule source de scores ; championnats seulement.
+
+---
+
+## Résultats (exécution du 29/10/2026, ajoutés après le protocole)
+
+Commande : `python scripts/exp012_niveaux.py --sortie docs/experiences/EXP-012` (44 s).
+32 544 matchs, 0 exclu (réglage 14 608, calibration 6 982, test 10 954) ; `variables.csv` SHA-256 `52ce2b08c769…`.
+Détail : `EXP-012/resultats.json`.
+
+Test 2020/21-2025/26, log-loss (fréquence observée) :
+
+| Niveau | Fréquence | F fréquences | B v5 brut | C v5 recalibré | C − F [IC 95 %] | C − B [IC 95 %] | Ligues C < F |
+|---|---|---|---|---|---|---|---|
+| Victoire simple | 0,525 | 0,6918 | 0,6626 | 0,6621 | −0,0297 [−0,0336 ; −0,0259] | −0,0004 [−0,0014 ; +0,0006] | 5/5 |
+| Victoire par 2+ | 0,286 | 0,5987 | 0,5693 | 0,5692 | −0,0295 [−0,0339 ; −0,0255] | −0,0000 [−0,0004 ; +0,0003] | 5/5 |
+| Victoire par 3+ | 0,134 | 0,3944 | 0,3715 | 0,3718 | −0,0226 [−0,0266 ; −0,0189] | +0,0002 [−0,0003 ; +0,0007] | 5/5 |
+
+Platt (calibration 2016/17-2019/20) : victoire a = 0,0791, b = 1,1736 ; 2+ a = 0,0902, b = 1,0849 ;
+3+ a = 0,0245, b = 0,9647.
+
+N3 (tranches d'au moins 500 matchs) : tenu pour les trois niveaux avec C. Sans recalibration, B
+sous-estime la victoire simple dans la tranche 0,6-0,7 (0,644 annoncé, 0,699 observé, 1 570 matchs).
+
+Zone de décision (information) : P(2+) >= 0,60 avec C : 216 matchs du test, 0,670 annoncé,
+0,625 observé. Tranche de moins de 500 matchs : non validée (règle du protocole v0).
+
+## Décision
+
+- N1, N2, N3 tenus pour les trois niveaux : coefficients inscrits dans
+  `syndicate.CALIBRATION_NIVEAUX`, statut `RECALIBRE_EXP-012`.
+- La recalibration n'apporte presque rien au-delà du brut (C − B non significatif) ; son seul
+  apport net est la calibration de la victoire simple au-dessus de 60 %.
+- La zone GO (P(2+) >= 60 %) n'est pas validée : `syndicate.ZONE_GO_VALIDEE = False`, GO reste
+  rétrogradé en SECURE. Activation automatique toujours désactivée.
+
+## Limites
+
+- Test rétrospectif sur des saisons déjà vues par le projet (1X2) ; une cohorte prospective
+  horodatée (prévisions enregistrées avant match par `syndicate controle`) reste indispensable.
+- Battre les fréquences ne dit rien de la rentabilité : aucune cote de marge exacte comparée.
+- Favori défini par le modèle ; aucune absence ni composition dans ces données.

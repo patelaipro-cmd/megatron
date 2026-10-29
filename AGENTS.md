@@ -50,3 +50,9 @@ Collecte externe (29/10/2026) : GitHub Actions écrit sur la branche `donnees-ex
 (jamais fusionnée dans main). Lecture par `scripts/lire_externe.py` avec `--avant`
 (collecte antérieure au coup d'envoi). Faits déclaratifs seulement, aucune probabilité modifiée.
 Voir docs/collecte-externe.md.
+
+WININVEST / SYNDICATE (29/10/2026) : `python -m megatron syndicate evaluer|controle` (fiche 8 rubriques,
+3 niveaux de marge du favori recalibrés par EXP-012, angles morts, décision GO/SECURE/WATCH/PASS
+indicative, contrôles initial / T-30 / T-5). Activation automatique désactivée ; GO bloqué tant que la
+zone P(2+) >= 60 % n'est pas validée. Pondération des absences expérimentale, sans effet (EXP-013).
+Claude seul fournisseur LLM externe par défaut. Voir docs/wininvest-syndicate.md.
