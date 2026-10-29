@@ -15,7 +15,8 @@ autre environnement. Des journaux divergents exigent une réconciliation explici
 Tester dans un répertoire temporaire, sans altérer les prévisions réelles.
 
 La réussite technique ne prouve pas la qualité prédictive.
-Le parcours actuel reste 1X2 ; 2+/3+ et fenêtre de cinq heures restent à intégrer.
+`prevoir` enregistre le 1X2 et les marchés 2+ / 3+ buts (EXP-007), seulement dans
+les 5 h qui précèdent le coup d'envoi. Saisir le score (`2-1`) pour résoudre les marchés de buts.
 
 Méthode de synchronisation : docs/synchro-codex-claude.md.
 Validation d'un point d'accès (sans LLM, sans toucher memoire/) :

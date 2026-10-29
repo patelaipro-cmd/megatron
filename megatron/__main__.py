@@ -26,7 +26,7 @@ def main(argv: list[str] | None = None) -> int:
     lp.add_argument("--fournisseur", default="gemini", choices=sorted(llm.PROVIDERS))
     f = sub.add_parser("fusion", help="Méthode de Fusion sur un match (JSON)")
     f.add_argument("tache", help='ex. {"match_id": "x", "xg_home": 1.6, "xg_away": 0.9}')
-    pv = sub.add_parser("prevoir", help="fusion puis prévision immuable dans le registre, avant le coup d'envoi")
+    pv = sub.add_parser("prevoir", help="fusion puis prévision immuable dans le registre, dans les 5 h avant le coup d'envoi")
     pv.add_argument("tache", help='ex. {"match_id": "F1:2026-11-01:Lens-Lille", "division": "F1", "home": "Lens", "away": "Lille", "date": "2026-11-01"}')
     pv.add_argument("--coup-envoi", required=True, help="date-heure avec fuseau, ex. 2026-11-01T20:00:00+00:00")
     pv.add_argument("--execution", choices=["stats", "multi-llm"], default="stats",

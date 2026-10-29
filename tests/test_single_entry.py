@@ -2,13 +2,14 @@ import contextlib
 import io
 import tempfile
 import unittest
+from datetime import timedelta
 from unittest.mock import patch
 
 from megatron import suivi
 from megatron.__main__ import main
-from megatron.agents import AgentResponse
+from megatron.agents import AgentResponse, StatsAgent
 from megatron.ledger import Ledger
-from megatron.store import MemoryStore, parse_dt
+from megatron.store import MemoryStore, now_utc, parse_dt
 
 
 class EntrySafetyTests(unittest.TestCase):
@@ -48,7 +49,7 @@ class EntrySafetyTests(unittest.TestCase):
         ), patch("socket.create_connection", side_effect=AssertionError("network forbidden")), contextlib.redirect_stdout(io.StringIO()):
             code = main(["--memoire", tmp, "prevoir",
                          '{"match_id":"SIMULATION","xg_home":1.6,"xg_away":0.9}',
-                         "--coup-envoi", "2099-01-01T12:00:00Z"])
+                         "--coup-envoi", (now_utc() + timedelta(hours=2)).isoformat()])
             self.assertEqual(code, 0)
             preds = Ledger(MemoryStore(tmp))._predictions()
             self.assertEqual(len(preds), 2)
@@ -68,3 +69,25 @@ class EntrySafetyTests(unittest.TestCase):
             led.result("m", "A", source="test", observed_at="2030-01-01T15:00:00Z", correction=True)
             self.assertEqual(store.active("performances", "result:m")[0].value["outcome"], "A")
             self.assertEqual(len(store.history("performances", "result:m")), 2)
+
+    def test_strict_five_hour_window(self):
+        ko = parse_dt("2030-01-01T20:00:00Z")
+        task = {"match_id": "m", "xg_home": 1.4, "xg_away": 1.1}
+        with tempfile.TemporaryDirectory() as tmp:
+            store = MemoryStore(tmp)
+            for early in (ko - timedelta(hours=5, seconds=1), ko - timedelta(days=2)):
+                with self.subTest(now=early), self.assertRaises(ValueError):
+                    suivi.prevoir(store, task, ko, agents=[StatsAgent()], now=early)
+            self.assertEqual(store.active("performances"), [])
+            out = suivi.prevoir(store, task, ko, agents=[StatsAgent()], now=ko - timedelta(hours=5))
+            self.assertEqual(len(out["enregistre"]), 2)
+
+    def test_window_rechecked_after_agents(self):
+        ko = parse_dt("2030-01-01T20:00:00Z")
+        with tempfile.TemporaryDirectory() as tmp:
+            store = MemoryStore(tmp)
+            with patch("megatron.suivi.now_utc", side_effect=[ko - timedelta(hours=1), ko]), patch(
+                "megatron.suivi.fuse", return_value={"probs": {"H": .5, "D": .3, "A": .2}}
+            ), self.assertRaises(ValueError):
+                suivi.prevoir(store, {"match_id": "m"}, ko)
+            self.assertEqual(store.active("performances"), [])

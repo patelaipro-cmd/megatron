@@ -1,10 +1,9 @@
 {
   "version": "0.1.0",
-  "commit": "4a18670",
-  "date": "2026-10-29T08:12:30+00:00",
-  "resume": "Marchés 2+ et 3+ buts : poisson-v4 brut rejeté (EXP-006), recalibration de Platt validée (EXP-007), enregistrés par prevoir ; validation d'accès en une commande (scripts/valider_acces.py).",
+  "commit": "8eca058",
+  "date": "2026-10-29T08:14:34+00:00",
+  "resume": "Fenêtre stricte de 5 h dans prevoir ; marchés 2+ et 3+ buts enregistrés (EXP-007) ; validation d'accès en une commande.",
   "prochaines_actions": [
-    "Fenêtre stricte de cinq heures avant le coup d'envoi",
     "Valider l'accès Codex séparément sur la même branche (tests + parcours fictif)",
     "Construire python -m megatron synchro verifier (docs/synchro-codex-claude.md)",
     "Réajuster demi-vie / rétrécissement / w sur 2008-2020 (plus de données) puis tester sur 2022-2026, protocole commité avant",
@@ -92,15 +91,20 @@
       "cle": "marches_buts",
       "valeur": "2+ et 3+ buts enregistrés par prevoir sous poisson-v4-platt (EXP-007, M1-M3 tenus sur 2020-2026) ; poisson-v4 brut rejeté (EXP-006, trop tranché)",
       "id": "118f54fd9051"
+    },
+    {
+      "cle": "fenetre_prevision",
+      "valeur": "prevoir n'enregistre que dans les 5 h précédant le coup d'envoi (contrôle avant et après les agents) ; hors fenêtre, rien n'est écrit",
+      "id": "10284606daed"
     }
   ],
   "contradictions": {},
   "effectifs": {
     "travail": 2,
-    "decisions": 15,
+    "decisions": 16,
     "football": 1,
     "performances": 4,
     "technique": 5
   },
-  "id": "ckpt-c75b19c15f"
+  "id": "ckpt-3f1f193a9f"
 }
