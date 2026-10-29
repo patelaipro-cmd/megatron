@@ -34,3 +34,26 @@ Tous tenus : le candidat recalibré remplace `poisson-v5-cal` (nouvelle version 
 
 - Historique plafonné à 3 ans : une demi-vie de 730 j y pèse peu différemment de 540 j.
 - Même source ; test recoupant des saisons déjà vues.
+
+---
+
+## Résultats (exécution du 29/10/2026, ajoutés après le protocole)
+
+Commande du protocole (développement, 14 604 matchs). `dev/resultats.json` garde les 48 scores ; les `predictions.csv` (non versionnées) se régénèrent par la même commande.
+
+| Demi-vie | Rétr. | w | Log-loss | RPS |
+|---|---|---|---|---|
+| **270** | **2** | **0,35** (v5) | **0,99119** | 0,20125 |
+| 270 | 3 | 0,35 | 0,99123 | 0,20125 |
+| 270 | 2 | 0,45 | 0,99130 | 0,20125 |
+| 365 | 3 | 0,35 | 0,99136 | 0,20131 |
+| 365 | 2 | 0,35 | 0,99139 | 0,20133 |
+
+## Décision
+
+- Meilleure combinaison du développement = `poisson-v5` : **pas de promotion**, validation et test non exécutés (prévu par le protocole). `poisson-v5-cal` reste.
+- Le bord d'EXP-008 n'était pas une limite : demi-vie > 270 et w > 0,35 dégradent légèrement. Optimum local confirmé.
+
+## Limites
+
+- Écarts très faibles en haut du classement (< 0,0003) : surface plate autour de v5.
