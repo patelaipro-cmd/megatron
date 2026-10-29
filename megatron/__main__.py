@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, contexte_favori, externe, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
+from . import backtest, checkpoint, controles, data, contexte_favori, externe, syndicate, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -44,12 +44,27 @@ def main(argv: list[str] | None = None) -> int:
     am.add_argument("--dossier-externe", help="dossier externe/ de la branche donnees-externes (action externe)")
     am.add_argument("--nom-home", help="nom de l'équipe à domicile dans les sources externes, s'il diffère")
     am.add_argument("--nom-away", help="nom de l'équipe à l'extérieur dans les sources externes, s'il diffère")
+    sd = sub.add_parser("syndicate", help="WININVEST / SYNDICATE : fiche, 3 niveaux du favori, contrôles T-30 / T-5")
+    sd.add_argument("action", choices=["evaluer", "controle"],
+                    help="evaluer : affiche sans écrire ; controle : évalue et enregistre le moment --moment")
+    sd.add_argument("--division", required=True)
+    sd.add_argument("--home", required=True)
+    sd.add_argument("--away", required=True)
+    sd.add_argument("--coup-envoi", required=True, help="date-heure avec fuseau")
+    sd.add_argument("--match-id", help="défaut : <division>:<date>:<home>-<away>")
+    sd.add_argument("--moment", choices=["initial", "T-30", "T-5", "revision"])
+    sd.add_argument("--dossier-externe", help="dossier externe/ de la branche donnees-externes")
+    sd.add_argument("--contexte-favori", help="grille JSON des 13 angles morts")
+    sd.add_argument("--cotes", help="JSON : liste de relevés {collecte_le, H, D, A, source}")
+    sd.add_argument("--absents", help="JSON : {équipe: [{joueur, poste, statut, part_minutes, part_offensive, remplacant_niveau, sources}]}")
+    sd.add_argument("--au", help="instant d'analyse avec fuseau (défaut : maintenant)")
+    sd.add_argument("--resume", action="store_true", help="n'affiche que niveaux, risques et décision")
     rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
     rs.add_argument("match_id")
     rs.add_argument("score", help="H, D, A ou score 2-1")
     rs.add_argument("--source", required=True, help="provenance du résultat, ex. URL")
     rs.add_argument("--correction", action="store_true", help="remplace un résultat déjà saisi (historique gardé)")
-    for write_parser in (pv, rs):
+    for write_parser in (pv, rs, sd):
         write_parser.add_argument("--acces", choices=jeton.ACCES)
         write_parser.add_argument("--jeton", dest="jeton_id", help="identifiant actif du jeton synchronisé")
     jt = sub.add_parser("jeton", help="détenteur coopératif du registre")
@@ -136,6 +151,26 @@ def main(argv: list[str] | None = None) -> int:
             print(f"refus : {exc}")
             return 2
         print(json.dumps(out, indent=2, ensure_ascii=False))
+    elif args.cmd == "syndicate":
+        def lire(chemin):
+            return json.loads(Path(chemin).read_text(encoding="utf-8")) if chemin else None
+        try:
+            ev = syndicate.evaluer(args.division, args.home, args.away, args.coup_envoi, at=args.au,
+                                   dossier_externe=Path(args.dossier_externe) if args.dossier_externe else None,
+                                   contexte=lire(args.contexte_favori), cotes=lire(args.cotes),
+                                   absents_declares=lire(args.absents), moment=args.moment)
+            if args.action == "controle":
+                if not args.moment:
+                    raise ValueError("--moment requis pour controle")
+                match_id = args.match_id or f"{args.division}:{args.coup_envoi[:10]}:{args.home}-{args.away}"
+                out = controles.enregistrer(MemoryStore(args.memoire), match_id, ev, args.moment,
+                                            now=args.au, acces=args.acces, jeton_id=args.jeton_id)
+            else:
+                out = {k: ev[k] for k in ("niveaux", "reference_1x2_v5cal", "decision")} if args.resume else ev
+        except (ValueError, KeyError) as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False, default=str))
     elif args.cmd == "jeton":
         try:
             if args.action == "statut" and not Path(args.memoire).exists():
