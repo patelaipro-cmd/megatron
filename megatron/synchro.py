@@ -88,6 +88,15 @@ def verifier(memoire: str | Path, reference: str | None = None) -> dict:
             elif len({json.dumps(e.value, sort_keys=True) for e in es}) > 1:
                 errors.append(f"{d} : contradiction sur {key} ({ids_txt})")
 
+    tokens = [e for e in active["travail"] if e.key == "jeton_registre"]
+    if len(tokens) > 1:
+        errors.append("travail : plusieurs jetons_registre actifs, réconciliation obligatoire")
+    for e in tokens:
+        if not isinstance(e.value, dict) or e.value.get("detenteur") not in ("codex", "claude"):
+            errors.append("travail : jeton_registre mal formé")
+        elif e.value.get("precedent") != e.supersedes:
+            errors.append("travail : précédent du jeton incohérent avec supersedes")
+
     for e in active[PERF]:
         if e.key.startswith("pred:"):
             try:
