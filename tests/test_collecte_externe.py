@@ -199,7 +199,7 @@ class TestApiFootball(unittest.TestCase):
             m = ce.collecter(dossier, ["apifootball"], MAINTENANT, self.faux(appels), conf)
             r = m["sources"]["apifootball"]
             self.assertEqual(r["statut"], "ok")
-            self.assertEqual((r["calendrier"], r["blessures"], r["compos"]), (1, 2, 2))  # blessures J et J+1
+            self.assertEqual((r["calendrier"], r["blessures"], r["compos"]), (1, 1, 2))  # même blessure renvoyée pour J et J+1 : une ligne
             self.assertEqual(appels[-1], "/fixtures/lineups?fixture=1")
             self.assertEqual(r["requetes_jour"], 6)
             appels.clear()
