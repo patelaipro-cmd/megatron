@@ -1,0 +1,78 @@
+{
+  "commit_depart": "12fd8c74789603ce247c5cdc1fe847fb3d549b1d",
+  "checkpoint": "ckpt-c5b844af09",
+  "previsions": {
+    "7bc97edee8f6": {
+      "data_cutoff": null,
+      "kickoff": "2099-01-01T12:00:00+00:00",
+      "market": "1X2",
+      "match_id": "FICTIF:GIT:1",
+      "model_version": "fusion-v1:[[\"stats\",\"stats-v0\"]]",
+      "probs": {
+        "A": 0.21154222209317003,
+        "D": 0.2502984859727341,
+        "H": 0.5381592919340958
+      }
+    },
+    "c321f0d2ab57": {
+      "data_cutoff": null,
+      "kickoff": "2099-01-01T12:00:00+00:00",
+      "market": "1X2",
+      "match_id": "FICTIF:GIT:1",
+      "model_version": "agent:stats:stats-v0",
+      "probs": {
+        "A": 0.21154222209317003,
+        "D": 0.2502984859727341,
+        "H": 0.5381592919340958
+      }
+    },
+    "83a42778a14a": {
+      "data_cutoff": null,
+      "kickoff": "2099-01-01T12:00:00+00:00",
+      "market": "1X2",
+      "match_id": "FICTIF:GIT:2",
+      "model_version": "fusion-v1:[[\"stats\",\"stats-v0\"]]",
+      "probs": {
+        "A": 0.46146676066169406,
+        "D": 0.2697299646257498,
+        "H": 0.26880327471255616
+      }
+    },
+    "1ef8f8f71f94": {
+      "data_cutoff": null,
+      "kickoff": "2099-01-01T12:00:00+00:00",
+      "market": "1X2",
+      "match_id": "FICTIF:GIT:2",
+      "model_version": "agent:stats:stats-v0",
+      "probs": {
+        "A": 0.46146676066169406,
+        "D": 0.2697299646257498,
+        "H": 0.26880327471255616
+      }
+    },
+    "7e3a47adc894": {
+      "data_cutoff": null,
+      "kickoff": "2099-01-01T12:00:00+00:00",
+      "market": "1X2",
+      "match_id": "FICTIF:GIT:3",
+      "model_version": "fusion-v1:[[\"stats\",\"stats-v0\"]]",
+      "probs": {
+        "A": 0.36168882125062557,
+        "D": 0.27662235749874886,
+        "H": 0.36168882125062557
+      }
+    },
+    "b43bd1c9ff08": {
+      "data_cutoff": null,
+      "kickoff": "2099-01-01T12:00:00+00:00",
+      "market": "1X2",
+      "match_id": "FICTIF:GIT:3",
+      "model_version": "agent:stats:stats-v0",
+      "probs": {
+        "A": 0.36168882125062557,
+        "D": 0.27662235749874886,
+        "H": 0.36168882125062557
+      }
+    }
+  }
+}

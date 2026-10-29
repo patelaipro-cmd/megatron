@@ -1,0 +1,2 @@
+{"domain": "travail", "id": "08b4d23bc73a", "key": "jeton_registre", "meta": {}, "observed_at": null, "recorded_at": "2026-10-29T09:16:08.101434+00:00", "source": "synchro-git:claude", "status": "verifie", "supersedes": null, "value": "codex"}
+{"domain": "travail", "id": "8d537e28ef05", "key": "checkpoint", "meta": {}, "observed_at": null, "recorded_at": "2026-10-29T09:16:08.104772+00:00", "source": "megatron.checkpoint", "status": "verifie", "supersedes": null, "value": {"id": "ckpt-c5b844af09", "resume": "TEST SYNCHRO GIT : départ Claude ; jeton à Codex"}}
