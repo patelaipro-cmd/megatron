@@ -1,0 +1,41 @@
+name: cotes
+# Instantanés de cotes 1X2 avant match (ESPN/DraftKings, football-data multi-bookmakers) dans
+# externe/cotes/ de la branche donnees-externes. N'agit sur aucune probabilité. Voir scripts/collecte_cotes.py.
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # fenêtres T-60, T-30, T-5 ; GitHub peut retarder ou sauter des exécutions
+  workflow_dispatch:
+  push:
+    branches: ["claude/collecte-cotes-**"]
+    paths: [".github/workflows/cotes.yml", "scripts/collecte_cotes.py"]
+permissions:
+  contents: write
+concurrency:
+  group: cotes
+  cancel-in-progress: false
+jobs:
+  cotes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Préparer la branche de données
+        run: |
+          git config user.name "megatron-collecte"
+          git config user.email "megatron-collecte@users.noreply.github.com"
+          git fetch --depth 1 origin donnees-externes
+          git worktree add -B donnees-externes donnees FETCH_HEAD
+      - name: Collecter
+        run: python scripts/collecte_cotes.py --sortie donnees/externe
+      - name: Publier
+        if: always()
+        run: |
+          cd donnees
+          git add -A externe/cotes
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Cotes $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4; do git pull -q --rebase origin donnees-externes && git push -q origin donnees-externes && exit 0; sleep $((i*5)); done
+          exit 1
