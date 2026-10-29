@@ -117,8 +117,9 @@ def poisson_1x2(lam_home: float, lam_away: float, max_goals: int = 10) -> dict[s
 class StatsAgent(Agent):
     """Agent Python déterministe : aucun token consommé.
 
-    Modèle par défaut ``poisson-v4`` (EXP-004 : poisson-v1 ajusté sur des
-    pseudo-buts mêlant 25 % de tirs cadrés convertis) : la tâche fournit
+    Modèle 1X2 par défaut ``poisson-v5`` (EXP-008 : demi-vie 270, rétrécissement
+    2, pseudo-buts mêlant 35 % de tirs cadrés convertis) ; marchés 2+ / 3+ sur
+    un ajustement ``poisson-v4`` séparé (recalibration EXP-007) : la tâche fournit
     ``division``, ``home``, ``away`` et ``date`` (AAAA-MM-JJ) ; le modèle de
     Maher est ajusté sur les seuls matchs antérieurs de ``data/``.
     Repli ``stats-v0`` : si ``xg_home`` et ``xg_away`` sont fournis, Poisson
@@ -126,8 +127,9 @@ class StatsAgent(Agent):
     """
 
     name = "stats"
-    HALF_LIFE, SHRINK = 90.0, 3.0  # figés par EXP-001 sur la Ligue 1 2022/23
-    PROXY, PROXY_WEIGHT = "cadres", 0.25  # promus par EXP-004 ; poids 0 = retour à poisson-v1
+    HALF_LIFE, SHRINK = 270.0, 2.0  # promus par EXP-008 (retour arrière : 90, 3, 0,25 = poisson-v4)
+    PROXY, PROXY_WEIGHT = "cadres", 0.35
+    VERSION = "poisson-v5"
 
     def __init__(self, csv_path=None):
         self.csv_path = csv_path  # None = data.CURRENT (2000-2026 + saison en cours)
@@ -155,15 +157,17 @@ class StatsAgent(Agent):
         lh, la = fit.rates(task["home"], task["away"])
         unknown = [t for t in (task["home"], task["away"]) if t not in fit.attack]
         rep = self._response(
-            poisson_1x2(lh, la), task, version="poisson-v4" if self.PROXY_WEIGHT else "poisson-v1",
+            poisson_1x2(lh, la), task, version=self.VERSION,
             preuves=[f"{len(history)} matchs antérieurs au {day}, dernier le "
                      f"{max(m.day for m in history)}",
                      f"buts attendus {lh:.2f} - {la:.2f}"],
             incertitudes=["équipes sans historique traitées comme moyennes : " + ", ".join(unknown)] if unknown else [],
             sources=[f"data/{Path(p).name}" for p in ([path] if isinstance(path, (str, Path)) else path)],
         )
-        if self.PROXY_WEIGHT == marches.V4["proxy_weight"]:  # recalibration apprise sur poisson-v4 seulement
-            rep.marches, rep.version_marches = marches.probs_buts_calibrees(lh, la), marches.VERSION_BUTS
+        # recalibration EXP-007 apprise sur poisson-v4 seulement : ajustement v4 séparé
+        v4 = models.fit_maher(history, day, **marches.V4)
+        rep.marches, rep.version_marches = (marches.probs_buts_calibrees(*v4.rates(task["home"], task["away"])),
+                                            marches.VERSION_BUTS)
         return rep
 
     def _from_xg(self, task: dict) -> AgentResponse:
