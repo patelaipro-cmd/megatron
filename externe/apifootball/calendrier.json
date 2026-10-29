@@ -1,0 +1,1351 @@
+{
+ "jour": "2026-10-29",
+ "matchs": [
+  {
+   "fixture_id": 1550169,
+   "coup_envoi": "2026-10-29T19:45:00+00:00",
+   "debut_ts": 1793303100,
+   "ligue_id": 135,
+   "ligue": "Serie A"
+  },
+  {
+   "fixture_id": 1584455,
+   "coup_envoi": "2026-10-30T17:00:00+00:00",
+   "debut_ts": 1793379600,
+   "ligue_id": 203,
+   "ligue": "Süper Lig"
+  },
+  {
+   "fixture_id": 1576215,
+   "coup_envoi": "2026-10-30T17:30:00+00:00",
+   "debut_ts": 1793381400,
+   "ligue_id": 79,
+   "ligue": "2. Bundesliga"
+  },
+  {
+   "fixture_id": 1576216,
+   "coup_envoi": "2026-10-30T17:30:00+00:00",
+   "debut_ts": 1793381400,
+   "ligue_id": 79,
+   "ligue": "2. Bundesliga"
+  },
+  {
+   "fixture_id": 1552801,
+   "coup_envoi": "2026-10-30T18:00:00+00:00",
+   "debut_ts": 1793383200,
+   "ligue_id": 61,
+   "ligue": "Ligue 1"
+  },
+  {
+   "fixture_id": 1552806,
+   "coup_envoi": "2026-10-30T18:00:00+00:00",
+   "debut_ts": 1793383200,
+   "ligue_id": 61,
+   "ligue": "Ligue 1"
+  },
+  {
+   "fixture_id": 1552514,
+   "coup_envoi": "2026-10-30T19:00:00+00:00",
+   "debut_ts": 1793386800,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1552516,
+   "coup_envoi": "2026-10-30T19:00:00+00:00",
+   "debut_ts": 1793386800,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1552517,
+   "coup_envoi": "2026-10-30T19:00:00+00:00",
+   "debut_ts": 1793386800,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1552518,
+   "coup_envoi": "2026-10-30T19:00:00+00:00",
+   "debut_ts": 1793386800,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1552521,
+   "coup_envoi": "2026-10-30T19:00:00+00:00",
+   "debut_ts": 1793386800,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1575211,
+   "coup_envoi": "2026-10-30T19:30:00+00:00",
+   "debut_ts": 1793388600,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1558670,
+   "coup_envoi": "2026-10-30T19:45:00+00:00",
+   "debut_ts": 1793389500,
+   "ligue_id": 144,
+   "ligue": "Jupiler Pro League"
+  },
+  {
+   "fixture_id": 1563233,
+   "coup_envoi": "2026-10-30T20:00:00+00:00",
+   "debut_ts": 1793390400,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1570442,
+   "coup_envoi": "2026-10-30T20:00:00+00:00",
+   "debut_ts": 1793390400,
+   "ligue_id": 140,
+   "ligue": "La Liga"
+  },
+  {
+   "fixture_id": 1552802,
+   "coup_envoi": "2026-10-30T20:05:00+00:00",
+   "debut_ts": 1793390700,
+   "ligue_id": 61,
+   "ligue": "Ligue 1"
+  },
+  {
+   "fixture_id": 1575531,
+   "coup_envoi": "2026-10-30T20:15:00+00:00",
+   "debut_ts": 1793391300,
+   "ligue_id": 94,
+   "ligue": "Primeira Liga"
+  }
+ ],
+ "ligues_vues": [
+  [
+   18,
+   "AFC Champions League Two",
+   "World"
+  ],
+  [
+   40,
+   "Championship",
+   "England"
+  ],
+  [
+   42,
+   "League Two",
+   "England"
+  ],
+  [
+   43,
+   "National League",
+   "England"
+  ],
+  [
+   48,
+   "League Cup",
+   "England"
+  ],
+  [
+   61,
+   "Ligue 1",
+   "France"
+  ],
+  [
+   62,
+   "Ligue 2",
+   "France"
+  ],
+  [
+   63,
+   "Ligue 3",
+   "France"
+  ],
+  [
+   64,
+   "Feminine Division 1",
+   "France"
+  ],
+  [
+   71,
+   "Serie A",
+   "Brazil"
+  ],
+  [
+   72,
+   "Serie B",
+   "Brazil"
+  ],
+  [
+   78,
+   "Bundesliga",
+   "Germany"
+  ],
+  [
+   79,
+   "2. Bundesliga",
+   "Germany"
+  ],
+  [
+   80,
+   "3. Liga",
+   "Germany"
+  ],
+  [
+   82,
+   "Frauen Bundesliga",
+   "Germany"
+  ],
+  [
+   83,
+   "Regionalliga - Bayern",
+   "Germany"
+  ],
+  [
+   84,
+   "Regionalliga - Nord",
+   "Germany"
+  ],
+  [
+   85,
+   "Regionalliga - Nordost",
+   "Germany"
+  ],
+  [
+   86,
+   "Regionalliga - SudWest",
+   "Germany"
+  ],
+  [
+   89,
+   "Eerste Divisie",
+   "Netherlands"
+  ],
+  [
+   90,
+   "KNVB Beker",
+   "Netherlands"
+  ],
+  [
+   94,
+   "Primeira Liga",
+   "Portugal"
+  ],
+  [
+   97,
+   "Taça da Liga",
+   "Portugal"
+  ],
+  [
+   103,
+   "Eliteserien",
+   "Norway"
+  ],
+  [
+   106,
+   "Ekstraklasa",
+   "Poland"
+  ],
+  [
+   107,
+   "I Liga",
+   "Poland"
+  ],
+  [
+   108,
+   "Cup",
+   "Poland"
+  ],
+  [
+   109,
+   "II Liga - East",
+   "Poland"
+  ],
+  [
+   110,
+   "Premier League",
+   "Wales"
+  ],
+  [
+   111,
+   "FAW Championship",
+   "Wales"
+  ],
+  [
+   113,
+   "Allsvenskan",
+   "Sweden"
+  ],
+  [
+   114,
+   "Superettan",
+   "Sweden"
+  ],
+  [
+   116,
+   "Premier League",
+   "Belarus"
+  ],
+  [
+   117,
+   "1. Division",
+   "Belarus"
+  ],
+  [
+   119,
+   "Superliga",
+   "Denmark"
+  ],
+  [
+   120,
+   "1. Division",
+   "Denmark"
+  ],
+  [
+   121,
+   "DBU Pokalen",
+   "Denmark"
+  ],
+  [
+   122,
+   "2. Division",
+   "Denmark"
+  ],
+  [
+   128,
+   "Liga Profesional Argentina",
+   "Argentina"
+  ],
+  [
+   130,
+   "Copa Argentina",
+   "Argentina"
+  ],
+  [
+   131,
+   "Primera B Metropolitana",
+   "Argentina"
+  ],
+  [
+   135,
+   "Serie A",
+   "Italy"
+  ],
+  [
+   138,
+   "Serie C - Girone A",
+   "Italy"
+  ],
+  [
+   140,
+   "La Liga",
+   "Spain"
+  ],
+  [
+   143,
+   "Copa del Rey",
+   "Spain"
+  ],
+  [
+   144,
+   "Jupiler Pro League",
+   "Belgium"
+  ],
+  [
+   145,
+   "Challenger Pro League",
+   "Belgium"
+  ],
+  [
+   172,
+   "First League",
+   "Bulgaria"
+  ],
+  [
+   173,
+   "Second League",
+   "Bulgaria"
+  ],
+  [
+   175,
+   "Third League - Northeast",
+   "Bulgaria"
+  ],
+  [
+   177,
+   "Third League - Southeast",
+   "Bulgaria"
+  ],
+  [
+   180,
+   "Championship",
+   "Scotland"
+  ],
+  [
+   186,
+   "Ligue 1",
+   "Algeria"
+  ],
+  [
+   187,
+   "Ligue 2",
+   "Algeria"
+  ],
+  [
+   188,
+   "A-League",
+   "Australia"
+  ],
+  [
+   199,
+   "Cup",
+   "Greece"
+  ],
+  [
+   200,
+   "Botola Pro",
+   "Morocco"
+  ],
+  [
+   202,
+   "Ligue 1",
+   "Tunisia"
+  ],
+  [
+   203,
+   "Süper Lig",
+   "Turkey"
+  ],
+  [
+   204,
+   "1. Lig",
+   "Turkey"
+  ],
+  [
+   206,
+   "Türkiye Kupası",
+   "Turkey"
+  ],
+  [
+   208,
+   "Challenge League",
+   "Switzerland"
+  ],
+  [
+   210,
+   "HNL",
+   "Croatia"
+  ],
+  [
+   211,
+   "First NL",
+   "Croatia"
+  ],
+  [
+   218,
+   "Bundesliga",
+   "Austria"
+  ],
+  [
+   219,
+   "2. Liga",
+   "Austria"
+  ],
+  [
+   220,
+   "Cup",
+   "Austria"
+  ],
+  [
+   221,
+   "Regionalliga - Ost",
+   "Austria"
+  ],
+  [
+   223,
+   "Regionalliga - West",
+   "Austria"
+  ],
+  [
+   233,
+   "Premier League",
+   "Egypt"
+  ],
+  [
+   236,
+   "First League",
+   "Russia"
+  ],
+  [
+   237,
+   "Cup",
+   "Russia"
+  ],
+  [
+   238,
+   "Youth Championship",
+   "Russia"
+  ],
+  [
+   239,
+   "Primera A",
+   "Colombia"
+  ],
+  [
+   240,
+   "Primera B",
+   "Colombia"
+  ],
+  [
+   244,
+   "Veikkausliiga",
+   "Finland"
+  ],
+  [
+   252,
+   "Division Profesional - Clausura",
+   "Paraguay"
+  ],
+  [
+   253,
+   "Major League Soccer",
+   "USA"
+  ],
+  [
+   255,
+   "USL Championship",
+   "USA"
+  ],
+  [
+   262,
+   "Liga MX",
+   "Mexico"
+  ],
+  [
+   263,
+   "Liga de Expansión MX",
+   "Mexico"
+  ],
+  [
+   265,
+   "Primera División",
+   "Chile"
+  ],
+  [
+   273,
+   "Magyar Kupa",
+   "Hungary"
+  ],
+  [
+   274,
+   "Liga 1",
+   "Indonesia"
+  ],
+  [
+   275,
+   "Liga 2",
+   "Indonesia"
+  ],
+  [
+   276,
+   "FKF Premier League",
+   "Kenya"
+  ],
+  [
+   278,
+   "Super League",
+   "Malaysia"
+  ],
+  [
+   281,
+   "Primera División",
+   "Peru"
+  ],
+  [
+   283,
+   "Liga I",
+   "Romania"
+  ],
+  [
+   284,
+   "Liga II",
+   "Romania"
+  ],
+  [
+   285,
+   "Cupa României",
+   "Romania"
+  ],
+  [
+   288,
+   "Premier Soccer League",
+   "South-Africa"
+  ],
+  [
+   289,
+   "1st Division",
+   "South-Africa"
+  ],
+  [
+   290,
+   "Persian Gulf Pro League",
+   "Iran"
+  ],
+  [
+   296,
+   "Thai League 1",
+   "Thailand"
+  ],
+  [
+   297,
+   "Thai League 2",
+   "Thailand"
+  ],
+  [
+   301,
+   "Pro League",
+   "United-Arab-Emirates"
+  ],
+  [
+   303,
+   "Division 1",
+   "United-Arab-Emirates"
+  ],
+  [
+   305,
+   "Stars League",
+   "Qatar"
+  ],
+  [
+   306,
+   "Second Division",
+   "Qatar"
+  ],
+  [
+   307,
+   "Pro League",
+   "Saudi-Arabia"
+  ],
+  [
+   309,
+   "Division 2",
+   "Saudi-Arabia"
+  ],
+  [
+   310,
+   "Superliga",
+   "Albania"
+  ],
+  [
+   311,
+   "1st Division",
+   "Albania"
+  ],
+  [
+   318,
+   "1. Division",
+   "Cyprus"
+  ],
+  [
+   319,
+   "2. Division",
+   "Cyprus"
+  ],
+  [
+   323,
+   "Indian Super League",
+   "India"
+  ],
+  [
+   324,
+   "I-League",
+   "India"
+  ],
+  [
+   328,
+   "Esiliiga A",
+   "Estonia"
+  ],
+  [
+   333,
+   "Premier League",
+   "Ukraine"
+  ],
+  [
+   334,
+   "Persha Liga",
+   "Ukraine"
+  ],
+  [
+   335,
+   "Cup",
+   "Ukraine"
+  ],
+  [
+   336,
+   "Druha Liga",
+   "Ukraine"
+  ],
+  [
+   339,
+   "Liga Nacional",
+   "Guatemala"
+  ],
+  [
+   340,
+   "V.League 1",
+   "Vietnam"
+  ],
+  [
+   342,
+   "Premier League",
+   "Armenia"
+  ],
+  [
+   343,
+   "First League",
+   "Armenia"
+  ],
+  [
+   344,
+   "Primera División",
+   "Bolivia"
+  ],
+  [
+   346,
+   "FNL",
+   "Czech-Republic"
+  ],
+  [
+   348,
+   "3. liga - CFL A",
+   "Czech-Republic"
+  ],
+  [
+   350,
+   "4. liga - Divizie A",
+   "Czech-Republic"
+  ],
+  [
+   355,
+   "First League",
+   "Montenegro"
+  ],
+  [
+   357,
+   "Premier Division",
+   "Ireland"
+  ],
+  [
+   361,
+   "1 Lyga",
+   "Lithuania"
+  ],
+  [
+   363,
+   "Premier League",
+   "Ethiopia"
+  ],
+  [
+   368,
+   "Premier League",
+   "Singapore"
+  ],
+  [
+   369,
+   "Super League",
+   "Uzbekistan"
+  ],
+  [
+   373,
+   "1. SNL",
+   "Slovenia"
+  ],
+  [
+   380,
+   "Premier League",
+   "Hong-Kong"
+  ],
+  [
+   382,
+   "Liga Leumit",
+   "Israel"
+  ],
+  [
+   385,
+   "Toto Cup Ligat Al",
+   "Israel"
+  ],
+  [
+   386,
+   "Ligue 1",
+   "Ivory-Coast"
+  ],
+  [
+   387,
+   "League",
+   "Jordan"
+  ],
+  [
+   390,
+   "Premier League",
+   "Lebanon"
+  ],
+  [
+   392,
+   "Challenge League",
+   "Malta"
+  ],
+  [
+   395,
+   "Liga 1",
+   "Moldova"
+  ],
+  [
+   396,
+   "Primera Division",
+   "Nicaragua"
+  ],
+  [
+   397,
+   "Girabola",
+   "Angola"
+  ],
+  [
+   399,
+   "NPFL",
+   "Nigeria"
+  ],
+  [
+   401,
+   "Premier Soccer League",
+   "Zimbabwe"
+  ],
+  [
+   404,
+   "Campionato",
+   "San-Marino"
+  ],
+  [
+   405,
+   "National Soccer League",
+   "Rwanda"
+  ],
+  [
+   407,
+   "Championship",
+   "Northern-Ireland"
+  ],
+  [
+   408,
+   "Premiership",
+   "Northern-Ireland"
+  ],
+  [
+   412,
+   "Premier League",
+   "Botswana"
+  ],
+  [
+   417,
+   "Premier League",
+   "Bahrain"
+  ],
+  [
+   419,
+   "Premyer Liqa",
+   "Azerbaijan"
+  ],
+  [
+   420,
+   "Cup",
+   "Azerbaijan"
+  ],
+  [
+   423,
+   "Ligue 1",
+   "Burkina-Faso"
+  ],
+  [
+   424,
+   "Ligue 1",
+   "Congo-DR"
+  ],
+  [
+   425,
+   "Premier League",
+   "Syria"
+  ],
+  [
+   436,
+   "Primera División RFEF - Group 2",
+   "Spain"
+  ],
+  [
+   441,
+   "Tercera División RFEF - Group 3",
+   "Spain"
+  ],
+  [
+   453,
+   "Tercera División RFEF - Group 15",
+   "Spain"
+  ],
+  [
+   484,
+   "Frauenliga",
+   "Austria"
+  ],
+  [
+   487,
+   "First Amateur Division",
+   "Belgium"
+  ],
+  [
+   488,
+   "U19 Bundesliga",
+   "Germany"
+  ],
+  [
+   489,
+   "USL League One",
+   "USA"
+  ],
+  [
+   496,
+   "Liga Alef",
+   "Israel"
+  ],
+  [
+   506,
+   "2. liga",
+   "Slovakia"
+  ],
+  [
+   518,
+   "Reserve Pro League",
+   "Belgium"
+  ],
+  [
+   525,
+   "UEFA Champions League Women",
+   "World"
+  ],
+  [
+   538,
+   "Africa Cup of Nations U20",
+   "World"
+  ],
+  [
+   542,
+   "Iraqi League",
+   "Iraq"
+  ],
+  [
+   554,
+   "3. Lig - Group 3",
+   "Turkey"
+  ],
+  [
+   564,
+   "Ettan - Södra",
+   "Sweden"
+  ],
+  [
+   566,
+   "Ligue A",
+   "Burundi"
+  ],
+  [
+   567,
+   "Ligi kuu Bara",
+   "Tanzania"
+  ],
+  [
+   571,
+   "Vysshaya Liga",
+   "Tajikistan"
+  ],
+  [
+   585,
+   "Premier League",
+   "Uganda"
+  ],
+  [
+   588,
+   "National League",
+   "Myanmar"
+  ],
+  [
+   597,
+   "Division 2 - Södra Götaland",
+   "Sweden"
+  ],
+  [
+   617,
+   "Copa do Brasil U20",
+   "Brazil"
+  ],
+  [
+   622,
+   "Pernambucano - 1",
+   "Brazil"
+  ],
+  [
+   644,
+   "3. liga - West",
+   "Slovakia"
+  ],
+  [
+   649,
+   "Supreme Division Women",
+   "Russia"
+  ],
+  [
+   653,
+   "Second League - Group 4",
+   "Russia"
+  ],
+  [
+   657,
+   "Cup",
+   "Estonia"
+  ],
+  [
+   664,
+   "Superliga",
+   "Kosovo"
+  ],
+  [
+   666,
+   "Friendlies Women",
+   "World"
+  ],
+  [
+   668,
+   "1. Liga U19",
+   "Czech-Republic"
+  ],
+  [
+   676,
+   "Central Youth League",
+   "Poland"
+  ],
+  [
+   686,
+   "4. liga - Divizie F",
+   "Czech-Republic"
+  ],
+  [
+   705,
+   "Campionato Primavera - 1",
+   "Italy"
+  ],
+  [
+   709,
+   "Cup",
+   "Armenia"
+  ],
+  [
+   711,
+   "Segunda División",
+   "Chile"
+  ],
+  [
+   722,
+   "Liga Premier Serie A",
+   "Mexico"
+  ],
+  [
+   726,
+   "Sultan Cup",
+   "Oman"
+  ],
+  [
+   736,
+   "Elitettan",
+   "Sweden"
+  ],
+  [
+   739,
+   "AXA Women’s Super League",
+   "Switzerland"
+  ],
+  [
+   745,
+   "Oberliga - Hamburg",
+   "Germany"
+  ],
+  [
+   748,
+   "Oberliga - Niedersachsen",
+   "Germany"
+  ],
+  [
+   749,
+   "Oberliga - Bremen",
+   "Germany"
+  ],
+  [
+   753,
+   "Oberliga - Baden-Württemberg",
+   "Germany"
+  ],
+  [
+   754,
+   "Oberliga - Nordost-Nord",
+   "Germany"
+  ],
+  [
+   758,
+   "Premier Division",
+   "Gibraltar"
+  ],
+  [
+   760,
+   "LFA First Division",
+   "Liberia"
+  ],
+  [
+   762,
+   "Premier League",
+   "Mauritania"
+  ],
+  [
+   764,
+   "Premier League",
+   "Mongolia"
+  ],
+  [
+   780,
+   "III Liga - Group 1",
+   "Poland"
+  ],
+  [
+   782,
+   "III Liga - Group 3",
+   "Poland"
+  ],
+  [
+   783,
+   "III Liga - Group 4",
+   "Poland"
+  ],
+  [
+   784,
+   "Liga III - Serie 1",
+   "Romania"
+  ],
+  [
+   785,
+   "Liga III - Serie 2",
+   "Romania"
+  ],
+  [
+   786,
+   "Liga III - Serie 3",
+   "Romania"
+  ],
+  [
+   787,
+   "Liga III - Serie 4",
+   "Romania"
+  ],
+  [
+   788,
+   "Liga III - Serie 5",
+   "Romania"
+  ],
+  [
+   789,
+   "Liga III - Serie 6",
+   "Romania"
+  ],
+  [
+   790,
+   "Liga III - Serie 7",
+   "Romania"
+  ],
+  [
+   791,
+   "Liga III - Serie 8",
+   "Romania"
+  ],
+  [
+   823,
+   "Nasjonal U19 Champions League",
+   "Norway"
+  ],
+  [
+   862,
+   "3. Division",
+   "Denmark"
+  ],
+  [
+   865,
+   "Liga 3",
+   "Portugal"
+  ],
+  [
+   871,
+   "Premier League Cup",
+   "England"
+  ],
+  [
+   872,
+   "Liga Premier Serie B",
+   "Mexico"
+  ],
+  [
+   886,
+   "UEFA U17 Championship - Qualification",
+   "World"
+  ],
+  [
+   887,
+   "Second League",
+   "Egypt"
+  ],
+  [
+   906,
+   "Reserve League",
+   "Argentina"
+  ],
+  [
+   917,
+   "Copa Ecuador",
+   "Ecuador"
+  ],
+  [
+   930,
+   "Copa Uruguay",
+   "Uruguay"
+  ],
+  [
+   938,
+   "Oberliga - Bayern Nord",
+   "Germany"
+  ],
+  [
+   942,
+   "Serie C - Girone B",
+   "Italy"
+  ],
+  [
+   946,
+   "Second NL",
+   "Croatia"
+  ],
+  [
+   947,
+   "DFB Pokal - Women",
+   "Germany"
+  ],
+  [
+   949,
+   "CONMEBOL Libertadores Femenina",
+   "World"
+  ],
+  [
+   950,
+   "World Cup - U17 - Women",
+   "World"
+  ],
+  [
+   1028,
+   "CONCACAF Central American Cup",
+   "World"
+  ],
+  [
+   1033,
+   "Ekstraliga Women",
+   "Poland"
+  ],
+  [
+   1039,
+   "Premier League International Cup",
+   "World"
+  ],
+  [
+   1048,
+   "Premier Division",
+   "Antigua-And-Barbuda"
+  ],
+  [
+   1075,
+   "Pro League A",
+   "Uzbekistan"
+  ],
+  [
+   1086,
+   "Paulista - U20",
+   "Brazil"
+  ],
+  [
+   1104,
+   "Liga 3",
+   "Georgia"
+  ],
+  [
+   1114,
+   "Carioca U20",
+   "Brazil"
+  ],
+  [
+   1135,
+   "Sergipano - 2",
+   "Brazil"
+  ],
+  [
+   1142,
+   "Mineiro - 3",
+   "Brazil"
+  ],
+  [
+   1191,
+   "UEFA Europa Cup - Women",
+   "World"
+  ],
+  [
+   1200,
+   "Liga MX U21",
+   "Mexico"
+  ],
+  [
+   1202,
+   "Australian Championship",
+   "Australia"
+  ],
+  [
+   1218,
+   "Pro League U23",
+   "United-Arab-Emirates"
+  ],
+  [
+   1227,
+   "Premier League Women",
+   "Saudi-Arabia"
+  ],
+  [
+   1238,
+   "Regionalliga - South",
+   "Austria"
+  ],
+  [
+   1239,
+   "Regionalliga - North",
+   "Austria"
+  ],
+  [
+   1240,
+   "U19 league",
+   "Turkey"
+  ],
+  [
+   1243,
+   "Super League Women",
+   "South-Africa"
+  ]
+ ]
+}
