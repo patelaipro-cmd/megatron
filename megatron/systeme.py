@@ -64,7 +64,7 @@ def run(llm_agents: list[Agent] | None = None, workdir: str | Path | None = None
     """Lance la chaîne complète ; ``verifications`` liste chaque contrôle et son résultat.
 
     L'agent Stats est toujours construit sur l'historique fictif ; ``llm_agents``
-    remplace les agents LLM par défaut (DeepSeek, Gemini).
+    remplace l'agent LLM par défaut (Claude, seul fournisseur externe depuis le 29/10/2026).
     """
     tmp = None
     if workdir is None:
@@ -78,7 +78,7 @@ def run(llm_agents: list[Agent] | None = None, workdir: str | Path | None = None
         task = {"match_id": f"{DIVISION}:{kickoff.date()}:Alpha FC-Zeta Rovers", "fictif": True,
                 "division": DIVISION, "home": "Alpha FC", "away": "Zeta Rovers", "date": kickoff.date().isoformat()}
         if llm_agents is None:
-            llm_agents = [LLMAgent("deepseek", "DEEPSEEK_API_KEY"), LLMAgent("gemini", "GEMINI_API_KEY")]
+            llm_agents = [LLMAgent("claude", "ANTHROPIC_API_KEY")]
         agents = [StatsAgent(csv_path), *llm_agents]
         fusion = fuse(task, agents)
         checks: dict[str, bool | str] = {}

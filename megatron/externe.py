@@ -161,3 +161,51 @@ def enrichir(doc: dict, dossier: Path, *, at: str | None = None, noms: dict | No
                       "sources": (a.get("sources") or []) + [s for s in sources if s not in (a.get("sources") or [])],
                       "categorie_preuve": "absences", "informations_manquantes": manques})
     return out
+
+
+def poste_simple(code: str | None) -> str | None:
+    """Poste API-Football (G/D/M/F) ou ESPN (G, CD-L, LB, DM, AM, LW, F...) ramené à G/D/M/F."""
+    c = (code or "").upper().strip()
+    if not c:
+        return None
+    if c.startswith("G"):
+        return "G"
+    if c in ("D", "CB", "LB", "RB", "LWB", "RWB", "SW") or c.startswith("CD"):
+        return "D"
+    if c in ("F", "ST", "CF", "LW", "RW", "SS") or c.startswith("CF"):
+        return "F"
+    return "M" if c.endswith("M") or c in ("M",) else None
+
+
+def profils_titularisation(dossier: Path, equipe: str, avant, n: int = 10, alias: dict | None = None) -> dict:
+    """Taux de titularisation de chaque joueur sur les ``n`` derniers matchs de l'équipe dont la compo
+    a été collectée avant ``avant`` (API-Football puis ESPN, un match compté une fois)."""
+    alias = charger_alias() if alias is None else alias
+    avant = parse_dt(avant)
+    matchs: dict[str, dict] = {}
+    for source in ("apifootball/compos", "espn/compos"):
+        for snap in instantanes(dossier, source, avant):
+            noms = {l.get("equipe") for l in snap} - {None, ""}
+            nom = resoudre(equipe, noms, alias)[0]
+            if not nom:
+                continue
+            for l in snap:
+                if l.get("equipe") != nom:
+                    continue
+                cle = f"{(l.get('coup_envoi') or '')[:10]}"  # un match par jour et par équipe
+                m = matchs.setdefault(cle, {"source": source, "titulaires": {}, "postes": {}})
+                if m["source"] != source:
+                    continue
+                if l.get("statut") == "titulaire":
+                    m["titulaires"][l["joueur"]] = True
+                m["postes"][l["joueur"]] = poste_simple(l.get("poste"))
+    derniers = [matchs[k] for k in sorted(matchs, reverse=True)[:n]]
+    profils: dict[str, dict] = {}
+    for m in derniers:
+        for j, poste in m["postes"].items():
+            p = profils.setdefault(j, {"titularisations": 0, "poste": poste})
+            p["titularisations"] += j in m["titulaires"]
+            p["poste"] = p["poste"] or poste
+    for p in profils.values():
+        p["part_titularisations"] = round(p["titularisations"] / len(derniers), 4) if derniers else None
+    return {"matchs_lus": len(derniers), "joueurs": profils}

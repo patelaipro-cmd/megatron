@@ -196,16 +196,14 @@ class StatsAgent(Agent):
 
 
 def default_agents() -> list[Agent]:
-    return [
-        StatsAgent(),
-        LLMAgent("deepseek", "DEEPSEEK_API_KEY"),
-        LLMAgent("gemini", "GEMINI_API_KEY"),
-        LLMAgent("claude", "ANTHROPIC_API_KEY"),
-        LLMAgent("qwen", "DASHSCOPE_API_KEY"),
-    ]
+    """Décision de Luloki (29/10/2026) : Claude est le seul fournisseur LLM externe.
+
+    Les autres fournisseurs restent déclarés dans ``megatron.llm`` mais ne sont plus consultés par défaut.
+    """
+    return [StatsAgent(), LLMAgent("claude", "ANTHROPIC_API_KEY")]
 
 
-EXPECTED_FUSION = ("stats", "deepseek", "gemini")
+EXPECTED_FUSION = ("stats", "claude")
 
 
 def fuse(task: dict, agents: list[Agent] | None = None, *,
