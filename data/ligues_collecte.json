@@ -352,5 +352,128 @@
    "division": "F2",
    "nom": "Ligue 2"
   }
+ ],
+ "_note_espn": "Slugs ESPN (site.api.espn.com, sans clé) pour les compos officielles, de mémoire : une erreur par ligue est écrite dans le manifeste (erreurs_ligues) si un slug est faux.",
+ "espn": [
+  {
+   "slug": "eng.1",
+   "division": "E0"
+  },
+  {
+   "slug": "eng.2",
+   "division": "E1"
+  },
+  {
+   "slug": "eng.3",
+   "division": "E2"
+  },
+  {
+   "slug": "eng.4",
+   "division": "E3"
+  },
+  {
+   "slug": "sco.1",
+   "division": "SC0"
+  },
+  {
+   "slug": "ger.1",
+   "division": "D1"
+  },
+  {
+   "slug": "ger.2",
+   "division": "D2"
+  },
+  {
+   "slug": "ita.1",
+   "division": "I1"
+  },
+  {
+   "slug": "ita.2",
+   "division": "I2"
+  },
+  {
+   "slug": "esp.1",
+   "division": "SP1"
+  },
+  {
+   "slug": "esp.2",
+   "division": "SP2"
+  },
+  {
+   "slug": "fra.1",
+   "division": "F1"
+  },
+  {
+   "slug": "fra.2",
+   "division": "F2"
+  },
+  {
+   "slug": "ned.1",
+   "division": "N1"
+  },
+  {
+   "slug": "bel.1",
+   "division": "B1"
+  },
+  {
+   "slug": "por.1",
+   "division": "P1"
+  },
+  {
+   "slug": "tur.1",
+   "division": "T1"
+  },
+  {
+   "slug": "gre.1",
+   "division": "G1"
+  },
+  {
+   "slug": "aut.1",
+   "division": "AUT"
+  },
+  {
+   "slug": "sui.1",
+   "division": "SUI"
+  },
+  {
+   "slug": "den.1",
+   "division": "DEN"
+  },
+  {
+   "slug": "swe.1",
+   "division": "SWE"
+  },
+  {
+   "slug": "nor.1",
+   "division": "NOR"
+  },
+  {
+   "slug": "usa.1",
+   "division": "USA"
+  },
+  {
+   "slug": "mex.1",
+   "division": "MEX"
+  },
+  {
+   "slug": "bra.1",
+   "division": "BRA"
+  },
+  {
+   "slug": "arg.1",
+   "division": "ARG"
+  },
+  {
+   "slug": "uefa.champions",
+   "division": null
+  },
+  {
+   "slug": "uefa.europa",
+   "division": null
+  },
+  {
+   "slug": "uefa.europa.conf",
+   "division": null
+  }
  ]
 }

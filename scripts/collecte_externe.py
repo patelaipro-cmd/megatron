@@ -45,13 +45,16 @@ CLUBELO_PAYS = {"ENG": "E0", "ESP": "SP1", "ITA": "I1", "GER": "D1", "FRA": "F1"
                 "POR": "P1", "TUR": "T1", "GRE": "G1", "SCO": "SC0", "AUT": "AUT", "SUI": "SUI", "DEN": "DEN",
                 "SWE": "SWE", "NOR": "NOR", "FIN": "FIN", "POL": "POL", "ROM": "ROM", "RUS": "RUS", "IRL": "IRL"}
 FPL_STATUT = {"a": "disponible", "d": "incertain", "i": "blesse", "s": "suspendu", "u": "indisponible", "n": "non_eligible"}
-SOURCES = ("sofascore", "fpl", "clubelo", "understat", "apifootball")
+SOURCES = ("sofascore", "fpl", "clubelo", "understat", "apifootball", "espn")
+ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 APIFOOTBALL = "https://v3.football.api-sports.io"
 APIFOOTBALL_BUDGET_JOUR = 90  # plan gratuit : 100 requêtes/jour, 10 gardées en réserve
 COLONNES_BLESSURES = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "pays", "equipe",
                       "joueur", "joueur_id", "type", "motif")
 COLONNES_COMPOS_AF = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "equipe", "formation",
                       "joueur", "joueur_id", "poste", "statut")
+COLONNES_ESPN = ("collecte_le", "event_id", "ligue", "division", "coup_envoi", "equipe", "formation",
+                 "joueur", "joueur_id", "poste", "statut")
 COLONNES_SOFASCORE = ("collecte_le", "event_id", "division", "coup_envoi", "domicile", "exterieur", "cote",
                       "equipe", "joueur", "joueur_id", "poste", "statut", "motif", "compo_confirmee")
 COLONNES_FPL = ("collecte_le", "joueur_id", "joueur", "equipe", "statut", "chance_prochain_match",
@@ -316,6 +319,56 @@ def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: 
     return res
 
 
+# --- ESPN (compos officielles, sans clé) ----------------------------------
+
+def lignes_compos_espn(base: dict, summary: dict, collecte_le: str) -> list[dict]:
+    out = []
+    for bloc in summary.get("rosters") or []:
+        joueurs = bloc.get("roster") or []
+        if not any(j.get("starter") for j in joueurs):
+            continue
+        for j in joueurs:
+            a = j.get("athlete") or {}
+            out.append({**base, "collecte_le": collecte_le, "equipe": (bloc.get("team") or {}).get("displayName"),
+                        "formation": bloc.get("formation"), "joueur": a.get("displayName"), "joueur_id": a.get("id"),
+                        "poste": (j.get("position") or {}).get("abbreviation"),
+                        "statut": "titulaire" if j.get("starter") else "remplacant"})
+    return out
+
+
+def collecter_espn(maintenant: float, config: dict, etat: dict, lire, pause: float = 1.0) -> dict:
+    """Chaque heure : compos publiées des matchs qui débutent dans les 75 min (une fois par match)."""
+    d = datetime.fromtimestamp(maintenant, tz=timezone.utc)
+    suivi = etat.setdefault("espn", {})
+    if suivi.get("jour") != d.date().isoformat():
+        suivi.update({"jour": d.date().isoformat(), "compos_faites": suivi.get("compos_faites", [])[-200:]})
+    jours = {d.strftime("%Y%m%d"), (d + timedelta(minutes=75)).strftime("%Y%m%d")}
+    compos, erreurs, vus = [], [], 0
+    for ligue in config.get("espn", []):
+        for jour in sorted(jours):
+            try:
+                events = lire_json(f"{ESPN_API}/{ligue['slug']}/scoreboard?dates={jour}", lire).get("events") or []
+            except Exception as exc:
+                erreurs.append(f"{ligue['slug']}: {type(exc).__name__}: {exc}"[:120])
+                continue
+            for ev in events:
+                debut = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).timestamp()
+                if ev["id"] in suivi["compos_faites"] or not 0 <= debut - maintenant <= 75 * 60:
+                    continue
+                vus += 1
+                summary = lire_json(f"{ESPN_API}/{ligue['slug']}/summary?event={ev['id']}", lire)
+                base = {"event_id": ev["id"], "ligue": ligue["slug"], "division": ligue.get("division") or "",
+                        "coup_envoi": utc(debut)}
+                lignes = lignes_compos_espn(base, summary, utc(maintenant))
+                if lignes:  # compo pas encore publiée : on retentera à l'heure suivante
+                    suivi["compos_faites"].append(ev["id"])
+                    compos.extend(lignes)
+                time.sleep(pause)
+    if erreurs and len(erreurs) == len(config.get("espn", [])) * len(jours):
+        raise RuntimeError("tous les calendriers ESPN en échec : " + "; ".join(erreurs[:3]))
+    return {"matchs_proches": vus, "compos": compos, "erreurs_ligues": erreurs}
+
+
 # --- Écriture ------------------------------------------------------------
 
 def empreinte(lignes: list[dict]) -> str:
@@ -389,6 +442,11 @@ def collecter(dossier: Path, sources, maintenant: float | None = None, lire=lire
                     continue
                 res = collecter_apifootball(dossier, maintenant, config, etat,
                                             lecteur_apifootball(cle) if lire is lire_url else lire)
+            elif source == "espn":
+                r = collecter_espn(maintenant, config, etat, lire, pause=pause)
+                res = {"matchs_proches": r["matchs_proches"], "lignes": len(r["compos"]), "erreurs_ligues": r["erreurs_ligues"]}
+                if r["compos"]:
+                    res["fichier"] = ecrire_instantane(dossier, "espn/compos", r["compos"], COLONNES_ESPN, maintenant, etat)
             elif source == "understat":
                 res = {"lignes": collecter_understat(maintenant, dossier, config["understat"])}
             else:

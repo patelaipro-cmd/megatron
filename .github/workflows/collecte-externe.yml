@@ -4,13 +4,13 @@ name: collecte-externe
 # Voir docs/collecte-externe.md.
 on:
   schedule:
-    - cron: "20 * * * *"   # chaque heure : FPL, API-Football (compos < 75 min)
+    - cron: "20 * * * *"   # chaque heure : FPL, API-Football, ESPN (compos < 75 min)
     - cron: "40 5 * * *"   # chaque jour : toutes les sources (+ ClubElo, Understat)
   workflow_dispatch:
     inputs:
       sources:
         description: "Sources séparées par des virgules"
-        default: "sofascore,fpl,clubelo,understat,apifootball"
+        default: "sofascore,fpl,clubelo,understat,apifootball,espn"
 permissions:
   contents: write
 concurrency:
@@ -29,8 +29,8 @@ jobs:
         id: choix
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then s="${{ inputs.sources }}"
-          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat,apifootball"
-          else s="fpl,apifootball"; fi  # Sofascore 403 depuis GitHub (29/10) : tenté une fois par jour seulement
+          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat,apifootball,espn"
+          else s="fpl,apifootball,espn"; fi  # Sofascore 403 depuis GitHub (29/10) : tenté une fois par jour seulement
           echo "sources=$s" >> "$GITHUB_OUTPUT"
       - name: Dépendances
         run: |

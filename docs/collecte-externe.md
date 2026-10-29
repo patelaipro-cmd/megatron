@@ -15,6 +15,7 @@ fusionner dans `main`.
 | FPL (API officielle du jeu) | Statut blessé/suspendu/incertain, chance de jouer, news | Premier League | Chaque heure |
 | ClubElo | Elo du jour | Tous les clubs européens | Chaque jour |
 | Understat (via soccerdata) | Statistiques d'équipe par match, xG | 5 ligues (seules couvertes par Understat) | Chaque jour |
+| ESPN (API publique, sans clé) | Compos officielles (titulaires, remplaçants, formation) | 27 ligues + 3 coupes UEFA (`espn` de `data/ligues_collecte.json`) | Chaque heure, matchs qui débutent dans les 75 min, une fois par match publié |
 | API-Football (clé, secret `API_FOOTBALL_KEY`) | Blessures/suspensions (toutes ligues) ; compos officielles des ligues `apifootball` de `data/ligues_collecte.json` | Toutes ligues pour les blessures ; 19 ligues + coupes UEFA pour les compos | Statut + calendrier J/J+1 au premier passage du jour, blessures aux heures 0/6/12/18 UTC, compo de chaque match suivi à moins de 75 min ; plafond 90 requêtes/jour |
 
 ## Format de la branche `donnees-externes`
@@ -30,6 +31,7 @@ externe/understat/matchs_equipes_<saison>.csv   réécrit chaque jour (l'histori
 externe/apifootball/statut.json, calendrier.json   plan, quota, matchs suivis, ligues vues
 externe/apifootball/blessures/AAAA-MM-JJ/HHMM.csv
 externe/apifootball/compos/AAAA-MM-JJ/HHMM.csv
+externe/espn/compos/AAAA-MM-JJ/HHMM.csv
 ```
 
 Chaque ligne porte `collecte_le` (UTC). Règle anti-fuite : une information n'est
@@ -75,5 +77,6 @@ signalée. Aucune probabilité n'est modifiée.
 - Codes `reason` de Sofascore non documentés : gardés bruts (`code N`) quand il n'y a pas de description.
 - Une compo « probable » n'est pas collectée : seules les compos confirmées (`confirmed`) et les absents sont écrits.
 - **Premier run API-Football (29/10/2026 18:12 UTC)** : plan Free actif, 100 requêtes/jour, saison en cours accessible ; 17 matchs suivis sur J/J+1, 241 blessures/suspensions uniques (doublons J/J+1 retirés ensuite), 5 requêtes. Identifiants vérifiés dans `ligues_vues` : 40, 61, 62, 78, 79, 94, 135, 140, 144, 203. Pas encore vus (aucun match J/J+1) : 2, 3, 848, 39, 88, 136, 141, 179, 197.
+- **Sonde du 29/10/2026 18:30 UTC** (`sonde-sources.yml`) : l'API ESPN répond 200 depuis GitHub ; ses compos (`rosters`) n'apparaissent qu'une fois publiées et elle ne donne **aucune blessure** (champ `injuries` absent). ESPN est une 2e famille pour les compos, pas pour les absences. CGU ESPN : usage de l'API non documenté (gris) ; ESPN exploite une marque de paris (affiliation probable). ClubElo toujours 502, aussi en http.
 - API-Football : sans le secret, la source est « ignore ». Le plan gratuit peut refuser la saison en cours (réponse `errors`) : le premier run le dira dans `statut.json`/manifeste. La clé passe en en-tête, jamais dans l'URL ni les journaux.
 - Rien de tout cela ne modifie une probabilité : faits déclaratifs pour `contexte_favori`, aucune utilisation dans les modèles sans expérience validée.
