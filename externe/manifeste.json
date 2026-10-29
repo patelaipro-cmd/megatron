@@ -1,12 +1,10 @@
 {
- "execution_le": "2026-10-29T18:12:37+00:00",
+ "execution_le": "2026-10-29T18:38:06+00:00",
  "sources": {
-  "apifootball": {
-   "calendrier": 17,
-   "blessures": 482,
-   "fichier_blessures": "apifootball/blessures/2026-10-29/1812.csv",
-   "compos": 0,
-   "requetes_jour": 5,
+  "espn": {
+   "matchs_proches": 1,
+   "lignes": 0,
+   "erreurs_ligues": [],
    "statut": "ok"
   }
  }
