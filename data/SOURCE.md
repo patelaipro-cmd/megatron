@@ -26,3 +26,9 @@ Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion 
 
 - `cotes_buts_2000-2026.csv` : même fichier `Matches.csv` (SHA-256 `ef224cf2…4221`, vérifié inchangé le 29/10/2026), colonnes `Division, MatchDate, HomeTeam, AwayTeam, Over25, Under25` (cotes Bet365 selon le README d'origine). Matchs des 5 ligues depuis le 01/07/2000 ayant les deux cotes : 37 736 lignes (à partir de 2005/06), toutes reliées à `matches_top5_2000-2026.csv`. SHA-256 `a677960d5eeff221e4eab939fcfc0caf9ee36b7af2813f1243eb8f1f81904f31`.
 - Reconstruction : `python scripts/extraire_cotes_buts.py Matches.csv`.
+
+## Détails de match pour les angles morts (29/10/2026, EXP-009)
+
+- `details_2000-2026.csv` : même fichier `Matches.csv` (SHA-256 `ef224cf2…4221`, vérifié inchangé le 29/10/2026), colonnes `Division, MatchDate, HomeTeam, AwayTeam, HTHome, HTAway, HomeRed, AwayRed, HomeCorners, AwayCorners, HomeFouls, AwayFouls, HandiSize, HandiHome, HandiAway` (handicap asiatique Bet365 selon le README d'origine). 45 559 lignes, toutes reliées à `matches_top5_2000-2026.csv`. Remplissage ≥ 99,8 % depuis 2008/09. SHA-256 `4ff14aa330a77a7213ab2635d33d2bd6e528529436a8ec7d0c528c956e40f699`.
+- Elo et Form* de la source non repris : date de calcul non documentée (risque de fuite).
+- Reconstruction : `python scripts/extraire_details.py Matches.csv`.
