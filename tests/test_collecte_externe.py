@@ -163,5 +163,71 @@ class TestLecture(unittest.TestCase):
             self.assertEqual(le.statut(dossier)["instantanes"], {"sofascore": 2})
 
 
+
+class TestApiFootball(unittest.TestCase):
+    def faux(self, appels):
+        debut = int(MAINTENANT + 3600)
+        fixtures = {"response": [
+            {"fixture": {"id": 1, "date": "2026-10-29T13:00:00+00:00", "timestamp": debut, "status": {"short": "NS"}},
+             "league": {"id": 61, "name": "Ligue 1", "country": "France"}},
+            {"fixture": {"id": 2, "date": "2026-10-29T13:00:00+00:00", "timestamp": debut, "status": {"short": "NS"}},
+             "league": {"id": 999, "name": "Autre", "country": "X"}}]}
+        blessures = {"response": [{"player": {"id": 7, "name": "Blesse Fictif", "type": "Missing Fixture", "reason": "Knee Injury"},
+                                   "team": {"name": "Club Fictif"}, "fixture": {"id": 1, "date": "2026-10-29T13:00:00+00:00"},
+                                   "league": {"id": 61, "name": "Ligue 1", "country": "France"}}]}
+        compo = {"response": [{"team": {"name": "Club Fictif"}, "formation": "4-3-3",
+                               "startXI": [{"player": {"id": 8, "name": "Titulaire Fictif", "pos": "F"}}],
+                               "substitutes": [{"player": {"id": 9, "name": "Remplacant Fictif", "pos": "D"}}]}]}
+
+        def lire(chemin):
+            appels.append(chemin)
+            if chemin == "/status":
+                return {"response": {"subscription": {"plan": "Free"}, "requests": {"current": 1, "limit_day": 100}}}
+            if chemin.startswith("/fixtures?date"):
+                return fixtures
+            if chemin.startswith("/injuries"):
+                return blessures
+            if chemin.startswith("/fixtures/lineups"):
+                return compo
+            raise AssertionError(chemin)
+        return lire
+
+    def test_premier_passage_puis_heure_suivante(self):
+        conf = {"sofascore": [], "understat": [], "apifootball": [{"id": 61, "division": "F1", "nom": "Ligue 1"}]}
+        with tempfile.TemporaryDirectory() as d:
+            dossier, appels = Path(d), []
+            m = ce.collecter(dossier, ["apifootball"], MAINTENANT, self.faux(appels), conf)
+            r = m["sources"]["apifootball"]
+            self.assertEqual(r["statut"], "ok")
+            self.assertEqual((r["calendrier"], r["blessures"], r["compos"]), (1, 2, 2))  # blessures J et J+1
+            self.assertEqual(appels[-1], "/fixtures/lineups?fixture=1")
+            self.assertEqual(r["requetes_jour"], 6)
+            appels.clear()
+            m2 = ce.collecter(dossier, ["apifootball"], MAINTENANT + 3600, self.faux(appels), conf)
+            self.assertEqual(appels, [])  # 13 h : calendrier connu, compo déjà faite, pas une heure de blessures
+            self.assertEqual(m2["sources"]["apifootball"]["compos"], 0)
+
+    def test_erreur_api_dans_champ_errors(self):
+        class Rep:
+            def __init__(self): self.b = json.dumps({"errors": {"plan": "Free plans do not have access to this season"}}).encode()
+            def read(self): return self.b
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+        import unittest.mock as um
+        with um.patch.object(ce.urllib.request, "urlopen", return_value=Rep()) as uo:
+            with self.assertRaisesRegex(RuntimeError, "Free plans"):
+                ce.lecteur_apifootball("cle-fictive")("/status")
+            req = uo.call_args[0][0]
+            self.assertNotIn("cle-fictive", req.full_url)
+            self.assertEqual(req.get_header("X-apisports-key"), "cle-fictive")
+
+    def test_sans_secret_la_source_est_ignoree(self):
+        import os
+        import unittest.mock as um
+        with tempfile.TemporaryDirectory() as d, um.patch.dict(os.environ, {"API_FOOTBALL_KEY": ""}):
+            m = ce.collecter(Path(d), ["apifootball"], MAINTENANT, config={"sofascore": [], "understat": []})
+            self.assertEqual(m["sources"]["apifootball"]["statut"], "ignore")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -7,7 +7,9 @@ Sources (choix Luloki du 29/10/2026, voir docs/collecte-externe.md) :
   ligues de data/ligues_collecte.json (38 divisions avec historique + coupes UEFA) ;
 - fpl : statut officiel des joueurs Premier League (blessure, suspension, chance de jouer) ;
 - clubelo : classement Elo du jour (tous les clubs européens) ;
-- understat : statistiques d'équipe par match (xG) de la saison en cours (5 ligues couvertes par Understat).
+- understat : statistiques d'équipe par match (xG) de la saison en cours (5 ligues couvertes par Understat) ;
+- apifootball : blessures/suspensions (toutes ligues) et compos officielles des ligues de
+  data/ligues_collecte.json, clé `API_FOOTBALL_KEY` (secret Actions), budget de 90 requêtes/jour.
 
 Volume Sofascore : compos interrogées pour les matchs à moins de 3 h à chaque
 exécution, et pour tout l'horizon de 72 h seulement aux heures UTC multiples de 6.
@@ -27,6 +29,7 @@ import csv
 import hashlib
 import io
 import json
+import os
 import sys
 import time
 import urllib.error
@@ -42,7 +45,13 @@ CLUBELO_PAYS = {"ENG": "E0", "ESP": "SP1", "ITA": "I1", "GER": "D1", "FRA": "F1"
                 "POR": "P1", "TUR": "T1", "GRE": "G1", "SCO": "SC0", "AUT": "AUT", "SUI": "SUI", "DEN": "DEN",
                 "SWE": "SWE", "NOR": "NOR", "FIN": "FIN", "POL": "POL", "ROM": "ROM", "RUS": "RUS", "IRL": "IRL"}
 FPL_STATUT = {"a": "disponible", "d": "incertain", "i": "blesse", "s": "suspendu", "u": "indisponible", "n": "non_eligible"}
-SOURCES = ("sofascore", "fpl", "clubelo", "understat")
+SOURCES = ("sofascore", "fpl", "clubelo", "understat", "apifootball")
+APIFOOTBALL = "https://v3.football.api-sports.io"
+APIFOOTBALL_BUDGET_JOUR = 90  # plan gratuit : 100 requêtes/jour, 10 gardées en réserve
+COLONNES_BLESSURES = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "pays", "equipe",
+                      "joueur", "joueur_id", "type", "motif")
+COLONNES_COMPOS_AF = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "equipe", "formation",
+                      "joueur", "joueur_id", "poste", "statut")
 COLONNES_SOFASCORE = ("collecte_le", "event_id", "division", "coup_envoi", "domicile", "exterieur", "cote",
                       "equipe", "joueur", "joueur_id", "poste", "statut", "motif", "compo_confirmee")
 COLONNES_FPL = ("collecte_le", "joueur_id", "joueur", "equipe", "statut", "chance_prochain_match",
@@ -206,6 +215,104 @@ def collecter_understat(maintenant: float, dossier: Path, ligues: list[str]) -> 
     return len(df)
 
 
+# --- API-Football ---------------------------------------------------------
+
+def lecteur_apifootball(cle: str):
+    """GET authentifié ; la clé passe dans un en-tête, jamais dans l'URL ni les journaux."""
+    def lire(chemin: str) -> dict:
+        req = urllib.request.Request(APIFOOTBALL + chemin, headers={**HEADERS, "x-apisports-key": cle})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.loads(r.read())
+        if data.get("errors"):  # l'API répond 200 avec un champ errors (plan, quota, saison)
+            raise RuntimeError(f"API-Football {chemin.split('?')[0]} : {data['errors']}")
+        return data
+    return lire
+
+
+def lignes_blessures(reponse: list[dict], collecte_le: str) -> list[dict]:
+    out = []
+    for r in reponse:
+        joueur, equipe, fx, ligue = r.get("player") or {}, r.get("team") or {}, r.get("fixture") or {}, r.get("league") or {}
+        out.append({"collecte_le": collecte_le, "fixture_id": fx.get("id"), "coup_envoi": fx.get("date"),
+                    "ligue_id": ligue.get("id"), "ligue": ligue.get("name"), "pays": ligue.get("country"),
+                    "equipe": equipe.get("name"), "joueur": joueur.get("name"), "joueur_id": joueur.get("id"),
+                    "type": joueur.get("type"), "motif": joueur.get("reason")})
+    return sorted(out, key=lambda x: (str(x["coup_envoi"]), str(x["fixture_id"]), str(x["equipe"]), str(x["joueur"])))
+
+
+def lignes_compos_af(match: dict, reponse: list[dict], collecte_le: str) -> list[dict]:
+    out = []
+    for bloc in reponse:
+        base = {**match, "collecte_le": collecte_le, "equipe": (bloc.get("team") or {}).get("name"),
+                "formation": bloc.get("formation")}
+        for cle, statut in (("startXI", "titulaire"), ("substitutes", "remplacant")):
+            for p in bloc.get(cle) or []:
+                j = p.get("player") or {}
+                out.append({**base, "joueur": j.get("name"), "joueur_id": j.get("id"), "poste": j.get("pos"),
+                            "statut": statut})
+    return out
+
+
+def calendrier_af(reponse: list[dict], ligues: set[int]) -> list[dict]:
+    """Matchs non commencés des ligues suivies (pour les compos)."""
+    out = {r["fixture"]["id"]: {"fixture_id": r["fixture"]["id"], "coup_envoi": r["fixture"]["date"],
+                                "debut_ts": r["fixture"].get("timestamp"), "ligue_id": r["league"]["id"],
+                                "ligue": r["league"]["name"]}
+           for r in reponse if r["league"]["id"] in ligues and r["fixture"]["status"]["short"] in ("NS", "TBD")}
+    return list(out.values())
+
+
+def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: dict, lire) -> dict:
+    """Premier passage du jour : statut + calendrier J et J+1 + blessures J et J+1. Aux heures UTC 0, 6, 12, 18 : blessures J.
+    Chaque heure : compos officielles des matchs suivis qui débutent dans les 75 min (une fois par match)."""
+    d = datetime.fromtimestamp(maintenant, tz=timezone.utc)
+    jour, demain = d.date().isoformat(), (d + timedelta(days=1)).date().isoformat()
+    compteur = etat.setdefault("apifootball", {})
+    if compteur.get("jour") != jour:
+        compteur.update({"jour": jour, "requetes": 0, "compos_faites": []})
+
+    def appel(chemin):
+        if compteur["requetes"] >= APIFOOTBALL_BUDGET_JOUR:
+            raise RuntimeError("budget journalier atteint")
+        compteur["requetes"] += 1
+        return lire(chemin)
+
+    res, collecte_le = {}, utc(maintenant)
+    base = dossier / "apifootball"
+    base.mkdir(parents=True, exist_ok=True)
+    chemin_cal = base / "calendrier.json"
+    nouveau_jour = not chemin_cal.exists() or json.loads(chemin_cal.read_text()).get("jour") != jour
+    if nouveau_jour:
+        statut = appel("/status").get("response") or {}
+        (base / "statut.json").write_text(json.dumps({"collecte_le": collecte_le, **{k: statut.get(k) for k in ("subscription", "requests")}},
+                                                     indent=1, ensure_ascii=False) + "\n")
+        ligues = {l["id"] for l in config.get("apifootball", [])}
+        brut = [r for j in (jour, demain) for r in appel(f"/fixtures?date={j}").get("response") or []]
+        cal = calendrier_af(brut, ligues)
+        vues = sorted({(r["league"]["id"], r["league"]["name"], r["league"].get("country") or "") for r in brut})
+        chemin_cal.write_text(json.dumps({"jour": jour, "matchs": cal, "ligues_vues": vues}, indent=1, ensure_ascii=False) + "\n")
+        res["calendrier"] = len(cal)
+    if nouveau_jour or d.hour % 6 == 0:
+        jours = (jour, demain) if nouveau_jour else (jour,)
+        blessures = [l for j in jours for l in lignes_blessures(appel(f"/injuries?date={j}").get("response") or [], collecte_le)]
+        res["blessures"] = len(blessures)
+        res["fichier_blessures"] = ecrire_instantane(dossier, "apifootball/blessures", blessures, COLONNES_BLESSURES, maintenant, etat)
+    compos = []
+    for m in json.loads(chemin_cal.read_text())["matchs"]:
+        if m["fixture_id"] in compteur["compos_faites"] or not m.get("debut_ts"):
+            continue
+        if 0 <= m["debut_ts"] - maintenant <= 75 * 60 and compteur["requetes"] < APIFOOTBALL_BUDGET_JOUR:
+            reponse = appel(f"/fixtures/lineups?fixture={m['fixture_id']}").get("response") or []
+            if reponse:  # compo pas encore publiée : on retentera à l'heure suivante
+                compteur["compos_faites"].append(m["fixture_id"])
+                compos.extend(lignes_compos_af({k: m[k] for k in ("fixture_id", "coup_envoi", "ligue_id", "ligue")}, reponse, collecte_le))
+    if compos:
+        res["fichier_compos"] = ecrire_instantane(dossier, "apifootball/compos", compos, COLONNES_COMPOS_AF, maintenant, etat)
+    res["compos"] = len(compos)
+    res["requetes_jour"] = compteur["requetes"]
+    return res
+
+
 # --- Écriture ------------------------------------------------------------
 
 def empreinte(lignes: list[dict]) -> str:
@@ -272,6 +379,13 @@ def collecter(dossier: Path, sources, maintenant: float | None = None, lire=lire
                 lignes = [{**r, "collecte_le": utc(maintenant)} for r in lignes_clubelo(lire(f"{CLUBELO_API}/{jour}").decode())]
                 cols = ("collecte_le", "division", "Rank", "Club", "Country", "Level", "Elo", "From", "To")
                 res = {"lignes": len(lignes), "fichier": ecrire_instantane(dossier, source, lignes, cols, maintenant, etat)}
+            elif source == "apifootball":
+                cle = os.environ.get("API_FOOTBALL_KEY", "").strip()
+                if not cle and lire is lire_url:
+                    manifeste["sources"][source] = {"statut": "ignore", "raison": "secret API_FOOTBALL_KEY absent"}
+                    continue
+                res = collecter_apifootball(dossier, maintenant, config, etat,
+                                            lecteur_apifootball(cle) if lire is lire_url else lire)
             elif source == "understat":
                 res = {"lignes": collecter_understat(maintenant, dossier, config["understat"])}
             else:

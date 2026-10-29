@@ -1,47 +1,356 @@
 {
  "_note": "Ligues suivies par scripts/collecte_externe.py. division = code xgabora/football-data (historique disponible dans Megatron) ; null = coupe européenne collectée pour le contexte (rotation, fatigue) sans historique de modèle. Identifiants Sofascore (unique-tournament) issus de la connaissance générale, non vérifiés depuis l'environnement (réseau bloqué) : vérifier avec sofascore/tournois_vus.csv après le premier run et corriger ici.",
  "sofascore": [
-  {"id": 17, "division": "E0", "nom": "Premier League", "pays": "England"},
-  {"id": 18, "division": "E1", "nom": "Championship", "pays": "England"},
-  {"id": 24, "division": "E2", "nom": "League One", "pays": "England"},
-  {"id": 25, "division": "E3", "nom": "League Two", "pays": "England"},
-  {"id": 173, "division": "EC", "nom": "National League", "pays": "England"},
-  {"id": 36, "division": "SC0", "nom": "Premiership", "pays": "Scotland"},
-  {"id": 206, "division": "SC1", "nom": "Championship", "pays": "Scotland"},
-  {"id": 207, "division": "SC2", "nom": "League One", "pays": "Scotland"},
-  {"id": 209, "division": "SC3", "nom": "League Two", "pays": "Scotland"},
-  {"id": 35, "division": "D1", "nom": "Bundesliga", "pays": "Germany"},
-  {"id": 44, "division": "D2", "nom": "2. Bundesliga", "pays": "Germany"},
-  {"id": 23, "division": "I1", "nom": "Serie A", "pays": "Italy"},
-  {"id": 53, "division": "I2", "nom": "Serie B", "pays": "Italy"},
-  {"id": 8, "division": "SP1", "nom": "LaLiga", "pays": "Spain"},
-  {"id": 54, "division": "SP2", "nom": "LaLiga 2", "pays": "Spain"},
-  {"id": 34, "division": "F1", "nom": "Ligue 1", "pays": "France"},
-  {"id": 182, "division": "F2", "nom": "Ligue 2", "pays": "France"},
-  {"id": 37, "division": "N1", "nom": "Eredivisie", "pays": "Netherlands"},
-  {"id": 38, "division": "B1", "nom": "Pro League", "pays": "Belgium"},
-  {"id": 238, "division": "P1", "nom": "Liga Portugal", "pays": "Portugal"},
-  {"id": 52, "division": "T1", "nom": "Trendyol Süper Lig", "pays": "Turkey"},
-  {"id": 185, "division": "G1", "nom": "Stoiximan Super League", "pays": "Greece"},
-  {"id": 45, "division": "AUT", "nom": "Bundesliga", "pays": "Austria"},
-  {"id": 215, "division": "SUI", "nom": "Super League", "pays": "Switzerland"},
-  {"id": 39, "division": "DEN", "nom": "Superliga", "pays": "Denmark"},
-  {"id": 40, "division": "SWE", "nom": "Allsvenskan", "pays": "Sweden"},
-  {"id": 20, "division": "NOR", "nom": "Eliteserien", "pays": "Norway"},
-  {"id": 41, "division": "FIN", "nom": "Veikkausliiga", "pays": "Finland"},
-  {"id": 202, "division": "POL", "nom": "Ekstraklasa", "pays": "Poland"},
-  {"id": 152, "division": "ROM", "nom": "Superliga", "pays": "Romania"},
-  {"id": 203, "division": "RUS", "nom": "Premier League", "pays": "Russia"},
-  {"id": 192, "division": "IRL", "nom": "Premier Division", "pays": "Ireland"},
-  {"id": 155, "division": "ARG", "nom": "Liga Profesional de Fútbol", "pays": "Argentina"},
-  {"id": 325, "division": "BRA", "nom": "Brasileirão Série A", "pays": "Brazil"},
-  {"id": 11621, "division": "MEX", "nom": "Liga MX, Apertura", "pays": "Mexico"},
-  {"id": 242, "division": "USA", "nom": "MLS", "pays": "USA"},
-  {"id": 196, "division": "JAP", "nom": "J1 League", "pays": "Japan"},
-  {"id": 649, "division": "CHN", "nom": "Chinese Super League", "pays": "China"},
-  {"id": 7, "division": null, "nom": "UEFA Champions League", "pays": "Europe"},
-  {"id": 679, "division": null, "nom": "UEFA Europa League", "pays": "Europe"},
-  {"id": 17015, "division": null, "nom": "UEFA Conference League", "pays": "Europe"}
+  {
+   "id": 17,
+   "division": "E0",
+   "nom": "Premier League",
+   "pays": "England"
+  },
+  {
+   "id": 18,
+   "division": "E1",
+   "nom": "Championship",
+   "pays": "England"
+  },
+  {
+   "id": 24,
+   "division": "E2",
+   "nom": "League One",
+   "pays": "England"
+  },
+  {
+   "id": 25,
+   "division": "E3",
+   "nom": "League Two",
+   "pays": "England"
+  },
+  {
+   "id": 173,
+   "division": "EC",
+   "nom": "National League",
+   "pays": "England"
+  },
+  {
+   "id": 36,
+   "division": "SC0",
+   "nom": "Premiership",
+   "pays": "Scotland"
+  },
+  {
+   "id": 206,
+   "division": "SC1",
+   "nom": "Championship",
+   "pays": "Scotland"
+  },
+  {
+   "id": 207,
+   "division": "SC2",
+   "nom": "League One",
+   "pays": "Scotland"
+  },
+  {
+   "id": 209,
+   "division": "SC3",
+   "nom": "League Two",
+   "pays": "Scotland"
+  },
+  {
+   "id": 35,
+   "division": "D1",
+   "nom": "Bundesliga",
+   "pays": "Germany"
+  },
+  {
+   "id": 44,
+   "division": "D2",
+   "nom": "2. Bundesliga",
+   "pays": "Germany"
+  },
+  {
+   "id": 23,
+   "division": "I1",
+   "nom": "Serie A",
+   "pays": "Italy"
+  },
+  {
+   "id": 53,
+   "division": "I2",
+   "nom": "Serie B",
+   "pays": "Italy"
+  },
+  {
+   "id": 8,
+   "division": "SP1",
+   "nom": "LaLiga",
+   "pays": "Spain"
+  },
+  {
+   "id": 54,
+   "division": "SP2",
+   "nom": "LaLiga 2",
+   "pays": "Spain"
+  },
+  {
+   "id": 34,
+   "division": "F1",
+   "nom": "Ligue 1",
+   "pays": "France"
+  },
+  {
+   "id": 182,
+   "division": "F2",
+   "nom": "Ligue 2",
+   "pays": "France"
+  },
+  {
+   "id": 37,
+   "division": "N1",
+   "nom": "Eredivisie",
+   "pays": "Netherlands"
+  },
+  {
+   "id": 38,
+   "division": "B1",
+   "nom": "Pro League",
+   "pays": "Belgium"
+  },
+  {
+   "id": 238,
+   "division": "P1",
+   "nom": "Liga Portugal",
+   "pays": "Portugal"
+  },
+  {
+   "id": 52,
+   "division": "T1",
+   "nom": "Trendyol Süper Lig",
+   "pays": "Turkey"
+  },
+  {
+   "id": 185,
+   "division": "G1",
+   "nom": "Stoiximan Super League",
+   "pays": "Greece"
+  },
+  {
+   "id": 45,
+   "division": "AUT",
+   "nom": "Bundesliga",
+   "pays": "Austria"
+  },
+  {
+   "id": 215,
+   "division": "SUI",
+   "nom": "Super League",
+   "pays": "Switzerland"
+  },
+  {
+   "id": 39,
+   "division": "DEN",
+   "nom": "Superliga",
+   "pays": "Denmark"
+  },
+  {
+   "id": 40,
+   "division": "SWE",
+   "nom": "Allsvenskan",
+   "pays": "Sweden"
+  },
+  {
+   "id": 20,
+   "division": "NOR",
+   "nom": "Eliteserien",
+   "pays": "Norway"
+  },
+  {
+   "id": 41,
+   "division": "FIN",
+   "nom": "Veikkausliiga",
+   "pays": "Finland"
+  },
+  {
+   "id": 202,
+   "division": "POL",
+   "nom": "Ekstraklasa",
+   "pays": "Poland"
+  },
+  {
+   "id": 152,
+   "division": "ROM",
+   "nom": "Superliga",
+   "pays": "Romania"
+  },
+  {
+   "id": 203,
+   "division": "RUS",
+   "nom": "Premier League",
+   "pays": "Russia"
+  },
+  {
+   "id": 192,
+   "division": "IRL",
+   "nom": "Premier Division",
+   "pays": "Ireland"
+  },
+  {
+   "id": 155,
+   "division": "ARG",
+   "nom": "Liga Profesional de Fútbol",
+   "pays": "Argentina"
+  },
+  {
+   "id": 325,
+   "division": "BRA",
+   "nom": "Brasileirão Série A",
+   "pays": "Brazil"
+  },
+  {
+   "id": 11621,
+   "division": "MEX",
+   "nom": "Liga MX, Apertura",
+   "pays": "Mexico"
+  },
+  {
+   "id": 242,
+   "division": "USA",
+   "nom": "MLS",
+   "pays": "USA"
+  },
+  {
+   "id": 196,
+   "division": "JAP",
+   "nom": "J1 League",
+   "pays": "Japan"
+  },
+  {
+   "id": 649,
+   "division": "CHN",
+   "nom": "Chinese Super League",
+   "pays": "China"
+  },
+  {
+   "id": 7,
+   "division": null,
+   "nom": "UEFA Champions League",
+   "pays": "Europe"
+  },
+  {
+   "id": 679,
+   "division": null,
+   "nom": "UEFA Europa League",
+   "pays": "Europe"
+  },
+  {
+   "id": 17015,
+   "division": null,
+   "nom": "UEFA Conference League",
+   "pays": "Europe"
+  }
  ],
- "understat": ["ENG-Premier League", "ESP-La Liga", "ITA-Serie A", "GER-Bundesliga", "FRA-Ligue 1"]
+ "understat": [
+  "ENG-Premier League",
+  "ESP-La Liga",
+  "ITA-Serie A",
+  "GER-Bundesliga",
+  "FRA-Ligue 1"
+ ],
+ "_note_apifootball": "Identifiants de ligue API-Football (compos officielles, 1 requête par match) issus de la connaissance générale : vérifier avec ligues_vues de apifootball/calendrier.json après le premier run. Les blessures, elles, sont collectées pour toutes les ligues.",
+ "apifootball": [
+  {
+   "id": 39,
+   "division": "E0",
+   "nom": "Premier League"
+  },
+  {
+   "id": 140,
+   "division": "SP1",
+   "nom": "La Liga"
+  },
+  {
+   "id": 135,
+   "division": "I1",
+   "nom": "Serie A"
+  },
+  {
+   "id": 78,
+   "division": "D1",
+   "nom": "Bundesliga"
+  },
+  {
+   "id": 61,
+   "division": "F1",
+   "nom": "Ligue 1"
+  },
+  {
+   "id": 2,
+   "division": null,
+   "nom": "UEFA Champions League"
+  },
+  {
+   "id": 3,
+   "division": null,
+   "nom": "UEFA Europa League"
+  },
+  {
+   "id": 848,
+   "division": null,
+   "nom": "UEFA Europa Conference League"
+  },
+  {
+   "id": 88,
+   "division": "N1",
+   "nom": "Eredivisie"
+  },
+  {
+   "id": 94,
+   "division": "P1",
+   "nom": "Primeira Liga"
+  },
+  {
+   "id": 144,
+   "division": "B1",
+   "nom": "Jupiler Pro League"
+  },
+  {
+   "id": 203,
+   "division": "T1",
+   "nom": "Süper Lig"
+  },
+  {
+   "id": 179,
+   "division": "SC0",
+   "nom": "Premiership"
+  },
+  {
+   "id": 197,
+   "division": "G1",
+   "nom": "Super League 1"
+  },
+  {
+   "id": 40,
+   "division": "E1",
+   "nom": "Championship"
+  },
+  {
+   "id": 79,
+   "division": "D2",
+   "nom": "2. Bundesliga"
+  },
+  {
+   "id": 136,
+   "division": "I2",
+   "nom": "Serie B"
+  },
+  {
+   "id": 141,
+   "division": "SP2",
+   "nom": "Segunda División"
+  },
+  {
+   "id": 62,
+   "division": "F2",
+   "nom": "Ligue 2"
+  }
+ ]
 }
