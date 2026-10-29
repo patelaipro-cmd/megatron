@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm, marches, suivi, synchro, systeme
+from . import backtest, checkpoint, data, inventory, llm, marches, marges, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -70,6 +70,9 @@ def main(argv: list[str] | None = None) -> int:
     mr.add_argument("--test", nargs="+", required=True)
     mr.add_argument("--saisons-apprentissage", required=True)
     mr.add_argument("--sortie", help="dossier où écrire recalibration.json")
+    mg = sub.add_parser("marges", help="calcul brut expérimental des marges de victoire ; aucune écriture")
+    mg.add_argument("--xg-home", type=float, required=True)
+    mg.add_argument("--xg-away", type=float, required=True)
     sy = sub.add_parser("synchro", help="contrôles de la mémoire avant reprise (rien n'est écrit)")
     sy.add_argument("action", choices=["verifier"])
     sy.add_argument("--reference", help="branche de référence, ex. origin/main : signale un retard")
@@ -141,6 +144,13 @@ def main(argv: list[str] | None = None) -> int:
         if args.sortie:
             (Path(args.sortie) / "recalibration.json").write_text(text + "\n", encoding="utf-8")
         print(text)
+    elif args.cmd == "marges":
+        try:
+            out = marges.calculer(args.xg_home, args.xg_away)
+        except ValueError as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
     elif args.cmd == "synchro":
         rapport = synchro.verifier(args.memoire, args.reference)
         print(json.dumps(rapport, indent=2, ensure_ascii=False))
