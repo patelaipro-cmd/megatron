@@ -1,13 +1,12 @@
 {
   "version": "0.1.0",
-  "commit": "6824242",
-  "date": "2026-10-29T07:43:36+00:00",
-  "resume": "Deux accès Codex + Claude : correctif Codex intégré (NaN/Inf, contrôle horaire après agents, fusion-v1 versionnée, data_cutoff nul, prevoir Stats seul par défaut, AGENTS.md/CLAUDE.md) + résultat unique sauf --correction ; 58 tests OK.",
+  "commit": "4a18670",
+  "date": "2026-10-29T08:12:30+00:00",
+  "resume": "Marchés 2+ et 3+ buts : poisson-v4 brut rejeté (EXP-006), recalibration de Platt validée (EXP-007), enregistrés par prevoir ; validation d'accès en une commande (scripts/valider_acces.py).",
   "prochaines_actions": [
-    "Luloki : relire et fusionner la PR deux accès",
+    "Fenêtre stricte de cinq heures avant le coup d'envoi",
     "Valider l'accès Codex séparément sur la même branche (tests + parcours fictif)",
     "Construire python -m megatron synchro verifier (docs/synchro-codex-claude.md)",
-    "Marchés 2+/3+ et fenêtre stricte de cinq heures",
     "Réajuster demi-vie / rétrécissement / w sur 2008-2020 (plus de données) puis tester sur 2022-2026, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
@@ -88,15 +87,20 @@
       "cle": "gemini",
       "valeur": "laissé de côté à la demande de Luloki (28/10/2026) ; Fusion en mode dégradé (Stats seul)",
       "id": "be58eaee99f5"
+    },
+    {
+      "cle": "marches_buts",
+      "valeur": "2+ et 3+ buts enregistrés par prevoir sous poisson-v4-platt (EXP-007, M1-M3 tenus sur 2020-2026) ; poisson-v4 brut rejeté (EXP-006, trop tranché)",
+      "id": "118f54fd9051"
     }
   ],
   "contradictions": {},
   "effectifs": {
     "travail": 2,
-    "decisions": 14,
+    "decisions": 15,
     "football": 1,
     "performances": 4,
     "technique": 5
   },
-  "id": "ckpt-f598f15b04"
+  "id": "ckpt-c75b19c15f"
 }

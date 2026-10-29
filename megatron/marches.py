@@ -22,6 +22,9 @@ ISSUES_BINAIRES = ("oui", "non")
 COTES_BUTS = DATA / "cotes_buts_2000-2026.csv"
 V4 = {"half_life": 90.0, "shrink": 3.0, "proxy": "cadres", "proxy_weight": 0.25}  # figé par EXP-004/005
 EPS = 1e-15
+# a, b de σ(a + b · logit p) appris par EXP-007 sur 2008-2020, M1-M3 tenus sur 2020-2026
+PLATT_V4 = {"2+": (0.510519, 0.568599), "3+": (0.049162, 0.611305)}
+VERSION_BUTS = "poisson-v4-platt"
 
 
 def total_au_moins(lam_total: float, seuil: int) -> float:
@@ -159,3 +162,76 @@ def bilan(rows: list[dict]) -> dict:
             "info_v4_moins_bookmaker": bootstrap(rm, "poisson-v4", "bookmaker") if marche == "3+" else None,
         }
     return out
+
+
+def _logit(p: float) -> float:
+    p = min(max(p, 1e-6), 1 - 1e-6)
+    return math.log(p / (1 - p))
+
+
+def fit_platt(pairs: list[tuple[float, int]], iterations: int = 50) -> tuple[float, float]:
+    """a, b maximisant la vraisemblance de σ(a + b · logit(p)) ; pairs = (p, issue 0/1)."""
+    a, b = 0.0, 1.0
+    xs = [(_logit(p), y) for p, y in pairs]
+    for _ in range(iterations):
+        ga = gb = haa = hab = hbb = 0.0
+        for x, y in xs:
+            q = 1 / (1 + math.exp(-(a + b * x)))
+            w = q * (1 - q)
+            ga += y - q
+            gb += (y - q) * x
+            haa += w
+            hab += w * x
+            hbb += w * x * x
+        det = haa * hbb - hab * hab
+        if det <= 0:
+            break
+        a += (hbb * ga - hab * gb) / det
+        b += (haa * gb - hab * ga) / det
+    return a, b
+
+
+def platt(p: float, a: float, b: float) -> dict[str, float]:
+    q = 1 / (1 + math.exp(-(a + b * _logit(p))))
+    return {"oui": q, "non": 1 - q}
+
+
+def recalibrer(train: list[dict], test: list[dict]) -> dict:
+    """EXP-007 : Platt appris sur ``train`` par marché, appliqué à ``test`` ; critères M1-M3."""
+    params = {}
+    rows = []
+    for marche in MARCHES_BUTS:
+        pairs = [(r["poisson-v4"]["oui"], r["issue"] == "oui") for r in train if r["marche"] == marche]
+        params[marche] = fit_platt(pairs)
+    for r in test:
+        a, b = params[r["marche"]]
+        rows.append({**r, "poisson-v4-platt": platt(r["poisson-v4"]["oui"], a, b)})
+    out = {}
+    for marche in MARCHES_BUTS:
+        rm = [r for r in rows if r["marche"] == marche]
+        par_ligue = {div: bootstrap([r for r in rm if r["match_id"].startswith(div + ":")],
+                                    "poisson-v4-platt", "frequences")
+                     for div in sorted({r["match_id"].split(":")[0] for r in rm})}
+        scores = {k: score_binaire([(r[k], r["issue"]) for r in rm if r[k]])
+                  for k in ("poisson-v4-platt", *MODELES)}
+        m1 = bootstrap(rm, "poisson-v4-platt", "frequences")
+        calib = [c for c in scores["poisson-v4-platt"]["calibration"] if c["n"] >= 500]
+        out[marche] = {
+            "platt": {"a": round(params[marche][0], 6), "b": round(params[marche][1], 6)},
+            "scores": scores,
+            "M1_platt_moins_frequences": m1,
+            "M1": m1["ic95"] is not None and m1["ic95"][1] < 0,
+            "M2_par_ligue": par_ligue,
+            "M2": sum(v["ecart"] is not None and v["ecart"] < 0 for v in par_ligue.values()) >= 4,
+            "M3_ecart_max": max((abs(c["ecart"]) for c in calib), default=None),
+            "M3": bool(calib) and all(abs(c["ecart"]) <= 0.03 for c in calib),
+            "info_platt_moins_brut": bootstrap(rm, "poisson-v4-platt", "poisson-v4"),
+            "info_platt_moins_bookmaker": bootstrap(rm, "poisson-v4-platt", "bookmaker") if marche == "3+" else None,
+        }
+    return out
+
+
+def probs_buts_calibrees(lam_home: float, lam_away: float) -> dict[str, dict[str, float]]:
+    """Marchés 2+ et 3+ enregistrés par ``prevoir`` (version ``poisson-v4-platt``)."""
+    brut = probs_buts(lam_home, lam_away)
+    return {m: platt(brut[m]["oui"], *PLATT_V4[m]) for m in MARCHES_BUTS}

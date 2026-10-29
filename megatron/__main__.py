@@ -65,6 +65,11 @@ def main(argv: list[str] | None = None) -> int:
     mbb = sub.add_parser("marches-bilan", help="critères M1-M3 d'EXP-006 sur plusieurs predictions_buts.csv")
     mbb.add_argument("fichiers", nargs="+")
     mbb.add_argument("--saisons", required=True)
+    mr = sub.add_parser("marches-recalibrer", help="EXP-007 : recalibration de Platt apprise puis testée")
+    mr.add_argument("--apprentissage", nargs="+", required=True)
+    mr.add_argument("--test", nargs="+", required=True)
+    mr.add_argument("--saisons-apprentissage", required=True)
+    mr.add_argument("--sortie", help="dossier où écrire recalibration.json")
     args = parser.parse_args(argv)
 
     if args.cmd == "reprise":
@@ -124,6 +129,15 @@ def main(argv: list[str] | None = None) -> int:
         keep = set(args.saisons.split(","))
         rows = [r for f in args.fichiers for r in marches.read_predictions(Path(f)) if r["saison"] in keep]
         print(json.dumps(marches.bilan(rows), indent=2, ensure_ascii=False))
+    elif args.cmd == "marches-recalibrer":
+        keep = set(args.saisons_apprentissage.split(","))
+        train = [r for f in args.apprentissage for r in marches.read_predictions(Path(f)) if r["saison"] in keep]
+        test = [r for f in args.test for r in marches.read_predictions(Path(f))]
+        out = marches.recalibrer(train, test)
+        text = json.dumps(out, indent=2, ensure_ascii=False)
+        if args.sortie:
+            (Path(args.sortie) / "recalibration.json").write_text(text + "\n", encoding="utf-8")
+        print(text)
     elif args.cmd == "bootstrap":
         keep = set(args.saisons.split(","))
         rows = [r for f in args.fichiers for r in backtest.read_predictions(Path(f)) if r["saison"] in keep]
