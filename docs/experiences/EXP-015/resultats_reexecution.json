@@ -1,0 +1,138 @@
+{
+  "experience": "EXP-014-pilot-poisson-team-strength",
+  "source_blob_sha": "0bdc03ab503c4f8020e50e66513c74b84d51ad68",
+  "source": "data/matches_top5_2020-2026.csv",
+  "intervalles": {
+    "train": 7451,
+    "validation": 1751,
+    "test": 1752
+  },
+  "seuils": {
+    "train_avant": "2024-07-01",
+    "validation_avant": "2025-07-01",
+    "test_avant": "2026-07-01"
+  },
+  "parametres": {
+    "epochs": 32,
+    "reg_candidates": [
+      0.002,
+      0.02,
+      0.1
+    ],
+    "selected_reg": 0.002,
+    "seed": 17
+  },
+  "validation": [
+    {
+      "ridge": 0.002,
+      "n": 1751,
+      "logloss": [
+        0.6610507034184213,
+        0.5482012455743607,
+        0.3499713860043972
+      ],
+      "baseline": [
+        0.7181182138107803,
+        0.5937278545327964,
+        0.3877334401517421
+      ]
+    },
+    {
+      "ridge": 0.02,
+      "n": 1751,
+      "logloss": [
+        0.6627657490040618,
+        0.5491430093381594,
+        0.3530515789225338
+      ],
+      "baseline": [
+        0.7191914222213689,
+        0.59449072734094,
+        0.3908769812143342
+      ]
+    },
+    {
+      "ridge": 0.1,
+      "n": 1751,
+      "logloss": [
+        0.6643205736892023,
+        0.5485782581264335,
+        0.3529275678144207
+      ],
+      "baseline": [
+        0.719486451479793,
+        0.593677908402747,
+        0.3905808723269679
+      ]
+    }
+  ],
+  "holdout": {
+    "n": 1752,
+    "logloss": [
+      0.6573863451896517,
+      0.5451805275522068,
+      0.34423101978276316
+    ],
+    "baseline_logloss": [
+      0.7147385184345989,
+      0.5871810233607062,
+      0.380667821923377
+    ],
+    "brier": [
+      0.23272873783735773,
+      0.1809590401849198,
+      0.09988510260130695
+    ],
+    "baseline_brier": [
+      0.26019775531117073,
+      0.19664142394803466,
+      0.10776487888388338
+    ],
+    "p_mean": [
+      0.5154187960122096,
+      0.2865142962207114,
+      0.13262582099857823
+    ],
+    "observed": [
+      0.4994292237442922,
+      0.2602739726027397,
+      0.1204337899543379
+    ],
+    "per_league": {
+      "SP1": {
+        "n": 380,
+        "ll": 0.48827265895743427,
+        "baseline": 0.5340923356678192
+      },
+      "F1": {
+        "n": 306,
+        "ll": 0.5157237006199261,
+        "baseline": 0.558810220570286
+      },
+      "E0": {
+        "n": 380,
+        "ll": 0.5181318098504855,
+        "baseline": 0.5410733152511804
+      },
+      "D1": {
+        "n": 306,
+        "ll": 0.5457403497282174,
+        "baseline": 0.6250816674475459
+      },
+      "I1": {
+        "n": 380,
+        "ll": 0.5160217675811501,
+        "baseline": 0.5573609350764107
+      }
+    }
+  },
+  "teams": 136,
+  "decision": "EXPERIMENTAL_NON_DEPLOYABLE",
+  "limites": [
+    "Test retrospecif 2025-26 deja utilise dans le projet",
+    "Aucune preuve prospective de performance",
+    "Scores championnat uniquement, pas de coupes ni absences",
+    "Comparaison contre une baseline simple, pas contre le MEGATRON existant",
+    "Entrainement isole, aucune ecriture du depot ni de modele de production"
+  ]
+}
