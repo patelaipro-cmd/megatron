@@ -1,0 +1,7 @@
+{
+ "sonde_le": "2026-10-29T18:43:44+00:00",
+ "url": "https://xpertstats.com/robots.txt",
+ "code": 200,
+ "type": "text/plain; charset=UTF-8",
+ "extrait": "User-agent: *\nAllow: /"
+}
