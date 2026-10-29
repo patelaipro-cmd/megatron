@@ -140,6 +140,46 @@ class TestConfiguration(unittest.TestCase):
 
 
 
+class TestEspn(unittest.TestCase):
+    def faux(self, appels, publie=True):
+        debut = datetime.fromtimestamp(MAINTENANT + 3600, tz=timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        loin = datetime.fromtimestamp(MAINTENANT + 5 * 3600, tz=timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        joueurs = [{"starter": True, "athlete": {"id": "8", "displayName": "Titulaire Fictif"}, "position": {"abbreviation": "F"}},
+                   {"starter": False, "athlete": {"id": "9", "displayName": "Remplacant Fictif"}, "position": {"abbreviation": "D"}}]
+
+        def lire(url):
+            appels.append(url)
+            if "/scoreboard" in url:
+                return json.dumps({"events": [{"id": "1", "date": debut}, {"id": "2", "date": loin}]}).encode()
+            if "/summary?event=1" in url:
+                bloc = {"team": {"displayName": "Club Fictif"}, "formation": "4-3-3"}
+                return json.dumps({"rosters": [{**bloc, "roster": joueurs} if publie else bloc]}).encode()
+            raise AssertionError(url)
+        return lire
+
+    def test_compo_une_fois_par_match(self):
+        conf = {"espn": [{"slug": "fra.1", "division": "F1"}]}
+        with tempfile.TemporaryDirectory() as d:
+            dossier, appels = Path(d), []
+            m = ce.collecter(dossier, ["espn"], MAINTENANT, self.faux(appels, publie=False), conf, pause=0)
+            self.assertEqual((m["sources"]["espn"]["statut"], m["sources"]["espn"]["lignes"]), ("ok", 0))  # pas encore publiée
+            m = ce.collecter(dossier, ["espn"], MAINTENANT + 600, self.faux(appels), conf, pause=0)
+            r = m["sources"]["espn"]
+            self.assertEqual((r["matchs_proches"], r["lignes"]), (1, 2))
+            lignes = list(csv.DictReader((dossier / r["fichier"]).read_text(encoding="utf-8").splitlines()))
+            self.assertEqual([(l["joueur"], l["statut"]) for l in lignes], [("Titulaire Fictif", "titulaire"), ("Remplacant Fictif", "remplacant")])
+            appels.clear()
+            ce.collecter(dossier, ["espn"], MAINTENANT + 1200, self.faux(appels), conf, pause=0)
+            self.assertFalse(any("summary" in u for u in appels))  # déjà faite
+
+    def test_tous_calendriers_en_echec(self):
+        def lire(url):
+            raise RuntimeError("HTTP 404")
+        with tempfile.TemporaryDirectory() as d:
+            m = ce.collecter(Path(d), ["espn"], MAINTENANT, lire, {"espn": [{"slug": "xxx.9", "division": None}]}, pause=0)
+            self.assertEqual(m["sources"]["espn"]["statut"], "erreur")
+
+
 _spec2 = importlib.util.spec_from_file_location("lire_externe", ROOT / "scripts" / "lire_externe.py")
 le = importlib.util.module_from_spec(_spec2)
 _spec2.loader.exec_module(le)

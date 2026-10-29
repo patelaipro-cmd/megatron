@@ -43,6 +43,10 @@ class TestExterne(unittest.TestCase):
             blessure('2099-01-01T12:00:00+00:00', 'Alpha Externe', 'Autre Match', ko='2099-01-05T15:00:00+00:00')])
         ecrire(self.d, 'apifootball/blessures', '1800.csv', [blessure('2099-01-01T18:00:00+00:00', 'Alpha Externe', 'Apres Coup Fictif')])
         ecrire(self.d, 'apifootball/compos', '1400.csv', [compo('2099-01-01T14:00:00+00:00', 'Beta FC', 'Titulaire Fictif')])
+        ecrire(self.d, 'espn/compos', '1420.csv', [{'collecte_le': '2099-01-01T14:20:00+00:00', 'event_id': '77', 'ligue': 'fra.1',
+                                                   'division': 'F1', 'coup_envoi': '2099-01-01T15:00:00+00:00', 'equipe': 'Beta',
+                                                   'formation': '4-4-2', 'joueur': 'Titulaire Espn', 'joueur_id': '3',
+                                                   'poste': 'F', 'statut': 'titulaire'}])
         self.doc = contexte_favori.modele('FICTIF:externe', 'Alpha FC', 'Beta FC', 'H', KO)
 
     def tearDown(self):
@@ -64,7 +68,9 @@ class TestExterne(unittest.TestCase):
         self.assertEqual(angle['etat'], 'a_verifier')
         self.assertIn('Blesse Fictif', angle['constat'])
         self.assertIn('Titulaire Fictif', angle['constat'])
-        self.assertEqual({s['famille'] for s in angle['sources']}, {'api-football'})
+        self.assertIn('Titulaire Espn', angle['constat'])
+        self.assertEqual({s['famille'] for s in angle['sources']}, {'api-football', 'espn'})
+        self.assertIn('https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/summary?event=77', [s['url'] for s in angle['sources']])
         self.assertEqual(self.doc['angles'], contexte_favori.modele('FICTIF:externe', 'Alpha FC', 'Beta FC', 'H', KO)['angles'])  # copie
         v = contexte_favori.verifier(out, at=AT)
         self.assertTrue(v['ok'], v['erreurs'])
