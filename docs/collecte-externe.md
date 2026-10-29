@@ -15,6 +15,7 @@ fusionner dans `main`.
 | FPL (API officielle du jeu) | Statut blessé/suspendu/incertain, chance de jouer, news | Premier League | Chaque heure |
 | ClubElo | Elo du jour | Tous les clubs européens | Chaque jour |
 | Understat (via soccerdata) | Statistiques d'équipe par match, xG | 5 ligues (seules couvertes par Understat) | Chaque jour |
+| API-Football (clé, secret `API_FOOTBALL_KEY`) | Blessures/suspensions (toutes ligues) ; compos officielles des ligues `apifootball` de `data/ligues_collecte.json` | Toutes ligues pour les blessures ; 19 ligues + coupes UEFA pour les compos | Statut + calendrier J/J+1 au premier passage du jour, blessures aux heures 0/6/12/18 UTC, compo de chaque match suivi à moins de 75 min ; plafond 90 requêtes/jour |
 
 ## Format de la branche `donnees-externes`
 
@@ -26,6 +27,9 @@ externe/sofascore/tournois_vus.csv         tous les tournois vus (vérification 
 externe/fpl/AAAA-MM-JJ/HHMM.csv
 externe/clubelo/AAAA-MM-JJ/HHMM.csv
 externe/understat/matchs_equipes_<saison>.csv   réécrit chaque jour (l'historique git garde les versions)
+externe/apifootball/statut.json, calendrier.json   plan, quota, matchs suivis, ligues vues
+externe/apifootball/blessures/AAAA-MM-JJ/HHMM.csv
+externe/apifootball/compos/AAAA-MM-JJ/HHMM.csv
 ```
 
 Chaque ligne porte `collecte_le` (UTC). Règle anti-fuite : une information n'est
@@ -49,4 +53,5 @@ python scripts/lire_externe.py --dossier ../megatron-externe/externe joueurs --e
 - Sofascore et Understat peuvent bloquer les IP de GitHub (Cloudflare) : une source en échec n'arrête pas les autres ; l'erreur est commitée dans le manifeste.
 - Codes `reason` de Sofascore non documentés : gardés bruts (`code N`) quand il n'y a pas de description.
 - Une compo « probable » n'est pas collectée : seules les compos confirmées (`confirmed`) et les absents sont écrits.
+- API-Football : sans le secret, la source est « ignore ». Le plan gratuit peut refuser la saison en cours (réponse `errors`) : le premier run le dira dans `statut.json`/manifeste. La clé passe en en-tête, jamais dans l'URL ni les journaux.
 - Rien de tout cela ne modifie une probabilité : faits déclaratifs pour `contexte_favori`, aucune utilisation dans les modèles sans expérience validée.

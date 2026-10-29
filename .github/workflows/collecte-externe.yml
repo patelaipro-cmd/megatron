@@ -4,13 +4,13 @@ name: collecte-externe
 # Voir docs/collecte-externe.md.
 on:
   schedule:
-    - cron: "20 * * * *"   # chaque heure : Sofascore (compos < 3 h ; 72 h aux heures multiples de 6) + FPL
+    - cron: "20 * * * *"   # chaque heure : FPL, API-Football (compos < 75 min)
     - cron: "40 5 * * *"   # chaque jour : toutes les sources (+ ClubElo, Understat)
   workflow_dispatch:
     inputs:
       sources:
         description: "Sources séparées par des virgules"
-        default: "sofascore,fpl,clubelo,understat"
+        default: "sofascore,fpl,clubelo,understat,apifootball"
 permissions:
   contents: write
 concurrency:
@@ -29,8 +29,8 @@ jobs:
         id: choix
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then s="${{ inputs.sources }}"
-          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat"
-          else s="sofascore,fpl"; fi
+          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat,apifootball"
+          else s="fpl,apifootball"; fi  # Sofascore 403 depuis GitHub (29/10) : tenté une fois par jour seulement
           echo "sources=$s" >> "$GITHUB_OUTPUT"
       - name: Dépendances
         run: |
@@ -47,14 +47,17 @@ jobs:
             git worktree add --orphan -b donnees-externes donnees
           fi
       - name: Collecter
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: python scripts/collecte_externe.py --sortie donnees/externe --sources "${{ steps.choix.outputs.sources }}"
       - name: Publier
         if: always()
         run: |
           cd donnees
           git add -A
-          # Le manifeste change à chaque exécution : ne commiter que de nouvelles données ou une erreur.
-          if ! git diff --cached --name-only | grep -qv -e 'manifeste.json$' -e 'etat.json$' \
+          # Le manifeste change à chaque exécution : ne commiter que de nouvelles données, l'état
+          # (compteur de requêtes API-Football) ou une erreur.
+          if ! git diff --cached --name-only | grep -qv -e 'manifeste.json$' \
              && ! grep -q '"erreur"' externe/manifeste.json 2>/dev/null; then
             echo "rien de nouveau"; exit 0
           fi

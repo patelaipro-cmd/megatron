@@ -58,7 +58,7 @@ def main(argv=None) -> int:
     j = sub.add_parser("joueurs")
     j.add_argument("--equipe", required=True)
     j.add_argument("--avant", required=True, type=instant)
-    j.add_argument("--source", default="sofascore", choices=("sofascore", "fpl"))
+    j.add_argument("--source", default="sofascore", choices=("sofascore", "fpl", "apifootball/blessures", "apifootball/compos"))
     a = p.parse_args(argv)
     if a.commande == "statut":
         print(json.dumps(statut(a.dossier), indent=1, ensure_ascii=False))
