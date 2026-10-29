@@ -2,6 +2,8 @@ name: resultats
 # Collecte brute des résultats (ESPN, API-Football, football-data) dans externe/resultats/ de la branche
 # donnees-externes. Le recoupement et l'admission dans data/ se font hors réseau (scripts/verifier_resultats.py).
 on:
+  schedule:
+    - cron: "10 6 * * *"  # chaque matin : résultats de la veille pour data/ et le registre prospectif
   workflow_dispatch:
     inputs:
       depuis:

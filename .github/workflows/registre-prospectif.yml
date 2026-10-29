@@ -1,0 +1,50 @@
+name: registre-prospectif
+# Enregistre les évaluations SYNDICATE avant match (initial, T-30, T-5) et les résultats confirmés
+# sur la branche registre-prospectif. Ajout seulement, jamais de réécriture ; aucun GO déclenché.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: registre-prospectif
+  cancel-in-progress: false
+jobs:
+  registre:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Préparer les branches
+        run: |
+          git config user.name "megatron-registre"
+          git config user.email "megatron-registre@users.noreply.github.com"
+          git fetch --depth 1 origin donnees-externes
+          git worktree add --detach donnees FETCH_HEAD
+          if git fetch --depth 1 origin registre-prospectif; then
+            git worktree add -B registre-prospectif reg FETCH_HEAD
+          else
+            git worktree add --detach reg && cd reg && git checkout --orphan registre-prospectif && git rm -rfq . && cd ..
+          fi
+      - name: Résultats confirmés (deux familles)
+        run: |
+          brut=$(ls -d donnees/externe/resultats/*/ 2>/dev/null | sort | tail -1)
+          if [ -n "$brut" ]; then
+            python scripts/verifier_resultats.py --brut "$brut" --depuis 2026-09-21 \
+              --admis "$RUNNER_TEMP/admis.csv" --rapport "$RUNNER_TEMP/rapport" > /dev/null
+          fi
+      - name: Enregistrer
+        run: |
+          python scripts/registre_prospectif.py --registre reg/registre --externe donnees/externe \
+            --resultats-admis "$RUNNER_TEMP/admis.csv" | tee "$RUNNER_TEMP/sortie.json"
+      - name: Publier
+        run: |
+          cd reg
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Registre $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin registre-prospectif
