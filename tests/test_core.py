@@ -110,11 +110,10 @@ class AgentTests(unittest.TestCase):
 
     def test_fusion_degraded_mode_documents_missing_agents(self):
         res = fuse({"match_id": "m", "xg_home": 1.5, "xg_away": 1.0},
-                   [StatsAgent(), LLMAgent("deepseek", "MEGATRON_TEST_ABSENT_KEY"),
-                    LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")])
+                   [StatsAgent(), LLMAgent("claude", "MEGATRON_TEST_ABSENT_KEY")])
         self.assertEqual(res["mode"], "degrade")
-        self.assertEqual(sorted(res["agents_manquants"]), ["deepseek", "gemini"])
-        self.assertIn("gemini", res["indisponibles"])
+        self.assertEqual(res["agents_manquants"], ["claude"])
+        self.assertIn("claude", res["indisponibles"])
         self.assertEqual(res["probs"], poisson_1x2(1.5, 1.0))
 
     def test_fusion_flags_disagreement_and_shared_sources(self):
@@ -314,8 +313,7 @@ class SystemeTests(unittest.TestCase):
     def test_fictional_match_end_to_end_degraded(self):
         from megatron import systeme
 
-        rep = systeme.run([LLMAgent("deepseek", "MEGATRON_TEST_ABSENT_KEY"),
-                           LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")])
+        rep = systeme.run([LLMAgent("claude", "MEGATRON_TEST_ABSENT_KEY")])
         self.assertTrue(rep["succes"], rep["verifications"])
         self.assertEqual(rep["fusion_mode"], "degrade")
         self.assertEqual(rep["version"], 'fusion-v1:[["stats","poisson-v5-cal"]]')
@@ -332,15 +330,14 @@ class SystemeTests(unittest.TestCase):
             return SimpleNamespace(choices=[SimpleNamespace(message=msg)],
                                    usage={"prompt_tokens": 10, "completion_tokens": 5})
 
-        env = {"DEEPSEEK_API_KEY": "faux", "GEMINI_API_KEY": "faux"}
+        env = {"ANTHROPIC_API_KEY": "faux"}
         with tempfile.TemporaryDirectory() as cache, mock.patch.dict(os.environ, env), \
                 mock.patch("megatron.llm.CACHE_DIR", Path(cache)):
-            rep = systeme.run([LLMAgent("deepseek", completion_fn=fake), LLMAgent("gemini", completion_fn=fake)])
+            rep = systeme.run([LLMAgent("claude", completion_fn=fake)])
         self.assertTrue(rep["succes"], rep["verifications"])
         self.assertEqual(rep["fusion_mode"], "complet")
-        self.assertTrue(rep["version"].startswith('fusion-v1:[["deepseek",'), rep["version"])
+        self.assertTrue(rep["version"].startswith('fusion-v1:[["claude",'), rep["version"])
         self.assertIn('["stats","poisson-v5-cal"]', rep["version"])
-        self.assertEqual(rep["avis_non_independants"], [["deepseek", "gemini"]])
 
 
 class ProxyTirsTests(unittest.TestCase):
@@ -408,7 +405,7 @@ class SuiviTests(TmpStore):
         self.kickoff = datetime(last.year, last.month, last.day, 15, tzinfo=timezone.utc) + timedelta(days=7)
         self.task = {"match_id": "FICTIF:1", "division": "FICTIF", "home": "Alpha FC", "away": "Zeta Rovers",
                      "date": self.kickoff.date().isoformat()}
-        self.agents = [StatsAgent(self.csv), LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")]
+        self.agents = [StatsAgent(self.csv), LLMAgent("claude", "MEGATRON_TEST_ABSENT_KEY")]
 
     def test_full_loop(self):
         from megatron import suivi
@@ -416,7 +413,7 @@ class SuiviTests(TmpStore):
         before = self.kickoff - timedelta(hours=3)
         out = suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
         self.assertEqual(out["enregistre"], [suivi.fusion_version({"reponses": [AgentResponse(agent="stats", status="ok", version="poisson-v5-cal")]}), "agent:stats:poisson-v5-cal"])
-        self.assertIn("gemini", out["indisponibles"])
+        self.assertIn("claude", out["indisponibles"])
         with self.assertRaises(ValueError):  # pas de réécriture
             suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
         with self.assertRaises(TemporalLeakError):
@@ -472,3 +469,10 @@ class DonneesCompletesTests(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             data.load([data.DEFAULT_CSV, data.DEFAULT_CSV])
+
+
+class FournisseurUniqueTests(unittest.TestCase):
+    def test_claude_seul_fournisseur_par_defaut(self):
+        from megatron.agents import EXPECTED_FUSION, default_agents
+        self.assertEqual([a.name for a in default_agents()], ["stats", "claude"])
+        self.assertEqual(EXPECTED_FUSION, ("stats", "claude"))

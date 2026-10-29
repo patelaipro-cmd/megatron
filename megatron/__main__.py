@@ -23,7 +23,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("inventaire", help="régénère docs/registre-depots.md")
     lp = sub.add_parser("llm", help="connexion LLM : statut des fournisseurs ou appel de test")
     lp.add_argument("action", choices=["statut", "test"])
-    lp.add_argument("--fournisseur", default="gemini", choices=sorted(llm.PROVIDERS))
+    lp.add_argument("--fournisseur", default="claude", choices=sorted(llm.PROVIDERS))
     f = sub.add_parser("fusion", help="Méthode de Fusion sur un match (JSON)")
     f.add_argument("tache", help='ex. {"match_id": "x", "xg_home": 1.6, "xg_away": 0.9}')
     pv = sub.add_parser("prevoir", help="fusion puis prévision immuable dans le registre, dans les 5 h avant le coup d'envoi")

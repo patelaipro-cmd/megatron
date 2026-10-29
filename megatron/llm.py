@@ -47,7 +47,7 @@ PROVIDERS = {p.name: p for p in (
 
 # Repli : si le fournisseur échoue (clé absente, quota, surcharge), on essaie le suivant.
 # Remplaçable par MEGATRON_REPLI_<NOM>="claude,deepseek" ; vide = pas de repli.
-REPLI = {"gemini": ("claude",)}
+REPLI = {"gemini": ("claude",)}  # Gemini abandonné (28/10) : Claude est le seul fournisseur consulté par défaut
 
 
 def chain(provider: str) -> list[str]:
