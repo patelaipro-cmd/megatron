@@ -62,5 +62,6 @@ jobs:
           if [ -z "$(gh pr list --head "$BRANCHE" --state open --json number --jq '.[].number')" ] && \
              [ -n "$(git log origin/main..HEAD --oneline)" ]; then
             gh pr create --head "$BRANCHE" --base main --title "Registre prospectif : prévisions avant match (en continu)" \
-              --body "Ajouts automatiques du workflow registre-prospectif dans memoire/ (jeton claude). Chaque commit est poussé avant le coup d'envoi des matchs qu'il couvre : l'heure du commit fait foi. Fusion manuelle uniquement, aucun GO."
+              --body "Ajouts automatiques du workflow registre-prospectif dans memoire/ (jeton claude). Chaque commit est poussé avant le coup d'envoi des matchs qu'il couvre : l'heure du commit fait foi. Fusion manuelle uniquement, aucun GO." \
+              || echo "::warning::PR non créée (réglage du dépôt : Actions ne peut pas ouvrir de PR). Commits poussés sur $BRANCHE ; ouvrir la PR à la main."
           fi
