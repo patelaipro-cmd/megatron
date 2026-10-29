@@ -1,21 +1,13 @@
 {
- "execution_le": "2026-10-29T15:31:28+00:00",
+ "execution_le": "2026-10-29T17:13:29+00:00",
  "sources": {
   "sofascore": {
    "statut": "erreur",
    "erreur": "RuntimeError: HTTP 403 sur https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-10-29"
   },
   "fpl": {
-   "lignes": 199,
-   "fichier": "fpl/2026-10-29/1531.csv",
-   "statut": "ok"
-  },
-  "clubelo": {
-   "statut": "erreur",
-   "erreur": "HTTPError: HTTP Error 502: Bad Gateway"
-  },
-  "understat": {
-   "lignes": 402,
+   "lignes": 200,
+   "fichier": "fpl/2026-10-29/1713.csv",
    "statut": "ok"
   }
  }
