@@ -24,6 +24,7 @@ def evenement(eid, debut, etat="pre", ml=("-120", "+295", "+310")):
 
 def lecteur(evs, fixtures=b"Div,Date,Time,HomeTeam,AwayTeam,B365H,B365D,B365A,PSH,PSD,PSA,B365>2.5,B365<2.5,AHh,B365AHH\n"
                              b"E0,31/10/2026,12:30,Chelsea,Man United,1.80,3.90,4.20,1.83,3.95,4.30,1.6,2.3,-0.5,1.9\n"
+                             b"E0,27/10/2026,20:00,Arsenal,Spurs,1.5,4.2,6.0,1.5,4.3,6.2,1.4,2.9,-1,1.9\n"
                              b"N1,31/10/2026,13:00,Ajax,PSV,2.0,3.5,3.4,2.1,3.5,3.3,1.5,2.4,0,1.9\n"):
     def lire(url):
         if "football-data" in url:
@@ -48,19 +49,22 @@ class CotesTests(unittest.TestCase):
         self.assertEqual(cc.horizon(-3), "hors_fenetre")  # commencé : jamais une cote d'avant-match
 
     def test_collecte_garde_la_premiere_capture_par_horizon_et_ignore_les_matchs_commences(self):
-        evs = [evenement("1", "2026-10-31T12:00Z"), evenement("2", "2026-10-31T10:30Z", etat="in")]
+        evs = [evenement("1", "2026-10-31T12:00Z"), evenement("2", "2026-10-31T10:30Z", etat="in"),
+               evenement("3", "2026-10-31T19:00Z")]
         with tempfile.TemporaryDirectory() as d:
             j = cc.collecter(Path(d), MAINTENANT, lire=lecteur(evs))
             self.assertEqual(j["espn_par_horizon"]["T-60"], 1)
+            self.assertEqual(j["espn_par_horizon"]["hors_fenetre"], 1)  # match de 19:00 : instantané horaire
             self.assertEqual(j["erreurs"], [])
             j2 = cc.collecter(Path(d), MAINTENANT.replace(minute=10), lire=lecteur(evs))  # 50 min : déjà saisi
             self.assertEqual(j2["espn_par_horizon"]["T-60"], 0)
+            self.assertEqual(j2["espn_par_horizon"]["hors_fenetre"], 0)  # moins de 55 min après le précédent
             self.assertEqual(j2["football_data"], "inchange")
             lignes = (Path(d) / "cotes" / "espn" / "2026-10-31" / "1100.csv").read_text().splitlines()
             self.assertIn("1.8333,3.95,4.1", lignes[1])
             self.assertTrue(all(",2," not in l.split("DraftKings")[1][:40] for l in lignes[1:]))  # événement 2 absent
             fd = (Path(d) / "cotes" / "football-data" / "2026-10-31" / "1100.csv").read_text().splitlines()
-            self.assertEqual(len(fd), 3)  # E0 seulement, B365 et PS ; ni plus/moins ni handicap
+            self.assertEqual(len(fd), 3)  # E0 à venir seulement (pas le 27/10), B365 et PS ; ni plus/moins ni handicap
             self.assertEqual(len((Path(d) / "cotes" / "journal.jsonl").read_text().splitlines()), 2)
 
     def test_erreur_source_journalisee_sans_arret(self):

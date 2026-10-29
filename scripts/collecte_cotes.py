@@ -109,6 +109,8 @@ def lignes_football_data(corps: bytes, maintenant: datetime) -> list[dict]:
             jour = datetime.strptime(r["Date"], "%d/%m/%Y").date()
         except (KeyError, ValueError):
             continue
+        if jour < maintenant.date():  # fichier pas encore renouvelé : match déjà joué, pas une cote d'avant-match
+            continue
         for b in books:
             try:
                 c = [float(r[b + x]) for x in "HDA"]
@@ -144,13 +146,17 @@ def collecter(dossier: Path, maintenant: datetime, lire=lire_url) -> dict:
                 espn += lignes_espn(div, lire(url), url, maintenant)
             except Exception as exc:  # une ligue en échec n'arrête pas les autres
                 journal["erreurs"].append(f"espn {div} {jour:%Y-%m-%d} : {type(exc).__name__}: {exc}"[:300])
+    dernier = etat.get("dernier_horaire")  # le planificateur GitHub décale les exécutions : pas d'heure fixe
+    horaire_du = not dernier or maintenant - datetime.fromisoformat(dernier) >= timedelta(minutes=55)
+    if horaire_du and espn:
+        etat["dernier_horaire"] = maintenant.isoformat()
     gardees = []
     for l in espn:
         cle = f"{l['evenement_id']}|{l['bookmaker']}|{l['horizon']}"
         if l["horizon"] in HORIZONS and cle not in deja:
             deja.add(cle)
             gardees.append(l)
-        elif l["horizon"] in ("hors_fenetre", "ouverture") and maintenant.minute < 5:
+        elif l["horizon"] in ("hors_fenetre", "ouverture") and horaire_du:
             gardees.append(l)  # instantané horaire hors fenêtre : suivi du mouvement des cotes
     if gardees:
         ecrire(base / "espn" / maintenant.date().isoformat() / f"{maintenant:%H%M}.csv", gardees)
