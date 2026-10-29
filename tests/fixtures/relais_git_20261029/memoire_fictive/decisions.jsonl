@@ -1,0 +1,1 @@
+{"domain": "decisions", "id": "e1e1582f008f", "key": "isolation", "meta": {}, "observed_at": null, "recorded_at": "2026-10-29T09:07:51.661820+00:00", "source": "Codex:preparation-relais-git", "status": "verifie", "supersedes": null, "value": "Relais Git fictif uniquement ; ne jamais fusionner ces journaux dans memoire/"}

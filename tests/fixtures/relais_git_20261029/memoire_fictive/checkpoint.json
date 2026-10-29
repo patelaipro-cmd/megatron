@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "commit": "5830dbd",
+  "date": "2026-10-29T09:23:04+00:00",
+  "resume": "TEST FICTIF : étape Claude terminée, relais vers Codex",
+  "prochaines_actions": [
+    "Vérifier le paquet retourné dans Codex"
+  ],
+  "blocages": [],
+  "decisions_actives": [
+    {
+      "cle": "isolation",
+      "valeur": "Relais Git fictif uniquement ; ne jamais fusionner ces journaux dans memoire/",
+      "id": "e1e1582f008f"
+    }
+  ],
+  "contradictions": {},
+  "effectifs": {
+    "travail": 2,
+    "decisions": 1,
+    "football": 0,
+    "performances": 12,
+    "technique": 0
+  },
+  "id": "ckpt-5cb771dd8d"
+}

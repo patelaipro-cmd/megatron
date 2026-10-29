@@ -71,11 +71,11 @@ fictive, `tests/fixtures/relais_git_20261029` (consignes dans son `LIRE_MOI.md`)
 |---|---|---|
 | départ Codex | `codex/relais-git-20261029` (5830dbd) | publié |
 | Claude | `claude/relais-git-20261029` (8695364) | publié, synchro verifier code 0 |
-| retour Codex | même branche, `relais.py --etape retour` | à exécuter par Codex |
-| preuves | PR vers `main`, puis contrôle de `main` | après le retour |
+| retour Codex | même branche, `relais.py --etape retour` | code 0 (déclaré, `resultat_retour_codex.md`) |
+| preuves | PR vers `main`, puis contrôle de `main` | PR des preuves |
 
-La synchronisation n'est validée qu'après le retour Codex et la fusion des
-preuves. Une simulation du retour côté Claude (code 0) ne la remplace pas.
+La synchronisation n'est validée qu'après la fusion des preuves dans `main` et
+un `synchro verifier` sur `main`.
 
 `scripts/synchro_git.py` reste un outil local : `divergence` montre, dans un bac
 à sable, que deux branches qui prévoient le même match produisent un conflit

@@ -1,0 +1,186 @@
+{
+  "commit": "308f65361b1880e88fb93c6dc2367d25b1c58313",
+  "coup_envoi_fictif": "2099-01-01T12:00:00+00:00",
+  "taches": [
+    {
+      "match_id": "FICTIF:RELAIS-GIT:20261029:1",
+      "xg_home": 1.6,
+      "xg_away": 0.9,
+      "fictif": true
+    },
+    {
+      "match_id": "FICTIF:RELAIS-GIT:20261029:2",
+      "xg_home": 1,
+      "xg_away": 1.4,
+      "fictif": true
+    },
+    {
+      "match_id": "FICTIF:RELAIS-GIT:20261029:3",
+      "xg_home": 1.2,
+      "xg_away": 1.2,
+      "fictif": true
+    }
+  ],
+  "checkpoint_initial": "ckpt-d30b4df771",
+  "script_sha256": "eed0bdf1d8e83216e14a72aa062f6c18fbbceab5fa586ad3b3383d6725300be1",
+  "previsions": {
+    "e2291b76c980": {
+      "id": "e2291b76c980",
+      "domain": "performances",
+      "key": "pred:FICTIF:RELAIS-GIT:20261029:1:fusion-v1:[[\"stats\",\"stats-v0\"]]",
+      "value": {
+        "data_cutoff": null,
+        "kickoff": "2099-01-01T12:00:00+00:00",
+        "market": "1X2",
+        "match_id": "FICTIF:RELAIS-GIT:20261029:1",
+        "model_version": "fusion-v1:[[\"stats\",\"stats-v0\"]]",
+        "probs": {
+          "A": 0.21154222209317003,
+          "D": 0.2502984859727341,
+          "H": 0.5381592919340958
+        }
+      },
+      "source": "Codex:simulation-relais-git",
+      "status": "verifie",
+      "recorded_at": "2099-01-01T09:00:00+00:00",
+      "observed_at": null,
+      "supersedes": null,
+      "meta": {}
+    },
+    "8ddfb04f2442": {
+      "id": "8ddfb04f2442",
+      "domain": "performances",
+      "key": "pred:FICTIF:RELAIS-GIT:20261029:1:agent:stats:stats-v0",
+      "value": {
+        "data_cutoff": null,
+        "kickoff": "2099-01-01T12:00:00+00:00",
+        "market": "1X2",
+        "match_id": "FICTIF:RELAIS-GIT:20261029:1",
+        "model_version": "agent:stats:stats-v0",
+        "probs": {
+          "A": 0.21154222209317003,
+          "D": 0.2502984859727341,
+          "H": 0.5381592919340958
+        }
+      },
+      "source": "Codex:simulation-relais-git",
+      "status": "verifie",
+      "recorded_at": "2099-01-01T09:00:00+00:00",
+      "observed_at": null,
+      "supersedes": null,
+      "meta": {}
+    },
+    "113d57d14a5b": {
+      "id": "113d57d14a5b",
+      "domain": "performances",
+      "key": "pred:FICTIF:RELAIS-GIT:20261029:2:fusion-v1:[[\"stats\",\"stats-v0\"]]",
+      "value": {
+        "data_cutoff": null,
+        "kickoff": "2099-01-01T12:00:00+00:00",
+        "market": "1X2",
+        "match_id": "FICTIF:RELAIS-GIT:20261029:2",
+        "model_version": "fusion-v1:[[\"stats\",\"stats-v0\"]]",
+        "probs": {
+          "A": 0.46146676066169406,
+          "D": 0.2697299646257498,
+          "H": 0.26880327471255616
+        }
+      },
+      "source": "Codex:simulation-relais-git",
+      "status": "verifie",
+      "recorded_at": "2099-01-01T09:00:00+00:00",
+      "observed_at": null,
+      "supersedes": null,
+      "meta": {}
+    },
+    "f996d1f974d5": {
+      "id": "f996d1f974d5",
+      "domain": "performances",
+      "key": "pred:FICTIF:RELAIS-GIT:20261029:2:agent:stats:stats-v0",
+      "value": {
+        "data_cutoff": null,
+        "kickoff": "2099-01-01T12:00:00+00:00",
+        "market": "1X2",
+        "match_id": "FICTIF:RELAIS-GIT:20261029:2",
+        "model_version": "agent:stats:stats-v0",
+        "probs": {
+          "A": 0.46146676066169406,
+          "D": 0.2697299646257498,
+          "H": 0.26880327471255616
+        }
+      },
+      "source": "Codex:simulation-relais-git",
+      "status": "verifie",
+      "recorded_at": "2099-01-01T09:00:00+00:00",
+      "observed_at": null,
+      "supersedes": null,
+      "meta": {}
+    },
+    "9140bf41f3cc": {
+      "id": "9140bf41f3cc",
+      "domain": "performances",
+      "key": "pred:FICTIF:RELAIS-GIT:20261029:3:fusion-v1:[[\"stats\",\"stats-v0\"]]",
+      "value": {
+        "data_cutoff": null,
+        "kickoff": "2099-01-01T12:00:00+00:00",
+        "market": "1X2",
+        "match_id": "FICTIF:RELAIS-GIT:20261029:3",
+        "model_version": "fusion-v1:[[\"stats\",\"stats-v0\"]]",
+        "probs": {
+          "A": 0.36168882125062557,
+          "D": 0.27662235749874886,
+          "H": 0.36168882125062557
+        }
+      },
+      "source": "Codex:simulation-relais-git",
+      "status": "verifie",
+      "recorded_at": "2099-01-01T09:00:00+00:00",
+      "observed_at": null,
+      "supersedes": null,
+      "meta": {}
+    },
+    "df1cc65feca4": {
+      "id": "df1cc65feca4",
+      "domain": "performances",
+      "key": "pred:FICTIF:RELAIS-GIT:20261029:3:agent:stats:stats-v0",
+      "value": {
+        "data_cutoff": null,
+        "kickoff": "2099-01-01T12:00:00+00:00",
+        "market": "1X2",
+        "match_id": "FICTIF:RELAIS-GIT:20261029:3",
+        "model_version": "agent:stats:stats-v0",
+        "probs": {
+          "A": 0.36168882125062557,
+          "D": 0.27662235749874886,
+          "H": 0.36168882125062557
+        }
+      },
+      "source": "Codex:simulation-relais-git",
+      "status": "verifie",
+      "recorded_at": "2099-01-01T09:00:00+00:00",
+      "observed_at": null,
+      "supersedes": null,
+      "meta": {}
+    }
+  },
+  "prefixes_jsonl": {
+    "decisions.jsonl": {
+      "octets": 323,
+      "sha256": "6c5902d8fa5e50b5a478497cadb11bdcb58a95f2e4f6df5a6eb64aa3edb9c731"
+    },
+    "travail.jsonl": {
+      "octets": 333,
+      "sha256": "f9eb6967f437295a75f32054dc69e0dc5d39c0884d6acc62adedb3ef321277f9"
+    },
+    "performances.jsonl": {
+      "octets": 4842,
+      "sha256": "c641a0884a2acdf13dcbf6287142f30a889bdbc233f2b5391bc70068ebc39610"
+    }
+  },
+  "fichiers_depart": {
+    "decisions.jsonl": "6c5902d8fa5e50b5a478497cadb11bdcb58a95f2e4f6df5a6eb64aa3edb9c731",
+    "travail.jsonl": "f9eb6967f437295a75f32054dc69e0dc5d39c0884d6acc62adedb3ef321277f9",
+    "checkpoint.json": "30f816f1ab108a39b004111e3c62e33de8343547c452d79f7343f2f7bd359f4b",
+    "performances.jsonl": "c641a0884a2acdf13dcbf6287142f30a889bdbc233f2b5391bc70068ebc39610"
+  }
+}

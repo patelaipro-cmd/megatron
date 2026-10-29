@@ -1,0 +1,78 @@
+{
+  "etape": "claude",
+  "commit": "308f65361b1880e88fb93c6dc2367d25b1c58313",
+  "head_execution": "5830dbde9ad848532189ca2cd437047d6d4a55b3",
+  "type": "relais_git_fictif",
+  "checks": {
+    "historique_initial_preserve": true,
+    "previsions_identiques": true,
+    "checkpoint_repris": true,
+    "doublon_refuse_sans_ecriture": true,
+    "checkpoint_transmis": true,
+    "trois_matchs_resolus": true,
+    "memoire_reelle_inchangee": true
+  },
+  "checkpoint_retour": "ckpt-5cb771dd8d",
+  "bilan": {
+    "versions": {
+      "agent:stats:stats-v0": {
+        "n": 3,
+        "brier": 0.584659,
+        "log_loss": 0.982302,
+        "rps": 0.180252,
+        "calibration": [
+          {
+            "tranche": "0.2-0.4",
+            "n": 7,
+            "p_moyenne": 0.2858,
+            "frequence_observee": 0.2857
+          },
+          {
+            "tranche": "0.4-0.6",
+            "n": 2,
+            "p_moyenne": 0.4998,
+            "frequence_observee": 0.5
+          }
+        ]
+      },
+      "fusion-v1:[[\"stats\",\"stats-v0\"]]": {
+        "n": 3,
+        "brier": 0.584659,
+        "log_loss": 0.982302,
+        "rps": 0.180252,
+        "calibration": [
+          {
+            "tranche": "0.2-0.4",
+            "n": 7,
+            "p_moyenne": 0.2858,
+            "frequence_observee": 0.2857
+          },
+          {
+            "tranche": "0.4-0.6",
+            "n": 2,
+            "p_moyenne": 0.4998,
+            "frequence_observee": 0.5
+          }
+        ]
+      }
+    },
+    "communs": {
+      "n": 3,
+      "log_loss": {
+        "agent:stats:stats-v0": 0.982302,
+        "fusion-v1:[[\"stats\",\"stats-v0\"]]": 0.982302
+      }
+    },
+    "marches_buts": {},
+    "resultats_a_saisir": [],
+    "a_venir": []
+  },
+  "empreintes_retour": {
+    "checkpoint.json": "8533363d01987fe965ad600c70c2291e18c8e171603395031c12006738caec22",
+    "decisions.jsonl": "6c5902d8fa5e50b5a478497cadb11bdcb58a95f2e4f6df5a6eb64aa3edb9c731",
+    "performances.jsonl": "427d63c4e58f5a288d81780c46c6cd22d70ec43778ff9cd0852d90a04a08d82d",
+    "travail.jsonl": "46d4a0a444422e913ca5e2dd158667f3d79705544ada319c98a951a88e17c75d"
+  },
+  "succes": true,
+  "limite": "Le champ étape est déclaratif ; ce rapport seul ne prouve pas quelle plateforme a exécuté le script."
+}
