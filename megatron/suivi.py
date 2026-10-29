@@ -8,12 +8,23 @@ La trace de la fusion (agents manquants, désaccord, sources) est gardée à cô
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 
 from .agents import Agent, fuse
 from .ledger import DOMAIN, MARKETS, OUTCOMES, Ledger, pred_key, score
 from .store import MemoryStore, now_utc, parse_dt
+
+
+FENETRE = timedelta(hours=5)  # une prévision s'enregistre dans les 5 h qui précèdent le coup d'envoi, pas avant
+
+
+def _check_window(match_id, now: datetime, kickoff_dt: datetime, moment: str) -> None:
+    if now >= kickoff_dt:
+        raise ValueError(f"{match_id} : coup d'envoi {moment}, rien n'est enregistré")
+    if now < kickoff_dt - FENETRE:
+        raise ValueError(f"{match_id} : trop tôt, la fenêtre s'ouvre le {(kickoff_dt - FENETRE).isoformat()} "
+                         f"({FENETRE.total_seconds() / 3600:g} h avant le coup d'envoi)")
 
 
 def fusion_version(result: dict) -> str:
@@ -23,17 +34,14 @@ def fusion_version(result: dict) -> str:
 
 def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: list[Agent] | None = None,
             source: str = "megatron prevoir", now: datetime | None = None) -> dict:
-    """Fusion puis enregistrement ; refuse tout après le coup d'envoi, sans rien écrire."""
+    """Fusion puis enregistrement, seulement dans les 5 h avant le coup d'envoi ; hors fenêtre, rien n'est écrit."""
     kickoff_dt = parse_dt(kickoff)
     fixed_now = now  # injection temporelle réservée aux simulations/tests
-    now = parse_dt(now or now_utc())
-    if now >= kickoff_dt:
-        raise ValueError(f"{task.get('match_id')} : coup d'envoi passé, prévision refusée")
+    _check_window(task.get("match_id"), parse_dt(now or now_utc()), kickoff_dt, "passé")
     match_id = task["match_id"]
     result = fuse(task, agents)
     now = parse_dt(fixed_now or now_utc())
-    if now >= kickoff_dt:
-        raise ValueError(f"{task.get('match_id')} : coup d'envoi franchi pendant l'analyse, rien n'est enregistré")
+    _check_window(match_id, now, kickoff_dt, "franchi pendant l'analyse")
     if not result["probs"]:
         return {"match_id": match_id, "enregistre": [], "indisponibles": result["indisponibles"],
                 "raison": "aucun agent n'a donné d'avis : rien n'est enregistré"}
