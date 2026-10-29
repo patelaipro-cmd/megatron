@@ -1,21 +1,27 @@
 name: registre-prospectif
-# Enregistre les évaluations SYNDICATE avant match (initial, T-30, T-5) et les résultats confirmés
-# sur la branche registre-prospectif. Ajout seulement, jamais de réécriture ; aucun GO déclenché.
+# Enregistre les évaluations SYNDICATE avant match (initial, T-30, T-5) et les résultats confirmés dans
+# memoire/ (registre réel, jeton claude), sur la branche registre-memoire, avec une PR continue vers main.
+# Ajout seulement : jamais de réécriture, jamais de fusion automatique, aucun GO déclenché.
 on:
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
+  pull-requests: write
 concurrency:
   group: registre-prospectif
   cancel-in-progress: false
+env:
+  BRANCHE: registre-memoire
 jobs:
   registre:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
@@ -25,10 +31,12 @@ jobs:
           git config user.email "megatron-registre@users.noreply.github.com"
           git fetch --depth 1 origin donnees-externes
           git worktree add --detach donnees FETCH_HEAD
-          if git fetch --depth 1 origin registre-prospectif; then
-            git worktree add -B registre-prospectif reg FETCH_HEAD
+          if git ls-remote --exit-code --heads origin "$BRANCHE" > /dev/null; then
+            git fetch origin "$BRANCHE"
+            git checkout -B "$BRANCHE" "origin/$BRANCHE"
+            git merge --no-edit origin/main  # registre en ajout seul : un conflit arrête tout, rien n'est forcé
           else
-            git worktree add --detach reg && cd reg && git checkout --orphan registre-prospectif && git rm -rfq . && cd ..
+            git checkout -B "$BRANCHE" origin/main
           fi
       - name: Résultats confirmés (deux familles)
         run: |
@@ -39,12 +47,20 @@ jobs:
           fi
       - name: Enregistrer
         run: |
-          python scripts/registre_prospectif.py --registre reg/registre --externe donnees/externe \
-            --resultats-admis "$RUNNER_TEMP/admis.csv" | tee "$RUNNER_TEMP/sortie.json"
+          python scripts/registre_prospectif.py --registre memoire --externe donnees/externe \
+            --resultats-admis "$RUNNER_TEMP/admis.csv"
+          python -m megatron synchro verifier
       - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          cd reg
-          git add -A
-          git diff --cached --quiet && exit 0
-          git commit -q -m "Registre $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push origin registre-prospectif
+          git add memoire
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Registre prospectif $(date -u +%Y-%m-%dT%H:%MZ)"
+          fi
+          git push origin "$BRANCHE"
+          if [ -z "$(gh pr list --head "$BRANCHE" --state open --json number --jq '.[].number')" ] && \
+             [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+            gh pr create --head "$BRANCHE" --base main --title "Registre prospectif : prévisions avant match (en continu)" \
+              --body "Ajouts automatiques du workflow registre-prospectif dans memoire/ (jeton claude). Chaque commit est poussé avant le coup d'envoi des matchs qu'il couvre : l'heure du commit fait foi. Fusion manuelle uniquement, aucun GO."
+          fi

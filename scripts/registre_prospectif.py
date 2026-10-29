@@ -1,7 +1,8 @@
 """Registre prospectif : enregistre les évaluations SYNDICATE avant chaque match suivi, puis les résultats.
 
-Lancé par le workflow `registre-prospectif` (GitHub Actions) sur la branche dédiée du même nom :
-  python scripts/registre_prospectif.py --registre registre --externe donnees/externe \
+Lancé par le workflow `registre-prospectif` (GitHub Actions) sur la branche `registre-memoire`, qui
+écrit dans `memoire/` (registre réel) et tient une PR continue vers main, fusionnée à la main :
+  python scripts/registre_prospectif.py --registre memoire --externe donnees/externe \
       [--resultats-admis <csv>] [--maintenant <ISO>]
 
 - Matchs suivis : calendrier ESPN des cinq championnats (jour UTC et lendemain), noms ramenés à
@@ -9,7 +10,7 @@ Lancé par le workflow `registre-prospectif` (GitHub Actions) sur la branche dé
 - Moment : `initial` entre 300 et 35 min avant le coup d'envoi (une fois), puis `T-30` et `T-5`
   dans leurs fenêtres (`controles.MOMENTS`) ; une fenêtre manquée est notée, jamais rattrapée.
 - Enregistrés à l'initial : marges 2+ et 3+ du favori (`controles.enregistrer`) et 1X2
-  `poisson-v5-cal`, avec l'heure d'enregistrement ; l'heure du commit GitHub en fait foi.
+  `poisson-v5-cal`, avec l'heure d'enregistrement ; l'heure du commit poussé en fait foi.
 - Résultats : seulement ceux confirmés par deux familles (`--resultats-admis`, sortie de
   scripts/verifier_resultats.py), jamais un score à source unique.
 - Jeton du registre : détenteur `claude` (décision de Luloki du 29/10/2026). Aucun GO déclenché.
