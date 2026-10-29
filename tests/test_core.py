@@ -457,12 +457,13 @@ class DonneesCompletesTests(unittest.TestCase):
     def test_current_season_complement_merges_without_duplicates(self):
         from megatron import data
 
-        base, extra = (data.load(p) for p in data.CURRENT)
+        base, extra, verifies = (data.load(p) for p in data.CURRENT)
         self.assertGreater(min(m.day for m in extra), max(m.day for m in base))
+        self.assertGreater(min(m.day for m in verifies), max(m.day for m in extra))
         self.assertTrue(all(m.odds is None and m.shots is None for m in extra))
-        teams = {(m.division, t) for m in base for t in (m.home, m.away)}
-        self.assertTrue(all((m.division, t) in teams for m in extra for t in (m.home, m.away)))
-        self.assertEqual(len(data.load(data.CURRENT)), len(base) + len(extra))
+        teams = {(m.division, t) for m in base + extra for t in (m.home, m.away)}
+        self.assertTrue(all((m.division, t) in teams for m in extra + verifies for t in (m.home, m.away)))
+        self.assertEqual(len(data.load(data.CURRENT)), len(base) + len(extra) + len(verifies))
 
     def test_duplicate_files_refused(self):
         from megatron import data

@@ -10,8 +10,10 @@ from pathlib import Path
 SHOT_COLUMNS = ("HomeShots", "AwayShots", "HomeTarget", "AwayTarget")
 DATA = Path(__file__).resolve().parent.parent / "data"
 DEFAULT_CSV = DATA / "matches_top5_2020-2026.csv"  # extrait figé des expériences EXP-001 à EXP-004
-# historique complet pour l'agent Stats : xgabora 2000-2026 + saison en cours (openfootball, sans cotes ni tirs)
-CURRENT = (DATA / "matches_top5_2000-2026.csv", DATA / "complement_openfootball_2026-27.csv")
+# historique complet pour l'agent Stats : xgabora 2000-2026 + saison en cours (openfootball jusqu'au 20/09, sans cotes
+# ni tirs ; puis résultats confirmés par deux familles indépendantes, scripts/verifier_resultats.py)
+CURRENT = (DATA / "matches_top5_2000-2026.csv", DATA / "complement_openfootball_2026-27.csv",
+           DATA / "complement_resultats_2026-27.csv")
 
 
 @dataclass(frozen=True)

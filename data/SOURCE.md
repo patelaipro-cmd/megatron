@@ -38,3 +38,13 @@ Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion 
 - Sofascore (compos, absents), FPL (statut joueurs PL), ClubElo (Elo), Understat (xG d'équipe), collectés par `.github/workflows/collecte-externe.yml`, jamais commités sur `main`.
 - Ligues suivies : `data/ligues_collecte.json` (38 divisions de l'historique xgabora + coupes UEFA). Identifiants Sofascore à vérifier après le premier run.
 - Chaque ligne porte `collecte_le` ; usage pré-match seulement si `collecte_le` < coup d'envoi. CGU et limites : `docs/collecte-externe.md`.
+
+## Résultats confirmés depuis le 21/09/2026 (29/10/2026)
+
+- `complement_resultats_2026-27.csv` : 152 matchs du 09/10 au 28/10/2026 (E0 30, F1 27, D1 27, SP1 30, I1 38), chacun confirmé par **deux familles indépendantes** : ESPN (`site.api.espn.com`, tableau des scores) et football-data.co.uk (fichiers 2026/27). Même score final, dates à un jour près, aucune source en désaccord.
+- Collecte brute : workflow `resultats` (GitHub Actions), branche `donnees-externes`, dossier `externe/resultats/2026-10-29T1944Z/` (ESPN 450 pages, 405 événements, SHA-256 `3f22746d…d6ad8e`). Recoupement hors réseau : `python scripts/verifier_resultats.py --brut <dossier> --depuis 2026-09-21`.
+- Noms reliés par les matchs communs de la saison (vote de `complement_openfootball.py`) : 96 noms ESPN et 96 football-data, aucun nom approché.
+- Cotes Bet365 (B365H/D/A) et tirs (HS, AS, HST, AST) repris de football-data, l'origine de l'historique xgabora.
+- Heures : ESPN est en UTC, ramené à la convention de `data/` par le décalage médian mesuré (+1 h, mesuré sur août-septembre ; changement d'heure du 25/10 non corrigé, seul l'ordre intra-journée en dépend).
+- Rapport, quarantaine et refus : `docs/resultats-2026-27/`. SHA-256 du fichier : `71d3f9d7…f7e7f531`.
+- API-Football n'a pas servi : le plan gratuit refuse `season=2026` (« try from 2022 to 2024 »).
