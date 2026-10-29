@@ -6,3 +6,4 @@ __pycache__/
 
 # Verrou de processus local ; jamais synchronisé par Git
 .registre.lock
+docs/experiences/EXP-008/dev/*/predictions.csv
