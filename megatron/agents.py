@@ -33,6 +33,8 @@ class AgentResponse:
     tokens_mesure: str = "indisponible"  # mesure | estimation | indisponible
     raison: str = ""
     version: str = ""  # modèle exact ayant produit l'avis (ex. poisson-v4, gemini/gemini-flash-lite-latest)
+    marches: dict[str, dict[str, float]] | None = None  # 2+ / 3+ buts, seulement si validés (EXP-007)
+    version_marches: str = ""
 
 
 class Agent:
@@ -141,7 +143,7 @@ class StatsAgent(Agent):
     def _from_history(self, task: dict) -> AgentResponse:
         from datetime import date
 
-        from . import data, models
+        from . import data, marches, models
 
         day = date.fromisoformat(task["date"])
         path = self.csv_path or data.CURRENT
@@ -152,7 +154,7 @@ class StatsAgent(Agent):
                                proxy=self.PROXY, proxy_weight=self.PROXY_WEIGHT)
         lh, la = fit.rates(task["home"], task["away"])
         unknown = [t for t in (task["home"], task["away"]) if t not in fit.attack]
-        return self._response(
+        rep = self._response(
             poisson_1x2(lh, la), task, version="poisson-v4" if self.PROXY_WEIGHT else "poisson-v1",
             preuves=[f"{len(history)} matchs antérieurs au {day}, dernier le "
                      f"{max(m.day for m in history)}",
@@ -160,6 +162,9 @@ class StatsAgent(Agent):
             incertitudes=["équipes sans historique traitées comme moyennes : " + ", ".join(unknown)] if unknown else [],
             sources=[f"data/{Path(p).name}" for p in ([path] if isinstance(path, (str, Path)) else path)],
         )
+        if self.PROXY_WEIGHT == marches.V4["proxy_weight"]:  # recalibration apprise sur poisson-v4 seulement
+            rep.marches, rep.version_marches = marches.probs_buts_calibrees(lh, la), marches.VERSION_BUTS
+        return rep
 
     def _from_xg(self, task: dict) -> AgentResponse:
         try:

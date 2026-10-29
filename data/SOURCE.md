@@ -21,3 +21,8 @@ Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion 
   - Heures ramenées à la convention xgabora par le décalage médian mesuré (−1 h sauf Premier League 0 h).
   - Source communautaire, non recoupée au-delà de ce contrôle.
 - `matches_top5_2020-2026.csv` reste l'extrait figé des expériences EXP-001 à EXP-004 ; l'agent Stats utilise les deux fichiers ci-dessus (`data.CURRENT`).
+
+## Cotes plus/moins de 2,5 buts (29/10/2026, EXP-006)
+
+- `cotes_buts_2000-2026.csv` : même fichier `Matches.csv` (SHA-256 `ef224cf2…4221`, vérifié inchangé le 29/10/2026), colonnes `Division, MatchDate, HomeTeam, AwayTeam, Over25, Under25` (cotes Bet365 selon le README d'origine). Matchs des 5 ligues depuis le 01/07/2000 ayant les deux cotes : 37 736 lignes (à partir de 2005/06), toutes reliées à `matches_top5_2000-2026.csv`. SHA-256 `a677960d5eeff221e4eab939fcfc0caf9ee36b7af2813f1243eb8f1f81904f31`.
+- Reconstruction : `python scripts/extraire_cotes_buts.py Matches.csv`.
