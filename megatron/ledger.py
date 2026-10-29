@@ -13,6 +13,7 @@ import math
 from datetime import datetime
 
 from .store import MemoryStore, now_utc, parse_dt
+from .jeton import protege_ledger
 
 OUTCOMES = ("H", "D", "A")  # domicile, nul, extérieur
 # marché → issues ; 2+ et 3+ : au moins 2 (ou 3) buts dans le match (EXP-006)
@@ -26,9 +27,11 @@ class TemporalLeakError(ValueError):
 
 
 class Ledger:
-    def __init__(self, store: MemoryStore):
+    def __init__(self, store: MemoryStore, *, acces: str | None = None, jeton_id: str | None = None):
         self.store = store
+        self.acces, self.jeton_id = acces, jeton_id
 
+    @protege_ledger
     def predict(
         self,
         match_id: str,
@@ -64,6 +67,7 @@ class Ledger:
             source=source, status="verifie", recorded_at=rec_dt, supersede=False,
         )
 
+    @protege_ledger
     def result(self, match_id: str, outcome: str, *, source: str,
                observed_at: str | datetime | None = None, correction: bool = False,
                goals: tuple[int, int] | None = None):

@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm, marches, suivi, synchro, systeme
+from . import backtest, checkpoint, data, inventory, jeton, llm, marches, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -36,6 +36,15 @@ def main(argv: list[str] | None = None) -> int:
     rs.add_argument("score", help="H, D, A ou score 2-1")
     rs.add_argument("--source", required=True, help="provenance du résultat, ex. URL")
     rs.add_argument("--correction", action="store_true", help="remplace un résultat déjà saisi (historique gardé)")
+    for write_parser in (pv, rs):
+        write_parser.add_argument("--acces", choices=jeton.ACCES)
+        write_parser.add_argument("--jeton", dest="jeton_id", help="identifiant actif du jeton synchronisé")
+    jt = sub.add_parser("jeton", help="détenteur coopératif du registre")
+    jt.add_argument("action", choices=["statut", "initialiser", "transmettre"])
+    jt.add_argument("--acces", choices=jeton.ACCES)
+    jt.add_argument("--jeton", dest="jeton_id")
+    jt.add_argument("--a", dest="destinataire", choices=jeton.ACCES)
+    jt.add_argument("--source")
     sub.add_parser("bilan", help="scores par version, matchs communs, résultats à saisir")
     sub.add_parser("systeme", help="test système de bout en bout sur un match fictif (Fusion + registre)")
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
@@ -101,11 +110,27 @@ def main(argv: list[str] | None = None) -> int:
         try:
             if args.cmd == "prevoir":
                 out = suivi.prevoir(MemoryStore(args.memoire), json.loads(args.tache), args.coup_envoi,
-                                    agents=[StatsAgent()] if args.execution == "stats" else None)
+                                    agents=[StatsAgent()] if args.execution == "stats" else None,
+                                    acces=args.acces, jeton_id=args.jeton_id)
             else:
                 out = suivi.resultat(MemoryStore(args.memoire), args.match_id, args.score, source=args.source,
-                                     correction=args.correction).value
+                                     correction=args.correction, acces=args.acces, jeton_id=args.jeton_id).value
         except ValueError as exc:  # anti-fuite, doublon, saisie invalide : rien n'est écrit
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
+    elif args.cmd == "jeton":
+        try:
+            if args.action == "statut" and not Path(args.memoire).exists():
+                out = {"protege": Path(args.memoire).resolve() == jeton.REAL_MEMORY.resolve(),
+                       "initialise": False, "id": None, "detenteur": None}
+            elif args.action == "statut":
+                out = jeton.statut(MemoryStore(args.memoire))
+            elif args.action == "initialiser":
+                out = asdict(jeton.initialiser(MemoryStore(args.memoire), args.acces, source=args.source))
+            else:
+                out = asdict(jeton.transmettre(MemoryStore(args.memoire), args.acces, args.jeton_id, args.destinataire, source=args.source))
+        except ValueError as exc:
             print(f"refus : {exc}")
             return 2
         print(json.dumps(out, indent=2, ensure_ascii=False))

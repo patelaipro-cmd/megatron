@@ -3,3 +3,6 @@ __pycache__/
 .pytest_cache/
 .cache/
 .local/
+
+# Verrou de processus local ; jamais synchronisé par Git
+.registre.lock

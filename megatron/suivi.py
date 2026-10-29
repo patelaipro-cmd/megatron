@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 import json
 
 from .agents import Agent, fuse
+from .jeton import protege_suivi
 from .ledger import DOMAIN, MARKETS, OUTCOMES, Ledger, pred_key, score
 from .store import MemoryStore, now_utc, parse_dt
 
@@ -32,8 +33,10 @@ def fusion_version(result: dict) -> str:
     return "fusion-v1:" + json.dumps(ok, ensure_ascii=True, separators=(",", ":"))
 
 
+@protege_suivi
 def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: list[Agent] | None = None,
-            source: str = "megatron prevoir", now: datetime | None = None) -> dict:
+            source: str = "megatron prevoir", now: datetime | None = None,
+            acces: str | None = None, jeton_id: str | None = None) -> dict:
     """Fusion puis enregistrement, seulement dans les 5 h avant le coup d'envoi ; hors fenêtre, rien n'est écrit."""
     kickoff_dt = parse_dt(kickoff)
     fixed_now = now  # injection temporelle réservée aux simulations/tests
@@ -45,7 +48,7 @@ def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: 
     if not result["probs"]:
         return {"match_id": match_id, "enregistre": [], "indisponibles": result["indisponibles"],
                 "raison": "aucun agent n'a donné d'avis : rien n'est enregistré"}
-    ledger = Ledger(store)
+    ledger = Ledger(store, acces=acces, jeton_id=jeton_id)
     versions = [(fusion_version(result), result["probs"])]
     versions += [(f"agent:{r.agent}:{r.version or 'inconnue'}", r.probs)
                  for r in result["reponses"] if r.status == "ok" and r.probs]
@@ -96,11 +99,13 @@ def goals_of(score_or_outcome: str) -> tuple[int, int] | None:
     return home, away
 
 
+@protege_suivi
 def resultat(store: MemoryStore, match_id: str, score_or_outcome: str, *, source: str,
-             observed_at: str | datetime | None = None, correction: bool = False):
+             observed_at: str | datetime | None = None, correction: bool = False,
+             acces: str | None = None, jeton_id: str | None = None):
     if not Ledger(store)._predictions(match_id):
         raise ValueError(f"{match_id} : aucune prévision enregistrée, résultat inutile")
-    return Ledger(store).result(match_id, outcome_of(score_or_outcome), source=source, observed_at=observed_at,
+    return Ledger(store, acces=acces, jeton_id=jeton_id).result(match_id, outcome_of(score_or_outcome), source=source, observed_at=observed_at,
                                 correction=correction, goals=goals_of(score_or_outcome))
 
 
