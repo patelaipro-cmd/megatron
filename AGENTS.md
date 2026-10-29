@@ -18,3 +18,5 @@ La réussite technique ne prouve pas la qualité prédictive.
 Le parcours actuel reste 1X2 ; 2+/3+ et fenêtre de cinq heures restent à intégrer.
 
 Méthode de synchronisation : docs/synchro-codex-claude.md.
+Validation d'un point d'accès (sans LLM, sans toucher memoire/) :
+`python scripts/valider_acces.py --acces codex` (ou `claude`) ; code 0 = tout passe.
