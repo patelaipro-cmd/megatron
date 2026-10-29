@@ -1,11 +1,10 @@
 {
   "version": "0.1.0",
-  "commit": "79f0de3",
-  "date": "2026-10-29T11:04:07+00:00",
-  "resume": "Angles morts du favori intégrés (13 angles, 3 questions, comparateur H2H, scénario fait+source+mécanisme). EXP-009 : les 11 indicateurs mesurables n'améliorent pas poisson-v5 hors développement → descriptifs, aucun ajustement.",
+  "commit": "477bf09",
+  "date": "2026-10-29T11:16:34+00:00",
+  "resume": "EXP-010 : poisson-v5-cal promu (recalibration b 1,16, nuls relevés) ; test 2020-2026 −0,0022 log-loss vs v5 brut, 5/5 ligues ; retard bookmaker 0,0181 → 0,0159.",
   "prochaines_actions": [
     "Étendre la grille au-delà du bord (demi-vie 365-730, w 0,45-0,6) sur 2008-2016, protocole commité avant",
-    "Recalibrer poisson-v5 (pente > 1 vue dans EXP-009) pour le 1X2, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
     "Valider la synchronisation via Git entre Codex et Claude (branche partagée, synchro verifier des deux côtés)",
@@ -95,14 +94,14 @@
       "id": "10284606daed"
     },
     {
-      "cle": "modele_reference",
-      "valeur": "poisson-v5 : Maher pondéré demi-vie 270 j, rétrécissement 2, pseudo-buts 0,65·buts + 0,35·k·tirs cadrés ; marchés 2+/3+ sur ajustement poisson-v4 séparé (poisson-v4-platt) ; stats-v0 en repli",
-      "id": "86591ae286b8"
-    },
-    {
       "cle": "angles_morts",
       "valeur": "cadre de Luloki (29/10/2026) : 13 angles morts, comparateur ancien H2H → dernier H2H → situation actuelle sur 4 axes, 3 questions (défaite, nul, victoire < 2 buts) ; scénario = fait + source + mécanisme ; aucune modification de probabilité sans expérience validée (megatron/angles_morts.py)",
       "id": "e909757b7aee"
+    },
+    {
+      "cle": "modele_reference",
+      "valeur": "poisson-v5-cal : poisson-v5 (demi-vie 270, rétr. 2, w 0,35) recalibré p'∝p^1,1601·exp(c), c_H 0,0162, c_D 0,1503 ; marchés 2+/3+ sur poisson-v4-platt ; stats-v0 en repli",
+      "id": "fbb4e24a7b8c"
     }
   ],
   "contradictions": {},
@@ -110,8 +109,8 @@
     "travail": 2,
     "decisions": 17,
     "football": 1,
-    "performances": 6,
+    "performances": 7,
     "technique": 5
   },
-  "id": "ckpt-a22747b820"
+  "id": "ckpt-f66dcd1995"
 }
