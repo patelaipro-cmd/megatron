@@ -73,6 +73,31 @@ def _fatigue(history: list[Match], team: str, kickoff: datetime) -> dict:
             "deplacement_precedent": dernier.away == team}
 
 
+def _statut_absence_fpl(ligne: dict) -> str | None:
+    """Convertit les libellés *réels* FPL en statuts du moteur.
+
+    Les joueurs partis en transfert ne sont pas des blessés du club précédent.
+    Une indisponibilité non expliquée reste incertaine : ne pas affirmer une blessure.
+    """
+    statut = (ligne.get("statut") or "").strip().casefold()
+    news = (ligne.get("news") or "").casefold()
+    depart = ("has joined", "signed for", "has left", "departed the club", "has returned to", "transferred to",
+              "loan move", "on loan at")
+    if any(m in news for m in depart) or statut in ("a", "disponible"):
+        return None
+    if statut in ("i", "blesse", "blessé"):
+        return "blesse"
+    if statut in ("s", "suspendu"):
+        return "suspendu"
+    if statut in ("d", "incertain"):
+        return "incertain"
+    if statut in ("n", "non_eligible", "non éligible"):
+        return "absent"
+    if statut in ("u", "indisponible"):
+        return "incertain"
+    return None  # valeur inconnue : ne pas ajouter une absence fictive
+
+
 def _implicites(cotes: tuple[float, float, float]) -> dict:
     inv = [1 / c for c in cotes]
     s = sum(inv)
@@ -143,8 +168,10 @@ def fiche(division: str, home: str, away: str, kickoff: str | datetime, *, at: s
         f = faits[t]
         decl = [{"joueur": l["joueur"], "statut": "absent" if l.get("type") == "Missing Fixture" else "incertain",
                  "source": "api-football"} for l in (f["absences"] if f else [])]
-        decl += [{"joueur": l["joueur"], "statut": "absent" if l.get("statut") in ("i", "s", "u", "n") else "incertain",
-                  "source": "fpl"} for l in (f["fpl"] if f else [])]
+        for l in (f["fpl"] if f else []):
+            statut_fpl = _statut_absence_fpl(l)
+            if statut_fpl is not None:
+                decl.append({"joueur": l["joueur"], "statut": statut_fpl, "source": "fpl"})
         decl += [{"joueur": d["joueur"], "statut": d.get("statut", "absent"), "source": ",".join(d.get("sources", ["declare"]))}
                  for d in (absents_declares or {}).get(t, [])]
         cons = absences.consolider(decl, set(compos[t]["titulaires"]))

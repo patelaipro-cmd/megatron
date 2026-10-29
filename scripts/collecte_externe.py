@@ -321,6 +321,21 @@ def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: 
 
 # --- ESPN (compos officielles, sans clé) ----------------------------------
 
+def _poste_espn(joueur: dict) -> str:
+    """Écarte les codes de banc (« SUB ») qui ne sont PAS des postes.
+
+    Privilégie la position effective de la ligne si sportive, sinon le profil
+    athlète ; si les deux sont inconnus, ne fabrique pas de poste.
+    """
+    athlete = joueur.get("athlete") or {}
+    for p in (joueur.get("position"), athlete.get("position")):
+        code = (p.get("abbreviation") or "") if isinstance(p, dict) else (p or "")
+        code = str(code).strip().upper()
+        if code and code not in ("SUB", "BENCH", "RES", "N/A", "NA", "UNK"):
+            return code
+    return ""
+
+
 def lignes_compos_espn(base: dict, summary: dict, collecte_le: str) -> list[dict]:
     out = []
     for bloc in summary.get("rosters") or []:
@@ -331,7 +346,7 @@ def lignes_compos_espn(base: dict, summary: dict, collecte_le: str) -> list[dict
             a = j.get("athlete") or {}
             out.append({**base, "collecte_le": collecte_le, "equipe": (bloc.get("team") or {}).get("displayName"),
                         "formation": bloc.get("formation"), "joueur": a.get("displayName"), "joueur_id": a.get("id"),
-                        "poste": (j.get("position") or {}).get("abbreviation"),
+                        "poste": _poste_espn(j),
                         "statut": "titulaire" if j.get("starter") else "remplacant"})
     return out
 

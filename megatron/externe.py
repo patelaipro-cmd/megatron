@@ -170,11 +170,11 @@ def poste_simple(code: str | None) -> str | None:
         return None
     if c.startswith("G"):
         return "G"
-    if c in ("D", "CB", "LB", "RB", "LWB", "RWB", "SW") or c.startswith("CD"):
+    if c in ("D", "DF", "CB", "LB", "RB", "LWB", "RWB", "SW") or c.startswith("CD"):
         return "D"
-    if c in ("F", "ST", "CF", "LW", "RW", "SS") or c.startswith("CF"):
+    if c in ("F", "FW", "ST", "CF", "LW", "RW", "SS") or c.startswith("CF"):
         return "F"
-    return "M" if c.endswith("M") or c in ("M",) else None
+    return "M" if c.endswith("M") or c in ("M", "MF") else None
 
 
 def profils_titularisation(dossier: Path, equipe: str, avant, n: int = 10, alias: dict | None = None) -> dict:
