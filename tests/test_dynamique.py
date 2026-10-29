@@ -27,6 +27,17 @@ class DynamiqueTests(unittest.TestCase):
         p2 = derouler(avec, Reglage())
         self.assertEqual(p1["E0:2020-08-01:A-B"], p2["E0:2020-08-01:A-B"])
 
+    def test_match_futur_ou_score_futur_modifie_sans_effet_sur_le_passe(self):
+        j = date(2020, 8, 1)
+        base = [match(j, "A", "B", 1, 0, tirs=(9, 5, 4, 2)), match(j + timedelta(days=7), "B", "A", 2, 2)]
+        futur = [match(j + timedelta(days=14), "A", "B", 6, 0, tirs=(30, 1, 15, 0))]
+        modifie = [match(j + timedelta(days=7), "B", "A", 0, 5, tirs=(1, 20, 0, 12))]
+        p0 = derouler(base, Reglage())
+        p1 = derouler(base + futur, Reglage())
+        for k in p0:
+            self.assertEqual(p0[k], p1[k])
+        self.assertEqual(p0["E0:2020-08-01:A-B"], derouler(base[:1] + modifie, Reglage())["E0:2020-08-01:A-B"])
+
     def test_victoire_large_releve_attaque_et_variance_decroit(self):
         f = Filtre(Reglage(w=0))
         j = date(2020, 8, 1)
