@@ -23,3 +23,5 @@ les 5 h qui précèdent le coup d'envoi. Saisir le score (`2-1`) pour résoudre 
 Méthode de synchronisation : docs/synchro-codex-claude.md.
 Validation d'un point d'accès (sans LLM, sans toucher memoire/) :
 `python scripts/valider_acces.py --acces codex` (ou `claude`) ; code 0 = tout passe.
+Angles morts du favori (cadre Luloki, 29/10/2026) : `megatron/angles_morts.py`, 13 angles, 3 questions,
+scénario = fait + source + mécanisme ; aucune modification de probabilité sans expérience validée (EXP-009 : aucune).
