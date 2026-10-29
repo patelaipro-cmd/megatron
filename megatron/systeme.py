@@ -19,6 +19,7 @@ from pathlib import Path
 from .agents import Agent, LLMAgent, StatsAgent, fuse
 from .ledger import OUTCOMES, Ledger, TemporalLeakError
 from .store import MemoryStore
+from .suivi import fusion_version
 
 DIVISION = "FICTIF"
 TEAMS = {  # force offensive, force défensive (buts encaissés relatifs)
@@ -94,7 +95,7 @@ def run(llm_agents: list[Agent] | None = None, workdir: str | Path | None = None
 
         ledger = Ledger(MemoryStore(root / "memoire"))
         cutoff = datetime(last.year, last.month, last.day, 15, tzinfo=timezone.utc)
-        version = "fusion-v0:" + "+".join(sorted(r.agent for r in fusion["reponses"] if r.status == "ok"))
+        version = fusion_version(fusion)
         ledger.predict(task["match_id"], kickoff, probs, model_version=version, source="systeme-fictif",
                        recorded_at=kickoff - timedelta(hours=2), data_cutoff=cutoff)
         checks["prevision_enregistree"] = True

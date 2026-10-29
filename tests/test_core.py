@@ -318,7 +318,7 @@ class SystemeTests(unittest.TestCase):
                            LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")])
         self.assertTrue(rep["succes"], rep["verifications"])
         self.assertEqual(rep["fusion_mode"], "degrade")
-        self.assertEqual(rep["version"], "fusion-v0:stats")
+        self.assertEqual(rep["version"], 'fusion-v1:[["stats","poisson-v4"]]')
 
     def test_fictional_match_full_mode_with_fake_llms(self):
         import os
@@ -338,7 +338,8 @@ class SystemeTests(unittest.TestCase):
             rep = systeme.run([LLMAgent("deepseek", completion_fn=fake), LLMAgent("gemini", completion_fn=fake)])
         self.assertTrue(rep["succes"], rep["verifications"])
         self.assertEqual(rep["fusion_mode"], "complet")
-        self.assertEqual(rep["version"], "fusion-v0:deepseek+gemini+stats")
+        self.assertTrue(rep["version"].startswith('fusion-v1:[["deepseek",'), rep["version"])
+        self.assertIn('["stats","poisson-v4"]', rep["version"])
         self.assertEqual(rep["avis_non_independants"], [["deepseek", "gemini"]])
 
 
@@ -414,7 +415,7 @@ class SuiviTests(TmpStore):
 
         before = self.kickoff - timedelta(hours=3)
         out = suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
-        self.assertEqual(out["enregistre"], ["fusion-v0:stats", "agent:stats:poisson-v4"])
+        self.assertEqual(out["enregistre"], [suivi.fusion_version({"reponses": [AgentResponse(agent="stats", status="ok", version="poisson-v4")]}), "agent:stats:poisson-v4"])
         self.assertIn("gemini", out["indisponibles"])
         with self.assertRaises(ValueError):  # pas de réécriture
             suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
@@ -422,7 +423,7 @@ class SuiviTests(TmpStore):
             suivi.resultat(self.store, "FICTIF:1", "2-0", source="t", observed_at=before)
         suivi.resultat(self.store, "FICTIF:1", "2-0", source="t", observed_at=self.kickoff + timedelta(hours=2))
         b = suivi.bilan(self.store, now=self.kickoff + timedelta(days=1))
-        self.assertEqual(b["versions"]["fusion-v0:stats"]["n"], 1)
+        self.assertEqual(b["versions"][out["enregistre"][0]]["n"], 1)
         self.assertEqual(b["communs"]["n"], 1)
         self.assertEqual(b["resultats_a_saisir"], [])
 

@@ -9,7 +9,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from . import backtest, checkpoint, data, inventory, llm, suivi, systeme
-from .agents import fuse
+from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,10 +29,13 @@ def main(argv: list[str] | None = None) -> int:
     pv = sub.add_parser("prevoir", help="fusion puis prévision immuable dans le registre, avant le coup d'envoi")
     pv.add_argument("tache", help='ex. {"match_id": "F1:2026-11-01:Lens-Lille", "division": "F1", "home": "Lens", "away": "Lille", "date": "2026-11-01"}')
     pv.add_argument("--coup-envoi", required=True, help="date-heure avec fuseau, ex. 2026-11-01T20:00:00+00:00")
+    pv.add_argument("--execution", choices=["stats", "multi-llm"], default="stats",
+                    help="stats par défaut : Python seul, aucun appel LLM ; multi-llm doit être demandé explicitement")
     rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
     rs.add_argument("match_id")
     rs.add_argument("score", help="H, D, A ou score 2-1")
     rs.add_argument("--source", required=True, help="provenance du résultat, ex. URL")
+    rs.add_argument("--correction", action="store_true", help="remplace un résultat déjà saisi (historique gardé)")
     sub.add_parser("bilan", help="scores par version, matchs communs, résultats à saisir")
     sub.add_parser("systeme", help="test système de bout en bout sur un match fictif (Fusion + registre)")
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
@@ -82,9 +85,11 @@ def main(argv: list[str] | None = None) -> int:
     elif args.cmd in ("prevoir", "resultat"):
         try:
             if args.cmd == "prevoir":
-                out = suivi.prevoir(MemoryStore(args.memoire), json.loads(args.tache), args.coup_envoi)
+                out = suivi.prevoir(MemoryStore(args.memoire), json.loads(args.tache), args.coup_envoi,
+                                    agents=[StatsAgent()] if args.execution == "stats" else None)
             else:
-                out = suivi.resultat(MemoryStore(args.memoire), args.match_id, args.score, source=args.source).value
+                out = suivi.resultat(MemoryStore(args.memoire), args.match_id, args.score, source=args.source,
+                                     correction=args.correction).value
         except ValueError as exc:  # anti-fuite, doublon, saisie invalide : rien n'est écrit
             print(f"refus : {exc}")
             return 2

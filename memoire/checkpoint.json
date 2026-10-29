@@ -1,9 +1,13 @@
 {
   "version": "0.1.0",
-  "commit": "59264dc",
-  "date": "2026-10-28T17:13:51+00:00",
-  "resume": "EXP-005 : poisson-v4 confirmé sur 2008-2020 (5/5 ligues, 12/12 saisons, −0,0039 log-loss [−0,0046 ; −0,0032]).",
+  "commit": "6824242",
+  "date": "2026-10-29T07:43:36+00:00",
+  "resume": "Deux accès Codex + Claude : correctif Codex intégré (NaN/Inf, contrôle horaire après agents, fusion-v1 versionnée, data_cutoff nul, prevoir Stats seul par défaut, AGENTS.md/CLAUDE.md) + résultat unique sauf --correction ; 58 tests OK.",
   "prochaines_actions": [
+    "Luloki : relire et fusionner la PR deux accès",
+    "Valider l'accès Codex séparément sur la même branche (tests + parcours fictif)",
+    "Construire python -m megatron synchro verifier (docs/synchro-codex-claude.md)",
+    "Marchés 2+/3+ et fenêtre stricte de cinq heures",
     "Réajuster demi-vie / rétrécissement / w sur 2008-2020 (plus de données) puis tester sur 2022-2026, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
@@ -11,7 +15,8 @@
   "blocages": [
     "Gemini laissé de côté (choix de Luloki) : Fusion en mode dégradé",
     "Complément 2026/27 sans cotes ni tirs ; openfootball s'arrête au 20/09/2026",
-    "DeepSeek, Qwen, presse, FBref, Understat bloqués par le réseau"
+    "DeepSeek, Qwen, presse, FBref, Understat bloqués par le réseau",
+    "Synchronisation Codex/Claude manuelle, non automatisée"
   ],
   "decisions_actives": [
     {
@@ -93,5 +98,5 @@
     "performances": 4,
     "technique": 5
   },
-  "id": "ckpt-5344bd6193"
+  "id": "ckpt-f598f15b04"
 }

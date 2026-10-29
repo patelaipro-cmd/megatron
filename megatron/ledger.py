@@ -46,7 +46,7 @@ class Ledger:
             raise TemporalLeakError(f"{match_id} : données utilisées postérieures au coup d'envoi")
         if set(probs) != set(OUTCOMES):
             raise ValueError(f"probabilités attendues pour {OUTCOMES}, reçu {sorted(probs)}")
-        if any(p < 0 for p in probs.values()) or abs(sum(probs.values()) - 1) > 1e-6:
+        if any(not math.isfinite(p) or p < 0 or p > 1 for p in probs.values()) or abs(sum(probs.values()) - 1) > 1e-6:
             raise ValueError(f"{match_id} : probabilités invalides {probs}")
         key = f"pred:{match_id}:{model_version}"
         if self.store.active(DOMAIN, key):
@@ -60,9 +60,14 @@ class Ledger:
         )
 
     def result(self, match_id: str, outcome: str, *, source: str,
-               observed_at: str | datetime | None = None):
+               observed_at: str | datetime | None = None, correction: bool = False):
+        """Un seul résultat actif par match ; le remplacer exige ``correction`` (historique gardé)."""
         if outcome not in OUTCOMES:
             raise ValueError(f"issue inconnue : {outcome!r}")
+        current = self.store.active(DOMAIN, f"result:{match_id}")
+        if current and not correction:
+            raise ValueError(f"{match_id} : résultat déjà saisi ({current[-1].value['outcome']}), "
+                             "correction explicite requise")
         preds = self._predictions(match_id)
         obs_dt = parse_dt(observed_at or now_utc())
         for p in preds:
