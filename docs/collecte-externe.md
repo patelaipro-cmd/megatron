@@ -56,8 +56,13 @@ python -m megatron angles-morts verifier --fichier ctx_enrichi.json
 
 `megatron/externe.py` lit le dernier instantané de blessures API-Football, la compo officielle
 et les statuts FPL collectés avant l'analyse et avant le coup d'envoi (± 12 h pour reconnaître le
-match), puis remplit l'angle `informations_manquantes` à l'état `a_verifier`. Les noms d'équipe
-diffèrent entre sources : une équipe introuvable est signalée dans les informations manquantes.
+match), puis remplit l'angle `informations_manquantes` à l'état `a_verifier`. Les noms Megatron
+sont rapprochés automatiquement de ceux de chaque source (`resoudre`) : nom exact, alias de
+`data/noms_equipes.json` (seuls acceptés pour un nom qui y figure, ex. Paris FC / Paris SG), puis
+comparaison normalisée (accents, FC/SV/City...) parmi les équipes du même créneau, refusée si ambiguë.
+La méthode retenue est écrite dans le constat. Vérifié le 29/10/2026 : les 20 équipes de Premier League
+vers FPL et les 14 équipes Megatron présentes dans les blessures API-Football du jour.
+Un nom ambigu ou introuvable est signalé dans les informations manquantes ; `--nom-home/--nom-away` reste possible.
 Avec une seule famille de sources, la règle « trois sites et familles pour les absences » reste
 signalée. Aucune probabilité n'est modifiée.
 
