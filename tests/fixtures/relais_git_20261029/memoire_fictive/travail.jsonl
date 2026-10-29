@@ -1,0 +1,1 @@
+{"domain": "travail", "id": "dabcb4a8eb89", "key": "checkpoint", "meta": {}, "observed_at": null, "recorded_at": "2026-10-29T09:07:51.672264+00:00", "source": "megatron.checkpoint", "status": "verifie", "supersedes": null, "value": {"id": "ckpt-d30b4df771", "resume": "TEST FICTIF GIT : départ Codex ; prochain détenteur Claude"}}

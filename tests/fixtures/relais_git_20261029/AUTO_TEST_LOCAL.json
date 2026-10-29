@@ -1,0 +1,32 @@
+{
+  "type": "simulation_locale_codex_seulement",
+  "claude_reel_execute": false,
+  "retour_git_distant_execute": false,
+  "resultats": [
+    {
+      "etape_simulee_localement": "claude",
+      "code": 0,
+      "checks": {
+        "historique_initial_preserve": true,
+        "previsions_identiques": true,
+        "checkpoint_repris": true,
+        "doublon_refuse_sans_ecriture": true,
+        "checkpoint_transmis": true,
+        "trois_matchs_resolus": true,
+        "memoire_reelle_inchangee": true
+      }
+    },
+    {
+      "etape_simulee_localement": "retour",
+      "code": 0,
+      "checks": {
+        "historique_initial_preserve": true,
+        "previsions_identiques": true,
+        "checkpoint_repris": true,
+        "trois_matchs_resolus": true,
+        "memoire_reelle_inchangee": true
+      }
+    }
+  ],
+  "corruption_refusee": true
+}

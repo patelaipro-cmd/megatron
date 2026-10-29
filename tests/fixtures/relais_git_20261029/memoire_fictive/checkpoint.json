@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "commit": "308f653",
+  "date": "2026-10-29T09:07:51+00:00",
+  "resume": "TEST FICTIF GIT : départ Codex ; prochain détenteur Claude",
+  "prochaines_actions": [
+    "Reprendre via la branche Git, vérifier et ajouter les scores fictifs"
+  ],
+  "blocages": [],
+  "decisions_actives": [
+    {
+      "cle": "isolation",
+      "valeur": "Relais Git fictif uniquement ; ne jamais fusionner ces journaux dans memoire/",
+      "id": "e1e1582f008f"
+    }
+  ],
+  "contradictions": {},
+  "effectifs": {
+    "travail": 0,
+    "decisions": 1,
+    "football": 0,
+    "performances": 9,
+    "technique": 0
+  },
+  "id": "ckpt-d30b4df771"
+}
