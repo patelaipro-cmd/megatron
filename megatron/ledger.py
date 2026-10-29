@@ -13,10 +13,13 @@ import math
 from datetime import datetime
 
 from .store import MemoryStore, now_utc, parse_dt
+from .marges import MARGES, resoudre
+from .jeton import protege_ledger
 
 OUTCOMES = ("H", "D", "A")  # domicile, nul, extérieur
 # marché → issues ; 2+ et 3+ : au moins 2 (ou 3) buts dans le match (EXP-006)
-MARKETS = {"1X2": OUTCOMES, "2+": ("oui", "non"), "3+": ("oui", "non")}
+MARKETS = {"1X2": OUTCOMES, "2+": ("oui", "non"), "3+": ("oui", "non"),
+           **{key: ("oui", "non") for key in MARGES}}
 DOMAIN = "performances"
 EPS = 1e-15
 
@@ -26,9 +29,11 @@ class TemporalLeakError(ValueError):
 
 
 class Ledger:
-    def __init__(self, store: MemoryStore):
+    def __init__(self, store: MemoryStore, *, acces: str | None = None, jeton_id: str | None = None):
         self.store = store
+        self.acces, self.jeton_id = acces, jeton_id
 
+    @protege_ledger
     def predict(
         self,
         match_id: str,
@@ -64,6 +69,7 @@ class Ledger:
             source=source, status="verifie", recorded_at=rec_dt, supersede=False,
         )
 
+    @protege_ledger
     def result(self, match_id: str, outcome: str, *, source: str,
                observed_at: str | datetime | None = None, correction: bool = False,
                goals: tuple[int, int] | None = None):
@@ -113,12 +119,16 @@ class Ledger:
 
     def outcomes(self, market: str = "1X2") -> dict[str, str]:
         """match_id → issue du marché ; un marché de buts exige un score saisi."""
+        if market not in MARKETS:
+            raise ValueError(f"marché inconnu : {market!r}")
         out = {}
         for e in self.store.active(DOMAIN):
             if not e.key.startswith("result:"):
                 continue
             if market == "1X2":
                 out[e.value["match_id"]] = e.value["outcome"]
+            elif market in MARGES and e.value.get("score"):
+                out[e.value["match_id"]] = resoudre(e.value["score"], market)
             elif e.value.get("score"):
                 out[e.value["match_id"]] = "oui" if sum(e.value["score"]) >= int(market[0]) else "non"
         return out

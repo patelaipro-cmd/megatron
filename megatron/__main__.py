@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm, marches, suivi, synchro, systeme
+from . import backtest, checkpoint, data, contexte_favori, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -31,11 +31,30 @@ def main(argv: list[str] | None = None) -> int:
     pv.add_argument("--coup-envoi", required=True, help="date-heure avec fuseau, ex. 2026-11-01T20:00:00+00:00")
     pv.add_argument("--execution", choices=["stats", "multi-llm"], default="stats",
                     help="stats par défaut : Python seul, aucun appel LLM ; multi-llm doit être demandé explicitement")
+    pv.add_argument("--contexte-favori", help="JSON des angles morts ; aucune correction de probabilité")
+    am = sub.add_parser("angles-morts", help="grille qualitative du favori, sans écriture ni appel réseau")
+    am.add_argument("action", choices=["modele", "verifier"])
+    am.add_argument("--fichier", help="contexte JSON à vérifier")
+    am.add_argument("--match-id")
+    am.add_argument("--home")
+    am.add_argument("--away")
+    am.add_argument("--favori", choices=["H", "A"])
+    am.add_argument("--coup-envoi")
+    am.add_argument("--au", help="date-heure de vérification avec fuseau")
     rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
     rs.add_argument("match_id")
     rs.add_argument("score", help="H, D, A ou score 2-1")
     rs.add_argument("--source", required=True, help="provenance du résultat, ex. URL")
     rs.add_argument("--correction", action="store_true", help="remplace un résultat déjà saisi (historique gardé)")
+    for write_parser in (pv, rs):
+        write_parser.add_argument("--acces", choices=jeton.ACCES)
+        write_parser.add_argument("--jeton", dest="jeton_id", help="identifiant actif du jeton synchronisé")
+    jt = sub.add_parser("jeton", help="détenteur coopératif du registre")
+    jt.add_argument("action", choices=["statut", "initialiser", "transmettre"])
+    jt.add_argument("--acces", choices=jeton.ACCES)
+    jt.add_argument("--jeton", dest="jeton_id")
+    jt.add_argument("--a", dest="destinataire", choices=jeton.ACCES)
+    jt.add_argument("--source")
     sub.add_parser("bilan", help="scores par version, matchs communs, résultats à saisir")
     sub.add_parser("systeme", help="test système de bout en bout sur un match fictif (Fusion + registre)")
     b = sub.add_parser("backtest", help="protocole chronologique dev / validation / test")
@@ -70,6 +89,9 @@ def main(argv: list[str] | None = None) -> int:
     mr.add_argument("--test", nargs="+", required=True)
     mr.add_argument("--saisons-apprentissage", required=True)
     mr.add_argument("--sortie", help="dossier où écrire recalibration.json")
+    mg = sub.add_parser("marges", help="calcul brut expérimental des marges de victoire ; aucune écriture")
+    mg.add_argument("--xg-home", type=float, required=True)
+    mg.add_argument("--xg-away", type=float, required=True)
     sy = sub.add_parser("synchro", help="contrôles de la mémoire avant reprise (rien n'est écrit)")
     sy.add_argument("action", choices=["verifier"])
     sy.add_argument("--reference", help="branche de référence, ex. origin/main : signale un retard")
@@ -101,11 +123,28 @@ def main(argv: list[str] | None = None) -> int:
         try:
             if args.cmd == "prevoir":
                 out = suivi.prevoir(MemoryStore(args.memoire), json.loads(args.tache), args.coup_envoi,
-                                    agents=[StatsAgent()] if args.execution == "stats" else None)
+                                    agents=[StatsAgent()] if args.execution == "stats" else None,
+                                    acces=args.acces, jeton_id=args.jeton_id,
+                                    contexte_favori=contexte_favori.charger(args.contexte_favori) if args.contexte_favori else None)
             else:
                 out = suivi.resultat(MemoryStore(args.memoire), args.match_id, args.score, source=args.source,
-                                     correction=args.correction).value
+                                     correction=args.correction, acces=args.acces, jeton_id=args.jeton_id).value
         except ValueError as exc:  # anti-fuite, doublon, saisie invalide : rien n'est écrit
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
+    elif args.cmd == "jeton":
+        try:
+            if args.action == "statut" and not Path(args.memoire).exists():
+                out = {"protege": Path(args.memoire).resolve() == jeton.REAL_MEMORY.resolve(),
+                       "initialise": False, "id": None, "detenteur": None}
+            elif args.action == "statut":
+                out = jeton.statut(MemoryStore(args.memoire))
+            elif args.action == "initialiser":
+                out = asdict(jeton.initialiser(MemoryStore(args.memoire), args.acces, source=args.source))
+            else:
+                out = asdict(jeton.transmettre(MemoryStore(args.memoire), args.acces, args.jeton_id, args.destinataire, source=args.source))
+        except ValueError as exc:
             print(f"refus : {exc}")
             return 2
         print(json.dumps(out, indent=2, ensure_ascii=False))
@@ -141,6 +180,26 @@ def main(argv: list[str] | None = None) -> int:
         if args.sortie:
             (Path(args.sortie) / "recalibration.json").write_text(text + "\n", encoding="utf-8")
         print(text)
+    elif args.cmd == "angles-morts":
+        try:
+            if args.action == "modele":
+                out = contexte_favori.modele(args.match_id, args.home, args.away, args.favori, args.coup_envoi)
+            else:
+                if not args.fichier:
+                    raise ValueError("--fichier requis")
+                out = contexte_favori.verifier(contexte_favori.charger(args.fichier), at=args.au)
+        except (ValueError, TypeError, AttributeError) as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
+        return 0 if args.action == "modele" or out["ok"] else 1
+    elif args.cmd == "marges":
+        try:
+            out = marges.calculer(args.xg_home, args.xg_away)
+        except ValueError as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
     elif args.cmd == "synchro":
         rapport = synchro.verifier(args.memoire, args.reference)
         print(json.dumps(rapport, indent=2, ensure_ascii=False))
