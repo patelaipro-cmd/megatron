@@ -1,0 +1,59 @@
+{
+  "experience": "EXP-014-pilot-poisson-team-strength",
+  "statut": "EXECUTE_EXPLORATOIRE_NON_DEPLOYABLE",
+  "mode_execution": "Execution JavaScript sur donnees lues du depot par connexion GitHub; checkpoint non persiste dans GitHub",
+  "source": {
+    "repository": "patelaipro-cmd/megatron",
+    "path": "data/matches_top5_2020-2026.csv",
+    "blob_sha": "0bdc03ab503c4f8020e50e66513c74b84d51ad68",
+    "observations_fichier": 11053
+  },
+  "decoupage_chronologique": {
+    "entrainement_initial": {"avant": "2024-07-01", "n": 7451},
+    "validation": {"du": "2024-07-01", "avant": "2025-07-01", "n": 1751},
+    "test": {"du": "2025-07-01", "avant": "2026-07-01", "n": 1752},
+    "hors_experience": {"a_partir": "2026-07-01", "n": 99}
+  },
+  "modele": {
+    "type": "Poisson_independant_par_equipes",
+    "variables": "intercepts buts domicile/exterieur par ligue et forces attaque/defense d'equipes",
+    "epochs": 32,
+    "regularisations_testees": [0.002, 0.02, 0.1],
+    "regularisation_retenue": 0.002,
+    "apprentissage_final": "2020-07-01 a 2025-06-30, uniquement apres selection sur validation",
+    "equipes_dans_modele": 136,
+    "evenements": ["victoire simple du favori du modele", "victoire de ce favori par 2+", "victoire de ce favori par 3+"],
+    "baseline": "Poisson a moyennes de buts de la ligue, sur le meme favori choisi par le modele"
+  },
+  "validation": [
+    {"regularisation": 0.002, "logloss": [0.6610507034,0.5482012456,0.3499713860]},
+    {"regularisation": 0.02, "logloss": [0.6627657490,0.5491430093,0.3530515789]},
+    {"regularisation": 0.1, "logloss": [0.6643205737,0.5485782581,0.3529275678]}
+  ],
+  "test": {
+    "n": 1752,
+    "logloss_modele": [0.6573863452,0.5451805276,0.3442310198],
+    "logloss_reference": [0.7147385184,0.5871810234,0.3806678219],
+    "brier_modele": [0.2327287378,0.1809590402,0.0998851026],
+    "brier_reference": [0.2601977553,0.1966414239,0.1077648789],
+    "probabilites_moyennes_modele": [0.5154187960,0.2865142962,0.1326258210],
+    "frequences_observees": [0.4994292237,0.2602739726,0.1204337900],
+    "par_ligue_moyenne_des_3_logloss": {
+      "SP1": {"n": 380,"modele": 0.4882726590,"reference": 0.5340923357},
+      "F1": {"n": 306,"modele": 0.5157237006,"reference": 0.5588102206},
+      "E0": {"n": 380,"modele": 0.5181318099,"reference": 0.5410733153},
+      "D1": {"n": 306,"modele": 0.5457403497,"reference": 0.6250816674},
+      "I1": {"n": 380,"modele": 0.5160217676,"reference": 0.5573609351}
+    }
+  },
+  "limites": [
+    "Benchmark exploratoire non preregistre; tests 2025-26 deja vus par le projet et non vierges globalement",
+    "Comparaison a une baseline simple, pas au modele poisson-v5-cal deja present dans Megatron",
+    "Aucune mesure de gain sur paris ou cotes de marge, aucune conclusion de rentabilite",
+    "Calibration imparfaite sur les trois seuils (notamment 2+)",
+    "Aucun joueur, absence, coupe ou match depuis 2026-09-21 integre",
+    "Poids du modele non conserves dans GitHub; le script compagnon peut recreer un checkpoint dans Claude Code",
+    "Source locale complete indisponible dans le conteneur de cette session, donc pas encore de deuxieme execution independante sur clone"
+  ],
+  "actions_non_effectuees": ["Aucun commit GitHub", "Aucune fusion", "Aucune activation GO", "Aucun entrainement d'absences"]
+}
