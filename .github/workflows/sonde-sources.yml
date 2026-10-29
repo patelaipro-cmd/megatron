@@ -1,0 +1,33 @@
+name: sonde-sources
+# Sonde manuelle des API candidates ; résultats dans externe/sondes/ de la branche donnees-externes.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: collecte-externe
+  cancel-in-progress: false
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Préparer la branche de données
+        run: |
+          git config user.name "megatron-collecte"
+          git config user.email "megatron-collecte@users.noreply.github.com"
+          git fetch --depth 1 origin donnees-externes
+          git worktree add -B donnees-externes donnees FETCH_HEAD
+      - name: Sonder
+        run: python scripts/sonde_sources.py --sortie donnees/externe
+      - name: Publier
+        run: |
+          cd donnees
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Sonde sources $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin donnees-externes
