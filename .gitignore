@@ -4,3 +4,4 @@ __pycache__/
 .cache/
 .local/
 docs/experiences/EXP-008/dev/*/predictions.csv
+docs/experiences/EXP-011/dev/*/predictions.csv
