@@ -223,7 +223,7 @@ class StatsAgentHistoryTests(unittest.TestCase):
     def test_poisson_v4_from_history(self):
         r = StatsAgent().ask({"division": "F1", "home": "Paris SG", "away": "Le Havre", "date": "2026-08-01"})
         self.assertEqual(r.status, "ok", r.raison)
-        self.assertIn("poisson-v4", r.conclusion)
+        self.assertIn("poisson-v5", r.conclusion)
         self.assertGreater(r.probs["H"], 0.6)
 
     def test_invalid_date_is_error_not_invented(self):
@@ -318,7 +318,7 @@ class SystemeTests(unittest.TestCase):
                            LLMAgent("gemini", "MEGATRON_TEST_ABSENT_KEY")])
         self.assertTrue(rep["succes"], rep["verifications"])
         self.assertEqual(rep["fusion_mode"], "degrade")
-        self.assertEqual(rep["version"], 'fusion-v1:[["stats","poisson-v4"]]')
+        self.assertEqual(rep["version"], 'fusion-v1:[["stats","poisson-v5"]]')
 
     def test_fictional_match_full_mode_with_fake_llms(self):
         import os
@@ -339,7 +339,7 @@ class SystemeTests(unittest.TestCase):
         self.assertTrue(rep["succes"], rep["verifications"])
         self.assertEqual(rep["fusion_mode"], "complet")
         self.assertTrue(rep["version"].startswith('fusion-v1:[["deepseek",'), rep["version"])
-        self.assertIn('["stats","poisson-v4"]', rep["version"])
+        self.assertIn('["stats","poisson-v5"]', rep["version"])
         self.assertEqual(rep["avis_non_independants"], [["deepseek", "gemini"]])
 
 
@@ -415,7 +415,7 @@ class SuiviTests(TmpStore):
 
         before = self.kickoff - timedelta(hours=3)
         out = suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)
-        self.assertEqual(out["enregistre"], [suivi.fusion_version({"reponses": [AgentResponse(agent="stats", status="ok", version="poisson-v4")]}), "agent:stats:poisson-v4"])
+        self.assertEqual(out["enregistre"], [suivi.fusion_version({"reponses": [AgentResponse(agent="stats", status="ok", version="poisson-v5")]}), "agent:stats:poisson-v5"])
         self.assertIn("gemini", out["indisponibles"])
         with self.assertRaises(ValueError):  # pas de réécriture
             suivi.prevoir(self.store, self.task, self.kickoff, agents=self.agents, now=before)

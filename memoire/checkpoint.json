@@ -1,13 +1,14 @@
 {
   "version": "0.1.0",
-  "commit": "95ab0de",
-  "date": "2026-10-29T09:02:12+00:00",
-  "resume": "synchro verifier : contrôle de la mémoire avant reprise (checkpoint, doublons, contradictions, conflits git, fuite temporelle) ; relais fichier Codex → Claude → Codex validé sur scénario fictif.",
+  "commit": "b037c9a",
+  "date": "2026-10-29T10:41:29+00:00",
+  "resume": "EXP-008 : poisson-v5 promu (demi-vie 270, rétr. 2, w 0,35) ; test 2020-2026 −0,0054 log-loss [−0,0074 ; −0,0035] vs v4, 5/5 ligues ; retard bookmaker 0,0235 → 0,0181.",
   "prochaines_actions": [
-    "Réajuster demi-vie / rétrécissement / w sur 2008-2020 (plus de données) puis tester sur 2022-2026, protocole commité avant",
+    "Étendre la grille au-delà du bord (demi-vie 365-730, w 0,45-0,6) sur 2008-2016, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
-    "Valider la synchronisation via Git entre Codex et Claude (branche partagée, synchro verifier des deux côtés)"
+    "Valider la synchronisation via Git entre Codex et Claude (branche partagée, synchro verifier des deux côtés)",
+    "Réapprendre la recalibration 2+/3+ (EXP-007) sur poisson-v5"
   ],
   "blocages": [
     "Gemini laissé de côté (choix de Luloki) : Fusion en mode dégradé",
@@ -72,11 +73,6 @@
       "id": "2670dc7a7c5e"
     },
     {
-      "cle": "modele_reference",
-      "valeur": "poisson-v4 : poisson-v1 ajusté sur pseudo-buts 0,75·buts + 0,25·k·tirs cadrés (k = conversion de la ligue sur l'historique) ; stats-v0 en repli",
-      "id": "7fb0a0751cbd"
-    },
-    {
       "cle": "donnees",
       "valeur": "Agent Stats sur data.CURRENT : xgabora 2000-2026 + openfootball 2026/27 (après le 03/09/2026) ; extrait 2020-2026 figé pour reproduire EXP-001 à 004 (--donnees experiences)",
       "id": "a74722e2c810"
@@ -95,6 +91,11 @@
       "cle": "fenetre_prevision",
       "valeur": "prevoir n'enregistre que dans les 5 h précédant le coup d'envoi (contrôle avant et après les agents) ; hors fenêtre, rien n'est écrit",
       "id": "10284606daed"
+    },
+    {
+      "cle": "modele_reference",
+      "valeur": "poisson-v5 : Maher pondéré demi-vie 270 j, rétrécissement 2, pseudo-buts 0,65·buts + 0,35·k·tirs cadrés ; marchés 2+/3+ sur ajustement poisson-v4 séparé (poisson-v4-platt) ; stats-v0 en repli",
+      "id": "86591ae286b8"
     }
   ],
   "contradictions": {},
@@ -102,8 +103,8 @@
     "travail": 2,
     "decisions": 16,
     "football": 1,
-    "performances": 4,
+    "performances": 5,
     "technique": 5
   },
-  "id": "ckpt-9c5413202b"
+  "id": "ckpt-accfcece97"
 }
