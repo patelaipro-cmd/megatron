@@ -193,6 +193,24 @@ class TestFicheEtDecision(Base):
         self.assertEqual(ab["joueurs"], [])
         self.assertEqual(e["decision"]["decision"], "PASS")
 
+    def test_statuts_fpl_reels_dans_la_fiche(self):
+        # libellés écrits par scripts/collecte_externe.py (FPL_STATUT), news réelles du 29/10/2026
+        q = (self.ko - timedelta(hours=2)).isoformat()
+        def l(joueur, statut, news):
+            return {"collecte_le": q, "joueur_id": "1", "joueur": joueur, "equipe": self.home, "statut": statut,
+                    "chance_prochain_match": "", "chance_ce_match": "", "news": news, "news_ajoutee_le": ""}
+        ecrire(self.ext, "fpl", q, [l("Blesse", "blesse", "Knee injury - Unknown return date"),
+                                    l("Suspendu", "suspendu", "Suspended until 7 Nov"),
+                                    l("Doute", "incertain", "Ankle injury - 75% chance of playing"),
+                                    l("Parti", "indisponible", "Has joined Hamburger SV permanently"),
+                                    l("Libre", "indisponible", "Has departed the club as a free agent."),
+                                    l("Hors groupe", "indisponible", "Not included in squad.")])
+        e = self.evaluer(self.ko - timedelta(hours=1), dossier_externe=self.ext)
+        ab = e["fiche"]["rubriques"]["absences"]["equipes"][self.home]
+        self.assertEqual({j["joueur"]: j["statut"] for j in ab["joueurs"]},
+                         {"Blesse": "blesse", "Suspendu": "suspendu", "Doute": "incertain", "Hors groupe": "incertain"})
+        self.assertEqual(e["niveaux"], self.evaluer(self.ko - timedelta(hours=1))["niveaux"])  # aucune probabilité modifiée
+
 
 class TestControles(Base):
     def test_initial_t30_t5_conserve_et_detecte_les_changements(self):

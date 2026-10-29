@@ -1,0 +1,45 @@
+name: resultats
+# Collecte brute des résultats (ESPN, API-Football, football-data) dans externe/resultats/ de la branche
+# donnees-externes. Le recoupement et l'admission dans data/ se font hors réseau (scripts/verifier_resultats.py).
+on:
+  workflow_dispatch:
+    inputs:
+      depuis:
+        description: "Premier jour (AAAA-MM-JJ)"
+        default: "2026-08-01"
+  push:
+    branches: ["claude/collecte-resultats-**"]
+    paths: [".github/workflows/resultats.yml", "scripts/sources_resultats.py"]
+permissions:
+  contents: write
+concurrency:
+  group: collecte-externe
+  cancel-in-progress: false
+jobs:
+  resultats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Préparer la branche de données
+        run: |
+          git config user.name "megatron-collecte"
+          git config user.email "megatron-collecte@users.noreply.github.com"
+          git fetch --depth 1 origin donnees-externes
+          git worktree add -B donnees-externes donnees FETCH_HEAD
+      - name: Collecter
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          DEPUIS: ${{ inputs.depuis || '2026-08-01' }}
+        run: python scripts/sources_resultats.py --sortie donnees/externe/resultats --depuis "$DEPUIS"
+      - name: Publier
+        run: |
+          cd donnees
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Résultats bruts $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git push origin donnees-externes && exit 0; git pull -q --rebase origin donnees-externes; done
+          exit 1
