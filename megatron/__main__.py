@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
+from . import angles_morts, backtest, checkpoint, data, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -31,6 +31,16 @@ def main(argv: list[str] | None = None) -> int:
     pv.add_argument("--coup-envoi", required=True, help="date-heure avec fuseau, ex. 2026-11-01T20:00:00+00:00")
     pv.add_argument("--execution", choices=["stats", "multi-llm"], default="stats",
                     help="stats par défaut : Python seul, aucun appel LLM ; multi-llm doit être demandé explicitement")
+    pv.add_argument("--contexte-favori", help="JSON des angles morts ; aucune correction de probabilité")
+    am = sub.add_parser("angles-morts", help="grille qualitative du favori, sans écriture ni appel réseau")
+    am.add_argument("action", choices=["modele", "verifier"])
+    am.add_argument("--fichier", help="contexte JSON à vérifier")
+    am.add_argument("--match-id")
+    am.add_argument("--home")
+    am.add_argument("--away")
+    am.add_argument("--favori", choices=["H", "A"])
+    am.add_argument("--coup-envoi")
+    am.add_argument("--au", help="date-heure de vérification avec fuseau")
     rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
     rs.add_argument("match_id")
     rs.add_argument("score", help="H, D, A ou score 2-1")
@@ -114,7 +124,8 @@ def main(argv: list[str] | None = None) -> int:
             if args.cmd == "prevoir":
                 out = suivi.prevoir(MemoryStore(args.memoire), json.loads(args.tache), args.coup_envoi,
                                     agents=[StatsAgent()] if args.execution == "stats" else None,
-                                    acces=args.acces, jeton_id=args.jeton_id)
+                                    acces=args.acces, jeton_id=args.jeton_id,
+                                    contexte_favori=angles_morts.charger(args.contexte_favori) if args.contexte_favori else None)
             else:
                 out = suivi.resultat(MemoryStore(args.memoire), args.match_id, args.score, source=args.source,
                                      correction=args.correction, acces=args.acces, jeton_id=args.jeton_id).value
@@ -169,6 +180,19 @@ def main(argv: list[str] | None = None) -> int:
         if args.sortie:
             (Path(args.sortie) / "recalibration.json").write_text(text + "\n", encoding="utf-8")
         print(text)
+    elif args.cmd == "angles-morts":
+        try:
+            if args.action == "modele":
+                out = angles_morts.modele(args.match_id, args.home, args.away, args.favori, args.coup_envoi)
+            else:
+                if not args.fichier:
+                    raise ValueError("--fichier requis")
+                out = angles_morts.verifier(angles_morts.charger(args.fichier), at=args.au)
+        except (ValueError, TypeError, AttributeError) as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
+        return 0 if args.action == "modele" or out["ok"] else 1
     elif args.cmd == "marges":
         try:
             out = marges.calculer(args.xg_home, args.xg_away)

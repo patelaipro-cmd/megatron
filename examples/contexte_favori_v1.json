@@ -1,0 +1,218 @@
+{
+  "version": "angles-morts-favori-v1",
+  "match_id": "FICTIF:EXEMPLE",
+  "home": "Alpha FC",
+  "away": "Beta FC",
+  "favori": "H",
+  "kickoff": "2099-01-01T12:00:00Z",
+  "angles": [
+    {
+      "id": "favori_surevalue",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "adversaire_en_progression",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "adaptation_h2h",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "style_genant",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "dependance_joueurs",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "fragilite_defensive",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "rotation_fatigue",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "enjeu_asymetrique",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "terrain_deplacement",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "coups_pied_arretes",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "construction_ecart",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "gestion_avantage",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    },
+    {
+      "id": "informations_manquantes",
+      "etat": "inconnu",
+      "constat": "",
+      "mecanisme": "",
+      "effets": [],
+      "sources": [],
+      "categorie_preuve": "contexte",
+      "informations_manquantes": [
+        "non renseigné"
+      ]
+    }
+  ],
+  "comparateur_h2h": {
+    "ancien": {
+      "date": null,
+      "score": null,
+      "home": null,
+      "away": null,
+      "axes": {
+        "adaptation_adversaire": "",
+        "construction_ecart": "",
+        "dependance_joueurs": "",
+        "contexte_match": ""
+      }
+    },
+    "dernier": {
+      "date": null,
+      "score": null,
+      "home": null,
+      "away": null,
+      "axes": {
+        "adaptation_adversaire": "",
+        "construction_ecart": "",
+        "dependance_joueurs": "",
+        "contexte_match": ""
+      }
+    },
+    "actuel": {
+      "date": null,
+      "score": null,
+      "home": "Alpha FC",
+      "away": "Beta FC",
+      "axes": {
+        "adaptation_adversaire": "",
+        "construction_ecart": "",
+        "dependance_joueurs": "",
+        "contexte_match": ""
+      }
+    }
+  },
+  "scenarios": {
+    "defaite": {
+      "hypothese": "",
+      "angles": []
+    },
+    "nul": {
+      "hypothese": "",
+      "angles": []
+    },
+    "victoire_courte": {
+      "hypothese": "",
+      "angles": []
+    }
+  }
+}

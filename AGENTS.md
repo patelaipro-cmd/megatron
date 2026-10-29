@@ -36,3 +36,10 @@ Attention : les anciennes clés 2+/3+ signifient total de buts. Les marchés
 H_MARGE_2PLUS / H_MARGE_3PLUS et A_MARGE_2PLUS / A_MARGE_3PLUS signifient
 marge de victoire. `marges` est exploratoire et non calibré, sans écriture ;
 aucune activation automatique de ces marges dans prevoir. Voir docs/marges-victoire.md.
+
+Pour une analyse sportive du favori, documenter les angles morts et les trois
+contre-scénarios (défaite, nul, victoire courte), ainsi que le comparateur H2H
+ancien/dernier/actuel à quatre axes. Utiliser `angles-morts modele|verifier` et
+`prevoir --contexte-favori` ; ne pas présenter un contexte INCOMPLET ou NON_FOURNI
+comme une analyse complète. Les sources restent déclaratives et aucune
+probabilité n'est corrigée automatiquement. Voir docs/angles-morts-favori.md.

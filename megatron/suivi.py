@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 import json
 
 from .agents import Agent, fuse
+from . import angles_morts
 from .jeton import protege_suivi
 from .ledger import DOMAIN, MARKETS, OUTCOMES, Ledger, pred_key, score
 from .store import MemoryStore, now_utc, parse_dt
@@ -36,12 +37,22 @@ def fusion_version(result: dict) -> str:
 @protege_suivi
 def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: list[Agent] | None = None,
             source: str = "megatron prevoir", now: datetime | None = None,
-            acces: str | None = None, jeton_id: str | None = None) -> dict:
+            acces: str | None = None, jeton_id: str | None = None, contexte_favori: dict | None = None) -> dict:
     """Fusion puis enregistrement, seulement dans les 5 h avant le coup d'envoi ; hors fenêtre, rien n'est écrit."""
     kickoff_dt = parse_dt(kickoff)
     fixed_now = now  # injection temporelle réservée aux simulations/tests
     _check_window(task.get("match_id"), parse_dt(now or now_utc()), kickoff_dt, "passé")
     match_id = task["match_id"]
+    contexte_rapport = None
+    if contexte_favori is not None:
+        contexte_rapport = angles_morts.verifier(contexte_favori, at=parse_dt(now or now_utc()))
+        if not contexte_rapport["ok"]:
+            raise ValueError("contexte favori invalide : " + "; ".join(contexte_rapport["erreurs"]))
+        if contexte_favori["match_id"] != match_id or parse_dt(contexte_favori["kickoff"]) != kickoff_dt:
+            raise ValueError("contexte favori d'un autre match ou coup d'envoi")
+        for field in ("home", "away"):
+            if task.get(field) is not None and task[field] != contexte_favori[field]:
+                raise ValueError(f"contexte favori : équipe {field} différente")
     result = fuse(task, agents)
     now = parse_dt(fixed_now or now_utc())
     _check_window(match_id, now, kickoff_dt, "franchi pendant l'analyse")
@@ -70,6 +81,7 @@ def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: 
                        recorded_at=now, market=market)
         written_buts.append(f"{market}:{version}")
     store.record(DOMAIN, f"fusion:{match_id}", {
+        "contexte_favori": {"donnees": contexte_favori, "verification": contexte_rapport} if contexte_favori is not None else None,
         "match_id": match_id, "mode": result["mode"], "agents_manquants": result["agents_manquants"],
         "indisponibles": result["indisponibles"], "desaccord_max": result["desaccord_max"],
         "a_verifier": result["a_verifier"], "avis_non_independants": result["avis_non_independants"],
@@ -78,7 +90,8 @@ def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: 
     }, source=source, status="verifie", recorded_at=now, supersede=False)
     return {"match_id": match_id, "enregistre": written, "enregistre_buts": written_buts, "mode": result["mode"],
             "probs": {o: round(result["probs"][o], 4) for o in OUTCOMES},
-            "a_verifier": result["a_verifier"], "indisponibles": result["indisponibles"]}
+            "a_verifier": result["a_verifier"], "indisponibles": result["indisponibles"],
+            "contexte_favori_statut": contexte_rapport["statut"] if contexte_rapport else "NON_FOURNI"}
 
 
 def outcome_of(score_or_outcome: str) -> str:
