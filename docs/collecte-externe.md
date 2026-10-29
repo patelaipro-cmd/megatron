@@ -43,7 +43,7 @@ python scripts/lire_externe.py --dossier ../megatron-externe/externe joueurs --e
 
 ## Limites connues (à lire avant usage)
 
-- **Non testé contre les vrais sites** : depuis l'environnement Claude, tous ces hôtes sont bloqués. Le premier run Actions est la première preuve ; lire `manifeste.json`.
+- **Premier run réel (29/10/2026 15:31 UTC, déclenchement manuel)** : FPL OK (199 joueurs non disponibles ou avec news), Understat OK (402 matchs, 5 ligues), ClubElo 502 (serveur ; 3 essais ajoutés ensuite), **Sofascore 403** sur les IP GitHub malgré curl_cffi. Contourner davantage la protection anti-bot de Sofascore n'est pas fait : compos et absences hors Premier League restent sans source automatique tant qu'une API autorisée (ex. API-Football avec clé) n'est pas branchée.
 - **Identifiants Sofascore** de `data/ligues_collecte.json` donnés de mémoire : comparer avec `tournois_vus.csv` après le premier run complet et corriger.
 - **CGU** : Sofascore ne licencie pas son API (selon des sources secondaires ; CGU non lisibles depuis l'environnement). Le dépôt est **public** : les données collectées sont donc republiées. Risque accepté par Luloki le 29/10/2026 ; rendre le dépôt privé le réduirait (quota Actions alors limité à 2 000 min/mois sur le plan Free).
 - Sofascore et Understat peuvent bloquer les IP de GitHub (Cloudflare) : une source en échec n'arrête pas les autres ; l'erreur est commitée dans le manifeste.
