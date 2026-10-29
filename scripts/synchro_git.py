@@ -59,7 +59,7 @@ def _verifier(memoire: Path, reference: str | None = None) -> dict:
 
 
 def etape_claude() -> dict:
-    from megatron import checkpoint, suivi
+    from megatron import checkpoint, jeton, suivi
     from megatron.agents import StatsAgent
     from megatron.store import MemoryStore, parse_dt
     if MEMOIRE.exists():
@@ -68,7 +68,8 @@ def etape_claude() -> dict:
     ko = parse_dt(KO)
     for t in TACHES:
         suivi.prevoir(st, t, ko, agents=[StatsAgent()], source="synchro-git:claude", now=ko - timedelta(hours=3))
-    st.record("travail", "jeton_registre", "codex", source="synchro-git:claude", status="verifie")
+    tok = jeton.initialiser(st, "claude", source="synchro-git:claude")
+    jeton.transmettre(st, "claude", tok.id, "codex", source="synchro-git:claude")
     ck = checkpoint.save(st, resume="TEST SYNCHRO GIT : départ Claude ; jeton à Codex",
                          prochaines_actions=["Codex : reprendre, saisir les 3 scores"])
     MANIFESTE.write_text(json.dumps({"commit_depart": _git("rev-parse", "HEAD"), "checkpoint": ck["id"],
@@ -88,7 +89,7 @@ def _reprise_communes(st, manifeste: dict, reference: str | None) -> dict:
 
 
 def etape_codex(reference: str | None) -> dict:
-    from megatron import checkpoint, suivi
+    from megatron import checkpoint, jeton, suivi
     from megatron.agents import StatsAgent
     from megatron.store import MemoryStore, parse_dt
     manifeste = json.loads(MANIFESTE.read_text(encoding="utf-8"))
@@ -96,7 +97,8 @@ def etape_codex(reference: str | None) -> dict:
     checks, sy = _reprise_communes(st, manifeste, reference)
     ck = checkpoint.load(st) or {}
     checks["checkpoint_depart_repris"] = ck.get("id") == manifeste["checkpoint"]
-    checks["jeton_pour_codex"] = [e.value for e in st.active("travail", "jeton_registre")] == ["codex"]
+    tok = jeton.statut(st)
+    checks["jeton_pour_codex"] = tok["detenteur"] == "codex"
     checks["commit_depart_ancetre"] = subprocess.run(
         ["git", "-C", str(ROOT), "merge-base", "--is-ancestor", manifeste["commit_depart"], "HEAD"]).returncode == 0
     if not all(checks.values()):
@@ -105,13 +107,17 @@ def etape_codex(reference: str | None) -> dict:
     perf = MEMOIRE / "performances.jsonl"
     before = perf.read_bytes()
     try:
-        suivi.prevoir(st, TACHES[0], ko, agents=[StatsAgent()], source="synchro-git:codex", now=ko - timedelta(hours=2))
+        suivi.prevoir(st, TACHES[0], ko, agents=[StatsAgent()], source="synchro-git:codex", now=ko - timedelta(hours=2),
+                      acces="codex", jeton_id=tok["id"])
+        checks["doublon_refuse_sans_ecriture"] = False
+    except jeton.JetonError:
         checks["doublon_refuse_sans_ecriture"] = False
     except ValueError:
         checks["doublon_refuse_sans_ecriture"] = perf.read_bytes() == before
     for t, s in zip(TACHES, SCORES):
-        suivi.resultat(st, t["match_id"], s, source="synchro-git:codex", observed_at=ko + timedelta(hours=2))
-    st.record("travail", "jeton_registre", "claude", source="synchro-git:codex", status="verifie")
+        suivi.resultat(st, t["match_id"], s, source="synchro-git:codex", observed_at=ko + timedelta(hours=2),
+                       acces="codex", jeton_id=tok["id"])
+    jeton.transmettre(st, "codex", tok["id"], "claude", source="synchro-git:codex")
     new = checkpoint.save(st, resume="TEST SYNCHRO GIT : scores saisis par Codex ; jeton à Claude",
                           prochaines_actions=["Claude : fusionner la branche Codex et vérifier"])
     checks["previsions_identiques"] = _preds(st) == manifeste["previsions"]
@@ -122,7 +128,7 @@ def etape_codex(reference: str | None) -> dict:
 
 
 def etape_retour(reference: str | None) -> dict:
-    from megatron import checkpoint, suivi
+    from megatron import checkpoint, jeton, suivi
     from megatron.store import MemoryStore, parse_dt
     manifeste = json.loads(MANIFESTE.read_text(encoding="utf-8"))
     st = MemoryStore(MEMOIRE)
@@ -130,7 +136,7 @@ def etape_retour(reference: str | None) -> dict:
     ck = checkpoint.load(st) or {}
     checks["checkpoint_codex_repris"] = ck.get("id") != manifeste["checkpoint"] and "Codex" in ck.get("resume", "")
     checks["checkpoint_commit_ancetre"] = bool(sy["git"].get("checkpoint_ancetre_de_head"))
-    checks["jeton_pour_claude"] = [e.value for e in st.active("travail", "jeton_registre")] == ["claude"]
+    checks["jeton_pour_claude"] = jeton.statut(st)["detenteur"] == "claude"
     b = suivi.bilan(st, now=parse_dt(KO) + timedelta(days=1))
     checks["trois_matchs_resolus"] = b["communs"]["n"] == 3 and not b["resultats_a_saisir"]
     sources = {e.source for e in st.active("performances") if e.key.startswith("result:")}
