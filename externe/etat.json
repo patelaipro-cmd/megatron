@@ -18,16 +18,17 @@
   "compos_faites": [
    "401874969",
    "401841288",
-   "401841292"
+   "401841292",
+   "401841290"
   ],
   "jour": "2026-10-29"
  },
  "espn/compos": {
-  "empreinte": "badd84154936aa38a95c8df988f5afc1053134aa6ef31a41b692ae2d43b097f8",
-  "fichier": "espn/compos/2026-10-29/2259.csv"
+  "empreinte": "df93c971be0de655a4c2946b2181f75c3242bd0d837e035dc712542cd7329ad5",
+  "fichier": "espn/compos/2026-10-29/2355.csv"
  },
  "fpl": {
-  "empreinte": "a0364f48e5b74bcea924dbcebd500751aeec62ac66cd0d770bafdeeeaeec0c11",
-  "fichier": "fpl/2026-10-29/2201.csv"
+  "empreinte": "6a7b8ab59b40d6f75bfb7967e1c0fe146085466540fe57d1df33504516fcd332",
+  "fichier": "fpl/2026-10-29/2355.csv"
  }
 }
