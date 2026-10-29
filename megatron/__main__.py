@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm, suivi, systeme
+from . import backtest, checkpoint, data, inventory, llm, marches, suivi, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -58,6 +58,13 @@ def main(argv: list[str] | None = None) -> int:
     bs.add_argument("--saisons", default="2024/25,2025/26")
     bs.add_argument("--a", default="candidat")
     bs.add_argument("--b", default="reference")
+    mb = sub.add_parser("marches", help="backtest des marchés 2+ et 3+ buts (EXP-006), poisson-v4 figé")
+    mb.add_argument("--division", default="F1")
+    mb.add_argument("--saisons", required=True, help="ex. 2008/09,2009/10")
+    mb.add_argument("--sortie", required=True, help="dossier où écrire predictions_buts.csv et resultats.json")
+    mbb = sub.add_parser("marches-bilan", help="critères M1-M3 d'EXP-006 sur plusieurs predictions_buts.csv")
+    mbb.add_argument("fichiers", nargs="+")
+    mbb.add_argument("--saisons", required=True)
     args = parser.parse_args(argv)
 
     if args.cmd == "reprise":
@@ -102,6 +109,21 @@ def main(argv: list[str] | None = None) -> int:
         return 0 if rapport["succes"] else 1
     elif args.cmd == "backtest":
         print(json.dumps(run_backtest(args), indent=2, ensure_ascii=False))
+    elif args.cmd == "marches":
+        rows = marches.predict_seasons(data.load(data.CURRENT, divisions={args.division}), args.division,
+                                       set(args.saisons.split(",")), marches.load_cotes())
+        folder = Path(args.sortie)
+        folder.mkdir(parents=True, exist_ok=True)
+        marches.write_predictions(rows, folder / "predictions_buts.csv")
+        out = {"division": args.division, "saisons": args.saisons, "modele": marches.V4,
+               "bilan": marches.bilan(marches.read_predictions(folder / "predictions_buts.csv"))}
+        (folder / "resultats.json").write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(json.dumps({m: {k: v[k] for k in ("M1_v4_moins_frequences", "M3_ecart_max")}
+                          for m, v in out["bilan"].items()}, ensure_ascii=False))
+    elif args.cmd == "marches-bilan":
+        keep = set(args.saisons.split(","))
+        rows = [r for f in args.fichiers for r in marches.read_predictions(Path(f)) if r["saison"] in keep]
+        print(json.dumps(marches.bilan(rows), indent=2, ensure_ascii=False))
     elif args.cmd == "bootstrap":
         keep = set(args.saisons.split(","))
         rows = [r for f in args.fichiers for r in backtest.read_predictions(Path(f)) if r["saison"] in keep]

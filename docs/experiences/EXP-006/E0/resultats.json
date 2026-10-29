@@ -1,0 +1,275 @@
+{
+  "division": "E0",
+  "saisons": "2008/09,2009/10,2010/11,2011/12,2012/13,2013/14,2014/15,2015/16,2016/17,2017/18,2018/19,2019/20,2022/23,2023/24,2024/25,2025/26",
+  "modele": {
+    "half_life": 90.0,
+    "shrink": 3.0,
+    "proxy": "cadres",
+    "proxy_weight": 0.25
+  },
+  "bilan": {
+    "2+": {
+      "scores": {
+        "poisson-v4": {
+          "n": 6014,
+          "log_loss": 0.539331,
+          "brier": 0.177565,
+          "calibration": [
+            {
+              "tranche": "0.4-0.5",
+              "n": 6,
+              "p_moyenne": 0.4839,
+              "frequence_observee": 0.8333,
+              "ecart": 0.3495
+            },
+            {
+              "tranche": "0.5-0.6",
+              "n": 167,
+              "p_moyenne": 0.5701,
+              "frequence_observee": 0.6647,
+              "ecart": 0.0946
+            },
+            {
+              "tranche": "0.6-0.7",
+              "n": 1188,
+              "p_moyenne": 0.6622,
+              "frequence_observee": 0.7071,
+              "ecart": 0.0449
+            },
+            {
+              "tranche": "0.7-0.8",
+              "n": 2909,
+              "p_moyenne": 0.7522,
+              "frequence_observee": 0.7717,
+              "ecart": 0.0195
+            },
+            {
+              "tranche": "0.8-0.9",
+              "n": 1682,
+              "p_moyenne": 0.8356,
+              "frequence_observee": 0.8068,
+              "ecart": -0.0288
+            },
+            {
+              "tranche": "0.9-1.0",
+              "n": 62,
+              "p_moyenne": 0.9161,
+              "frequence_observee": 0.9516,
+              "ecart": 0.0355
+            }
+          ]
+        },
+        "frequences": {
+          "n": 6014,
+          "log_loss": 0.541372,
+          "brier": 0.178083,
+          "calibration": [
+            {
+              "tranche": "0.7-0.8",
+              "n": 5155,
+              "p_moyenne": 0.7521,
+              "frequence_observee": 0.7626,
+              "ecart": 0.0105
+            },
+            {
+              "tranche": "0.8-0.9",
+              "n": 859,
+              "p_moyenne": 0.8221,
+              "frequence_observee": 0.7986,
+              "ecart": -0.0235
+            }
+          ]
+        },
+        "bookmaker": {
+          "n": 0,
+          "log_loss": null,
+          "brier": null,
+          "calibration": []
+        }
+      },
+      "M1_v4_moins_frequences": {
+        "n": 6014,
+        "ecart": -0.00204,
+        "ic95": [
+          -0.00627,
+          0.00236
+        ]
+      },
+      "M1": false,
+      "M2_par_ligue": {
+        "E0": {
+          "n": 6014,
+          "ecart": -0.00204,
+          "ic95": [
+            -0.00627,
+            0.00236
+          ]
+        }
+      },
+      "M2": false,
+      "M3_ecart_max": 0.0449,
+      "M3": false,
+      "info_v4_moins_bookmaker": null
+    },
+    "3+": {
+      "scores": {
+        "poisson-v4": {
+          "n": 6014,
+          "log_loss": 0.690976,
+          "brier": 0.248793,
+          "calibration": [
+            {
+              "tranche": "0.2-0.3",
+              "n": 72,
+              "p_moyenne": 0.2717,
+              "frequence_observee": 0.4306,
+              "ecart": 0.1588
+            },
+            {
+              "tranche": "0.3-0.4",
+              "n": 665,
+              "p_moyenne": 0.3615,
+              "frequence_observee": 0.4331,
+              "ecart": 0.0716
+            },
+            {
+              "tranche": "0.4-0.5",
+              "n": 1887,
+              "p_moyenne": 0.4553,
+              "frequence_observee": 0.5093,
+              "ecart": 0.054
+            },
+            {
+              "tranche": "0.5-0.6",
+              "n": 2098,
+              "p_moyenne": 0.5477,
+              "frequence_observee": 0.5601,
+              "ecart": 0.0123
+            },
+            {
+              "tranche": "0.6-0.7",
+              "n": 1080,
+              "p_moyenne": 0.6392,
+              "frequence_observee": 0.5741,
+              "ecart": -0.0651
+            },
+            {
+              "tranche": "0.7-0.8",
+              "n": 199,
+              "p_moyenne": 0.7301,
+              "frequence_observee": 0.6734,
+              "ecart": -0.0568
+            },
+            {
+              "tranche": "0.8-0.9",
+              "n": 13,
+              "p_moyenne": 0.8154,
+              "frequence_observee": 0.9231,
+              "ecart": 0.1077
+            }
+          ]
+        },
+        "frequences": {
+          "n": 6014,
+          "log_loss": 0.6908,
+          "brier": 0.248823,
+          "calibration": [
+            {
+              "tranche": "0.4-0.5",
+              "n": 942,
+              "p_moyenne": 0.4821,
+              "frequence_observee": 0.5085,
+              "ecart": 0.0264
+            },
+            {
+              "tranche": "0.5-0.6",
+              "n": 4881,
+              "p_moyenne": 0.5369,
+              "frequence_observee": 0.5417,
+              "ecart": 0.0048
+            },
+            {
+              "tranche": "0.6-0.7",
+              "n": 191,
+              "p_moyenne": 0.6112,
+              "frequence_observee": 0.5131,
+              "ecart": -0.0981
+            }
+          ]
+        },
+        "bookmaker": {
+          "n": 6014,
+          "log_loss": 0.678801,
+          "brier": 0.242945,
+          "calibration": [
+            {
+              "tranche": "0.3-0.4",
+              "n": 123,
+              "p_moyenne": 0.3814,
+              "frequence_observee": 0.3171,
+              "ecart": -0.0643
+            },
+            {
+              "tranche": "0.4-0.5",
+              "n": 2314,
+              "p_moyenne": 0.459,
+              "frequence_observee": 0.4736,
+              "ecart": 0.0146
+            },
+            {
+              "tranche": "0.5-0.6",
+              "n": 2544,
+              "p_moyenne": 0.545,
+              "frequence_observee": 0.5578,
+              "ecart": 0.0128
+            },
+            {
+              "tranche": "0.6-0.7",
+              "n": 907,
+              "p_moyenne": 0.6361,
+              "frequence_observee": 0.6384,
+              "ecart": 0.0022
+            },
+            {
+              "tranche": "0.7-0.8",
+              "n": 126,
+              "p_moyenne": 0.7274,
+              "frequence_observee": 0.6984,
+              "ecart": -0.029
+            }
+          ]
+        }
+      },
+      "M1_v4_moins_frequences": {
+        "n": 6014,
+        "ecart": 0.00018,
+        "ic95": [
+          -0.00476,
+          0.00524
+        ]
+      },
+      "M1": false,
+      "M2_par_ligue": {
+        "E0": {
+          "n": 6014,
+          "ecart": 0.00018,
+          "ic95": [
+            -0.00476,
+            0.00524
+          ]
+        }
+      },
+      "M2": false,
+      "M3_ecart_max": 0.0716,
+      "M3": false,
+      "info_v4_moins_bookmaker": {
+        "n": 6014,
+        "ecart": 0.01218,
+        "ic95": [
+          0.00876,
+          0.01575
+        ]
+      }
+    }
+  }
+}

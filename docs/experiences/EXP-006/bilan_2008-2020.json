@@ -1,0 +1,371 @@
+{
+  "2+": {
+    "scores": {
+      "poisson-v4": {
+        "n": 21590,
+        "log_loss": 0.558349,
+        "brier": 0.186251,
+        "calibration": [
+          {
+            "tranche": "0.3-0.4",
+            "n": 3,
+            "p_moyenne": 0.393,
+            "frequence_observee": 0.6667,
+            "ecart": 0.2736
+          },
+          {
+            "tranche": "0.4-0.5",
+            "n": 91,
+            "p_moyenne": 0.473,
+            "frequence_observee": 0.7253,
+            "ecart": 0.2523
+          },
+          {
+            "tranche": "0.5-0.6",
+            "n": 1198,
+            "p_moyenne": 0.5665,
+            "frequence_observee": 0.6753,
+            "ecart": 0.1088
+          },
+          {
+            "tranche": "0.6-0.7",
+            "n": 5467,
+            "p_moyenne": 0.6595,
+            "frequence_observee": 0.7042,
+            "ecart": 0.0447
+          },
+          {
+            "tranche": "0.7-0.8",
+            "n": 9739,
+            "p_moyenne": 0.7499,
+            "frequence_observee": 0.755,
+            "ecart": 0.0051
+          },
+          {
+            "tranche": "0.8-0.9",
+            "n": 4808,
+            "p_moyenne": 0.8367,
+            "frequence_observee": 0.8084,
+            "ecart": -0.0283
+          },
+          {
+            "tranche": "0.9-1.0",
+            "n": 284,
+            "p_moyenne": 0.9181,
+            "frequence_observee": 0.919,
+            "ecart": 0.0009
+          }
+        ]
+      },
+      "frequences": {
+        "n": 21590,
+        "log_loss": 0.559371,
+        "brier": 0.186265,
+        "calibration": [
+          {
+            "tranche": "0.6-0.7",
+            "n": 908,
+            "p_moyenne": 0.6814,
+            "frequence_observee": 0.6949,
+            "ecart": 0.0136
+          },
+          {
+            "tranche": "0.7-0.8",
+            "n": 19661,
+            "p_moyenne": 0.7474,
+            "frequence_observee": 0.7511,
+            "ecart": 0.0037
+          },
+          {
+            "tranche": "0.8-0.9",
+            "n": 1021,
+            "p_moyenne": 0.8202,
+            "frequence_observee": 0.8119,
+            "ecart": -0.0082
+          }
+        ]
+      },
+      "bookmaker": {
+        "n": 0,
+        "log_loss": null,
+        "brier": null,
+        "calibration": []
+      }
+    },
+    "M1_v4_moins_frequences": {
+      "n": 21590,
+      "ecart": -0.00102,
+      "ic95": [
+        -0.00344,
+        0.00135
+      ]
+    },
+    "M1": false,
+    "M2_par_ligue": {
+      "D1": {
+        "n": 3672,
+        "ecart": 0.00093,
+        "ic95": [
+          -0.00433,
+          0.00593
+        ]
+      },
+      "E0": {
+        "n": 4494,
+        "ecart": -0.00228,
+        "ic95": [
+          -0.00727,
+          0.00274
+        ]
+      },
+      "F1": {
+        "n": 4459,
+        "ecart": -0.00081,
+        "ic95": [
+          -0.00586,
+          0.00427
+        ]
+      },
+      "I1": {
+        "n": 4462,
+        "ecart": 0.00347,
+        "ic95": [
+          -0.00131,
+          0.00826
+        ]
+      },
+      "SP1": {
+        "n": 4503,
+        "ecart": -0.00602,
+        "ic95": [
+          -0.01191,
+          -0.00011
+        ]
+      }
+    },
+    "M2": false,
+    "M3_ecart_max": 0.1088,
+    "M3": false,
+    "info_v4_moins_bookmaker": null
+  },
+  "3+": {
+    "scores": {
+      "poisson-v4": {
+        "n": 21590,
+        "log_loss": 0.687396,
+        "brier": 0.247044,
+        "calibration": [
+          {
+            "tranche": "0.1-0.2",
+            "n": 19,
+            "p_moyenne": 0.1782,
+            "frequence_observee": 0.3684,
+            "ecart": 0.1902
+          },
+          {
+            "tranche": "0.2-0.3",
+            "n": 631,
+            "p_moyenne": 0.2694,
+            "frequence_observee": 0.3819,
+            "ecart": 0.1125
+          },
+          {
+            "tranche": "0.3-0.4",
+            "n": 3506,
+            "p_moyenne": 0.3592,
+            "frequence_observee": 0.433,
+            "ecart": 0.0738
+          },
+          {
+            "tranche": "0.4-0.5",
+            "n": 7147,
+            "p_moyenne": 0.4527,
+            "frequence_observee": 0.4806,
+            "ecart": 0.028
+          },
+          {
+            "tranche": "0.5-0.6",
+            "n": 6523,
+            "p_moyenne": 0.5465,
+            "frequence_observee": 0.531,
+            "ecart": -0.0154
+          },
+          {
+            "tranche": "0.6-0.7",
+            "n": 2984,
+            "p_moyenne": 0.6409,
+            "frequence_observee": 0.5972,
+            "ecart": -0.0437
+          },
+          {
+            "tranche": "0.7-0.8",
+            "n": 709,
+            "p_moyenne": 0.7336,
+            "frequence_observee": 0.7165,
+            "ecart": -0.0171
+          },
+          {
+            "tranche": "0.8-0.9",
+            "n": 69,
+            "p_moyenne": 0.8256,
+            "frequence_observee": 0.8116,
+            "ecart": -0.014
+          },
+          {
+            "tranche": "0.9-1.0",
+            "n": 2,
+            "p_moyenne": 0.9133,
+            "frequence_observee": 1.0,
+            "ecart": 0.0867
+          }
+        ]
+      },
+      "frequences": {
+        "n": 21590,
+        "log_loss": 0.690382,
+        "brier": 0.24862,
+        "calibration": [
+          {
+            "tranche": "0.4-0.5",
+            "n": 9055,
+            "p_moyenne": 0.4619,
+            "frequence_observee": 0.4731,
+            "ecart": 0.0112
+          },
+          {
+            "tranche": "0.5-0.6",
+            "n": 12283,
+            "p_moyenne": 0.5342,
+            "frequence_observee": 0.535,
+            "ecart": 0.0007
+          },
+          {
+            "tranche": "0.6-0.7",
+            "n": 252,
+            "p_moyenne": 0.6219,
+            "frequence_observee": 0.627,
+            "ecart": 0.0051
+          }
+        ]
+      },
+      "bookmaker": {
+        "n": 21588,
+        "log_loss": 0.675587,
+        "brier": 0.241424,
+        "calibration": [
+          {
+            "tranche": "0.2-0.3",
+            "n": 1,
+            "p_moyenne": 0.2993,
+            "frequence_observee": 0.0,
+            "ecart": -0.2993
+          },
+          {
+            "tranche": "0.3-0.4",
+            "n": 1489,
+            "p_moyenne": 0.3803,
+            "frequence_observee": 0.3674,
+            "ecart": -0.0129
+          },
+          {
+            "tranche": "0.4-0.5",
+            "n": 9963,
+            "p_moyenne": 0.4514,
+            "frequence_observee": 0.4544,
+            "ecart": 0.003
+          },
+          {
+            "tranche": "0.5-0.6",
+            "n": 7208,
+            "p_moyenne": 0.5436,
+            "frequence_observee": 0.547,
+            "ecart": 0.0034
+          },
+          {
+            "tranche": "0.6-0.7",
+            "n": 2366,
+            "p_moyenne": 0.637,
+            "frequence_observee": 0.6572,
+            "ecart": 0.0203
+          },
+          {
+            "tranche": "0.7-0.8",
+            "n": 526,
+            "p_moyenne": 0.737,
+            "frequence_observee": 0.7871,
+            "ecart": 0.05
+          },
+          {
+            "tranche": "0.8-0.9",
+            "n": 35,
+            "p_moyenne": 0.819,
+            "frequence_observee": 0.7714,
+            "ecart": -0.0476
+          }
+        ]
+      }
+    },
+    "M1_v4_moins_frequences": {
+      "n": 21590,
+      "ecart": -0.00299,
+      "ic95": [
+        -0.00582,
+        -0.00025
+      ]
+    },
+    "M1": true,
+    "M2_par_ligue": {
+      "D1": {
+        "n": 3672,
+        "ecart": -0.00032,
+        "ic95": [
+          -0.00668,
+          0.00625
+        ]
+      },
+      "E0": {
+        "n": 4494,
+        "ecart": 0.00136,
+        "ic95": [
+          -0.00436,
+          0.00711
+        ]
+      },
+      "F1": {
+        "n": 4459,
+        "ecart": -0.00704,
+        "ic95": [
+          -0.01315,
+          -0.00133
+        ]
+      },
+      "I1": {
+        "n": 4462,
+        "ecart": 0.00324,
+        "ic95": [
+          -0.00213,
+          0.00905
+        ]
+      },
+      "SP1": {
+        "n": 4503,
+        "ecart": -0.01166,
+        "ic95": [
+          -0.01863,
+          -0.00434
+        ]
+      }
+    },
+    "M2": false,
+    "M3_ecart_max": 0.1125,
+    "M3": false,
+    "info_v4_moins_bookmaker": {
+      "n": 21588,
+      "ecart": 0.01181,
+      "ic95": [
+        0.00982,
+        0.01379
+      ]
+    }
+  }
+}

@@ -41,3 +41,46 @@ Log-loss binaire, Brier, calibration en 10 tranches de 0,1 ; bootstrap apparié 
 - Même source (Football-Data.co.uk via xgabora) que EXP-004 et EXP-005.
 - Poisson indépendant : la dispersion du total de buts peut être mal rendue (sur- ou sous-dispersion), ce que M3 doit révéler.
 - Le 2+ n'a pas de référence bookmaker.
+
+---
+
+## Résultats (exécution du 29/10/2026, ajoutés après le protocole)
+
+Commandes : `python -m megatron marches --division <L> --saisons 2008/09,…,2019/20,2022/23,…,2025/26 --sortie docs/experiences/EXP-006/<L>` pour les 5 ligues, puis `python -m megatron marches-bilan docs/experiences/EXP-006/*/predictions_buts.csv --saisons <…>` (sorties : `EXP-006/bilan_2008-2020.json`, `EXP-006/bilan_2022-2026_info.json`).
+
+Écart à signaler : avant l'exécution complète, un essai technique du code a tourné sur Ligue 1 2019/20 (279 matchs, saison du champ des critères). Aucun réglage n'en a découlé : le modèle est figé.
+
+5 ligues, 12 saisons 2008-2020 (21 590 matchs) :
+
+| Marché | `poisson-v4` | `frequences` | Bookmaker | Écart v4 − fréquences [IC 95 %] |
+|---|---|---|---|---|
+| 2+ | 0,55835 | 0,55937 | — | −0,0010 [−0,0034 ; +0,0014] |
+| 3+ | 0,68740 | 0,69038 | 0,67559 | −0,0030 [−0,0058 ; −0,0003] |
+
+Par ligue (écart v4 − fréquences) :
+
+| Ligue | 2+ | 3+ |
+|---|---|---|
+| Bundesliga | +0,0009 | −0,0003 |
+| Premier League | −0,0023 | +0,0014 |
+| Ligue 1 | −0,0008 | −0,0070 |
+| Serie A | +0,0035 | +0,0032 |
+| Liga | −0,0060 | −0,0117 |
+
+Calibration de `poisson-v4` (tranches ≥ 500 prévisions, fréquence observée − p moyenne) :
+- 2+ : +0,109 (0,5-0,6), +0,045 (0,6-0,7), +0,005 (0,7-0,8), −0,028 (0,8-0,9).
+- 3+ : +0,113 (0,2-0,3), +0,074 (0,3-0,4), +0,028 (0,4-0,5), −0,015 (0,5-0,6), −0,044 (0,6-0,7), −0,017 (0,7-0,8).
+
+Le modèle est trop tranché : quand il annonce peu de buts, il y en a plus, et inversement. Le total de buts varie moins d'un match à l'autre que ne le disent les écarts de λ.
+
+Information 2022-2026 (7 081 matchs) : 2+ +0,0003 [−0,0038 ; +0,0045] ; 3+ −0,0027 [−0,0074 ; +0,0020] ; même défaut de calibration. Bookmaker en avance sur le 3+ : +0,0118 [+0,0098 ; +0,0138] (2008-2020).
+
+## Décision
+
+- **2+** : M1 non tenu (IC contient 0), M2 non tenu (3 ligues sur 5), M3 non tenu (écart 0,109). **Non enregistré.**
+- **3+** : M1 tenu (borne haute −0,0003), M2 non tenu (3 ligues sur 5), M3 non tenu (écart 0,113). **Non enregistré** ; recalibration à tester (EXP-007).
+
+## Limites
+
+- Même source que EXP-004/005.
+- Le gain du 3+ sur les fréquences est faible et instable selon la ligue.
