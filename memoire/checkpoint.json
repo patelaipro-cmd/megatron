@@ -1,14 +1,16 @@
 {
   "version": "0.1.0",
-  "commit": "b037c9a",
-  "date": "2026-10-29T10:41:29+00:00",
-  "resume": "EXP-008 : poisson-v5 promu (demi-vie 270, rétr. 2, w 0,35) ; test 2020-2026 −0,0054 log-loss [−0,0074 ; −0,0035] vs v4, 5/5 ligues ; retard bookmaker 0,0235 → 0,0181.",
+  "commit": "79f0de3",
+  "date": "2026-10-29T11:04:07+00:00",
+  "resume": "Angles morts du favori intégrés (13 angles, 3 questions, comparateur H2H, scénario fait+source+mécanisme). EXP-009 : les 11 indicateurs mesurables n'améliorent pas poisson-v5 hors développement → descriptifs, aucun ajustement.",
   "prochaines_actions": [
     "Étendre la grille au-delà du bord (demi-vie 365-730, w 0,45-0,6) sur 2008-2016, protocole commité avant",
+    "Recalibrer poisson-v5 (pente > 1 vue dans EXP-009) pour le 1X2, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
     "Valider la synchronisation via Git entre Codex et Claude (branche partagée, synchro verifier des deux côtés)",
-    "Réapprendre la recalibration 2+/3+ (EXP-007) sur poisson-v5"
+    "Réapprendre la recalibration 2+/3+ (EXP-007) sur poisson-v5",
+    "Angles morts non mesurables : sources joueurs / compositions / coupes / minute des buts à trouver (réseau bloqué pour FBref, Understat)"
   ],
   "blocages": [
     "Gemini laissé de côté (choix de Luloki) : Fusion en mode dégradé",
@@ -96,15 +98,20 @@
       "cle": "modele_reference",
       "valeur": "poisson-v5 : Maher pondéré demi-vie 270 j, rétrécissement 2, pseudo-buts 0,65·buts + 0,35·k·tirs cadrés ; marchés 2+/3+ sur ajustement poisson-v4 séparé (poisson-v4-platt) ; stats-v0 en repli",
       "id": "86591ae286b8"
+    },
+    {
+      "cle": "angles_morts",
+      "valeur": "cadre de Luloki (29/10/2026) : 13 angles morts, comparateur ancien H2H → dernier H2H → situation actuelle sur 4 axes, 3 questions (défaite, nul, victoire < 2 buts) ; scénario = fait + source + mécanisme ; aucune modification de probabilité sans expérience validée (megatron/angles_morts.py)",
+      "id": "e909757b7aee"
     }
   ],
   "contradictions": {},
   "effectifs": {
     "travail": 2,
-    "decisions": 16,
+    "decisions": 17,
     "football": 1,
-    "performances": 5,
+    "performances": 6,
     "technique": 5
   },
-  "id": "ckpt-accfcece97"
+  "id": "ckpt-a22747b820"
 }

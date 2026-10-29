@@ -45,3 +45,40 @@ Développement 2008/09-2015/16, validation 2016/17-2019/20, test 2020/21-2025/26
 - Seuls 11 des 13 angles ont un indicateur, souvent partiel (pas de joueurs, compositions, coupes, minute des buts, tactique).
 - Même source de données ; favori défini par le modèle, pas par le marché.
 - Un effet linéaire par indicateur ; pas d'interactions.
+
+---
+
+## Résultats (exécution du 29/10/2026, ajoutés après le protocole)
+
+Commandes : `python scripts/exp009_angles.py extraire --sortie docs/experiences/EXP-009` puis `evaluer`. 32 544 matchs (dev 14 608, validation 6 982, test 10 954). Détail : `EXP-009/resultats.json`, variables : `EXP-009/variables.csv`.
+
+Log-loss, A − B [IC 95 %] :
+
+| Question | Fréquence test | Dev | Validation (Q1) | Test (Q2) | Ligues < 0 (Q3) |
+|---|---|---|---|---|---|
+| Défaite du favori | 0,221 | −0,0017 [−0,0027 ; −0,0008] | +0,0002 [−0,0012 ; +0,0016] | −0,0005 [−0,0017 ; +0,0006] | 3/5 |
+| Nul | 0,253 | −0,0005 [−0,0010 ; 0,0000] | −0,0003 [−0,0011 ; +0,0004] | +0,0001 [−0,0005 ; +0,0007] | 3/5 |
+| Pas de victoire par 2+ | 0,714 | −0,0018 [−0,0028 ; −0,0009] | −0,0002 [−0,0017 ; +0,0013] | +0,0005 [−0,0006 ; +0,0017] | 2/5 |
+
+Le gain du développement ne se retrouve ni en validation ni en test : surajustement.
+
+Angles confirmés (coefficient dev > 0 et IC 99 % test < 0), sur 36 comparaisons :
+
+- Défaite du favori : **coups de pied arrêtés** (corners) −0,0008 [−0,0015 ; −0,0001].
+- Nul : **fragilité défensive** −0,0003 [−0,0006 ; 0,0000].
+- Aucun pour la question 3. Tous les autres : IC 99 % contenant 0.
+
+Information :
+
+- Référence bookmaker question 3 (handicap −1,5 du favori, 590 matchs du test) : bookmaker 0,6939, A 0,7021, B 0,7051.
+- `poisson-v5` recalibré seul (B) bat `poisson-v5` brut sur le test pour la défaite (0,5106 contre 0,5127) et le nul (0,5605 contre 0,5611) : pente > 1, v5 trop prudent sur ces questions. Piste à part, nouveau protocole.
+
+## Décision
+
+- Q1, Q2 et Q3 non tenus pour les 3 questions : **pas d'`angles-v1`**. Les angles restent descriptifs (fait + source + mécanisme) ; probabilités `poisson-v5` inchangées ; aucun scénario ne porte d'ajustement.
+- Les 2 angles confirmés ont un effet minuscule (< 0,001) : notés, pas utilisés pour ajuster.
+
+## Limites
+
+- Indicateurs partiels : les angles les plus sportifs (joueurs, compositions, tactique, coach, coupes, minute des buts) ne sont pas mesurables avec `data/`. Ce résultat ne dit pas qu'ils sont inutiles, seulement que les proxies disponibles n'ajoutent rien au modèle.
+- Même source ; un effet linéaire par indicateur.

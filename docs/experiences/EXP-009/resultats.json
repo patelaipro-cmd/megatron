@@ -1,0 +1,711 @@
+{
+  "n": {
+    "dev": 14608,
+    "validation": 6982,
+    "test": 10954
+  },
+  "normalisation": {
+    "moyenne": {
+      "surperformance": 0.10146961938663746,
+      "calendrier": -0.15626111035049287,
+      "adversaire_progression": 0.004205243702081051,
+      "adaptation_h2h": 0.013952375410733844,
+      "fragilite_defensive": -0.07107535596933187,
+      "rotation_fatigue": 0.03313253012048193,
+      "enjeu_asymetrique": 0.22665662650602408,
+      "favori_exterieur": 0.14604357201533408,
+      "coups_arretes": -0.08232839539978094,
+      "ecart_trompeur": 0.6266429353778752,
+      "gestion_score": -0.08256943455640745,
+      "informations_manquantes": 0.07180996714129244
+    },
+    "ecart_type": {
+      "surperformance": 0.5622824915817141,
+      "calendrier": 0.13291503175539707,
+      "adversaire_progression": 1.5751682770849853,
+      "adaptation_h2h": 3.7061356912641124,
+      "fragilite_defensive": 0.23722870352126532,
+      "rotation_fatigue": 1.341374514084708,
+      "enjeu_asymetrique": 0.4417414809398411,
+      "favori_exterieur": 0.2855111231387557,
+      "coups_arretes": 0.3033447575413486,
+      "ecart_trompeur": 0.6321583800925881,
+      "gestion_score": 0.3293269731412822,
+      "informations_manquantes": 0.3671990113579789
+    }
+  },
+  "questions": {
+    "defaite": {
+      "B": [
+        0.00354,
+        1.12638
+      ],
+      "A": {
+        "const": -0.07067,
+        "logit_p": 1.06806,
+        "surperformance": 0.03175,
+        "calendrier": -0.00586,
+        "adversaire_progression": 0.03139,
+        "adaptation_h2h": -0.03403,
+        "fragilite_defensive": 0.05635,
+        "rotation_fatigue": 0.0242,
+        "enjeu_asymetrique": 0.08067,
+        "favori_exterieur": 0.03651,
+        "coups_arretes": 0.05582,
+        "ecart_trompeur": -0.00734,
+        "gestion_score": 0.01395,
+        "informations_manquantes": 0.0442
+      },
+      "dev": {
+        "log_loss_A": 0.51023,
+        "log_loss_B": 0.51197,
+        "log_loss_v5_brut": 0.51361,
+        "frequence": 0.2241,
+        "A_moins_B": {
+          "n": 14608,
+          "ecart": -0.00174,
+          "ic95": [
+            -0.00269,
+            -0.00082
+          ]
+        }
+      },
+      "validation": {
+        "log_loss_A": 0.49726,
+        "log_loss_B": 0.49711,
+        "log_loss_v5_brut": 0.49948,
+        "frequence": 0.215,
+        "A_moins_B": {
+          "n": 6982,
+          "ecart": 0.00015,
+          "ic95": [
+            -0.00121,
+            0.00156
+          ]
+        }
+      },
+      "test": {
+        "log_loss_A": 0.51009,
+        "log_loss_B": 0.5106,
+        "log_loss_v5_brut": 0.51272,
+        "frequence": 0.2212,
+        "A_moins_B": {
+          "n": 10954,
+          "ecart": -0.00051,
+          "ic95": [
+            -0.00168,
+            0.00058
+          ]
+        },
+        "par_ligue": {
+          "F1": -0.00177,
+          "E0": 0.00246,
+          "D1": 1e-05,
+          "SP1": -0.00167,
+          "I1": -0.0016
+        }
+      },
+      "angles": {
+        "surperformance": {
+          "coef_dev": 0.03705,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 2e-05,
+            "ic99": [
+              -0.00031,
+              0.00036
+            ]
+          },
+          "confirme": false
+        },
+        "calendrier": {
+          "coef_dev": -0.02294,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -8e-05,
+            "ic99": [
+              -0.0003,
+              0.00013
+            ]
+          },
+          "confirme": false
+        },
+        "adversaire_progression": {
+          "coef_dev": 0.03036,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00021,
+            "ic99": [
+              -0.00051,
+              8e-05
+            ]
+          },
+          "confirme": false
+        },
+        "adaptation_h2h": {
+          "coef_dev": -0.0341,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -8e-05,
+            "ic99": [
+              -0.00037,
+              0.00023
+            ]
+          },
+          "confirme": false
+        },
+        "fragilite_defensive": {
+          "coef_dev": 0.06845,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00018,
+            "ic99": [
+              -0.00085,
+              0.00042
+            ]
+          },
+          "confirme": false
+        },
+        "rotation_fatigue": {
+          "coef_dev": 0.0239,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00017,
+            "ic99": [
+              -0.00014,
+              0.00046
+            ]
+          },
+          "confirme": false
+        },
+        "enjeu_asymetrique": {
+          "coef_dev": 0.08424,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00028,
+            "ic99": [
+              -0.00112,
+              0.00051
+            ]
+          },
+          "confirme": false
+        },
+        "favori_exterieur": {
+          "coef_dev": 0.0239,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 9e-05,
+            "ic99": [
+              -0.00013,
+              0.00031
+            ]
+          },
+          "confirme": false
+        },
+        "coups_arretes": {
+          "coef_dev": 0.06857,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00079,
+            "ic99": [
+              -0.00149,
+              -0.00012
+            ]
+          },
+          "confirme": true
+        },
+        "ecart_trompeur": {
+          "coef_dev": -0.01238,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -3e-05,
+            "ic99": [
+              -0.00015,
+              9e-05
+            ]
+          },
+          "confirme": false
+        },
+        "gestion_score": {
+          "coef_dev": 0.00554,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.0,
+            "ic99": [
+              -6e-05,
+              5e-05
+            ]
+          },
+          "confirme": false
+        },
+        "informations_manquantes": {
+          "coef_dev": 0.03964,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00038,
+            "ic99": [
+              -1e-05,
+              0.00074
+            ]
+          },
+          "confirme": false
+        }
+      },
+      "criteres": {
+        "Q1": false,
+        "Q2": false,
+        "Q3": false
+      }
+    },
+    "nul": {
+      "B": [
+        0.25226,
+        1.1731
+      ],
+      "A": {
+        "const": 0.12872,
+        "logit_p": 1.06589,
+        "surperformance": -0.03973,
+        "calendrier": 0.0316,
+        "adversaire_progression": 0.01281,
+        "adaptation_h2h": 0.00188,
+        "fragilite_defensive": 0.01745,
+        "rotation_fatigue": -0.01294,
+        "enjeu_asymetrique": 0.00123,
+        "favori_exterieur": -0.00483,
+        "coups_arretes": 0.03642,
+        "ecart_trompeur": -0.00921,
+        "gestion_score": 0.02827,
+        "informations_manquantes": -0.01549
+      },
+      "dev": {
+        "log_loss_A": 0.56255,
+        "log_loss_B": 0.56308,
+        "log_loss_v5_brut": 0.56355,
+        "frequence": 0.2566,
+        "A_moins_B": {
+          "n": 14608,
+          "ecart": -0.00053,
+          "ic95": [
+            -0.00102,
+            1e-05
+          ]
+        }
+      },
+      "validation": {
+        "log_loss_A": 0.54894,
+        "log_loss_B": 0.54923,
+        "log_loss_v5_brut": 0.54948,
+        "frequence": 0.2451,
+        "A_moins_B": {
+          "n": 6982,
+          "ecart": -0.00029,
+          "ic95": [
+            -0.00108,
+            0.00041
+          ]
+        }
+      },
+      "test": {
+        "log_loss_A": 0.56058,
+        "log_loss_B": 0.56048,
+        "log_loss_v5_brut": 0.56113,
+        "frequence": 0.2534,
+        "A_moins_B": {
+          "n": 10954,
+          "ecart": 0.0001,
+          "ic95": [
+            -0.0005,
+            0.00068
+          ]
+        },
+        "par_ligue": {
+          "F1": 0.00064,
+          "E0": 0.00127,
+          "D1": -0.00027,
+          "SP1": -0.0002,
+          "I1": -0.00092
+        }
+      },
+      "angles": {
+        "surperformance": {
+          "coef_dev": -0.03654,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00021,
+            "ic99": [
+              -0.00013,
+              0.00056
+            ]
+          },
+          "confirme": false
+        },
+        "calendrier": {
+          "coef_dev": 0.01575,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 7e-05,
+            "ic99": [
+              -0.0001,
+              0.00023
+            ]
+          },
+          "confirme": false
+        },
+        "adversaire_progression": {
+          "coef_dev": 0.01619,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -8e-05,
+            "ic99": [
+              -0.00024,
+              9e-05
+            ]
+          },
+          "confirme": false
+        },
+        "adaptation_h2h": {
+          "coef_dev": 0.00714,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 1e-05,
+            "ic99": [
+              -6e-05,
+              8e-05
+            ]
+          },
+          "confirme": false
+        },
+        "fragilite_defensive": {
+          "coef_dev": 0.02568,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00028,
+            "ic99": [
+              -0.00055,
+              -2e-05
+            ]
+          },
+          "confirme": true
+        },
+        "rotation_fatigue": {
+          "coef_dev": -0.01368,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.0,
+            "ic99": [
+              -0.00017,
+              0.00017
+            ]
+          },
+          "confirme": false
+        },
+        "enjeu_asymetrique": {
+          "coef_dev": 0.00119,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 1e-05,
+            "ic99": [
+              -1e-05,
+              2e-05
+            ]
+          },
+          "confirme": false
+        },
+        "favori_exterieur": {
+          "coef_dev": -0.02774,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00014,
+            "ic99": [
+              -0.0004,
+              0.00011
+            ]
+          },
+          "confirme": false
+        },
+        "coups_arretes": {
+          "coef_dev": 0.04231,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 6e-05,
+            "ic99": [
+              -0.0004,
+              0.0005
+            ]
+          },
+          "confirme": false
+        },
+        "ecart_trompeur": {
+          "coef_dev": -0.01125,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -7e-05,
+            "ic99": [
+              -0.00019,
+              5e-05
+            ]
+          },
+          "confirme": false
+        },
+        "gestion_score": {
+          "coef_dev": 0.04049,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -7e-05,
+            "ic99": [
+              -0.0005,
+              0.00038
+            ]
+          },
+          "confirme": false
+        },
+        "informations_manquantes": {
+          "coef_dev": -0.01377,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 6e-05,
+            "ic99": [
+              -0.0001,
+              0.00021
+            ]
+          },
+          "confirme": false
+        }
+      },
+      "criteres": {
+        "Q1": false,
+        "Q2": false,
+        "Q3": false
+      }
+    },
+    "ecart": {
+      "B": [
+        -0.13869,
+        1.10117
+      ],
+      "A": {
+        "const": -0.03783,
+        "logit_p": 1.00594,
+        "surperformance": 0.01387,
+        "calendrier": -0.00211,
+        "adversaire_progression": 0.00591,
+        "adaptation_h2h": -0.03221,
+        "fragilite_defensive": 0.07049,
+        "rotation_fatigue": -0.00541,
+        "enjeu_asymetrique": 0.03664,
+        "favori_exterieur": 0.00686,
+        "coups_arretes": 0.07838,
+        "ecart_trompeur": -0.01296,
+        "gestion_score": 0.04513,
+        "informations_manquantes": 0.0253
+      },
+      "dev": {
+        "log_loss_A": 0.56094,
+        "log_loss_B": 0.56275,
+        "log_loss_v5_brut": 0.56321,
+        "frequence": 0.7159,
+        "A_moins_B": {
+          "n": 14608,
+          "ecart": -0.00181,
+          "ic95": [
+            -0.00276,
+            -0.00085
+          ]
+        }
+      },
+      "validation": {
+        "log_loss_A": 0.56603,
+        "log_loss_B": 0.56628,
+        "log_loss_v5_brut": 0.56641,
+        "frequence": 0.7071,
+        "A_moins_B": {
+          "n": 6982,
+          "ecart": -0.00024,
+          "ic95": [
+            -0.0017,
+            0.00133
+          ]
+        }
+      },
+      "test": {
+        "log_loss_A": 0.56998,
+        "log_loss_B": 0.56944,
+        "log_loss_v5_brut": 0.56927,
+        "frequence": 0.7136,
+        "A_moins_B": {
+          "n": 10954,
+          "ecart": 0.00054,
+          "ic95": [
+            -0.00059,
+            0.00166
+          ]
+        },
+        "par_ligue": {
+          "F1": -0.00052,
+          "E0": 0.00198,
+          "D1": 0.00096,
+          "SP1": 0.0001,
+          "I1": 0.00015
+        },
+        "info_bookmaker_handicap_1_5": {
+          "n": 590,
+          "bookmaker": 0.69392,
+          "A": 0.7021,
+          "B": 0.70513
+        }
+      },
+      "angles": {
+        "surperformance": {
+          "coef_dev": 0.01361,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00011,
+            "ic99": [
+              -0.00025,
+              2e-05
+            ]
+          },
+          "confirme": false
+        },
+        "calendrier": {
+          "coef_dev": -0.0273,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -5e-05,
+            "ic99": [
+              -0.00033,
+              0.00024
+            ]
+          },
+          "confirme": false
+        },
+        "adversaire_progression": {
+          "coef_dev": 0.00907,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -8e-05,
+            "ic99": [
+              -0.00017,
+              1e-05
+            ]
+          },
+          "confirme": false
+        },
+        "adaptation_h2h": {
+          "coef_dev": -0.02451,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 6e-05,
+            "ic99": [
+              -0.00021,
+              0.0003
+            ]
+          },
+          "confirme": false
+        },
+        "fragilite_defensive": {
+          "coef_dev": 0.09905,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00027,
+            "ic99": [
+              -0.00122,
+              0.00075
+            ]
+          },
+          "confirme": false
+        },
+        "rotation_fatigue": {
+          "coef_dev": -0.00539,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -6e-05,
+            "ic99": [
+              -0.00013,
+              1e-05
+            ]
+          },
+          "confirme": false
+        },
+        "enjeu_asymetrique": {
+          "coef_dev": 0.04015,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00022,
+            "ic99": [
+              -0.00022,
+              0.00064
+            ]
+          },
+          "confirme": false
+        },
+        "favori_exterieur": {
+          "coef_dev": -0.02945,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -0.00015,
+            "ic99": [
+              -0.00043,
+              0.00015
+            ]
+          },
+          "confirme": false
+        },
+        "coups_arretes": {
+          "coef_dev": 0.10318,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00017,
+            "ic99": [
+              -0.00093,
+              0.00126
+            ]
+          },
+          "confirme": false
+        },
+        "ecart_trompeur": {
+          "coef_dev": -0.01882,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": -4e-05,
+            "ic99": [
+              -0.00025,
+              0.00013
+            ]
+          },
+          "confirme": false
+        },
+        "gestion_score": {
+          "coef_dev": 0.05725,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00031,
+            "ic99": [
+              -0.00025,
+              0.0009
+            ]
+          },
+          "confirme": false
+        },
+        "informations_manquantes": {
+          "coef_dev": 0.02578,
+          "test_Ai_moins_B": {
+            "n": 10954,
+            "ecart": 0.00025,
+            "ic99": [
+              -3e-05,
+              0.00054
+            ]
+          },
+          "confirme": false
+        }
+      },
+      "criteres": {
+        "Q1": false,
+        "Q2": false,
+        "Q3": false
+      }
+    }
+  }
+}
