@@ -31,3 +31,8 @@ une mémoire temporaire. Un transfert doit être commité, fusionné dans main e
 relu par le destinataire ; l'ancien détenteur cesse d'écrire dès le transfert.
 Ce jeton est coopératif et le verrou est local : Git ne verrouille pas les
 copies distantes. Consignes détaillées : docs/jeton-registre.md.
+
+Attention : les anciennes clés 2+/3+ signifient total de buts. Les marchés
+H_MARGE_2PLUS / H_MARGE_3PLUS et A_MARGE_2PLUS / A_MARGE_3PLUS signifient
+marge de victoire. `marges` est exploratoire et non calibré, sans écriture ;
+aucune activation automatique de ces marges dans prevoir. Voir docs/marges-victoire.md.
