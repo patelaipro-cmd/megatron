@@ -29,6 +29,7 @@ import io
 import json
 import sys
 import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -65,8 +66,15 @@ def lire_url(url: str, timeout: int = 30) -> bytes:
         if r.status_code != 200:
             raise RuntimeError(f"HTTP {r.status_code} sur {url}")
         return r.content
-    with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=timeout) as r:
-        return r.read()
+    for essai in range(3):  # 502 ClubElo au premier run du 29/10/2026 : erreurs serveur passagères
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 or essai == 2:
+                raise
+        time.sleep(10 * (essai + 1))
+    raise AssertionError("inatteignable")
 
 
 def lire_json(url: str, lire=lire_url):
