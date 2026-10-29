@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, data, inventory, llm, marches, suivi, systeme
+from . import backtest, checkpoint, data, inventory, llm, marches, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -70,6 +70,9 @@ def main(argv: list[str] | None = None) -> int:
     mr.add_argument("--test", nargs="+", required=True)
     mr.add_argument("--saisons-apprentissage", required=True)
     mr.add_argument("--sortie", help="dossier où écrire recalibration.json")
+    sy = sub.add_parser("synchro", help="contrôles de la mémoire avant reprise (rien n'est écrit)")
+    sy.add_argument("action", choices=["verifier"])
+    sy.add_argument("--reference", help="branche de référence, ex. origin/main : signale un retard")
     args = parser.parse_args(argv)
 
     if args.cmd == "reprise":
@@ -138,6 +141,10 @@ def main(argv: list[str] | None = None) -> int:
         if args.sortie:
             (Path(args.sortie) / "recalibration.json").write_text(text + "\n", encoding="utf-8")
         print(text)
+    elif args.cmd == "synchro":
+        rapport = synchro.verifier(args.memoire, args.reference)
+        print(json.dumps(rapport, indent=2, ensure_ascii=False))
+        return 0 if rapport["ok"] else 1
     elif args.cmd == "bootstrap":
         keep = set(args.saisons.split(","))
         rows = [r for f in args.fichiers for r in backtest.read_predictions(Path(f)) if r["saison"] in keep]
