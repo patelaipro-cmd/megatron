@@ -32,3 +32,9 @@ Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion 
 - `details_2000-2026.csv` : même fichier `Matches.csv` (SHA-256 `ef224cf2…4221`, vérifié inchangé le 29/10/2026), colonnes `Division, MatchDate, HomeTeam, AwayTeam, HTHome, HTAway, HomeRed, AwayRed, HomeCorners, AwayCorners, HomeFouls, AwayFouls, HandiSize, HandiHome, HandiAway` (handicap asiatique Bet365 selon le README d'origine). 45 559 lignes, toutes reliées à `matches_top5_2000-2026.csv`. Remplissage ≥ 99,8 % depuis 2008/09. SHA-256 `4ff14aa330a77a7213ab2635d33d2bd6e528529436a8ec7d0c528c956e40f699`.
 - Elo et Form* de la source non repris : date de calcul non documentée (risque de fuite).
 - Reconstruction : `python scripts/extraire_details.py Matches.csv`.
+
+## Collecte externe (29/10/2026, branche `donnees-externes`)
+
+- Sofascore (compos, absents), FPL (statut joueurs PL), ClubElo (Elo), Understat (xG d'équipe), collectés par `.github/workflows/collecte-externe.yml`, jamais commités sur `main`.
+- Ligues suivies : `data/ligues_collecte.json` (38 divisions de l'historique xgabora + coupes UEFA). Identifiants Sofascore à vérifier après le premier run.
+- Chaque ligne porte `collecte_le` ; usage pré-match seulement si `collecte_le` < coup d'envoi. CGU et limites : `docs/collecte-externe.md`.

@@ -1,0 +1,62 @@
+name: collecte-externe
+# Collecte des sources externes (compos, absences, Elo, xG) sur les serveurs GitHub,
+# écrite sur la branche orpheline `donnees-externes` (jamais sur main).
+# Voir docs/collecte-externe.md.
+on:
+  schedule:
+    - cron: "20 * * * *"   # chaque heure : Sofascore (compos < 3 h ; 72 h aux heures multiples de 6) + FPL
+    - cron: "40 5 * * *"   # chaque jour : toutes les sources (+ ClubElo, Understat)
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: "Sources séparées par des virgules"
+        default: "sofascore,fpl,clubelo,understat"
+permissions:
+  contents: write
+concurrency:
+  group: collecte-externe
+  cancel-in-progress: false
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Choisir les sources
+        id: choix
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then s="${{ inputs.sources }}"
+          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat"
+          else s="sofascore,fpl"; fi
+          echo "sources=$s" >> "$GITHUB_OUTPUT"
+      - name: Dépendances
+        run: |
+          pip install curl_cffi
+          case "${{ steps.choix.outputs.sources }}" in *understat*) pip install soccerdata ;; esac
+      - name: Préparer la branche de données
+        run: |
+          git config user.name "megatron-collecte"
+          git config user.email "megatron-collecte@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin donnees-externes; then
+            git fetch --depth 1 origin donnees-externes
+            git worktree add -B donnees-externes donnees FETCH_HEAD
+          else
+            git worktree add --orphan -b donnees-externes donnees
+          fi
+      - name: Collecter
+        run: python scripts/collecte_externe.py --sortie donnees/externe --sources "${{ steps.choix.outputs.sources }}"
+      - name: Publier
+        if: always()
+        run: |
+          cd donnees
+          git add -A
+          # Le manifeste change à chaque exécution : ne commiter que de nouvelles données ou une erreur.
+          if ! git diff --cached --name-only | grep -qv -e 'manifeste.json$' -e 'etat.json$' \
+             && ! grep -q '"erreur"' externe/manifeste.json 2>/dev/null; then
+            echo "rien de nouveau"; exit 0
+          fi
+          git commit -q -m "Collecte externe $(date -u +%Y-%m-%dT%H:%MZ) (${{ steps.choix.outputs.sources }})"
+          git push origin donnees-externes
