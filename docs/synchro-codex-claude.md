@@ -24,6 +24,7 @@ par `main` sur GitHub. Méthode proposée (manuelle, non automatisée).
 git fetch origin main
 git switch -c <env>/<tache> origin/main
 python -m megatron reprise
+python scripts/valider_acces.py --acces <codex|claude>
 ```
 
 Vérifier : le `commit` du checkpoint est un ancêtre de `origin/main`
