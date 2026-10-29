@@ -9,6 +9,7 @@ La trace de la fusion (agents manquants, désaccord, sources) est gardée à cô
 from __future__ import annotations
 
 from datetime import datetime
+import json
 
 from .agents import Agent, fuse
 from .ledger import DOMAIN, OUTCOMES, Ledger, score
@@ -16,19 +17,23 @@ from .store import MemoryStore, now_utc, parse_dt
 
 
 def fusion_version(result: dict) -> str:
-    ok = sorted(r.agent for r in result["reponses"] if r.status == "ok")
-    return "fusion-v0:" + "+".join(ok)
+    ok = sorted((r.agent, r.version or "inconnue") for r in result["reponses"] if r.status == "ok")
+    return "fusion-v1:" + json.dumps(ok, ensure_ascii=True, separators=(",", ":"))
 
 
 def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: list[Agent] | None = None,
             source: str = "megatron prevoir", now: datetime | None = None) -> dict:
     """Fusion puis enregistrement ; refuse tout après le coup d'envoi, sans rien écrire."""
     kickoff_dt = parse_dt(kickoff)
-    now = now or now_utc()
+    fixed_now = now  # injection temporelle réservée aux simulations/tests
+    now = parse_dt(now or now_utc())
     if now >= kickoff_dt:
         raise ValueError(f"{task.get('match_id')} : coup d'envoi passé, prévision refusée")
     match_id = task["match_id"]
     result = fuse(task, agents)
+    now = parse_dt(fixed_now or now_utc())
+    if now >= kickoff_dt:
+        raise ValueError(f"{task.get('match_id')} : coup d'envoi franchi pendant l'analyse, rien n'est enregistré")
     if not result["probs"]:
         return {"match_id": match_id, "enregistre": [], "indisponibles": result["indisponibles"],
                 "raison": "aucun agent n'a donné d'avis : rien n'est enregistré"}
@@ -41,9 +46,9 @@ def prevoir(store: MemoryStore, task: dict, kickoff: str | datetime, *, agents: 
         raise ValueError(f"{match_id} : déjà prévu sous {taken}, rien n'est réécrit")
     written = []
     for version, probs in versions:
-        # data_cutoff = instant de l'enregistrement : rien de postérieur n'a pu servir
+        # Ne pas inventer de preuve temporelle sur les données des agents.
         ledger.predict(match_id, kickoff_dt, probs, model_version=version, source=source,
-                       recorded_at=now, data_cutoff=now)
+                       recorded_at=now)
         written.append(version)
     store.record(DOMAIN, f"fusion:{match_id}", {
         "match_id": match_id, "mode": result["mode"], "agents_manquants": result["agents_manquants"],
@@ -67,10 +72,11 @@ def outcome_of(score_or_outcome: str) -> str:
 
 
 def resultat(store: MemoryStore, match_id: str, score_or_outcome: str, *, source: str,
-             observed_at: str | datetime | None = None):
+             observed_at: str | datetime | None = None, correction: bool = False):
     if not Ledger(store)._predictions(match_id):
         raise ValueError(f"{match_id} : aucune prévision enregistrée, résultat inutile")
-    return Ledger(store).result(match_id, outcome_of(score_or_outcome), source=source, observed_at=observed_at)
+    return Ledger(store).result(match_id, outcome_of(score_or_outcome), source=source, observed_at=observed_at,
+                                correction=correction)
 
 
 def bilan(store: MemoryStore, now: datetime | None = None) -> dict:
