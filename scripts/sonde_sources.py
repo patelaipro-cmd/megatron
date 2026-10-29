@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -87,14 +88,35 @@ def sonder() -> dict:
     return res
 
 
+def sonder_urls(urls: list[str]) -> dict:
+    """Sonde libre : code HTTP, type et 60 Ko de contenu brut (HTML compris) par URL."""
+    res = {}
+    for url in urls:
+        nom = re.sub(r"[^A-Za-z0-9]+", "_", url.split("://", 1)[-1]).strip("_")[:80]
+        req = urllib.request.Request(url, headers={**HEADERS, "Accept": "text/html,application/json,*/*",
+                                                   "User-Agent": "Mozilla/5.0 (compatible; megatron-sonde/1.0)"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                res[nom] = {"url": url, "code": r.status, "type": r.headers.get("Content-Type"),
+                            "extrait": r.read()[:60000].decode("utf-8", "replace")}
+        except urllib.error.HTTPError as e:
+            res[nom] = {"url": url, "code": e.code, "extrait": e.read()[:3000].decode("utf-8", "replace")}
+        except (urllib.error.URLError, TimeoutError) as e:
+            res[nom] = {"url": url, "code": 0, "extrait": str(e)}
+    return res
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     p.add_argument("--sortie", required=True, type=Path)
+    p.add_argument("--urls", default="", help="URL séparées par des virgules : sonde libre au lieu de la sonde ESPN")
     a = p.parse_args(argv)
     dossier = a.sortie / "sondes"
     dossier.mkdir(parents=True, exist_ok=True)
     quand = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    for nom, r in sonder().items():
+    urls = [u.strip() for u in a.urls.split(",") if u.strip()]
+    resultats = sonder_urls(urls) if urls else sonder()
+    for nom, r in resultats.items():
         (dossier / f"{nom}.json").write_text(json.dumps({"sonde_le": quand, **r}, indent=1, ensure_ascii=False) + "\n")
         print(nom, r["code"])
     return 0
