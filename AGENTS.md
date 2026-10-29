@@ -45,3 +45,8 @@ comme une analyse complète. Les sources restent déclaratives et aucune
 probabilité n'est corrigée automatiquement. Voir docs/angles-morts-favori.md.
 Indicateurs historiques des angles morts (cadre Luloki, 29/10/2026) : `megatron/angles_morts.py`, 13 angles, 3 questions,
 scénario = fait + source + mécanisme ; aucune modification de probabilité sans expérience validée (EXP-009 : aucune).
+
+Collecte externe (29/10/2026) : GitHub Actions écrit sur la branche `donnees-externes`
+(jamais fusionnée dans main). Lecture par `scripts/lire_externe.py` avec `--avant`
+(collecte antérieure au coup d'envoi). Faits déclaratifs seulement, aucune probabilité modifiée.
+Voir docs/collecte-externe.md.
