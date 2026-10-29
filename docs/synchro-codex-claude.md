@@ -62,6 +62,20 @@ Deux branches ont ajouté des lignes aux mêmes JSONL :
 `merge=union` dans `.gitattributes` reste désactivé : l'union silencieuse peut
 laisser deux prévisions actives ; `synchro verifier` les détecte après coup.
 
+## Test de synchronisation par Git
+
+`scripts/synchro_git.py` rejoue un relais complet sur une mémoire fictive
+(`essais/synchro_git/memoire`, branches de test seulement, jamais dans main) :
+
+1. Claude : `python scripts/synchro_git.py claude`, commit, push de sa branche.
+2. Codex : branche `codex/synchro-git` tirée de celle de Claude,
+   `python scripts/synchro_git.py codex --reference origin/<branche Claude>`, commit, push.
+3. Claude : fusion de `origin/codex/synchro-git`, `python scripts/synchro_git.py retour`.
+
+`python scripts/synchro_git.py divergence` montre, dans un bac à sable local,
+que deux branches qui prévoient le même match produisent un conflit git, et
+que la résolution par union est refusée par `synchro verifier`.
+
 ## À construire
 
 - Jeton d'écriture explicite dans la mémoire (`travail`, clé `jeton_registre`).
