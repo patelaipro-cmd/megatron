@@ -1,0 +1,59 @@
+{
+ "ligues": [
+  "ENG-Premier League",
+  "ESP-La Liga",
+  "ITA-Serie A",
+  "GER-Bundesliga",
+  "FRA-Ligue 1"
+ ],
+ "saisons": {
+  "2014-15": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:07Z"
+  },
+  "2015-16": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:15Z"
+  },
+  "2016-17": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:21Z"
+  },
+  "2017-18": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:27Z"
+  },
+  "2018-19": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:31Z"
+  },
+  "2019-20": {
+   "lignes": 1725,
+   "collecte_le": "2026-10-29T20:57:36Z"
+  },
+  "2020-21": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:40Z"
+  },
+  "2021-22": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:45Z"
+  },
+  "2022-23": {
+   "lignes": 1826,
+   "collecte_le": "2026-10-29T20:57:50Z"
+  },
+  "2023-24": {
+   "lignes": 1752,
+   "collecte_le": "2026-10-29T20:57:54Z"
+  },
+  "2024-25": {
+   "lignes": 1752,
+   "collecte_le": "2026-10-29T20:57:59Z"
+  },
+  "2025-26": {
+   "lignes": 1752,
+   "collecte_le": "2026-10-29T20:58:03Z"
+  }
+ }
+}
