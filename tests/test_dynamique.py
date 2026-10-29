@@ -59,6 +59,32 @@ class DynamiqueTests(unittest.TestCase):
         k = "E0:2020-08-15:A-B"
         self.assertGreater(p_w[k][0]["H"], p_0[k][0]["H"])
 
+    def test_mode_xg_remplace_les_buts_par_les_xg(self):
+        j = date(2020, 8, 1)
+        ms = [match(j, "A", "B", 0, 0, tirs=(20, 2, 9, 0)), match(j + timedelta(days=7), "A", "B", 0, 0)]
+        k = "E0:2020-08-08:A-B"
+        sans = derouler(ms, Reglage(w=1.0), xg={})[k]
+        avec = derouler(ms, Reglage(w=1.0), xg={"E0:2020-08-01:A-B": (3.0, 0.2)})[k]
+        self.assertGreater(avec[0]["H"], sans[0]["H"])
+        buts = derouler(ms, Reglage(w=0.0))[k]  # mode xG sans xG : buts seuls, tirs ignorés
+        self.assertEqual(sans, buts)
+
+    def test_liaison_understat_par_vote_sur_les_matchs_communs(self):
+        import sys
+        from pathlib import Path
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+        from exp018_xg import relier
+        j = date(2020, 8, 1)
+        ms = [match(j, "Man City", "Spurs", 2, 0), match(j + timedelta(days=7), "Spurs", "Man City", 1, 1)]
+        xg = [{"division": "E0", "jour": j, "dom": "Manchester City", "ext": "Tottenham", "bd": 2, "be": 0, "xg": (2.1, 0.4)},
+              {"division": "E0", "jour": j + timedelta(days=8), "dom": "Tottenham", "ext": "Manchester City", "bd": 1, "be": 1,
+               "xg": (0.9, 1.7)},
+              {"division": "E0", "jour": j + timedelta(days=30), "dom": "Tottenham", "ext": "Manchester City", "bd": 0, "be": 0,
+               "xg": (1.0, 1.0)}]
+        lie, info = relier(xg, ms)
+        self.assertEqual(lie, {"E0:2020-08-01:Man City-Spurs": (2.1, 0.4), "E0:2020-08-08:Spurs-Man City": (0.9, 1.7)})
+        self.assertEqual(info["non_relie"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

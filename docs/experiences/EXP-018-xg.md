@@ -53,3 +53,35 @@ périodes) apprise de la même façon.
 
 - Understat peut avoir révisé ses xG après coup : valeurs d'aujourd'hui ≠ valeurs publiées à l'époque.
 - Cotes Bet365 de football-data, pas de clôture. Périodes de test déjà vues par le projet.
+
+## Résultats (exécution du 29/10/2026)
+
+Données : workflow `xg-historique` (run 40953408635, 29/10/2026 20:56-20:58 UTC), 21 589 matchs
+Understat 2014/15-2025/26 ; 21 471 reliés à `data/`, 117 non reliés, 1 score différent (exclus).
+`python scripts/exp018_xg.py --xg <externe/understat/historique> --sortie docs/experiences/EXP-018`.
+
+**Verdict : REJETÉ (X1, X2 non tenus). Les xG passés sont déjà dans les cotes.**
+
+Grille dev (xg-v1 seul) : w = 0,25 → 0,96831 ; **0,5 → 0,96743** ; 0,75 → 0,96827 ; 1 → 0,97092.
+Fusion apprise sur dev : α (xg-v1) = −0,138 ; β (cotes) = 1,189. Fusion de référence sans xG :
+α (dyn-v1) = −0,083 ; β = 1,137. Poids du modèle légèrement négatif : aucune information ajoutée.
+
+| | validation 2018-21 (5 377) | test 2021-26 (8 906) |
+|---|---:|---:|
+| fusion xg − bookmaker [IC 95 %] | +0,00021 [−0,00078 ; +0,00129] | −0,00053 [−0,00126 ; +0,00024] |
+| fusion xg − fusion sans xG | +0,00008 [−0,00015 ; +0,00030] | +0,00003 [−0,00016 ; +0,00020] |
+| RPS fusion xg / bookmaker | 0,19657 / 0,19658 | 0,19519 / 0,19537 |
+
+Par ligue, test : F1 −0,0004 ; E0 0,0000 ; D1 0,0000 ; SP1 −0,0021 ; I1 0,0000 (4/5 < 0, écarts
+négligeables). Critères : X1 non ; X2 non ; X3 oui ; X4 oui.
+
+Information, hors critères : **les xG améliorent nettement le modèle statistique seul.**
+- xg-v1 − dyn-v1 (tirs cadrés) : validation −0,0025 [−0,0040 ; −0,0009], test −0,0021 [−0,0034 ; −0,0009].
+- xg-v1 − v5-cal (matchs d'EXP-008 2018-26, 14 284) : −0,0017 [−0,0031 ; −0,0002].
+
+Ce gain reste sous les cotes (xg-v1 seul ≈ 0,984 contre 0,971 en test). Il ne change rien au 1X2
+de production tant que le marché est disponible. Une promotion de xg-v1 à la place de v5-cal, pour
+les matchs sans cotes, demanderait son propre protocole.
+
+Conséquence (décision prévue) : l'étage suivant ne porte que sur l'information postérieure aux
+cotes : compositions et absents (EXP-013, collecte en cours).

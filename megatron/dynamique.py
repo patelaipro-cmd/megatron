@@ -106,11 +106,15 @@ class Filtre:
             nouveau = _Etat(e.m + e.p * gain, max(p, 1e-6), e.jour)
             (self.ligues if len(cle) == 2 else self.equipes)[cle] = nouveau
 
-    def mettre_a_jour(self, m: Match) -> None:
+    def mettre_a_jour(self, m: Match, xg: tuple[float, float] | None = None, mode_xg: bool = False) -> None:
+        """mode_xg (EXP-018) : observation (1 − w) · buts + w · xG ; sans xG, buts seuls."""
         r, lg, j = self.reglage, m.division, m.day
         yh, ya = float(m.home_goals), float(m.away_goals)
         k = self._k(lg, j)
-        if r.w > 0 and m.shots and k is not None:
+        if mode_xg:
+            if xg is not None and r.w > 0:
+                yh, ya = (1 - r.w) * yh + r.w * xg[0], (1 - r.w) * ya + r.w * xg[1]
+        elif r.w > 0 and m.shots and k is not None:
             yh = (1 - r.w) * yh + r.w * k * m.shots[2]
             ya = (1 - r.w) * ya + r.w * k * m.shots[3]
         # domicile : μ, h, a_dom, d_ext
@@ -145,10 +149,12 @@ def issues(lh: float, la: float, n: int = GRILLE) -> dict[str, float]:
     return {"H": h / t, "D": d / t, "A": a / t}
 
 
-def derouler(matchs: list[Match], reglage: Reglage, garder=lambda m: True) -> dict[str, tuple]:
+def derouler(matchs: list[Match], reglage: Reglage, garder=lambda m: True,
+             xg: dict[str, tuple[float, float]] | None = None) -> dict[str, tuple]:
     """Parcourt les matchs dans l'ordre ; prévoit chaque jour avant de mettre à jour avec ce jour.
 
     Renvoie {match_id: (1X2, λ_dom, λ_ext)} pour les matchs retenus par ``garder``.
+    ``xg`` ({match_id: (xG dom, xG ext)}) active le mode xG d'EXP-018 à la place des tirs cadrés.
     """
     f = Filtre(reglage)
     out: dict[str, tuple] = {}
@@ -162,5 +168,5 @@ def derouler(matchs: list[Match], reglage: Reglage, garder=lambda m: True) -> di
                 lh, la = f.intensites(m.division, m.home, m.away, m.day)
                 out[m.match_id] = (issues(lh, la), lh, la)
         for m in du_jour:
-            f.mettre_a_jour(m)
+            f.mettre_a_jour(m, None if xg is None else xg.get(m.match_id), mode_xg=xg is not None)
     return out
