@@ -4,7 +4,7 @@ Usage, depuis la racine du dépôt : python scripts/valider_acces.py [--acces co
 
 Sans appel LLM (clés retirées de l'environnement des tests, agent Stats seul)
 et sans toucher à memoire/ : tout parcours s'exécute en mémoire temporaire.
-Étapes : état git, reprise du checkpoint, suite complète des tests, parcours
+Étapes : état git, reprise du checkpoint, synchro verifier, suite complète des tests, parcours
 fictif (prévision, doublon, résultat, bilan, relecture, reprise), contrôle
 que memoire/ est inchangée. Code de sortie 0 seulement si tout passe.
 """
@@ -98,12 +98,15 @@ def main() -> int:
     from megatron.store import MemoryStore
     ck = checkpoint.load(MemoryStore(ROOT / "memoire")) or {}
     rapport["checkpoint"] = {"id": ck.get("id"), "commit": ck.get("commit"), "date": ck.get("date")}
+    from megatron import synchro
+    sy = synchro.verifier(ROOT / "memoire")
+    rapport["synchro"] = {"ok": sy["ok"], "erreurs": sy["erreurs"], "alertes": sy["alertes"]}
     tests = subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-t", "."],
                            cwd=ROOT, capture_output=True, text=True)
     rapport["tests"] = {"ok": tests.returncode == 0, "fin": tests.stderr.strip().splitlines()[-3:]}
     rapport["parcours_fictif"] = parcours_fictif()
     rapport["memoire_inchangee"] = _hashes() == avant
-    rapport["succes"] = (rapport["tests"]["ok"] and all(rapport["parcours_fictif"].values())
+    rapport["succes"] = (rapport["tests"]["ok"] and rapport["synchro"]["ok"] and all(rapport["parcours_fictif"].values())
                          and rapport["memoire_inchangee"])
     print(json.dumps(rapport, indent=2, ensure_ascii=False))
     return 0 if rapport["succes"] else 1

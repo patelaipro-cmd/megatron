@@ -10,7 +10,9 @@ et `prevoir --execution multi-llm` peuvent appeler des fournisseurs : ne pas les
 Ne jamais afficher ni committer de clé API.
 
 La mémoire du dépôt n'est pas synchronisée automatiquement. Avant une reprise,
-actualiser la branche et lire le checkpoint. Ne pas écraser les journaux d'un
+actualiser la branche, lire le checkpoint et lancer
+`python -m megatron synchro verifier --reference origin/main` (code 1 = ne pas reprendre).
+Ne pas écraser les journaux d'un
 autre environnement. Des journaux divergents exigent une réconciliation explicite.
 Tester dans un répertoire temporaire, sans altérer les prévisions réelles.
 

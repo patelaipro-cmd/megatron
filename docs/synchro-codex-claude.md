@@ -24,13 +24,18 @@ par `main` sur GitHub. Méthode proposée (manuelle, non automatisée).
 git fetch origin main
 git switch -c <env>/<tache> origin/main
 python -m megatron reprise
+python -m megatron synchro verifier --reference origin/main
 python scripts/valider_acces.py --acces <codex|claude>
 ```
 
-Vérifier : le `commit` du checkpoint est un ancêtre de `origin/main`
-(`git merge-base --is-ancestor <commit> origin/main`) et les `effectifs` du
-checkpoint correspondent aux fichiers (sinon : mémoire modifiée après le
-checkpoint, lire `git log -- memoire/`).
+`synchro verifier` ne modifie rien. Code 1 (erreurs) : ne pas reprendre avant
+réconciliation. Erreurs : ligne illisible ou marqueur de conflit git,
+identifiant en double, `supersedes` inconnu, prévision ou résultat actif en
+double, contradiction active, prévision enregistrée après le coup d'envoi.
+Alertes (code 0, à lire) : checkpoint absent ou sans commit, effectifs
+différents du checkpoint, commit du checkpoint hors de l'historique, retard sur
+la référence, mémoire non commitée. Une mémoire hors dépôt (relais par fichier)
+s'utilise avec `--memoire <dossier>`.
 
 ## Fin de session
 
@@ -49,17 +54,14 @@ Deux branches ont ajouté des lignes aux mêmes JSONL :
 
 - conflit git en fin de fichier : garder l'union des lignes (chaque entrée a un
   `id` unique), triées par `recorded_at` ;
-- puis `MemoryStore.contradictions()` sur chaque domaine : toute clé active en
-  double doit être tranchée à la main ;
+- puis `python -m megatron synchro verifier` : toute clé active en double
+  ou contradiction est listée et doit être tranchée à la main ;
 - deux `pred:` pour le même match et la même version : garder la plus ancienne
   (antérieure au coup d'envoi), signaler l'autre ; jamais de choix a posteriori.
 
-Ne pas activer `merge=union` dans `.gitattributes` sans une commande de
-vérification automatique : l'union silencieuse peut laisser deux prévisions
-actives.
+`merge=union` dans `.gitattributes` reste désactivé : l'union silencieuse peut
+laisser deux prévisions actives ; `synchro verifier` les détecte après coup.
 
 ## À construire
 
-- `python -m megatron synchro verifier` : contrôle commit/effectifs du
-  checkpoint, doublons `pred:`/`result:`, contradictions.
 - Jeton d'écriture explicite dans la mémoire (`travail`, clé `jeton_registre`).

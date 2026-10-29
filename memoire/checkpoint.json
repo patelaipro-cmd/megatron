@@ -1,14 +1,13 @@
 {
   "version": "0.1.0",
-  "commit": "8eca058",
-  "date": "2026-10-29T08:14:34+00:00",
-  "resume": "Fenêtre stricte de 5 h dans prevoir ; marchés 2+ et 3+ buts enregistrés (EXP-007) ; validation d'accès en une commande.",
+  "commit": "95ab0de",
+  "date": "2026-10-29T09:02:12+00:00",
+  "resume": "synchro verifier : contrôle de la mémoire avant reprise (checkpoint, doublons, contradictions, conflits git, fuite temporelle) ; relais fichier Codex → Claude → Codex validé sur scénario fictif.",
   "prochaines_actions": [
-    "Valider l'accès Codex séparément sur la même branche (tests + parcours fictif)",
-    "Construire python -m megatron synchro verifier (docs/synchro-codex-claude.md)",
     "Réajuster demi-vie / rétrécissement / w sur 2008-2020 (plus de données) puis tester sur 2022-2026, protocole commité avant",
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
-    "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)"
+    "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
+    "Valider la synchronisation via Git entre Codex et Claude (branche partagée, synchro verifier des deux côtés)"
   ],
   "blocages": [
     "Gemini laissé de côté (choix de Luloki) : Fusion en mode dégradé",
@@ -106,5 +105,5 @@
     "performances": 4,
     "technique": 5
   },
-  "id": "ckpt-3f1f193a9f"
+  "id": "ckpt-9c5413202b"
 }
