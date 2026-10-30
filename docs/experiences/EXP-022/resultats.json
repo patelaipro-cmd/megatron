@@ -1,0 +1,1691 @@
+{
+ "protocole": "docs/experiences/EXP-022-autres-ligues.md",
+ "recalibration_B": {
+  "b": 0.931629,
+  "c_H": 0.067433,
+  "c_D": 0.098163,
+  "n_dev": 45201
+ },
+ "n": {
+  "dev": 45201,
+  "validation": 22677,
+  "test": 34982
+ },
+ "L1_B_moins_A_validation": {
+  "n": 22677,
+  "ecart": -0.00063,
+  "ic95": [
+   -0.00141,
+   0.00015
+  ]
+ },
+ "modele_retenu": "A",
+ "test_reunies": {
+  "A": {
+   "n": 34982,
+   "brier": 0.616254,
+   "log_loss": 1.026764,
+   "rps": 0.211667
+  },
+  "B": {
+   "n": 34982,
+   "brier": 0.616463,
+   "log_loss": 1.027017,
+   "rps": 0.211795
+  },
+  "v5": {
+   "n": 34982,
+   "brier": 0.616246,
+   "log_loss": 1.026895,
+   "rps": 0.211646
+  },
+  "frequences": {
+   "n": 34982,
+   "brier": 0.652269,
+   "log_loss": 1.077427,
+   "rps": 0.229186
+  },
+  "M_moins_bookmaker": {
+   "n": 34928,
+   "ecart": 0.01644,
+   "ic95": [
+    0.0147,
+    0.01816
+   ]
+  },
+  "M_moins_frequences": {
+   "n": 34982,
+   "ecart": -0.05066,
+   "ic95": [
+    -0.05412,
+    -0.04711
+   ]
+  }
+ },
+ "par_ligue": {
+  "E1": {
+   "n": 3387,
+   "log_loss_M": 1.04952,
+   "M_moins_frequences": {
+    "n": 3387,
+    "ecart": -0.02748,
+    "ic95": [
+     -0.03684,
+     -0.01845
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 3387,
+    "ecart": 0.01456,
+    "ic95": [
+     0.00944,
+     0.01921
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 412,
+     "prevu": 0.2589,
+     "observe": 0.3131,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 913,
+     "prevu": 0.3558,
+     "observe": 0.3582,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 1001,
+     "prevu": 0.4483,
+     "observe": 0.4376,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 641,
+     "prevu": 0.5446,
+     "observe": 0.5179,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.6,
+     "n": 234,
+     "prevu": 0.6428,
+     "observe": 0.6709,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 2532,
+     "prevu": 0.268,
+     "observe": 0.2618,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 742,
+     "prevu": 0.3147,
+     "observe": 0.2547,
+     "ok": false
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 589,
+     "prevu": 0.1617,
+     "observe": 0.1868,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 1243,
+     "prevu": 0.2512,
+     "observe": 0.284,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 905,
+     "prevu": 0.3439,
+     "observe": 0.3591,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 393,
+     "prevu": 0.4393,
+     "observe": 0.4351,
+     "ok": true
+    }
+   ]
+  },
+  "E2": {
+   "n": 3309,
+   "log_loss_M": 1.036257,
+   "M_moins_frequences": {
+    "n": 3309,
+    "ecart": -0.03834,
+    "ic95": [
+     -0.04941,
+     -0.0283
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 3309,
+    "ecart": 0.01838,
+    "ic95": [
+     0.01297,
+     0.02376
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 531,
+     "prevu": 0.2554,
+     "observe": 0.2448,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 874,
+     "prevu": 0.3518,
+     "observe": 0.3673,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 837,
+     "prevu": 0.4498,
+     "observe": 0.4743,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 629,
+     "prevu": 0.5473,
+     "observe": 0.5405,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.6,
+     "n": 277,
+     "prevu": 0.6411,
+     "observe": 0.6173,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 2671,
+     "prevu": 0.2635,
+     "observe": 0.2553,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 536,
+     "prevu": 0.3178,
+     "observe": 0.2369,
+     "ok": false
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 622,
+     "prevu": 0.1592,
+     "observe": 0.1817,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 1023,
+     "prevu": 0.251,
+     "observe": 0.2532,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 911,
+     "prevu": 0.3482,
+     "observe": 0.36,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 489,
+     "prevu": 0.4472,
+     "observe": 0.4847,
+     "ok": true
+    }
+   ]
+  },
+  "E3": {
+   "n": 3308,
+   "log_loss_M": 1.066145,
+   "M_moins_frequences": {
+    "n": 3308,
+    "ecart": -0.01501,
+    "ic95": [
+     -0.02357,
+     -0.006
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 3307,
+    "ecart": 0.01666,
+    "ic95": [
+     0.0107,
+     0.02233
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 383,
+     "prevu": 0.2615,
+     "observe": 0.329,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 1014,
+     "prevu": 0.3554,
+     "observe": 0.3807,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 1128,
+     "prevu": 0.4493,
+     "observe": 0.4344,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 557,
+     "prevu": 0.5429,
+     "observe": 0.4991,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 2448,
+     "prevu": 0.2676,
+     "observe": 0.2569,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 814,
+     "prevu": 0.3186,
+     "observe": 0.301,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 448,
+     "prevu": 0.1646,
+     "observe": 0.1808,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 1266,
+     "prevu": 0.2533,
+     "observe": 0.278,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 1086,
+     "prevu": 0.3425,
+     "observe": 0.3407,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 407,
+     "prevu": 0.4395,
+     "observe": 0.4226,
+     "ok": true
+    }
+   ]
+  },
+  "EC": {
+   "n": 2819,
+   "log_loss_M": 1.019297,
+   "M_moins_frequences": {
+    "n": 2819,
+    "ecart": -0.05415,
+    "ic95": [
+     -0.06707,
+     -0.04131
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 2805,
+    "ecart": 0.01613,
+    "ic95": [
+     0.00909,
+     0.0236
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 402,
+     "prevu": 0.2563,
+     "observe": 0.3209,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 630,
+     "prevu": 0.3521,
+     "observe": 0.3762,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 685,
+     "prevu": 0.4484,
+     "observe": 0.4234,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 465,
+     "prevu": 0.5459,
+     "observe": 0.4946,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.6,
+     "n": 259,
+     "prevu": 0.646,
+     "observe": 0.6448,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.1,
+     "n": 328,
+     "prevu": 0.1699,
+     "observe": 0.186,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 2050,
+     "prevu": 0.2552,
+     "observe": 0.2429,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 421,
+     "prevu": 0.3223,
+     "observe": 0.285,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 524,
+     "prevu": 0.155,
+     "observe": 0.1908,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 780,
+     "prevu": 0.2513,
+     "observe": 0.291,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 689,
+     "prevu": 0.3471,
+     "observe": 0.357,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 385,
+     "prevu": 0.4447,
+     "observe": 0.4182,
+     "ok": true
+    }
+   ]
+  },
+  "SC0": {
+   "n": 1340,
+   "log_loss_M": 0.95181,
+   "M_moins_frequences": {
+    "n": 1340,
+    "ecart": -0.11762,
+    "ic95": [
+     -0.14222,
+     -0.09373
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 1340,
+    "ecart": 0.01403,
+    "ic95": [
+     0.00668,
+     0.02088
+    ]
+   },
+   "L2": true,
+   "L3": true,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 270,
+     "prevu": 0.355,
+     "observe": 0.3222,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 299,
+     "prevu": 0.4481,
+     "observe": 0.4615,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.1,
+     "n": 250,
+     "prevu": 0.1529,
+     "observe": 0.14,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 806,
+     "prevu": 0.2613,
+     "observe": 0.268,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 235,
+     "prevu": 0.3168,
+     "observe": 0.3021,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 378,
+     "prevu": 0.2505,
+     "observe": 0.2593,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 267,
+     "prevu": 0.3419,
+     "observe": 0.3521,
+     "ok": true
+    }
+   ]
+  },
+  "SC1": {
+   "n": 1014,
+   "log_loss_M": 1.06251,
+   "M_moins_frequences": {
+    "n": 1014,
+    "ecart": -0.03105,
+    "ic95": [
+     -0.05106,
+     -0.01219
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 1014,
+    "ecart": 0.01202,
+    "ic95": [
+     0.00057,
+     0.02287
+    ]
+   },
+   "L2": true,
+   "L3": true,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 273,
+     "prevu": 0.3546,
+     "observe": 0.3407,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 278,
+     "prevu": 0.4473,
+     "observe": 0.4568,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 798,
+     "prevu": 0.2631,
+     "observe": 0.2945,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 297,
+     "prevu": 0.2545,
+     "observe": 0.2424,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 290,
+     "prevu": 0.345,
+     "observe": 0.3034,
+     "ok": true
+    }
+   ]
+  },
+  "SC2": {
+   "n": 994,
+   "log_loss_M": 1.023984,
+   "M_moins_frequences": {
+    "n": 994,
+    "ecart": -0.05666,
+    "ic95": [
+     -0.07848,
+     -0.03476
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 994,
+    "ecart": 0.02277,
+    "ic95": [
+     0.00991,
+     0.03449
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 228,
+     "prevu": 0.3517,
+     "observe": 0.3772,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 200,
+     "prevu": 0.4481,
+     "observe": 0.48,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 849,
+     "prevu": 0.2539,
+     "observe": 0.2438,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 215,
+     "prevu": 0.251,
+     "observe": 0.3023,
+     "ok": false
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 251,
+     "prevu": 0.3484,
+     "observe": 0.3068,
+     "ok": true
+    }
+   ]
+  },
+  "SC3": {
+   "n": 999,
+   "log_loss_M": 1.055682,
+   "M_moins_frequences": {
+    "n": 999,
+    "ecart": -0.02533,
+    "ic95": [
+     -0.04293,
+     -0.00771
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 999,
+    "ecart": 0.01426,
+    "ic95": [
+     0.00341,
+     0.02555
+    ]
+   },
+   "L2": true,
+   "L3": true,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 286,
+     "prevu": 0.3503,
+     "observe": 0.3357,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 316,
+     "prevu": 0.4478,
+     "observe": 0.462,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 900,
+     "prevu": 0.2618,
+     "observe": 0.2567,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 324,
+     "prevu": 0.2526,
+     "observe": 0.284,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 310,
+     "prevu": 0.3454,
+     "observe": 0.3452,
+     "ok": true
+    }
+   ]
+  },
+  "SP2": {
+   "n": 2836,
+   "log_loss_M": 1.051848,
+   "M_moins_frequences": {
+    "n": 2836,
+    "ecart": -0.01714,
+    "ic95": [
+     -0.02534,
+     -0.00808
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 2836,
+    "ecart": 0.01796,
+    "ic95": [
+     0.01181,
+     0.02431
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 202,
+     "prevu": 0.265,
+     "observe": 0.3267,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 825,
+     "prevu": 0.3563,
+     "observe": 0.3612,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 1057,
+     "prevu": 0.4486,
+     "observe": 0.4693,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 587,
+     "prevu": 0.5415,
+     "observe": 0.5503,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1369,
+     "prevu": 0.2701,
+     "observe": 0.2717,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 1424,
+     "prevu": 0.3279,
+     "observe": 0.3055,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 596,
+     "prevu": 0.1679,
+     "observe": 0.1711,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 1327,
+     "prevu": 0.2501,
+     "observe": 0.2359,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 712,
+     "prevu": 0.3386,
+     "observe": 0.3441,
+     "ok": true
+    }
+   ]
+  },
+  "I2": {
+   "n": 2350,
+   "log_loss_M": 1.068015,
+   "M_moins_frequences": {
+    "n": 2350,
+    "ecart": -0.0206,
+    "ic95": [
+     -0.03096,
+     -0.00955
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 2341,
+    "ecart": 0.02103,
+    "ic95": [
+     0.01494,
+     0.02717
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 260,
+     "prevu": 0.2608,
+     "observe": 0.2654,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 729,
+     "prevu": 0.3541,
+     "observe": 0.332,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 804,
+     "prevu": 0.446,
+     "observe": 0.4241,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 384,
+     "prevu": 0.5407,
+     "observe": 0.5,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1650,
+     "prevu": 0.2709,
+     "observe": 0.3224,
+     "ok": false
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 654,
+     "prevu": 0.3159,
+     "observe": 0.3333,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 320,
+     "prevu": 0.1654,
+     "observe": 0.175,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 939,
+     "prevu": 0.2524,
+     "observe": 0.2354,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 746,
+     "prevu": 0.3437,
+     "observe": 0.3177,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 252,
+     "prevu": 0.4393,
+     "observe": 0.4008,
+     "ok": true
+    }
+   ]
+  },
+  "F2": {
+   "n": 2129,
+   "log_loss_M": 1.061526,
+   "M_moins_frequences": {
+    "n": 2129,
+    "ecart": -0.02124,
+    "ic95": [
+     -0.03283,
+     -0.00986
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 2129,
+    "ecart": 0.01991,
+    "ic95": [
+     0.01331,
+     0.02628
+    ]
+   },
+   "L2": true,
+   "L3": true,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 291,
+     "prevu": 0.2609,
+     "observe": 0.2887,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 671,
+     "prevu": 0.3517,
+     "observe": 0.3592,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 648,
+     "prevu": 0.4467,
+     "observe": 0.446,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 350,
+     "prevu": 0.5434,
+     "observe": 0.5571,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1221,
+     "prevu": 0.2707,
+     "observe": 0.2817,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 876,
+     "prevu": 0.3237,
+     "observe": 0.2979,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 351,
+     "prevu": 0.1664,
+     "observe": 0.1795,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 787,
+     "prevu": 0.2522,
+     "observe": 0.2478,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 653,
+     "prevu": 0.3447,
+     "observe": 0.3323,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 234,
+     "prevu": 0.4386,
+     "observe": 0.4316,
+     "ok": true
+    }
+   ]
+  },
+  "D2": {
+   "n": 1836,
+   "log_loss_M": 1.049777,
+   "M_moins_frequences": {
+    "n": 1836,
+    "ecart": -0.02508,
+    "ic95": [
+     -0.03753,
+     -0.01236
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 1836,
+    "ecart": 0.01408,
+    "ic95": [
+     0.00704,
+     0.02131
+    ]
+   },
+   "L2": true,
+   "L3": true,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 463,
+     "prevu": 0.3549,
+     "observe": 0.3521,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 561,
+     "prevu": 0.4506,
+     "observe": 0.426,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 417,
+     "prevu": 0.5435,
+     "observe": 0.5348,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1729,
+     "prevu": 0.2485,
+     "observe": 0.2545,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 258,
+     "prevu": 0.1656,
+     "observe": 0.1822,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 629,
+     "prevu": 0.2518,
+     "observe": 0.2591,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 552,
+     "prevu": 0.3436,
+     "observe": 0.3533,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 282,
+     "prevu": 0.4401,
+     "observe": 0.4326,
+     "ok": true
+    }
+   ]
+  },
+  "N1": {
+   "n": 1836,
+   "log_loss_M": 0.951809,
+   "M_moins_frequences": {
+    "n": 1836,
+    "ecart": -0.12241,
+    "ic95": [
+     -0.1425,
+     -0.10241
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 1836,
+    "ecart": 0.01424,
+    "ic95": [
+     0.008,
+     0.02043
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 244,
+     "prevu": 0.2541,
+     "observe": 0.2254,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 283,
+     "prevu": 0.3493,
+     "observe": 0.3498,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 313,
+     "prevu": 0.4485,
+     "observe": 0.393,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 276,
+     "prevu": 0.547,
+     "observe": 0.529,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.6,
+     "n": 204,
+     "prevu": 0.6466,
+     "observe": 0.6225,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.1,
+     "n": 429,
+     "prevu": 0.1597,
+     "observe": 0.2028,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1277,
+     "prevu": 0.2482,
+     "observe": 0.2655,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.0,
+     "n": 246,
+     "prevu": 0.0599,
+     "observe": 0.0488,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 338,
+     "prevu": 0.1526,
+     "observe": 0.1509,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 389,
+     "prevu": 0.2479,
+     "observe": 0.2699,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 308,
+     "prevu": 0.3491,
+     "observe": 0.3409,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 225,
+     "prevu": 0.4472,
+     "observe": 0.44,
+     "ok": true
+    }
+   ]
+  },
+  "P1": {
+   "n": 1883,
+   "log_loss_M": 0.929379,
+   "M_moins_frequences": {
+    "n": 1883,
+    "ecart": -0.14651,
+    "ic95": [
+     -0.16525,
+     -0.1278
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 1883,
+    "ecart": 0.01155,
+    "ic95": [
+     0.00601,
+     0.01694
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.1,
+     "n": 212,
+     "prevu": 0.1461,
+     "observe": 0.0991,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 406,
+     "prevu": 0.3533,
+     "observe": 0.3867,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 460,
+     "prevu": 0.4454,
+     "observe": 0.4304,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 203,
+     "prevu": 0.5434,
+     "observe": 0.4828,
+     "ok": false
+    },
+    {
+     "issue": "D",
+     "tranche": 0.1,
+     "n": 328,
+     "prevu": 0.1615,
+     "observe": 0.1006,
+     "ok": false
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1124,
+     "prevu": 0.2641,
+     "observe": 0.2874,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 407,
+     "prevu": 0.314,
+     "observe": 0.2703,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.0,
+     "n": 240,
+     "prevu": 0.0637,
+     "observe": 0.025,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 237,
+     "prevu": 0.1546,
+     "observe": 0.1561,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 511,
+     "prevu": 0.2535,
+     "observe": 0.2368,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 419,
+     "prevu": 0.3427,
+     "observe": 0.3198,
+     "ok": true
+    }
+   ]
+  },
+  "B1": {
+   "n": 1853,
+   "log_loss_M": 1.006883,
+   "M_moins_frequences": {
+    "n": 1853,
+    "ecart": -0.06943,
+    "ic95": [
+     -0.08611,
+     -0.05242
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 1853,
+    "ecart": 0.01048,
+    "ic95": [
+     0.00409,
+     0.01726
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 291,
+     "prevu": 0.254,
+     "observe": 0.2543,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 372,
+     "prevu": 0.3533,
+     "observe": 0.336,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 372,
+     "prevu": 0.4498,
+     "observe": 0.422,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 342,
+     "prevu": 0.5475,
+     "observe": 0.4942,
+     "ok": false
+    },
+    {
+     "issue": "H",
+     "tranche": 0.6,
+     "n": 218,
+     "prevu": 0.644,
+     "observe": 0.656,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.1,
+     "n": 216,
+     "prevu": 0.1704,
+     "observe": 0.1574,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1559,
+     "prevu": 0.2509,
+     "observe": 0.2559,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 378,
+     "prevu": 0.1578,
+     "observe": 0.1561,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 459,
+     "prevu": 0.2499,
+     "observe": 0.2876,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 387,
+     "prevu": 0.3474,
+     "observe": 0.3618,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 282,
+     "prevu": 0.4465,
+     "observe": 0.4504,
+     "ok": true
+    }
+   ]
+  },
+  "T1": {
+   "n": 2187,
+   "log_loss_M": 0.994392,
+   "M_moins_frequences": {
+    "n": 2187,
+    "ecart": -0.07573,
+    "ic95": [
+     -0.09022,
+     -0.062
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 2158,
+    "ecart": 0.0209,
+    "ic95": [
+     0.01403,
+     0.02841
+    ]
+   },
+   "L2": true,
+   "L3": false,
+   "tranches": [
+    {
+     "issue": "H",
+     "tranche": 0.2,
+     "n": 293,
+     "prevu": 0.2578,
+     "observe": 0.2389,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.3,
+     "n": 479,
+     "prevu": 0.352,
+     "observe": 0.3674,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.4,
+     "n": 491,
+     "prevu": 0.4506,
+     "observe": 0.4216,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.5,
+     "n": 428,
+     "prevu": 0.5455,
+     "observe": 0.5491,
+     "ok": true
+    },
+    {
+     "issue": "H",
+     "tranche": 0.6,
+     "n": 230,
+     "prevu": 0.645,
+     "observe": 0.6957,
+     "ok": false
+    },
+    {
+     "issue": "D",
+     "tranche": 0.1,
+     "n": 238,
+     "prevu": 0.1674,
+     "observe": 0.1513,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 1819,
+     "prevu": 0.2564,
+     "observe": 0.2655,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.1,
+     "n": 454,
+     "prevu": 0.1561,
+     "observe": 0.1476,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 627,
+     "prevu": 0.2497,
+     "observe": 0.236,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.3,
+     "n": 490,
+     "prevu": 0.3481,
+     "observe": 0.3327,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.4,
+     "n": 291,
+     "prevu": 0.4438,
+     "observe": 0.4502,
+     "ok": true
+    }
+   ]
+  },
+  "G1": {
+   "n": 902,
+   "log_loss_M": 0.987567,
+   "M_moins_frequences": {
+    "n": 902,
+    "ecart": -0.10657,
+    "ic95": [
+     -0.13563,
+     -0.07688
+    ]
+   },
+   "M_moins_bookmaker": {
+    "n": 901,
+    "ecart": 0.01663,
+    "ic95": [
+     0.00382,
+     0.02923
+    ]
+   },
+   "L2": true,
+   "L3": true,
+   "tranches": [
+    {
+     "issue": "D",
+     "tranche": 0.2,
+     "n": 497,
+     "prevu": 0.2629,
+     "observe": 0.2676,
+     "ok": true
+    },
+    {
+     "issue": "D",
+     "tranche": 0.3,
+     "n": 295,
+     "prevu": 0.3286,
+     "observe": 0.2983,
+     "ok": true
+    },
+    {
+     "issue": "A",
+     "tranche": 0.2,
+     "n": 214,
+     "prevu": 0.2475,
+     "observe": 0.285,
+     "ok": true
+    }
+   ]
+  }
+ },
+ "ligues_couvertes": [
+  "SC0",
+  "SC1",
+  "SC3",
+  "F2",
+  "D2",
+  "G1"
+ ]
+}
