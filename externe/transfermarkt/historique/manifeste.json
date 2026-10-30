@@ -1,0 +1,37 @@
+{
+ "source": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/",
+ "ligues": {
+  "GB1": "E0",
+  "ES1": "SP1",
+  "IT1": "I1",
+  "L1": "D1",
+  "FR1": "F1"
+ },
+ "collecte_le": "2026-10-30T07:08:41.471868+00:00",
+ "tables": {
+  "games": {
+   "lignes_source": 88958,
+   "lignes_gardees": 25241
+  },
+  "game_lineups": {
+   "lignes_source": 3179016,
+   "lignes_gardees": 929583
+  },
+  "appearances": {
+   "lignes_source": 1894350,
+   "lignes_gardees": 726823
+  },
+  "players": {
+   "lignes_source": 50149,
+   "lignes_gardees": 13676
+  },
+  "player_valuations": {
+   "lignes_source": 656301,
+   "lignes_gardees": 262585
+  },
+  "clubs": {
+   "lignes_source": 796,
+   "lignes_gardees": 796
+  }
+ }
+}
