@@ -1,0 +1,38 @@
+name: transfermarkt-historique
+# Collecte unique de l'historique Transfermarkt (EXP-013) dans externe/transfermarkt/historique/ de la
+# branche donnees-externes (jamais sur main).
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: [".github/workflows/transfermarkt-historique.yml", "scripts/collecte_transfermarkt_historique.py"]
+permissions:
+  contents: write
+concurrency:
+  group: collecte-externe
+  cancel-in-progress: false
+jobs:
+  transfermarkt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Préparer la branche de données
+        run: |
+          git config user.name "megatron-collecte"
+          git config user.email "megatron-collecte@users.noreply.github.com"
+          git fetch --depth 1 origin donnees-externes
+          git worktree add -B donnees-externes donnees FETCH_HEAD
+      - name: Collecter
+        run: python scripts/collecte_transfermarkt_historique.py --sortie donnees/externe
+      - name: Publier
+        if: always()
+        run: |
+          cd donnees
+          git add -A externe/transfermarkt/historique
+          git diff --cached --quiet && { echo "rien"; exit 0; }
+          git commit -q -m "Historique Transfermarkt $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull -q --rebase origin donnees-externes && git push origin donnees-externes && break; sleep 5; done
