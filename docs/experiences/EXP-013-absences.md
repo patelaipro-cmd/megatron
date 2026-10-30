@@ -67,3 +67,31 @@ Dev 2013/14-2018/19 ; validation 2019/20-2021/22 ; test 2022/23-2025/26.
 - Cotes Bet365 relevées avant les compositions mais pas à la clôture : un éventuel gain contre ces
   cotes peut ne pas exister contre les cotes de clôture (non disponibles ici).
 - Données Transfermarkt corrigées après coup possibles (compositions saisies a posteriori).
+
+## Résultats (exécution du 30/10/2026)
+
+`python scripts/grille_multi.py --saisons 2013/14,…,2025/26 --configs "v5=270,2,0,moyenne,cadres,0.35" --sortie docs/experiences/EXP-013/v5 --processus 4`
+(`predictions.csv` non versionnés, régénérables), puis
+`python scripts/exp013_compos.py --tm <externe/transfermarkt/historique> --v5 docs/experiences/EXP-013/v5 --sortie docs/experiences/EXP-013`
+(détail : `docs/experiences/EXP-013/resultats.json`).
+
+Liaison : 25 241 matchs Transfermarkt, 25 204 reliés (33 non reliés, 4 scores différents) ;
+2 245 matchs à indicateurs 0 (fenêtre < 3 ou XI incomplet). Matchs évalués : dev 10 954,
+validation 5 376, test 7 048.
+
+θ (ordre H·x₁, H·x₂, A·x₁, A·x₂) : S [0,272 ; −0,037 ; −0,363 ; −0,013] ;
+K [0,155 ; −0,034 ; −0,245 ; −0,017]. Signes attendus : un XI plus cher que d'habitude
+favorise l'équipe ; l'effet des habitués absents est faible.
+
+| écart log-loss | validation | test |
+|---|---|---|
+| S+compos − S | −0,00196 [−0,00370 ; −0,00017] | −0,00097 [−0,00235 ; +0,00050] |
+| K+compos − K | −0,00104 [−0,00215 ; +0,00009] | −0,00010 [−0,00104 ; +0,00087] |
+
+K par ligue en test : E0 −0,0019 ; SP1 +0,0010 ; I1 +0,0014 ; D1 −0,0009 ; F1 −0,0004 (3/5 < 0).
+
+**A1 non tenu** (validation oui, test non). **A2 non tenu** (IC traversant 0 en validation et en
+test). Décision prévue : compositions **descriptives seulement**. Le gain contre les cotes Bet365
+d'avant composition est quasi nul (−0,0001 en test) : le marché intègre déjà l'essentiel de
+l'information des compositions, ou la valeur Transfermarkt la mesure trop grossièrement.
+Aucune probabilité de production modifiée.
