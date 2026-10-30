@@ -24,7 +24,9 @@ V4 = {"half_life": 90.0, "shrink": 3.0, "proxy": "cadres", "proxy_weight": 0.25}
 EPS = 1e-15
 # a, b de σ(a + b · logit p) appris par EXP-007 sur 2008-2020, M1-M3 tenus sur 2020-2026
 PLATT_V4 = {"2+": (0.510519, 0.568599), "3+": (0.049162, 0.611305)}
-VERSION_BUTS = "poisson-v4-platt"
+# a, b appris par EXP-015 sur 2008-2020 à partir des taux poisson-v5, B1-B3 tenus sur 2020-2026
+PLATT_V5 = {"2+": (0.385023, 0.692777), "3+": (0.055325, 0.760139)}
+VERSION_BUTS = "poisson-v5-platt"
 
 
 def total_au_moins(lam_total: float, seuil: int) -> float:
@@ -232,6 +234,6 @@ def recalibrer(train: list[dict], test: list[dict]) -> dict:
 
 
 def probs_buts_calibrees(lam_home: float, lam_away: float) -> dict[str, dict[str, float]]:
-    """Marchés 2+ et 3+ enregistrés par ``prevoir`` (version ``poisson-v4-platt``)."""
+    """Marchés 2+ et 3+ enregistrés par ``prevoir`` (version ``poisson-v5-platt``, taux poisson-v5 bruts)."""
     brut = probs_buts(lam_home, lam_away)
-    return {m: platt(brut[m]["oui"], *PLATT_V4[m]) for m in MARCHES_BUTS}
+    return {m: platt(brut[m]["oui"], *PLATT_V5[m]) for m in MARCHES_BUTS}
