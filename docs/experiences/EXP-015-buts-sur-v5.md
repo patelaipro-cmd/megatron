@@ -32,3 +32,27 @@ Platt par marché, commun aux 5 ligues : p' = σ(a + b · logit p), p bornée da
 
 - Même source ; test recoupant des saisons vues par EXP-007/008 (aucun réglage de ces marchés dessus).
 - Taux v5 arrondis à 4 décimales dans `variables.csv`.
+
+---
+
+## Résultats (exécution du 30/10/2026, ajoutés après le protocole)
+
+Commande : `python scripts/exp015_buts_v5.py --sortie docs/experiences/EXP-015`. Tous les matchs de `variables.csv` ont un score joint. Contrôle : la log-loss de `poisson-v4-platt` recalculée (2+ 0,52765 ; 3+ 0,68133) est identique à EXP-007.
+
+| Marché | a, b (v5) | v5-platt | v4-platt | Écart [IC 95 %] | Ligues < 0 | Calibration max |
+|---|---|---|---|---|---|---|
+| 2+ | 0,3850 ; 0,6928 | 0,52571 | 0,52765 | −0,0019 [−0,0028 ; −0,0011] | 5/5 | 0,009 |
+| 3+ | 0,0553 ; 0,7601 | 0,67843 | 0,68133 | −0,0029 [−0,0041 ; −0,0018] | 5/5 | 0,008 |
+
+10 954 matchs de test. Par ligue (2+ / 3+) : Ligue 1 −0,0012 / −0,0026, Premier League −0,0010 / −0,0026, Bundesliga −0,0043 / −0,0056, Liga −0,0027 / −0,0042, Serie A −0,0009 / −0,0001.
+
+Information : retard sur le bookmaker au 3+ : +0,0092 (v4-platt, EXP-007) → +0,0063 [+0,0045 ; +0,0080].
+
+## Décision
+
+- B1, B2, B3 tenus pour les deux marchés : **2+ et 3+ passent sur `poisson-v5-platt`** (`marches.PLATT_V5`). L'agent Stats n'a plus d'ajustement v4 séparé. Retour arrière : `PLATT_V4` et un ajustement `marches.V4`.
+
+## Limites
+
+- Serie A au 3+ : gain quasi nul (−0,0001).
+- Même source ; une recalibration commune aux 5 ligues.
