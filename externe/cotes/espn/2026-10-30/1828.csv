@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-30T18:28:00+00:00,espn,DraftKings,courante,D1,2026-10-30T19:30+00:00,SV Elversberg,Mainz,401884746,3.35,3.65,1.9524,62.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261030,ec25d9b7af8e45dc8c105e59ecc22770d86311ca606b90a0c3de8f664526cdf2,1X2
