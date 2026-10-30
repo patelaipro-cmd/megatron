@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-30T19:40:00+00:00,espn,DraftKings,courante,F1,2026-10-30T20:05+00:00,Lille,Lens,401876420,2.7,3.25,2.7,25.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261030,7b2be5e94b5f6082415b55f5552d93c34db20e1d6bfcf407e8bb34843ca9dbe9,1X2
+2026-10-30T19:40:00+00:00,espn,DraftKings,courante,SP1,2026-10-30T20:00+00:00,Villarreal,Espanyol,401882817,1.3774,5.25,7.5,20.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261030,27a9ead7445e2604afd1cd8b9b4e7f0cd37fd280a442b3e154fe7c095db24f94,1X2
