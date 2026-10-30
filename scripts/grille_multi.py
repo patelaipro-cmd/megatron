@@ -24,8 +24,8 @@ LIGUES = ("F1", "E0", "D1", "SP1", "I1")
 
 
 def _job(args: tuple) -> tuple[str, list[dict]]:
-    division, season, configs = args
-    matches = data.load(data.CURRENT, divisions={division})
+    division, season, configs, source = args
+    matches = data.load(source or data.CURRENT, divisions={division})
     return division, backtest.predict_seasons(matches, division, {season}, configs)
 
 
@@ -51,9 +51,10 @@ def main() -> int:
     g.add_argument("--configs")
     p.add_argument("--sortie", required=True)
     p.add_argument("--processus", type=int, default=4)
+    p.add_argument("--donnees", default=None, help="CSV au format data/ (défaut : data.CURRENT) ; EXP-022")
     args = p.parse_args()
     configs = configs_from(args)
-    jobs = [(d, s, configs) for d in args.ligues.split(",") for s in args.saisons.split(",")]
+    jobs = [(d, s, configs, args.donnees) for d in args.ligues.split(",") for s in args.saisons.split(",")]
     by_league: dict[str, list[dict]] = {}
     with Pool(args.processus) as pool:
         for division, rows in pool.imap_unordered(_job, jobs):

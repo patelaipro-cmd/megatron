@@ -33,7 +33,7 @@ def frequencies(history: list[Match], day: date, lookback_days: int = 730) -> di
 
 def bookmaker(match: Match) -> dict[str, float] | None:
     """Probabilités implicites des cotes, marge retirée proportionnellement."""
-    if not match.odds:
+    if not match.odds or min(match.odds) <= 1:  # cote absente ou invalide (0 dans 7 lignes hors top 5)
         return None
     inv = [1 / o for o in match.odds]
     s = sum(inv)
