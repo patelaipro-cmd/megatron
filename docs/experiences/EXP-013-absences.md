@@ -91,7 +91,15 @@ favorise l'équipe ; l'effet des habitués absents est faible.
 K par ligue en test : E0 −0,0019 ; SP1 +0,0010 ; I1 +0,0014 ; D1 −0,0009 ; F1 −0,0004 (3/5 < 0).
 
 **A1 non tenu** (validation oui, test non). **A2 non tenu** (IC traversant 0 en validation et en
-test). Décision prévue : compositions **descriptives seulement**. Le gain contre les cotes Bet365
-d'avant composition est quasi nul (−0,0001 en test) : le marché intègre déjà l'essentiel de
-l'information des compositions, ou la valeur Transfermarkt la mesure trop grossièrement.
-Aucune probabilité de production modifiée.
+test). Décision prévue : compositions **descriptives seulement**.
+
+Lecture (corrigée le 30/10/2026 à la relecture de Luloki) : l'expérience **n'établit pas de gain
+prédictif exploitable** ; elle ne prouve pas que le marché contient déjà l'information des
+compositions. Contre les cotes, l'écart moyen est négatif dans 3 ligues sur 5 en test mais les IC
+traversent 0 en validation et en test. Explications possibles non départagées : information déjà
+dans les cotes, valeur Transfermarkt trop grossière.
+
+Limite d'interprétation : 2 245 des 25 204 matchs reliés (≈ 9 %) ont des indicateurs nuls (fenêtre
+< 3 matchs ou XI incomplet). Cela ne change pas le verdict préenregistré ; un protocole futur
+devrait mesurer la couverture des compositions et analyser séparément les matchs couverts, cette
+analyse étant fixée à l'avance. Aucune probabilité de production modifiée.
