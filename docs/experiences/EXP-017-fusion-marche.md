@@ -11,8 +11,9 @@ log p'_o = α · log v5cal_o + β · log book_o + c_o − log Z, avec c_A = 0, o
 - book : 1/cote Bet365 (`OddHome/Draw/Away` de `data/`, football-data.co.uk), marge retirée
   proportionnellement (`models.bookmaker`).
 - (α, β, c_H, c_D) estimés par maximum de vraisemblance (Newton) sur dev 2008/09-2015/16, matchs
-  avec cotes. Prévisions v5 dev regénérées par `scripts/grille_multi.py` (config `270|2|0.35`), à
-  l'identique d'EXP-008 (contrôle : log-loss dev v5 = 0,991185 sur 14 604 matchs).
+  avec cotes. Prévisions v5 dev regénérées par `scripts/grille_multi.py` (config `270|2|0.35`). Le
+  contrôle porte sur la cohorte commune avec les cotes, comme dans EXP-008 : 14 604 matchs, log-loss
+  de référence 0,991185 (tolérance de reproduction `1e-5` pour les prévisions sérialisées).
 - Un seul modèle, pas de choix de réglage : aucune sélection sur validation ni test.
 
 ## Périodes
@@ -46,13 +47,23 @@ Validation 2016/17-2019/20 ; test 2020/21-2025/26 ; matchs d'EXP-008 qui ont des
 
 `python scripts/exp017_fusion.py --dev <prévisions v5 dev> --sortie docs/experiences/EXP-017`,
 après `python scripts/grille_multi.py --saisons 2008/09,…,2015/16 --configs "270|2|0.35=270,2,0,moyenne,cadres,0.35" --sortie <prévisions v5 dev>`
-(regénération conforme : log-loss 0,991185 sur 14 604 matchs, identique à EXP-008).
+(contrôle attendu : log-loss 0,991185 sur les 14 604 matchs avec cotes, à `1e-5` près).
 
-**Verdict : REJETÉ (M1, M2, M3 non tenus). Le marché est la référence 1X2.**
+**Audit du contrôle dev :** l'artefact de cette exécution indiquait 0,991192 alors que son contrôle
+avait été calculé sur les 14 608 lignes v5, dont quatre sans cotes. Le comparateur EXP-008 porte
+sur 14 604 matchs avec cotes. Le contrôle de `scripts/exp017_fusion.py` est corrigé pour imposer
+cette cohorte exacte. Les prévisions v5 dev n'étant pas conservées dans le dépôt, le contrôle devra
+être régénéré avec la commande ci-dessus avant de déclarer la reproduction confirmée. Les paramètres
+et scores de fusion calculés sur les lignes avec cotes n'incluaient déjà pas ces quatre matchs.
+
+**Verdict : REJETÉ (M1, M2, M3 non tenus). Le marché reste la référence opérationnelle 1X2.**
 
 Poids appris sur dev : α (v5-cal) = −0,0076 ; β (bookmaker) = 1,0706 ; c_H = 0,0252 ; c_D = 0,0167.
-Le poids de v5 est nul : **v5 n'apporte aucune information que les cotes n'ont pas.** Le petit
-gain restant vient seulement d'un léger réétalonnage des cotes (β > 1, nul et domicile).
+Le coefficient de v5 est proche de zéro sur le dev. Cette expérience ne démontre toutefois pas
+que v5 n'apporte aucune information : elle ne compare pas la fusion à un bookmaker recalibré seul.
+Les critères préenregistrés montrent uniquement que la fusion testée ne bat pas significativement
+le bookmaker brut. Le gain ponctuel observé ne peut pas être attribué au recalibrage des cotes sans
+ce comparateur additionnel.
 
 | fus-v1 − bookmaker [IC 95 %] | log-loss fus / book | RPS fus / book |
 |---|---|---|
@@ -62,6 +73,7 @@ gain restant vient seulement d'un léger réétalonnage des cotes (β > 1, nul e
 Par ligue, test : F1 +0,0002 ; E0 +0,0004 ; D1 +0,0002 ; SP1 −0,0017 ; I1 −0,0007 (2/5).
 Critères : M1 non ; M2 non ; M3 non ; M4 oui.
 
-Conséquence (décision prévue) : les étages suivants (xG, contexte, absences) se jugent contre le
-bookmaker. Une information n'a de valeur que si elle n'est pas déjà dans les cotes : compositions
-et absences connues après la publication des cotes, ou marchés autres que le 1X2.
+Conséquence : les étages suivants (xG, contexte, absences) se jugent contre le bookmaker. EXP-017
+n'a pas établi de gain incrémental mesurable pour v5 sur le 1X2. Une comparaison future de v5 à un
+bookmaker recalibré seul serait nécessaire pour isoler l'apport propre de v5. Une information peut
+également être évaluée sur des marchés autres que le 1X2.

@@ -1,8 +1,12 @@
 {
  "protocole": "docs/experiences/EXP-017-fusion-marche.md",
  "controle_dev": {
-  "log_loss_v5": 0.991192,
-  "n_avec_cotes": 14604
+  "log_loss_v5_mesure": 0.991192,
+  "n_v5_mesure": 14608,
+  "log_loss_v5_reference": 0.991185,
+  "n_v5_reference": 14604,
+  "valide": false,
+  "motif": "Le contrôle historique incluait 4 matchs sans cotes; recalcul requis sur la cohorte commune."
  },
  "parametres": {
   "alpha_v5cal": -0.007559,
