@@ -58,3 +58,10 @@ Information : retard sur le bookmaker au 3+ : +0,0092 (v4-platt, EXP-007) → +0
 
 - Serie A au 3+ : gain quasi nul (−0,0001).
 - Même source ; une recalibration commune aux 5 ligues.
+
+## Reproduction Codex (30/10/2026)
+
+Audit Codex sur la base `6ba333a` (avant renumérotation, script alors `exp015_buts_v5.py`) :
+JSON identique à celui du dépôt ; 10 954 matchs de test, B1-B3 vrais pour 2+ et 3+
+(2+ −0,001940 [−0,002840 ; −0,001100] ; 3+ −0,002900 [−0,004100 ; −0,001750]).
+Confirme l'exécution et les calculs ; ce n'est pas un échantillon indépendant.
