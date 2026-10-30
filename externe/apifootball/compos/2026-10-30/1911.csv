@@ -1,0 +1,41 @@
+collecte_le,fixture_id,coup_envoi,ligue_id,ligue,equipe,formation,joueur,joueur_id,poste,statut
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,N. Kristof,178194,G,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,M. Rohr,126951,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,Ł. Poręba,40533,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,L. Pinckert,177731,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,L. Petkov,177452,F,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,Francis-Ikechukwu Onyeka,392254,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,D. Mokwa,350047,F,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,M. Krattenmacher,342170,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,F. Keidel,280070,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,L. Sirch,177509,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,L. Günther,162079,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,R. Adam,554307,M,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,T. Boss,25113,G,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,William Cole Campbell,328617,F,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,A. Condé,90695,M,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,N. Futkeu,196500,F,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,F. Le Joncour,21333,D,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,N. Mickelson,39331,D,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,F. Schmahl,203260,M,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,SV Elversberg,,L. Schnellbacher,26642,F,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,P. Tietz,26171,F,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,N. Amiri,714,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,S. Becker,37938,F,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,A. Caci,22244,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,D. da Costa,1812,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,P. Mwene,25915,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,P. Nebel,202736,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,S. Posch,711,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,K. Potulski,442546,D,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,K. Sano,33889,M,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,R. Zentner,25906,G,titulaire
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,S. Widmer,48378,D,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,A. Schwolow,26234,G,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,E. Martel,162480,M,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,L. Maloney,24842,D,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,Lee Jae-Sung,2906,M,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,R. Königsdörffer,162773,F,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,B. Hollerbach,162946,F,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,F. Gruber,202845,M,remplacant
+2026-10-30T19:11:06+00:00,1575211,2026-10-30T19:30:00+00:00,78,Bundesliga,FSV Mainz 05,,S. Bell,25907,D,remplacant
