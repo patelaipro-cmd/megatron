@@ -45,3 +45,36 @@ La suite requiert des captures antérieures et postérieures pour les mêmes
 événements, puis une source donnant l'heure de publication officielle. Les
 règles d'extraction doivent être figées avant leur mesure sur un nouvel
 échantillon. Les seuils EXP-014, EXP-013 et EXP-021 restent inchangés.
+
+## Reprise Codex — collecte et diagnostic
+
+Le lecteur refuse un dossier source absent/sans CSV et un schéma incomplet.
+Il fournit un inventaire fichiers/lignes et le motif par série (identité discordante,
+composition incomplète, absence avant/après, contradiction). Un fichier présent
+mais vide reste identifié par son inventaire, distinct d'une source absente.
+
+Les nouvelles compositions portent `source=espn`, les cotes `marche=1X2`.
+Pour l'ancien schéma, le lecteur CLI attribue la provenance uniquement depuis
+le chemin dédié `espn/compos`, et compte ces lignes dans
+`entrees.compos.source_legacy`. La fonction `auditer` exige une source explicite.
+Le marché des anciens triplets H/D/A est documenté et compté dans
+`lignes_cotes_schema_legacy_1x2` ; un autre marché explicite est exclu.
+
+Les contradictions sont comparées sur les cotes brutes avant normalisation.
+Chaque paire exporte les triplets, surcotes et distributions, avec
+`publication_officielle_le=null` tant que cette information manque.
+
+Les collecteurs ESPN et API-Football ne marquent plus une composition terminée
+avant deux onze complets distincts. Les réponses partielles restent conservées
+et pourront être retentées au passage suivant dans le quota existant. Une erreur
+de réponse ESPN ne fait plus perdre les compositions des autres matchs.
+Le collecteur de cotes garde chaque capture courante à moins de 75 minutes,
+même si l'horizon est déjà renseigné. Le comportement horaire au-delà de cette
+fenêtre et pour l'ouverture reste inchangé.
+
+Aucun workflow n'est déclenché ou modifié, aucun quota augmenté, aucun état
+historique réparé artificiellement. La cadence horaire des compositions peut
+encore manquer des publications ; les dates de réponse réelles chez le fournisseur
+restent inconnues. La correction ne crée aucune paire dans les anciennes données.
+
+Preuves : [reprise du 30 octobre](entrainement/audit-compos-cotes-reprise-20261030/rapport.md).

@@ -1,4 +1,5 @@
 import json
+import csv
 import sys
 import tempfile
 import unittest
@@ -48,7 +49,7 @@ class CotesTests(unittest.TestCase):
         self.assertEqual(cc.horizon(120), "hors_fenetre")
         self.assertEqual(cc.horizon(-3), "hors_fenetre")  # commencé : jamais une cote d'avant-match
 
-    def test_collecte_garde_la_premiere_capture_par_horizon_et_ignore_les_matchs_commences(self):
+    def test_collecte_garde_chaque_capture_proche_et_ignore_les_matchs_commences(self):
         evs = [evenement("1", "2026-10-31T12:00Z"), evenement("2", "2026-10-31T10:30Z", etat="in"),
                evenement("3", "2026-10-31T19:00Z")]
         with tempfile.TemporaryDirectory() as d:
@@ -57,7 +58,7 @@ class CotesTests(unittest.TestCase):
             self.assertEqual(j["espn_par_horizon"]["hors_fenetre"], 1)  # match de 19:00 : instantané horaire
             self.assertEqual(j["erreurs"], [])
             j2 = cc.collecter(Path(d), MAINTENANT.replace(minute=10), lire=lecteur(evs))  # 50 min : déjà saisi
-            self.assertEqual(j2["espn_par_horizon"]["T-60"], 0)
+            self.assertEqual(j2["espn_par_horizon"]["T-60"], 1)
             self.assertEqual(j2["espn_par_horizon"]["hors_fenetre"], 0)  # moins de 55 min après le précédent
             self.assertEqual(j2["football_data"], "inchange")
             lignes = (Path(d) / "cotes" / "espn" / "2026-10-31" / "1100.csv").read_text().splitlines()
@@ -66,6 +67,33 @@ class CotesTests(unittest.TestCase):
             fd = (Path(d) / "cotes" / "football-data" / "2026-10-31" / "1100.csv").read_text().splitlines()
             self.assertEqual(len(fd), 3)  # E0 à venir seulement (pas le 27/10), B365 et PS ; ni plus/moins ni handicap
             self.assertEqual(len((Path(d) / "cotes" / "journal.jsonl").read_text().splitlines()), 2)
+
+    def test_statut_pre_perime_annulation_et_cotes_non_finies(self):
+        evs = [evenement("1", "2026-10-31T10:30Z"), evenement("2", "2026-10-31T11:00Z"),
+               evenement("3", "2026-10-31T12:00Z")]
+        evs[2]["competitions"][0]["status"]["type"]["name"] = "STATUS_POSTPONED"
+        self.assertEqual(cc.lignes_espn("E0", json.dumps({"events": evs}).encode(), "fixture", MAINTENANT), [])
+        self.assertIsNone(cc.americaine("inf"))
+        self.assertIsNone(cc.americaine("nan"))
+
+    def test_deux_captures_meme_horizon_encadrent_composition(self):
+        from scripts.auditer_compos_cotes import auditer
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            evs = [evenement("1", "2026-10-31T12:00Z")]
+            for minute in (0, 10):
+                cc.collecter(root, MAINTENANT.replace(minute=minute), lire=lecteur(evs))
+            odds = []
+            for p in (root / "cotes/espn").glob("*/*.csv"):
+                with p.open(encoding="utf-8", newline="") as f:
+                    odds.extend(csv.DictReader(f))
+            compos = [{"event_id": "1", "division": "E0", "coup_envoi": "2026-10-31T12:00:00Z",
+                       "collecte_le": "2026-10-31T11:05:00Z", "source": "espn", "equipe": team,
+                       "statut": "titulaire", "joueur_id": f"{team}-{i}"}
+                      for team in ("Chelsea", "Manchester United") for i in range(11)]
+            r = auditer(compos, odds, MAINTENANT.replace(minute=15))
+            self.assertEqual(r["matchs_apparies"], 1)
+            self.assertEqual(r["paires"][0]["mouvement_points"], {"H": 0, "D": 0, "A": 0})
 
     def test_erreur_source_journalisee_sans_arret(self):
         def lire(url):

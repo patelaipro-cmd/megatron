@@ -23,6 +23,7 @@ import csv
 import hashlib
 import io
 import json
+import math
 import re
 import sys
 import urllib.request
@@ -34,7 +35,7 @@ FOOTBALL_DATA = "https://www.football-data.co.uk/fixtures.csv"
 LIGUES = {"E0": "eng.1", "F1": "fra.1", "D1": "ger.1", "SP1": "esp.1", "I1": "ita.1"}
 HORIZONS = {"T-60": (45, 75), "T-30": (20, 45), "T-5": (0, 20)}  # minutes avant le coup d'envoi, [bas, haut[
 COLONNES = ("collecte_le", "source", "bookmaker", "type_ligne", "division", "coup_envoi", "domicile", "exterieur",
-            "evenement_id", "cote_H", "cote_D", "cote_A", "minutes_avant", "horizon", "url", "sha256_brut")
+            "evenement_id", "cote_H", "cote_D", "cote_A", "minutes_avant", "horizon", "url", "sha256_brut", "marche")
 HEADERS = {"User-Agent": "MEGATRON-cotes/1.0", "Accept": "application/json, text/csv, */*"}
 
 
@@ -48,6 +49,8 @@ def americaine(cote) -> float | None:
     try:
         v = float(str(cote).replace("+", ""))
     except (TypeError, ValueError):
+        return None
+    if not math.isfinite(v):
         return None
     if v >= 100:
         return round(1 + v / 100, 4)
@@ -68,11 +71,15 @@ def lignes_espn(div: str, corps: bytes, url: str, maintenant: datetime) -> list[
     out = []
     for ev in json.loads(corps).get("events") or []:
         comp = (ev.get("competitions") or [{}])[0]
-        if ((comp.get("status") or ev.get("status") or {}).get("type") or {}).get("state") != "pre":
+        status = ((comp.get("status") or ev.get("status") or {}).get("type") or {})
+        if status.get("state") != "pre" or status.get("name") in (
+                "STATUS_POSTPONED", "STATUS_CANCELED", "STATUS_CANCELLED", "STATUS_SUSPENDED"):
             continue
         equipes = {c.get("homeAway"): (c.get("team") or {}).get("displayName") for c in comp.get("competitors") or []}
         debut = datetime.fromisoformat((ev.get("date") or comp.get("date")).replace("Z", "+00:00"))
         minutes = (debut - maintenant) / timedelta(minutes=1)
+        if minutes <= 0:
+            continue  # un statut fournisseur « pre » peut être périmé
         for o in comp.get("odds") or []:
             ml = o.get("moneyline") or {}
             for type_ligne in ("close", "open"):
@@ -89,7 +96,7 @@ def lignes_espn(div: str, corps: bytes, url: str, maintenant: datetime) -> list[
                             "exterieur": equipes.get("away"), "evenement_id": str(ev.get("id")),
                             "cote_H": c["H"], "cote_D": c["D"], "cote_A": c["A"], "minutes_avant": round(minutes, 1),
                             "horizon": horizon(minutes) if type_ligne == "close" else "ouverture",
-                            "url": url, "sha256_brut": sha})
+                            "url": url, "sha256_brut": sha, "marche": "1X2"})
     return out
 
 
@@ -120,7 +127,7 @@ def lignes_football_data(corps: bytes, maintenant: datetime) -> list[dict]:
                         "bookmaker": b, "type_ligne": "instantane_source", "division": r["Div"],
                         "coup_envoi": f"{jour.isoformat()} {r.get('Time') or '?'} (heure UK)", "domicile": r["HomeTeam"],
                         "exterieur": r["AwayTeam"], "evenement_id": "", "cote_H": c[0], "cote_D": c[1], "cote_A": c[2],
-                        "minutes_avant": "", "horizon": "inconnu", "url": FOOTBALL_DATA, "sha256_brut": sha})
+                        "minutes_avant": "", "horizon": "inconnu", "url": FOOTBALL_DATA, "sha256_brut": sha, "marche": "1X2"})
     return out
 
 
@@ -136,7 +143,6 @@ def collecter(dossier: Path, maintenant: datetime, lire=lire_url) -> dict:
     base = dossier / "cotes"
     etat_f = base / "etat.json"
     etat = json.loads(etat_f.read_text(encoding="utf-8")) if etat_f.exists() else {}
-    deja = set(etat.get("captures_horizon", []))  # (événement, bookmaker, horizon) déjà saisis : premier instantané gardé
     journal = {"collecte_le": maintenant.isoformat(timespec="seconds"), "erreurs": [], "espn": 0, "football_data": None}
     espn = []
     for div, slug in LIGUES.items():
@@ -152,9 +158,9 @@ def collecter(dossier: Path, maintenant: datetime, lire=lire_url) -> dict:
         etat["dernier_horaire"] = maintenant.isoformat()
     gardees = []
     for l in espn:
-        cle = f"{l['evenement_id']}|{l['bookmaker']}|{l['horizon']}"
-        if l["horizon"] in HORIZONS and cle not in deja:
-            deja.add(cle)
+        if l["horizon"] in HORIZONS:
+            # Chaque réponse effectivement reçue est une observation : une première
+            # capture par horizon peut supprimer les deux côtés d'une composition.
             gardees.append(l)
         elif l["horizon"] in ("hors_fenetre", "ouverture") and horaire_du:
             gardees.append(l)  # instantané horaire hors fenêtre : suivi du mouvement des cotes
@@ -174,7 +180,6 @@ def collecter(dossier: Path, maintenant: datetime, lire=lire_url) -> dict:
             journal["football_data"] = "inchange"
     except Exception as exc:
         journal["erreurs"].append(f"football-data : {type(exc).__name__}: {exc}"[:300])
-    etat["captures_horizon"] = sorted(deja)[-5000:]
     base.mkdir(parents=True, exist_ok=True)
     etat_f.write_text(json.dumps(etat, indent=1) + "\n", encoding="utf-8")
     with (base / "journal.jsonl").open("a", encoding="utf-8") as f:
