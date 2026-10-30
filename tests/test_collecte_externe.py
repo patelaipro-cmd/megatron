@@ -141,7 +141,7 @@ class TestConfiguration(unittest.TestCase):
 
 
 class TestEspn(unittest.TestCase):
-    def faux(self, appels, publie=True):
+    def faux(self, appels, publie=True, complet=True):
         debut = datetime.fromtimestamp(MAINTENANT + 3600, tz=timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
         loin = datetime.fromtimestamp(MAINTENANT + 5 * 3600, tz=timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
         joueurs = [{"starter": True, "athlete": {"id": "8", "displayName": "Titulaire Fictif"}, "position": {"abbreviation": "F"}},
@@ -153,7 +153,12 @@ class TestEspn(unittest.TestCase):
                 return json.dumps({"events": [{"id": "1", "date": debut}, {"id": "2", "date": loin}]}).encode()
             if "/summary?event=1" in url:
                 bloc = {"team": {"displayName": "Club Fictif"}, "formation": "4-3-3"}
-                return json.dumps({"rosters": [{**bloc, "roster": joueurs} if publie else bloc]}).encode()
+                rosters = [{**bloc, "roster": joueurs} if publie else bloc]
+                if publie and complet:
+                    rosters = [{"team": {"displayName": team}, "roster": [
+                        {"starter": True, "athlete": {"id": f"{team}-{i}", "displayName": f"Joueur {i}"}}
+                        for i in range(11)]} for team in ("A", "B")]
+                return json.dumps({"rosters": rosters}).encode()
             raise AssertionError(url)
         return lire
 
@@ -165,12 +170,39 @@ class TestEspn(unittest.TestCase):
             self.assertEqual((m["sources"]["espn"]["statut"], m["sources"]["espn"]["lignes"]), ("ok", 0))  # pas encore publiée
             m = ce.collecter(dossier, ["espn"], MAINTENANT + 600, self.faux(appels), conf, pause=0)
             r = m["sources"]["espn"]
-            self.assertEqual((r["matchs_proches"], r["lignes"]), (1, 2))
+            self.assertEqual((r["matchs_proches"], r["lignes"]), (1, 22))
             lignes = list(csv.DictReader((dossier / r["fichier"]).read_text(encoding="utf-8").splitlines()))
-            self.assertEqual([(l["joueur"], l["statut"]) for l in lignes], [("Titulaire Fictif", "titulaire"), ("Remplacant Fictif", "remplacant")])
+            self.assertTrue(ce.deux_onze_complets(lignes))
+            self.assertTrue(all(l["source"] == "espn" for l in lignes))
             appels.clear()
             ce.collecter(dossier, ["espn"], MAINTENANT + 1200, self.faux(appels), conf, pause=0)
             self.assertFalse(any("summary" in u for u in appels))  # déjà faite
+
+    def test_partielle_retentee_sans_compter_doublons(self):
+        etat, appels = {}, []
+        conf = {"espn": [{"slug": "fra.1", "division": "F1"}]}
+        r = ce.collecter_espn(MAINTENANT, conf, etat, self.faux(appels, complet=False), pause=0)
+        self.assertEqual(etat["espn"]["compos_faites"], [])
+        self.assertFalse(ce.deux_onze_complets(r["compos"] * 22))
+        appels.clear()
+        r = ce.collecter_espn(MAINTENANT + 600, conf, etat, self.faux(appels), pause=0)
+        self.assertTrue(any("summary" in u for u in appels))
+        self.assertTrue(ce.deux_onze_complets(r["compos"]))
+        self.assertEqual(etat["espn"]["compos_faites"], ["1"])
+
+    def test_erreur_match_ne_perd_pas_compos_precedentes(self):
+        original = self.faux([])
+        def lire(url):
+            if "scoreboard" in url:
+                data = json.loads(original(url))
+                data["events"][1]["date"] = data["events"][0]["date"]
+                return json.dumps(data).encode()
+            if "event=2" in url:
+                raise TimeoutError("fixture hors réseau")
+            return original(url)
+        r = ce.collecter_espn(MAINTENANT, {"espn": [{"slug": "fra.1", "division": "F1"}]}, {}, lire, pause=0)
+        self.assertEqual(len(r["compos"]), 22)
+        self.assertEqual(len(r["erreurs_ligues"]), 1)
 
     def test_tous_calendriers_en_echec(self):
         def lire(url):
@@ -260,6 +292,22 @@ class TestApiFootball(unittest.TestCase):
             req = uo.call_args[0][0]
             self.assertNotIn("cle-fictive", req.full_url)
             self.assertEqual(req.get_header("X-apisports-key"), "cle-fictive")
+
+    def test_compo_partielle_retentee_dans_budget(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            etat, appels = {}, []
+            conf = {"apifootball": [{"id": 61}]}
+            lire = self.faux(appels)
+            ce.collecter_apifootball(Path(tmp), MAINTENANT, conf, etat, lire)
+            self.assertEqual(etat["apifootball"]["compos_faites"], [])
+            appels.clear()
+            ce.collecter_apifootball(Path(tmp), MAINTENANT + 600, conf, etat, lire)
+            self.assertIn("/fixtures/lineups?fixture=1", appels)
+            etat["apifootball"]["requetes"] = ce.APIFOOTBALL_BUDGET_JOUR
+            # Hors heure de blessures : aucun appel supplémentaire au plafond.
+            appels.clear()
+            ce.collecter_apifootball(Path(tmp), MAINTENANT + 3600, conf, etat, lire)
+            self.assertEqual(appels, [])
 
     def test_sans_secret_la_source_est_ignoree(self):
         import os

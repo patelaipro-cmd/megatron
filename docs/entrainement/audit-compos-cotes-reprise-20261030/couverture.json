@@ -1,0 +1,59 @@
+{
+  "donnees_commit": "257675b0e294528c0dc4a8f9c7f3e2168fa0860a",
+  "au": "2026-10-30T09:08:44Z",
+  "perimetre": "Union des evenements ESPN compos et cotes de la copie selective, pas un echantillon de performance",
+  "evenements": 31,
+  "fichiers_espn": 9,
+  "colonnes_observees": [
+    "bookmaker",
+    "collecte_le",
+    "cote_A",
+    "cote_D",
+    "cote_H",
+    "coup_envoi",
+    "division",
+    "domicile",
+    "equipe",
+    "evenement_id",
+    "event_id",
+    "exterieur",
+    "formation",
+    "horizon",
+    "joueur",
+    "joueur_id",
+    "ligue",
+    "minutes_avant",
+    "poste",
+    "sha256_brut",
+    "source",
+    "statut",
+    "type_ligne",
+    "url"
+  ],
+  "corners": {
+    "statut": "manquant",
+    "valeur": null,
+    "matchs_couverts": 0,
+    "denominateur": 31
+  },
+  "cartons": {
+    "statut": "manquant",
+    "valeur": null,
+    "matchs_couverts": 0,
+    "denominateur": 31
+  },
+  "historique_distinct": {
+    "fichier": "data\\details_2000-2026.csv",
+    "sha256": "4ff14aa330a77a7213ab2635d33d2bd6e528529436a8ec7d0c528c956e40f699",
+    "lignes": 45559,
+    "couverture_deux_equipes_champs_non_vides": {
+      "corners": 40271,
+      "cartons_rouges": 40661
+    },
+    "cartons_jaunes": {
+      "statut": "manquant",
+      "valeur": null
+    },
+    "limite": "Statistiques historiques apres match, pas des cotes ni une source pre-match pour les 31 evenements ESPN. Aucun score utilise."
+  }
+}
