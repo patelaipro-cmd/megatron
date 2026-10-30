@@ -1,0 +1,25 @@
+{
+  "au": "2026-10-30T07:37:33.945351+00:00",
+  "fenetre_minutes": 90,
+  "repere": "premiere_collecte_de_deux_onze_complets_pas_publication_officielle",
+  "matchs_avec_compos_completes": 4,
+  "series_cotes": 27,
+  "matchs_compos_sans_cote_courante": 4,
+  "paires_match_bookmaker": 0,
+  "matchs_apparies": 0,
+  "exclusions_lignes_ou_captures": {
+    "cote_source_ou_type_exclu": 59
+  },
+  "series_non_appariees": {
+    "sans_deux_onze_complets": 27
+  },
+  "paires": [],
+  "avantage_sur_marche": "NON_EVALUE",
+  "limites": [
+    "collecte ne prouve pas publication officielle ni réception de la nouvelle par le marché",
+    "horodatage de la cote chez le bookmaker inconnu ; seule la capture est datée",
+    "plusieurs bookmakers du même match ne sont pas des observations indépendantes",
+    "corners et cartons non couverts par ces fichiers 1X2",
+    "API-Football et football-data exclus : correspondance inter-fournisseurs non établie"
+  ]
+}

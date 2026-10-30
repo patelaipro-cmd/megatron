@@ -54,7 +54,7 @@ COLONNES_BLESSURES = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "li
 COLONNES_COMPOS_AF = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "equipe", "formation",
                       "joueur", "joueur_id", "poste", "statut")
 COLONNES_ESPN = ("collecte_le", "event_id", "ligue", "division", "coup_envoi", "equipe", "formation",
-                 "joueur", "joueur_id", "poste", "statut")
+                 "joueur", "joueur_id", "poste", "statut", "source")
 COLONNES_SOFASCORE = ("collecte_le", "event_id", "division", "coup_envoi", "domicile", "exterieur", "cote",
                       "equipe", "joueur", "joueur_id", "poste", "statut", "motif", "compo_confirmee")
 COLONNES_FPL = ("collecte_le", "joueur_id", "joueur", "equipe", "statut", "chance_prochain_match",
@@ -265,6 +265,19 @@ def calendrier_af(reponse: list[dict], ligues: set[int]) -> list[dict]:
     return list(out.values())
 
 
+def deux_onze_complets(lignes: list[dict]) -> bool:
+    """Ne pas arrêter les tentatives sur une réponse partielle ou dupliquée."""
+    equipes = {}
+    for r in lignes:
+        if r.get("statut") != "titulaire":
+            continue
+        joueur = r.get("joueur_id") or r.get("joueur")
+        if not r.get("equipe") or not joueur:
+            return False
+        equipes.setdefault(r["equipe"], set()).add(str(joueur))
+    return len(equipes) == 2 and all(len(joueurs) == 11 for joueurs in equipes.values())
+
+
 def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: dict, lire) -> dict:
     """Premier passage du jour : statut + calendrier J et J+1 + blessures J et J+1. Aux heures UTC 0, 6, 12, 18 : blessures J.
     Chaque heure : compos officielles des matchs suivis qui débutent dans les 75 min (une fois par match)."""
@@ -307,11 +320,13 @@ def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: 
     for m in json.loads(chemin_cal.read_text())["matchs"]:
         if m["fixture_id"] in compteur["compos_faites"] or not m.get("debut_ts"):
             continue
-        if 0 <= m["debut_ts"] - maintenant <= 75 * 60 and compteur["requetes"] < APIFOOTBALL_BUDGET_JOUR:
+        if 0 < m["debut_ts"] - maintenant <= 75 * 60 and compteur["requetes"] < APIFOOTBALL_BUDGET_JOUR:
             reponse = appel(f"/fixtures/lineups?fixture={m['fixture_id']}").get("response") or []
             if reponse:  # compo pas encore publiée : on retentera à l'heure suivante
-                compteur["compos_faites"].append(m["fixture_id"])
-                compos.extend(lignes_compos_af({k: m[k] for k in ("fixture_id", "coup_envoi", "ligue_id", "ligue")}, reponse, collecte_le))
+                lignes = lignes_compos_af({k: m[k] for k in ("fixture_id", "coup_envoi", "ligue_id", "ligue")}, reponse, collecte_le)
+                if deux_onze_complets(lignes):
+                    compteur["compos_faites"].append(m["fixture_id"])
+                compos.extend(lignes)
     if compos:
         res["fichier_compos"] = ecrire_instantane(dossier, "apifootball/compos", compos, COLONNES_COMPOS_AF, maintenant, etat)
     res["compos"] = len(compos)
@@ -344,7 +359,7 @@ def lignes_compos_espn(base: dict, summary: dict, collecte_le: str) -> list[dict
             continue
         for j in joueurs:
             a = j.get("athlete") or {}
-            out.append({**base, "collecte_le": collecte_le, "equipe": (bloc.get("team") or {}).get("displayName"),
+            out.append({**base, "source": "espn", "collecte_le": collecte_le, "equipe": (bloc.get("team") or {}).get("displayName"),
                         "formation": bloc.get("formation"), "joueur": a.get("displayName"), "joueur_id": a.get("id"),
                         "poste": _poste_espn(j),
                         "statut": "titulaire" if j.get("starter") else "remplacant"})
@@ -359,27 +374,38 @@ def collecter_espn(maintenant: float, config: dict, etat: dict, lire, pause: flo
         suivi.update({"jour": d.date().isoformat(), "compos_faites": suivi.get("compos_faites", [])[-200:]})
     jours = {d.strftime("%Y%m%d"), (d + timedelta(minutes=75)).strftime("%Y%m%d")}
     compos, erreurs, vus = [], [], 0
+    calendriers_en_echec = 0
     for ligue in config.get("espn", []):
         for jour in sorted(jours):
             try:
                 events = lire_json(f"{ESPN_API}/{ligue['slug']}/scoreboard?dates={jour}", lire).get("events") or []
             except Exception as exc:
                 erreurs.append(f"{ligue['slug']}: {type(exc).__name__}: {exc}"[:120])
+                calendriers_en_echec += 1
                 continue
             for ev in events:
                 debut = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).timestamp()
-                if ev["id"] in suivi["compos_faites"] or not 0 <= debut - maintenant <= 75 * 60:
+                status = ((ev.get("status") or {}).get("type") or {})
+                if status and (status.get("state") != "pre" or status.get("name") in
+                               ("STATUS_POSTPONED", "STATUS_CANCELED", "STATUS_CANCELLED", "STATUS_SUSPENDED")):
+                    continue
+                if ev["id"] in suivi["compos_faites"] or not 0 < debut - maintenant <= 75 * 60:
                     continue
                 vus += 1
-                summary = lire_json(f"{ESPN_API}/{ligue['slug']}/summary?event={ev['id']}", lire)
+                try:
+                    summary = lire_json(f"{ESPN_API}/{ligue['slug']}/summary?event={ev['id']}", lire)
+                except Exception as exc:
+                    erreurs.append(f"event {ev['id']}: {type(exc).__name__}: {exc}"[:120])
+                    continue  # une erreur de match ne doit pas perdre les compositions déjà reçues
                 base = {"event_id": ev["id"], "ligue": ligue["slug"], "division": ligue.get("division") or "",
                         "coup_envoi": utc(debut)}
                 lignes = lignes_compos_espn(base, summary, utc(maintenant))
                 if lignes:  # compo pas encore publiée : on retentera à l'heure suivante
-                    suivi["compos_faites"].append(ev["id"])
+                    if deux_onze_complets(lignes):
+                        suivi["compos_faites"].append(ev["id"])
                     compos.extend(lignes)
                 time.sleep(pause)
-    if erreurs and len(erreurs) == len(config.get("espn", [])) * len(jours):
+    if calendriers_en_echec and calendriers_en_echec == len(config.get("espn", [])) * len(jours):
         raise RuntimeError("tous les calendriers ESPN en échec : " + "; ".join(erreurs[:3]))
     return {"matchs_proches": vus, "compos": compos, "erreurs_ligues": erreurs}
 
