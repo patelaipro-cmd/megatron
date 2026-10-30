@@ -56,3 +56,27 @@ test 2021/22-2025/26. Tous les matchs des deux modèles, avec ou sans cotes.
   2026/27 (EXP-014).
 - Understat peut avoir révisé ses xG après coup.
 - Dev court (3 saisons) pour la recalibration.
+
+## Résultats (exécution du 30/10/2026)
+
+`python scripts/exp020_xg_v1.py --xg <externe/understat/historique> --sortie docs/experiences/EXP-020`
+(~40 s). Liaison identique à EXP-018 : 21 471 matchs reliés, 117 non reliés, 1 score différent.
+Recalibration apprise sur dev (5 478 matchs) : b = 1,0753 ; c_H = 0,0253 ; c_D = 0,0912.
+
+**Verdict : REJETÉ (Z1 non tenu). poisson-v5-cal reste.**
+
+| xg-v1-cal − v5-cal | validation 2018-21 (5 377) | test 2021-26 (8 907) |
+|---|---:|---:|
+| log-loss [IC 95 %] | −0,00111 [−0,00328 ; +0,00116] | −0,00324 [−0,00506 ; −0,00138] |
+| RPS xg-v1-cal / v5-cal | 0,20051 / 0,20097 | 0,19897 / 0,20019 |
+| xg-v1 brut − v5-cal | −0,00097 [−0,00332 ; +0,00138] | −0,00213 [−0,00396 ; −0,00022] |
+| recalibration (cal − brut) | −0,00014 [−0,00112 ; +0,00085] | −0,00111 [−0,00183 ; −0,00040] |
+| écart au bookmaker (matchs avec cotes) : xg-v1-cal / v5-cal | +0,0126 / +0,0137 | +0,0120 / +0,0153 |
+
+Par ligue, test : F1 −0,0037 ; E0 −0,0020 ; D1 −0,0062 ; SP1 −0,0042 ; I1 −0,0009 (5/5 < 0).
+Critères : Z1 non ; Z2 oui ; Z3 oui ; Z4 oui.
+
+Lecture : le gain va dans le bon sens partout, net en test, mais la validation 2018-21 (saison
+Covid incluse) ne l'établit pas. Selon la règle figée, pas de promotion. xg-v1-cal reste le
+meilleur candidat statistique connu ; à reconsidérer avec la cohorte 2026/27 (EXP-014), ce qui
+demande d'abord une collecte xG de la saison en cours.
