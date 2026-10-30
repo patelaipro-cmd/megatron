@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-30T18:49:00+00:00,espn,DraftKings,courante,D1,2026-10-30T19:30+00:00,SV Elversberg,Mainz,401884746,3.35,3.65,1.9524,41.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261030,a9d10964848763323b330a4a87423a602d80b83055a3a7b5ee35af18d679ca05,1X2
+2026-10-30T18:49:00+00:00,espn,DraftKings,courante,SP1,2026-10-30T20:00+00:00,Villarreal,Espanyol,401882817,1.3922,5.25,7.5,71.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261030,1e99945c40332d93dc8b08ca67accfb234b881e06f67d154307ad917b82b7ba6,1X2
