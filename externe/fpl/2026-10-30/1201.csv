@@ -1,0 +1,202 @@
+collecte_le,joueur_id,joueur,equipe,statut,chance_prochain_match,chance_ce_match,news,news_ajoutee_le
+2026-10-30T12:01:55+00:00,8,Calafiori,Arsenal,incertain,75,,Hip injury - 75% chance of playing,2026-10-24T18:30:08.735545Z
+2026-10-30T12:01:55+00:00,20,Dowman,Arsenal,suspendu,0,100,Suspended until 29 Nov,2026-10-27T22:30:09.534466Z
+2026-10-30T12:01:55+00:00,23,Fábio Vieira,Arsenal,indisponible,0,0,Has joined Hamburger SV permanently,2026-09-02T16:00:28.446370Z
+2026-10-30T12:01:55+00:00,27,G.Jesus,Arsenal,indisponible,0,0,Has joined FC Barcelona permanently,2026-09-02T16:00:28.475184Z
+2026-10-30T12:01:55+00:00,16,Madueke,Arsenal,incertain,75,,Ankle injury - 75% chance of playing,2026-10-28T00:00:08.492716Z
+2026-10-30T12:01:55+00:00,18,Martinelli,Arsenal,indisponible,0,0,Has joined Al Hilal permanently,2026-09-04T12:34:46.738449Z
+2026-10-30T12:01:55+00:00,24,Nelson,Arsenal,indisponible,0,0,has departed the club as a free agent.,2026-08-29T00:33:08.556767Z
+2026-10-30T12:01:55+00:00,22,Nwaneri,Arsenal,indisponible,0,0,Has joined Borussia Dortmund on loan for the rest of the season,2026-09-02T16:01:07.058827Z
+2026-10-30T12:01:55+00:00,13,Rice,Arsenal,incertain,75,100,Unspecified injury - 75% chance of playing,2026-10-28T00:00:08.477333Z
+2026-10-30T12:01:55+00:00,12,Saka,Arsenal,blesse,0,0,Thigh injury - Unknown return date,2026-10-21T20:30:09.540957Z
+2026-10-30T12:01:55+00:00,6,Saliba,Arsenal,blesse,0,0,Back injury - Unknown return date,2026-07-23T12:01:23.289376Z
+2026-10-30T12:01:55+00:00,557,Tzolis,Arsenal,blesse,0,0,Hamstring injury - Expected back 1 Nov,2026-10-02T15:00:11.091226Z
+2026-10-30T12:01:55+00:00,38,A.García,Aston Villa,indisponible,0,0,Has joined Getafe on loan for the rest of the season,2026-10-21T13:24:48.628998Z
+2026-10-30T12:01:55+00:00,44,Bailey,Aston Villa,indisponible,0,0,Has joined Olympiakos permanently,2026-09-04T12:35:14.472260Z
+2026-10-30T12:01:55+00:00,30,Digne,Aston Villa,indisponible,0,0,Has joined Paris Saint-Germain permanently,2026-08-10T14:03:30.089007Z
+2026-10-30T12:01:55+00:00,49,Iling Jr,Aston Villa,indisponible,0,0,Has joined Bolton Wanderers on loan for the rest of the season,2026-08-17T13:52:28.532616Z
+2026-10-30T12:01:55+00:00,607,Lynch,Aston Villa,indisponible,0,0,Has joined Oxford United on loan until January,2026-09-04T12:35:39.820426Z
+2026-10-30T12:01:55+00:00,39,Nedeljkovic,Aston Villa,indisponible,0,0,Has joined Rangers on loan for the rest of the season,2026-08-19T13:56:46.385411Z
+2026-10-30T12:01:55+00:00,48,Onana,Aston Villa,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.352497Z
+2026-10-30T12:01:55+00:00,596,Ruggeri,Aston Villa,blesse,0,0,Hamstring injury - Expected back 2 Jan,2026-10-10T18:00:10.750593Z
+2026-10-30T12:01:55+00:00,611,Wan-Bissaka,Aston Villa,blesse,0,0,Hamstring injury - Expected back 21 Nov,2026-10-17T19:30:10.120990Z
+2026-10-30T12:01:55+00:00,55,Watkins,Aston Villa,indisponible,0,0,Has joined Al Hilal permanently,2026-09-01T13:15:16.698799Z
+2026-10-30T12:01:55+00:00,59,Dennis,Bournemouth,indisponible,0,0,Has joined MK Dons permanently,2026-08-27T14:53:48.692835Z
+2026-10-30T12:01:55+00:00,80,Enes Ünal,Bournemouth,indisponible,0,0,Has joined Getafe permanently,2026-08-14T14:14:21.881112Z
+2026-10-30T12:01:55+00:00,65,J.Araujo,Bournemouth,blesse,0,0,Thigh injury - Unknown return date,2026-08-09T08:00:05.645826Z
+2026-10-30T12:01:55+00:00,63,Milosavljević,Bournemouth,blesse,0,0,Thigh injury - Expected back 31 Oct,2026-08-06T10:00:10.456051Z
+2026-10-30T12:01:55+00:00,69,Scott,Bournemouth,blesse,0,0,Thigh injury - Expected back 21 Nov,2026-10-05T09:30:09.910752Z
+2026-10-30T12:01:55+00:00,76,Tóth.A,Bournemouth,blesse,0,0,Hamstring injury - Unknown return date,2026-10-23T11:30:09.133819Z
+2026-10-30T12:01:55+00:00,103,Dasilva,Brentford,blesse,0,0,Hamstring injury - Unknown return date,2026-09-04T13:30:08.371955Z
+2026-10-30T12:01:55+00:00,107,Furo,Brentford,blesse,0,0,Unspecified injury - Unknown return date,2026-09-14T14:00:09.985723Z
+2026-10-30T12:01:55+00:00,89,Henry,Brentford,blesse,0,,Hip injury - Unknown return date,2026-10-27T16:30:09.444144Z
+2026-10-30T12:01:55+00:00,99,Milambo,Brentford,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.384798Z
+2026-10-30T12:01:55+00:00,102,Yarmoliuk,Brentford,suspendu,0,0,Suspended until 8 Nov,2026-10-17T15:00:07.992801Z
+2026-10-30T12:01:55+00:00,639,Andrés,Brighton,incertain,75,,Hip injury - 75% chance of playing,2026-10-25T17:30:10.276308Z
+2026-10-30T12:01:55+00:00,652,Azeez,Brighton,blesse,0,0,Hamstring injury - Expected back 8 Nov,2026-09-04T11:30:08.661589Z
+2026-10-30T12:01:55+00:00,128,Buonanotte,Brighton,indisponible,0,0,Has joined Elche on loan for the rest of the season,2026-08-10T14:03:07.561436Z
+2026-10-30T12:01:55+00:00,624,Cozier-Duberry,Brighton,indisponible,0,0,Has joined Middlesbrough on loan for the rest of the season,2026-09-02T15:38:15.552951Z
+2026-10-30T12:01:55+00:00,113,F.Kadıoğlu,Brighton,incertain,75,100,Hip injury - 75% chance of playing,2026-10-25T17:30:09.883815Z
+2026-10-30T12:01:55+00:00,139,Ferguson,Brighton,blesse,0,0,Ankle injury - Unknown return date,2026-07-23T12:01:23.448357Z
+2026-10-30T12:01:55+00:00,132,Howell,Brighton,indisponible,0,0,Has joined Leicester City on loan for the rest of the season,2026-08-17T13:53:19.019938Z
+2026-10-30T12:01:55+00:00,118,Igor,Brighton,indisponible,0,0,Has joined Burnley permanently,2026-09-02T15:38:15.529699Z
+2026-10-30T12:01:55+00:00,121,Mitoma,Brighton,blesse,0,0,Hamstring injury - Expected back 22 Nov,2026-07-24T18:30:10.661894Z
+2026-10-30T12:01:55+00:00,328,Struijk,Brighton,blesse,0,75,Hamstring injury - Expected back 8 Nov,2026-10-16T17:30:09.428175Z
+2026-10-30T12:01:55+00:00,137,Tzimas,Brighton,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.432796Z
+2026-10-30T12:01:55+00:00,133,Watson,Brighton,indisponible,0,0,Has joined Leicester City on loan for the rest of the season,2026-08-03T14:05:44.459483Z
+2026-10-30T12:01:55+00:00,135,Yohanna,Brighton,blesse,0,0,Unspecified injury - Expected back 22 Nov,2026-09-10T13:00:08.617941Z
+2026-10-30T12:01:55+00:00,146,B.Badiashile,Chelsea,indisponible,0,0,Has joined Napoli on loan for the rest of the season,2026-08-25T14:03:47.079414Z
+2026-10-30T12:01:55+00:00,159,Caicedo,Chelsea,incertain,75,100,Unspecified injury - 75% chance of playing,2026-10-29T22:00:09.933708Z
+2026-10-30T12:01:55+00:00,143,Chalobah,Chelsea,indisponible,0,0,Has joined Como permanently,2026-08-10T14:03:50.769483Z
+2026-10-30T12:01:55+00:00,583,Chavarria,Chelsea,blesse,0,0,Unspecified injury - Expected back 31 Oct,2026-10-17T12:00:10.154091Z
+2026-10-30T12:01:55+00:00,163,D.Essugo,Chelsea,indisponible,0,0,Has joined RC Strasbourg on loan for the rest of the season,2026-09-02T16:20:41.865225Z
+2026-10-30T12:01:55+00:00,158,Gittens,Chelsea,blesse,0,0,Ankle injury - Unknown return date,2026-09-26T05:30:09.245832Z
+2026-10-30T12:01:55+00:00,144,Gusto,Chelsea,incertain,75,100,Unspecified injury - 75% chance of playing,2026-10-29T22:00:09.886054Z
+2026-10-30T12:01:55+00:00,148,Hato,Chelsea,incertain,75,,Unspecified injury - 75% chance of playing,2026-10-29T22:00:09.909621Z
+2026-10-30T12:01:55+00:00,142,James,Chelsea,blesse,0,0,Knee injury - Unknown return date,2026-10-10T13:30:08.699019Z
+2026-10-30T12:01:55+00:00,165,João Pedro,Chelsea,blesse,0,100,Thigh injury - Unknown return date,2026-10-24T16:30:09.687729Z
+2026-10-30T12:01:55+00:00,141,Jörgensen,Chelsea,indisponible,0,0,Has joined RC Strasbourg on loan for the rest of the season,2026-08-12T14:07:02.607115Z
+2026-10-30T12:01:55+00:00,200,Lacroix,Chelsea,incertain,50,,Hamstring injury - 50% chance of playing,2026-10-28T23:00:10.088612Z
+2026-10-30T12:01:55+00:00,150,M.Sarr,Chelsea,indisponible,0,0,Has joined Real Sociedad on loan for the rest of the season,2026-08-29T00:34:23.077418Z
+2026-10-30T12:01:55+00:00,168,Marc Guiu,Chelsea,indisponible,0,0,Has joined RB Leipzig permanently,2026-09-01T13:24:48.857362Z
+2026-10-30T12:01:55+00:00,28,Martinez,Chelsea,blesse,0,0,Head injury - Unknown return date,2026-10-17T13:30:08.724000Z
+2026-10-30T12:01:55+00:00,140,Sánchez,Chelsea,indisponible,0,0,Has joined Como on loan for the rest of the season,2026-09-02T16:20:41.841936Z
+2026-10-30T12:01:55+00:00,182,Amenda,Coventry City,blesse,0,0,Calf injury - Unknown return date,2026-09-17T07:30:09.329041Z
+2026-10-30T12:01:55+00:00,192,Andrews,Coventry City,indisponible,0,0,Has joined Oxford United on loan for the rest of the season,2026-08-29T00:35:59.998520Z
+2026-10-30T12:01:55+00:00,197,Bassette,Coventry City,indisponible,0,0,Has joined KVC Westerlo on loan for the rest of the season,2026-07-28T12:58:50.001768Z
+2026-10-30T12:01:55+00:00,191,Borges Rodrigues,Coventry City,indisponible,0,0,Has joined Burton Albion on loan for the rest of the season,2026-09-02T15:44:14.868001Z
+2026-10-30T12:01:55+00:00,181,Brau,Coventry City,indisponible,0,0,Has joined Academico de Viseu on loan for the rest of the season,2026-08-29T00:35:59.980316Z
+2026-10-30T12:01:55+00:00,171,Dovin,Coventry City,indisponible,0,0,not included in squad.,2026-09-02T15:44:14.839336Z
+2026-10-30T12:01:55+00:00,187,Eccles,Coventry City,blesse,0,0,Ankle injury - Unknown return date,2026-09-10T18:30:08.877110Z
+2026-10-30T12:01:55+00:00,174,Kitching,Coventry City,indisponible,0,0,Has joined Sheffield United on loan for the rest of the season,2026-09-02T16:21:03.612394Z
+2026-10-30T12:01:55+00:00,196,Markelo,Coventry City,indisponible,0,0,Has joined Shabab Al-Ahli Dubai permanently,2026-08-17T13:53:55.791223Z
+2026-10-30T12:01:55+00:00,173,Thomas,Coventry City,incertain,50,,Calf injury - 50% chance of playing,2026-10-24T17:00:09.115906Z
+2026-10-30T12:01:55+00:00,180,Woolfenden,Coventry City,blesse,0,0,Knee injury - Unknown return date,2026-08-27T14:56:28.718566Z
+2026-10-30T12:01:55+00:00,193,Wright,Coventry City,blesse,0,0,Thigh injury - Unknown return date,2026-08-14T22:00:07.214508Z
+2026-10-30T12:01:55+00:00,220,Cardines,Crystal Palace,indisponible,0,0,Has joined Bristol City on loan for the rest of the season,2026-08-12T14:08:46.501813Z
+2026-10-30T12:01:55+00:00,206,Chadi Riad,Crystal Palace,blesse,0,0,Knee injury - Unknown return date,2026-08-22T18:00:07.352049Z
+2026-10-30T12:01:55+00:00,215,Devenny,Crystal Palace,indisponible,0,0,Has joined Stoke City permanently,2026-09-02T15:41:07.346849Z
+2026-10-30T12:01:55+00:00,216,Esse,Crystal Palace,indisponible,0,0,Has joined Millwall on loan for the rest of the season,2026-09-02T15:41:07.376544Z
+2026-10-30T12:01:55+00:00,219,J.Rak-Sakyi,Crystal Palace,indisponible,0,0,has joined  Kasimpasa on loan for the rest of the seaon.,2026-09-10T09:12:47.224598Z
+2026-10-30T12:01:55+00:00,217,M.França,Crystal Palace,indisponible,0,0,Has joined Alverca on loan for the rest of the season,2026-09-11T14:42:19.322912Z
+2026-10-30T12:01:55+00:00,208,Sarr,Crystal Palace,blesse,0,100,Groin injury - Expected back 8 Nov,2026-10-27T10:30:09.385934Z
+2026-10-30T12:01:55+00:00,205,Sosa,Crystal Palace,indisponible,0,0,Has joined FC Cologne on loan for the rest of the season,2026-09-02T16:03:25.710518Z
+2026-10-30T12:01:55+00:00,222,Strand Larsen,Crystal Palace,incertain,75,75,Ankle injury - 75% chance of playing,2026-10-23T17:00:09.672494Z
+2026-10-30T12:01:55+00:00,644,Timber,Crystal Palace,incertain,75,75,Hamstring injury - 75% chance of playing,2026-10-21T22:00:10.028638Z
+2026-10-30T12:01:55+00:00,577,Tomiyasu,Crystal Palace,blesse,0,0,Calf injury - Expected back 8 Nov,2026-09-21T13:30:09.030724Z
+2026-10-30T12:01:55+00:00,225,Uche,Crystal Palace,indisponible,0,0,has returned to Getafe CF,2026-07-23T12:18:56.275922Z
+2026-10-30T12:01:55+00:00,235,Aznou,Everton,indisponible,0,0,Has joined Malaga on loan for the rest of the season,2026-09-01T13:23:16.934847Z
+2026-10-30T12:01:55+00:00,248,Beto,Everton,indisponible,0,0,Has joined Fiorentina permanently,2026-09-02T16:05:23.357221Z
+2026-10-30T12:01:55+00:00,234,Patterson,Everton,indisponible,0,0,Has joined Torino permanently,2026-09-02T16:05:23.326971Z
+2026-10-30T12:01:55+00:00,610,De Fougerolles,Fulham,indisponible,0,0,has joined  Real Salt Lake on loan for the rest of the seaon.,2026-08-28T11:30:08.336405Z
+2026-10-30T12:01:55+00:00,252,McNally,Fulham,indisponible,0,0,Has joined York City on loan for the rest of the season,2026-09-01T13:25:11.231240Z
+2026-10-30T12:01:55+00:00,269,Sessegnon,Fulham,suspendu,0,0,Suspended until 7 Nov,2026-10-17T16:30:09.374216Z
+2026-10-30T12:01:55+00:00,296,Akintola,Hull City,indisponible,0,0,Has joined Omonoia FC permanently,2026-09-11T14:42:38.120231Z
+2026-10-30T12:01:55+00:00,632,Ansah,Hull City,blesse,0,0,Back injury - Unknown return date,2026-09-09T10:00:08.919489Z
+2026-10-30T12:01:55+00:00,299,Burstow,Hull City,indisponible,0,0,Has joined Sheffield Wednesday on loan for the rest of the season,2026-08-03T14:05:20.234842Z
+2026-10-30T12:01:55+00:00,274,Butland,Hull City,incertain,50,0,Arm injury - 50% chance of playing,2026-08-08T19:00:05.601633Z
+2026-10-30T12:01:55+00:00,275,Cartwright,Hull City,indisponible,0,0,Has joined Grimsby Town on loan for the rest of the season,2026-07-29T13:00:27.959925Z
+2026-10-30T12:01:55+00:00,298,Destan,Hull City,indisponible,0,0,Has joined Konyaspor permanently,2026-08-17T13:50:27.145733Z
+2026-10-30T12:01:55+00:00,281,Drameh,Hull City,indisponible,0,0,Has joined Genoa permanently,2026-09-02T16:09:06.479140Z
+2026-10-30T12:01:55+00:00,589,Gourna-Douath,Hull City,incertain,75,75,Calf injury - 75% chance of playing,2026-10-16T13:00:08.314070Z
+2026-10-30T12:01:55+00:00,297,Gyabi,Hull City,blesse,0,0,Thigh injury - Unknown return date,2026-08-04T18:30:11.027155Z
+2026-10-30T12:01:55+00:00,278,Hughes,Hull City,blesse,0,0,Groin injury - Unknown return date,2026-08-02T09:00:11.030017Z
+2026-10-30T12:01:55+00:00,283,Jacob,Hull City,indisponible,0,0,Has joined Newport County on loan until January,2026-08-02T09:00:11.038361Z
+2026-10-30T12:01:55+00:00,293,Kamara,Hull City,indisponible,0,0,Has joined Portsmouth permanently,2026-08-12T14:08:23.542043Z
+2026-10-30T12:01:55+00:00,276,Lo-Tutala,Hull City,indisponible,0,0,Has joined Colchester United on loan for the rest of the season,2026-08-17T13:50:27.125537Z
+2026-10-30T12:01:55+00:00,291,Matazo,Hull City,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.532635Z
+2026-10-30T12:01:55+00:00,287,Millar,Hull City,indisponible,0,0,Has joined Birmingham on loan for the rest of the season,2026-09-02T15:36:41.038103Z
+2026-10-30T12:01:55+00:00,556,Targett,Hull City,blesse,0,0,Ankle injury - Unknown return date,2026-09-17T14:00:26.419938Z
+2026-10-30T12:01:55+00:00,322,Al-Hamadi,Ipswich Town,indisponible,0,0,Has joined Sheffield Wednesday on loan for the rest of the season,2026-08-27T14:54:10.215357Z
+2026-10-30T12:01:55+00:00,311,Burns,Ipswich Town,indisponible,0,0,Has joined Leicester City permanently,2026-08-10T14:02:47.597478Z
+2026-10-30T12:01:55+00:00,317,Hirst,Ipswich Town,indisponible,0,0,Has joined Stoke City permanently,2026-08-21T13:06:08.606019Z
+2026-10-30T12:01:55+00:00,602,Humphreys,Ipswich Town,indisponible,0,0,Has joined Huddersfield Town on loan for the rest of the season,2026-09-02T16:04:17.524642Z
+2026-10-30T12:01:55+00:00,307,Johnson,Ipswich Town,indisponible,0,0,Has joined Stoke City on loan for the rest of the season,2026-09-04T12:36:56.236331Z
+2026-10-30T12:01:55+00:00,267,Lukić,Ipswich Town,blesse,0,0,Groin injury - Unknown return date,2026-10-19T15:30:08.949503Z
+2026-10-30T12:01:55+00:00,314,Ogbene,Ipswich Town,indisponible,0,0,Has joined Lincoln City on loan until January,2026-09-02T16:04:17.497385Z
+2026-10-30T12:01:55+00:00,319,Szmodics,Ipswich Town,indisponible,0,0,Has joined Derby County on loan for the rest of the season,2026-08-17T13:51:41.713979Z
+2026-10-30T12:01:55+00:00,554,Van Oevelen,Ipswich Town,indisponible,0,0,Has joined Valencia on loan for the rest of the season,2026-08-25T14:04:09.529320Z
+2026-10-30T12:01:55+00:00,333,Bornauw,Leeds,indisponible,0,0,Has joined Hamburg SV on loan for the rest of the season,2026-08-19T13:56:14.645970Z
+2026-10-30T12:01:55+00:00,341,Gnonto,Leeds,indisponible,0,0,Has joined ACF Fiorentina on loan for the rest of the season,2026-09-02T16:04:47.189648Z
+2026-10-30T12:01:55+00:00,342,Harrison,Leeds,indisponible,0,0,Has joined New England Revolution permanently,2026-07-28T12:59:09.492431Z
+2026-10-30T12:01:55+00:00,349,Mateo Joseph,Leeds,blesse,0,0,Knee injury - Unknown return date,2026-07-29T18:00:10.338170Z
+2026-10-30T12:01:55+00:00,326,Perri,Leeds,indisponible,0,0,Has joined Torino on loan for the rest of the season,2026-09-01T13:12:39.210133Z
+2026-10-30T12:01:55+00:00,348,Piroe,Leeds,indisponible,0,0,Has joined West Ham United on loan for the rest of the season,2026-08-19T13:56:14.666726Z
+2026-10-30T12:01:55+00:00,329,Rodon,Leeds,blesse,0,0,Hamstring injury - Expected back 21 Nov,2026-08-30T16:00:08.564382Z
+2026-10-30T12:01:55+00:00,335,Stach,Leeds,incertain,50,50,Foot injury - 50% chance of playing,2026-10-29T14:30:08.129193Z
+2026-10-30T12:01:55+00:00,376,Bajcetic,Liverpool,indisponible,0,0,Has joined Celta Vigo permanently,2026-07-23T12:01:23.628373Z
+2026-10-30T12:01:55+00:00,360,Bradley,Liverpool,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.565711Z
+2026-10-30T12:01:55+00:00,373,C.Jones,Liverpool,indisponible,0,0,Has joined Internazionale permanently,2026-08-16T18:30:07.426408Z
+2026-10-30T12:01:55+00:00,380,Ekitiké,Liverpool,blesse,0,0,Achilles injury - Unknown return date,2026-07-23T12:01:23.643771Z
+2026-10-30T12:01:55+00:00,383,Elliott,Liverpool,indisponible,0,0,Has joined Valencia on loan for the rest of the season,2026-09-02T16:05:49.104326Z
+2026-10-30T12:01:55+00:00,357,Frimpong,Liverpool,blesse,0,0,Hamstring injury - Unknown return date,2026-10-17T15:30:09.979166Z
+2026-10-30T12:01:55+00:00,354,Jaros,Liverpool,blesse,0,0,Knee injury - Unknown return date,2026-07-29T18:00:10.351066Z
+2026-10-30T12:01:55+00:00,363,Leoni,Liverpool,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.596909Z
+2026-10-30T12:01:55+00:00,377,Munoz,Liverpool,incertain,25,25,Knee injury - 25% chance of playing,2026-10-20T18:30:09.999223Z
+2026-10-30T12:01:55+00:00,353,Pecsi,Liverpool,indisponible,0,0,Has joined TSV Hartberg on loan for the rest of the season,2026-08-18T14:11:18.638344Z
+2026-10-30T12:01:55+00:00,365,Ramsay,Liverpool,indisponible,0,0,Has joined St Mirren on loan for the rest of the season,2026-08-26T14:05:26.748768Z
+2026-10-30T12:01:55+00:00,368,Szoboszlai,Liverpool,blesse,0,0,Hamstring injury - Unknown return date,2026-10-17T15:00:08.293301Z
+2026-10-30T12:01:55+00:00,394,Alleyne,Man City,indisponible,0,0,Has joined Burnley on loan for the rest of the season,2026-08-18T14:11:56.324656Z
+2026-10-30T12:01:55+00:00,407,Echeverri,Man City,indisponible,0,0,Has joined Benfica on loan for the rest of the season,2026-09-03T15:41:24.710479Z
+2026-10-30T12:01:55+00:00,389,Matheus N.,Man City,incertain,75,75,Unspecified injury - 75% chance of playing,2026-10-19T15:30:09.094655Z
+2026-10-30T12:01:55+00:00,410,Monga,Man City,indisponible,0,0,Has joined Swansea City on loan for the rest of the season,2026-09-02T16:02:01.136760Z
+2026-10-30T12:01:55+00:00,409,Mukasa,Man City,indisponible,0,0,has joined West Ham on loan for the rest of the seaon.,2026-09-03T10:34:10.733520Z
+2026-10-30T12:01:55+00:00,408,Phillips,Man City,indisponible,0,0,Has joined Sheffield United on loan for the rest of the season,2026-08-18T14:11:56.348781Z
+2026-10-30T12:01:55+00:00,404,Reijnders,Man City,indisponible,0,0,Has joined Al Qadsiah permanently,2026-08-20T14:02:58.154273Z
+2026-10-30T12:01:55+00:00,402,Rodrigo,Man City,indisponible,0,0,Has joined Barcelona permanently,2026-07-23T12:01:23.675537Z
+2026-10-30T12:01:55+00:00,397,Semenyo,Man City,blesse,0,0,Knee injury - Unknown return date,2026-10-17T17:30:09.977110Z
+2026-10-30T12:01:55+00:00,413,Bayindir,Man Utd,indisponible,0,0,Has joined Celta Vigo on loan for the rest of the season,2026-08-10T14:02:28.608415Z
+2026-10-30T12:01:55+00:00,436,Collyer,Man Utd,indisponible,0,0,Has joined West Brom permanently,2026-09-01T13:16:48.584385Z
+2026-10-30T12:01:55+00:00,415,Dorgu,Man Utd,blesse,0,0,Hamstring injury - Unknown return date,2026-09-27T21:30:07.831640Z
+2026-10-30T12:01:55+00:00,425,Fredricson,Man Utd,indisponible,0,0,Has joined Lausanne-Sport permanently,2026-08-18T14:12:31.904433Z
+2026-10-30T12:01:55+00:00,432,Mainoo,Man Utd,incertain,25,0,Unspecified injury - 25% chance of playing,2026-10-12T21:30:09.006287Z
+2026-10-30T12:01:55+00:00,441,Obi,Man Utd,indisponible,0,0,Has joined Willem II on loan for the rest of the season,2026-09-14T16:12:42.090874Z
+2026-10-30T12:01:55+00:00,429,Rashford,Man Utd,incertain,75,75,Hip injury - 75% chance of playing,2026-10-20T20:00:09.925594Z
+2026-10-30T12:01:55+00:00,423,Shaw,Man Utd,blesse,0,0,Unspecified injury - Unknown return date,2026-10-12T21:30:08.995810Z
+2026-10-30T12:01:55+00:00,433,Ugarte,Man Utd,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.706702Z
+2026-10-30T12:01:55+00:00,439,Šeško,Man Utd,blesse,0,0,Shin injury - Unknown return date,2026-09-20T19:30:08.505755Z
+2026-10-30T12:01:55+00:00,451,A.Murphy,Newcastle,indisponible,0,0,Has joined FC Kaiserslautern on loan for the rest of the season,2026-08-12T14:05:29.224600Z
+2026-10-30T12:01:55+00:00,634,Fernandez-Pardo,Newcastle,incertain,75,75,Illness - 75% chance of playing,2026-10-23T14:30:10.429365Z
+2026-10-30T12:01:55+00:00,444,Jaouen,Newcastle,blesse,0,0,Hamstring injury - Unknown return date,2026-09-10T16:00:09.127466Z
+2026-10-30T12:01:55+00:00,459,L.Miley,Newcastle,incertain,75,100,Muscular injury - 75% chance of playing,2026-10-27T16:00:07.981816Z
+2026-10-30T12:01:55+00:00,450,Livramento,Newcastle,blesse,0,0,Knee injury - Unknown return date,2026-09-19T14:00:09.046677Z
+2026-10-30T12:01:55+00:00,466,Neave,Newcastle,indisponible,0,0,Has joined Wolves on loan for the rest of the season,2026-09-04T12:37:43.515176Z
+2026-10-30T12:01:55+00:00,465,Osula,Newcastle,incertain,75,100,Ankle injury - 75% chance of playing,2026-10-29T23:00:08.575179Z
+2026-10-30T12:01:55+00:00,609,Shahar,Newcastle,indisponible,0,0,has joined Arouca on loan for the rest of the seaon.,2026-09-11T14:41:57.406766Z
+2026-10-30T12:01:55+00:00,463,Woltemade,Newcastle,indisponible,0,0,Has joined Juventus on loan for the rest of the season,2026-09-02T16:07:16.549304Z
+2026-10-30T12:01:55+00:00,477,Abbott,Nott'm Forest,indisponible,0,0,Has joined Southampton on loan for the rest of the season,2026-09-02T16:19:54.536676Z
+2026-10-30T12:01:55+00:00,485,Bakwa,Nott'm Forest,indisponible,0,0,Has joined Lille on loan for the rest of the season,2026-08-27T14:53:03.381941Z
+2026-10-30T12:01:55+00:00,479,Bindon,Nott'm Forest,indisponible,0,0,Has joined Charlton Athletic on loan for the rest of the season,2026-09-01T13:16:05.383880Z
+2026-10-30T12:01:55+00:00,487,Dominguez,Nott'm Forest,incertain,75,,Muscular injury - 75% chance of playing,2026-10-24T13:00:08.751863Z
+2026-10-30T12:01:55+00:00,484,Hutchinson,Nott'm Forest,indisponible,0,0,Has joined AC Milan on loan for the rest of the season,2026-09-01T13:23:52.340206Z
+2026-10-30T12:01:55+00:00,491,Igor Jesus,Nott'm Forest,blesse,0,0,Calf injury - Unknown return date,2026-10-09T14:30:11.491800Z
+2026-10-30T12:01:55+00:00,470,Morato,Nott'm Forest,indisponible,0,0,Has joined West Ham on loan for the rest of the season,2026-09-02T16:19:54.503286Z
+2026-10-30T12:01:55+00:00,483,Ndoye,Nott'm Forest,incertain,50,,Hamstring injury - 50% chance of playing,2026-10-29T15:00:10.057610Z
+2026-10-30T12:01:55+00:00,475,Savona,Nott'm Forest,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.816304Z
+2026-10-30T12:01:55+00:00,516,Bentancur,Spurs,suspendu,0,0,Suspended until 7 Nov,2026-10-10T18:30:09.519346Z
+2026-10-30T12:01:55+00:00,520,Bergvall,Spurs,blesse,0,0,Knee injury - Expected back 31 Oct,2026-10-18T13:00:09.356060Z
+2026-10-30T12:01:55+00:00,515,Maddison,Spurs,incertain,75,75,Unspecified injury - 75% chance of playing,2026-10-24T19:00:10.113555Z
+2026-10-30T12:01:55+00:00,523,Moore,Spurs,indisponible,0,0,Has joined FC Köln on loan for the rest of the season,2026-09-04T12:39:48.098158Z
+2026-10-30T12:01:55+00:00,578,Mudryk,Spurs,blesse,0,0,Ankle injury - Unknown return date,2026-09-11T18:00:09.154412Z
+2026-10-30T12:01:55+00:00,517,Odobert,Spurs,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.879434Z
+2026-10-30T12:01:55+00:00,518,P.M.Sarr,Spurs,indisponible,0,0,Has joined Juventus on loan for the rest of the season,2026-09-02T16:02:43.386849Z
+2026-10-30T12:01:55+00:00,507,Phillips,Spurs,indisponible,0,0,Has joined Middlesbrough permanently,2026-08-18T14:13:08.474144Z
+2026-10-30T12:01:55+00:00,527,Richarlison,Spurs,indisponible,0,0,not included in squad.,2026-09-04T12:32:39.183614Z
+2026-10-30T12:01:55+00:00,500,Romero,Spurs,indisponible,0,0,Has joined Atletico Madrid permanently,2026-08-17T13:49:05.465401Z
+2026-10-30T12:01:55+00:00,528,Scarlett,Spurs,indisponible,0,0,Has joined Leyton Orient permanently,2026-09-02T16:02:43.413625Z
+2026-10-30T12:01:55+00:00,511,Souza,Spurs,indisponible,0,0,Has joined FC Porto on loan for the rest of the season,2026-09-01T13:24:26.858636Z
+2026-10-30T12:01:55+00:00,505,Spence,Spurs,indisponible,0,0,Has joined Internazionale permanently,2026-08-18T14:13:08.454214Z
+2026-10-30T12:01:55+00:00,403,Sávio,Spurs,blesse,0,0,Muscular injury - Expected back 21 Nov,2026-10-18T13:00:09.266321Z
+2026-10-30T12:01:55+00:00,147,Tosin,Spurs,incertain,75,100,Calf injury - 75% chance of playing,2026-10-29T17:00:09.335810Z
+2026-10-30T12:01:55+00:00,506,Udogie,Spurs,blesse,0,0,Knee injury - Unknown return date,2026-10-19T22:30:08.875960Z
+2026-10-30T12:01:55+00:00,494,Vicario,Spurs,indisponible,0,0,Has joined Juventus on loan for the rest of the season,2026-08-19T13:55:33.193962Z
+2026-10-30T12:01:55+00:00,513,Xavi,Spurs,blesse,0,0,Knee injury - Unknown return date,2026-07-23T12:01:23.864304Z
+2026-10-30T12:01:55+00:00,546,Adingra,Sunderland,indisponible,0,0,Has joined Ajax on loan for the rest of the season,2026-08-20T14:00:08.416985Z
+2026-10-30T12:01:55+00:00,532,Ballard,Sunderland,blesse,0,0,Hamstring injury - Unknown return date,2026-09-25T21:30:10.370384Z
+2026-10-30T12:01:55+00:00,538,Hjelde,Sunderland,indisponible,0,0,Has joined KV Mechelen on loan for the rest of the season,2026-08-12T14:08:03.081789Z
+2026-10-30T12:01:55+00:00,553,Isidor,Sunderland,incertain,50,50,Knock - 50% chance of playing,2026-10-15T16:30:07.851112Z
+2026-10-30T12:01:55+00:00,540,Masuaku,Sunderland,indisponible,0,0,Has joined Konyaspor permanently,2026-08-12T14:08:03.097784Z
+2026-10-30T12:01:55+00:00,533,Mukiele,Sunderland,incertain,75,100,Knock - 75% chance of playing,2026-10-29T18:30:09.458031Z
+2026-10-30T12:01:55+00:00,547,Mundle,Sunderland,blesse,0,0,Knee injury - Unknown return date,2026-09-09T14:00:08.462705Z
+2026-10-30T12:01:55+00:00,530,Patterson,Sunderland,indisponible,0,0,Has joined Wrexham permanently,2026-08-12T14:08:03.064533Z
+2026-10-30T12:01:55+00:00,537,Seelt,Sunderland,indisponible,0,0,Has joined Swansea City on loan for the rest of the season,2026-08-29T00:34:52.425076Z
