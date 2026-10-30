@@ -1,6 +1,8 @@
-# EXP-015 : marchés 2+ / 3+ buts sur poisson-v5
+# EXP-019 : marchés 2+ / 3+ buts sur poisson-v5
 
 Statut : **protocole figé le 30/10/2026, avant toute exécution**. Les résultats sont ajoutés dans une section séparée, sans modifier le protocole.
+
+Numérotation : publié d'abord sous EXP-015 (PR #50), renuméroté EXP-019 le 30/10/2026 car EXP-015 à EXP-018 étaient déjà pris par des brouillons (PR #43 à #46).
 
 ## Question
 
@@ -37,7 +39,7 @@ Platt par marché, commun aux 5 ligues : p' = σ(a + b · logit p), p bornée da
 
 ## Résultats (exécution du 30/10/2026, ajoutés après le protocole)
 
-Commande : `python scripts/exp015_buts_v5.py --sortie docs/experiences/EXP-015`. Tous les matchs de `variables.csv` ont un score joint. Contrôle : la log-loss de `poisson-v4-platt` recalculée (2+ 0,52765 ; 3+ 0,68133) est identique à EXP-007.
+Commande : `python scripts/exp019_buts_v5.py --sortie docs/experiences/EXP-019`. Tous les matchs de `variables.csv` ont un score joint. Contrôle : la log-loss de `poisson-v4-platt` recalculée (2+ 0,52765 ; 3+ 0,68133) est identique à EXP-007.
 
 | Marché | a, b (v5) | v5-platt | v4-platt | Écart [IC 95 %] | Ligues < 0 | Calibration max |
 |---|---|---|---|---|---|---|
