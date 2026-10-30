@@ -1,8 +1,8 @@
 {
   "version": "0.1.0",
-  "commit": "5575a94",
-  "date": "2026-10-30T05:54:35+00:00",
-  "resume": "EXP-015 : marchés 2+/3+ buts passent sur poisson-v5-platt (−0,0019 et −0,0029 vs v4-platt, 5/5 ligues) ; retard bookmaker 3+ 0,0092 → 0,0063.",
+  "commit": "6ba333a",
+  "date": "2026-10-30T05:59:18+00:00",
+  "resume": "EXP-019 : marchés 2+/3+ buts passent sur poisson-v5-platt (−0,0019 et −0,0029 vs v4-platt, 5/5 ligues) ; retard bookmaker 3+ 0,0092 → 0,0063.",
   "prochaines_actions": [
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
@@ -107,8 +107,8 @@
     "travail": 3,
     "decisions": 17,
     "football": 1,
-    "performances": 9,
+    "performances": 10,
     "technique": 5
   },
-  "id": "ckpt-1bf4d9cad1"
+  "id": "ckpt-b317d639a0"
 }

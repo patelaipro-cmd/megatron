@@ -1,6 +1,6 @@
-"""EXP-015 : marchés 2+ / 3+ buts sur les taux poisson-v5 (Platt) contre poisson-v4-platt.
+"""EXP-019 : marchés 2+ / 3+ buts sur les taux poisson-v5 (Platt) contre poisson-v4-platt.
 
-Usage : python scripts/exp015_buts_v5.py --sortie docs/experiences/EXP-015
+Usage : python scripts/exp019_buts_v5.py --sortie docs/experiences/EXP-019
 """
 
 from __future__ import annotations

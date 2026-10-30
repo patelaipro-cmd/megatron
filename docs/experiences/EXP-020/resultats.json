@@ -1,0 +1,379 @@
+{
+ "protocole": "docs/experiences/EXP-020-promotion-xg-v1.md",
+ "w": 0.5,
+ "liaison": {
+  "lignes_understat": 21589,
+  "relies": 21471,
+  "score_different": 1,
+  "non_relie": 117
+ },
+ "recalibration": {
+  "b": 1.075291,
+  "c_H": 0.025332,
+  "c_D": 0.091197,
+  "n_dev": 5478
+ },
+ "validation": {
+  "n": 5377,
+  "scores": {
+   "xg_cal": {
+    "n": 5377,
+    "brier": 0.586898,
+    "log_loss": 0.98586,
+    "rps": 0.200513
+   },
+   "xg": {
+    "n": 5377,
+    "brier": 0.586955,
+    "log_loss": 0.986,
+    "rps": 0.200419
+   },
+   "v5_cal": {
+    "n": 5377,
+    "brier": 0.587468,
+    "log_loss": 0.986974,
+    "rps": 0.200967
+   }
+  },
+  "calibration_xg_cal": [
+   {
+    "tranche": "0.0-0.2",
+    "n": 3005,
+    "p_moyenne": 0.1394,
+    "frequence_observee": 0.1464
+   },
+   {
+    "tranche": "0.2-0.4",
+    "n": 8559,
+    "p_moyenne": 0.2793,
+    "frequence_observee": 0.2822
+   },
+   {
+    "tranche": "0.4-0.6",
+    "n": 3059,
+    "p_moyenne": 0.4906,
+    "frequence_observee": 0.4815
+   },
+   {
+    "tranche": "0.6-0.8",
+    "n": 1286,
+    "p_moyenne": 0.6829,
+    "frequence_observee": 0.6719
+   },
+   {
+    "tranche": "0.8-1.0",
+    "n": 222,
+    "p_moyenne": 0.8505,
+    "frequence_observee": 0.8333
+   }
+  ],
+  "calibration_v5_cal": [
+   {
+    "tranche": "0.0-0.2",
+    "n": 2771,
+    "p_moyenne": 0.1409,
+    "frequence_observee": 0.1411
+   },
+   {
+    "tranche": "0.2-0.4",
+    "n": 8847,
+    "p_moyenne": 0.2811,
+    "frequence_observee": 0.2815
+   },
+   {
+    "tranche": "0.4-0.6",
+    "n": 3136,
+    "p_moyenne": 0.4886,
+    "frequence_observee": 0.4863
+   },
+   {
+    "tranche": "0.6-0.8",
+    "n": 1202,
+    "p_moyenne": 0.6814,
+    "frequence_observee": 0.6872
+   },
+   {
+    "tranche": "0.8-1.0",
+    "n": 175,
+    "p_moyenne": 0.8453,
+    "frequence_observee": 0.8286
+   }
+  ],
+  "xg_cal_moins_v5_cal": {
+   "n": 5377,
+   "ecart": -0.00111,
+   "ic95": [
+    -0.00328,
+    0.00116
+   ]
+  },
+  "xg_brut_moins_v5_cal": {
+   "n": 5377,
+   "ecart": -0.00097,
+   "ic95": [
+    -0.00332,
+    0.00138
+   ]
+  },
+  "xg_cal_moins_xg_brut": {
+   "n": 5377,
+   "ecart": -0.00014,
+   "ic95": [
+    -0.00112,
+    0.00085
+   ]
+  },
+  "par_ligue": {
+   "F1": {
+    "n": 1039,
+    "ecart": -0.00229,
+    "ic95": [
+     -0.00755,
+     0.00337
+    ]
+   },
+   "E0": {
+    "n": 1140,
+    "ecart": -0.00309,
+    "ic95": [
+     -0.00834,
+     0.0023
+    ]
+   },
+   "D1": {
+    "n": 918,
+    "ecart": -0.00217,
+    "ic95": [
+     -0.00822,
+     0.00369
+    ]
+   },
+   "SP1": {
+    "n": 1140,
+    "ecart": 0.00114,
+    "ic95": [
+     -0.00349,
+     0.00605
+    ]
+   },
+   "I1": {
+    "n": 1140,
+    "ecart": 0.00052,
+    "ic95": [
+     -0.00383,
+     0.00532
+    ]
+   }
+  },
+  "avec_cotes": {
+   "n": 5377,
+   "bookmaker": {
+    "n": 5377,
+    "brier": 0.577862,
+    "log_loss": 0.973261,
+    "rps": 0.19658
+   },
+   "xg_cal_moins_bookmaker": {
+    "n": 5377,
+    "ecart": 0.0126,
+    "ic95": [
+     0.00883,
+     0.01641
+    ]
+   },
+   "v5_cal_moins_bookmaker": {
+    "n": 5377,
+    "ecart": 0.01371,
+    "ic95": [
+     0.00966,
+     0.01773
+    ]
+   }
+  }
+ },
+ "test": {
+  "n": 8907,
+  "scores": {
+   "xg_cal": {
+    "n": 8907,
+    "brier": 0.585517,
+    "log_loss": 0.982872,
+    "rps": 0.198971
+   },
+   "xg": {
+    "n": 8907,
+    "brier": 0.585971,
+    "log_loss": 0.983982,
+    "rps": 0.199063
+   },
+   "v5_cal": {
+    "n": 8907,
+    "brier": 0.5878,
+    "log_loss": 0.986116,
+    "rps": 0.200189
+   }
+  },
+  "calibration_xg_cal": [
+   {
+    "tranche": "0.0-0.2",
+    "n": 5094,
+    "p_moyenne": 0.1415,
+    "frequence_observee": 0.1459
+   },
+   {
+    "tranche": "0.2-0.4",
+    "n": 13878,
+    "p_moyenne": 0.2756,
+    "frequence_observee": 0.2803
+   },
+   {
+    "tranche": "0.4-0.6",
+    "n": 5161,
+    "p_moyenne": 0.4919,
+    "frequence_observee": 0.4825
+   },
+   {
+    "tranche": "0.6-0.8",
+    "n": 2250,
+    "p_moyenne": 0.6825,
+    "frequence_observee": 0.6671
+   },
+   {
+    "tranche": "0.8-1.0",
+    "n": 338,
+    "p_moyenne": 0.8481,
+    "frequence_observee": 0.8373
+   }
+  ],
+  "calibration_v5_cal": [
+   {
+    "tranche": "0.0-0.2",
+    "n": 4531,
+    "p_moyenne": 0.1436,
+    "frequence_observee": 0.1401
+   },
+   {
+    "tranche": "0.2-0.4",
+    "n": 14662,
+    "p_moyenne": 0.2798,
+    "frequence_observee": 0.2809
+   },
+   {
+    "tranche": "0.4-0.6",
+    "n": 5244,
+    "p_moyenne": 0.4893,
+    "frequence_observee": 0.4842
+   },
+   {
+    "tranche": "0.6-0.8",
+    "n": 2048,
+    "p_moyenne": 0.6778,
+    "frequence_observee": 0.6909
+   },
+   {
+    "tranche": "0.8-1.0",
+    "n": 236,
+    "p_moyenne": 0.8452,
+    "frequence_observee": 0.8432
+   }
+  ],
+  "xg_cal_moins_v5_cal": {
+   "n": 8907,
+   "ecart": -0.00324,
+   "ic95": [
+    -0.00506,
+    -0.00138
+   ]
+  },
+  "xg_brut_moins_v5_cal": {
+   "n": 8907,
+   "ecart": -0.00213,
+   "ic95": [
+    -0.00396,
+    -0.00022
+   ]
+  },
+  "xg_cal_moins_xg_brut": {
+   "n": 8907,
+   "ecart": -0.00111,
+   "ic95": [
+    -0.00183,
+    -0.0004
+   ]
+  },
+  "par_ligue": {
+   "F1": {
+    "n": 1677,
+    "ecart": -0.00368,
+    "ic95": [
+     -0.00795,
+     0.00076
+    ]
+   },
+   "E0": {
+    "n": 1900,
+    "ecart": -0.00197,
+    "ic95": [
+     -0.0064,
+     0.0023
+    ]
+   },
+   "D1": {
+    "n": 1530,
+    "ecart": -0.00615,
+    "ic95": [
+     -0.01056,
+     -0.00161
+    ]
+   },
+   "SP1": {
+    "n": 1900,
+    "ecart": -0.00415,
+    "ic95": [
+     -0.00805,
+     -0.00037
+    ]
+   },
+   "I1": {
+    "n": 1900,
+    "ecart": -0.00089,
+    "ic95": [
+     -0.00442,
+     0.00273
+    ]
+   }
+  },
+  "avec_cotes": {
+   "n": 8906,
+   "bookmaker": {
+    "n": 8906,
+    "brier": 0.577394,
+    "log_loss": 0.97086,
+    "rps": 0.19537
+   },
+   "xg_cal_moins_bookmaker": {
+    "n": 8906,
+    "ecart": 0.01201,
+    "ic95": [
+     0.00925,
+     0.01494
+    ]
+   },
+   "v5_cal_moins_bookmaker": {
+    "n": 8906,
+    "ecart": 0.01525,
+    "ic95": [
+     0.01225,
+     0.0182
+    ]
+   }
+  }
+ },
+ "criteres": {
+  "Z1_validation_ic_haut_negatif": false,
+  "Z2_test_ic_haut_negatif": true,
+  "Z3_test_4_ligues_sur_5": true,
+  "Z4_test_rps": true
+ },
+ "verdict": "REJETE"
+}
