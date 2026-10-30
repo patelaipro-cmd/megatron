@@ -1,0 +1,81 @@
+{
+  "au": "2026-10-30",
+  "seuils": {
+    "fraicheur_jours": 10,
+    "validation_2026_27_matchs": 1000,
+    "validation_2026_27_ligues": 5,
+    "absences_matchs": 1500,
+    "absences_ligues": 3,
+    "absences_mois": 4,
+    "prospectif_predictions": 500
+  },
+  "donnees": {
+    "matchs": 45862,
+    "dernier_resultat": "2026-10-28",
+    "age_jours": 2,
+    "saison_en_cours": {
+      "matchs": 402,
+      "par_ligue": {
+        "D1": 63,
+        "E0": 80,
+        "F1": 72,
+        "I1": 88,
+        "SP1": 99
+      },
+      "avec_cotes": 251,
+      "avec_tirs": 251
+    }
+  },
+  "externe": {
+    "disponible": true,
+    "instantanes_blessures": 2,
+    "lignes_compos": 221,
+    "lignes_compos_sans_identifiant": 0,
+    "par_source": {
+      "apifootball/compos": {
+        "matchs": 1,
+        "ligues": 1
+      },
+      "espn/compos": {
+        "matchs": 4,
+        "ligues": 2
+      }
+    },
+    "matchs_compo_avant_coup_envoi": 4,
+    "ligues": 2,
+    "premier_jour": "2026-10-29",
+    "dernier_jour": "2026-10-30"
+  },
+  "prospectif": {
+    "predictions": 0,
+    "matchs_predits": 0,
+    "matchs_avec_resultat": 0
+  },
+  "candidats": {
+    "donnees_fraiches": {
+      "statut": "ADMISSIBLE",
+      "raisons": []
+    },
+    "EXP-014_validation_calibrations_2026_27": {
+      "statut": "NON_ADMISSIBLE",
+      "raisons": [
+        "402 matchs 2026/27 (< 1000)"
+      ]
+    },
+    "EXP-013_ponderation_absences": {
+      "statut": "NON_ADMISSIBLE",
+      "raisons": [
+        "4 matchs avec compo collectée avant le coup d'envoi (< 1500)",
+        "2 ligues (< 3)",
+        "0.0 mois de collecte (< 4)"
+      ]
+    },
+    "cohorte_prospective": {
+      "statut": "NON_ADMISSIBLE",
+      "raisons": [
+        "0 prévisions réelles avec résultat (< 500)"
+      ]
+    }
+  },
+  "entrainement_lance": false
+}
