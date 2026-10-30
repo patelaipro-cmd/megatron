@@ -36,3 +36,26 @@ aucune probabilité de production modifiée, aucun appel LLM.
 
 Test déjà vu globalement par EXP-022 (score de A) ; seuls les paramètres C_L sont nouveaux.
 Dev d'environ 2 000 à 4 400 matchs par ligue.
+
+## Résultats (exécution du 30/10/2026)
+
+`python scripts/exp023_calibration_ligue.py --brut docs/experiences/EXP-022/brut --sortie docs/experiences/EXP-023` (~1 min).
+
+**Verdict : la recalibration par ligue aide peu. 7 ligues couvertes : SC0, SC1, SC2, SC3, F2, D2, G1.**
+
+- K1 retient C_L dans 3 ligues seulement (EC, SC2, D2) ; A partout ailleurs.
+- En test, C_L − A n'est significativement négatif qu'en E3 (−0,0022) et positif en P1 et T1 :
+  les paramètres appris sur 2008-2016 ne tiennent pas sur 2020-2026.
+- Seule SC2 gagne K3 (couverte avec C_L). Les défauts de E1, E2, E3, EC, SP2, I2, N1, P1, B1,
+  T1 persistent (mêmes tranches qu'EXP-022) : c'est une **dérive dans le temps** (taux de nuls,
+  avantage du terrain qui changent entre 2008-16 et 2020-26), pas un biais fixe de ligue.
+
+| ligue | modèle | (b ; c_H ; c_D) de C_L | K1 C − A validation | C − A test | K3 |
+|---|:-:|---|---:|---:|:-:|
+| EC | C | 0,994 ; −0,010 ; 0,020 | −0,0047 | −0,0018 | non |
+| SC2 | C | 0,898 ; 0,042 ; −0,085 | −0,0089 | 0,0000 | oui |
+| D2 | C | 0,754 ; 0,151 ; 0,133 | −0,0100 | −0,0002 | oui |
+| autres | A | voir `resultats.json` | IC traverse 0 | | |
+
+Suite possible (protocole séparé) : calibration glissante (réapprise chaque saison sur les saisons
+précédentes) pour suivre la dérive.
