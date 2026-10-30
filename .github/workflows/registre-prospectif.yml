@@ -4,7 +4,7 @@ name: registre-prospectif
 # Ajout seulement : jamais de réécriture, jamais de fusion automatique, aucun GO déclenché.
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"  # GitHub n'en lance qu'environ une par heure (mesuré le 29-30/10) : d'où la boucle ci-dessous
   workflow_dispatch:
 permissions:
   contents: write
@@ -17,7 +17,7 @@ env:
 jobs:
   registre:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -38,30 +38,37 @@ jobs:
           else
             git checkout -B "$BRANCHE" origin/main
           fi
-      - name: Résultats confirmés (deux familles)
-        run: |
-          brut=$(ls -d donnees/externe/resultats/*/ 2>/dev/null | sort | tail -1)
-          if [ -n "$brut" ]; then
-            python scripts/verifier_resultats.py --brut "$brut" --depuis 2026-09-21 \
-              --admis "$RUNNER_TEMP/admis.csv" --rapport "$RUNNER_TEMP/rapport" > /dev/null
-          fi
-      - name: Enregistrer
-        run: |
-          python scripts/registre_prospectif.py --registre memoire --externe donnees/externe \
-            --resultats-admis "$RUNNER_TEMP/admis.csv"
-          python -m megatron synchro verifier
-      - name: Publier
+      - name: Enregistrer et publier toutes les 5 min pendant 50 min
+        # Fenêtres initial, T-30 (25-35 min) et T-5 (2-8 min) couvertes entre deux lancements planifiés.
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add memoire
-          if ! git diff --cached --quiet; then
-            git commit -q -m "Registre prospectif $(date -u +%Y-%m-%dT%H:%MZ)"
-          fi
-          git push origin "$BRANCHE"
-          if [ -z "$(gh pr list --head "$BRANCHE" --state open --json number --jq '.[].number')" ] && \
-             [ -n "$(git log origin/main..HEAD --oneline)" ]; then
-            gh pr create --head "$BRANCHE" --base main --title "Registre prospectif : prévisions avant match (en continu)" \
-              --body "Ajouts automatiques du workflow registre-prospectif dans memoire/ (jeton claude). Chaque commit est poussé avant le coup d'envoi des matchs qu'il couvre : l'heure du commit fait foi. Fusion manuelle uniquement, aucun GO." \
-              || echo "::warning::PR non créée (réglage du dépôt : Actions ne peut pas ouvrir de PR). Commits poussés sur $BRANCHE ; ouvrir la PR à la main."
-          fi
+          annuler() { git checkout -q -- memoire; git clean -fdq memoire; }  # écritures non vérifiées du tour : retirées
+          tour_registre() {
+            git -C donnees fetch -q --depth 1 origin donnees-externes && git -C donnees checkout -q --detach FETCH_HEAD || return 1
+            brut=$(ls -d donnees/externe/resultats/*/ 2>/dev/null | sort | tail -1)
+            if [ -n "$brut" ]; then
+              python scripts/verifier_resultats.py --brut "$brut" --depuis 2026-09-21 \
+                --admis "$RUNNER_TEMP/admis.csv" --rapport "$RUNNER_TEMP/rapport" > /dev/null || return 1
+            fi
+            python scripts/registre_prospectif.py --registre memoire --externe donnees/externe \
+              --resultats-admis "$RUNNER_TEMP/admis.csv" || { annuler; return 1; }
+            python -m megatron synchro verifier || { annuler; return 1; }  # erreur de registre : rien n'est poussé
+            git add memoire
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Registre prospectif $(date -u +%Y-%m-%dT%H:%MZ)" || return 1
+            fi
+            git push -q origin "$BRANCHE" || return 1
+            if [ -z "$(gh pr list --head "$BRANCHE" --state open --json number --jq '.[].number')" ] && \
+               [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+              gh pr create --head "$BRANCHE" --base main --title "Registre prospectif : prévisions avant match (en continu)" \
+                --body "Ajouts automatiques du workflow registre-prospectif dans memoire/ (jeton claude). Chaque commit est poussé avant le coup d'envoi des matchs qu'il couvre : l'heure du commit fait foi. Fusion manuelle uniquement, aucun GO." \
+                || echo "::warning::PR non créée (réglage du dépôt : Actions ne peut pas ouvrir de PR). Commits poussés sur $BRANCHE ; ouvrir la PR à la main."
+            fi
+          }
+          for tour in $(seq 1 "${TOURS:-11}"); do
+            # un tour en échec (réseau, vérification) est signalé, sans poussée ; « set -e » ne vaut pas dans un « || »,
+            # d'où les « || return 1 » explicites
+            tour_registre || echo "::warning::tour $tour en échec"
+            if [ "$tour" -lt "${TOURS:-11}" ]; then sleep "${PAUSE:-300}"; fi
+          done
