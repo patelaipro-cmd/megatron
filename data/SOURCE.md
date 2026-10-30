@@ -48,3 +48,8 @@ Football-Data.co.uk autorise un usage personnel et de recherche ; une diffusion 
 - Heures : ESPN est en UTC, ramené à la convention de `data/` par le décalage médian mesuré (+1 h, mesuré sur août-septembre ; changement d'heure du 25/10 non corrigé, seul l'ordre intra-journée en dépend).
 - Rapport, quarantaine et refus : `docs/resultats-2026-27/`. SHA-256 du fichier : `71d3f9d7…f7e7f531`.
 - API-Football n'a pas servi : le plan gratuit refuse `season=2026` (« try from 2022 to 2024 »).
+
+## Autres championnats européens (30/10/2026, EXP-022)
+
+- `matches_autres_2000-2026.csv` : même fichier `Matches.csv` (SHA-256 `ef224cf2…4221`, vérifié inchangé le 30/10/2026), mêmes colonnes que `matches_top5_2000-2026.csv`, divisions E1, E2, E3, EC, SC0, SC1, SC2, SC3, SP2, I2, F2, D2, N1, P1, B1, T1, G1, matchs depuis le 01/07/2000 avec score (138 819 lignes). SHA-256 `d2770f88bfe5507cd1b8d3a95ec36de6d96e308f31ffcd9a0cac5626b94ec2ae`.
+- Reconstruction : `python scripts/extraire_donnees.py Matches.csv --depuis 2000-07-01 --sortie data/matches_autres_2000-2026.csv --divisions E1,E2,E3,EC,SP2,I2,F2,D2,T1,N1,P1,B1,SC0,SC1,SC2,SC3,G1` (les lignes sans score sont désormais ignorées ; l'extrait des 5 ligues est inchangé, SHA vérifié).
