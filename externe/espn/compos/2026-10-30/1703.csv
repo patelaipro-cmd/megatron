@@ -1,0 +1,101 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Maximilian Bauer,184551,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Isaiah Young,311965,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Maximilian Grober,303981,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Joel Grodowski,260779,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Arne Sicker,235559,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Marius Worl,344738,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Leon Schneider,304872,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Tim Handwerker,259050,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Sam Schreck,231184,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Leo Oppermann,295429,G,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Monju Momuluh,358223,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Leon Jensen,277120,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Felix Hagmann,392279,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Jannik Rochelt,323955,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Marvin Mehlem,221516,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Benjamin Boakye,397131,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Stefano Russo,137717,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Till Wegener,3116167,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Henri Koudossou,343976,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,Arminia Bielefeld,3-4-3,Jonas Kersken,343848,G,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Ron-Thorben Hofmann,259128,G,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Mehmet Can Aydin,316105,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Andi Hoti,323116,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Fabio Di-Michele-Sanchez,343950,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Kevin Ehlers,286350,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Florian Flick,291889,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Aaron Opoku,229769,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Max Marie,386433,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Arlet Zé,365688,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Yann Sturm,399523,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Jan Urbich,386420,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Lukas Frenkert,321225,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Sidney Raebiger,319332,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Tristan Wagner,251356,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Sidi Sané,346632,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Benjamin Uphoff,166716,G,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Jovan Mijatovic,352320,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Damjan Kovacevic,364587,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Robin Heusser,306924,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885068,ger.2,D2,2026-10-30T17:30:00+00:00,TSV Eintracht Braunschweig,4-4-2,Noah Katterbach,283729,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Marcel Lotka,304903,G,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Luca Erlein,399218,CD-L,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,King Manu,373993,CD-R,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Leon Guwara,232327,LB,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Henry Rorig,306061,RB,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Lucas Copado,323079,AM,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Lukas Michelbrink,398040,LM,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Leonardo Bittencourt,157560,RM,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Justin Butler,304045,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Moritz Hannemann,387628,AM-L,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Tolcay Cigerci,212474,AM-R,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Dominik Pelivan,269468,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Dmytro Bohdanov,386460,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Tim Campulka,289335,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Hasan Jannis Zaydan,3108144,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Kevin Kratzsch,306723,G,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Christian Kinsombi,291736,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Jannis Boziaris,406663,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Jonas Hofmann,174617,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,Energie Cottbus,4-2-3-1,Fousseny Doumbia,404775,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Timo Horn,160021,G,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Karol Mets,196297,CD-L,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Michael Steinwender,274020,CD-R,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Maximilian Wittek,207139,LB,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Sean Klaiber,189653,RB,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Berkan Taz,261355,AM,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Mats Pannewig,346374,LM,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Tom Meyer,397746,RM,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Philipp Hofmann,169412,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Gerrit Holtmann,218779,AM-L,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Koji Miyoshi,195105,AM-R,titulaire,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Daniel Hanslik,290757,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Leon Sawas,3102262,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Charlie Patino,327167,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Jarne Steuckers,312807,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Mansour Ouro-Tagba,362415,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Yigit Karademir,340135,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Christian Rasmussen,305588,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Tino Casali,200850,G,remplacant,espn
+2026-10-30T17:03:43+00:00,401885066,ger.2,D2,2026-10-30T17:30:00+00:00,VfL Bochum,4-2-3-1,Lasse Isbruch,404531,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Yehvann Diouf,241029,G,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Youssouf Ndayishimiye,255192,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Xavier Junior Mandza Tsiendi,3117261,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Mohamed Abdelmoneim,236957,D,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Djibril Coulibaly,357425,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Sofiane Diop,276995,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Jonathan Clauss,232089,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Hicham Boudaoui,287078,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Mohamed Amoura,315384,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Niels Nkounkou,298030,M,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Elye Wahi,311118,F,titulaire,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Issiaga Camara,232670,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Djelan Morana,3135995,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Gauthier Hein,239905,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Morgan Sanson,176816,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Nathan N'Goumou,282676,F,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Everton Pereira,416460,M,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Teddy Boulhendi,310859,G,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Hamza Koutoune,376344,D,remplacant,espn
+2026-10-30T17:03:43+00:00,401876416,fra.1,F1,2026-10-30T18:00:00+00:00,Nice,3-4-2-1,Isak Jansson,282597,F,remplacant,espn
