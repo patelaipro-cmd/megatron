@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-30T17:11:00+00:00,espn,DraftKings,courante,F1,2026-10-30T18:00+00:00,Le Havre AC,Paris Saint-Germain,401876421,9.0,6.0,1.303,49.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261030,2afc5c2a7116edc51394971284941557a839d28287ce313cd93f4eb254297d78,1X2
+2026-10-30T17:11:00+00:00,espn,DraftKings,courante,F1,2026-10-30T18:00+00:00,Nice,Stade Rennais,401876416,2.55,3.6,2.65,49.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261030,2afc5c2a7116edc51394971284941557a839d28287ce313cd93f4eb254297d78,1X2
