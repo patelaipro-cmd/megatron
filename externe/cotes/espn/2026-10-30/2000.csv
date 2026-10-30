@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-30T20:00:00+00:00,espn,DraftKings,courante,F1,2026-10-30T20:05+00:00,Lille,Lens,401876420,2.65,3.25,2.75,5.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261030,d0bb3ae07f61aaba5037be7ecda26a420eeb4f55fff43443b95a489f21619096,1X2
