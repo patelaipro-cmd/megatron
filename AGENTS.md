@@ -45,6 +45,8 @@ comme une analyse complète. Les sources restent déclaratives et aucune
 probabilité n'est corrigée automatiquement. Voir docs/angles-morts-favori.md.
 Indicateurs historiques des angles morts (cadre Luloki, 29/10/2026) : `megatron/angles_morts.py`, 13 angles, 3 questions,
 scénario = fait + source + mécanisme ; aucune modification de probabilité sans expérience validée (EXP-009 : aucune).
+Candidat xg-v1-cal (xG Understat, EXP-018/020) : `megatron/xg.py`, `XgAgent` hors `default_agents` ; rejeté par
+EXP-020, observation seulement, jamais dans la fusion ni dans `StatsAgent` sans nouvelle décision.
 
 Collecte externe (29/10/2026) : GitHub Actions écrit sur la branche `donnees-externes`
 (jamais fusionnée dans main). Lecture par `scripts/lire_externe.py` avec `--avant`
