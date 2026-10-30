@@ -89,3 +89,8 @@ saison en cours de `donnees-externes`, lignes collectées avant l'instant de la 
 « Nottm Forest » avant 2024 puis « Nott'm Forest », et un vote global laissait 15 matchs 2026/27
 sans xG (Forest, Gladbach). Avec le vote par saison : 21 952 matchs reliés (EXP-020 : 21 471),
 2026/27 : 401 sur 402. Ce modèle n'est pas exactement celui évalué par EXP-020 (plus de xG reliés).
+
+Décision de Luloki (30/10/2026) : xg-v1-cal enregistré **en observation** par le registre prospectif
+(`scripts/registre_prospectif.py`, moment initial, clé `pred:<match>:xg-v1-cal`, hors fusion, aucun GO),
+sur les seuls xG collectés avant l'enregistrement. Comparaison avec poisson-v5-cal sur la cohorte
+2026/27 : protocole à figer avant lecture, au plus tard avec EXP-014 (≥ 1 000 matchs).
