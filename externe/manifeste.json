@@ -1,5 +1,5 @@
 {
- "execution_le": "2026-10-30T21:55:57+00:00",
+ "execution_le": "2026-10-30T22:56:25+00:00",
  "sources": {
   "fpl": {
    "lignes": 198,
@@ -12,10 +12,10 @@
    "statut": "ok"
   },
   "espn": {
-   "matchs_proches": 3,
-   "lignes": 92,
+   "matchs_proches": 1,
+   "lignes": 46,
    "erreurs_ligues": [],
-   "fichier": "espn/compos/2026-10-30/2155.csv",
+   "fichier": "espn/compos/2026-10-30/2256.csv",
    "statut": "ok"
   }
  }

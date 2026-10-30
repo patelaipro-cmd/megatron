@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Hugo Souza,257051,G,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Gustavo Henrique,168981,CD-L,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,André Ramalho,194090,CD-R,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Fabrizio Angileri,195756,LB,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Mateuzinho,272533,RB,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Rodrigo Garro,270562,AM,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Breno Bidon,338898,LM,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,André,409662,RM,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Yuri Alberto,266666,F,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Matheus Bidu,287774,AM-L,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Kaio,347456,AM-R,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Pedro Raúl,234070,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,André Carrillo,148189,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Matheus Pereira,216098,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Kauê Camargo,361442,G,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Dieguinho,382944,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Pedro Milans,359849,D,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Vitinho,171652,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Charles,240557,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,João Pedro,361471,D,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Allan,223437,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Iago Machado,421414,D,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Corinthians,4-2-3-1,Gui Negão,382959,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Walter,196851,G,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Igor Marques,299967,D,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,João Victor,250899,D,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Willian Machado,270797,D,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Reinaldo,115379,D,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Alesson,250388,M,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Edson Carioca,94310,M,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Neto Moura,203715,M,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Wallison Luiz,269848,M,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Carlos Eduardo,174782,M,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Bruno Santos,314915,F,titulaire,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Fernando,218913,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,José Aldo,290092,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Denilson,325101,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Carlos Eduardo,218974,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Thomazella,203754,G,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Lucas Oliveira,233888,D,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Chico,198273,M,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Zé Roberto,201623,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Daniel Borges,156502,D,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,André Luis,205448,F,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Gabriel,338674,D,remplacant,espn
+2026-10-30T22:56:25+00:00,401841295,bra.1,BRA,2026-10-30T23:00:00+00:00,Mirassol,4-2-3-1,Shaylon,252610,M,remplacant,espn
