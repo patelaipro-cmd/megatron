@@ -1,0 +1,499 @@
+{
+ "protocole": "docs/experiences/EXP-016-forces-dynamiques.md",
+ "donnees": "data/matches_top5_2000-2026.csv",
+ "grille": {
+  "n": 240,
+  "extension_q": 0.0001,
+  "dix_meilleurs": [
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.0,
+     "p0": 0.05,
+     "w": 0.35,
+     "c": 0.0,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.0|p00.05|w0.35|c0.0|cor0",
+    "log_loss": 0.989516,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.0,
+     "p0": 0.05,
+     "w": 0.35,
+     "c": 0.15,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.0|p00.05|w0.35|c0.15|cor0",
+    "log_loss": 0.989516,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.0,
+     "p0": 0.15,
+     "w": 0.35,
+     "c": 0.0,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.0|p00.15|w0.35|c0.0|cor0",
+    "log_loss": 0.989686,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.0,
+     "p0": 0.15,
+     "w": 0.35,
+     "c": 0.15,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.0|p00.15|w0.35|c0.15|cor0",
+    "log_loss": 0.989686,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.01,
+     "p0": 0.05,
+     "w": 0.35,
+     "c": 0.0,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.01|p00.05|w0.35|c0.0|cor0",
+    "log_loss": 0.989791,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.01,
+     "p0": 0.05,
+     "w": 0.35,
+     "c": 0.15,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.01|p00.05|w0.35|c0.15|cor0",
+    "log_loss": 0.989791,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.0,
+     "p0": 0.05,
+     "w": 0.35,
+     "c": 0.0,
+     "correction": true,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.0|p00.05|w0.35|c0.0|cor1",
+    "log_loss": 0.989809,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.0,
+     "p0": 0.05,
+     "w": 0.35,
+     "c": 0.15,
+     "correction": true,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.0|p00.05|w0.35|c0.15|cor1",
+    "log_loss": 0.989809,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.01,
+     "p0": 0.15,
+     "w": 0.35,
+     "c": 0.0,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.01|p00.15|w0.35|c0.0|cor0",
+    "log_loss": 0.98997,
+    "n": 14608
+   },
+   {
+    "reglage": {
+     "q": 0.0001,
+     "q_saison": 0.01,
+     "p0": 0.15,
+     "w": 0.35,
+     "c": 0.15,
+     "correction": false,
+     "q_ligue": 2e-05,
+     "demi_vie_k": 730.0
+    },
+    "nom": "q0.0001|qs0.01|p00.15|w0.35|c0.15|cor0",
+    "log_loss": 0.98997,
+    "n": 14608
+   }
+  ],
+  "pire": {
+   "reglage": {
+    "q": 0.002,
+    "q_saison": 0.03,
+    "p0": 0.15,
+    "w": 0.0,
+    "c": 0.15,
+    "correction": true,
+    "q_ligue": 2e-05,
+    "demi_vie_k": 730.0
+   },
+   "nom": "q0.002|qs0.03|p00.15|w0.0|c0.15|cor1",
+   "log_loss": 1.046562,
+   "n": 14608
+  }
+ },
+ "reglage_fige": {
+  "q": 0.0001,
+  "q_saison": 0.0,
+  "p0": 0.05,
+  "w": 0.35,
+  "c": 0.0,
+  "correction": false,
+  "q_ligue": 2e-05,
+  "demi_vie_k": 730.0
+ },
+ "recalibration_dev": {
+  "b": 1.106575,
+  "c_H": 0.040295,
+  "c_D": 0.139635,
+  "n": 14608,
+  "log_loss_brut": 0.989516,
+  "log_loss_cal": 0.988098
+ },
+ "validation": {
+  "n": 6982,
+  "scores": {
+   "dyn": {
+    "n": 6982,
+    "brier": 0.575298,
+    "log_loss": 0.968396,
+    "rps": 0.196346
+   },
+   "dyn_cal": {
+    "n": 6982,
+    "brier": 0.574684,
+    "log_loss": 0.966999,
+    "rps": 0.196061
+   },
+   "v5_cal": {
+    "n": 6982,
+    "brier": 0.574659,
+    "log_loss": 0.966857,
+    "rps": 0.196154
+   }
+  },
+  "calibration_dyn_cal": [
+   {
+    "tranche": "0.0-0.2",
+    "n": 4030,
+    "p_moyenne": 0.1356,
+    "frequence_observee": 0.1375
+   },
+   {
+    "tranche": "0.2-0.4",
+    "n": 11102,
+    "p_moyenne": 0.2833,
+    "frequence_observee": 0.2787
+   },
+   {
+    "tranche": "0.4-0.6",
+    "n": 3839,
+    "p_moyenne": 0.4891,
+    "frequence_observee": 0.4988
+   },
+   {
+    "tranche": "0.6-0.8",
+    "n": 1622,
+    "p_moyenne": 0.6855,
+    "frequence_observee": 0.6967
+   },
+   {
+    "tranche": "0.8-1.0",
+    "n": 353,
+    "p_moyenne": 0.8507,
+    "frequence_observee": 0.8187
+   }
+  ],
+  "dyn_cal_moins_v5_cal": {
+   "n": 6982,
+   "ecart": 0.00014,
+   "ic95": [
+    -0.00156,
+    0.00175
+   ]
+  },
+  "dyn_brut_moins_v5_cal": {
+   "n": 6982,
+   "ecart": 0.00154,
+   "ic95": [
+    -0.00037,
+    0.0034
+   ]
+  },
+  "par_ligue": {
+   "F1": {
+    "n": 1419,
+    "ecart": -0.0036,
+    "ic95": [
+     -0.00745,
+     -5e-05
+    ]
+   },
+   "E0": {
+    "n": 1454,
+    "ecart": -0.00106,
+    "ic95": [
+     -0.0047,
+     0.00262
+    ]
+   },
+   "D1": {
+    "n": 1224,
+    "ecart": 0.00221,
+    "ic95": [
+     -0.00228,
+     0.0065
+    ]
+   },
+   "SP1": {
+    "n": 1463,
+    "ecart": 0.002,
+    "ic95": [
+     -0.00115,
+     0.00495
+    ]
+   },
+   "I1": {
+    "n": 1422,
+    "ecart": 0.0014,
+    "ic95": [
+     -0.00255,
+     0.0056
+    ]
+   }
+  },
+  "avec_cotes": {
+   "n": 6982,
+   "dyn_cal_moins_bookmaker": {
+    "n": 6982,
+    "ecart": 0.01286,
+    "ic95": [
+     0.00954,
+     0.01604
+    ]
+   },
+   "v5_cal_moins_bookmaker": {
+    "n": 6982,
+    "ecart": 0.01272,
+    "ic95": [
+     0.00924,
+     0.01603
+    ]
+   }
+  },
+  "niveaux_favori_dyn": {
+   "1+": {
+    "log_loss": 0.65277,
+    "p_moyenne": 0.5273,
+    "frequence": 0.5402
+   },
+   "2+": {
+    "log_loss": 0.567116,
+    "p_moyenne": 0.2973,
+    "frequence": 0.2935
+   },
+   "3+": {
+    "log_loss": 0.385846,
+    "p_moyenne": 0.1414,
+    "frequence": 0.1449
+   }
+  }
+ },
+ "test": {
+  "n": 10954,
+  "scores": {
+   "dyn": {
+    "n": 10954,
+    "brier": 0.588558,
+    "log_loss": 0.988138,
+    "rps": 0.200509
+   },
+   "dyn_cal": {
+    "n": 10954,
+    "brier": 0.588055,
+    "log_loss": 0.987046,
+    "rps": 0.200385
+   },
+   "v5_cal": {
+    "n": 10954,
+    "brier": 0.58881,
+    "log_loss": 0.988164,
+    "rps": 0.200825
+   }
+  },
+  "calibration_dyn_cal": [
+   {
+    "tranche": "0.0-0.2",
+    "n": 5943,
+    "p_moyenne": 0.1421,
+    "frequence_observee": 0.1442
+   },
+   {
+    "tranche": "0.2-0.4",
+    "n": 17670,
+    "p_moyenne": 0.2806,
+    "frequence_observee": 0.2826
+   },
+   {
+    "tranche": "0.4-0.6",
+    "n": 6316,
+    "p_moyenne": 0.4906,
+    "frequence_observee": 0.4872
+   },
+   {
+    "tranche": "0.6-0.8",
+    "n": 2581,
+    "p_moyenne": 0.6799,
+    "frequence_observee": 0.6714
+   },
+   {
+    "tranche": "0.8-1.0",
+    "n": 352,
+    "p_moyenne": 0.8478,
+    "frequence_observee": 0.8324
+   }
+  ],
+  "dyn_cal_moins_v5_cal": {
+   "n": 10954,
+   "ecart": -0.00112,
+   "ic95": [
+    -0.00236,
+    9e-05
+   ]
+  },
+  "dyn_brut_moins_v5_cal": {
+   "n": 10954,
+   "ecart": -3e-05,
+   "ic95": [
+    -0.00141,
+    0.00133
+   ]
+  },
+  "par_ligue": {
+   "F1": {
+    "n": 2057,
+    "ecart": -0.00102,
+    "ic95": [
+     -0.00412,
+     0.00198
+    ]
+   },
+   "E0": {
+    "n": 2346,
+    "ecart": 0.00012,
+    "ic95": [
+     -0.00268,
+     0.00315
+    ]
+   },
+   "D1": {
+    "n": 1836,
+    "ecart": -0.00252,
+    "ic95": [
+     -0.00545,
+     0.00048
+    ]
+   },
+   "SP1": {
+    "n": 2337,
+    "ecart": -0.00049,
+    "ic95": [
+     -0.00253,
+     0.0015
+    ]
+   },
+   "I1": {
+    "n": 2378,
+    "ecart": -0.00196,
+    "ic95": [
+     -0.00447,
+     0.0006
+    ]
+   }
+  },
+  "avec_cotes": {
+   "n": 10953,
+   "dyn_cal_moins_bookmaker": {
+    "n": 10953,
+    "ecart": 0.01475,
+    "ic95": [
+     0.01208,
+     0.01715
+    ]
+   },
+   "v5_cal_moins_bookmaker": {
+    "n": 10953,
+    "ecart": 0.01587,
+    "ic95": [
+     0.0133,
+     0.01833
+    ]
+   }
+  },
+  "niveaux_favori_dyn": {
+   "1+": {
+    "log_loss": 0.66164,
+    "p_moyenne": 0.5228,
+    "frequence": 0.5263
+   },
+   "2+": {
+    "log_loss": 0.570258,
+    "p_moyenne": 0.2935,
+    "frequence": 0.2866
+   },
+   "3+": {
+    "log_loss": 0.37168,
+    "p_moyenne": 0.1382,
+    "frequence": 0.1342
+   }
+  }
+ },
+ "criteres": {
+  "D1_validation_ic_haut_negatif": false,
+  "D2_test_ic_haut_negatif": false,
+  "D3_test_4_ligues_sur_5": true,
+  "D4_test_rps": true
+ },
+ "verdict": "REJETE",
+ "duree_s": 68
+}

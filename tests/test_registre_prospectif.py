@@ -76,6 +76,39 @@ class TestRegistre(unittest.TestCase):
         r = rp.executer(self.reg, None, KO + timedelta(hours=44), admis, lire=lecteur(etat="post"), noms=NOMS)
         self.assertEqual(r["resultats_saisis"], [])  # jamais deux fois
 
+    def test_xg_v1_en_observation_seulement_xg_collectes_avant(self):
+        from megatron import data
+
+        externe = Path(self.tmp.name) / "externe"
+        dossier = externe / "understat"
+        dossier.mkdir(parents=True)
+        recents = [m for m in data.load(data.CURRENT, divisions={"E0"}) if data.season_of(m.day) == "2025/26"]
+        with (dossier / "matchs_equipes_2025-26.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["league", "date", "home_team", "away_team", "home_goals", "away_goals", "home_xg", "away_xg",
+                        "collecte_le"])
+            for i, m in enumerate(recents):  # la moitié collectée après l'instant d'enregistrement : ignorée
+                quand = "2026-07-01T00:00:00+00:00" if i % 2 else "2026-12-01T00:00:00+00:00"
+                w.writerow(["ENG-Premier League", f"{m.day} 15:00:00", m.home, m.away, m.home_goals, m.away_goals,
+                            1.1, 0.9, quand])
+        r = rp.executer(self.reg, externe, KO - timedelta(minutes=120), lire=lecteur(), noms=NOMS)
+        self.assertEqual([x["moment"] for x in r["enregistres"]], ["initial"])
+        store = MemoryStore(self.reg)
+        mid = "E0:2026-11-01:Arsenal-Chelsea"
+        (e,) = store.active(DOMAIN, f"pred:{mid}:xg-v1-cal")
+        self.assertAlmostEqual(sum(e.value["probs"].values()), 1.0, places=6)
+        self.assertIn("hors fusion", e.source)
+        self.assertEqual(len(store.active(DOMAIN)), 4)  # v5-cal + xg-v1-cal + marges 2+ et 3+
+        lie = rp.xg_relies(externe, data.load(data.CURRENT), KO - timedelta(minutes=120))
+        self.assertEqual(len(lie), (len(recents) + 1) // 2)
+        rp.executer(self.reg, externe, KO - timedelta(minutes=100), lire=lecteur(), noms=NOMS)
+        self.assertEqual(len(store.active(DOMAIN)), 4)  # jamais deux fois
+
+    def test_sans_xg_rien_ecrit_et_note(self):
+        r = rp.executer(self.reg, Path(self.tmp.name) / "vide", KO - timedelta(minutes=120), lire=lecteur(), noms=NOMS)
+        self.assertEqual([x["moment"] for x in r["enregistres"]], ["initial"])
+        self.assertEqual(MemoryStore(self.reg).active(DOMAIN, "pred:E0:2026-11-01:Arsenal-Chelsea:xg-v1-cal"), [])
+
     def test_jeton_detenu_par_codex_bloque(self):
         store = MemoryStore(self.reg)
         jeton.initialiser(store, "codex", source="test")

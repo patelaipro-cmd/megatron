@@ -122,12 +122,12 @@ class PrevoirButsTests(unittest.TestCase):
                     "away": "Zeta Rovers", "date": ko.date().isoformat()}
             store = MemoryStore(Path(tmp) / "m")
             out = suivi.prevoir(store, task, ko, agents=[StatsAgent(csv_path)], now=ko - timedelta(hours=2))
-            self.assertEqual(out["enregistre_buts"], ["2+:agent:stats:poisson-v4-platt",
-                                                      "3+:agent:stats:poisson-v4-platt"])
+            self.assertEqual(out["enregistre_buts"], ["2+:agent:stats:poisson-v5-platt",
+                                                      "3+:agent:stats:poisson-v5-platt"])
             with self.assertRaises(ValueError):
                 suivi.prevoir(store, task, ko, agents=[StatsAgent(csv_path)], now=ko - timedelta(hours=1))
             suivi.resultat(store, "FICTIF:buts", "1-1", source="t", observed_at=ko + timedelta(hours=2))
             b = suivi.bilan(store, now=ko + timedelta(days=1))
-            self.assertEqual(b["marches_buts"]["2+"]["agent:stats:poisson-v4-platt"]["n"], 1)
-            self.assertEqual(b["marches_buts"]["3+"]["agent:stats:poisson-v4-platt"]["n"], 1)
+            self.assertEqual(b["marches_buts"]["2+"]["agent:stats:poisson-v5-platt"]["n"], 1)
+            self.assertEqual(b["marches_buts"]["3+"]["agent:stats:poisson-v5-platt"]["n"], 1)
             self.assertEqual(b["communs"]["n"], 1)  # le 1X2 reste compté à part

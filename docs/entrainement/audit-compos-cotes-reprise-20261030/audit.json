@@ -1,0 +1,322 @@
+{
+  "au": "2026-10-30T09:08:44+00:00",
+  "fenetre_minutes": 90,
+  "repere": "premiere_collecte_de_deux_onze_complets_pas_publication_officielle",
+  "matchs_avec_compos_completes": 4,
+  "series_cotes": 27,
+  "matchs_compos_sans_cote_courante": 4,
+  "paires_match_bookmaker": 0,
+  "matchs_apparies": 0,
+  "exclusions_lignes_ou_captures": {
+    "cote_source_ou_type_exclu": 113
+  },
+  "series_non_appariees": {
+    "sans_deux_onze_complets": 27
+  },
+  "diagnostic_series": [
+    {
+      "event_id": "401874795",
+      "division": "I1",
+      "coup_envoi": "2026-10-31T19:45:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "AC Milan",
+      "exterieur": "Internazionale",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401874798",
+      "division": "I1",
+      "coup_envoi": "2026-10-31T14:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Bologna",
+      "exterieur": "Monza",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401874990",
+      "division": "I1",
+      "coup_envoi": "2026-10-31T17:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Udinese",
+      "exterieur": "AS Roma",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401876413",
+      "division": "F1",
+      "coup_envoi": "2026-10-31T19:45:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Troyes",
+      "exterieur": "Le Mans",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401876416",
+      "division": "F1",
+      "coup_envoi": "2026-10-30T18:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Nice",
+      "exterieur": "Stade Rennais",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401876420",
+      "division": "F1",
+      "coup_envoi": "2026-10-30T20:05:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Lille",
+      "exterieur": "Lens",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401876421",
+      "division": "F1",
+      "coup_envoi": "2026-10-30T18:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Le Havre AC",
+      "exterieur": "Paris Saint-Germain",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401878761",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T17:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Tottenham Hotspur",
+      "exterieur": "Crystal Palace",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401878763",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T15:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Hull City",
+      "exterieur": "Ipswich Town",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401879245",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T15:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Manchester City",
+      "exterieur": "Brighton & Hove Albion",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401879247",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T15:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Coventry City",
+      "exterieur": "Sunderland",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401879248",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T12:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Chelsea",
+      "exterieur": "Manchester United",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401879249",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T15:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Brentford",
+      "exterieur": "Nottingham Forest",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401879250",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T20:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Aston Villa",
+      "exterieur": "Fulham",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401879251",
+      "division": "E0",
+      "coup_envoi": "2026-10-31T15:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "AFC Bournemouth",
+      "exterieur": "Leeds United",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401882817",
+      "division": "SP1",
+      "coup_envoi": "2026-10-30T20:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Villarreal",
+      "exterieur": "Espanyol",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401882818",
+      "division": "SP1",
+      "coup_envoi": "2026-10-31T15:15:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Rayo Vallecano",
+      "exterieur": "Celta Vigo",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401882820",
+      "division": "SP1",
+      "coup_envoi": "2026-10-31T13:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Levante",
+      "exterieur": "Atlético Madrid",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401882822",
+      "division": "SP1",
+      "coup_envoi": "2026-10-31T20:00:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Barcelona",
+      "exterieur": "Alavés",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401882825",
+      "division": "SP1",
+      "coup_envoi": "2026-10-31T17:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Real Betis",
+      "exterieur": "Málaga",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884746",
+      "division": "D1",
+      "coup_envoi": "2026-10-30T19:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "SV Elversberg",
+      "exterieur": "Mainz",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884747",
+      "division": "D1",
+      "coup_envoi": "2026-10-31T14:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Schalke 04",
+      "exterieur": "RB Leipzig",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884748",
+      "division": "D1",
+      "coup_envoi": "2026-10-31T14:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Werder Bremen",
+      "exterieur": "TSG Hoffenheim",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884749",
+      "division": "D1",
+      "coup_envoi": "2026-10-31T14:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Borussia Mönchengladbach",
+      "exterieur": "SC Paderborn 07",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884751",
+      "division": "D1",
+      "coup_envoi": "2026-10-31T14:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "FC Augsburg",
+      "exterieur": "SC Freiburg",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884753",
+      "division": "D1",
+      "coup_envoi": "2026-10-31T14:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Bayer Leverkusen",
+      "exterieur": "VfB Stuttgart",
+      "statut": "sans_deux_onze_complets"
+    },
+    {
+      "event_id": "401884754",
+      "division": "D1",
+      "coup_envoi": "2026-10-31T17:30:00+00:00",
+      "bookmaker": "DraftKings",
+      "domicile": "Bayern Munich",
+      "exterieur": "Borussia Dortmund",
+      "statut": "sans_deux_onze_complets"
+    }
+  ],
+  "lignes_cotes_schema_legacy_1x2": 113,
+  "compos_sans_cote_courante": [
+    {
+      "event_id": "401841288",
+      "division": "BRA",
+      "coup_envoi": "2026-10-29T22:30:00+00:00",
+      "equipes": [
+        "Atlético-MG",
+        "Cruzeiro"
+      ]
+    },
+    {
+      "event_id": "401841290",
+      "division": "BRA",
+      "coup_envoi": "2026-10-30T00:30:00+00:00",
+      "equipes": [
+        "Athletico Paranaense",
+        "Grêmio"
+      ]
+    },
+    {
+      "event_id": "401841292",
+      "division": "BRA",
+      "coup_envoi": "2026-10-29T23:00:00+00:00",
+      "equipes": [
+        "Flamengo",
+        "Vasco da Gama"
+      ]
+    },
+    {
+      "event_id": "401874969",
+      "division": "I1",
+      "coup_envoi": "2026-10-29T19:45:00+00:00",
+      "equipes": [
+        "Atalanta",
+        "Fiorentina"
+      ]
+    }
+  ],
+  "paires": [],
+  "avantage_sur_marche": "NON_EVALUE",
+  "limites": [
+    "collecte ne prouve pas publication officielle ni réception de la nouvelle par le marché",
+    "horodatage de la cote chez le bookmaker inconnu ; seule la capture est datée",
+    "plusieurs bookmakers du même match ne sont pas des observations indépendantes",
+    "corners et cartons non couverts par ces fichiers 1X2",
+    "API-Football et football-data exclus : correspondance inter-fournisseurs non établie"
+  ],
+  "entrees": {
+    "compos": {
+      "fichiers": 4,
+      "lignes": 180,
+      "source_legacy": 180
+    },
+    "cotes": {
+      "fichiers": 5,
+      "lignes": 226,
+      "source_legacy": 0
+    }
+  },
+  "donnees_commit": "257675b0e294528c0dc4a8f9c7f3e2168fa0860a"
+}

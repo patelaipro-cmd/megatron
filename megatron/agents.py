@@ -119,7 +119,7 @@ class StatsAgent(Agent):
 
     Modèle 1X2 par défaut ``poisson-v5-cal`` (EXP-008 : demi-vie 270, rétrécissement
     2, pseudo-buts mêlant 35 % de tirs cadrés convertis ; recalibré par EXP-010) ; marchés 2+ / 3+ sur
-    un ajustement ``poisson-v4`` séparé (recalibration EXP-007) : la tâche fournit
+    les mêmes taux v5, recalibrés par EXP-019 (``poisson-v5-platt``) : la tâche fournit
     ``division``, ``home``, ``away`` et ``date`` (AAAA-MM-JJ) ; le modèle de
     Maher est ajusté sur les seuls matchs antérieurs de ``data/``.
     Repli ``stats-v0`` : si ``xg_home`` et ``xg_away`` sont fournis, Poisson
@@ -166,10 +166,8 @@ class StatsAgent(Agent):
             incertitudes=["équipes sans historique traitées comme moyennes : " + ", ".join(unknown)] if unknown else [],
             sources=[f"data/{Path(p).name}" for p in ([path] if isinstance(path, (str, Path)) else path)],
         )
-        # recalibration EXP-007 apprise sur poisson-v4 seulement : ajustement v4 séparé
-        v4 = models.fit_maher(history, day, **marches.V4)
-        rep.marches, rep.version_marches = (marches.probs_buts_calibrees(*v4.rates(task["home"], task["away"])),
-                                            marches.VERSION_BUTS)
+        # recalibration EXP-019 apprise sur les taux poisson-v5 bruts (même ajustement que le 1X2)
+        rep.marches, rep.version_marches = marches.probs_buts_calibrees(lh, la), marches.VERSION_BUTS
         return rep
 
     def _from_xg(self, task: dict) -> AgentResponse:

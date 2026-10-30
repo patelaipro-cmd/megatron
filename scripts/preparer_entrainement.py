@@ -47,18 +47,24 @@ def couverture_externe(dossier: Path | None, avant: datetime) -> dict:
     if dossier is None or not Path(dossier).exists():
         return {"disponible": False}
     par_source, jours = {}, set()
+    sans_identifiant = 0
     for source in ("apifootball/compos", "espn/compos"):  # comptés par source : les noms de ligue diffèrent
         matchs, ligues = set(), set()
         for snap in instantanes(dossier, source, avant):
             for l in snap:
-                if l.get("coup_envoi") and parse_dt(l["collecte_le"]) < parse_dt(l["coup_envoi"]):
-                    matchs.add((l["coup_envoi"], l.get("ligue")))
+                if l.get("coup_envoi") and parse_dt(l["collecte_le"]) < min(avant, parse_dt(l["coup_envoi"])):
+                    identifiant = l.get("fixture_id") or l.get("event_id")
+                    if not identifiant:
+                        sans_identifiant += 1
+                        continue
+                    matchs.add(identifiant)
                     ligues.add(l.get("ligue"))
                     jours.add(l["coup_envoi"][:10])
         par_source[source] = {"matchs": len(matchs), "ligues": len(ligues - {None, ""})}
     blessures = sum(1 for f in (Path(dossier) / "apifootball" / "blessures").glob("*/*.csv")) if (Path(dossier) / "apifootball").exists() else 0
     lignes_compos = sum(len(_lire(f)) for s in ("apifootball/compos", "espn/compos") for f in (Path(dossier) / s).glob("*/*.csv"))
     return {"disponible": True, "instantanes_blessures": blessures, "lignes_compos": lignes_compos,
+            "lignes_compos_sans_identifiant": sans_identifiant,
             "par_source": par_source, "matchs_compo_avant_coup_envoi": max(v["matchs"] for v in par_source.values()),
             "ligues": max(v["ligues"] for v in par_source.values()),
             "premier_jour": min(jours) if jours else None, "dernier_jour": max(jours) if jours else None}
@@ -67,8 +73,8 @@ def couverture_externe(dossier: Path | None, avant: datetime) -> dict:
 def cohorte_prospective(memoire: Path) -> dict:
     store = MemoryStore(memoire)
     preds = [e for e in store.active("performances") if e.key.startswith("pred:")]
-    resultats = {e.key.split(":", 1)[1] for e in store.active("performances") if e.key.startswith("result:")}
-    avec = {e.key.split(":")[1] + ":" + e.key.split(":")[2] for e in preds}
+    resultats = {e.value["match_id"] for e in store.active("performances") if e.key.startswith("result:")}
+    avec = {e.value["match_id"] for e in preds}
     return {"predictions": len(preds), "matchs_predits": len(avec),
             "matchs_avec_resultat": sum(1 for m in avec if m in resultats)}
 

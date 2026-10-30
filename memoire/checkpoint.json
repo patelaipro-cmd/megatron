@@ -1,13 +1,12 @@
 {
   "version": "0.1.0",
-  "commit": "8370f38",
-  "date": "2026-10-29T11:46:16+00:00",
-  "resume": "EXP-011 : grille élargie sans promotion, poisson-v5 = optimum local ; modèle actif poisson-v5-cal (EXP-010).",
+  "commit": "6ba333a",
+  "date": "2026-10-30T05:59:18+00:00",
+  "resume": "EXP-019 : marchés 2+/3+ buts passent sur poisson-v5-platt (−0,0019 et −0,0029 vs v4-platt, 5/5 ligues) ; retard bookmaker 3+ 0,0092 → 0,0063.",
   "prochaines_actions": [
     "Mettre à jour le complément openfootball régulièrement (python scripts/complement_openfootball.py)",
     "Module collecte (Trafilatura + Crawl4AI, cache, dédoublonnage URL+date, indépendance des sources)",
     "Valider la synchronisation via Git entre Codex et Claude (branche partagée, synchro verifier des deux côtés)",
-    "Réapprendre la recalibration 2+/3+ (EXP-007) sur poisson-v5",
     "Angles morts non mesurables : sources joueurs / compositions / coupes / minute des buts à trouver (réseau bloqué pour FBref, Understat)"
   ],
   "blocages": [
@@ -105,11 +104,11 @@
   ],
   "contradictions": {},
   "effectifs": {
-    "travail": 2,
+    "travail": 3,
     "decisions": 17,
     "football": 1,
-    "performances": 8,
+    "performances": 10,
     "technique": 5
   },
-  "id": "ckpt-c79dfda4e4"
+  "id": "ckpt-b317d639a0"
 }
