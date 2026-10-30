@@ -1,13 +1,6 @@
 {
- "jour": "2026-10-29",
+ "jour": "2026-10-30",
  "matchs": [
-  {
-   "fixture_id": 1550169,
-   "coup_envoi": "2026-10-29T19:45:00+00:00",
-   "debut_ts": 1793303100,
-   "ligue_id": 135,
-   "ligue": "Serie A"
-  },
   {
    "fixture_id": 1584455,
    "coup_envoi": "2026-10-30T17:00:00+00:00",
@@ -119,17 +112,491 @@
    "debut_ts": 1793391300,
    "ligue_id": 94,
    "ligue": "Primeira Liga"
+  },
+  {
+   "fixture_id": 1584450,
+   "coup_envoi": "2026-10-31T10:30:00+00:00",
+   "debut_ts": 1793442600,
+   "ligue_id": 203,
+   "ligue": "Süper Lig"
+  },
+  {
+   "fixture_id": 1576217,
+   "coup_envoi": "2026-10-31T12:00:00+00:00",
+   "debut_ts": 1793448000,
+   "ligue_id": 79,
+   "ligue": "2. Bundesliga"
+  },
+  {
+   "fixture_id": 1576220,
+   "coup_envoi": "2026-10-31T12:00:00+00:00",
+   "debut_ts": 1793448000,
+   "ligue_id": 79,
+   "ligue": "2. Bundesliga"
+  },
+  {
+   "fixture_id": 1576223,
+   "coup_envoi": "2026-10-31T12:00:00+00:00",
+   "debut_ts": 1793448000,
+   "ligue_id": 79,
+   "ligue": "2. Bundesliga"
+  },
+  {
+   "fixture_id": 1557450,
+   "coup_envoi": "2026-10-31T12:30:00+00:00",
+   "debut_ts": 1793449800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1563229,
+   "coup_envoi": "2026-10-31T12:30:00+00:00",
+   "debut_ts": 1793449800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563232,
+   "coup_envoi": "2026-10-31T12:30:00+00:00",
+   "debut_ts": 1793449800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563235,
+   "coup_envoi": "2026-10-31T12:30:00+00:00",
+   "debut_ts": 1793449800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1552513,
+   "coup_envoi": "2026-10-31T13:00:00+00:00",
+   "debut_ts": 1793451600,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1552520,
+   "coup_envoi": "2026-10-31T13:00:00+00:00",
+   "debut_ts": 1793451600,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1570000,
+   "coup_envoi": "2026-10-31T13:00:00+00:00",
+   "debut_ts": 1793451600,
+   "ligue_id": 141,
+   "ligue": "Segunda División"
+  },
+  {
+   "fixture_id": 1570439,
+   "coup_envoi": "2026-10-31T13:00:00+00:00",
+   "debut_ts": 1793451600,
+   "ligue_id": 140,
+   "ligue": "La Liga"
+  },
+  {
+   "fixture_id": 1584454,
+   "coup_envoi": "2026-10-31T13:00:00+00:00",
+   "debut_ts": 1793451600,
+   "ligue_id": 203,
+   "ligue": "Süper Lig"
+  },
+  {
+   "fixture_id": 1550179,
+   "coup_envoi": "2026-10-31T14:00:00+00:00",
+   "debut_ts": 1793455200,
+   "ligue_id": 135,
+   "ligue": "Serie A"
+  },
+  {
+   "fixture_id": 1601586,
+   "coup_envoi": "2026-10-31T14:00:00+00:00",
+   "debut_ts": 1793455200,
+   "ligue_id": 136,
+   "ligue": "Serie B"
+  },
+  {
+   "fixture_id": 1601588,
+   "coup_envoi": "2026-10-31T14:00:00+00:00",
+   "debut_ts": 1793455200,
+   "ligue_id": 136,
+   "ligue": "Serie B"
+  },
+  {
+   "fixture_id": 1601591,
+   "coup_envoi": "2026-10-31T14:00:00+00:00",
+   "debut_ts": 1793455200,
+   "ligue_id": 136,
+   "ligue": "Serie B"
+  },
+  {
+   "fixture_id": 1575204,
+   "coup_envoi": "2026-10-31T14:30:00+00:00",
+   "debut_ts": 1793457000,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1575206,
+   "coup_envoi": "2026-10-31T14:30:00+00:00",
+   "debut_ts": 1793457000,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1575208,
+   "coup_envoi": "2026-10-31T14:30:00+00:00",
+   "debut_ts": 1793457000,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1575209,
+   "coup_envoi": "2026-10-31T14:30:00+00:00",
+   "debut_ts": 1793457000,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1575210,
+   "coup_envoi": "2026-10-31T14:30:00+00:00",
+   "debut_ts": 1793457000,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1556697,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 179,
+   "ligue": "Premiership"
+  },
+  {
+   "fixture_id": 1556698,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 179,
+   "ligue": "Premiership"
+  },
+  {
+   "fixture_id": 1557448,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1557449,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1557451,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1557452,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1557454,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1558666,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 144,
+   "ligue": "Jupiler Pro League"
+  },
+  {
+   "fixture_id": 1563227,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563228,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563230,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563231,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563234,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563236,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563237,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1563238,
+   "coup_envoi": "2026-10-31T15:00:00+00:00",
+   "debut_ts": 1793458800,
+   "ligue_id": 40,
+   "ligue": "Championship"
+  },
+  {
+   "fixture_id": 1569996,
+   "coup_envoi": "2026-10-31T15:15:00+00:00",
+   "debut_ts": 1793459700,
+   "ligue_id": 141,
+   "ligue": "Segunda División"
+  },
+  {
+   "fixture_id": 1570441,
+   "coup_envoi": "2026-10-31T15:15:00+00:00",
+   "debut_ts": 1793459700,
+   "ligue_id": 140,
+   "ligue": "La Liga"
+  },
+  {
+   "fixture_id": 1552207,
+   "coup_envoi": "2026-10-31T15:30:00+00:00",
+   "debut_ts": 1793460600,
+   "ligue_id": 88,
+   "ligue": "Eredivisie"
+  },
+  {
+   "fixture_id": 1575535,
+   "coup_envoi": "2026-10-31T15:30:00+00:00",
+   "debut_ts": 1793460600,
+   "ligue_id": 94,
+   "ligue": "Primeira Liga"
+  },
+  {
+   "fixture_id": 1584451,
+   "coup_envoi": "2026-10-31T16:00:00+00:00",
+   "debut_ts": 1793462400,
+   "ligue_id": 203,
+   "ligue": "Süper Lig"
+  },
+  {
+   "fixture_id": 1601585,
+   "coup_envoi": "2026-10-31T16:15:00+00:00",
+   "debut_ts": 1793463300,
+   "ligue_id": 136,
+   "ligue": "Serie B"
+  },
+  {
+   "fixture_id": 1550186,
+   "coup_envoi": "2026-10-31T17:00:00+00:00",
+   "debut_ts": 1793466000,
+   "ligue_id": 135,
+   "ligue": "Serie A"
+  },
+  {
+   "fixture_id": 1593347,
+   "coup_envoi": "2026-10-31T17:00:00+00:00",
+   "debut_ts": 1793466000,
+   "ligue_id": 197,
+   "ligue": "Super League 1"
+  },
+  {
+   "fixture_id": 1558668,
+   "coup_envoi": "2026-10-31T17:15:00+00:00",
+   "debut_ts": 1793466900,
+   "ligue_id": 144,
+   "ligue": "Jupiler Pro League"
+  },
+  {
+   "fixture_id": 1557456,
+   "coup_envoi": "2026-10-31T17:30:00+00:00",
+   "debut_ts": 1793467800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1569994,
+   "coup_envoi": "2026-10-31T17:30:00+00:00",
+   "debut_ts": 1793467800,
+   "ligue_id": 141,
+   "ligue": "Segunda División"
+  },
+  {
+   "fixture_id": 1570435,
+   "coup_envoi": "2026-10-31T17:30:00+00:00",
+   "debut_ts": 1793467800,
+   "ligue_id": 140,
+   "ligue": "La Liga"
+  },
+  {
+   "fixture_id": 1575203,
+   "coup_envoi": "2026-10-31T17:30:00+00:00",
+   "debut_ts": 1793467800,
+   "ligue_id": 78,
+   "ligue": "Bundesliga"
+  },
+  {
+   "fixture_id": 1552208,
+   "coup_envoi": "2026-10-31T17:45:00+00:00",
+   "debut_ts": 1793468700,
+   "ligue_id": 88,
+   "ligue": "Eredivisie"
+  },
+  {
+   "fixture_id": 1552209,
+   "coup_envoi": "2026-10-31T17:45:00+00:00",
+   "debut_ts": 1793468700,
+   "ligue_id": 88,
+   "ligue": "Eredivisie"
+  },
+  {
+   "fixture_id": 1601590,
+   "coup_envoi": "2026-10-31T18:30:00+00:00",
+   "debut_ts": 1793471400,
+   "ligue_id": 136,
+   "ligue": "Serie B"
+  },
+  {
+   "fixture_id": 1552515,
+   "coup_envoi": "2026-10-31T19:00:00+00:00",
+   "debut_ts": 1793473200,
+   "ligue_id": 62,
+   "ligue": "Ligue 2"
+  },
+  {
+   "fixture_id": 1576221,
+   "coup_envoi": "2026-10-31T19:30:00+00:00",
+   "debut_ts": 1793475000,
+   "ligue_id": 79,
+   "ligue": "2. Bundesliga"
+  },
+  {
+   "fixture_id": 1550177,
+   "coup_envoi": "2026-10-31T19:45:00+00:00",
+   "debut_ts": 1793475900,
+   "ligue_id": 135,
+   "ligue": "Serie A"
+  },
+  {
+   "fixture_id": 1552803,
+   "coup_envoi": "2026-10-31T19:45:00+00:00",
+   "debut_ts": 1793475900,
+   "ligue_id": 61,
+   "ligue": "Ligue 1"
+  },
+  {
+   "fixture_id": 1552809,
+   "coup_envoi": "2026-10-31T19:45:00+00:00",
+   "debut_ts": 1793475900,
+   "ligue_id": 61,
+   "ligue": "Ligue 1"
+  },
+  {
+   "fixture_id": 1558662,
+   "coup_envoi": "2026-10-31T19:45:00+00:00",
+   "debut_ts": 1793475900,
+   "ligue_id": 144,
+   "ligue": "Jupiler Pro League"
+  },
+  {
+   "fixture_id": 1558663,
+   "coup_envoi": "2026-10-31T19:45:00+00:00",
+   "debut_ts": 1793475900,
+   "ligue_id": 144,
+   "ligue": "Jupiler Pro League"
+  },
+  {
+   "fixture_id": 1552210,
+   "coup_envoi": "2026-10-31T20:00:00+00:00",
+   "debut_ts": 1793476800,
+   "ligue_id": 88,
+   "ligue": "Eredivisie"
+  },
+  {
+   "fixture_id": 1552211,
+   "coup_envoi": "2026-10-31T20:00:00+00:00",
+   "debut_ts": 1793476800,
+   "ligue_id": 88,
+   "ligue": "Eredivisie"
+  },
+  {
+   "fixture_id": 1557447,
+   "coup_envoi": "2026-10-31T20:00:00+00:00",
+   "debut_ts": 1793476800,
+   "ligue_id": 39,
+   "ligue": "Premier League"
+  },
+  {
+   "fixture_id": 1569992,
+   "coup_envoi": "2026-10-31T20:00:00+00:00",
+   "debut_ts": 1793476800,
+   "ligue_id": 141,
+   "ligue": "Segunda División"
+  },
+  {
+   "fixture_id": 1570434,
+   "coup_envoi": "2026-10-31T20:00:00+00:00",
+   "debut_ts": 1793476800,
+   "ligue_id": 140,
+   "ligue": "La Liga"
+  },
+  {
+   "fixture_id": 1575532,
+   "coup_envoi": "2026-10-31T20:30:00+00:00",
+   "debut_ts": 1793478600,
+   "ligue_id": 94,
+   "ligue": "Primeira Liga"
   }
  ],
  "ligues_vues": [
   [
-   18,
-   "AFC Champions League Two",
-   "World"
+   39,
+   "Premier League",
+   "England"
   ],
   [
    40,
    "Championship",
+   "England"
+  ],
+  [
+   41,
+   "League One",
    "England"
   ],
   [
@@ -143,8 +610,33 @@
    "England"
   ],
   [
-   48,
-   "League Cup",
+   44,
+   "FA WSL",
+   "England"
+  ],
+  [
+   50,
+   "National League - North",
+   "England"
+  ],
+  [
+   51,
+   "National League - South",
+   "England"
+  ],
+  [
+   58,
+   "Non League Premier - Isthmian",
+   "England"
+  ],
+  [
+   59,
+   "Non League Premier - Northern",
+   "England"
+  ],
+  [
+   60,
+   "Non League Premier - Southern South",
    "England"
   ],
   [
@@ -165,6 +657,21 @@
   [
    64,
    "Feminine Division 1",
+   "France"
+  ],
+  [
+   67,
+   "National 2 - Group A",
+   "France"
+  ],
+  [
+   68,
+   "National 2 - Group B",
+   "France"
+  ],
+  [
+   69,
+   "National 2 - Group C",
    "France"
   ],
   [
@@ -193,11 +700,6 @@
    "Germany"
   ],
   [
-   82,
-   "Frauen Bundesliga",
-   "Germany"
-  ],
-  [
    83,
    "Regionalliga - Bayern",
    "Germany"
@@ -218,13 +720,23 @@
    "Germany"
   ],
   [
+   87,
+   "Regionalliga - West",
+   "Germany"
+  ],
+  [
+   88,
+   "Eredivisie",
+   "Netherlands"
+  ],
+  [
    89,
    "Eerste Divisie",
    "Netherlands"
   ],
   [
-   90,
-   "KNVB Beker",
+   92,
+   "Derde Divisie",
    "Netherlands"
   ],
   [
@@ -233,9 +745,24 @@
    "Portugal"
   ],
   [
-   97,
-   "Taça da Liga",
+   95,
+   "Segunda Liga",
    "Portugal"
+  ],
+  [
+   98,
+   "J1 League",
+   "Japan"
+  ],
+  [
+   99,
+   "J2 League",
+   "Japan"
+  ],
+  [
+   100,
+   "J3 League",
+   "Japan"
   ],
   [
    103,
@@ -253,11 +780,6 @@
    "Poland"
   ],
   [
-   108,
-   "Cup",
-   "Poland"
-  ],
-  [
    109,
    "II Liga - East",
    "Poland"
@@ -271,11 +793,6 @@
    111,
    "FAW Championship",
    "Wales"
-  ],
-  [
-   113,
-   "Allsvenskan",
-   "Sweden"
   ],
   [
    114,
@@ -303,11 +820,6 @@
    "Denmark"
   ],
   [
-   121,
-   "DBU Pokalen",
-   "Denmark"
-  ],
-  [
    122,
    "2. Division",
    "Denmark"
@@ -318,8 +830,8 @@
    "Argentina"
   ],
   [
-   130,
-   "Copa Argentina",
+   129,
+   "Primera Nacional",
    "Argentina"
   ],
   [
@@ -328,8 +840,23 @@
    "Argentina"
   ],
   [
+   132,
+   "Primera C",
+   "Argentina"
+  ],
+  [
+   134,
+   "Torneo Federal A",
+   "Argentina"
+  ],
+  [
    135,
    "Serie A",
+   "Italy"
+  ],
+  [
+   136,
+   "Serie B",
    "Italy"
   ],
   [
@@ -338,13 +865,23 @@
    "Italy"
   ],
   [
+   139,
+   "Serie A Women",
+   "Italy"
+  ],
+  [
    140,
    "La Liga",
    "Spain"
   ],
   [
-   143,
-   "Copa del Rey",
+   141,
+   "Segunda División",
+   "Spain"
+  ],
+  [
+   142,
+   "Primera División Femenina",
    "Spain"
   ],
   [
@@ -356,6 +893,31 @@
    145,
    "Challenger Pro League",
    "Belgium"
+  ],
+  [
+   148,
+   "Second Amateur Division - ACFF",
+   "Belgium"
+  ],
+  [
+   149,
+   "Second Amateur Division - VFV A",
+   "Belgium"
+  ],
+  [
+   150,
+   "Second Amateur Division - VFV B",
+   "Belgium"
+  ],
+  [
+   162,
+   "Primera División",
+   "Costa-Rica"
+  ],
+  [
+   170,
+   "League One",
+   "China"
   ],
   [
    172,
@@ -373,13 +935,48 @@
    "Bulgaria"
   ],
   [
+   176,
+   "Third League - Northwest",
+   "Bulgaria"
+  ],
+  [
    177,
    "Third League - Southeast",
    "Bulgaria"
   ],
   [
+   178,
+   "Third League - Southwest",
+   "Bulgaria"
+  ],
+  [
+   179,
+   "Premiership",
+   "Scotland"
+  ],
+  [
    180,
    "Championship",
+   "Scotland"
+  ],
+  [
+   181,
+   "FA Cup",
+   "Scotland"
+  ],
+  [
+   183,
+   "League One",
+   "Scotland"
+  ],
+  [
+   184,
+   "League Two",
+   "Scotland"
+  ],
+  [
+   185,
+   "League Cup",
    "Scotland"
   ],
   [
@@ -398,8 +995,13 @@
    "Australia"
   ],
   [
-   199,
-   "Cup",
+   190,
+   "A-League Women",
+   "Australia"
+  ],
+  [
+   197,
+   "Super League 1",
    "Greece"
   ],
   [
@@ -408,9 +1010,9 @@
    "Morocco"
   ],
   [
-   202,
-   "Ligue 1",
-   "Tunisia"
+   201,
+   "Botola 2",
+   "Morocco"
   ],
   [
    203,
@@ -423,9 +1025,14 @@
    "Turkey"
   ],
   [
-   206,
-   "Türkiye Kupası",
+   205,
+   "2. Lig",
    "Turkey"
+  ],
+  [
+   207,
+   "Super League",
+   "Switzerland"
   ],
   [
    208,
@@ -453,11 +1060,6 @@
    "Austria"
   ],
   [
-   220,
-   "Cup",
-   "Austria"
-  ],
-  [
    221,
    "Regionalliga - Ost",
    "Austria"
@@ -473,13 +1075,18 @@
    "Egypt"
   ],
   [
-   236,
-   "First League",
+   234,
+   "Liga Nacional",
+   "Honduras"
+  ],
+  [
+   235,
+   "Premier League",
    "Russia"
   ],
   [
-   237,
-   "Cup",
+   236,
+   "First League",
    "Russia"
   ],
   [
@@ -493,14 +1100,9 @@
    "Colombia"
   ],
   [
-   240,
-   "Primera B",
-   "Colombia"
-  ],
-  [
-   244,
-   "Veikkausliiga",
-   "Finland"
+   242,
+   "Liga Pro",
+   "Ecuador"
   ],
   [
    252,
@@ -518,6 +1120,11 @@
    "USA"
   ],
   [
+   261,
+   "National Division",
+   "Luxembourg"
+  ],
+  [
    262,
    "Liga MX",
    "Mexico"
@@ -533,8 +1140,28 @@
    "Chile"
   ],
   [
-   273,
-   "Magyar Kupa",
+   266,
+   "Primera B",
+   "Chile"
+  ],
+  [
+   268,
+   "Primera División",
+   "Uruguay"
+  ],
+  [
+   269,
+   "Segunda División",
+   "Uruguay"
+  ],
+  [
+   271,
+   "NB I",
+   "Hungary"
+  ],
+  [
+   272,
+   "NB II",
    "Hungary"
   ],
   [
@@ -548,11 +1175,6 @@
    "Indonesia"
   ],
   [
-   276,
-   "FKF Premier League",
-   "Kenya"
-  ],
-  [
    278,
    "Super League",
    "Malaysia"
@@ -560,6 +1182,11 @@
   [
    281,
    "Primera División",
+   "Peru"
+  ],
+  [
+   282,
+   "Segunda División",
    "Peru"
   ],
   [
@@ -573,9 +1200,9 @@
    "Romania"
   ],
   [
-   285,
-   "Cupa României",
-   "Romania"
+   286,
+   "Super Liga",
+   "Serbia"
   ],
   [
    288,
@@ -593,6 +1220,21 @@
    "Iran"
   ],
   [
+   292,
+   "K League 1",
+   "South-Korea"
+  ],
+  [
+   293,
+   "K League 2",
+   "South-Korea"
+  ],
+  [
+   295,
+   "K3 League",
+   "South-Korea"
+  ],
+  [
    296,
    "Thai League 1",
    "Thailand"
@@ -601,6 +1243,11 @@
    297,
    "Thai League 2",
    "Thailand"
+  ],
+  [
+   299,
+   "Primera División",
+   "Venezuela"
   ],
   [
    301,
@@ -613,13 +1260,13 @@
    "United-Arab-Emirates"
   ],
   [
-   305,
-   "Stars League",
-   "Qatar"
+   304,
+   "Liga Panameña de Fútbol",
+   "Panama"
   ],
   [
-   306,
-   "Second Division",
+   305,
+   "Stars League",
    "Qatar"
   ],
   [
@@ -628,19 +1275,24 @@
    "Saudi-Arabia"
   ],
   [
-   309,
-   "Division 2",
-   "Saudi-Arabia"
+   312,
+   "1a Divisió",
+   "Andorra"
   ],
   [
-   310,
-   "Superliga",
-   "Albania"
+   315,
+   "Premijer Liga",
+   "Bosnia"
   ],
   [
-   311,
-   "1st Division",
-   "Albania"
+   316,
+   "1st League - FBiH",
+   "Bosnia"
+  ],
+  [
+   317,
+   "1st League - RS",
+   "Bosnia"
   ],
   [
    318,
@@ -663,9 +1315,34 @@
    "India"
   ],
   [
+   326,
+   "Erovnuli Liga 2",
+   "Georgia"
+  ],
+  [
+   327,
+   "Erovnuli Liga",
+   "Georgia"
+  ],
+  [
    328,
    "Esiliiga A",
    "Estonia"
+  ],
+  [
+   329,
+   "Meistriliiga",
+   "Estonia"
+  ],
+  [
+   330,
+   "Premier League",
+   "Kuwait"
+  ],
+  [
+   332,
+   "Super Liga",
+   "Slovakia"
   ],
   [
    333,
@@ -675,11 +1352,6 @@
   [
    334,
    "Persha Liga",
-   "Ukraine"
-  ],
-  [
-   335,
-   "Cup",
    "Ukraine"
   ],
   [
@@ -703,14 +1375,14 @@
    "Armenia"
   ],
   [
-   343,
-   "First League",
-   "Armenia"
-  ],
-  [
    344,
    "Primera División",
    "Bolivia"
+  ],
+  [
+   345,
+   "Czech Liga",
+   "Czech-Republic"
   ],
   [
    346,
@@ -723,13 +1395,38 @@
    "Czech-Republic"
   ],
   [
+   349,
+   "3. liga - MSFL",
+   "Czech-Republic"
+  ],
+  [
    350,
    "4. liga - Divizie A",
    "Czech-Republic"
   ],
   [
-   355,
-   "First League",
+   351,
+   "4. liga - Divizie B",
+   "Czech-Republic"
+  ],
+  [
+   352,
+   "4. liga - Divizie C",
+   "Czech-Republic"
+  ],
+  [
+   353,
+   "4. liga - Divizie D",
+   "Czech-Republic"
+  ],
+  [
+   354,
+   "4. liga - Divizie E",
+   "Czech-Republic"
+  ],
+  [
+   356,
+   "Second League",
    "Montenegro"
   ],
   [
@@ -743,9 +1440,24 @@
    "Lithuania"
   ],
   [
+   362,
+   "A Lyga",
+   "Lithuania"
+  ],
+  [
    363,
    "Premier League",
    "Ethiopia"
+  ],
+  [
+   364,
+   "1. Liga",
+   "Latvia"
+  ],
+  [
+   367,
+   "Meistaradeildin",
+   "Faroe-Islands"
   ],
   [
    368,
@@ -758,8 +1470,23 @@
    "Uzbekistan"
   ],
   [
+   370,
+   "Primera Division",
+   "El-Salvador"
+  ],
+  [
+   372,
+   "Second League",
+   "Macedonia"
+  ],
+  [
    373,
    "1. SNL",
+   "Slovenia"
+  ],
+  [
+   374,
+   "2. SNL",
    "Slovenia"
   ],
   [
@@ -773,14 +1500,9 @@
    "Israel"
   ],
   [
-   385,
-   "Toto Cup Ligat Al",
+   383,
+   "Ligat Ha'al",
    "Israel"
-  ],
-  [
-   386,
-   "Ligue 1",
-   "Ivory-Coast"
   ],
   [
    387,
@@ -788,14 +1510,34 @@
    "Jordan"
   ],
   [
+   389,
+   "Premier League",
+   "Kazakhstan"
+  ],
+  [
    390,
    "Premier League",
    "Lebanon"
   ],
   [
+   391,
+   "Super League",
+   "Malawi"
+  ],
+  [
    392,
    "Challenge League",
    "Malta"
+  ],
+  [
+   393,
+   "Premier League",
+   "Malta"
+  ],
+  [
+   394,
+   "Super Liga",
+   "Moldova"
   ],
   [
    395,
@@ -818,9 +1560,9 @@
    "Nigeria"
   ],
   [
-   401,
-   "Premier Soccer League",
-   "Zimbabwe"
+   400,
+   "Super League",
+   "Zambia"
   ],
   [
    404,
@@ -843,9 +1585,19 @@
    "Northern-Ireland"
   ],
   [
+   410,
+   "C-League",
+   "Cambodia"
+  ],
+  [
    412,
    "Premier League",
    "Botswana"
+  ],
+  [
+   415,
+   "Championnat National",
+   "Benin"
   ],
   [
    417,
@@ -858,9 +1610,9 @@
    "Azerbaijan"
   ],
   [
-   420,
-   "Cup",
-   "Azerbaijan"
+   421,
+   "Division di Honor",
+   "Aruba"
   ],
   [
    423,
@@ -878,8 +1630,38 @@
    "Syria"
   ],
   [
+   426,
+   "Serie D - Girone A",
+   "Italy"
+  ],
+  [
+   427,
+   "Serie D - Girone B",
+   "Italy"
+  ],
+  [
+   432,
+   "Serie D - Girone G",
+   "Italy"
+  ],
+  [
+   435,
+   "Primera División RFEF - Group 1",
+   "Spain"
+  ],
+  [
    436,
    "Primera División RFEF - Group 2",
+   "Spain"
+  ],
+  [
+   439,
+   "Tercera División RFEF - Group 1",
+   "Spain"
+  ],
+  [
+   440,
+   "Tercera División RFEF - Group 2",
    "Spain"
   ],
   [
@@ -888,9 +1670,94 @@
    "Spain"
   ],
   [
+   442,
+   "Tercera División RFEF - Group 4",
+   "Spain"
+  ],
+  [
+   443,
+   "Tercera División RFEF - Group 5",
+   "Spain"
+  ],
+  [
+   444,
+   "Tercera División RFEF - Group 6",
+   "Spain"
+  ],
+  [
+   445,
+   "Tercera División RFEF - Group 7",
+   "Spain"
+  ],
+  [
+   446,
+   "Tercera División RFEF - Group 8",
+   "Spain"
+  ],
+  [
+   447,
+   "Tercera División RFEF - Group 9",
+   "Spain"
+  ],
+  [
+   448,
+   "Tercera División RFEF - Group 10",
+   "Spain"
+  ],
+  [
+   449,
+   "Tercera División RFEF - Group 11",
+   "Spain"
+  ],
+  [
+   450,
+   "Tercera División RFEF - Group 12",
+   "Spain"
+  ],
+  [
+   451,
+   "Tercera División RFEF - Group 13",
+   "Spain"
+  ],
+  [
    453,
    "Tercera División RFEF - Group 15",
    "Spain"
+  ],
+  [
+   454,
+   "Tercera División RFEF - Group 16",
+   "Spain"
+  ],
+  [
+   455,
+   "Tercera División RFEF - Group 17",
+   "Spain"
+  ],
+  [
+   456,
+   "Tercera División RFEF - Group 18",
+   "Spain"
+  ],
+  [
+   458,
+   "Campeonato de Portugal Prio - Group B",
+   "Portugal"
+  ],
+  [
+   460,
+   "Campeonato de Portugal Prio - Group D",
+   "Portugal"
+  ],
+  [
+   473,
+   "2. Division - Group 1",
+   "Norway"
+  ],
+  [
+   474,
+   "2. Division - Group 2",
+   "Norway"
   ],
   [
    484,
@@ -913,6 +1780,11 @@
    "USA"
   ],
   [
+   494,
+   "Super League 2",
+   "Greece"
+  ],
+  [
    496,
    "Liga Alef",
    "Israel"
@@ -923,14 +1795,14 @@
    "Slovakia"
   ],
   [
+   510,
+   "1. Liga Promotion",
+   "Switzerland"
+  ],
+  [
    518,
    "Reserve Pro League",
    "Belgium"
-  ],
-  [
-   525,
-   "UEFA Champions League Women",
-   "World"
   ],
   [
    538,
@@ -943,9 +1815,29 @@
    "Iraq"
   ],
   [
+   549,
+   "Damallsvenskan",
+   "Sweden"
+  ],
+  [
+   552,
+   "3. Lig - Group 1",
+   "Turkey"
+  ],
+  [
+   553,
+   "3. Lig - Group 2",
+   "Turkey"
+  ],
+  [
    554,
    "3. Lig - Group 3",
    "Turkey"
+  ],
+  [
+   563,
+   "Ettan - Norra",
+   "Sweden"
   ],
   [
    564,
@@ -963,9 +1855,39 @@
    "Tanzania"
   ],
   [
+   568,
+   "Eerste Divisie",
+   "Suriname"
+  ],
+  [
+   569,
+   "Premier League",
+   "Kyrgyzstan"
+  ],
+  [
+   570,
+   "Premier League",
+   "Ghana"
+  ],
+  [
    571,
    "Vysshaya Liga",
    "Tajikistan"
+  ],
+  [
+   576,
+   "Gamma Ethniki - Group 1",
+   "Greece"
+  ],
+  [
+   578,
+   "Gamma Ethniki - Group 3",
+   "Greece"
+  ],
+  [
+   580,
+   "Gamma Ethniki - Group 5",
+   "Greece"
   ],
   [
    585,
@@ -978,9 +1900,49 @@
    "Myanmar"
   ],
   [
+   592,
+   "Division 2 - Norra Götaland",
+   "Sweden"
+  ],
+  [
+   593,
+   "Division 2 - Norra Svealand",
+   "Sweden"
+  ],
+  [
+   594,
+   "Division 2 - Norrland",
+   "Sweden"
+  ],
+  [
+   596,
+   "Division 2 - Västra Götaland",
+   "Sweden"
+  ],
+  [
    597,
    "Division 2 - Södra Götaland",
    "Sweden"
+  ],
+  [
+   598,
+   "Première Division",
+   "Mali"
+  ],
+  [
+   599,
+   "1. Liga Classic - Group 1",
+   "Switzerland"
+  ],
+  [
+   600,
+   "1. Liga Classic - Group 2",
+   "Switzerland"
+  ],
+  [
+   601,
+   "1. Liga Classic - Group 3",
+   "Switzerland"
   ],
   [
    617,
@@ -993,9 +1955,59 @@
    "Brazil"
   ],
   [
+   625,
+   "Carioca - 2",
+   "Brazil"
+  ],
+  [
+   633,
+   "NB III - Northeast",
+   "Hungary"
+  ],
+  [
+   634,
+   "NB III - Southwest",
+   "Hungary"
+  ],
+  [
+   635,
+   "NB III - Northwest",
+   "Hungary"
+  ],
+  [
+   636,
+   "Ýokary Liga",
+   "Turkmenistan"
+  ],
+  [
+   637,
+   "V.League 2",
+   "Vietnam"
+  ],
+  [
+   638,
+   "Kvindeliga",
+   "Denmark"
+  ],
+  [
    644,
    "3. liga - West",
    "Slovakia"
+  ],
+  [
+   645,
+   "3. liga - East",
+   "Slovakia"
+  ],
+  [
+   646,
+   "3. liga - Center",
+   "Slovakia"
+  ],
+  [
+   647,
+   "Lao League",
+   "Laos"
   ],
   [
    649,
@@ -1003,14 +2015,24 @@
    "Russia"
   ],
   [
-   653,
-   "Second League - Group 4",
+   650,
+   "Second League - Group 3",
    "Russia"
   ],
   [
-   657,
-   "Cup",
-   "Estonia"
+   651,
+   "Second League - Group 1",
+   "Russia"
+  ],
+  [
+   652,
+   "Second League - Group 2",
+   "Russia"
+  ],
+  [
+   660,
+   "WK-League",
+   "South-Korea"
   ],
   [
    664,
@@ -1018,14 +2040,24 @@
    "Kosovo"
   ],
   [
-   666,
-   "Friendlies Women",
-   "World"
-  ],
-  [
    668,
    "1. Liga U19",
    "Czech-Republic"
+  ],
+  [
+   669,
+   "1. Liga Women",
+   "Czech-Republic"
+  ],
+  [
+   673,
+   "Liga MX Femenil",
+   "Mexico"
+  ],
+  [
+   675,
+   "U21 Divisie 1",
+   "Netherlands"
   ],
   [
    676,
@@ -1033,9 +2065,39 @@
    "Poland"
   ],
   [
+   685,
+   "3. liga - CFL B",
+   "Czech-Republic"
+  ],
+  [
    686,
    "4. liga - Divizie F",
    "Czech-Republic"
+  ],
+  [
+   693,
+   "Gamma Ethniki - Group 9",
+   "Greece"
+  ],
+  [
+   694,
+   "Gamma Ethniki - Group 10",
+   "Greece"
+  ],
+  [
+   695,
+   "U18 Premier League - North",
+   "England"
+  ],
+  [
+   696,
+   "U18 Premier League - South",
+   "England"
+  ],
+  [
+   697,
+   "WSL Cup",
+   "England"
   ],
   [
    705,
@@ -1043,9 +2105,14 @@
    "Italy"
   ],
   [
-   709,
-   "Cup",
-   "Armenia"
+   706,
+   "Campionato Primavera - 2",
+   "Italy"
+  ],
+  [
+   710,
+   "Nacional B",
+   "Bolivia"
   ],
   [
    711,
@@ -1058,9 +2125,39 @@
    "Mexico"
   ],
   [
+   725,
+   "Toppserien",
+   "Norway"
+  ],
+  [
    726,
    "Sultan Cup",
    "Oman"
+  ],
+  [
+   728,
+   "Liga 1 Feminin",
+   "Romania"
+  ],
+  [
+   730,
+   "Football League - Highland League",
+   "Scotland"
+  ],
+  [
+   731,
+   "Football League - Lowland League",
+   "Scotland"
+  ],
+  [
+   733,
+   "I Liga - Women",
+   "Slovakia"
+  ],
+  [
+   734,
+   "Diski Challenge",
+   "South-Africa"
   ],
   [
    736,
@@ -1071,6 +2168,11 @@
    739,
    "AXA Women’s Super League",
    "Switzerland"
+  ],
+  [
+   744,
+   "Oberliga - Schleswig-Holstein",
+   "Germany"
   ],
   [
    745,
@@ -1088,6 +2190,16 @@
    "Germany"
   ],
   [
+   750,
+   "Oberliga - Hessen",
+   "Germany"
+  ],
+  [
+   752,
+   "Oberliga - Rheinland-Pfalz / Saar",
+   "Germany"
+  ],
+  [
    753,
    "Oberliga - Baden-Württemberg",
    "Germany"
@@ -1098,28 +2210,48 @@
    "Germany"
   ],
   [
+   755,
+   "Oberliga - Nordost-Süd",
+   "Germany"
+  ],
+  [
    758,
    "Premier Division",
    "Gibraltar"
   ],
   [
-   760,
-   "LFA First Division",
-   "Liberia"
+   759,
+   "Liga Mayor",
+   "Dominican-Republic"
   ],
   [
-   762,
-   "Premier League",
-   "Mauritania"
+   774,
+   "3. Division - Girone 1",
+   "Norway"
   ],
   [
-   764,
-   "Premier League",
-   "Mongolia"
+   776,
+   "3. Division - Girone 3",
+   "Norway"
+  ],
+  [
+   778,
+   "3. Division - Girone 5",
+   "Norway"
+  ],
+  [
+   779,
+   "3. Division - Girone 6",
+   "Norway"
   ],
   [
    780,
    "III Liga - Group 1",
+   "Poland"
+  ],
+  [
+   781,
+   "III Liga - Group 2",
    "Poland"
   ],
   [
@@ -1173,9 +2305,29 @@
    "Romania"
   ],
   [
-   823,
-   "Nasjonal U19 Champions League",
-   "Norway"
+   794,
+   "3. SNL - East",
+   "Slovenia"
+  ],
+  [
+   795,
+   "3. SNL - West",
+   "Slovenia"
+  ],
+  [
+   813,
+   "Elite Two",
+   "Cameroon"
+  ],
+  [
+   828,
+   "Ligue 2",
+   "Tunisia"
+  ],
+  [
+   854,
+   "WE League",
+   "Japan"
   ],
   [
    862,
@@ -1198,6 +2350,26 @@
    "Mexico"
   ],
   [
+   875,
+   "Segunda División RFEF - Group 1",
+   "Spain"
+  ],
+  [
+   876,
+   "Segunda División RFEF - Group 2",
+   "Spain"
+  ],
+  [
+   877,
+   "Segunda División RFEF - Group 3",
+   "Spain"
+  ],
+  [
+   879,
+   "Segunda División RFEF - Group 5",
+   "Spain"
+  ],
+  [
    886,
    "UEFA U17 Championship - Qualification",
    "World"
@@ -1208,9 +2380,9 @@
    "Egypt"
   ],
   [
-   906,
-   "Reserve League",
-   "Argentina"
+   909,
+   "MLS Next Pro",
+   "USA"
   ],
   [
    917,
@@ -1218,9 +2390,14 @@
    "Ecuador"
   ],
   [
-   930,
-   "Copa Uruguay",
-   "Uruguay"
+   929,
+   "League Two",
+   "China"
+  ],
+  [
+   931,
+   "Non League Premier - Southern Central",
+   "England"
   ],
   [
    938,
@@ -1228,8 +2405,18 @@
    "Germany"
   ],
   [
+   939,
+   "Oberliga - Bayern Süd",
+   "Germany"
+  ],
+  [
    942,
    "Serie C - Girone B",
+   "Italy"
+  ],
+  [
+   943,
+   "Serie C - Girone C",
    "Italy"
   ],
   [
@@ -1243,14 +2430,34 @@
    "Germany"
   ],
   [
+   948,
+   "1a Divisão - Women",
+   "Portugal"
+  ],
+  [
    949,
    "CONMEBOL Libertadores Femenina",
    "World"
   ],
   [
-   950,
-   "World Cup - U17 - Women",
-   "World"
+   955,
+   "National League - National",
+   "New-Zealand"
+  ],
+  [
+   968,
+   "Championnat D1",
+   "Gabon"
+  ],
+  [
+   1023,
+   "NB III - Southeast",
+   "Hungary"
+  ],
+  [
+   1025,
+   "Second League A - Division A Gold",
+   "Russia"
   ],
   [
    1028,
@@ -1263,9 +2470,19 @@
    "Poland"
   ],
   [
+   1036,
+   "Copa Santa Catarina",
+   "Brazil"
+  ],
+  [
    1039,
    "Premier League International Cup",
    "World"
+  ],
+  [
+   1041,
+   "Júniores U19",
+   "Portugal"
   ],
   [
    1048,
@@ -1273,9 +2490,9 @@
    "Antigua-And-Barbuda"
   ],
   [
-   1075,
-   "Pro League A",
-   "Uzbekistan"
+   1053,
+   "Division 2 - Play-offs",
+   "Sweden"
   ],
   [
    1086,
@@ -1293,8 +2510,33 @@
    "Brazil"
   ],
   [
+   1126,
+   "Esiliiga B",
+   "Estonia"
+  ],
+  [
+   1128,
+   "Brasileiro U17",
+   "Brazil"
+  ],
+  [
+   1130,
+   "USL Super League",
+   "USA"
+  ],
+  [
+   1133,
+   "Goiano - 3",
+   "Brazil"
+  ],
+  [
    1135,
    "Sergipano - 2",
+   "Brazil"
+  ],
+  [
+   1141,
+   "Brasiliense B",
    "Brazil"
   ],
   [
@@ -1303,9 +2545,19 @@
    "Brazil"
   ],
   [
-   1191,
-   "UEFA Europa Cup - Women",
-   "World"
+   1165,
+   "Copa Fares Lopes",
+   "Brazil"
+  ],
+  [
+   1195,
+   "Liga E Pare",
+   "Kosovo"
+  ],
+  [
+   1196,
+   "Division One League",
+   "Ghana"
   ],
   [
    1200,
@@ -1328,6 +2580,11 @@
    "Saudi-Arabia"
   ],
   [
+   1234,
+   "K4 League",
+   "South-Korea"
+  ],
+  [
    1238,
    "Regionalliga - South",
    "Austria"
@@ -1343,9 +2600,24 @@
    "Turkey"
   ],
   [
+   1241,
+   "U19 league",
+   "Serbia"
+  ],
+  [
+   1242,
+   "Primera Premier",
+   "Mexico"
+  ],
+  [
    1243,
    "Super League Women",
    "South-Africa"
+  ],
+  [
+   1244,
+   "B-Liga Women",
+   "Denmark"
   ]
  ]
 }
