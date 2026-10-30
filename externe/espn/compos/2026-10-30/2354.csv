@@ -1,0 +1,92 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Gastón Lodico,269808,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Galo Volpe,383143,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Matías Tagliamonte,258304,G,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Duván Vergara,226105,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Gonzalo Escudero,361553,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Elías Torres,346184,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Ignacio Agustin Rodríguez,317430,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Tomás Conechny,228388,F,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Matías Kranevitter,195645,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Mateo Martínez,400994,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Francisco Fraga,383146,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Leonel Pérez,359439,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Lautaro Díaz,292041,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Nazareno Colombo,268534,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Adrián Fernández,315949,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Adrián Martínez,3038,F,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Matías Zaracho,241988,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Facundo Cambeses,233910,G,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Alejandro Tello,70303,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Ezequiel Cannavo,311747,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Matías Pérez,290432,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Diego Ortegoza,285696,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Racing Club,4-3-1-2,Juan Barinaga,285026,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Lucas Acosta,84273,G,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Santiago Moyano,257734,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Joaquin Pombo,312192,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Braian Cufré,227931,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Néstor Breitenbruch,206619,D,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Nicolás Gaitán,149621,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Lucas Castro,130004,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Felipe Anso,420160,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Blas Palavecino,329754,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Martín García,387408,M,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Andrés Vombergar,212843,F,titulaire,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Rodrigo González,273948,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Ignacio Chicco,233918,G,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Nicolás Linares,261122,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Emanuel Guzmán,317378,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Andrés Chávez,200259,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Leonardo Sigali,108478,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Bautista Dadín,405537,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Federico Laurelli,347611,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Francisco Perruzzi,318143,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Elías López,290173,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Alan Sosa,204737,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841648,arg.1,ARG,2026-10-31T00:15:00+00:00,Aldosivi,4-4-1-1,Nicolás Zalazar,249300,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Thyago Ayala,365450,G,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Juan Insaurralde,118725,CD,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Lucas Suarez,202225,CD-L,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Thiago Santamaría,335361,CD-R,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Cristian Zabala,279074,CM-L,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Manuel Garcia,200174,CM-R,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Gastón González,288430,LM,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Ulises Giménez,361356,RM,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Junior Marabel,253308,F,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Julián Mavilla,379769,CF-L,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Elián Giménez,399171,CF-R,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Renzo Orihuela,276062,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Santiago Salle,356976,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Diego Churín,113309,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Facundo Alaggia,418331,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Iván Arboleda,216877,G,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Gastón Arturia,301960,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Yair Arismendi,233331,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Pablo Magnin,200207,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Mauricio Martínez,188476,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Jonathan Herrera,155955,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Nicolás Pasquini,167354,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Sarmiento (Junín),3-4-2-1,Roque Martín Maisterra,5327193,,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Jeremias Ledesma,195621,G,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Gastón Ávila,285885,CD-L,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Ignacio Ovando,400123,CD-R,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Agustín Sández,307599,LB,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Emanuel Coronel,262567,RB,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Ángel Di María,108223,AM,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Vicente Pizarro,289076,LM,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Alan Rodríguez,363477,RM,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Enzo Copetti,241544,F,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Jáminton Campaz,255295,AM-L,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Franco Cervi,204014,AM-R,titulaire,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Elías Verón,414503,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Lucas Ramos,290803,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Santiago Segovia,383017,M,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Julián Fernández,335238,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Juan Giménez,338923,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Axel Werner,176808,G,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Tomas Badaloni,271226,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Facundo Mallo,255382,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Alexis Soto,202499,D,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Marco Ruben,114906,F,remplacant,espn
+2026-10-30T23:54:10+00:00,401841647,arg.1,ARG,2026-10-31T00:15:00+00:00,Rosario Central,4-2-3-1,Sebastian Zaracho,270968,D,remplacant,espn
