@@ -11,6 +11,9 @@ Lancé par le workflow `registre-prospectif` (GitHub Actions) sur la branche `re
   dans leurs fenêtres (`controles.MOMENTS`) ; une fenêtre manquée est notée, jamais rattrapée.
 - Enregistrés à l'initial : marges 2+ et 3+ du favori (`controles.enregistrer`) et 1X2
   `poisson-v5-cal`, avec l'heure d'enregistrement ; l'heure du commit poussé en fait foi.
+- En observation (décision de Luloki du 30/10/2026) : 1X2 `xg-v1-cal` (`megatron/xg.py`) à
+  l'initial, sur les xG collectés avant l'instant d'enregistrement. Hors fusion, aucun GO ;
+  sert seulement à comparer xg-v1 et v5-cal sur 2026/27 (EXP-014). Sans xG lisibles : noté, rien écrit.
 - Résultats : seulement ceux confirmés par deux familles (`--resultats-admis`, sortie de
   scripts/verifier_resultats.py), jamais un score à source unique.
 - Jeton du registre : détenteur `claude` (décision de Luloki du 29/10/2026). Aucun GO déclenché.
@@ -27,7 +30,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from megatron import controles, data, jeton, syndicate  # noqa: E402
+from megatron import controles, data, jeton, syndicate, xg  # noqa: E402
 from megatron.data import Match  # noqa: E402
 from megatron.ledger import DOMAIN, Ledger, pred_key  # noqa: E402
 from megatron.store import MemoryStore, parse_dt  # noqa: E402
@@ -92,6 +95,15 @@ def historique(resultats_admis: Path | None) -> list[Match]:
     return sorted(base + [m for m in data.load(chemins[-1]) if m.match_id not in connus], key=lambda m: (m.kickoff, m.match_id))
 
 
+def xg_relies(externe: Path | None, hist: list[Match], maintenant: datetime) -> dict | None:
+    """xG reliés aux matchs de data/, lignes collectées avant ``maintenant`` seulement ; None sans données."""
+    if externe is None:
+        return None
+    dossiers = [externe / "understat" / "historique", externe / "understat"]
+    lignes = xg.charger([d for d in dossiers if d.exists()], avant=maintenant)
+    return xg.relier(lignes, hist)[0] if lignes else None
+
+
 def jeton_actif(store: MemoryStore) -> str:
     st = jeton.statut(store)
     if not st["initialise"]:
@@ -108,7 +120,10 @@ def executer(registre: Path, externe: Path | None, maintenant: datetime, resulta
     jid = jeton_actif(store)
     hist = historique(resultats_admis)
     matchs, notes = calendrier(maintenant, noms, lire)
-    faits = []
+    faits, xg_lie = [], None
+    if any(moment_du(store, f"{m['division']}:{m['coup_envoi'].date().isoformat()}:{m['home']}-{m['away']}",
+                     (m["coup_envoi"] - maintenant) / timedelta(minutes=1)) == "initial" for m in matchs):
+        xg_lie = xg_relies(externe, hist, maintenant)  # chargé une fois par passage, seulement s'il sert
     for m in matchs:
         minutes = (m["coup_envoi"] - maintenant) / timedelta(minutes=1)
         match_id = f"{m['division']}:{m['coup_envoi'].date().isoformat()}:{m['home']}-{m['away']}"
@@ -124,6 +139,15 @@ def executer(registre: Path, externe: Path | None, maintenant: datetime, resulta
                 Ledger(store, acces="claude", jeton_id=jid).predict(
                     match_id, m["coup_envoi"], {k: v / sum(p.values()) for k, v in p.items()}, model_version=VERSION_1X2,
                     source=SOURCE, recorded_at=maintenant, data_cutoff=ev["analyse_le"])
+            if moment == "initial" and not store.active(DOMAIN, pred_key(match_id, xg.VERSION)):
+                if xg_lie:
+                    passe = [x for x in hist if x.division == m["division"]]
+                    lh, la, _ = xg.intensites(passe, xg_lie, m["division"], m["home"], m["away"], m["coup_envoi"].date())
+                    Ledger(store, acces="claude", jeton_id=jid).predict(
+                        match_id, m["coup_envoi"], xg.probabilites(lh, la), model_version=xg.VERSION,
+                        source=f"{SOURCE} (observation, hors fusion)", recorded_at=maintenant, data_cutoff=ev["analyse_le"])
+                else:
+                    notes.append(f"{match_id} : {xg.VERSION} non enregistré (aucun xG lisible)")
             r = controles.enregistrer(store, match_id, ev, moment, now=maintenant, source=SOURCE, acces="claude", jeton_id=jid)
             faits.append({"match_id": match_id, "moment": moment, "decision": r["decision"],
                           "minutes": round(minutes, 1), "changements": r["changements"]})
