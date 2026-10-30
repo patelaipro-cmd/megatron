@@ -93,4 +93,4 @@ sans xG (Forest, Gladbach). Avec le vote par saison : 21 952 matchs reliés (EXP
 Décision de Luloki (30/10/2026) : xg-v1-cal enregistré **en observation** par le registre prospectif
 (`scripts/registre_prospectif.py`, moment initial, clé `pred:<match>:xg-v1-cal`, hors fusion, aucun GO),
 sur les seuls xG collectés avant l'enregistrement. Comparaison avec poisson-v5-cal sur la cohorte
-2026/27 : protocole à figer avant lecture, au plus tard avec EXP-014 (≥ 1 000 matchs).
+2026/27 : protocole figé dans EXP-021.
