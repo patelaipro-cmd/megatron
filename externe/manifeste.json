@@ -1,5 +1,5 @@
 {
- "execution_le": "2026-10-30T20:00:08+00:00",
+ "execution_le": "2026-10-30T21:55:57+00:00",
  "sources": {
   "fpl": {
    "lignes": 198,
@@ -7,16 +7,15 @@
    "statut": "ok"
   },
   "apifootball": {
-   "fichier_compos": "apifootball/compos/2026-10-30/2000.csv",
-   "compos": 86,
+   "compos": 0,
    "requetes_jour": 28,
    "statut": "ok"
   },
   "espn": {
-   "matchs_proches": 1,
-   "lignes": 46,
+   "matchs_proches": 3,
+   "lignes": 92,
    "erreurs_ligues": [],
-   "fichier": "espn/compos/2026-10-30/2000.csv",
+   "fichier": "espn/compos/2026-10-30/2155.csv",
    "statut": "ok"
   }
  }

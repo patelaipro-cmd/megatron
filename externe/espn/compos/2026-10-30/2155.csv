@@ -1,0 +1,93 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Lautaro Herrera,359753,G,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Juan Antonini,283928,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Sergio Ojeda,200271,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Agustin Quiroga,361259,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Gonzalo Gonzalez,341980,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Tomás González,379699,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Fernando Rodríguez,309477,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Alejandro Cabrera,287690,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Gabriel Alanís,206678,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Martín Garnerone,288428,F,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Ibrahim Hesar,287691,F,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Siro Rosané,309482,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Valentin Fenoglio,363204,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Francisco Gualtieri,318303,G,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Facundo Cobos,233928,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Juan Garro,150341,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Joaquín Román Rivero,3118697,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Juan Camilo Chala Castillo,3100397,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Tomas Escobar Carranza,5324175,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Francesco Lo Celso,287394,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Javier Ferreira,188914,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Matias Pagliaricci,400798,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Estudiantes de Río Cuarto,3-5-2,Lucas Baños,380142,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Harlen Castillo,301464,G,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Enzo Martínez,173742,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Germán Conti,185458,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Pedro Silva Torrejón,233913,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Alexis Steimbach,346867,D,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Ignacio Miramon,310476,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Mateo Seoane,336537,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Lucas Janson,176813,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Ignacio Fernández,106583,M,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Agustín Auzmendi,334165,F,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Marcelo Torres,85513,F,titulaire,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Maximiliano Zalazar,307925,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Franco Torres,312612,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Matías Melluso,263085,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Augusto Max,136511,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Sergio Troncoso,5323423,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Pablo Aguiar,412289,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Facundo Di Biasi,397601,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Nicolas Schelotto,366024,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Juan Perez,359265,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Renzo Giampaoli,307598,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Nelson Insfran,255403,G,remplacant,espn
+2026-10-30T21:55:57+00:00,401841655,arg.1,ARG,2026-10-30T22:00:00+00:00,Gimnasia La Plata,4-3-1-2,Manuel Panaro,309117,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Hernán Galíndez,207921,G,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Máximo Palazzo,396513,CD-L,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Fabio Pereyra,278504,CD-R,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Leandro Lescano,368879,LB,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Lucas Blondel,241547,RB,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Leonardo Gil,139679,AM,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Ignacio Pussetto,187845,LM,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Emmanuel Ojeda,236365,RM,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Bruno Barticciotto,301553,F,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Facundo Kalinger,402652,AM-L,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Oscar Cortés,334106,AM-R,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Tomás Natanael Uribe Sanders,3109239,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Sebastián Meza,301961,G,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Cesar Ibañez,289737,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Thaiel Peralta,402647,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Fabrizio Martínez,3119880,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Juan Bisanz,318418,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Federico Vera,288431,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Óscar Romero,192234,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Martín Soto,402646,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Hugo Nervo,133922,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Facundo Waller,241479,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Huracán,4-2-3-1,Santino Raynelli,3116841,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Felipe Zenobio,292055,G,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Alan Barrionuevo,315722,CD-L,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Joaquín Laso,215871,CD-R,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Federico Álvarez,186572,LB,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Valentin Moreno,361651,RB,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Gonzalo Martínez,146941,AM,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Bruno Leyes,323250,LM,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Santiago González,361648,RM,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Jerónimo Domina,339007,F,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Santiago López,362880,AM-L,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Hector Garay,292042,AM-R,titulaire,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Ian Subiabre,371489,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Jabes Saralegui,351815,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Lautaro Morales,285028,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Juan Villalba,104108,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Gonzalo Requena,360436,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Ignacio Russo,309475,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Ignacio Peluffo,412975,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Guillermo Soto,204887,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Mauro Méndez,287026,F,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Luciano Minniti,406298,D,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Tiago Serrago,380193,M,remplacant,espn
+2026-10-30T21:55:57+00:00,401841653,arg.1,ARG,2026-10-30T22:00:00+00:00,Tigre,4-2-3-1,Manuel Fernández,399230,F,remplacant,espn
