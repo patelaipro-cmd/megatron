@@ -80,3 +80,12 @@ Lecture : le gain va dans le bon sens partout, net en test, mais la validation 2
 Covid incluse) ne l'établit pas. Selon la règle figée, pas de promotion. xg-v1-cal reste le
 meilleur candidat statistique connu ; à reconsidérer avec la cohorte 2026/27 (EXP-014), ce qui
 demande d'abord une collecte xG de la saison en cours.
+
+## Suite (30/10/2026, hors protocole)
+
+`megatron/xg.py` permet de prévoir xg-v1-cal sans fuite pour un match à venir (xG historiques +
+saison en cours de `donnees-externes`, lignes collectées avant l'instant de la prévision ;
+`XgAgent`, absent de `default_agents`). Liaison des noms votée **par saison** : `data/` écrit
+« Nottm Forest » avant 2024 puis « Nott'm Forest », et un vote global laissait 15 matchs 2026/27
+sans xG (Forest, Gladbach). Avec le vote par saison : 21 952 matchs reliés (EXP-020 : 21 471),
+2026/27 : 401 sur 402. Ce modèle n'est pas exactement celui évalué par EXP-020 (plus de xG reliés).
