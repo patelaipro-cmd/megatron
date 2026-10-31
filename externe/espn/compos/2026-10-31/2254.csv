@@ -1,0 +1,43 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Jose Eulogio Téllez,313058,G,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Oussama Idrissi,229552,F,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Ian Josué Zavala Osorio,3145685,F,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Pedro Budib,347613,D,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Francisco Venegas,228355,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Kenedy,195349,M,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Cristóbal Hernández,417623,F,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Alan Bautista,326072,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Salomón Rondón,127570,F,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Sergio Barreto,268843,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Christian Rivera,233978,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Thomas Alexander Contreras Hernández,3129848,M,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Mauricio Isais,302128,D,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Ulises Natanael Martínez Reynoso,3140697,D,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Sebastian Santos,357437,M,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Adrián Alcaraz,333706,F,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Eduardo Bauermann,194921,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Rodolfo Pizarro,176489,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Jorge Berlanga,364454,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Javier Vallejo,160562,F,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Pachuca,4-2-3-1,Carlos Moreno,259439,G,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Nahuel Guzmán,68340,G,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Alan Franco,228493,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Rafael Guerrero,275892,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Mauro Laínez,219471,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Jesús Garza,276557,D,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Juan Brunetta,245771,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Diego Lainez,253830,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Fernando Gorriarán,200636,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Diego Sánchez,380171,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Emiliano Gomez,271439,M,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Guillermo Martínez,193566,F,titulaire,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Israel Aceves,402850,D,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,César Araujo,291218,M,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Ricardo Monreal,259971,F,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Juan Pablo Vigón,176169,M,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Henrique Simeone Koifman,420171,M,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Rodrigo Aguirre,159042,F,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Carlos Rodríguez,103714,G,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Ozziel Herrera,319255,F,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Vladimir Loroña,271539,D,remplacant,espn
+2026-10-31T22:54:44+00:00,401876916,mex.1,MEX,2026-10-31T23:00:00+00:00,Tigres UANL,4-2-3-1,Jaidyn Contreras,417398,F,remplacant,espn

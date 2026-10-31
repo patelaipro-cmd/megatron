@@ -148,16 +148,17 @@
    "401841656",
    "761925",
    "761929",
-   "401841646"
+   "401841646",
+   "401876916"
   ],
   "jour": "2026-10-31"
  },
  "espn/compos": {
-  "empreinte": "a403076ad59abd1569903765b58cc8b66afbd91c8a0054719929d97aed39ca2d",
-  "fichier": "espn/compos/2026-10-31/2154.csv"
+  "empreinte": "5b316b663da41aab5a503b4ba564444c102ec1f951f663f8dfb50f24feb27ba7",
+  "fichier": "espn/compos/2026-10-31/2254.csv"
  },
  "fpl": {
-  "empreinte": "d979310d8f4ff705e9ab7a4db5225177cdeed52654d0a4faa6f891a34dcffe3e",
-  "fichier": "fpl/2026-10-31/2055.csv"
+  "empreinte": "dad98f8dd134eccea09ddac0c530036837a12edda6eaaab32b1dfea6f4eafdda",
+  "fichier": "fpl/2026-10-31/2254.csv"
  }
 }
