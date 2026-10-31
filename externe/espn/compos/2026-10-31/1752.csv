@@ -1,0 +1,141 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Lukas Jungwirth,352661,G,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Florian Flecker,258894,D,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Alemão,338948,D,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Andrés Andrade,189775,D,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Daniel Elfadli,343993,D,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Xavier Mbuyamba,283026,D,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Robert Ljubicic,273480,M,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Alessandro Schöpf,203868,M,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Melayro Bogarde,290638,M,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Christoph Lang,37442,F,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Samuel Adeniran,318956,F,titulaire,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Manoël Louis-Philippe Verhaeghe,3093829,D,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Kasper Jørgensen,286853,D,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Yvan Dibango,365165,D,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Moses Usor,340760,F,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Art Smakaj,341760,M,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Tobias Schützenauer,224704,G,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Sascha Horvath,193294,M,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Nael Kane,403411,F,remplacant,espn
+2026-10-31T17:52:37+00:00,401881760,aut.1,AUT,2026-10-31T18:30:00+00:00,LASK Linz,5-3-2,Miguel Freckleton,354730,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Patrick Schulte,275080,G,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Malte Amundsen,271075,CD-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Sean Zawadzki,296221,CD-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Anass Zaroury,323725,LB,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Steven Moreira,180113,RB,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Sékou Tidiany Bangoura,346869,CM-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Dylan Chambost,270189,CM-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Santiago Rodríguez,83178,LM,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Mohamed Farsi,317021,RM,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Gonzalo Tapia,297128,CF-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Taha Habroune,362812,CF-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Josef Martínez,172688,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Tarun Karumanchi,3106012,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Andrés Herrera,286389,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Laurtaro Giaccone,309474,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Brooks Lennon,252778,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Jamal Thiaré,197351,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Nicholas Hagen,224640,G,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Eric Bailly,212342,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,Columbus Crew,4-4-2,Cesar Ruvalcaba,392011,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Alex Bono,217514,G,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Kye Rowles,228416,CD-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Lucas Bartlett,333699,CD-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Keisuke Kurokawa,288348,LB,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Silvan Hefti,227891,RB,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Andre Dozzell,227789,CM-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Matti Peltola,320300,CM-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Jared Stroud,271884,LM,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Kimito Nono,379749,RM,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,João Peglow,297079,CF-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Nathan Ordaz,340613,CF-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Oscar Avilez,412984,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Kamil Efraím Castillo Reynoso,3118753,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Gavin Turner,336970,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Nikola Markovic,418069,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Jackson Hopkins,324048,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Sean Nealis,230822,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Jordan Farr,271514,G,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Conner Antley,273974,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761924,usa.1,USA,2026-10-31T18:00:00+00:00,D.C. United,4-4-2,Brandon Servania,269158,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Teenage Hadebe,232755,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Roman Celentano,315972,G,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Nick Hagglund,201354,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Alvas Powell,159296,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Andrei Chirila,399987,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Gerardo Valenzuela,362895,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Obinna Nwobodo,275106,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Evander,86436,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Bryan Ramirez,236049,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Ayoub Jabbari,305664,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,José Andrés Martínez,287014,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Tah Anunga,254292,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Kenji Mboma Dem,388854,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Ender Echenique,361138,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Tom Barlow,249926,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Evan Louro,242975,G,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Samuel Gidi,363908,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Pavel Bucha,279180,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Kyle Smith,236641,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,FC Cincinnati,3-4-1-2,Kévin Denkey,251694,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Andre Blake,186943,G,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Nathan Harriel,286778,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Frankie Westfield,366034,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Kai Wagner,261317,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Neil Pierre,366558,D,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Quinn Sullivan,304130,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Ben Bender,288060,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Indiana Vassilev,266026,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Jovan Lukic,322063,M,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Bruno Damiani,322680,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Ezekiel Alladoh,399426,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Andrew Rick,365853,G,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Cavan Sullivan,384397,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Jesús Bueno,271536,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Finn Sundstrom,384323,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Jordan Griffin,403770,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Geiner Martínez,418595,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Malik Jakupovic,412100,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Jeremy Rafanello,274002,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761919,usa.1,USA,2026-10-31T18:00:00+00:00,Philadelphia Union,4-4-2,Augustin Anello,364774,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Matt Freese,252974,G,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,James Sands,258855,CD-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Thiago Martins,185792,CD-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Kevin O'Toole,254450,LB,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Tayvon Gray,297380,RB,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Nicolás Fernández,108107,CM,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Andrés Perea,259199,LM,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Jonathan Shore,358680,RM,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Talles Magno,288930,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Bénie Traoré,312850,LF,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Agustin Ojeda,337149,RF,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Nico Cavallo,400718,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Malachi Jones,379908,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Keaton Parks,268192,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Hannes Wolf,250852,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Luighi Hanri,376480,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Raul Gustavo,276051,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Matt Miazga,187273,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Tomas Romero,184786,G,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,New York City FC,4-3-3,Cooper Flax,301472,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Samsy Keita,413767,G,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Brayan Vera,270238,CD-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Brandan Craig,304135,CD-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Viktor Radojevic,355245,LB,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Dawid Bugaj,364675,RB,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Olger Escobar,377044,AM,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Dani Pereira,316077,LM,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Samuel Piette,87387,RM,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Alexis Sánchez,92055,F,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Wikelman Carmona,315924,AM-L,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Hennadii Synchuk,384984,AM-R,titulaire,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Fabian Herbers,233047,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Efraín Morales,304154,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Daniel Ríos,351302,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Victor Loturi,343641,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Dante Sealy,307221,F,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Luca Petrasso,271816,D,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Sébastian Breza,252607,G,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Noah Streit,362775,M,remplacant,espn
+2026-10-31T17:52:37+00:00,761930,usa.1,USA,2026-10-31T18:00:00+00:00,CF Montréal,4-2-3-1,Matthew Longstaff,279758,M,remplacant,espn
