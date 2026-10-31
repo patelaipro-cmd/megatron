@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T18:35:00+00:00,espn,DraftKings,courante,F1,2026-10-31T19:45+00:00,Troyes,Le Mans,401876413,2.2,3.35,3.35,70.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261031,9b5f55c01036e1fdcc145b3382fd472c4e4a7b0e018a18e53fc9c8713227106e,1X2
+2026-10-31T18:35:00+00:00,espn,DraftKings,courante,I1,2026-10-31T19:45+00:00,AC Milan,Internazionale,401874795,3.45,3.4,2.0,70.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261031,75174ee17962a5ec059fee14020437d68ea4cfab6c944f385e701214422e1528,1X2
