@@ -418,3 +418,4 @@
 {"collecte_le": "2026-10-31T14:11:00+00:00", "erreurs": [], "espn": 11, "football_data": "inchange", "espn_par_horizon": {"T-60": 6, "T-30": 0, "T-5": 5, "hors_fenetre": 0, "ouverture": 0}}
 {"collecte_le": "2026-10-31T14:16:00+00:00", "erreurs": [], "espn": 11, "football_data": "inchange", "espn_par_horizon": {"T-60": 1, "T-30": 5, "T-5": 5, "hors_fenetre": 0, "ouverture": 0}}
 {"collecte_le": "2026-10-31T14:21:00+00:00", "erreurs": [], "espn": 11, "football_data": "inchange", "espn_par_horizon": {"T-60": 1, "T-30": 5, "T-5": 5, "hors_fenetre": 0, "ouverture": 0}}
+{"collecte_le": "2026-10-31T14:21:00+00:00", "erreurs": [], "espn": 11, "football_data": "inchange", "espn_par_horizon": {"T-60": 1, "T-30": 5, "T-5": 5, "hors_fenetre": 0, "ouverture": 0}}
