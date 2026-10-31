@@ -1,0 +1,81 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,JT Marcinkowski,242928,G,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Justin Haak,285383,CD-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Carlos Garcés,133963,CD-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,John Nelson,225615,LB,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Harbor Miller,366047,RB,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Marco Reus,122356,CM,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Sergi Roberto,150225,LM,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Pablo Ruiz,228390,RM,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,João Klauss,150409,F,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Joseph Paintsil,256843,LF,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Hirving Lozano,200161,RF,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Julián Aude,297050,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Erik Thommy,199926,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Lucas Sanabria,230580,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Elijah Wynder,287568,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Novak Micovic,322058,G,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Calegari,290135,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Jakob Glesnes,234962,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Kyogo Furuhashi,276904,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,LA Galaxy,4-3-3,Robert Taylor,237823,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Damian Las,297379,G,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Ilie Sánchez,150185,CD,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Guilherme Biro,304696,CD-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Mikkel Desler,213250,CD-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Ervin Torres,381219,CM-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Besard Sabovic,225834,CM-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Jorge Alastuey,374611,LM,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Micah Burton,365828,RM,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Christian Ramírez,235061,F,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Jon Gallagher,231047,CF-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Przemyslaw Placheta,287466,CF-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Brad Stuver,183780,G,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Mateja Djordjevic,322966,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Facundo Torres,67518,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Joseph Rosales,286669,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Riley Thomas,308642,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Zan Kolmanic,259805,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Oleksandr Svatok,196666,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Stefan Dobrijevic,3143548,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761925,usa.1,USA,2026-10-31T21:00:00+00:00,Austin FC,3-4-3,Brendan Hines-Ike,238438,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Earl Edwards,216999,G,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Reid Roberts,398860,CD-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Daniel Munie,281494,CD-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Dave Romney,222188,LB,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Benjamin Kikanovic,302893,RB,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Niko Tsakiris,333752,AM,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Nick Fernandez,400722,LM,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Ian Harkes,249699,RM,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Preston Judd,295339,F,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Jamar Ricketts,380800,AM-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Ousseni Bouda,300420,AM-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Ronaldo Vieira,235593,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Max Floriani,331616,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Luka Jovanovic,346468,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Eduard Löwen,189505,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Angus Gunn,181299,G,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Beau Leroux,382638,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Jack Skahan,246337,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Vítor Costa,223355,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,San Jose Earthquakes,4-2-3-1,Jack Jasinski,304134,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Rafael,134307,G,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Justen Glad,203329,CD,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Philip Quinton,294874,CD-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Luc de Fougerolles,365345,CD-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Noel Caliskan,362114,CM-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Saba Lobjanidze,221128,CM-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Samuel Junqua,256489,LM,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Dominik Marczuk,364658,RM,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Sergi Solans,418187,F,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Juan Manuel Sanabria,287497,CF-L,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Stijn Spierings,216288,CF-R,titulaire,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Mason Stajduhar,231193,G,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Aiden Hezarkhani,399190,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Zach Booth,326258,M,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Kobi Henry,304126,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,DeAndre Yedlin,183778,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Ariath Piol,358654,F,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Alexandros Katranis,243168,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Lukas Engel,311520,D,remplacant,espn
+2026-10-31T20:55:58+00:00,761929,usa.1,USA,2026-10-31T21:00:00+00:00,Real Salt Lake,3-4-2-1,Colin Guske,388445,M,remplacant,espn

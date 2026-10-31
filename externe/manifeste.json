@@ -1,20 +1,21 @@
 {
- "execution_le": "2026-10-31T19:54:16+00:00",
+ "execution_le": "2026-10-31T20:55:58+00:00",
  "sources": {
   "fpl": {
-   "lignes": 197,
-   "fichier": "fpl/2026-10-31/1954.csv",
+   "lignes": 198,
+   "fichier": "fpl/2026-10-31/2055.csv",
    "statut": "ok"
   },
   "apifootball": {
-   "statut": "erreur",
-   "erreur": "RuntimeError: API-Football /fixtures/lineups : {'access': 'Your account is suspended, check on https://dashboard.api-football.com.'}"
+   "compos": 0,
+   "requetes_jour": 63,
+   "statut": "ok"
   },
   "espn": {
-   "matchs_proches": 7,
-   "lignes": 203,
+   "matchs_proches": 2,
+   "lignes": 80,
    "erreurs_ligues": [],
-   "fichier": "espn/compos/2026-10-31/1954.csv",
+   "fichier": "espn/compos/2026-10-31/2055.csv",
    "statut": "ok"
   }
  }
