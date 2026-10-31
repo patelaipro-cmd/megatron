@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T12:19:00+00:00,espn,DraftKings,courante,E0,2026-10-31T12:30+00:00,Chelsea,Manchester United,401879248,2.25,3.7,3.05,11.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261031,365a16ff7a399bce339d20f4353fed7bc09d2bce9e9548891d9e926535861606,1X2
+2026-10-31T12:19:00+00:00,espn,DraftKings,courante,SP1,2026-10-31T13:00+00:00,Levante,Atlético Madrid,401882820,6.0,4.8,1.4762,41.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261031,d851a93988c39b9f677908893258fc3a9b1683abf8ccce59d32a2187e175b8e2,1X2
