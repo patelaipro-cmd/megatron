@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T13:10:00+00:00,espn,DraftKings,courante,I1,2026-10-31T14:00+00:00,Bologna,Monza,401874798,1.6452,3.8,4.8,50.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261031,2bcb6a175d8334aa44b5553f7c4495b93527cfe49c2999f6cd3399f4fb4c1b84,1X2
