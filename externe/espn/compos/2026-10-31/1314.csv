@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Milan Djuric,116477,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Marco Nasti,340706,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Federico Agazzi,340138,G,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Jari Vandeputte,197345,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Sebastiano Luperto,192573,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Michele Collocolo,277475,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Giuseppe Pezzella,224249,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Tommaso Berti,323983,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Salvatore Elia,272618,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Morten Thorsby,202686,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Federico Bonazzoli,197062,F,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Adrian Lickunas,412139,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Adin Licina,388139,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Dachi Lordkipanidze,388553,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Manuel De Luca,154423,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Marco Festa,222459,G,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Simone Marsi,3144057,D,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,David Stuckler,386272,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Andrea Fulignati,180863,G,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Simone Lottici Tessadri,421697,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Alberto Grassi,209869,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Fellipe Jack,384367,D,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Cremonese,4-2-3-1,Federico Baschirotto,324225,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Gianmarco Vannucchi,180714,G,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Guglielmo Mignani,3099459,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Pietro Saio,310796,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Raffaele Romano,3099478,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Christian Dalle Mura,297232,D,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Antonio Prisco,333742,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Antonis Siatounis,323150,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Leonardo Sernicola,234425,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Mattia Maita,153307,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,David Okereke,233087,M,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Davide Lamesta,308300,F,titulaire,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Emanuele Schimmenti,324528,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Luigi Cherubini,353352,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Marco Tumminello,227274,F,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Simone Verdi,142164,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Manuel Esposito,3099490,G,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Angelo Talia,325013,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Pietro Beruatto,276253,D,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Pier Luigi Simonetti,279953,M,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Stefano Scognamillo,165468,D,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Luca Caldirola,132063,D,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Mattia Mannini,372786,D,remplacant,espn
+2026-10-31T13:14:54+00:00,401899566,ita.2,I2,2026-10-31T14:00:00+00:00,Benevento,4-1-4-1,Francesco Salvemini,222658,F,remplacant,espn
