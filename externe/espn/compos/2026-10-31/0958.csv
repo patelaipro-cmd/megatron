@@ -1,0 +1,43 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Ertugrul Taskiran,153939,G,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Yakup Kırtay,3124162,CD,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Nihad Mujakic,257942,CD-L,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Amar Gerxhaliu,347624,CD-R,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Guram Giorbelidze,305852,LB,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Orhan Ovacikli,203903,RB,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Elisha Owusu,266057,CM,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Martín Rodríguez,160974,CM-L,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Brandon Baiye,276264,CM-R,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Eren Tozlu,180758,CF-L,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Miguel Cardoso,214311,CF-R,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Ömer Arda Kara,3124161,D,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Lawrence Agyekum,334129,M,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Mustafa Fettahoglu,308833,F,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Ibrahim Diabate,308726,F,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Sefa Akgün,266572,M,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Gyrano Kerk,199663,F,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Festy Ebosele,290106,D,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Cengizhan Bayrak,307195,D,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Matija Orbanic,290282,G,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Erzurum BB,5-3-2,Nariman Akhundzade,346634,F,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Marcos Felipe,191997,G,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Hrvoje Smolcic,292170,CD-L,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Çaglar Söyüncü,230757,CD-R,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Andrei Borza,335861,LB,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Gokhan Sazdagi,292231,RB,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Mohammed Diomande,303049,AM,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Ermin Mahmic,414676,LM,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Ylber Ramadani,237455,RM,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Jesús Ramírez,82009,F,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Alexandros Kyziridis,298350,AM-L,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Cengiz Ünder,239706,AM-R,titulaire,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Mame Thiam,174979,F,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Markus Karlsbakk,259179,M,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Goktan Gurpuz,306932,M,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Erhan Erentürk,330710,G,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Youssoufa Moukoko,305554,F,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Berat Özdemir,292081,M,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Arda Hilmi Şengül,3106689,D,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Ahmed Ildiz,249073,M,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Serdar Saatci,308739,D,remplacant,espn
+2026-10-31T09:58:24+00:00,401888373,tur.1,T1,2026-10-31T10:30:00+00:00,Çorum FK,4-2-3-1,Alexandre Penetra,306510,D,remplacant,espn

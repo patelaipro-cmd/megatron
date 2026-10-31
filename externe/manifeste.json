@@ -1,34 +1,21 @@
 {
- "execution_le": "2026-10-31T06:14:39+00:00",
+ "execution_le": "2026-10-31T09:58:24+00:00",
  "sources": {
-  "sofascore": {
-   "statut": "erreur",
-   "erreur": "RuntimeError: HTTP 403 sur https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-10-31"
-  },
   "fpl": {
    "lignes": 198,
    "fichier": "inchange",
    "statut": "ok"
   },
-  "clubelo": {
-   "statut": "erreur",
-   "erreur": "HTTPError: HTTP Error 502: Bad Gateway"
-  },
-  "understat": {
-   "lignes": 409,
-   "statut": "ok"
-  },
   "apifootball": {
-   "blessures": 533,
-   "fichier_blessures": "apifootball/blessures/2026-10-31/0614.csv",
    "compos": 0,
-   "requetes_jour": 6,
+   "requetes_jour": 7,
    "statut": "ok"
   },
   "espn": {
-   "matchs_proches": 0,
-   "lignes": 0,
+   "matchs_proches": 1,
+   "lignes": 42,
    "erreurs_ligues": [],
+   "fichier": "espn/compos/2026-10-31/0958.csv",
    "statut": "ok"
   }
  }
