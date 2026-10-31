@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T15:12:00+00:00,espn,DraftKings,courante,SP1,2026-10-31T15:15+00:00,Rayo Vallecano,Celta Vigo,401882818,2.5,3.1,3.1,3.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261031,5cc89c1729ed42b4d648c733493a8510d050682dc6bc06f900c83b7c66cf58e1,1X2
