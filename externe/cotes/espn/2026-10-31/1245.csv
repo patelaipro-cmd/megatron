@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T12:45:00+00:00,espn,DraftKings,courante,SP1,2026-10-31T13:00+00:00,Levante,Atlético Madrid,401882820,6.0,4.8,1.4762,15.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261031,1cffb33fb3f4e04d804989560e5b1f339b699889cd7024cb1e0a7b214a05f353,1X2
