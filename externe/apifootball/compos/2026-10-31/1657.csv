@@ -1,0 +1,132 @@
+collecte_le,fixture_id,coup_envoi,ligue_id,ligue,equipe,formation,joueur,joueur_id,poste,statut
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,M. Okoye,143648,G,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,J. Abankwah,320335,D,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,C. Kabasele,18797,D,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,M. Palma,422156,D,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,M. Vojvoda,8586,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,J. Karlström,48047,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,L. Miller,343558,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,H. Kamara,22007,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,N. Zaniolo,786,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,J. Ekkelenkamp,541,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,K. Davis,19185,F,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,N. Bertola,315249,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,G. Chakvetadze,8481,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,J. Arizala,411171,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,E. Ebosse,20656,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,Unai Gómez,332308,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,L. JovanoviÄ,398194,F,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,S. Lovrić,7591,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,B. Mrozek,126896,G,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,D. Padelli,189,G,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,Oier Zarraga,182560,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,J. Piotrowski,1939,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Udinese,3-4-2-1,G. Vinciati,493365,F,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,P. Gollini,30418,G,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,D. Ghilardi,342019,D,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,E. Ndicka,1807,D,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,Hermoso,2669,D,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,N. Molina,6503,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,M. de Roon,30432,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,B. Cristante,778,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,Wesley,349001,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,M. Soulé,323936,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,Rodrigo Mora,404097,M,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,D. Malen,249,F,titulaire
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,L. Balerdi,6,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,Mandjou Camara,,F,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,S. Castro,311067,F,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,G. De Marzi,483676,G,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,Alessandro Di Nunzio,,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,K. Koulierakis,162409,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,E. Lulli,598615,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,G. Mancini,30425,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,N. Pisilli,356888,M,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,D. Rensch,162452,D,remplacant
+2026-10-31T16:57:11+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,AS Roma,3-4-2-1,D. Vásquez,81012,G,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,M. Ramírez,81224,G,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Tiago Manso,142323,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,C. Jolibois,201334,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,R. van Eijma,37066,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,L. Abanda,162990,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Bernardo Martins,41586,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,K. Roukounakis,215975,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Á. Sagal,35665,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Jorge Pombo,47061,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,J. Antonisse,163220,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,A. Christópoulos,344570,F,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,K. Apostolakis,26744,M,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,A. Anagnostopoulos,68179,G,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Hugo Sousa,68184,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Nektarios Kaloskamis,,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,I. Kousoulos,15371,M,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,G. Kyriopoulos,388842,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Vangelis Manganas,,M,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Jordi Mboula,122,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,A. Petkov,68467,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,K. Polykratis,597941,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Gerson Sousa,181802,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Kifisia,4-2-3-1,Dimitris Theodoridis,342896,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,S. Ortega,25004,G,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,M. Pedersen,39362,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,P. Retsos,971,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,L. Pirola,134431,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,N. Tiknizyan,841,D,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,G. Puerta,324034,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,R. Freuler,2807,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,Jota Silva,141901,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,Chiquinho,41130,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,Joel Roca,339105,M,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,R. Yaremchuk,8493,F,titulaire
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,L. Bailey,983,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,Gelson Martins,118,M,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,K. Fortounis,1609,M,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,A. González,291713,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,S. Hezze,195929,M,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,David Carmo,41970,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,M. Mouandilmadji,394,F,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,S. Onyemaechi,278196,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,B. Popović,66898,G,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,M. Saliakas,27157,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,Z. Smajlović,413662,D,remplacant
+2026-10-31T16:57:11+00:00,1593347,2026-10-31T17:00:00+00:00,197,Super League 1,Olympiakos Piraeus,4-2-3-1,Gustavo Sá,379985,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Lucas Pirard,8495,G,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Marlon Fossey,129706,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Ibrahim Karamoko,30751,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Ibe Hautekiet,198400,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Gustav Mortensen,314734,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Salieu Drammeh,378448,M,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Alexis Trouillet,194073,M,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Rayan Touzghar,333150,M,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Andi Zeqiri,48649,F,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Dennis Eckert Ayensa,37892,F,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Adnane Abid,342945,F,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Quentin Durka,493117,G,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Henry Lawrence,138823,D,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Daan Dierckx,162592,D,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Ryan Fosso,335069,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Tobias Mohr,25155,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Sylvester Jasper,153417,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Marco Ilaimaharitra,8567,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Bruny Nsimba,267723,F,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Standard Liege,4-3-3,Bernard Nguene,503702,F,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Marko Ilić,46043,G,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,James Ndjeungoue,379116,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Axel Drouhin,191138,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Harrison Murray-Campbell,364048,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Matthew Anderson,332737,D,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Mohamed Fofana,515771,M,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Boris Lambert,128362,M,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Anthony Philips,643492,M,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Jellert Van Landschoot,8790,F,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Goduine Koyalipou,20817,F,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Thierry Ambrose,20673,F,titulaire
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Patrik Sigurdur Gunnarsson,19343,G,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Rudy Kohon,325785,D,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Gilles Ruyssen,79133,D,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Suf Podgoreanu,163338,F,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Lenn De Smet,294561,F,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Rok Štorman,335387,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Ken Masui,319010,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Liam De Smet,291910,M,remplacant
+2026-10-31T16:57:11+00:00,1558668,2026-10-31T17:15:00+00:00,144,Jupiler Pro League,Kortrijk,4-3-3,Sixtus Ogbuehi,405719,F,remplacant
