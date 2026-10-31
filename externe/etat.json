@@ -24,7 +24,7 @@
    1558668
   ],
   "jour": "2026-10-31",
-  "requetes": 62
+  "requetes": 63
  },
  "apifootball/blessures": {
   "empreinte": "a677ffdd6e78a961bd06a79411769ae0e4643107ed0c7c634f08027da1ac3ce2",
@@ -141,16 +141,20 @@
    "401876413",
    "401875561",
    "401878960",
-   "401878957"
+   "401878957",
+   "401882822",
+   "401883126",
+   "401875562",
+   "401841656"
   ],
   "jour": "2026-10-31"
  },
  "espn/compos": {
-  "empreinte": "3a0c3ffd8910d9f6595a9431786d1df26fb973164ab937d75532cf899da9c424",
-  "fichier": "espn/compos/2026-10-31/1907.csv"
+  "empreinte": "ec84ece4290a2c6b89ab3d285f1da9c9892824e9d58b5a4942f282460c54a915",
+  "fichier": "espn/compos/2026-10-31/1954.csv"
  },
  "fpl": {
-  "empreinte": "72a810c5f93792a66a9118af8410190f8065d5e875db52c149893cc62b1b2220",
-  "fichier": "fpl/2026-10-31/1907.csv"
+  "empreinte": "401a4a33d8ef0b708147f81e45cc3a034597188fea3af1a1827e9dfff60fb4a2",
+  "fichier": "fpl/2026-10-31/1954.csv"
  }
 }

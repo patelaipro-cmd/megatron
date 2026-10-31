@@ -1,0 +1,204 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Joan García,297362,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,João Cancelo,176399,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Brian Fariñas,403575,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Frenkie de Jong,219022,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Pau Cubarsí,368992,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Rodri,231828,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Fermín López,354334,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Pedri,250465,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Karim Adeyemi,274913,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Raphinha,231050,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Lamine Yamal,362150,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Álex Campos,94947,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Guillem Víctor,403583,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Hamza Abdelkarim,399200,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Gerard Martín,312015,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Anthony Gordon,268782,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Marc Bernal,376423,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Alejandro Balde,323703,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Wojciech Szczesny,131634,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Ebrima Tunkara,416502,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Gavi,323702,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Dominik Livakovic,187946,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Barcelona,4-3-3,Gabriel Jesus,217289,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Antonio Sivera,200910,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Miguel Rodríguez,83494,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Carlos Protesoni,253754,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Carles Aleñá,233802,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Mariano Díaz,198832,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Abde Rebbach,345991,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Ander Guevara,260256,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Nicolás Valentini,318084,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Hugo Novoa,305608,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Jonny,176312,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Denis Suárez,163068,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Selu Diallo,367996,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Ville Koski,149306,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Pablo Ibáñez,106326,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Antonio Blanco,265997,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Nahuel Tenaglia,262491,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Ángel Pérez,374621,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Adrián Rodríguez,150374,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Xanet Oláiz,415276,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Youssef Lekhedim,382532,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Aitor Mañas,379231,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Toni Martínez,181757,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401882822,esp.1,SP1,2026-10-31T20:00:00+00:00,Alavés,4-4-2,Lucas Boyé,207236,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Diego Mariño,140342,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Lluis López,236153,CD-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Jesús Vallejo,209592,CD-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Antonio Pacheco Ruiz,297361,DM,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Carlos Neva,283862,LB,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Lorenzo Aguado,388337,RB,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Ortu,331513,CM-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Victor San Bartolomé,274015,CM-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Víctor Valverde Da Silva,356770,LM,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,José Corpas,264181,RM,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Higinio Marín,178547,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Álex Rubio,375419,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Mario Soberón,279697,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Javi Villar,374612,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Antonio Velilla,409512,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Carlos Marín,240648,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Agus Medina,207352,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Antonio Moreno,411953,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Joaquín Domingo,399605,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Roberto González,282682,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Agustín Albarracín,381354,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,Albacete,4-1-4-1,Daniel Bernabeu,403331,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Diego Fuoli,306293,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Óscar Sanz,155283,CD-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Arthur Bonaldo,253008,CD-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,José Luis Català Vázquez,376662,LB,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Ton Ripoll,300272,RB,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Quadri Liameed,287445,CM-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Urri,345216,CM-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Joel Priego,307709,LM,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Ángel Baena,303843,RM,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Gastón Valles,380822,CF-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Yanis Rahmani,245840,CF-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Pere Pons,178565,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Juan Carlos Lázaro Cervera,242434,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Alain Ribeiro,300303,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Marc Vidal,138674,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Gerard Fornés,300270,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Yussif Owusu,388399,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Javi López,347354,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Nikolai Óbolo,218510,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Jose Ortega,311302,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Eneko Aguilar,300776,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401883126,esp.2,SP2,2026-10-31T20:00:00+00:00,CD Sabadell,4-4-2,Quim Utgés,412261,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Marc-André ter Stegen,140740,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Youri Baas,305590,CD-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Aaron Bouwman,384127,CD-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Owen Wijndal,241392,LB,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Lucas Rosa,351281,RB,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Sofyan Amrabat,195226,CM,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Julian Brandt,197628,LM,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Jorthy Mokio,381074,RM,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Tolu Arokodare,305372,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Abdellah Ouazane,403927,LF,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Davy Klaassen,168993,RF,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Diego Pugno,397257,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Maarten Paes,238919,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Daley Blind,126489,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Rayane Bounida,397492,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Oscar Gloukh,325609,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Dies Janse,368818,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Yves Bissouma,232810,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Thilo Kehrer,214401,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Mohamed Abdalla,417684,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Jofre Torrents,403588,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Marcos Leonardo,304571,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,Ajax Amsterdam,4-3-3,Steven Berghuis,149577,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Jari De Busser,255740,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Lewis Schouten,334064,CD-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Wouter Goes,329972,CD-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Mees De Wit,261596,LB,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Elijah Dijkstra,343924,RB,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Valdemar Byskov,344870,AM,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Peer Koopmeiners,269610,LM,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Dave Kwakman,346269,RM,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Mexx Meerdink,332465,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Ro-Zangelo Daal,338775,AM-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Weslley Patati,338959,AM-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Wesley Hoedt,190977,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Jordy Clasie,150199,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Denso Kasius,299530,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Bendegúz Kovács,408528,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Seiya Maikuma,333892,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Calvin Stengs,248677,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Hessel De Wit,402624,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Wassim Bouziane,398766,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Jerolldino Bergraaf,388592,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Andrea Natali,386238,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Rome-Jayden Owusu-Oduro,332466,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401875562,ned.1,N1,2026-10-31T20:00:00+00:00,AZ Alkmaar,4-2-3-1,Mateo Chávez,379193,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Diogo Costa,238903,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Santiago Gimenez,260775,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Samu Aghehowa,364815,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Hwang In-Beom,280061,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Seko Fofana,184118,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Alberto Costa,346111,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Zaidu Sanusi,289513,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Jan Bednarek,221788,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,André Silva,3368,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Cláudio Ramos,142670,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Nehuén Pérez,268437,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Victor Froholdt,373520,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Souza,371532,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Dominik Prpic,345752,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Moura,274289,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,João Costa,28261,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Pablo Rosario,223776,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Alan Varela,307601,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Borja Sainz,292268,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Pepê,256909,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Gabriel Mec,399421,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Gabri Veiga,307381,M,titulaire,espn
+2026-10-31T19:54:16+00:00,401885404,por.1,P1,2026-10-31T20:30:00+00:00,FC Porto,4-2-3-1,Jakub Kiwior,304965,D,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Marino Arzamendia,251884,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Carlos Quintana,105823,CD,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Cristian Paz,206671,CD-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Facundo Miño,315728,CD-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Milton Céliz,195672,CM-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Nicólas Watson,283894,CM-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Brian Sánchez,213487,AM,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Mariano Bracamonte,278608,LM,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Pedro Ramirez,194848,RM,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Alexander Díaz,114767,CF-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Antony Alonso,310778,CF-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Ignacio Gariglio,309401,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Rodrigo Gallo,298577,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Miguel Graneros,224050,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Juan Cruz Randazzo,190565,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Jonathan Goitia,271228,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Iván López,235821,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Nicolás Benegas,235785,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Tomás González,336568,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Pablo Monje,337014,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Deportivo Riestra,3-4-1-2,Gabriel Obredor,379677,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Ezequiel Unsain,200935,G,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Román Riquelme,318179,CD-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Matías Catalán,173449,CD-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Alexandro Maidana,399687,LB,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Augusto Schott,276302,RB,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Valentín Fascendini,379507,AM,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Alejandro Galarza,309398,LM,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Federico Fattori,187475,RM,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Agustín Álvarez Martínez,307473,F,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Valentin Depietri,292245,AM-L,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Rick,288678,AM-R,titulaire,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Diego Valoyes,215986,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Valentín Dávila,396616,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Gabriel Báez,192847,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Lautaro Ortiz,418077,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Emiliano Chiavassa,402606,F,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Santino Barbi,383134,G,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Mateo Caceres,307620,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Timoteo Chamorro,402177,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Juan Sforza,297055,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Thiago Baroni,3110765,D,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Giovanni Baroni,402605,M,remplacant,espn
+2026-10-31T19:54:16+00:00,401841656,arg.1,ARG,2026-10-31T20:00:00+00:00,Talleres (Córdoba),4-2-3-1,Santiago Fernández,358648,D,remplacant,espn
