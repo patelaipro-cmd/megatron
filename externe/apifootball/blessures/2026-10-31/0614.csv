@@ -1,0 +1,534 @@
+collecte_le,fixture_id,coup_envoi,ligue_id,ligue,pays,equipe,joueur,joueur_id,type,motif
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,A. Badolato,337590,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,A. Brideson,657392,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,A. Nassiep,592556,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,A. Reid,654353,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,C. Prestwidge,681563,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,K. Walshe,681564,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,M. Cooper,527580,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,O. Cockle,628731,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,O. Fryer,422453,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,O. Gonzalez,623669,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Newcastle Jets,W. Kennedy,490297,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Wellington Phoenix,F. Conchie,376250,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Wellington Phoenix,I. Hughes,376245,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593693,2026-10-31T04:00:00+00:00,188,A-League,Australia,Wellington Phoenix,J. Smith,428032,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Melbourne City,A. Lopane,269547,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Melbourne City,B. Mazzeo,439832,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Melbourne City,M. Caputo,316876,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Melbourne City,Matheus Rossetto,10138,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Melbourne City,R. Kalms,581492,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Sydney,A. Walatee,430670,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Sydney,G. Hoefsloot,363438,Missing Fixture,Wrist Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Sydney,J. Farrell,343894,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1593694,2026-10-31T06:00:00+00:00,188,A-League,Australia,Sydney,J. Hollman,216805,Missing Fixture,Knock
+2026-10-31T06:14:39+00:00,1593695,2026-10-31T08:40:00+00:00,188,A-League,Australia,Macarthur,J. Hilton,639635,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593695,2026-10-31T08:40:00+00:00,188,A-League,Australia,Macarthur,J. Reec,598333,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593695,2026-10-31T08:40:00+00:00,188,A-League,Australia,Macarthur,K. Grozos,6987,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593695,2026-10-31T08:40:00+00:00,188,A-League,Australia,Macarthur,K. Kennedy,138238,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593695,2026-10-31T08:40:00+00:00,188,A-League,Australia,Macarthur,W. McKay,406400,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1593695,2026-10-31T08:40:00+00:00,188,A-League,Australia,Western Sydney Wanderers,A. Lual,437119,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1584450,2026-10-31T10:30:00+00:00,203,Süper Lig,Turkey,Erzurumspor FK,M. Yumlu,2140,Questionable,Injury
+2026-10-31T06:14:39+00:00,1584450,2026-10-31T10:30:00+00:00,203,Süper Lig,Turkey,Çorum FK,C. Soyuncu,18776,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1584450,2026-10-31T10:30:00+00:00,203,Süper Lig,Turkey,Çorum FK,E. Gurluk,298872,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1584450,2026-10-31T10:30:00+00:00,203,Süper Lig,Turkey,Çorum FK,S. Saatci,286839,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1561434,2026-10-31T12:15:00+00:00,235,Premier League,Russia,Fakel,A. Gabaraev,266048,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1561434,2026-10-31T12:15:00+00:00,235,Premier League,Russia,Fakel,A. Sutormin,53583,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1561434,2026-10-31T12:15:00+00:00,235,Premier League,Russia,Rubin,A. Jukic,7445,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1561434,2026-10-31T12:15:00+00:00,235,Premier League,Russia,Rubin,J. Siwe,193705,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1561434,2026-10-31T12:15:00+00:00,235,Premier League,Russia,Rubin,J. Urozov,358427,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1561434,2026-10-31T12:15:00+00:00,235,Premier League,Russia,Rubin,K. Nizhegorodov,298251,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,A. Anselmino,422780,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,E. Martinez,19599,Missing Fixture,Broken jawbone
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,J. Gittens,286894,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,J. Hato,341642,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,Joao Pedro,10329,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,M. Lacroix,20995,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Chelsea,R. James,19545,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Manchester United,B. Sesko,115589,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Manchester United,K. Mainoo,284322,Questionable,Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Manchester United,L. Shaw,891,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Manchester United,M. Rashford,909,Questionable,Hip Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Manchester United,M. Ugarte,51494,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557450,2026-10-31T12:30:00+00:00,39,Premier League,England,Manchester United,P. Dorgu,382452,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563229,2026-10-31T12:30:00+00:00,40,Championship,England,Birmingham,A. Priske,344816,Questionable,Health problems
+2026-10-31T06:14:39+00:00,1563229,2026-10-31T12:30:00+00:00,40,Championship,England,Birmingham,M. Leonard,167656,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1563229,2026-10-31T12:30:00+00:00,40,Championship,England,Birmingham,Paik Seung-Ho,2909,Missing Fixture,Health problems
+2026-10-31T06:14:39+00:00,1563229,2026-10-31T12:30:00+00:00,40,Championship,England,Lincoln,E. Wheatley,362270,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563229,2026-10-31T12:30:00+00:00,40,Championship,England,Lincoln,M. Melia,394935,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1563229,2026-10-31T12:30:00+00:00,40,Championship,England,Lincoln,T. Darikwa,19288,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Norwich,A. Ahmed,362145,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Norwich,G. Forsyth,382340,Missing Fixture,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Norwich,M. Topic,45947,Questionable,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Norwich,M. Toure,198352,Missing Fixture,Shoulder Injury
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Norwich,P. A. Diallo,403889,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Norwich,P. Mattsson,15936,Questionable,Health problems
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Watford,E. Bove,286475,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Watford,J. Ngakia,193296,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Watford,K. Baah,152699,Missing Fixture,Knock
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Watford,M. Antonio,18819,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563232,2026-10-31T12:30:00+00:00,40,Championship,England,Watford,S. Coulibaly,162568,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Preston,A. McCann,70519,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Preston,H. Clarke,138836,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Preston,L. Gibbs,171034,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Preston,L. Gibson,153424,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Preston,L. Lindsay,19787,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Preston,T. Carroll,459284,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Stoke City,A. Ampah,360011,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Stoke City,A. Cresswell,18813,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Stoke City,E. Bocat,174636,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Stoke City,S. Gallagher,18954,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563235,2026-10-31T12:30:00+00:00,40,Championship,England,Stoke City,S. Ingelsson,30809,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1570439,2026-10-31T13:00:00+00:00,140,La Liga,Spain,Atletico Madrid,J. Cardoso,133185,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1570439,2026-10-31T13:00:00+00:00,140,La Liga,Spain,Atletico Madrid,Koke,50,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1570439,2026-10-31T13:00:00+00:00,140,La Liga,Spain,Levante,E. Bardeli,161893,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1584454,2026-10-31T13:00:00+00:00,203,Süper Lig,Turkey,Kocaelispor,A. Jovanovic,47558,Missing Fixture,Coach's decision
+2026-10-31T06:14:39+00:00,1584454,2026-10-31T13:00:00+00:00,203,Süper Lig,Turkey,Kocaelispor,B. Petkovic,1331,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1584454,2026-10-31T13:00:00+00:00,203,Süper Lig,Turkey,Kocaelispor,M. Haidara,3333,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1584454,2026-10-31T13:00:00+00:00,203,Süper Lig,Turkey,Kocaelispor,T. Zoukrou,282546,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1584454,2026-10-31T13:00:00+00:00,203,Süper Lig,Turkey,Rizespor,A. Kutucu,422,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1584454,2026-10-31T13:00:00+00:00,203,Süper Lig,Turkey,Rizespor,K. Alikulov,73509,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Bologna,E. Holm,47985,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Bologna,J. Enem,349185,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Bologna,L. De Silvestri,30498,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Bologna,R. Piccoli,30440,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Monza,J. Ziolkowski,384543,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Monza,M. Folorunsho,56851,Missing Fixture,Coach's decision
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Monza,M. Pessina,30436,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1550179,2026-10-31T14:00:00+00:00,135,Serie A,Italy,Monza,Y. Maye,436239,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Akhmat,G. Kenzhebek,293264,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Akhmat,G. Shelia,43365,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Akhmat,J. Romao,278547,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Akhmat,O. Ndong,196738,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Akhmat,S. Pryakhin,322051,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Dynamo,A. Kutitsky,281990,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Dynamo,B. Zaynutdinov,53533,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Dynamo,L. Chavez,35690,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1561429,2026-10-31T14:30:00+00:00,235,Premier League,Russia,Dynamo,N. Marichal,195505,Questionable,Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,C. Kofane,505295,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,E. Ben Seghir,343320,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,G. Doue,161747,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,K. Eichhorn,503467,Missing Fixture,Illness
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,L. Bade,174918,Missing Fixture,Head Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,M. Diaby,277,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Bayer Leverkusen,M. Terrier,663,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,VfB Stuttgart,A. Stiller,137210,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,VfB Stuttgart,D. Zagadou,13,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,VfB Stuttgart,J. Diehl,287927,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,VfB Stuttgart,J. Vagnoman,24868,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,VfB Stuttgart,L. Sauer,342163,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575204,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,VfB Stuttgart,T. Tomas,265363,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575206,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Augsburg,C. Brackelmann,178403,Missing Fixture,Concussion
+2026-10-31T06:14:39+00:00,1575206,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Augsburg,J. Bah,449509,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1575206,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Augsburg,N. Banks,413065,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575206,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Augsburg,S. Mounie,3395,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1575206,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Freiburg,B. Yilmaz,353142,Questionable,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1575206,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Freiburg,P. Treu,178769,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,E. Leopold,178250,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,F. Fleck,585704,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,F. Honorat,20784,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,H. Bolin,335095,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,J. Leszczynski,462217,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,K. Diks,31043,Missing Fixture,Personal Reasons
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Borussia Mönchengladbach,T. Kleindienst,26256,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,G. Vidovic,280334,Questionable,Foot Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,M. Hoffmeier,119173,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,N. Awortwie-Grant,373443,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,O. Batista Meier,70099,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,S. Klaas,26333,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,S. Michel,24826,Questionable,Injury
+2026-10-31T06:14:39+00:00,1575208,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,SC Paderborn 07,T. Gayret,108640,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,1899 Hoffenheim,A. Hajdari,278453,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,1899 Hoffenheim,A. Prass,7327,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,1899 Hoffenheim,B. Conte,279905,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,1899 Hoffenheim,N. De Cat,453903,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,1899 Hoffenheim,P. Wimmer,126642,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,1899 Hoffenheim,V. Gendrey,127631,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,F. Agu,26319,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,J. Stage,15592,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,K. Topp,334334,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,M. N'Diaye,175415,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,N. Stark,2916,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,P. Erevbenagie,623771,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,S. Alvero,193720,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1575209,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,Werder Bremen,S. Musah,432519,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,A. Gantenbein,266192,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,J. Bachmann,26397,Missing Fixture,Hip Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,L. Vozar,585777,Missing Fixture,Illness
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,M. Sylla,115,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,M. Wober,2048,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,R. Gosens,30422,Missing Fixture,Head Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,FC Schalke 04,S. El-Faouzi,280090,Missing Fixture,Broken nose
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,RB Leipzig,A. Ouedraogo,380978,Missing Fixture,Shoulder Injury
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,RB Leipzig,M. Esteve,179400,Missing Fixture,Knock
+2026-10-31T06:14:39+00:00,1575210,2026-10-31T14:30:00+00:00,78,Bundesliga,Germany,RB Leipzig,M. Guiu,392270,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Fredrikstad,J. Nysveen,564538,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Fredrikstad,S. Kvile,131503,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Rosenborg,A. Pereira,39134,Questionable,Illness
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Rosenborg,E. Slordal,498765,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Rosenborg,H. Volden,416077,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Rosenborg,J. Bakke,162262,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1494791,2026-10-31T15:00:00+00:00,103,Eliteserien,Norway,Rosenborg,S. Nordli,57422,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Bournemouth,A. Scott,304853,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Bournemouth,A. Toth,361485,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Bournemouth,J. Araujo,51051,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Leeds,A. Stach,177665,Questionable,Foot Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Leeds,D. James,19329,Questionable,Back Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Leeds,J. Rodon,19321,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557448,2026-10-31T15:00:00+00:00,39,Premier League,England,Leeds,M. Joseph,313059,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Brentford,A. Milambo,319517,Questionable,Knock
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Brentford,F. Carvalho,153066,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Brentford,J. Dasilva,19362,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Brentford,K. Furo,393193,Missing Fixture,Surgery
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Brentford,R. Henry,19346,Missing Fixture,Hip Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Brentford,Y. Yarmolyuk,263538,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Nottingham Forest,D. Ndoye,48648,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Nottingham Forest,Igor Jesus,9366,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Nottingham Forest,N. Dominguez,6056,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1557449,2026-10-31T15:00:00+00:00,39,Premier League,England,Nottingham Forest,N. Savona,181806,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Coventry,A. Amenda,162414,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Coventry,B. Thomas,264437,Questionable,Calf Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Coventry,H. Wright,427,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Coventry,J. Eccles,19984,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Coventry,L. Woolfenden,17714,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Sunderland,D. Ballard,55904,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Sunderland,J. Ta Bi,492528,Questionable,Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Sunderland,N. Mukiele,1146,Questionable,Face Injury
+2026-10-31T06:14:39+00:00,1557451,2026-10-31T15:00:00+00:00,39,Premier League,England,Sunderland,R. Mundle,284414,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,C. Hughes,331551,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,D. Gyabi,282124,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,E. Matazo,162991,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,I. Ansah,380873,Missing Fixture,Back Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,J. Butland,2930,Questionable,Arm Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,L. Gourna-Douath,179843,Questionable,Calf Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Hull City,M. Targett,18941,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Ipswich,J. Taylor,18397,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557452,2026-10-31T15:00:00+00:00,39,Premier League,England,Ipswich,S. Lukic,2823,Questionable,Groin Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,C. Andres,388871,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,E. Ferguson,129643,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,F. Azeez,282637,Missing Fixture,Abdominal strain
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,F. Kadioglu,1361,Questionable,Hip Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,K. Mitoma,106835,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,P. Struijk,64003,Missing Fixture,Rest
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,S. Tzimas,343311,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Brighton,Z. Yohanna,524411,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1557454,2026-10-31T15:00:00+00:00,39,Premier League,England,Manchester City,A. Semenyo,19281,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bolton,C. Forino-Joseph,320843,Questionable,Groin Injury
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bolton,E. Erhahon,45007,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bolton,J. McAtee,87858,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bolton,J. Nelson,193279,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bolton,R. Hardie,44956,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bristol City,E. Adebayo,17641,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bristol City,L. Tolaj,180556,Questionable,Health problems
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bristol City,N. Eile,207200,Missing Fixture,Illness
+2026-10-31T06:14:39+00:00,1563227,2026-10-31T15:00:00+00:00,40,Championship,England,Bristol City,R. Dickie,20103,Questionable,Knee Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,A. Ahmedhodzic,1949,Missing Fixture,Knock
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,A. Broja,138822,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,A. Ramsey,278079,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,B. Amos,19627,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,B. Humphreys,181797,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,H. Mejbri,180560,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,J. Banel,336578,Questionable,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,J. Beyer,25628,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,J. Bruun Larsen,22,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,J. Cullen,19827,Questionable,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,J. Vardy,18788,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,K. Walker,627,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,M. Obafemi,18957,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,M. Tresor Ndayishimiye,37381,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,S. Sambo,194645,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Burnley,Z. Amdouni,123469,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,B. Arthur,430827,Missing Fixture,Back Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,C. Bishop,122094,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,C. Ogilvie,20138,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,C. Shaughnessy,44875,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,J. Murphy,19002,Questionable,Groin Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,J. Swift,19619,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,K. Anderson,17728,Missing Fixture,Overload
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,L. Brooke-Smith,462900,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1563228,2026-10-31T15:00:00+00:00,40,Championship,England,Portsmouth,M. Kosznovszky,237115,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Charlton,C. Sichenje,283144,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Charlton,M. Godden,19970,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Charlton,N. Chalobah,18803,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Charlton,R. Apter,291108,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Middlesbrough,A. Jones,18938,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Middlesbrough,D. Strelec,61156,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563230,2026-10-31T15:00:00+00:00,40,Championship,England,Middlesbrough,R. Pukstas,340571,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,C. Forsyth,19205,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,C. Taylor,18918,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,D. Murkin,37760,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,D. Sanderson,123437,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,E. Cashin,161663,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,L. Travis,19472,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,M. Clarke,19860,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,P. Agyemang,407652,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Derby,S. Langas,265444,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,C. De Norre,1935,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,F. Marschall,138937,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,J. Coburn,272553,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,L. Jensen,190595,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,M. Luongo,2752,Questionable,Knee Injury
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,M. Servais,295233,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563231,2026-10-31T15:00:00+00:00,40,Championship,England,Millwall,T. Arconte,305959,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,QPR,A. S. Mbengue,276553,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,QPR,J. Clarke-Salter,37116,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,QPR,N. Madsen,15801,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,QPR,R. Burrell,17847,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,QPR,T. Lamptey,138815,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,Southampton,C. Larin,2001,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563234,2026-10-31T15:00:00+00:00,40,Championship,England,Southampton,F. Downes,19733,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Blackburn,A. Forshaw,19127,Missing Fixture,Hip Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Blackburn,L. Miller,7037,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Blackburn,M. Litherland,313248,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Blackburn,R. Morishita,199150,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Blackburn,S. Morsy,19558,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Swansea,C. Burgess,20457,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Swansea,M. K. Yeo,381810,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563236,2026-10-31T15:00:00+00:00,40,Championship,England,Swansea,Ronald,70886,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563237,2026-10-31T15:00:00+00:00,40,Championship,England,West Brom,M. Johnston,1137,Missing Fixture,Broken Leg
+2026-10-31T06:14:39+00:00,1563237,2026-10-31T15:00:00+00:00,40,Championship,England,West Brom,N. Galves,333078,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563237,2026-10-31T15:00:00+00:00,40,Championship,England,West Brom,T. Collyer,284400,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1563237,2026-10-31T15:00:00+00:00,40,Championship,England,West Ham,J. Veltman,537,Questionable,Health problems
+2026-10-31T06:14:39+00:00,1563237,2026-10-31T15:00:00+00:00,40,Championship,England,West Ham,K. Lamadrid,358969,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563237,2026-10-31T15:00:00+00:00,40,Championship,England,West Ham,K. Mavropanos,1445,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Cardiff,C. Chambers,19016,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Cardiff,C. Robinson,19462,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Cardiff,D. Lawlor,394973,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Cardiff,G. Osho,20206,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Cardiff,K. Bielik,19826,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Wolves,B. Traore,671,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Wolves,B. Traore,157912,Questionable,Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Wolves,F. Lopez,391822,Questionable,Calf Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Wolves,G. Konan,22002,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Wolves,N. Djiga,303322,Questionable,Groin Injury
+2026-10-31T06:14:39+00:00,1563238,2026-10-31T15:00:00+00:00,40,Championship,England,Wolves,R. Jimenez,2887,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Celta Vigo,A. Nunez,182661,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Celta Vigo,B. Iglesias,47348,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Celta Vigo,C. Starfelt,47988,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Celta Vigo,H. F. Cuenca Martinez,382947,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Celta Vigo,J. El Abdellaoui,351913,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Celta Vigo,M. Roman,333502,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Rayo Vallecano,A. Batalla,11379,Missing Fixture,Broken calfbone
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Rayo Vallecano,A. Ratiu,1703,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Rayo Vallecano,Luiz Felipe,1847,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570441,2026-10-31T15:15:00+00:00,140,La Liga,Spain,Rayo Vallecano,P. Ciss,41552,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,B. Nieuwkoop,37147,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,G. Smal,37742,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,J. Bos,337587,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,J. St. Juste,37148,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,R. Nelson,727,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,S. van Persie,624605,Missing Fixture,Knock
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Feyenoord,T. Beelen,328141,Missing Fixture,Broken Leg
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Fortuna Sittard,I. Marquez,40201,Questionable,Injury
+2026-10-31T06:14:39+00:00,1552207,2026-10-31T15:30:00+00:00,88,Eredivisie,Netherlands,Fortuna Sittard,R. Bayram,467814,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Fenerbahçe,A. Brown,161661,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Fenerbahçe,J. Oosterwolde,272721,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Fenerbahçe,M. Asensio,746,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Fenerbahçe,N. Ake,18861,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Göztepe,Allan Godoi,159466,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Göztepe,F. Bayir,62378,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Göztepe,I. Sabra,432841,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Göztepe,L. Gugeshashvili,24665,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Göztepe,O. Bayrak,134564,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1584451,2026-10-31T16:00:00+00:00,203,Süper Lig,Turkey,Göztepe,Rhaldney,54699,Questionable,Injury
+2026-10-31T06:14:39+00:00,1561433,2026-10-31T16:45:00+00:00,235,Premier League,Russia,FC Krasnodar,I. Vakhania,43847,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1561433,2026-10-31T16:45:00+00:00,235,Premier League,Russia,FC Krasnodar,N. Krivtsov,202211,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1561433,2026-10-31T16:45:00+00:00,235,Premier League,Russia,Rodina Moskva,A. Meshchaninov,66063,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1561433,2026-10-31T16:45:00+00:00,235,Premier League,Russia,Rodina Moskva,Rodrigo Becao,829,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,A. Goodwin,304119,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,A. John,414113,Missing Fixture,Shoulder Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,A. Saint-Maximin,22173,Questionable,Leg Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,B. Bronico,50905,Questionable,Groin Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,N. Berchimas,401644,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,T. Ream,19023,Questionable,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Charlotte,W. Cleary,640017,Questionable,Illness
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Orlando City SC,D. Brekalo,109887,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Orlando City SC,G. Dorsey,50824,Questionable,Back Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Orlando City SC,R. Jansson,50924,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1490587,2026-10-31T17:00:00+00:00,253,Major League Soccer,USA,Orlando City SC,T. Spicer,459717,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,H. Hammer,564459,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,I. Djantou,439536,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,J. Seehusen,314240,Questionable,Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,M. Kristensen,564497,Questionable,Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,M. Reed,564578,Questionable,Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,O. Gudmundsson,135106,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Aalesund,S. Haram,404521,Missing Fixture,Elbow Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,B. Berntsen,522690,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,D. Koswal,281160,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,F. Apetorgbor,636326,Questionable,Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,F. Loftesnes-Bjune,349411,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,M. Melchior,217097,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,M. Sauer,315568,Questionable,Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,N. Moller,290983,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1494788,2026-10-31T17:00:00+00:00,103,Eliteserien,Norway,Sandefjord,X. Lambrix,162462,Questionable,Knee Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,AS Roma,L. Pellegrini,782,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,AS Roma,M. Kone,22147,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,AS Roma,M. Svilar,556,Missing Fixture,Toe Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,AS Roma,P. Dybala,875,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,Udinese,A. Zanoli,162907,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,Udinese,D. Alaba,505,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,Udinese,I. Gueye,434410,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1550186,2026-10-31T17:00:00+00:00,135,Serie A,Italy,Udinese,V. Bayo,1134,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Crystal Palace,C. Riad,278898,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Crystal Palace,I. Sarr,2218,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Crystal Palace,J. Larsen,2032,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Crystal Palace,Q. Timber,38747,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Crystal Palace,T. Tomiyasu,2597,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,L. Bergvall,347316,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,M. Mudryk,63577,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,,266657,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,R. Bentancur,863,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,T. Adarabioyo,19145,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,W. Odobert,336564,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557456,2026-10-31T17:30:00+00:00,39,Premier League,England,Tottenham,X. Simons,162016,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,A. Ochoa,444451,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,A. Recio,316115,Questionable,Illness
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,D. Murillo,185234,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,J. Cruz,185202,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,J. Lobete,182602,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,J. Munoz,60,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Malaga,P. Martinez,104949,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Real Betis,C. Hernandez,47582,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Real Betis,F. Bernal,316519,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Real Betis,I. Losada,128985,Missing Fixture,Coach's decision
+2026-10-31T06:14:39+00:00,1570435,2026-10-31T17:30:00+00:00,140,La Liga,Spain,Real Betis,J. Firpo,1564,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Bayern München,J. Musiala,181812,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Bayern München,L. Diaz,2489,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Bayern München,M. Neuer,497,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Bayern München,T. Buchmann,330612,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Borussia Dortmund,E. Can,864,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Borussia Dortmund,G. Konstantelias,162410,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Borussia Dortmund,J. Lerma,465666,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1575203,2026-10-31T17:30:00+00:00,78,Bundesliga,Germany,Borussia Dortmund,K. Karetsas,404891,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,Heerenveen,L. Smans,325845,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,NEC Nijmegen,B. Nuytinck,30797,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,NEC Nijmegen,D. Geiger,718,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,NEC Nijmegen,D. Tadic,554,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,NEC Nijmegen,E. Mor,47446,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,NEC Nijmegen,P. Sandler,625,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552208,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,NEC Nijmegen,Y. Moslih,528298,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,PSV Eindhoven,A. Nagalo,307426,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,PSV Eindhoven,A. Plea,25646,Missing Fixture,Surgery
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,PSV Eindhoven,J. Schouten,37890,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,PSV Eindhoven,P. Wanner,327895,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,PSV Eindhoven,R. Pepi,73868,Questionable,Injury
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,PSV Eindhoven,S. Lammers,36987,Questionable,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,Willem II,A. Lachkar,393871,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,Willem II,J. Hoogma,24924,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552209,2026-10-31T17:45:00+00:00,88,Eredivisie,Netherlands,Willem II,J. Slory,361487,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,FC Cincinnati,E. Echenique,288468,Questionable,Leg Injury
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,FC Cincinnati,J. Malatini,289460,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,FC Cincinnati,M. Robinson,50879,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,FC Cincinnati,T. Malacia,37145,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Philadelphia Union,D. Jean Jacques,338367,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Philadelphia Union,J. Bueno,52709,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490585,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Philadelphia Union,M. Iloski,199406,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Columbus Crew,A. Zaroury,129169,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Columbus Crew,B. Mendez,47440,Questionable,Thigh Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Columbus Crew,E. Bailly,885,Questionable,Leg Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Columbus Crew,R. Camacho,50781,Questionable,Chest Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,Columbus Crew,W. Abou Ali,15731,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,DC United,G. Segal,108643,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,DC United,H. Kijima,458219,Questionable,Leg Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,DC United,L. Munteanu,43096,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1490588,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,DC United,T. Baribo,111287,Questionable,Hip Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,CF Montreal,B. Ceballos,59545,Missing Fixture,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,CF Montreal,B. Hidalgo,212252,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,CF Montreal,J. Neal,208667,Questionable,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,CF Montreal,P. Owusu,26140,Questionable,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,CF Montreal,T. Gillier,311291,Missing Fixture,Upper-Body Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,New York City FC,A. Farnos,641983,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,New York City FC,A. Martinez,79678,Questionable,Thigh Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,New York City FC,D. Baiera,422794,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,New York City FC,K. Trewin,153622,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1490589,2026-10-31T18:00:00+00:00,253,Major League Soccer,USA,New York City FC,M. Moralez,50859,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,FC Dallas,Geovane Jesus,305743,Questionable,Knee Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,FC Dallas,L. Farrington,455011,Questionable,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,FC Dallas,N. Norris,362139,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,FC Dallas,S. Moore,64310,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,Diego Borges,455254,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,J. Reynolds,362053,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,L. Johnsen,39141,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,M. Mosquera,279201,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,O. Blorian,136139,Missing Fixture,Chest Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,S. Reid,509813,Missing Fixture,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490594,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,Sporting Kansas City,Z. Bassong,8660,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490595,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,San Diego,E. Achouri,42012,Missing Fixture,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490595,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,St. Louis City,A. Matan,43095,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1490595,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,St. Louis City,Celio Pompeu,362039,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490595,2026-10-31T19:00:00+00:00,253,Major League Soccer,USA,St. Louis City,R. Burki,1,Missing Fixture,Concussion
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Coritiba,Lucas Ronier,410449,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Coritiba,Lucas Taverna,505577,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Baralhas,9460,Missing Fixture,Broken Leg
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Camutanga,54692,Missing Fixture,Broken Leg
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Dudu,156942,Missing Fixture,Back Injury
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Edu,136124,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Fabiano,187920,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Luan Candido,9906,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Marinho,10506,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Nathan Mendes,311518,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Ramon,67944,Missing Fixture,Leg Injury
+2026-10-31T06:14:39+00:00,1492434,2026-10-31T19:00:00+00:00,71,Serie A,Brazil,Vitoria,Riccieli,127621,Missing Fixture,Calf Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,AC Milan,A. Saelemaekers,1417,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,AC Milan,F. Tomori,19209,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,AC Milan,M. Gabbia,56473,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,AC Milan,R. Loftus-Cheek,2292,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,AC Milan,S. Chukwueze,1696,Missing Fixture,Hip Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,Inter,B. Pavard,2725,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,Inter,C. Jones,293,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,Inter,J. Stones,626,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,Inter,L. Martinez,217,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1550177,2026-10-31T19:45:00+00:00,135,Serie A,Italy,Inter,Luis Henrique,10077,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1552809,2026-10-31T19:45:00+00:00,61,Ligue 1,France,Estac Troyes,A. Ouzenadji,442933,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552809,2026-10-31T19:45:00+00:00,61,Ligue 1,France,Estac Troyes,Y. Kone,670620,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552809,2026-10-31T19:45:00+00:00,61,Ligue 1,France,Le Mans,A. Bourabaa,608142,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1552809,2026-10-31T19:45:00+00:00,61,Ligue 1,France,Le Mans,D. Sidibe,102,Missing Fixture,Foot Injury
+2026-10-31T06:14:39+00:00,1552809,2026-10-31T19:45:00+00:00,61,Ligue 1,France,Le Mans,E. Colas,174939,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,AZ Alkmaar,A. Oufkir,444790,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,AZ Alkmaar,J. Hornkamp,36985,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,AZ Alkmaar,J. Zoet,224,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,AZ Alkmaar,K. Smit,388786,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,AZ Alkmaar,S. Resink,291505,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,AZ Alkmaar,W. Goes,338839,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Ajax,A. Gaaei,313941,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Ajax,Caio Henrique,10316,Missing Fixture,Thigh Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Ajax,K. Dolberg,550,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Ajax,O. Edvardsen,138753,Missing Fixture,Inactive
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Ajax,S. Adingra,301771,Missing Fixture,Lacking Match Fitness
+2026-10-31T06:14:39+00:00,1552210,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Ajax,S. Berghuis,37160,Questionable,Injury
+2026-10-31T06:14:39+00:00,1552211,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Cambuur,B. van Duijl,364184,Questionable,Inactive
+2026-10-31T06:14:39+00:00,1552211,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Cambuur,D. Visser,516834,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1552211,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Cambuur,J. Amofa,277752,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552211,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,Cambuur,W. Asselman,383068,Missing Fixture,Injury
+2026-10-31T06:14:39+00:00,1552211,2026-10-31T20:00:00+00:00,88,Eredivisie,Netherlands,GO Ahead Eagles,P. Saathof,378962,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557447,2026-10-31T20:00:00+00:00,39,Premier League,England,Aston Villa,A. Onana,162714,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1557447,2026-10-31T20:00:00+00:00,39,Premier League,England,Aston Villa,A. Wan-Bissaka,18846,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557447,2026-10-31T20:00:00+00:00,39,Premier League,England,Aston Villa,M. Ruggeri,162012,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1557447,2026-10-31T20:00:00+00:00,39,Premier League,England,Fulham,R. Sessegnon,19032,Missing Fixture,Red Card
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Alaves,F. Garces,6638,Missing Fixture,Suspended
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Alaves,M. Rodriguez,332645,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Barcelona,A. Christensen,2282,Missing Fixture,Muscle Injury
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Barcelona,D. Olmo,1323,Missing Fixture,Groin Injury
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Barcelona,E. Garcia,619,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Barcelona,J. Kounde,1257,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Barcelona,R. Bardghji,338958,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1570434,2026-10-31T20:00:00+00:00,140,La Liga,Spain,Barcelona,X. Espart,568001,Missing Fixture,Ankle Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Austin,C. Applewhite,461516,Questionable,Muscle Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Austin,E. Torres,425840,Questionable,Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Austin,J. Bell,194847,Questionable,Abdominal strain
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Los Angeles Galaxy,H. Lozano,248,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Los Angeles Galaxy,I. Parente,308690,Questionable,Ankle Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Los Angeles Galaxy,J. Glesnes,39327,Questionable,Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Los Angeles Galaxy,K. Furuhashi,33253,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490592,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Los Angeles Galaxy,R. Puig,148,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Real Salt Lake,D. Luna,312896,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Real Salt Lake,E. Eneli,413169,Missing Fixture,Knee Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Real Salt Lake,G. Dillon,313661,Questionable,Foot Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Real Salt Lake,J. J. Arias,357339,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Real Salt Lake,L. Engel,16015,Questionable,Hamstring Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,Real Salt Lake,M. Guilavogui,23643,Missing Fixture,Yellow Cards
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,San Jose Earthquakes,D. Johnson,129065,Missing Fixture,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,San Jose Earthquakes,D. Jones,51013,Missing Fixture,Achilles Tendon Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,San Jose Earthquakes,J. A. Gonzalez Mendoza,35547,Questionable,Lower-Body Injury
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,San Jose Earthquakes,N. Adimabua,542005,Missing Fixture,Hernia
+2026-10-31T06:14:39+00:00,1490596,2026-10-31T21:00:00+00:00,253,Major League Soccer,USA,San Jose Earthquakes,T. Werner,1166,Missing Fixture,Red Card

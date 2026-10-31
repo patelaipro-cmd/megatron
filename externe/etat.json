@@ -2,11 +2,11 @@
  "apifootball": {
   "compos_faites": [],
   "jour": "2026-10-31",
-  "requetes": 5
+  "requetes": 6
  },
  "apifootball/blessures": {
-  "empreinte": "f583d506dccbaecea4325cc7461a317527bd8fdd6c3776f116ffbb1bf84a925c",
-  "fichier": "apifootball/blessures/2026-10-31/0125.csv"
+  "empreinte": "a677ffdd6e78a961bd06a79411769ae0e4643107ed0c7c634f08027da1ac3ce2",
+  "fichier": "apifootball/blessures/2026-10-31/0614.csv"
  },
  "apifootball/compos": {
   "empreinte": "17d9ed54b94096dfd92f5214613413de6286a8e1463b99934283202276144eae",
