@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Tomás Marchiori,216697,G,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Lisandro Magallán,195714,CD-L,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Thiago Silvero,387781,CD-R,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Elias Gomez,196592,LB,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Joaquín García,213346,RB,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Manuel Lanzini,149381,AM,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Lucas Robertone,241823,LM,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Claudio Baeza,177279,RM,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Ronaldo Martínez,252617,F,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Juan Policella,422531,AM-L,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Matías Pellegrini,276287,AM-R,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Facundo Sanguinetti,309411,G,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Matías Arias,407157,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Leo Cristaldo,402586,D,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Thiago Aguirre,422210,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Luca Feler,419308,M,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Simon Escobar,413772,D,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Diego Valdés,70983,M,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Lautaro Piola,3109149,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Dilan Godoy,402596,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Jano Gordon,387780,D,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Thiago Villalba,3126435,M,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,Vélez Sarsfield,4-2-3-1,Álex Verón,402582,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,José Devecchi,195679,G,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Danilo Arboleda,215932,CD,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Emiliano Amor,214198,CD-L,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Guzmán Corujo,254142,CD-R,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Facundo Gulli,406931,CM-L,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Nicolas Tripichio,195337,CM-R,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Facundo Farías,298592,AM,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Teo Rodríguez,401538,LM,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Oscar Arias,361312,RM,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Rodrigo Auzmendi,364366,CF-L,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Alexis Cuello,283675,CF-R,titulaire,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Agustín Ladstatter,396010,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Daniel Herrera,40945,D,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Gustavo Del Prete,276313,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Carlos Insaurralde,276025,M,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Thiago Perugini,380875,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Mathías De Ritis,338975,D,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Facundo Altamira,206740,F,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Maximo Atrio,3145651,,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Juan Rattalino,399291,M,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Martin Rio,318333,M,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Alejo Cordoba,383076,D,remplacant,espn
+2026-10-31T21:54:30+00:00,401841646,arg.1,ARG,2026-10-31T22:15:00+00:00,San Lorenzo,3-4-1-2,Ezequiel Herrera,338915,D,remplacant,espn
