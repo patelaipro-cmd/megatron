@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T11:28:00+00:00,espn,DraftKings,courante,E0,2026-10-31T12:30+00:00,Chelsea,Manchester United,401879248,2.3,3.6,3.0,62.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261031,dd7d8f240cf922b9a239c0579d4c523186e2ac0b4425b2a908a0e4880fd288f5,1X2
