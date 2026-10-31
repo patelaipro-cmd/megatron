@@ -1,8 +1,12 @@
 {
  "apifootball": {
-  "compos_faites": [],
+  "compos_faites": [
+   1576217,
+   1576220,
+   1576223
+  ],
   "jour": "2026-10-31",
-  "requetes": 10
+  "requetes": 21
  },
  "apifootball/blessures": {
   "empreinte": "a677ffdd6e78a961bd06a79411769ae0e4643107ed0c7c634f08027da1ac3ce2",
@@ -36,16 +40,28 @@
    "401841295",
    "401841648",
    "401841647",
-   "401888373"
+   "401888373",
+   "401879248",
+   "401880194",
+   "401880191",
+   "401880188",
+   "401880765",
+   "401880763",
+   "401880759",
+   "401881284",
+   "401881281",
+   "401885070",
+   "401885071",
+   "401885074"
   ],
   "jour": "2026-10-31"
  },
  "espn/compos": {
-  "empreinte": "a486bcba7d137fc9d8b8ad3b576356dce9ac644354d5dda8ce7fbdd3679aa477",
-  "fichier": "espn/compos/2026-10-31/0958.csv"
+  "empreinte": "364df05283da50fa9f156a3636ef6753ae6bbc68085abc81d05f3e690f07c3b6",
+  "fichier": "espn/compos/2026-10-31/1155.csv"
  },
  "fpl": {
-  "empreinte": "bc7a82cbcb8d43c4ce4896bf1733089265c463c45a01f5575b3b752f6b82753e",
-  "fichier": "fpl/2026-10-30/1607.csv"
+  "empreinte": "745bfa153218799da3a2808e632c86906b1e83574d30dd3b9eafea6c13f038e3",
+  "fichier": "fpl/2026-10-31/1155.csv"
  }
 }

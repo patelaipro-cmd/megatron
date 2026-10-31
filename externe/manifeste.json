@@ -1,20 +1,20 @@
 {
- "execution_le": "2026-10-31T10:55:01+00:00",
+ "execution_le": "2026-10-31T11:55:07+00:00",
  "sources": {
   "fpl": {
    "lignes": 198,
-   "fichier": "inchange",
+   "fichier": "fpl/2026-10-31/1155.csv",
    "statut": "ok"
   },
   "apifootball": {
-   "compos": 0,
-   "requetes_jour": 10,
-   "statut": "ok"
+   "statut": "erreur",
+   "erreur": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   "espn": {
-   "matchs_proches": 3,
-   "lignes": 0,
+   "matchs_proches": 16,
+   "lignes": 460,
    "erreurs_ligues": [],
+   "fichier": "espn/compos/2026-10-31/1155.csv",
    "statut": "ok"
   }
  }
