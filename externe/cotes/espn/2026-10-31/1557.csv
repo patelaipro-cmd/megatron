@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-10-31T15:57:00+00:00,espn,DraftKings,courante,I1,2026-10-31T17:00+00:00,Udinese,AS Roma,401874990,5.25,4.3,1.5128,63.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261031,bb0861de4f314a83e14f52ebcd959489af8d5aa9916aa0701de3f75f22146bbd,1X2
