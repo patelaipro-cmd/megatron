@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-01T14:16:00+00:00,espn,DraftKings,courante,D1,2026-11-01T14:30+00:00,1. FC Union Berlin,FC Cologne,401884750,2.6,3.3,2.5,14.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261101,3f7e7be6e8c95b8164ba652f2bcbe3c3f10eadc293342e01ecd7dde9ffb59c31,1X2
+2026-11-01T14:16:00+00:00,espn,DraftKings,courante,SP1,2026-11-01T15:15+00:00,Racing Santander,Real Madrid,401882819,11.0,8.0,1.2,59.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261101,7e49ec6aa613cb7ebff6621f68b15c02c1dd1d447079603078ddf73c84808ab1,1X2
