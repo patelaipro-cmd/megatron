@@ -1,0 +1,104 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Alexey Miranchuk,185897,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Luke Brennan,308892,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Tristan Muyumba,255802,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Adrian Gill,371431,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Matt Edwards,138636,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Fafà Picault,211678,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Miguel Almirón,48128,F,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Jayden Hibbert,385044,G,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Elías Baez,361498,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Mauricio Amaro,359927,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Paulo Díaz,184465,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Cayman Togashi,235093,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Cooper Sanchez,402315,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Jay Fortune,304153,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Breel Embolo,202099,F,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Tomás Jacob,330082,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Lucas Hoyos,109193,G,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Giuliano Galoppo,270889,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Steven Alzate,243384,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Atlanta United FC,4-3-3,Júnior Alonso,181657,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Luka Gavran,294040,G,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Matheus Pereira,301819,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Nickseon Gomis,337361,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Benjamín Kuscevic,204888,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Richie Laryea,230626,D,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Jonathan Osorio,184221,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Dániel Sallói,233050,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Niklas Dorsch,225567,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Djordje Mihailovic,252351,M,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Josh Sargent,256613,F,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Theo Corbeanu,290190,F,titulaire,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Lewis Morgan,181028,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Richard Chukwu,371470,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Emilio Aristizábal,366744,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Jackson Gilman,353137,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Alonso Coello,359272,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Derrick Etienne Jr.,231098,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,William Yarbrough,174703,G,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Markus Cimermancic,359270,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761931,usa.1,USA,2026-11-01T21:30:00+00:00,Toronto FC,4-4-2,Zane Monlouis,310293,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Brian Schwake,296695,G,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Maxwell Woledzi,290031,CD-L,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Jeisson Palacios,167061,CD-R,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Reed Baker-Whiting,304120,LB,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Andy Nájar,146355,RB,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Matthew Corcoran,318341,CM,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Elias Saad,323950,LM,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Patrick Yazbek,315524,RM,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Hany Mukhtar,174548,F,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Sam Surridge,227627,LF,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Cristian Espinoza,73200,RF,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Joe Willis,156217,G,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Edvard Tagseth,290109,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Josh Bauer,266454,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Bryan Acosta,201136,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Warren Madrigal,310068,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Shakur Mohammed,325936,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Jack Maher,255501,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Alex Muyl,233041,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Nashville SC,4-3-3,Daniel Lovitz,201353,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Ethan Horvath,192027,G,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Julián Bazán,361422,CD-L,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Tim Parker,217009,CD-R,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Devin Padelford,337030,LB,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Jahkeele Marshall-Rutty,302060,RB,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Sekou Kone,372068,CM,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Jorge Ruvalcaba,329917,LM,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Adri Mehmeti,381687,RM,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Julian Hall,288041,F,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Cameron Harper,270302,LF,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Cade Cowell,285698,RF,titulaire,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,John McCarthy,217162,G,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Mohammed Sofo,380923,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Emil Forsberg,148641,M,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Connor Faello,3143898,D,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,David Ruiz,229289,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Rafael Mosquera,362940,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Anthony Marcucci,318476,G,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Mijahir Ameth Jiménez Murillo,3106013,F,remplacant,espn
+2026-11-01T20:56:26+00:00,761920,usa.1,USA,2026-11-01T21:30:00+00:00,Red Bull New York,4-3-3,Matthew Dos Santos,385287,D,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Juan Espínola,186085,G,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Nicolás De Martini,262496,D,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Elías Pereyra,269817,D,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Rafael Barrios,206618,D,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Yonatthan Rak,237040,D,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Dardo Miloc,136483,M,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Rodrigo Bogarín,217154,M,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Gonzalo Maroni,224098,M,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Tomás Porra,315615,M,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Iván Tapia,292028,M,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Facundo Bruera,264821,F,titulaire,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Enzo Taborda,316295,M,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Carlos Arce,86163,M,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Juan Insúa,400265,G,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Iván Guaraz,397557,M,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Nicolás Capraro,357496,D,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Esteban Rolón,227730,M,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Tomas Lavezzi,403467,F,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Damián Martínez,120501,D,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Gastón Campi,194034,D,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Jhonatan Candia,252705,F,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Nicolás Orsini,193531,F,remplacant,espn
+2026-11-01T20:56:26+00:00,401841645,arg.1,ARG,2026-11-01T21:30:00+00:00,Barracas Central,4-2-3-1,Rodrigo Insúa,292094,D,remplacant,espn
