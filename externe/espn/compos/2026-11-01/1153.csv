@@ -1,0 +1,161 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Leo Weinkauf,255896,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Virgil Ghita,259802,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Jean Hugonet,291983,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Boris Tomiak,260171,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Emir Sahiti,237432,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Husseyn Chakroun,386470,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Hayate Matsuda,341704,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Marcel Hartel,234125,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Kolja Oudenne,367647,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Stefán Teitur Thórdarson,301558,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Benjamin Kallman,278038,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Bastian Allgeier,312519,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Manuel Braun,386436,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Ime Okon,358744,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Mustapha Bundu,245512,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Franz Roggow,323156,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Pascal Loretz,321208,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Merlin Sinanović,3107017,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Waniss Taibi,297773,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Hannover 96,3-4-2-1,Noah Engelbreth,416456,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Lennart Grill,231180,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Jonas Sterner,303921,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Alexander Rossipal,268786,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Nicolai Rapp,216080,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Friedrich Müller,414492,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Robert Wagner,336760,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Tobias Raschl,283345,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Jakob Lemmer,324612,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Niklas Hauptmann,238522,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Patrice Covic,398005,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Christoph Daferner,287716,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Lukas Boeder,212480,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Kaan Inanoglu,406449,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Ben Bobzien,323830,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Ahmet Muhamedbegovic,250896,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Till Neininger,389628,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Luca Herrmann,321203,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Vincent Vermeij,188414,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Tim Schreiber,290400,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401885072,ger.2,D2,2026-11-01T12:30:00+00:00,Dynamo Dresden,4-2-3-1,Simon Straudi,289694,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Ole Pohlmann,345224,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Hendry Blank,365320,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Doni Arifi,306238,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Gian-Luca Itter,231183,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Felix Klaus,153489,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Omar Sillah,406473,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Paul Will,276328,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Florian Hellstern,409213,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Faton Ademi,388182,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Shinta Appelkamp,291764,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Jordan Pefok,216035,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Olgherto Balliu,3106470,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Krisztián Keresztes,385839,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Sacha Bansé,363057,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Jannick Dehm,214185,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Lukas Reich,405546,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Jannis Heuer,321274,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Dennis Srbeny,221551,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Silas Prüfrock,397587,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Aaron Keller,357742,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Timon Weiner,275807,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Noah Madsen,379259,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Hiroki Sekine,365686,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Leon Parduzi,406469,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Ivan Nekic,399191,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Adrian Kapralik,304966,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Kasper Davidsen,386357,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Jonas Therkelsen,343805,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Jonas Meffert,180819,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Giorgi Kvilitaia,221131,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Phil Harres,321202,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Lio Rothenhagen,376231,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Faride Alidou,325942,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Gyan De Regt,332656,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Sebastian Schonlau,186148,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,David Zec,311534,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Ikem Ugoh,419914,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Guillermo Balzi,318279,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,Andu Kelati,388786,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885067,ger.2,D2,2026-11-01T12:30:00+00:00,Holstein Kiel,4-4-2,John Tolkin,279290,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Ben Voll,307489,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Lars Ritzka,253675,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Dávid Németh,283952,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Eric Smith,204115,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Branimir Hrgota,174506,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Mathias Rasmussen,173141,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Joel Chima Fujita,297567,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Arkadiusz Pyrka,305716,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Louis Oppie,364803,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Abdoulie Ceesay,387129,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Connor Metcalfe,260643,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Marcus Mathiesen,219189,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Adam Dzwigala,280065,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Taichi Hara,271135,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Martijn Kaars,250459,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Dimitar Mitov,209577,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Tomoya Ando,399042,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Samuel Klein,333820,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Erik Ahlstrand,312866,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,St. Pauli,3-4-1-2,Youssoupha Niang,417605,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Jan Reichert,306950,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Eric Porstner,403379,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Fynn Otto,306173,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Alexios Kalogeropoulos,318799,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Tim Janisch,388020,D,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Adam Markhiev,326623,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Rafael Lubach,365787,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Rayan Ghrieb,356918,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Javier Fernández,371514,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Julian Justvan,303746,M,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Piet Scobel,406475,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,William Bøving,303116,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Marko Soldic,418374,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Can Moustfa,406680,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Styopa Mkrtchyan,290049,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Sigurd Haugen,235724,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Marc Kornwachs Barjuan,3124980,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Andrea Ceresoli,378196,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Robin Lisewski,376468,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401885073,ger.2,D2,2026-11-01T12:30:00+00:00,1. FC Nürnberg,4-2-3-1,Giannis Masouras,243189,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Gaëtan Coucke,228422,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Royer Caicedo,396386,CD-L,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Ibrahim Diakité,311004,CD-R,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Geoffrey Kondo,356912,LB,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Erick,361440,RB,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Abdoulie Manneh,380320,AM,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Hannes Van Der Bruggen,177363,LM,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Luke Le Roux,272404,RM,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Steve Ngoura,346520,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Tayo Adaramola,330230,AM-L,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Babatunde Akinsola,362144,AM-R,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Louis Colman,3140854,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Lukas Mondele,324106,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Krys Kouassi,396639,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Yann Lienard,325600,G,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Gary Magnée,290547,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Emmanuel Kakou,384108,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Viggo Martens,3124602,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Sebbe Gheerardyns,394864,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Cercle Brugge KSV,4-2-3-1,Lucas Michel,356651,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Taishi Nozawa,297237,G,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Álvaro Cortés,300377,CD-L,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Rein Van Helden,336732,CD-R,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Daam Foulon,271729,LB,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Semm Renders,390670,RB,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Thibo Somers,298354,AM,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Arthur Vermeeren,345805,LM,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Bahmed Deuff,408952,RM,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Snayder Porozo,387541,F,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Ibrahim Salah,333257,AM-L,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Carlos Daniel Mejia Klinger,3098700,AM-R,titulaire,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Maxime Busi,276839,D,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Modibo Fofana,422279,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Mauricio Benitez,349711,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Xander Dierckx,410554,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Michael Frey,138048,F,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Christopher Scott,43199,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Youssef Hamdaoui,399247,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Yuto Tsunashima,378866,M,remplacant,espn
+2026-11-01T11:53:46+00:00,401878959,bel.1,B1,2026-11-01T12:30:00+00:00,Antwerp,4-2-3-1,Niels Devalckeneer,345960,G,remplacant,espn
