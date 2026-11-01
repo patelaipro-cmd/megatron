@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-01T14:41:00+00:00,espn,DraftKings,courante,SP1,2026-11-01T15:15+00:00,Racing Santander,Real Madrid,401882819,11.0,8.0,1.2,34.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261101,8bbac3f8e57076088a6b9d67bd82af81fb9248df861413232b6567677df5bf61,1X2
