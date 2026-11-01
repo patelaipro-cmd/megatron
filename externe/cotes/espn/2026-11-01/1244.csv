@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-01T12:44:00+00:00,espn,DraftKings,courante,SP1,2026-11-01T13:00+00:00,Getafe,Sevilla,401882821,3.6,2.95,2.3,16.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261101,c2fb01ffbbe60da1ced2eea9aa720c24b7a0f2ddca224b84ddb48d9db4737700,1X2
