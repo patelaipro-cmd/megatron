@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-01T10:27:00+00:00,espn,DraftKings,courante,I1,2026-11-01T11:30+00:00,Como,Venezia,401875002,1.2857,5.5,8.5,63.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261101,cf68d16267b5401bb6f411d4a13f7d64e7819b302b8d117e2330b6b7bca02c1a,1X2
