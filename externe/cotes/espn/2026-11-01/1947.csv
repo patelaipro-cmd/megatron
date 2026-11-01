@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-01T19:47:00+00:00,espn,DraftKings,courante,SP1,2026-11-01T20:00+00:00,Athletic Club,Real Sociedad,401882826,1.9524,3.7,3.75,13.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261101,914ca53d2c1bf7b88bd291551f8b4e3c9563b38896eaf2671cdfa02735c190b8,1X2
