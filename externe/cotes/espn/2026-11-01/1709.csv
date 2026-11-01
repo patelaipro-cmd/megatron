@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-01T17:09:00+00:00,espn,DraftKings,courante,SP1,2026-11-01T17:30+00:00,Elche,Valencia,401882823,2.3,3.3,3.2,21.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261101,e215968c989271e08094e18612d5840f25c0bd219b1a5b89a38fba1f5296a49a,1X2
