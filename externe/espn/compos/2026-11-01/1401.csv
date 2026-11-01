@@ -1,0 +1,41 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Matheo Raab,238706,G,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Leopold Querfeld,330455,D,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Tom Rothe,324269,D,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,András Schäfer,284702,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Michel Aebischer,245623,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Frederik Ronnow,165424,G,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Derrick Köhn,263202,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Marvin Friedrich,202642,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Christopher Trimmel,146485,D,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Zeno Van Den Bosch,314184,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Kastriot Imeri,289527,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Emmanuel Latte Lath,242439,F,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Oliver Burke,212478,F,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Livan Burcu,366823,F,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Rani Khedira,159152,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Janik Haberer,170604,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Mekhi Anthony Gray,3113344,F,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Aljoscha Kemlein,349922,M,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Tim Skarke,220796,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,1. FC Union Berlin,4-2-3-1,Jeong Woo-Yeong,276323,M,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Marvin Schwäbe,205751,G,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Joel Schmied,306378,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Borna Sosa,228319,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Jahmai Simpson-Pusey,357337,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Sebastian Sebulonsen,302981,D,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Paul Okon-Engstler,403528,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Linton Maina,231173,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Ísak Jóhannesson,286815,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Tom Krauss,283683,M,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Said El Mala,380795,F,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Marius Bulter,275797,F,titulaire,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Alessio Castro-Montes,236136,M,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Mikey Moore,365332,F,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Gideon Mensah,264484,D,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Luka Lochoshvili,222477,D,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Ron-Robert Zieler,121007,G,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Reigan Heskey,378369,F,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Jan Thielmann,300444,M,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Malek El Mala,384155,F,remplacant,espn
+2026-11-01T14:01:49+00:00,401884750,ger.1,D1,2026-11-01T14:30:00+00:00,FC Cologne,4-4-2,Luca Waldschmidt,191352,F,remplacant,espn
