@@ -1,0 +1,41 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Matt Turner,303794,G,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Joshua Wynder,318374,CD-L,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Ethan Kohler,360133,CD-R,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,William Sands,334227,LB,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Ilay Feingold,343191,RB,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Carles Gil,152168,AM,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Brooklyn Raines,329364,LM,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Matt Polster,216609,RM,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Dor Turgeman,305755,F,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Dániel Gazdag,257844,AM-L,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Peyton Miller,376513,AM-R,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Tanner Beason,231150,D,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Alhassan Yusuf,276684,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Griffin Yow,286757,F,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Diego Fagundez,156187,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Luca Langoni,338883,F,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Jackson Yueill,251806,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Andrew Farrell,183796,D,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Donovan Parisian,396928,G,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,New England Revolution,4-2-3-1,Mamadou Fofana,164551,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Dayne St. Clair,231059,G,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Micael,314952,CD-L,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Casemiro,173666,CD-R,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Gonzalo Luján,315617,LB,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Ian Fray,316269,RB,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Yannick Bright,329025,CM,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Telasco Segovia,315594,LM,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Rodrigo De Paul,174466,RM,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Riquelme,361433,F,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Germán Berterame,228394,LF,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Lionel Messi,45843,RF,titulaire,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Dániel Pintér,399970,F,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,David Ayala,290715,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Matías Galarza,297328,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Facundo Mura,285473,D,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Sergio Reguilón,231241,D,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Santiago Morales,199032,M,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Luis Suárez,125088,F,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Maximiliano Falcón,310279,D,remplacant,espn
+2026-11-01T23:52:20+00:00,761932,usa.1,USA,2026-11-02T00:00:00+00:00,Inter Miami CF,4-3-3,Rocco Ríos Novo,297047,G,remplacant,espn
