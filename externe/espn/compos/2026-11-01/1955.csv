@@ -1,0 +1,87 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Bernardo,340560,G,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Vítor Carvalho,250906,CD,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Sergio Barcia,310231,CD-L,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Adrian Leon Barisic,322209,CD-R,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Mario Dorgeles,347459,CM-L,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,João Moutinho,50959,CM-R,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Diogo Travassos,352651,LM,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Víctor Gómez,265984,RM,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Fran Navarro,285434,F,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Gabri Martínez,98573,CF-L,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Ricardo Horta,184423,CF-R,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Tiago Sá,151272,G,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Gorby,326029,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Jonas Wind,271215,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Diogo Antunes Lobo,3113485,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Denis Huseinbasic,343969,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Demir Ege Tiknaz,328795,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Gustaf Lagerbielke,324930,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Flinto Augusto Patrão Da Costa,3113464,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Pau Víctor,303808,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Jovan Milosevic,364204,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Adrian Bajrami,338057,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,Braga,3-4-3,Diego Rodrigues,398386,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Lazar Carevic,330458,G,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Léo Realpe,287018,CD-L,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Víctor Rofino,362592,CD-R,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Gustavo Garcia,289899,LB,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Rodrigo Pinheiro,366785,RB,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Pedro Santos,370133,AM,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Mathias De Amorim,368008,LM,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Tom van de Looi,261366,RM,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Georgios Koutsias,304317,F,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Sorriso,314606,AM-L,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Roméo Beney,362774,AM-R,titulaire,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Paulo Moreira,351541,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Umar Abubakar,407398,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Finn van Breemen,340623,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Óscar Aranda,297368,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Mathis Jangeal,411463,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Juvenal Augusto Gomes Correia,5326312,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Marcos Peña,338888,M,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Vojin Serafimovic,347632,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Patricio Salas,115044,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Gil Dias,229573,F,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Pedro Bondo,313915,D,remplacant,espn
+2026-11-01T19:55:12+00:00,401885409,por.1,P1,2026-11-01T20:30:00+00:00,FC Famalicao,4-2-3-1,Ivan Zlobin,240259,G,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Yohei Takaoka,272338,G,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Tristan Blackmon,256476,CD-L,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Mathías Laborda,286523,CD-R,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Tate Johnson,338836,LB,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Édier Ocampo,341727,RB,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Ryan Gauld,173404,AM,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Oliver Larraz,315920,LM,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Aleksa Cvetković,3111934,RM,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Brian White,249490,F,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Bruno Caicedo,365154,AM-L,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Yadaly Diaby,331644,AM-R,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Ranko Veselinovic,302798,D,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Isaac Boehmer,305783,G,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Ralph Priso-Mbongue,297118,M,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Thomas Müller,123465,F,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Cheick Sabaly,276451,F,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Mihail Gherasimencov,365829,D,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Kwasi Poku,328734,F,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Johnny Selemani,403773,F,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Vancouver Whitecaps,4-2-3-1,Rui Modesto,322100,M,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Andy Thomas,268173,G,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Jackson Ragen,254383,CD-L,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Alex Roldan,256514,CD-R,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Nouhou Tolo,252474,LB,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Kalani Kossa-Rienzi,319045,RB,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Albert Rusnák,171573,AM,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Cristian Roldan,216617,LM,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Snyder Brunell,384356,RM,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Dejan Joveljic,240110,F,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Jordan Morris,210252,AM-L,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Jesús Ferreira,251571,AM-R,titulaire,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Hassani Dotson,245570,M,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Ryan Sailor,319038,D,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Kim Kee-Hee,175922,D,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Antino Lopez,299188,D,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Sebastian Gomez,399948,M,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Caden Clark,302991,M,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Paul Arriola,159491,F,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Stefan Frei,131979,G,remplacant,espn
+2026-11-01T19:55:12+00:00,761927,usa.1,USA,2026-11-01T20:30:00+00:00,Seattle Sounders FC,4-2-3-1,Stuart Hawkins,371080,D,remplacant,espn

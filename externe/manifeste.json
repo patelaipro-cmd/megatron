@@ -1,19 +1,20 @@
 {
- "execution_le": "2026-11-01T19:08:17+00:00",
+ "execution_le": "2026-11-01T19:55:12+00:00",
  "sources": {
   "fpl": {
-   "statut": "erreur",
-   "erreur": "HTTPError: HTTP Error 403: Forbidden"
+   "lignes": 193,
+   "fichier": "inchange",
+   "statut": "ok"
   },
   "apifootball": {
    "statut": "erreur",
    "erreur": "RuntimeError: API-Football /status : {'access': 'Your account is suspended, check on https://dashboard.api-football.com.'}"
   },
   "espn": {
-   "matchs_proches": 3,
-   "lignes": 130,
+   "matchs_proches": 2,
+   "lignes": 86,
    "erreurs_ligues": [],
-   "fichier": "espn/compos/2026-11-01/1908.csv",
+   "fichier": "espn/compos/2026-11-01/1955.csv",
    "statut": "ok"
   }
  }
