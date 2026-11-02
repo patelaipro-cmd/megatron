@@ -1,0 +1,91 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Matias Borgogno,273253,G,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Héctor Martínez,228387,CD-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Nazareno Roselli,384316,CD-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Demian Domínguez,402600,LB,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Valentín Loza,418765,RB,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,David Barbona,186887,AM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,César Pérez,192087,LM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Santiago Sosa,271473,RM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Leandro Miguel Fernandez,40376,F,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Jeremías Lucco,366938,AM-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Juan Gutiérrez,284845,AM-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Ayrton Portillo,310786,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Lucas Souto,292176,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Ezequiel Burdin Márquez,3096180,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Aaron Molinas,303319,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Agustin Hausch,301971,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Tomás Pérez,361299,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Fernando Román,225153,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Tiziano Perrota,406297,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Nicolás Palavecino,324104,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Domingo Blanco,195729,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Maximiliano Porcel,371519,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Defensa y Justicia,4-2-3-1,Lautaro Amade,264960,G,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Santiago Mele,203067,G,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Juan Migue Arrayago,3112633,CD-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Sebastian Valdez,236681,CD-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Nahuel Banegas,292059,LB,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Santiago Arias,164756,RB,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Facundo Lionel Cruz,3112632,CM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Maximiliano Meza,172539,LM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Mateo Pérez,317219,RM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Chimy Ávila,217588,F,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Josias Palais,414360,LF,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Santiago Montiel,307331,RF,titulaire,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Rodrigo Rey,154747,G,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Ruben Martinez,361260,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Tomás Parmo,379664,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Felipe Tempone,420706,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Lautaro Millán,384667,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Juan Fedorco,293381,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Imanol Machuca,285040,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Franco Calderon,285042,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Iván Morales,242437,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Facundo Zabala,310003,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Luciano Cabral,158304,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841657,arg.1,ARG,2026-11-02T22:00:00+00:00,Independiente,4-3-3,Leonardo Godoy,187848,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Juan Pablo Cozzani,271254,G,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Víctor Cuesta,200303,CD-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Ignacio Vázquez,3518,CD-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Tomas Silva,335100,LB,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Agustín Lagos,292394,RB,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Franco Zapiola,322911,AM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Ivan Gomez,166297,LM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Pablo Thomaz,274441,RM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Gonzalo Lencina,285380,F,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Guido Mainero,213170,AM-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Nicolas Retamar,310736,AM-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Juan Gauto,285245,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Celías Ingenthron,406528,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Eugenio Raggio,358106,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Bruno Sepúlveda,287687,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Brian Bustos,258437,G,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Mateo Mendia,382974,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Augusto Lotti,206681,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Maximiliano Amarfil,379729,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Bautista Merlini,233948,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Gastón Togni,252202,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Santiago Dalmasso,382979,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Platense,4-2-3-1,Juan Ignacio Saborido,319195,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Alan Aguerre,149387,G,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Yuri Casermeiro,382884,CD,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Nicolás Garrido,412316,CD-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Santiago Moyano,257734,CD-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Matías Vera,218440,CM-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Enzo Tiziano Ramirez Suarez,3144422,CM-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Dario Cáceres,269809,LM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Fernando Martínez,317313,RM,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Michael Santos,131758,F,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Diego Barrera,266508,CF-L,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Leonardo Sequeira,216663,CF-R,titulaire,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Federico Rodriguez,418046,M,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Javier Vallejos,365265,G,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Leonardo Marchi,278508,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Lautaro Agustín Amarelle,5328021,,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Facundo Alejandro Roldán,5328020,,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Kevin Jacobo Adrián Ibañez,3144423,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Lucas Bernabéu,368151,D,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Martín Francisco Cuitiño,3108989,F,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Iván Ignacio Ávila Vega,5328019,,remplacant,espn
+2026-11-02T21:59:40+00:00,401841649,arg.1,ARG,2026-11-02T22:00:00+00:00,Central Córdoba (Santiago del Estero),3-4-3,Ignacio Nahuel Santillan,3144424,F,remplacant,espn
