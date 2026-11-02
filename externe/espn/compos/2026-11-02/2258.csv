@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Tiago Volpi,145092,G,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Guzmán Rodríguez,302225,CD-L,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Gustavo Marques,334375,CD-R,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Juninho Capixaba,229555,LB,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Ryan Augusto,418512,RB,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Wallace Yan,358167,AM,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Fabinho,307934,LM,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Ramires,279941,RM,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Eduardo Sasha,199680,F,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Henry Mosquera,333314,AM-L,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Lucas Barbosa,248584,AM-R,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,José Herrera,335360,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Alix Vinicius,257335,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Eduardo Santos,296900,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Gustavinho,357358,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Cleiton,239368,G,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Vanderlan,307933,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Isidro Pitta,287035,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Agustín Sant'Anna,253486,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Bruno Gonçalves,319950,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Matheus Fernandes,225538,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Gabriel,171993,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Red Bull Bragantino,4-2-3-1,Vinicinho,383987,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Diogenes,322630,G,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Luan Peres,198546,CD-L,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,João Alencar,403721,CD-R,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Álvaro Barreal,279454,LB,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Rodinei,182187,RB,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Philippe Coutinho,130372,AM,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Christian Oliva,270486,LM,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Gustavo Henrique,399297,RM,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Gabriel Barbosa,182522,F,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Everton,198940,AM-L,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Gabriel Bontempo,399179,AM-R,titulaire,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,João Paulo,198561,G,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Samuel Mendes,421478,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Gabriel Menino,301544,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Benjamín Rollheiser,269813,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Igor,235894,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Gustavo Caballero,154853,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Miguel Terceros,330665,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Rony,236314,F,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,João Ananias,408862,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Rafael Gonzaga,404206,D,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Lima,222955,M,remplacant,espn
+2026-11-02T22:58:59+00:00,401841299,bra.1,BRA,2026-11-02T23:00:00+00:00,Santos,4-2-3-1,Arthur,216254,M,remplacant,espn
