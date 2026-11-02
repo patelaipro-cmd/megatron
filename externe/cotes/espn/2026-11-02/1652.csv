@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-02T16:52:00+00:00,espn,DraftKings,courante,I1,2026-11-02T17:30+00:00,Sassuolo,Fiorentina,401874963,2.8,3.5,2.25,38.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261102,d76d34d525f3b35c267fc9b4f606575b7018bc3ec82ad930711912bdad6c6c84,1X2
