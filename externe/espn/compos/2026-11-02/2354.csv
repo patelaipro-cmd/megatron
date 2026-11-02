@@ -1,0 +1,93 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Luis Ingolotti,268218,G,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Luciano Vallejo,399375,CD-L,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Clever Ferreira,381162,CD-R,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Julián Fernández,169126,DM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Juan Infante,179877,LB,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Leonel Di Plácido,176379,RB,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Franco Albanell,335314,CM-L,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Lautaro Godoy,387848,CM-R,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Nicolás Laméndola,276224,LM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Renzo Tesuri,216727,RM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Leandro Díaz,206959,F,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Maxi Villa,268526,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Rodrigo Granillo,420954,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Manuel Brondo,357495,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Gianluca Ferrari,277358,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Mauro Carrizo,361304,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Tomás Durso,263086,G,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Facundo Pimienta,339199,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Pedro Canelo,167609,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Juan Rodríguez,264801,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Gabriel Compagnucci,207650,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Ramiro Paunero,403094,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Atlético Tucumán,4-1-4-1,Ezequiel Ham,202476,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Brayan Cortés,200687,G,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Erik Godoy,172540,CD-L,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Francisco Álvarez,269818,CD-R,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Sebastián Prieto,218629,LB,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Franco Paredes,290507,RB,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Facundo Gutiérrez,142172,CM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Nicolás Oroz,195711,LM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Facundo Carrizo,414355,RM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Gastón Verón,270364,F,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Matías Giménez,101537,LF,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Diego Porcel,382948,RF,titulaire,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Claudio Bravo,235873,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Facundo Jainikoski,404537,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Gino Infantino,309471,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Kevin Coronel,361410,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Tomás Molina,233932,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Santino Gianini,419107,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Gabriel Florentín,288739,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Alan Alcaraz,422526,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Joaquin Gho,311120,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Gonzalo Siri Payer,335365,G,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Hernan Lopez,160646,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841644,arg.1,ARG,2026-11-03T00:15:00+00:00,Argentinos Juniors,4-3-3,Mateo Mendoza,199840,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Nicolás Bolcato,414351,G,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Alejo Osella,336665,D,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Juan Manuel Elordi,236006,D,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Ivan Villalba,252053,D,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Leonard Costa,358754,D,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Gonzalo Rios,315719,M,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Leonel Bucca,290595,M,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Tomás Bottari,302053,M,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,José Florentín,217153,M,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Fabrizio Sartori Prieto,309496,M,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Alex Arce,257754,F,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Victorio Ramis,205224,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Diego Crego,290741,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Kevin Vázquez,219074,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Rodrigo Atencio,338874,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Matías Reali,335510,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Alex Vigo,276021,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Luis Díaz,341790,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Stefano Moreyra,309424,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Emmanuel Gómez Riga,301990,G,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Matías Fernández,185434,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Luis Sequeira,213509,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Independiente Rivadavia,4-2-3-1,Ezequiel Bonifacio,207235,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Diego Rodríguez,200275,G,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Nicolás Meriano,302033,CD-L,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Santiago Daniele,387389,CD-R,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Luis Abraham,335674,LB,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Juan Alfaro,215564,RB,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Santiago Esquivel,393533,CM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Tomás Adoryan,338907,LM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Lautaro Gómez,384351,RM,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Adrián Balboa,208638,F,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,David Salazar,163064,LF,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Federico Medina,379901,RF,titulaire,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Federico Anselmo,210884,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Brandon Oviedo,396512,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Lautaro Villegas,317814,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Lautaro Cano,297759,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Nehuén Paz,189800,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Alexander Machado,288722,F,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Favio Álvarez,184817,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Ignacio Pais,317231,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Gino Santilli,317426,G,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Renzo Malanca,302931,D,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Santiago López Garcia,283756,M,remplacant,espn
+2026-11-02T23:54:00+00:00,401841652,arg.1,ARG,2026-11-03T00:15:00+00:00,Banfield,4-3-3,Lisandro Piñero,390387,F,remplacant,espn
