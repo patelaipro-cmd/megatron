@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-02T18:32:00+00:00,espn,DraftKings,courante,F1,2026-11-02T19:45+00:00,Lorient,Brest,401876419,2.55,3.15,2.95,73.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261102,ba097c111ccd301a04e54e58752156dd340fe1fe65aafb4214dd69fd86bcbbe3,1X2
+2026-11-02T18:32:00+00:00,espn,DraftKings,courante,I1,2026-11-02T19:45+00:00,Atalanta,Parma,401874971,1.4348,4.7,6.0,73.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261102,d9c86522fbb789f6df1f003810d4ea4dfe358863ee81e9dfe706924d90b831de,1X2
