@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Samuel Soares,307631,G,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Clément Lenglet,193917,CD-L,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Tomás Araújo,329691,CD-R,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Samuel Dahl,329653,LB,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Alexander Bah,265944,RB,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Gianluca Prestianni,339191,AM,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,João Palhinha,224144,LM,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Fredrik Aursnes,212900,RM,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Vangelis Pavlidis,220819,F,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Andreas Schjelderup,313415,AM-L,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Dodi Lukébakio,229443,AM-R,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Claudio Echeverri,361355,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Rafa Silva,192421,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Daniel Banjaqui,403874,D,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Jhon Durán,285629,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Jakub Kaminski,304933,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Anísio Cabral,403873,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Manu Silva,358451,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Tiago Dias Freitas,400474,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Alessandro Circati,332081,D,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Georgiy Sudakov,308603,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Anatoliy Trubin,286109,G,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Benfica,4-2-3-1,Souffian El Karouani,291730,D,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Matheus Mendes,302601,G,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Yahya Bojang,373196,D,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Isaac James,380857,D,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Sergi Gómez,120708,D,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Ian Luccas,304380,M,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Nabili Touaizi,276256,M,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Chissumba,379620,M,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Davy Gui,399003,M,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Dawda Camara,329667,F,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Lucas Figueiredo,314864,F,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Chiquinho,321359,F,titulaire,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Cédric Nuozzi,406867,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Samy Jr. Merheg,380621,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Zé Rafael,201660,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Mofe Jemide,366068,D,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,André Paulo,85096,G,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Zakaria Kessary,417824,M,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Julián Martinez,360071,D,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Vivaldo Semedo,349681,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Matheus França,318087,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Toni Tamarit,409256,F,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Diogo Spencer,381436,D,remplacant,espn
+2026-11-02T20:10:37+00:00,401885403,por.1,P1,2026-11-02T20:15:00+00:00,Alverca,3-4-3,Vasco Moreira,411399,M,remplacant,espn
