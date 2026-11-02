@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Lefteris Choutesiotis,206411,G,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Dimitris Tsakmakis,365715,CD-L,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Dimitrios Stavropoulos,251573,CD-R,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Georgios Papadopoulos,134049,LB,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Mattheos Mountes,356225,RB,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Steven Zuber,121505,AM,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Samuel Moutoussamy,260932,LM,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Thanasis Karamanis,360400,RM,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Juan Perea,293915,F,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Serginho,264237,AM-L,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Kelvin Ofori,291442,AM-R,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Panagiotis Tsantilas,392995,F,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Anastasios Kotsis,3130257,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Sotiris Tsiloulis,278908,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Hördur Magnússon,154751,D,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Vasilis Athanasiou,308838,G,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Theocharis Tsiggaras,291545,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Elton Hoxha,413662,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Giorgos Tzovaras,289440,F,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Seny Dieng,205253,G,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Jere Uronen,172923,D,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Stavros Pnevmonidis,387677,F,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Atromitos,4-2-3-1,Eleutherios Lyratzis,270292,D,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Marios Siampanis,233718,G,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Giannis Kargas,243198,CD-L,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Derek Agyakwa,306875,CD-R,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Quentin Lecoeuche,207017,LB,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Georgios Mygas,239516,RB,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Yvan Neyou,252477,AM,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Dzenis Burnic,225571,LM,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Maximiliano Comba,277200,RM,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Jan Hurtado,252023,F,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Rémy Cabella,136688,AM-L,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Joca,235668,AM-R,titulaire,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Alexandros Garavelas,3129673,F,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Athanasios Papathanasiou Gerofokoas,418090,G,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Francesc Regis,272490,F,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Ronael Pierre-Gabriel,231302,D,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Gustavo Furtado,387589,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Vasileios Grosdis,407209,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Matías González,117809,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Lazaros Lamprou,239401,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Fabio Refatllari,3129674,M,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Konstantinos Lykourinos,388935,D,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Stefanos Katsikas,320873,D,remplacant,espn
+2026-11-02T15:16:18+00:00,401896739,gre.1,G1,2026-11-02T16:00:00+00:00,Volos NFC,4-2-3-1,Georgios Charalampoglou,385981,F,remplacant,espn
