@@ -1,0 +1,43 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Irfan Can Egribayat,241797,G,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Metehan Baltaci,345237,CD-L,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Yigit Hamza Aydar,409145,CD-R,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Cheikh Niasse,284592,DM,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Thalisson Kelven,250903,LB,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Arda Çelik,387711,RB,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Franco Tongya,297219,CM-L,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Ogulcan Ülgün,322841,CM-R,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Tiago Gouveia,290081,LM,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Adama Traoré,231367,RM,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Pedro Mendes,296162,F,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Firatacan Uzum,287200,D,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Abdurrahim Dursun,257300,D,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Salih Ucan,183152,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Prince Martor,415388,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Furkan Ayaz,408770,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Gökhan Akkan,240203,G,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Goktug Erdem,324122,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Rafael Luís,405540,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Victor Orakpo,388090,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Genclerbirligi,4-1-4-1,Bilal Sari,422219,D,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Paulo Victor,143774,G,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Fidan Aliti,202173,CD,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Bedirhan Özyurt,337894,CD-L,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Nuno Lima,324561,CD-R,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Baran Gezek,346891,CM-L,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Gaïus Makouta,297014,CM-R,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Maestro,297033,AM,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Ruan,349018,LM,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Florent Hadergjonaj,212334,RM,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Iván Cédric,362717,CF-L,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Ibrahim Kaya,387821,CF-R,titulaire,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Hwang Ui-Jo,236628,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Emre Demir,238638,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Meschack Elia,232492,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Omar Ben Ali,397071,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Enes Keskin,290205,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Yusuf Ozdemir,308850,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Arda Usluoglu,392055,F,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Mert Bayram,387503,G,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Izzet Celik,322811,M,remplacant,espn
+2026-11-02T16:24:07+00:00,401888260,tur.1,T1,2026-11-02T17:00:00+00:00,Alanyaspor,3-5-2,Ianis Hagi,240062,M,remplacant,espn
