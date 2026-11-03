@@ -1,9 +1,9 @@
 {
- "execution_le": "2026-11-03T16:15:15+00:00",
+ "execution_le": "2026-11-03T18:10:53+00:00",
  "sources": {
   "fpl": {
-   "lignes": 192,
-   "fichier": "inchange",
+   "lignes": 193,
+   "fichier": "fpl/2026-11-03/1810.csv",
    "statut": "ok"
   },
   "apifootball": {
