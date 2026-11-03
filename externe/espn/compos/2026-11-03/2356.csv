@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Kauan,361392,G,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Gabriel Mercado,76818,CD,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Thiago Maia,213239,CD-L,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Juninho,222664,CD-R,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Rodrigo Villagra,286704,CM-L,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Vitinho,287903,CM-R,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Matheus Bahia,304656,LM,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Brian Aguirre,309131,RM,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Alerrando,270260,F,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Johan Carbonero,270246,CF-L,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Bruno Gomes,295006,CF-R,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Victor Gabriel,319790,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,João Bezerra,417352,F,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,João Victor,401055,F,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Calebe,304469,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Alexander Bernabei,285029,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Niclas Eliasson,202700,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Bruno Henrique,188485,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Ronaldo,229574,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Allex,361374,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Paulinho,289499,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Guillermo Maripán,200562,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Internacional,3-4-2-1,Henrique Menke,382893,G,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Pedro Luccas,364880,G,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Jacy Maranhão,256018,CD-L,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Tiago,319507,CD-R,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Bruno Melo,243831,LB,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Tinga,200826,RB,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Breno,236324,AM,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Sebastián Gómez,128368,LM,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Thiago Santos,188143,RM,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Josué Pesqueira,150215,F,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Pedro Rocha,216846,AM-L,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Nicolás Fonseca,276240,AM-R,titulaire,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Rodrigo,358798,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Joaquín Lavega,333306,F,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Rodrigo Rodrigues,236410,F,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Tissi,402818,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Brian Ocampo,276058,F,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Fabricio Bustos,242711,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Rodrigo Moledo,155268,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Pedro Rangel,311037,G,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Richard,198346,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Maicon,124025,D,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Paulo Roberto,417356,M,remplacant,espn
+2026-11-03T23:56:23+00:00,401841301,bra.1,BRA,2026-11-04T00:30:00+00:00,Coritiba,4-2-3-1,Vini Paulista,316781,F,remplacant,espn
