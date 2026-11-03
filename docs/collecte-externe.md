@@ -80,3 +80,21 @@ signalée. Aucune probabilité n'est modifiée.
 - **Sonde du 29/10/2026 18:30 UTC** (`sonde-sources.yml`) : l'API ESPN répond 200 depuis GitHub ; ses compos (`rosters`) n'apparaissent qu'une fois publiées et elle ne donne **aucune blessure** (champ `injuries` absent). ESPN est une 2e famille pour les compos, pas pour les absences. CGU ESPN : usage de l'API non documenté (gris) ; ESPN exploite une marque de paris (affiliation probable). ClubElo toujours 502, aussi en http.
 - API-Football : sans le secret, la source est « ignore ». Le plan gratuit peut refuser la saison en cours (réponse `errors`) : le premier run le dira dans `statut.json`/manifeste. La clé passe en en-tête, jamais dans l'URL ni les journaux.
 - Rien de tout cela ne modifie une probabilité : faits déclaratifs pour `contexte_favori`, aucune utilisation dans les modèles sans expérience validée.
+
+## Source `apify` : tâche Sofascore du compte Apify de Luloki (03/11/2026)
+
+Sofascore refuse les serveurs GitHub (403). La collecte n'est pas faite par Megatron :
+Luloki crée et planifie dans son compte Apify une tâche de l'acteur `abotapi/sofascore-scraper`
+(mode `scheduled`, `includeLineups` activé, statistiques/incidents/classements désactivés,
+proxy Apify désactivé sur l'offre gratuite). Megatron lit seulement le dernier run réussi :
+
+- secrets Actions : `APIFY_TOKEN` (jeton API Apify) et `APIFY_TACHE_SOFASCORE`
+  (identifiant de la tâche, ou `utilisateur~nom-de-tache`) ; sans eux, la source est « ignore » ;
+- seuls les matchs des ligues de `data/ligues_collecte.json` (champ `tournamentId`), non commencés
+  et dont le coup d'envoi est postérieur à la fin du run, sont gardés ;
+- `collecte_le` = fin du run Apify (borne prudente) ; un run déjà lu n'est pas relu ;
+- sortie : `externe/sofascore_apify/<jour>/<HHMM>.csv`, mêmes colonnes que `sofascore`.
+  Lecture : `python scripts/lire_externe.py joueurs --source sofascore_apify ... --avant <coup d'envoi>`.
+
+Limite : `expectedEndDate` (retour prévu) n'est pas conservé, car il reflète le jour de collecte.
+Coût : facturé par Apify au compte de Luloki (environ 0,0026 $ par match avec compo).
