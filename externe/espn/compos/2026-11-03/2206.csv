@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Anderson Paixão,276217,G,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Eduardo Doma,319649,CD-L,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Kauan,338663,CD-R,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Bruno Pacheco,236283,LB,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Heitor,285446,RB,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Giovanni Augusto,140012,AM,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Yago Felipe,202554,LM,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Camilo,285089,RM,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Túlio Eduardo Silva De Oliveira,3108270,F,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Yannick Bolasie,121921,AM-L,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Marcinho,64671,AM-R,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Kevin Ramírez,199933,F,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Bruno Matias,157066,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Dylan Borrero,287368,F,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Fernando,301225,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Rafael Thyere,199068,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Franco Rossi,317377,F,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Max,287768,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,David,396967,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Miguel Carvalho,306516,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Dudu,249088,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Matheus,269645,G,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Chapecoense,4-2-3-1,Victor Caetano,250918,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Walter,196851,G,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Reinaldo,115379,D,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Igor Marques,299967,D,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Lucas Oliveira,233888,D,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,João Victor,250899,D,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Shaylon,252610,M,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Alesson,250388,M,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Neto Moura,203715,M,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Carlos Eduardo,174782,M,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Denilson,325101,M,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,André Luis,205448,F,titulaire,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Gabriel,338674,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Carlos Eduardo,218974,F,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,João Wellington,358337,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Wallison Luiz,269848,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Gustavo Mosquito,250904,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Thomazella,203754,G,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Zé Roberto,201623,F,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Fernando,218913,F,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Willian Machado,270797,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Chico,198273,M,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,Daniel Borges,156502,D,remplacant,espn
+2026-11-03T22:06:50+00:00,401841304,bra.1,BRA,2026-11-03T22:30:00+00:00,Mirassol,4-2-3-1,José Aldo,290092,M,remplacant,espn
