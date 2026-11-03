@@ -1,5 +1,5 @@
 {
- "execution_le": "2026-11-03T10:15:48+00:00",
+ "execution_le": "2026-11-03T11:15:23+00:00",
  "sources": {
   "fpl": {
    "lignes": 192,
@@ -15,6 +15,10 @@
    "lignes": 0,
    "erreurs_ligues": [],
    "statut": "ok"
+  },
+  "apify": {
+   "statut": "ignore",
+   "raison": "secrets APIFY_TOKEN / APIFY_TACHE_SOFASCORE absents"
   }
  }
 }
