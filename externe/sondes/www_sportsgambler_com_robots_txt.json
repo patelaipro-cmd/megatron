@@ -1,7 +1,0 @@
-{
- "sonde_le": "2026-11-03T02:08:52+00:00",
- "url": "https://www.sportsgambler.com/robots.txt",
- "code": 200,
- "type": "text/plain; charset=utf-8",
- "extrait": "User-Agent: *\nDisallow: /team-news_player.php\nDisallow: /r/\nDisallow: /admin/\nDisallow: /odds.php\nDisallow: /betting-sites/go/*\n\nSitemap: https://www.sportsgambler.com/sitemap-betting-tips.xml\nSitemap: https://www.sportsgambler.com/sitemap-fixtures.xml\nSitemap: https://www.sportsgambler.com/sitemap-tables.xml\nSitemap: https://www.sportsgambler.com/sitemap-injuries.xml\nSitemap: https://www.sportsgambler.com/sitemap-lineups.xml\nSitemap: https://www.sportsgambler.com/sitemap-betting-tips-hub.xml\nSitemap: https://www.sportsgambler.com/sitemap-live-streaming.xml\nSitemap: https://www.sportsgambler.com/sitemap-teams.xml\nSitemap: https://www.sportsgambler.com/sitemap.xml\nSitemap: https://www.sportsgambler.com/betting-sites/sitemap_index.xml"
-}
