@@ -1,0 +1,7 @@
+{
+ "sonde_le": "2026-11-03T02:08:52+00:00",
+ "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/teams/359/injuries",
+ "code": 200,
+ "type": "application/json;charset=utf-8",
+ "extrait": "{\"count\":0,\"pageIndex\":0,\"pageSize\":25,\"pageCount\":0,\"items\":[]}"
+}

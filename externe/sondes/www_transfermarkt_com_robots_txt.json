@@ -1,0 +1,7 @@
+{
+ "sonde_le": "2026-11-03T02:08:52+00:00",
+ "url": "https://www.transfermarkt.com/robots.txt",
+ "code": 200,
+ "type": "text/plain; charset=utf-8",
+ "extrait": "User-agent: Slurp\nCrawl-delay: 2\n\nUser-agent: Mediapartners-Google\nDisallow:\n\nUser-agent: wget\nDisallow: /\n\nUser-agent: *\nAllow: /\n"
+}

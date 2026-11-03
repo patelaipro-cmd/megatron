@@ -1,0 +1,7 @@
+{
+ "sonde_le": "2026-11-03T02:08:52+00:00",
+ "url": "https://www.physioroom.com/robots.txt",
+ "code": 200,
+ "type": "text/plain",
+ "extrait": "User-agent:Yandex\r\nDisallow: /\r\n\r\nUser-agent: DotBot\r\nDisallow: /\r\n\r\nUser-agent: *\r\nDisallow: /admin\r\nDisallow: /basket\r\nDisallow: /checkout\r\nDisallow: /customerimages\r\nDisallow: /customermedia\r\nDisallow: /search\r\nDisallow: /common/switchview\r\nDisallow: /product/logproductviews\r\nDisallow: /getbasketheader\r\nDisallow: /getcountitembasket\r\nDisallow: /home/error\r\nDisallow: /home/notfound\r\n\r\nSitemap: https://www.physioroom.com/sitemap.xml"
+}

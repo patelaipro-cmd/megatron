@@ -1,0 +1,7 @@
+{
+ "sonde_le": "2026-11-03T02:08:52+00:00",
+ "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/injuries",
+ "code": 200,
+ "type": "application/json;charset=UTF-8",
+ "extrait": "{\"timestamp\":\"2026-11-03T02:08:10Z\",\"status\":\"success\",\"season\":{\"year\":2026,\"type\":14308,\"name\":\"2026-27 English Premier League\",\"displayName\":\"2026-27 English Premier League\"},\"injuries\":[]}"
+}
