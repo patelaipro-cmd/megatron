@@ -317,5 +317,53 @@ class TestApiFootball(unittest.TestCase):
             self.assertEqual(m["sources"]["apifootball"]["statut"], "ignore")
 
 
+class TestApify(unittest.TestCase):
+    RUN = {"data": {"id": "run1", "finishedAt": "2026-10-29T12:00:00.000Z", "defaultDatasetId": "ds1"}}
+
+    def items(self):
+        base = {"homeTeam": "Lens", "awayTeam": "Lille", "lineups": COMPO}
+        return [{**base, "id": 1, "tournamentId": 34, "statusType": "notstarted", "startTimestamp": MAINTENANT + 7200},
+                {**base, "id": 2, "tournamentId": 34, "statusType": "finished", "startTimestamp": MAINTENANT - 7200},
+                {**base, "id": 3, "tournamentId": 999, "statusType": "notstarted", "startTimestamp": MAINTENANT + 7200},
+                {**base, "id": 4, "tournamentId": 34, "statusType": "notstarted", "startTimestamp": MAINTENANT - 60}]
+
+    def lire(self, appels):
+        def lire(url):
+            appels.append(url)
+            if "/runs/last" in url:
+                return json.dumps(self.RUN).encode()
+            if "/datasets/ds1/items" in url:
+                return json.dumps(self.items()).encode()
+            raise AssertionError(url)
+        return lire
+
+    def test_filtre_ligue_statut_et_anti_fuite(self):
+        lignes = ce.lignes_apify(self.items(), LIGUES, "t", MAINTENANT)
+        self.assertEqual({r["event_id"] for r in lignes}, {1})
+        self.assertIn("absent", {r["statut"] for r in lignes})
+
+    def test_bout_en_bout_collecte_le_fin_du_run_et_run_lu_une_fois(self):
+        with tempfile.TemporaryDirectory() as d:
+            appels = []
+            conf = {"sofascore": [{"id": 34, "division": "F1", "nom": "Ligue 1"}], "understat": []}
+            m = ce.collecter(Path(d), ["apify"], MAINTENANT + 999, lire=self.lire(appels), config=conf)
+            res = m["sources"]["apify"]
+            self.assertEqual(res["statut"], "ok")
+            with (Path(d) / res["fichier"]).open() as f:
+                lignes = list(csv.DictReader(f))
+            self.assertTrue(lignes)
+            self.assertEqual({r["collecte_le"] for r in lignes}, {"2026-10-29T12:00:00+00:00"})
+            m = ce.collecter(Path(d), ["apify"], MAINTENANT + 2000, lire=self.lire(appels), config=conf)
+            self.assertEqual(m["sources"]["apify"]["fichier"], "inchange")
+            self.assertEqual(sum("/items" in u for u in appels), 1)
+
+    def test_sans_secrets_la_source_est_ignoree(self):
+        import os
+        import unittest.mock as um
+        with tempfile.TemporaryDirectory() as d, um.patch.dict(os.environ, {"APIFY_TOKEN": "", "APIFY_TACHE_SOFASCORE": ""}):
+            m = ce.collecter(Path(d), ["apify"], MAINTENANT, config={"sofascore": [], "understat": []})
+            self.assertEqual(m["sources"]["apify"]["statut"], "ignore")
+
+
 if __name__ == "__main__":
     unittest.main()

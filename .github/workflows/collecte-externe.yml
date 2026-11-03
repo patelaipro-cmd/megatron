@@ -10,7 +10,7 @@ on:
     inputs:
       sources:
         description: "Sources séparées par des virgules"
-        default: "sofascore,fpl,clubelo,understat,apifootball,espn"
+        default: "sofascore,fpl,clubelo,understat,apifootball,espn,apify"
 permissions:
   contents: write
 concurrency:
@@ -29,8 +29,8 @@ jobs:
         id: choix
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then s="${{ inputs.sources }}"
-          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat,apifootball,espn"
-          else s="fpl,apifootball,espn"; fi  # Sofascore 403 depuis GitHub (29/10) : tenté une fois par jour seulement
+          elif [ "${{ github.event.schedule }}" = "40 5 * * *" ]; then s="sofascore,fpl,clubelo,understat,apifootball,espn,apify"
+          else s="fpl,apifootball,espn,apify"; fi  # Sofascore 403 depuis GitHub (29/10) : tenté une fois par jour seulement
           echo "sources=$s" >> "$GITHUB_OUTPUT"
       - name: Dépendances
         run: |
@@ -49,6 +49,8 @@ jobs:
       - name: Collecter
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_TACHE_SOFASCORE: ${{ secrets.APIFY_TACHE_SOFASCORE }}
         run: python scripts/collecte_externe.py --sortie donnees/externe --sources "${{ steps.choix.outputs.sources }}"
       - name: Publier
         if: always()
