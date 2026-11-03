@@ -1,10 +1,22 @@
 {
- "execution_le": "2026-11-03T06:16:00+00:00",
+ "execution_le": "2026-11-03T06:30:14+00:00",
  "sources": {
+  "sofascore": {
+   "statut": "erreur",
+   "erreur": "RuntimeError: HTTP 403 sur https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-11-03"
+  },
   "fpl": {
    "lignes": 192,
    "fichier": "inchange",
    "statut": "ok"
+  },
+  "clubelo": {
+   "statut": "erreur",
+   "erreur": "HTTPError: HTTP Error 502: Bad Gateway"
+  },
+  "understat": {
+   "statut": "erreur",
+   "erreur": "HTTPError: 0 TLS Client Error: failed to do request: Get \"https://understat.com/getStatData\": dial tcp 45.90.32.72:443: i/o timeout (Client.Timeout exceeded while awaiting headers) for url: https://understat.com/getStatData"
   },
   "apifootball": {
    "statut": "erreur",
