@@ -8,6 +8,9 @@ Sources (choix Luloki du 29/10/2026, voir docs/collecte-externe.md) :
 - fpl : statut officiel des joueurs Premier League (blessure, suspension, chance de jouer) ;
 - clubelo : classement Elo du jour (tous les clubs européens) ;
 - understat : statistiques d'équipe par match (xG) de la saison en cours (5 ligues couvertes par Understat) ;
+- apify : lecture du dernier run réussi de la tâche Apify Sofascore créée et lancée par Luloki
+  dans son propre compte (secrets `APIFY_TOKEN`, `APIFY_TACHE_SOFASCORE`) ; aucun scraping ici,
+  seulement la lecture de son jeu de données. `collecte_le` = fin du run Apify ;
 - apifootball : blessures/suspensions (toutes ligues) et compos officielles des ligues de
   data/ligues_collecte.json, clé `API_FOOTBALL_KEY` (secret Actions), budget de 90 requêtes/jour.
 
@@ -33,6 +36,7 @@ import os
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -45,7 +49,9 @@ CLUBELO_PAYS = {"ENG": "E0", "ESP": "SP1", "ITA": "I1", "GER": "D1", "FRA": "F1"
                 "POR": "P1", "TUR": "T1", "GRE": "G1", "SCO": "SC0", "AUT": "AUT", "SUI": "SUI", "DEN": "DEN",
                 "SWE": "SWE", "NOR": "NOR", "FIN": "FIN", "POL": "POL", "ROM": "ROM", "RUS": "RUS", "IRL": "IRL"}
 FPL_STATUT = {"a": "disponible", "d": "incertain", "i": "blesse", "s": "suspendu", "u": "indisponible", "n": "non_eligible"}
-SOURCES = ("sofascore", "fpl", "clubelo", "understat", "apifootball", "espn")
+SOURCES = ("sofascore", "fpl", "clubelo", "understat", "apifootball", "espn", "apify")
+APIFY_API = "https://api.apify.com/v2"
+APIFY_CHAMPS = "id,startTimestamp,statusType,homeTeam,awayTeam,tournamentId,lineups"
 ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 APIFOOTBALL = "https://v3.football.api-sports.io"
 APIFOOTBALL_BUDGET_JOUR = 90  # plan gratuit : 100 requêtes/jour, 10 gardées en réserve
@@ -176,6 +182,45 @@ def collecter_sofascore(maintenant: float, ligues: dict[int, str], lire=lire_url
     if matchs and erreurs == len(matchs):
         raise RuntimeError(f"aucune compo lisible sur {len(matchs)} matchs")
     return lignes
+
+
+# --- Apify (tâche Sofascore du compte de Luloki) --------------------------
+
+def lecteur_apify(jeton: str):
+    def lire(url: str) -> bytes:
+        req = urllib.request.Request(url, headers={**HEADERS, "Authorization": f"Bearer {jeton}"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return r.read()
+    return lire
+
+
+def lignes_apify(items: list[dict], ligues: dict[int, str], collecte_le: str, fin_run: float) -> list[dict]:
+    """Matchs suivis non commencés à la fin du run : compo confirmée et absents/incertains."""
+    lignes = []
+    for it in items:
+        tid = it.get("tournamentId")
+        if tid not in ligues or it.get("statusType") != "notstarted" or not it.get("lineups"):
+            continue
+        if it.get("startTimestamp", 0) <= fin_run:  # anti-fuite : la donnée doit précéder le coup d'envoi
+            continue
+        match = {"event_id": it["id"], "division": ligues[tid], "coup_envoi": utc(it["startTimestamp"]),
+                 "domicile": it.get("homeTeam", ""), "exterieur": it.get("awayTeam", "")}
+        lignes.extend(lignes_compo(match, it["lineups"], collecte_le))
+    return lignes
+
+
+def collecter_apify(tache: str, ligues: dict[int, str], etat: dict, lire) -> dict:
+    """Lit le dernier run réussi de la tâche ; un run déjà lu n'est pas relu."""
+    tache = urllib.parse.quote(tache, safe="~")
+    run = lire_json(f"{APIFY_API}/actor-tasks/{tache}/runs/last?status=SUCCEEDED", lire)["data"]
+    if etat.get("apify", {}).get("run") == run["id"]:
+        return {"run": run["id"], "lignes": 0, "fichier": "inchange"}
+    fin = datetime.fromisoformat(run["finishedAt"].replace("Z", "+00:00")).timestamp()
+    items = lire_json(f"{APIFY_API}/datasets/{run['defaultDatasetId']}/items?clean=true&format=json"
+                      f"&fields={APIFY_CHAMPS}", lire)
+    lignes = lignes_apify(items, ligues, utc(fin), fin)
+    etat.setdefault("apify", {})["run"] = run["id"]
+    return {"run": run["id"], "items": len(items), "lignes": len(lignes), "_lignes": lignes, "_fin": fin}
 
 
 # --- FPL, ClubElo, Understat ---------------------------------------------
@@ -488,6 +533,18 @@ def collecter(dossier: Path, sources, maintenant: float | None = None, lire=lire
                 res = {"matchs_proches": r["matchs_proches"], "lignes": len(r["compos"]), "erreurs_ligues": r["erreurs_ligues"]}
                 if r["compos"]:
                     res["fichier"] = ecrire_instantane(dossier, "espn/compos", r["compos"], COLONNES_ESPN, maintenant, etat)
+            elif source == "apify":
+                jeton = os.environ.get("APIFY_TOKEN", "").strip()
+                tache = os.environ.get("APIFY_TACHE_SOFASCORE", "").strip()
+                if not (jeton and tache) and lire is lire_url:
+                    manifeste["sources"][source] = {"statut": "ignore",
+                                                    "raison": "secrets APIFY_TOKEN / APIFY_TACHE_SOFASCORE absents"}
+                    continue
+                res = collecter_apify(tache or "tache", ligues_sofascore(config), etat,
+                                      lecteur_apify(jeton) if lire is lire_url else lire)
+                lignes, fin = res.pop("_lignes", None), res.pop("_fin", None)
+                if lignes:
+                    res["fichier"] = ecrire_instantane(dossier, "sofascore_apify", lignes, COLONNES_SOFASCORE, fin, etat)
             elif source == "understat":
                 res = {"lignes": collecter_understat(maintenant, dossier, config["understat"])}
             else:
