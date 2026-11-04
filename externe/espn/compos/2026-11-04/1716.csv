@@ -1,0 +1,89 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Alberto Brignoli,175264,G,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Lazaros Rota,302487,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Stavros Pilios,285427,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Filipe Relvas,324593,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Harold Moukoudi,218951,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Lovro Majer,237549,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Kervin Arriaga,260554,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Aboubakary Koita,260026,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Kaan Kairinen,235669,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Mijat Gacinovic,192943,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Luka Jovic,221332,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Oleksandr Zubkov,228267,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Thomas Strakosha,180047,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Milán Vitális,364626,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Razvan Marin,239738,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Domagoj Vida,148110,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Marios Balamotis,409595,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Zini,297754,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Barnabás Varga,246666,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Petros Mantalos,213392,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,AEK Athens,4-4-2,Charalampos Lykogiannis,170670,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Thibaut Courtois,134283,G,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Éder Militão,228402,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Denzel Dumfries,213248,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Antonio Rüdiger,169438,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Marc Cucurella,259910,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Yan Diomande,402479,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Eduardo Camavinga,285150,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Bernardo Silva,199833,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Jude Bellingham,291281,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Vinícius Júnior,252107,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Kylian Mbappé,231388,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Ibrahima Konaté,251634,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Thiago Pitarch,409019,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Álvaro Carreras,310637,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Carlos Espí,380286,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Sergio Mestre,350351,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Brahim Díaz,246532,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Federico Valverde,235818,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Dean Huijsen,356000,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Trent Alexander-Arnold,223532,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Andriy Lunin,257237,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Sergio Martínez,409318,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915383,uefa.champions,,2026-11-04T17:45:00+00:00,Real Madrid,4-2-3-1,Endrick,346612,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Ederson,176948,G,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Archie Brown,320982,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Kojo Peprah Oppong,357205,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Milan Skriniar,175195,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Nélson Semedo,222670,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Matteo Guendouzi,248676,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,N'Golo Kanté,173556,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Ismail Yüksek,305629,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Mason Greenwood,276221,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Irfan Can Kahveci,211923,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Romelu Lukaku,139437,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Yiğit Demir,340186,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Nene Dorgeles,329486,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Oguz Aydin,322813,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Bartug Elmaz,311984,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Tarik Cetin,275128,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Kerem Aktürkoglu,306789,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Munir Mercan,290511,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Vedat Muriqi,240209,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Mert Günok,124880,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Ognjen Mimovic,380332,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Fenerbahce,4-3-3,Mert Müldür,266002,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Alisson Becker,196876,G,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Jérémy Jacquet,355980,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Kostas Tsimikas,226177,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Joe Gomez,102053,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Virgil van Dijk,157892,D,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Alexis Mac Allister,249299,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Trey Nyoni,356075,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Rio Ngumoha,379588,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Dominik Szoboszlai,257206,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Víctor Muñoz,397545,M,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Bradley Barcola,328238,F,titulaire,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Luke Chambers,32572,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Freddie Woodman,194121,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Jayden Danns,354737,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Milos Kerkez,323110,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,James McConnell,326230,M,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Giorgi Mamardashvili,274742,G,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Ronald Araujo,270821,D,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Cody Gakpo,249524,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Lewis Koumas,350661,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Alexander Isak,235662,F,remplacant,espn
+2026-11-04T17:16:54+00:00,401915382,uefa.champions,,2026-11-04T17:45:00+00:00,Liverpool,4-2-3-1,Florian Wirtz,303748,M,remplacant,espn
