@@ -1,0 +1,93 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Mycael,322655,G,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Juan Felipe Aguirre,270242,CD,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Arthur Dias,381170,CD-L,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Dantas,360826,CD-R,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Luiz Gustavo,113352,CM-L,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Jádson,173351,CM-R,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Lucas Esquivel,309499,LM,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Gastón Benavídez,287688,RM,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Kevin Viveros,268476,F,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Stiven Mendoza,197049,CF-L,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Kerwin Vargas,340596,CF-R,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Bruno Zapelli,296574,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Bruno Baldini,400904,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Jorge Rivaldo,378910,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,João Cruz,361359,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Gilberto,198761,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Leonardo Derik,338881,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Leozinho,380327,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Filipinho,315789,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Eduardo,361357,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Santos,153754,G,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Renan,315283,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Athletico Paranaense,3-4-2-1,Juan Portilla,94976,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Léo Jardim,205464,G,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Alan Saldivia,317383,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Gabriel Pereira,285142,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Robert,337099,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Alan Lescano,336485,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,José Luis Rodríguez,43711,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Santiago Sosa,271473,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Thiago Mendes,201717,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Cuiabano,334756,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Andrés Gómez,330924,F,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Brenner,257744,F,titulaire,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Nuno Moreira,323815,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Facundo Colidio,275941,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Bruno Duarte,292259,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Daniel Fuzato,252052,G,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Ramon Rique,402641,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Adson,315293,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Paulo Henrique,234842,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Lucas Piton,287862,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Jair,196873,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,David,219005,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Tchê Tchê,198302,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841306,bra.1,BRA,2026-11-04T22:30:00+00:00,Vasco da Gama,3-5-2,Lucas Freitas,312657,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Agustín Rossi,215388,G,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Ayrton Lucas,203077,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Léo Ortiz,252316,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Guillermo Varela,188368,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Léo Pereira,145405,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Erick Pulgar,202533,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Jorginho,165778,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Jorge Carrascal,208700,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Samuel Lino,253937,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Giorgian de Arrascaeta,179767,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Pedro,235017,F,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Joaquin Freitas,414769,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Anthony Valencia,303328,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Saúl Ñíguez,172269,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Andrew,278802,G,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Dyogo Alves,343843,G,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Nicolás de la Cruz,251889,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Bruno Henrique,201683,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Vitão,254145,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Emerson Royal,246844,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Luiz Araújo,234765,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Johnny Góes,401309,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Flamengo,4-2-3-1,Evertton,334752,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Gabriel Grando,317014,G,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Gustavo Martins,314603,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Caio Paulista,95558,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Marcos Rocha,185994,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Wálter Kannemann,146109,D,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Erick Noriega,303030,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Dodi,213879,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Pedro Gabriel,399092,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Mathías Villasanti,238449,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Mateus Tetê,287664,M,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Martin Braithwaite,187100,F,titulaire,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Jovane Cabral,250059,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Filip Krovinovic,226787,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Bernardo Zortea,400264,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Matheus Nascimento,304659,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Wagner Leonardo,286201,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,João Pedro,213260,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Wallace,383983,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Thiago Stallbaum,379334,G,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,João Borne,421521,M,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Fabián Balbuena,199101,D,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,José Enamorado,286714,F,remplacant,espn
+2026-11-04T22:07:17+00:00,401841307,bra.1,BRA,2026-11-04T22:30:00+00:00,Grêmio,4-1-4-1,Francis Amuzu,269079,F,remplacant,espn
