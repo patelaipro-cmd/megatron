@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Brice Samba,164126,G,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Charlie Cresswell,307713,CD,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Gonçalo Oliveira,401410,CD-L,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Anthony Rouault,291614,CD-R,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Mahamadou Nagida,372260,LB,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Bryan Reynolds,250758,RB,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Adrien Thomasson,173266,CM,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Mahdi Camara,268966,CM-L,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Sebastian Szymanski,243844,CM-R,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Mousa Al-Tamari,257489,CF-L,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Boulaye Dia,282381,CF-R,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Arnaud Nordin,242738,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Quentin Merlin,313890,D,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Henrick Do Marcolino,398977,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Abdelhamid Aït Boudlal,376339,D,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Djaoui Cissé,355982,M,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Ludovic Blas,223120,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Nicolas Lemaitre,217668,G,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Valentin Rongier,207136,M,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Kilian Belazzoug,414191,G,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Elias Legendre,415193,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Eliezer Mayenda,332862,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Stade Rennais,5-3-2,Issa Soumaré,297743,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Stefan Ortega,151855,G,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,David Carmo,236301,CD-L,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Panagiotis Retsos,233973,CD-R,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Bruno Onyemaechi,347628,LB,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Manolis Saliakas,202696,RB,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Gustavo Sá,347406,AM,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Gustavo Puerta,341736,LM,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Santiago Hezze,290539,RM,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Armando González,376110,F,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Kostas Fortounis,160020,AM-L,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Leon Bailey,224809,AM-R,titulaire,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Dimitrios Stournaras,308834,G,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Marcus Holmgren Pedersen,129285,D,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Nayair Tiknizyan,266070,D,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Remo Freuler,152600,M,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Gelson Martins,215319,M,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Zinedin Smajlovic,365771,D,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Paschalis Toufakis,387684,M,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Iason Georgakopoulos,3126810,G,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Chiquinho,275935,M,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Jota Silva,344692,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Roman Yaremchuk,219543,F,remplacant,espn
+2026-11-04T15:12:35+00:00,401915551,uefa.europa,,2026-11-04T15:30:00+00:00,Olympiacos,4-2-3-1,Lorenzo Pirola,290069,D,remplacant,espn
