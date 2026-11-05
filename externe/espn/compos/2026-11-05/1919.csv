@@ -1,0 +1,792 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Jari De Busser,255740,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Denso Kasius,299530,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Mees De Wit,261596,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Wouter Goes,329972,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Lewis Schouten,334064,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Peer Koopmeiners,269610,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Valdemar Byskov,344870,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Dave Kwakman,346269,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Ro-Zangelo Daal,338775,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Mexx Meerdink,332465,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Calvin Stengs,248677,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Wesley Hoedt,190977,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Jordy Clasie,150199,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Mateo Chávez,379193,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Rome-Jayden Owusu-Oduro,332466,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Bendegúz Kovács,408528,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Wassim Bouziane,398766,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Kees Smit,353365,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Seiya Maikuma,333892,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Hobie Verhulst,150166,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Ayoub Oufkir,389354,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Rion Ichihara,362961,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,AZ Alkmaar,4-3-3,Elijah Dijkstra,343924,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Guglielmo Vicario,204082,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Pierre Kalulu,290129,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Jhon Lucumí,227697,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Lloyd Kelly,243787,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Federico Gatti,323147,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Kerim Alajbegovic,391034,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Pape Matar Sarr,297337,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Teun Koopmeiners,258968,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Andrea Cambiaso,308029,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Nick Woltemade,298349,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Randal Kolo Muani,252971,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Bremer,258307,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Neto,138398,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Antonio Stefano Merola,3129035,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Jérémie Boga,206153,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Augusto Owusu,397258,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Juan Cabal,24412,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Carlo Pinsoglio,121036,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Douglas Luiz,320074,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Destiny Elimoghale,404034,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Jeff Ekhator,388606,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915529,uefa.europa,,2026-11-05T20:00:00+00:00,Juventus,4-2-3-1,Filippo Pagnucco,387434,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Mark Flekken,177821,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Miguel Gutiérrez,290044,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Edmond Tapsoba,257287,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Jarell Quansah,298524,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Facundo Medina,249663,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Robert Andrich,180998,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Ibrahim Maza,361212,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Aleix García,219294,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Lucas Vázquez,174967,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Jonas Hofmann,174617,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Patrik Schick,212330,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Afonso Moreira,361258,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Loïc Badé,300410,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Ezequiel Fernández,364080,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Montrell Culbreath,408703,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Janis Blaswich,161825,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Ben Hawighorst,397120,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Malik Tillman,301416,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Bayer Leverkusen,4-2-3-1,Niklas Lomb,175069,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Jeffrey de Lange,228707,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Ulisses Garcia,220718,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,CJ Egan-Riley,307115,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Kelyann Bezahaf,422095,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Nayef Aguerd,245243,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Geoffrey Kondogbia,152270,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Pierre-Emile Højbjerg,159543,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Himad Abdelli,277525,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Timothy Weah,266027,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Igor Paixão,289114,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Amine Gouiri,259743,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Ibrahim Gomis,404675,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Tochukwu Nnadi,343114,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Tadjidine Mmadi,411418,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Bamo Meïté,324960,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Antoine Dominique Henri Valero,5325768,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Théo Vermot,280650,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Keyliane Abdallah,384005,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Nouhoum Kamissoko,421851,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Alexi Koum,389351,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Angel Gomes,256773,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915533,uefa.europa,,2026-11-05T20:00:00+00:00,Marseille,4-3-3,Neal Maupay,178760,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Anatoliy Trubin,286109,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Alessandro Circati,332081,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Tomás Araújo,329691,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Souffian El Karouani,291730,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Daniel Banjaqui,403874,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Claudio Echeverri,361355,AM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Georgiy Sudakov,308603,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Manu Silva,358451,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Jhon Durán,285629,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Andreas Schjelderup,313415,AM-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Rafa Silva,192421,AM-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Samuel Dahl,329653,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Anísio Cabral,403873,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Dodi Lukébakio,229443,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Enzo Barrenechea,292921,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Alexander Bah,265944,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Samuel Soares,307631,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Vangelis Pavlidis,220819,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Gianluca Prestianni,339191,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Jakub Kaminski,304933,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Fredrik Aursnes,212900,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,João Palhinha,224144,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Benfica,4-2-3-1,Gabriel Indio,338713,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Mateusz Lis,222728,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Michal Gurgul,358299,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Terry Yegbe,380023,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Joel Pereira,305503,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Mateusz Skrzypczak,325947,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Patrick Walemark,301364,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Antoni Kozubal,313256,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Pablo Rodriguez,308472,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Radoslaw Murawski,239148,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Daniel Håkans,326624,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Yannick Agnero,329971,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Piotr Bartczak,3144976,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Hubert Janyszka,415080,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Wiktor Obremski,3107589,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Mateusz Pruchniewski,365888,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Luis Palma,133852,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Robert Gumny,235180,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Eryk Śledziński,3144977,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Gustaf Beggren,238420,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Leo Bengtsson,245553,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Filip Jagiello,239756,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915525,uefa.europa,,2026-11-05T20:00:00+00:00,Lech Poznan,4-2-3-1,Wojciech Szymczak,418966,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Marcos Alonso,146127,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Ferran Jutglà,279904,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Ángel Arcos,415036,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Sergio Carreira,298343,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Altay Bayindir,274272,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Iago Aspas,92800,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Hugo Gonzalez,324811,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Williot Swedberg,322652,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Ilaix Moriba,297829,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Frank Germain Jonathan Miller,3100792,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Andrés Antañón,414292,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Abdoulaye Faye,21990,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Pablo Durán,138448,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Sebastián Cáceres,285756,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Javi Galán,231838,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Hugo Burcio,414293,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Yoel Lago,384643,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Javi Rodríguez,376147,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Javi Rueda,331586,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Hugo Álvarez,188391,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Couhaib Driouech,304592,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Aleix Febas,240235,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Celta Vigo,3-4-3,Andrei Radu,144720,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Hervé Koffi,247940,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Nohim Chibani,356478,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Massiré Sylla,389282,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Nikki Havenaar,275833,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Kamiel Van De Perre,385284,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Adem Zorgane,298901,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Besfort Zeneli,334024,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Louis Patris,306031,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Guilherme Smith,330077,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Relebohile Mofokeng,361211,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Kevin Rodríguez,281316,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Denzel De Roeve,363067,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Youssef Hamoutahar,406909,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Daniel Tshilanda,381587,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Ross Sykes,241066,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Dylan Aquino,363516,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Ilan Henri Hurtevent,3098602,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Raul Florucz,344857,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Sekou Keita,214312,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Vic Chambaere,316278,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Darius Olaru,239870,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915531,uefa.europa,,2026-11-05T20:00:00+00:00,Union St.-Gilloise,3-4-1-2,Rob Schoofs,157133,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Sam Johnstone,162338,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Callum McGregor,84049,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Liam Scales,288959,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Kasper Høgh,272624,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Mika Baur,367926,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Camilo Durán,367591,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Ross Doohan,227283,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Callum Osmand,365343,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Viljami Sinisalo,307098,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Dane Murray,291504,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Benjamin Nygren,274522,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Sebastian Tounekti,303702,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Jordan Lotomba,238878,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Anthony Ralston,224305,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Cameron Carter-Vickers,219273,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Colby Donovan,387200,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Oliver Sørensen,297751,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Haissem Hassan,276440,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Alex Oxlade-Chamberlain,145392,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,James Forrest,141303,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Sean Mcardle,387202,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Luke McCowan,259208,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Celtic,4-2-3-1,Kieran Tierney,214794,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Alexander Nübel,205750,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Amir Murillo,216420,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Kassoum Ouattara,345243,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Emir Han Topcu,280711,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Emmanuel Agbadou,308449,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Junior Olaitan,319985,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Leandro Trossard,174980,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Václav Cerný,217476,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Salih Özcan,225563,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Ernest Poku,318534,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Oh Hyeon-Gyu,302434,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Taylan Bulut,372033,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Semih Kiliçsoy,345212,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Kartal Kayra Yilmaz,283930,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Ridvan Yilmaz,283691,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Dusan Vlahovic,235677,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Ilhan Fakili,384290,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Dogan Alemdar,278790,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Orkun Kökçü,272700,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Yasin Ozcan,346213,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Ahmet Bircan,416475,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Wilfred Ndidi,187638,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915522,uefa.europa,,2026-11-05T20:00:00+00:00,Besiktas,4-2-3-1,Tiago Djaló,283682,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Ofir Marciano,193721,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Guy Mizrahi,324228,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Matan Baltaksa,264447,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Djibril Diop,274394,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Idan Nachmias,308784,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Niv Yehoshua,385090,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Zahi Ahmed,365734,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Forson Amankwah,324191,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Yonas Malede,312660,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Adrián Ugarriza,177355,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Mohamad Abu Rumi,363454,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Ofir Davidadze,179527,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Mohammad Knaan,316757,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Pedro Amador,303125,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Javon East,229655,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Itay Rotman,3097934,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Amir Ganah,352322,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Jonathan Shani,366476,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Igor Zlatanovic,272185,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,João Victor,318256,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Miguel Vítor,165422,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,Hapoel Be'er,4-3-3,Marco Wolff,268810,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Klidman Lilo,369489,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Achilleas Poungouras,219762,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Kresimir Krizmanic,316646,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Dimitris Nikolaou,226179,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Andreas Bouchalakis,187897,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Nicolaos Athanasiou,312967,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Lorenzo Dickmann,204769,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Thanasis Androutsos,241991,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Kenan Kodro,208027,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Thiago Thomas Nuss,310785,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Taxiarchis Fountas,183154,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Giorgos Kanellopoulos,262563,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Aaron Leya Iseka,210822,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Christos Shelis,261078,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Thanasis Sitmalidis,409602,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Konstantinos Kostoulas,387672,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Aitor Cantalapiedra,229392,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Pavlos Kainourgiakis,409600,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Manouel Kalafatis,374225,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Giannis Theodosoulakis,348126,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Panagiotis Katsikas,278919,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Zisis Karachalios,243191,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915532,uefa.europa,,2026-11-05T20:00:00+00:00,OFI Crete,3-4-3,Borja González,231338,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Ammar Helac,305677,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Paul-Friedrich Koller,283951,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Joshua Quarshie,354014,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Arjan Malic,374533,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Luís Balbo,362910,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Jon Gorenc Stankovic,214012,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Luca Weinhandl,411273,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Jürgen Heil,274948,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Oumar Diakité,329483,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Simon Seidl,364541,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Valmir Matoshi,370757,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Gizo Mamageishvili,342523,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Mate Grgić,3106900,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Jacob Peter Hödl,388521,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Albert Vallci,274923,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Petar Petrović,187877,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Elias Lorenz,366512,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Axel Kayombo,365692,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Belmin Beganovic,345652,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Jonas Peinhart,3106901,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Julian Halwachs,329485,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,SK Sturm Graz,3-4-3,Adam Stejskal,329479,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Zan-Luk Leban,316540,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Lukasz Bejger,307206,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Artemijus Tutyskinas,324201,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Pijus Sirvys,289749,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Milot Avdyli,363569,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Svit Seslar,306199,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Papa Daniel,398462,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Mark Zabukovnik,326760,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Veton Tusha,312664,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Armandas Kucys,330626,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Benjamin Verbic,189386,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Alpha Dionkou,279136,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Matic Ivansek,385608,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Mario Kvesic,206356,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Darko Hrka,407089,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Ziga Frelih,306193,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Yaya Dukuly,286984,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Luka Kolar,387224,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Blaz Kramer,290216,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Leonardo Koutris,239132,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Dejan Suhovrsnik,415396,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915524,uefa.europa,,2026-11-05T20:00:00+00:00,NK Celje,4-3-3,Zan Zuzek,239754,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Robin Roefs,301449,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Omar Alderete,215401,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Kevin Danso,250543,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Dayann Methalie,388070,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Thomas Meunier,166473,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Chris Rigg,356295,AM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Jules Ahoka,410687,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Granit Xhaka,149981,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Wilson Isidor,265915,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Malick Fofana,340645,AM-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Nilson Angulo,318090,AM-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Jack Whittaker,236211,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Noah Sadiki,340240,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Tymur Tutierov,387460,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Trai Hume,290207,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Tom Proctor,3111010,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Brian Brobbey,282229,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Reinildo Mandava,230081,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Luke O'Nien,191574,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Enzo Le Fée,288340,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Simon Moore,138481,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Chemsdine Talbi,360062,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Sunderland,4-2-3-1,Jenson Arron Jones,243578,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Dominik Kotarski,239411,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Sergi Domínguez,388284,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Niko Galesic,306615,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Bruno Goda,364169,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Moris Valincic,370760,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Josip Misic,175812,CM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Luka Stojkovic,341418,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Mateo Lisica,370762,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Dion Drena Beljo,306647,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Mislav Orsic,194277,LF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Lukas Kacavenda,326587,RF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Luka Ivanusec,228334,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Iker Almena,367662,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Stjepan Radeljic,275414,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Ivan Filipovic,222580,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Sven Sunta,418601,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Miha Zajc,189394,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Smail Prevljak,206469,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Matteo Vinlöf,384415,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Arbër Hoxha,274816,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Danijel Zagorac,208815,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Noa Mikic,379705,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915523,uefa.europa,,2026-11-05T20:00:00+00:00,Dinamo Zagreb,4-3-3,Daniel Rodríguez,363041,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Amine Oudrhiri,198154,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Silas Bjerre,392827,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Volnei Feltes,321364,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Stopira,148146,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Andre Simoes,347384,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Musa Drammeh,331396,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Mohamed Diadié,396750,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,João Marques,347073,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Juan María Alcedo,332014,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Jorge Aguirre,77266,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Dany Jean,297183,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,David Bruno,122768,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Javier Vazquez,266780,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Daniel Zamith De Oliveira Noro,5330802,,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Nuha Jatta,379802,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Manuel Pozo,359742,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Adriel,315681,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Alejandro Alfaro,347520,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Luis Quintero,128260,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Gustavo Sousa Alhinho Alves Rijo,3141707,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Karem Zoabi,386927,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Jonathan Mutombo,355033,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Torreense,4-2-3-1,Lucas Paes,269654,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,João Bravim,344845,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Bruno Wilson,250920,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Hugo Oliveira,323816,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Alexandros Malis,243196,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Edgar Grigoryan,322483,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Karen Muradyan,31969,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Juan Andrés Balanta,201131,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Bernardo Oliveira,241696,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Sandro Lima,192505,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Artur Serobyan,305632,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Zhirayr Shaghoyan,289159,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Carlos França,270589,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Alioune Ndour,295559,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Luis Felipe,305782,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Armen Ambartsumyan,196062,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Kamo Hovhannisyan,171781,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Maxence Carlier,260550,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Arayik Eloyan,391021,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Arman Nersesyan,319555,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Bruno Pereira,351442,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915530,uefa.europa,,2026-11-05T20:00:00+00:00,Ararat-Armenia,4-3-3,Alwyn Luheni Tera,289208,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Lukas Hradecky,134169,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Sadibou Sané,362288,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Názinho,316559,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Eric Dier,155532,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Vanderson,310640,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Denis Zakaria,222628,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Ilane Touré,411027,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Jordan Teze,240660,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Aleksandr Golovin,195501,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Pape Cabral,411449,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Jules Stawiecki,388329,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Paris Brunner,365789,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Mamadou Coulibaly,208518,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Christian Mawissa,350525,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Lamine Camara,38721,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Mika Biereth,308552,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Philipp Köhn,258875,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Takumi Minamino,159348,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Edan Diop,345645,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Mathys Detourbet,397994,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Matthis Abline,318389,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Folarin Balogun,282643,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,AS Monaco,4-4-2,Mohammed Salisu,277718,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Andreas Hansen,145645,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Noah Markmann,372633,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Victor Nelsson,241138,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Tobias Salquist,238412,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Markus Walker,400779,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Juho Lähteenmäki,372632,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Malte Heyde,406537,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Mark Brink Christensen,238401,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Mamadou Sadio,335421,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Villum Berthelsen,401465,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Ola Solbakken,269735,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Carljohan Eriksson,206030,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Victor Gustafsen,411356,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Prince Amoako,362789,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Ibrahim Adel,299619,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Peter Ankersen,146803,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Hjalte Boe Rasmussen,402527,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Jakob Busk,170636,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Stephen Acquah,378549,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Nicklas Rojkjaer,249171,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,William Suljemani Faber,3107702,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Villads Rutkjær,411357,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915824,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Nordsjælland,3-4-3,Runar Norheim,312960,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Laurentiu Popescu,239895,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Alexandru Cicaldau,239724,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,David Matei,405527,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Teles,364979,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,João Lameira,364416,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Oleksandr Romanchuk,364179,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Ronaldo Webster,348273,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Aimé Nsimba,345232,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Tudor Baluta,239721,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Razvan Sava,302721,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Heriberto Tavares,276672,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Carlos Mora,310002,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Alexandru Maxim,173816,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Assad Al-Hamlawi,301369,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Alexandru Cretu,218120,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Vladimir Screciu,239807,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Nicusor Bancu,239813,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Simon Elisor,306034,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Adrian Rus,264705,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Luca Basceanu,379326,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Stefan Baiaram,289724,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSU Craiova,3-4-3,Nikola Stevanović,275362,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Mario Dajsinani,241783,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Andrey Yago,363993,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Guillem Jaime,283819,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Numan Ajetovikj,406976,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Enea Bitri,275672,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Albano Aleksi,271044,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Alessandro Albanese,304768,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Fernando Medeiros,231325,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Altin Kryeziu,298407,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Karim Loukili,239360,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Daniel Claude Junior Adjessa,3099337,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Edison Ndreca,220904,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Geralb Smajli,322513,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Jurguens Montenegro,310828,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Bruno Puja,338208,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Alessandro Kacbufi,363891,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Ledio Beqja,306340,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Ibrahim Diabaté,419920,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Zamiq Aliyev,307687,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915817,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Egnatia,4-1-2-1-2,Levan Tandilashvili,360706,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Diant Ramaj,287713,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Asger Sørensen,208595,CD,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Marcos López,151053,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Junnosuke Suzuki,333663,DM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Thomas Delaney,151757,SW,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Mohamed Elyounoussi,162484,AM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Hunor Németh,397863,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Alex Král,257085,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Viktor Dadason,411168,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Geovanni Vianney,418782,LF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Maher Carrizo,376476,RF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Tobias Breum-Harild,403042,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Kenay Myrie,399114,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Ákos Markgráf,385889,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,William Clem,332428,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Robert,363213,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Rodrigo Huescas,317453,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Gunnar Olsen,386054,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Mads Emil Madsen,242850,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Rúnar Rúnarsson,199330,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Andreas Cornelius,176668,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,F.C. København,3-4-3-d,Birger Meling,192115,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Georgi Makaridze,136682,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Vahid Selimovic,239915,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Aleksandre Amisulashvili,405634,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Jemali-Giorgi Jinjolava,289205,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Giorgi Kobuladze,322014,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Nikoloz Dadiani,385863,CM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Jean-Marc Tiboue,406106,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Bakar Kardava,221189,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Amiran Dzagania,405633,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Nika Sikharulashvili,382642,LF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Zviad Natchkebia,3093406,RF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Eldar Kuliev,341501,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Abdullahi Alhassan,257251,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Philip Cancar,312147,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Lado Chikhradze,3102157,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Daniel Kvartskhava,385845,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Giorgi Kutsia,258932,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Nikoloz Botchorishvili,3093483,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Tornike Megrelishvili,289203,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Stephen Jighjigh Ende,3098820,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Revaz Kurtanidze,343237,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915740,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Iberia 1999,4-3-3,Lucas Brune,358181,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,David Von Ballmoos,199378,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Antonios Papadopoulos,291966,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Ezgjan Alioski,194800,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Lukas Mai,259126,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Behruzjon Karimov,376370,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Uran Bislimi,341382,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Daniel Correia,319631,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Martim Marques,364127,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Ahmed Kendouci,315387,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Albian Ajeti,202100,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Yanis Cimignani,305659,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Felix Gebhardt,304227,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Mattia Zanotti,323117,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Damian Kelvin,406347,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Elias Pihlström,398192,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Joel Bichsel,360185,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Beckham Castro,334103,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Kevin Behrens,221614,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Diego Mina,200759,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Anto Grgic,223234,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Lugano,3-5-2,Christian Raffa,3099078,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Deividas Mikelionis,258030,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Rokas Lekiatas,363446,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Anton Tolordava,345172,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Nosa Iyobosa Edokpolor,305581,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Joris Moutachy,305774,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Aldayr Hernández,183003,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Anthony Kalik,208767,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Amine Benchaib,260408,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Vykintas Slivka,181777,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Leon Krekovic,276577,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Gabriel Debeljuh,261131,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Ivan Fiolic,194779,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Yukiyoshi Karashima,359823,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Motiejus Burba,306197,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Gratas Sirgedas,193870,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Adomas Užkurnys,5325771,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Lirim Kastrati,257351,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Fabien Ourega,170222,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Léo Ribeiro,269497,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Vėjas Pocius,3098632,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915823,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Kauno Zalgiris,5-3-2,Tomas Svedkauskas,175221,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Joel Drommel,207780,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Ruud Nijstad,399213,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Robin Pröpper,169050,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Aske Adelgaard,347026,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Bart van Rooij,277855,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Younes Taha,324583,AM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Daouda Weidmann,345579,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Ramiz Zerrouki,290517,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Wout Weghorst,177042,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Sondre Ørjasaeter,379956,AM-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Daan Rots,304905,AM-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Thomas van den Belt,277315,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Remko Pasveer,83802,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Jordy Bawuah,371409,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Yannick Gerritsen,402998,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Jip Meilink,3134323,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Lucas Vennegoor Of Hesselink,379839,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Michal Rosiak,358436,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Kristian Hlynsson,311168,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Marko Pjaca,187956,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Benjamin Nagel,411096,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,FC Twente,4-2-3-1,Krzysztof Kurowski,371984,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Radoslaw Majecki,238952,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,David Luiz,98398,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Samy Mmaee,206782,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Nicholas Ioannou,205240,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Bruno,258886,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Vlad Dragomir,266180,CM-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Alexandre Brito,397119,CM-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Ivan Sunjic,194767,AM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Ken Sema,186004,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,João Correia,107995,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Lelê,333936,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Michalis Papastylianou,240871,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Domingos Quina,236708,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Georgios Michael,417366,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Melinos Kais,3106891,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Petros Petrou,26731,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Guga,238899,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Kosmas Ioannou,3098711,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Christos Efzona,385385,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915822,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Pafos,4-5-1,Anderson Silva,36807,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,David Soria,196339,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Kiko Femenía,125749,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Sebastián Boselli,359826,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Djené,181355,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Johan Mojica,173247,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Andrés García,356080,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Orel Mangala,228424,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Martín Satriano,284854,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Ramón Terrats,309838,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Nemanja Gudelj,136673,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Ivan Azón,310259,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Abdel Abqar,277876,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Mario Martín,357147,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Francho Serrano,307186,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Jirí Letácek,344245,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Borja Mayoral,218793,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Davinchi,406832,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Enes Ünal,218122,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Jean Ives Valou,395479,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Diego Ferrer,388898,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Alberto Risco,383912,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Getafe,4-2-3-1,Saba Sazonov,314403,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Bart Verbruggen,291609,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Michael Svoboda,289942,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Lewis Dunk,147106,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Costinha,274285,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Jaouen Hadjam,306033,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Yasin Ayari,304242,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Pascal Gross,132659,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Olivier Boscagli,216017,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Malick Yalcouyé,359097,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Jack Hinshelwood,328011,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Georginio Rutter,278061,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Ibrahim Osman,359400,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Jason Steele,111114,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Matt O'Riley,261087,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Shane Nti,411697,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Tom McGill,248761,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Younes Ibrahim,413274,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Diego Gómez,192278,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Maxim De Cuyper,301327,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Charalambos Kostoulas,387655,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915821,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Brighton & Hove Albion,4-3-3,Luka Vuskovic,364962,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Iñaki Peña,282680,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Rick Van Drongelen,229562,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Stefan de Vrij,141443,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Georgios Kyriakopoulos,213207,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Davide Calabria,194747,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Imran Louza,283699,CM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Kings Kangwa,289073,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Vicente Taborda,324043,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Elmin Rastoder,320850,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Santino Andino,392253,LF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Levi García,224632,RF,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Erik Palmer-Brown,191847,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Sotiris Kontouris,368536,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Facundo Pellistri,290538,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Triantafyllos Tsapras,346306,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Pedro Chirivella,222212,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Konstantinos Kotsaris,214534,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Adriano Jagusic,402292,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Christos Geitonas,415170,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Georgios Katris,366064,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Etienne Camara,312550,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Cyriel Dessers,212250,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Panathinaikos,4-3-3,Andrews Tetteh,365703,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Fedor Lapoukhov,343364,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Jean-Philippe Gbamin,186151,CD,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Dinis Almeida,219280,CD-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Teodor Ivanov,387642,CD-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Ángelo Martino,249304,LB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Pastor,314648,RB,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Stefano Sensi,180927,CM-L,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Isaac Solet,376797,CM-R,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Andrey Yordanov,382456,LM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Ioannis Pittas,221149,RM,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Santiago Godoy,147012,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Petko Panayotov,410382,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Mohamed Amine Brahimi,342970,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Catalin Itu,287328,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Facundo Rodríguez,118680,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Bruno Jordão,258439,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Tamimou Ouorou,370502,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Dimitar Evtimov,177293,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Vasil Stanislavov Kaymakanov,3098686,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Max Ebong,274583,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Aleks Aleksandrov Tunchev,3098680,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,James Eto'o,315217,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915819,uefa.europa.conf,,2026-11-05T20:00:00+00:00,CSKA Sofia,5-4-1,Joël Zwarts,272030,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Kenan Piric,236466,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Raki Aouani,362691,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Frenks Orols,326504,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Coli Saco,368077,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Muhammed Badamosi,284131,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Antonijs Cernomordijs,228734,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Caio Martins,406405,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Karl Wassom,405965,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Baba Musah,342563,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Meissa Diop,322489,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Salah-Eddine Oulad,307172,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Maksims Tonisevs,305058,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Iago Siqueira,405885,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Ahmed Ankrah,332082,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Marcis Kazainis,406013,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Reginaldo Ramires,320258,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Samuel Pedro,291708,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Abdulrahman Taiwo,239559,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Riga FC,4-2-3-1,Raivis Andris Jurkovskis,258259,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Klemen Mihelak,276091,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Martin Cedidla,338238,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Jiri Sláma,276602,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Dusan Pavlovic,26853,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Richard Sedlacek,277226,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Vakhtang Chanturishvili,221129,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Dominik Holly,340709,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Matej Polidar,308366,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Sebastian Nebyla,280810,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Antonin Rusek,257078,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Saidou Alioum Moubarak,297099,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Jan Chramosta,141472,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Nelson Okeke,324434,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Filip Zorvan,344182,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Garang Kuol,332947,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Lamin Jawo,241404,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Jan Suchan,240254,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,David Nykrin,335276,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Michal Kukucka,326755,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Filip Novak,167559,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Vojtěch Reiner,3145986,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915818,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Jablonec,3-5-2,Daniel Soucek,257343,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Leo Brian Kokubo,327161,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Robert-Jan Vanwesemael,363541,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Shogo Taniguchi,202728,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Joederik Pupe,251089,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Visar Musliu,222063,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Nelson Ishiwatari,336494,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Shion Shinkawa,417984,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Abdoulage Sissako,241304,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Nathanaël Mbuku,291750,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Ilias Sebaoui,330042,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Frederic Soelle Soelle,350520,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Kaito Matsuzawa,406998,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Samed Bazdar,322244,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Jeremy Kandje Mbambi,409490,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Ben Achour Ilyes,372094,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Nkima Yanis Ngoy,3131084,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Oumar Diouf,362670,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Ryotaro Araki,297239,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Arbnor Muja,257897,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Wolke Janssens,240551,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Ryan Merlen,406299,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Matt Lendfers,346680,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,Sint-Truidense,4-3-3,Taiga Hata,297569,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Simen Vidtun Nilsen,301564,G,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Leo Cornic,282397,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Fredrik Knudsen,214177,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Jonas Torsvik,356390,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Thore Baardsen Pedersen,285881,D,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Niklas Jensen,314371,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Neraysho Kasanwirjo,292393,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Kristall Máni Ingason,305403,M,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Ulrick Mathisen,274042,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Noah Holm,277007,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Niklas Castro,234989,F,titulaire,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Matias Dyngeland,234970,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Bard Finne,173355,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Håkon Melås Hellesøy,422020,G,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Brage Berg Haugen,3107528,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Julian Laegreid,403145,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Kristian Eriksen,333782,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Vetle Dragsnes,287240,D,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Sondre Blumenfeldt Vindenes,3128979,M,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Saevar Atli Magnússon,326637,F,remplacant,espn
+2026-11-05T19:19:55+00:00,401915820,uefa.europa.conf,,2026-11-05T20:00:00+00:00,SK Brann,4-3-3,Joachim Soltvedt,205582,D,remplacant,espn

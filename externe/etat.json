@@ -2,7 +2,7 @@
  "apifootball": {
   "compos_faites": [],
   "jour": "2026-11-05",
-  "requetes": 12
+  "requetes": 13
  },
  "apifootball/blessures": {
   "empreinte": "a677ffdd6e78a961bd06a79411769ae0e4643107ed0c7c634f08027da1ac3ce2",
@@ -213,16 +213,34 @@
    "401841306",
    "401841307",
    "401841305",
-   "401841298"
+   "401841298",
+   "401915529",
+   "401915533",
+   "401915525",
+   "401915531",
+   "401915522",
+   "401915532",
+   "401915524",
+   "401915523",
+   "401915530",
+   "401915824",
+   "401915817",
+   "401915740",
+   "401915823",
+   "401915822",
+   "401915821",
+   "401915819",
+   "401915818",
+   "401915820"
   ],
   "jour": "2026-11-05"
  },
  "espn/compos": {
-  "empreinte": "2ca3ab6465769cc9bfecfb3c1356936e68de04e2a4bb193a35f4042efbc6988e",
-  "fichier": "espn/compos/2026-11-04/2358.csv"
+  "empreinte": "855296baebd987338b7c653f0b96b71cec6c93fe1afac21bd2d0c10f48ee1b6b",
+  "fichier": "espn/compos/2026-11-05/1919.csv"
  },
  "fpl": {
-  "empreinte": "334e374c2b4d5c160b29a52312a7741abd70f6edbd7e7a84aa994dc4ffb641e9",
-  "fichier": "fpl/2026-11-05/1802.csv"
+  "empreinte": "e9b81fbca744b441f47e4e6bf5a045538d6833ad251760b9afe8489bd63240d0",
+  "fichier": "fpl/2026-11-05/1919.csv"
  }
 }
