@@ -89,7 +89,7 @@ def sonder() -> dict:
 
 
 def sonder_urls(urls: list[str]) -> dict:
-    """Sonde libre : code HTTP, type et 60 Ko de contenu brut (HTML compris) par URL."""
+    """Sonde libre : code HTTP, type et 3 Mo de contenu brut (HTML compris) par URL."""
     res = {}
     for url in urls:
         nom = re.sub(r"[^A-Za-z0-9]+", "_", url.split("://", 1)[-1]).strip("_")[:80]
@@ -98,7 +98,7 @@ def sonder_urls(urls: list[str]) -> dict:
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
                 res[nom] = {"url": url, "code": r.status, "type": r.headers.get("Content-Type"),
-                            "extrait": r.read()[:60000].decode("utf-8", "replace")}
+                            "extrait": r.read()[:3000000].decode("utf-8", "replace")}
         except urllib.error.HTTPError as e:
             res[nom] = {"url": url, "code": e.code, "extrait": e.read()[:3000].decode("utf-8", "replace")}
         except (urllib.error.URLError, TimeoutError) as e:
