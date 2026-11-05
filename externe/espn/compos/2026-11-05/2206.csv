@@ -1,0 +1,93 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Murilo,252609,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Emiliano Martínez,109962,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Joaquín Piquerez,254007,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Andreas Pereira,210143,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Maurício,289046,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Khellven,288669,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Lucas Evangelista,186776,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Arthur Gabriel,382965,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Agustín Giay,315619,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Alexander Barboza,222631,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Luis Felipe,402701,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Erick Machado,402695,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Jhon Arias,239566,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Vitor Roque,329383,F,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Larson,387989,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Carlos Miguel,276741,G,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Bruno Fuchs,257050,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Marlon Freitas,234016,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Fabiano,361658,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Marcelo Lomba,201622,G,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Gustavo Gómez,118395,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,Felipe Anderson,152812,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Palmeiras,3-4-2-1,José Manuel López,311743,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Marcelo Rangel,206952,G,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Marllon,157743,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Duplexe Tchamba,254447,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Marlon Lopes,215815,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Marcelinho,304826,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,José Welison,201793,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,David Francisco,359364,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Patrick,198362,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Jajá,301185,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Leonel Picco,286532,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Gabriel Taliari,235385,F,titulaire,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Matheus Alexandre,280678,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Mayk,277092,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Yago Pikachu,186832,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Eduardo,338668,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Jaderson,252833,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Ygor Vinhas,269643,G,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Vitor Bueno,200775,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Antonio Galeano,254464,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Ivan,202493,G,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Zé Ivaldo,319270,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Edson Fernando,290028,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841300,bra.1,BRA,2026-11-05T22:30:00+00:00,Remo,4-2-3-1,Zé Ricardo,276661,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Mariano Ojeda,3109150,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Maximiliano Zalazar,307925,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Sergio Troncoso,5323423,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Renzo Giampaoli,307598,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Juan Cortazzo,379658,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Nelson Insfran,255403,G,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Facundo Di Biasi,397601,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Juan Perez,359265,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Franco Torres,312612,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Manuel Panaro,309117,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Augusto Max,136511,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Ignacio Fernández,106583,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Harlen Castillo,301464,G,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Enzo Martínez,173742,CD-L,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Germán Conti,185458,CD-R,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Matías Melluso,263085,LB,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Pablo Aguiar,412289,RB,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Marcelo Torres,85513,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Ignacio Miramon,310476,CM,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Nicolas Schelotto,366024,AM,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Lucas Janson,176813,LM,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Mateo Seoane,336537,RM,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Gimnasia La Plata,4-3-1-2,Agustín Auzmendi,334165,CF-R,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Thiago Cardozo,194993,G,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Lisandro López,189456,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Federico Ricca,192410,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Alcides Benítez,268135,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Leonardo Morales,234348,D,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Franco Vázquez,118787,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Lucas Zelarayán,172267,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Adrián Sánchez,3494,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Santiago Longo,290766,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Emiliano Rigoni,178062,M,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Lucas Passerini,204908,F,titulaire,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Lautaro Gutierrez,382906,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Alexis Maldonado,235794,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Nicolás Fernández,319604,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Adrián Sporle,205532,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Santino Gatti,382905,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Gonzalo Zelarayán,382902,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Juan Velazquez,325528,F,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Francisco Gonzalez Metilli,234997,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Manuel Vincentini,195651,G,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Gastón David Martínez,5326314,M,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Agustín Falcón,402987,D,remplacant,espn
+2026-11-05T22:06:48+00:00,401841667,arg.1,ARG,2026-11-05T22:15:00+00:00,Belgrano (Córdoba),4-2-3-1,Ramiro Hernandes,382886,M,remplacant,espn
