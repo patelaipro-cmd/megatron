@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-06T19:56:00+00:00,espn,DraftKings,courante,E0,2026-11-06T20:00+00:00,Everton,Coventry City,401879242,1.6667,4.1,4.9,4.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261106,658183bb2db20f8e7f1c596def0839b71855bde516571af3cc22d67b739c217a,1X2
+2026-11-06T19:56:00+00:00,espn,DraftKings,courante,SP1,2026-11-06T20:00+00:00,Sevilla,Alavés,401882809,2.0,3.2,4.3,4.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261106,0117a10a0f81b58d6edec705fe61440d7ed934ed8a73a6c6c7aafe3165ece445,1X2
