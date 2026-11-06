@@ -132,6 +132,20 @@ class TestNiveaux(unittest.TestCase):
 
 
 class TestFicheEtDecision(Base):
+    def test_trois_h2h_exposes_dans_evaluation_sans_score_futur(self):
+        at = self.ko - timedelta(hours=1)
+        e = self.evaluer(at)
+        comp = e["angles_morts"]["comparateur_h2h"]
+        expected = [m for m in self.history if {m.home, m.away} == {self.home, self.away}]
+        expected = sorted(expected, key=lambda m: (m.kickoff, m.match_id), reverse=True)[:3]
+        self.assertEqual([r["match_id"] for r in comp["derniers_3_h2h"]], [m.match_id for m in expected])
+        self.assertEqual(comp["couverture_3_h2h"]["disponibles"], len(expected))
+        future = data.Match(systeme.DIVISION, self.ko.date(), self.ko, self.home, self.away, 0, 9, "A", None)
+        later = syndicate.evaluer(systeme.DIVISION, self.home, self.away, self.ko, at=at,
+                                  history=self.history + [future])
+        self.assertEqual(comp, later["angles_morts"]["comparateur_h2h"])
+        self.assertEqual(e["niveaux"], later["niveaux"])
+
     def test_fiche_huit_rubriques_sans_fuite(self):
         at = self.ko - timedelta(hours=3)
         f = wininvest.fiche(systeme.DIVISION, self.home, self.away, self.ko, at=at, history=self.history)

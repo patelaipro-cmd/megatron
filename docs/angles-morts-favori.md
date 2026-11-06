@@ -28,6 +28,22 @@ Chaque score H2H précise ses équipes domicile/extérieur ; orientation inconnu
 Dates et scores H2H inconnus restent nuls ; ce comparateur ne remplace pas
 l'examen des cinq derniers H2H lorsque ces données sont disponibles.
 Le score final actuel est interdit dans cette analyse pré-match.
+Le comparateur historique (`angles_morts.analyser`) expose aussi
+`derniers_3_h2h`, du plus récent au plus ancien : date, équipes domicile/extérieur,
+score réglementaire, orientation et marge du favori, victoire et marges 2+/3+.
+Mi-temps, rouges et tirs cadrés sont ajoutés lorsqu'ils sont disponibles.
+`couverture_3_h2h` indique le nombre disponible et les confrontations manquantes ;
+trois lignes présentes ne prouvent pas que les informations contextuelles sont complètes.
+La sélection est limitée à l'historique fourni, dont la couverture toutes compétitions
+n'est pas garantie. Elle ne déclenche aucune collecte externe. Les doublons et les
+confrontations impliquant d'autres équipes sont refusés, ainsi que les matchs du jour
+analysé ou postérieurs. Un écart atteint après la pause et les rouges sont des faits
+contextuels, pas une preuve de causalité : chronologie, penalties, tactique et effectifs
+restent à documenter. Cette sortie complète le comparateur ancien/dernier/actuel et
+ne modifie aucune probabilité. La sortie complète de `syndicate evaluer` expose
+ce comparateur dans `angles_morts.comparateur_h2h` (le résumé CLI reste compact).
+La fiche conserve son examen des cinq derniers H2H ; la grille déclarative
+`contexte_favori` reste distincte.
 Les dates anciennes peuvent être insuffisantes pour décrire l'équipe actuelle :
 expliquer explicitement ce qui a changé plutôt que réutiliser un ancien carton.
 
