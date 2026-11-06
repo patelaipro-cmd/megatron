@@ -1,0 +1,121 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Lennart Grill,231180,G,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Ahmet Muhamedbegovic,250896,CD-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Nicolai Rapp,216080,CD-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Simon Straudi,289694,LB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Jonas Sterner,303921,RB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Niklas Hauptmann,238522,AM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Tobias Raschl,283345,LM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Robert Wagner,336760,RM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Vincent Vermeij,188414,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Ben Bobzien,323830,AM-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Patrice Covic,398005,AM-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Jakob Lemmer,324612,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Alexander Rossipal,268786,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Kaan Inanoglu,406449,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Lukas Boeder,212480,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Christoph Daferner,287716,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Nils Froling,272696,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Till Neininger,389628,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Kennedy Okpala,361085,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,Dynamo Dresden,4-2-3-1,Tim Schreiber,290400,G,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Florian Hellstern,409213,G,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Hendry Blank,365320,CD-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Jannis Heuer,321274,CD-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Gian-Luca Itter,231183,LB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Jannick Dehm,214185,RB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Shinta Appelkamp,291764,AM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Sacha Bansé,363057,LM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Paul Will,276328,RM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Omar Sillah,406473,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Ole Pohlmann,345224,AM-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Felix Klaus,153489,AM-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Faton Ademi,388182,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Dennis Srbeny,221551,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Doni Arifi,306238,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Krisztián Keresztes,385839,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Benjamin Zank,367045,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Silas Prüfrock,397587,G,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Aaron Keller,357742,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Olgherto Balliu,3106470,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885061,ger.2,D2,2026-11-06T17:30:00+00:00,SpVgg Greuther Fürth,4-2-3-1,Lukas Reich,405546,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Ron-Thorben Hofmann,259128,G,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Lukas Frenkert,321225,CD-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Kevin Ehlers,286350,CD-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Fabio Di-Michele-Sanchez,343950,LB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Mehmet Can Aydin,316105,RB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Robin Heusser,306924,AM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Max Marie,386433,LM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Florian Flick,291889,RM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Jovan Mijatovic,352320,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Yann Sturm,399523,AM-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Aaron Opoku,229769,AM-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Benjamin Uphoff,166716,G,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Noah Katterbach,283729,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Tristan Wagner,251356,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Arlet Zé,365688,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Sidney Raebiger,319332,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Damjan Kovacevic,364587,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Jan Urbich,386420,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Andi Hoti,323116,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,TSV Eintracht Braunschweig,4-2-3-1,Sidi Sané,346632,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Marcel Lotka,304903,G,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Luca Erlein,399218,CD-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,King Manu,373993,CD-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Leon Guwara,232327,LB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Henry Rorig,306061,RB,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Lucas Copado,323079,AM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Lukas Michelbrink,398040,LM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Leonardo Bittencourt,157560,RM,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Justin Butler,304045,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Christian Kinsombi,291736,AM-L,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Moritz Hannemann,387628,AM-R,titulaire,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Hasan Jannis Zaydan,3108144,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Kevin Kratzsch,306723,G,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Dmytro Bohdanov,386460,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Jonas Hofmann,174617,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Tolcay Cigerci,212474,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Jannis Boziaris,406663,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Ryan Malone,291908,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Tim Campulka,289335,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401885058,ger.2,D2,2026-11-06T17:30:00+00:00,Energie Cottbus,4-2-3-1,Fousseny Doumbia,404775,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Mads Larsen,274113,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Alexander Madsen,373197,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Melker Jonsson,304373,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Pedro Ganchas,288903,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Rami Al Hajj,286571,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Thomas Mikkelsen,196192,G,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Jens Martin Gammelby,206211,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Oliver Ross,338004,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Robin Ostrom,303791,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Lucas Thorst Riisgaard,3109433,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Mads Freundlich,387652,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Andreas Poulsen,250698,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Julius Nielsen,383963,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Villads Westh,362170,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,William Kirk,418775,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Mikkel Øxenberg,402522,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Sofus Berger Brix,321069,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Aske Andresen,330039,G,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Kristian Bloch Bøgild,3134494,F,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Silkeborg IF,3-4-2-1,Kristian Kirkegaard,363415,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Diego Kochen,368359,G,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Oskar Buur,229058,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Davíd Aronsson,387976,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Renzo Tytens,343604,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Mikkel Fischer,358514,D,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Oliver Højer,384302,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Zidan Sertdemir,322760,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Lauge Sandgrav,312022,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Gustav Fraulo,359287,M,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Isak Thorvaldsson,295807,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Frederik Gytkjaer,238404,F,titulaire,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Sanders Ngabo,343960,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Jens Jakob Thomasen,218707,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Jonathan Aegidius,309640,G,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Nemanja Nedic,258574,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Mathias Rasmussen,173141,M,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Daníel Kristjánsson,364652,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Arttu Hoskonen,289723,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,Cornelius Allen,3108091,D,remplacant,espn
+2026-11-06T17:14:33+00:00,401874537,den.1,DEN,2026-11-06T18:00:00+00:00,Lyngby Boldklub,4-4-2,William Steindorsson,372841,M,remplacant,espn
