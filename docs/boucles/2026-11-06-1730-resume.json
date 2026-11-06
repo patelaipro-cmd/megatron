@@ -1,0 +1,77 @@
+{
+  "execute_le": "2026-11-06T17:30:44.476228+00:00",
+  "objectif": 5,
+  "confirmes": 0,
+  "manquants": 5,
+  "statut": "CALENDRIER_EPUISE",
+  "blocages_globaux": [
+    "ZONE_GO_NON_VALIDEE"
+  ],
+  "passages": [
+    {
+      "numero": 1,
+      "examines": 10,
+      "confirmes": 0
+    },
+    {
+      "numero": 2,
+      "examines": 10,
+      "confirmes": 0
+    },
+    {
+      "numero": 3,
+      "examines": 3,
+      "confirmes": 0
+    }
+  ],
+  "instantane": "../megatron-externe/externe/cotes/espn/2026-11-06/1636.csv",
+  "sha256_instantane": "a9509e707cd4f5ff165780c40956afa9e4a251d59440967cc88e6823f6b16e2e",
+  "historique": [
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/matches_top5_2000-2026.csv",
+      "sha256": "399f92c774a257dd68b680e709ae5b6b9cdaa8297ac4fb7056019b15d1ede01c"
+    },
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/complement_openfootball_2026-27.csv",
+      "sha256": "08be93b73a58fcced118002adee1fd7acc8081c443f08ec73484f1cb405a8d3a"
+    },
+    {
+      "fichier": "docs/boucles/2026-11-06/complement.csv",
+      "sha256": "0e5acd01c5096ba7d80a1d31fa2daef78555521512e280dd1c256059ca00bb76"
+    }
+  ],
+  "erreurs": [],
+  "commit_donnees": "e2e8a5f355d0deec230bdc5c4e5a943d2efc2832",
+  "decisions": {
+    "PASS": 12,
+    "WATCH": 11
+  },
+  "changement_depuis_1714": "Aucun changement de décision ni de motif pour les 23 matchs. Nouvelles compositions collectées pour trois autres rencontres (Allemagne D2 et Danemark), hors calendrier de cet instantané de cotes.",
+  "candidats_seuil": [
+    {
+      "match": "Paris Saint-Germain - Troyes",
+      "coup_envoi": "2026-11-07T20:05+00:00",
+      "probabilites": {
+        "victoire_simple": 0.8804,
+        "victoire_par_2_ou_plus": 0.6792,
+        "victoire_par_3_ou_plus": 0.4382
+      },
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "compositions officielles non confirmées",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    }
+  ]
+}
