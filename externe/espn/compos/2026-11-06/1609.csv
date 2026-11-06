@@ -1,0 +1,22 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Mehmet Ataberk Dadadeniz,259520,G,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Kerim Çalhanoglu,310965,D,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Myenty Abena,200981,D,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Luis Pérez,110633,D,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Abakar Sylla,340239,D,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Juninho Bacuna,216287,M,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Deian Sorescu,240542,M,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Kacper Kozlowski,316281,M,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Alexandru Maxim,173816,M,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Drissa Camara,281531,M,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Trivante Stewart,354198,F,titulaire,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Karamba Gassama,405892,M,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Efe Sarikaya,337078,D,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Sabahattin Destici,3115974,D,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Victor Gidado,385702,M,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Arda Kizildag,292078,D,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Cemilhan Aslan,415406,G,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Ogün Özçiçek,325025,M,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Halil Dervisoglu,273296,F,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Serdar Dursun,240580,F,remplacant,espn
+2026-11-06T16:09:15+00:00,401888256,tur.1,T1,2026-11-06T17:00:00+00:00,Gaziantep FK,4-1-4-1,Ulrich Meleke,257066,M,remplacant,espn
