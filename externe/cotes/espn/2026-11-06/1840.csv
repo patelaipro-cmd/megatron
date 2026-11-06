@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-06T18:40:00+00:00,espn,DraftKings,courante,F1,2026-11-06T19:45+00:00,Toulouse,Strasbourg,401876405,2.15,3.75,3.2,65.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261106,38370965d8e99047383c6d390f13ccb275dfefcb383042dc8e332604a3db9cf7,1X2
+2026-11-06T18:40:00+00:00,espn,DraftKings,courante,I1,2026-11-06T19:45+00:00,Venezia,Udinese,401874815,2.25,3.25,3.05,65.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261106,ced3d72204721ada1dc4eed5b590b09165dc6aec6e5993217eb7cc29c56311d9,1X2
