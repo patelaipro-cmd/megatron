@@ -1,5 +1,5 @@
 {
- "execution_le": "2026-11-05T23:59:12+00:00",
+ "execution_le": "2026-11-06T01:36:01+00:00",
  "sources": {
   "fpl": {
    "lignes": 196,
@@ -11,10 +11,9 @@
    "erreur": "RuntimeError: API-Football /status : {'access': 'Your account is suspended, check on https://dashboard.api-football.com.'}"
   },
   "espn": {
-   "matchs_proches": 1,
-   "lignes": 46,
+   "matchs_proches": 0,
+   "lignes": 0,
    "erreurs_ligues": [],
-   "fichier": "espn/compos/2026-11-05/2359.csv",
    "statut": "ok"
   },
   "apify": {
