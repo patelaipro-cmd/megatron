@@ -1,0 +1,47 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Lazar Carevic,330458,G,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Gustavo Garcia,289899,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Víctor Rofino,362592,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Vojin Serafimovic,347632,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Ivan Zlobin,240259,G,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Gil Dias,229573,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Léo Realpe,287018,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Roméo Beney,362774,F,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Finn van Breemen,340623,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Mathias De Amorim,368008,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Patricio Salas,115044,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Tom van de Looi,261366,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Gabriel Cabral,335033,G,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Juvenal Augusto Gomes Correia,5326312,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Mathis Jangeal,411463,M,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Pedro Santos,370133,F,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Marcos Peña,338888,M,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Sorriso,314606,F,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Pedro Bondo,313915,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Georgios Koutsias,304317,F,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Óscar Aranda,297368,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Umar Abubakar,407398,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,FC Famalicao,4-2-3-1,Paulo Moreira,351541,M,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Ignacio De Arruabarrena,217556,G,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Tiago Esgaio,291193,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Javi Sánchez,191899,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Orest Lebedenko,286545,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,José Fontán,301904,D,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Alfonso Trezza,284853,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Mateo Flores,285232,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Espen Van Ee,367717,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Näis Djouahra,281113,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Taichi Fukui,316899,M,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Iván Martínez,178579,F,titulaire,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Gabrijel Rukavina,345658,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Boris Popovic,307191,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Mamadu Balde,3139867,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Jakub Vinarcik,356001,G,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Leo Shahar,374219,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Diogo Monteiro,312132,D,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Brian Mansilla,217150,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Pablo Gozálbez,300121,M,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Fally Mayulu,364534,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Lee Hyun-Ju,346774,M,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Dylan Nandín,381385,F,remplacant,espn
+2026-11-06T20:11:11+00:00,401885399,por.1,P1,2026-11-06T20:45:00+00:00,Arouca,4-2-3-1,Mario Climent,354651,D,remplacant,espn
