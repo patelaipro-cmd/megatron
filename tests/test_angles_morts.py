@@ -2,6 +2,7 @@
 
 import random
 import unittest
+from dataclasses import replace
 from datetime import date, datetime, timedelta, timezone
 
 from megatron import angles_morts as am
@@ -96,6 +97,54 @@ class AnglesMortsTest(unittest.TestCase):
                 later[m.match_id] = {**later[m.match_id], "HomeRed": 5.0, "HTHome": 9.0}
         b = am.analyser(past, later, "Équipe03", "Équipe04", cut, 1.4, 1.0)
         self.assertEqual(a, b)
+
+    def test_trois_h2h_ordre_et_marges_orientees(self):
+        base = self.matches[0]
+        def match(n, home, away, gh, ga):
+            day = date(2030, 1, n)
+            return replace(base, day=day, kickoff=datetime(2030, 1, n, tzinfo=timezone.utc),
+                           home=home, away=away, home_goals=gh, away_goals=ga, shots=None)
+        oldest = match(1, "F", "A", 9, 0)
+        short = match(2, "F", "A", 2, 1)
+        wide = match(3, "A", "F", 1, 4)
+        loss = match(4, "A", "F", 2, 0)
+        details = {wide.match_id: {"HTHome": 1, "HTAway": 1, "HomeRed": 1, "AwayRed": 0}}
+        original = [wide, oldest, loss, short]
+        out = am.comparateur_h2h(original, [], details, "F", "A", self.day, {})
+        rows = out["derniers_3_h2h"]
+        self.assertEqual([r["match_id"] for r in rows], [loss.match_id, wide.match_id, short.match_id])
+        self.assertEqual(original, [wide, oldest, loss, short])
+        self.assertEqual([r["marge_favori"] for r in rows], [-2, 3, 1])
+        self.assertEqual([r["marge_2plus"] for r in rows], [False, True, False])
+        self.assertEqual([r["marge_3plus"] for r in rows], [False, True, False])
+        self.assertEqual(rows[1]["score"], [1, 4])
+        self.assertFalse(rows[1]["favori_a_domicile"])
+        self.assertEqual(rows[1]["construction_ecart"]["rouges_adversaire"], 1)
+        self.assertTrue(rows[1]["construction_ecart"]["seuil_2plus_atteint_en_seconde_periode"])
+        self.assertIsNone(rows[0]["construction_ecart"]["marge_mi_temps_favori"])
+        self.assertEqual(out["couverture_3_h2h"]["statut"], "TROIS_PRESENTS")
+
+    def test_h2h_insuffisants_et_details_partiels(self):
+        m = self.matches[0]
+        for count in (0, 1):
+            out = am.comparateur_h2h([m] * count, [], {m.match_id: {"HTHome": 1, "HomeRed": 0}},
+                                     m.home, m.away, self.day, {})
+            self.assertEqual(len(out["derniers_3_h2h"]), count)
+            self.assertEqual(out["couverture_3_h2h"]["manquants"], 3 - count)
+            self.assertEqual(out["couverture_3_h2h"]["statut"], "HISTORIQUE_INSUFFISANT")
+            if count:
+                self.assertIsNone(out["dernier_h2h"]["mi_temps"])
+                self.assertIn("rouges", out["derniers_3_h2h"][0]["informations_manquantes"])
+
+    def test_h2h_doublons_autres_equipes_et_futur_refuses(self):
+        m = self.matches[0]
+        with self.assertRaises(ValueError):
+            am.comparateur_h2h([m, m], [], {}, m.home, m.away, self.day, {})
+        with self.assertRaises(ValueError):
+            am.comparateur_h2h([m], [], {}, "Autre", m.away, self.day, {})
+        for day in (m.day, m.day - timedelta(days=1)):
+            with self.assertRaises(AssertionError):
+                am.comparateur_h2h([m], [], {}, m.home, m.away, day, {})
 
 
 if __name__ == "__main__":
