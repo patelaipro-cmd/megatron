@@ -2,7 +2,7 @@
  "apifootball": {
   "compos_faites": [],
   "jour": "2026-11-07",
-  "requetes": 11
+  "requetes": 12
  },
  "apifootball/blessures": {
   "empreinte": "a677ffdd6e78a961bd06a79411769ae0e4643107ed0c7c634f08027da1ac3ce2",
@@ -224,16 +224,27 @@
    "401885057",
    "401874811",
    "401899555",
-   "401899551"
+   "401899551",
+   "401878760",
+   "401879241",
+   "401880172",
+   "401880171",
+   "401880164",
+   "401880163",
+   "401880162",
+   "401884745",
+   "401884740",
+   "401884744",
+   "401884737"
   ],
   "jour": "2026-11-07"
  },
  "espn/compos": {
-  "empreinte": "fd8c763fcce6fcce8a67d7284b9af511fefe77e349b19a67c92fd4f0b1ffda95",
-  "fichier": "espn/compos/2026-11-07/1316.csv"
+  "empreinte": "5881d7e1365638955e92d3ef1e57285b9bdc68843ebd1c91a1b967c01c75b0c6",
+  "fichier": "espn/compos/2026-11-07/1406.csv"
  },
  "fpl": {
-  "empreinte": "fc7739e8e2413c4f26aba227c0a11113cd7bbe4161bad60be53b207e62d14976",
-  "fichier": "fpl/2026-11-07/1157.csv"
+  "empreinte": "baf0b0d7028cc55bdbc63018cd0f363baa42b394224ba2ed0309dd9f346235a1",
+  "fichier": "fpl/2026-11-07/1406.csv"
  }
 }
