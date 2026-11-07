@@ -1,0 +1,42 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Horatiu Moldovan,285799,G,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Anil Yasar,322822,CD-L,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Jawad El Yamiq,232461,CD-R,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Zak Jules,241321,LB,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Ömer Ceyhan,416481,RB,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Charles-Andre Raux Yao,378017,AM,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Chandrel Géraud Massanga,318659,LM,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Abdelhamid Sabiri,252293,RM,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Ahmed Abdullahi,359150,F,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Lenny Pintor,266284,AM-L,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Bilal Boutobba,214690,AM-R,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Musa Eren Karakaş,3127368,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Berhan Satli,415391,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Emre Bilgin,164414,G,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Hamza Akman,340085,M,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Christ Sadia,410757,M,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Yusuf Barasi,284718,F,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Tashkin Ilter,196296,M,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,David Costa,373611,M,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Yigit Demir,340186,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Eyupspor,4-2-3-1,Arda Yavuz,123069,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Serhat Öztasdelen,408090,G,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Emir Ortakaya,310848,CD-L,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Anfernee Dijksteel,246924,CD-R,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Rigoberto Rivas,256895,LB,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Ugur Kaan Yildiz,295169,RB,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Show,272027,CM,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Mahamadou Susoho,365331,LM,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Berkan Kutlu,292252,RM,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Florian Ayé,223325,F,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Makana Baku,269467,LF,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Daniel Agyei,142521,RF,titulaire,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Tayfur Bingöl,261307,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Metehan Altunbas,287207,F,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Gonçalo Santos Sousa,384295,F,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Onurcan Piri,187744,G,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Onur Öztonga,290462,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Muharrem Cinan,406835,D,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Tobias Gulliksen,295863,M,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Arda Özyar,419831,F,remplacant,espn
+2026-11-07T10:06:12+00:00,401888255,tur.1,T1,2026-11-07T10:30:00+00:00,Kocaelispor,4-3-3,Matej Maglica,324323,D,remplacant,espn
