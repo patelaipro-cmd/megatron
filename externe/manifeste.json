@@ -1,9 +1,9 @@
 {
- "execution_le": "2026-11-07T11:57:25+00:00",
+ "execution_le": "2026-11-07T13:16:52+00:00",
  "sources": {
   "fpl": {
    "lignes": 192,
-   "fichier": "fpl/2026-11-07/1157.csv",
+   "fichier": "inchange",
    "statut": "ok"
   },
   "apifootball": {
@@ -12,9 +12,9 @@
   },
   "espn": {
    "matchs_proches": 10,
-   "lignes": 240,
+   "lignes": 185,
    "erreurs_ligues": [],
-   "fichier": "espn/compos/2026-11-07/1157.csv",
+   "fichier": "espn/compos/2026-11-07/1316.csv",
    "statut": "ok"
   },
   "apify": {
