@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T16:02:00+00:00,espn,DraftKings,courante,I1,2026-11-07T17:00+00:00,Parma,Bologna,401874974,5.0,3.45,1.6897,58.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107,b3a9c0173535639c79c14fee83f41231dc2a3b568ef0fb98deb62eebaaa350ac,1X2
