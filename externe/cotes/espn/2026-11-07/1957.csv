@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T19:57:00+00:00,espn,DraftKings,courante,F1,2026-11-07T20:05+00:00,Paris Saint-Germain,Troyes,401876407,1.1111,9.5,21.0,8.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261107,356bec514efe28680ac6af5891910782f0d0885a9e6686fc4211fd4821184420,1X2
+2026-11-07T19:57:00+00:00,espn,DraftKings,courante,SP1,2026-11-07T20:00+00:00,Valencia,Real Madrid,401882808,12.0,6.5,1.2353,3.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107,99c229b567a7e27eae4dd3072637d27edeae30fc03f3508766f363ffb608dcee,1X2
