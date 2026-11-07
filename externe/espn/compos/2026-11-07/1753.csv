@@ -1,0 +1,219 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Paul Nardi,159312,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Axel Tuanzebe,229524,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Marvin Senaya,309638,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Sinaly Diomande,302862,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Telli Siwe,403125,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Pierre Ekwah,307159,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Naouirou Ahamada,297775,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Fredrik Oppegard,310134,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Romain Faivre,268591,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Cameron Archer,293347,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Danny Namaso,243748,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Christ Makosso,362476,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Remy Labeau Lascary,349185,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Kévin Danois,323722,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Rayan Mandengue,379070,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Arthur Piedfort,359360,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Clément Akpa,344520,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Aristide Zossou,392126,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Lamine Sy,335320,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,AJ Auxerre,4-3-3,Mamadou Diop,345926,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Kevin Trapp,122280,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Otavio,308195,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Diego Coppola,332549,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Hamari Traoré,196729,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Moses Simon,187647,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Pierre Lees-Melou,221527,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Rudy Matondo,402888,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Pablo Pagis,334359,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Maxime López,223122,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Ilan Kebbal,304918,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Lassine Sinayoko,271137,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Thibault De Smet,246805,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Emmanuel Mbemba,403843,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Zabi Gueu,398780,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Luca Koleosho,341333,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Moustapha Mbow,287474,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Obed Nkambadio,301770,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Jean-Phillipe Krasso,257126,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Vincent Marchetti,219153,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401876411,fra.1,F1,2026-11-07T18:00:00+00:00,Paris FC,4-2-3-1,Omar Sissoko,368334,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Matheus Mendes,302601,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Mofe Jemide,366068,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Matheus França,318087,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,André Vidigal,260804,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Sergi Gómez,120708,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Davy Gui,399003,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Diogo Spencer,381436,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Yahya Bojang,373196,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Dawda Camara,329667,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Julián Martinez,360071,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Rayan Lucas,359450,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Vivaldo Semedo,349681,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Lucas Figueiredo,314864,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Ian Luccas,304380,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Cédric Nuozzi,406867,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Chissumba,379620,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,André Paulo,85096,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Zé Rafael,201660,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Toni Tamarit,409256,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Isaac James,380857,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Steven Baseya,364697,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Chiquinho,321359,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Alverca,3-4-3,Vasco Moreira,411399,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Patrick Sequeira,228458,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Pedro Rosas,373713,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Kaly,386143,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,David Sousa,301593,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,André Geraldes,149660,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Benjamin Pauwels,385189,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Silvi Clua,367661,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,João Rêgo,384419,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Sebastián Pérez,156818,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Jeremy Livolant,231196,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Henrique Araújo,334530,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Lawrence Ofori,285846,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Evans Maurin,364133,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Rochinha,215742,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Abdu Dafe,421533,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,JP,379268,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Gabi Pereira,373716,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Mohamed Salah El Boukammiri,345624,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Kevin Prieto,380131,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Felipe Florencio Da Silva,322793,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Cassiano,201763,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Ivan Mandic,358088,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401885402,por.1,P1,2026-11-07T18:00:00+00:00,Casa Pia,4-2-3-1,Joao Goulart,328225,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Andreas Leitner,237920,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Fabian Rossdorfer,374528,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Oliver Steurer,269157,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Samuel Johansen Chukwudi,305253,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Jaeden Rhodes,335863,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Ante Bajic,305862,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Stefan Schwab,176374,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Philipp Pomer,320940,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Moegamat Yusuf Maart,266133,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Martin Rasner,219322,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Isaac Kiese Thelin,166657,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Niama Sissoko,392994,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Evan Eghosa,367508,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Joris Boguo,408118,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Lukas Malicsek,239702,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Hidajet Hankic,222866,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Oliver Sorg,170193,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Dejan Radonjic,206792,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Luka Capan,197147,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,SV Josko Ried,3-4-2-1,Yussef Nasrawe,418397,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Lukas Jungwirth,352661,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Miguel Freckleton,354730,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Xavier Mbuyamba,283026,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Alemão,338948,D,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Yvan Dibango,365165,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Sascha Horvath,193294,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Robert Ljubicic,273480,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Florian Flecker,258894,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Melayro Bogarde,290638,M,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Sasa Kalajdzic,259131,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Christoph Lang,37442,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Kasper Jørgensen,286853,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Moses Usor,340760,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Samuel Adeniran,318956,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Tobias Schützenauer,224704,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Krystof Danek,306899,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Alessandro Schöpf,203868,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Daniel Elfadli,343993,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Art Smakaj,341760,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401881752,aut.1,AUT,2026-11-07T18:30:00+00:00,LASK Linz,3-4-1-2,Andrés Andrade,189775,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,César Rigamonti,122884,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Lautaro Carrera,379599,CD,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Germán Guiffrey,276290,CD-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Ezequiel Muñoz,117843,CD-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Matías Recalde,319190,LB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Luciano Paredes,339037,RB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Fermín Antonini,234996,CM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Facundo Lencioni,318398,CM-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Ignacio Charparin,312136,CM-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Agustín Módica,371423,CF-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Esteban Fernández,307334,CF-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Santiago Rodríguez,83178,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Nahuel Barboza,358523,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Luciano Cingolani,309461,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Brian Andrada,217089,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Martín Úbeda,385174,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Matias Vargas,196613,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Juan Franco,120800,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Gerónimo Patritti,420924,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Lautaro Petruchi,287343,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Tomas O'Connor,342002,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Ulises Sánchez,292037,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Gimnasia (Mendoza),5-3-2,Nicolás Romano,281446,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Nicolás Bolcato,414351,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Alejo Osella,336665,CD-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Ivan Villalba,252053,CD-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Juan Manuel Elordi,236006,LB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Alex Vigo,276021,RB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Fabrizio Sartori Prieto,309496,AM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,José Florentín,217153,LM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Tomás Bottari,302053,RM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Alex Arce,257754,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Leonel Bucca,290595,AM-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Gonzalo Rios,315719,AM-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Kevin Vázquez,219074,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Luis Sequeira,213509,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Ezequiel Bonifacio,207235,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Victorio Ramis,205224,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Luis Díaz,341790,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Rodrigo Atencio,338874,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Diego Crego,290741,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Matías Reali,335510,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Emmanuel Gómez Riga,301990,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Sheyko Studer,301978,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Stefano Moreyra,309424,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841666,arg.1,ARG,2026-11-07T18:00:00+00:00,Independiente Rivadavia,4-2-3-1,Matías Fernández,185434,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Ezequiel Unsain,200935,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Román Riquelme,318179,CD-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Santiago Fernández,358648,CD-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Gabriel Báez,192847,LB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Augusto Schott,276302,RB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Alexandro Maidana,399687,AM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Alejandro Galarza,309398,LM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Mateo Caceres,307620,RM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Agustín Álvarez Martínez,307473,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Valentin Depietri,292245,AM-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Rick,288678,AM-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Federico Fattori,187475,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Joaquín Samuel Salas,5331632,,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Giovanni Baroni,402605,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Lautaro Ortiz,418077,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Valentín Dávila,396616,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Thiago Baroni,3110765,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Emiliano Chiavassa,402606,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Timoteo Chamorro,402177,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Bruno Trey,3110763,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Santino Barbi,383134,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Jeremías Gallard,383138,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Talleres (Córdoba),4-2-3-1,Daniel Ribera,362183,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Fernando Muslera,108622,G,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Marcos Rojo,129426,CD-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Leandro González Pírez,154748,CD-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Gastón Benedetti,301955,LB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Eros Mancuso,318082,RB,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Joaquín Correa,195638,AM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Alexis Castro,234873,LM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Ezequiel Piovi,240401,RM,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Adolfo Gaich,276024,F,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Joaquín Tobio Burgos,383022,AM-L,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Tiago Palacios,302051,AM-R,titulaire,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Ramiro Funes Mori,151953,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,José Sosa,102240,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Eric Meza,276020,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Edwin Cetre,264844,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Fabricio Pérez,316649,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Baltasar Rodríguez,339804,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Bautista Kociubinski,309429,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Fabricio Iacovich,336441,G,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Miguel Monsalve,307659,M,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Lucas Alario,158918,F,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Santiago Arzamendia,250467,D,remplacant,espn
+2026-11-07T17:53:37+00:00,401841661,arg.1,ARG,2026-11-07T18:00:00+00:00,Estudiantes de La Plata,4-2-3-1,Brian Aguirre,309131,F,remplacant,espn
