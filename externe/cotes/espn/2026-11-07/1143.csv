@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T11:43:00+00:00,espn,DraftKings,courante,E0,2026-11-07T12:30+00:00,Leeds United,Tottenham Hotspur,401878758,2.75,3.35,2.6,47.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107,cd23d5459cf5d9c88a9e2dffde9ade93e74305c020aa5d135c92d229614dc2b7,1X2
