@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T15:06:00+00:00,espn,DraftKings,courante,SP1,2026-11-07T15:15+00:00,Espanyol,Deportivo,401882813,2.5,3.25,2.95,9.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107,ced47355705dff80c3f2dca8f213001f93d7310218367c9e2f7417eafe6ec615,1X2
