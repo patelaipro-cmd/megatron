@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T12:08:00+00:00,espn,DraftKings,courante,E0,2026-11-07T12:30+00:00,Leeds United,Tottenham Hotspur,401878758,2.75,3.35,2.6,22.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107,efaac1e44627fb080cfeb598ee3155225f3385b78492b34b15503a318df373cc,1X2
+2026-11-07T12:08:00+00:00,espn,DraftKings,courante,SP1,2026-11-07T13:00+00:00,Málaga,Racing Santander,401882812,2.5,3.55,2.75,52.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107,16aa92a3be5690f683ce688b74387c589dce8e5b6f591b665235e73be62e75b8,1X2
