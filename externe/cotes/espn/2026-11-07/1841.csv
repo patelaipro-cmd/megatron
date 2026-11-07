@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T18:41:00+00:00,espn,DraftKings,courante,I1,2026-11-07T19:45+00:00,AS Roma,Sassuolo,401874803,1.303,5.5,7.5,64.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107,d18dadd406b30fa55c7976868ed2012ba2957d68f5f89ab8aa07af51a8d3c3e9,1X2
