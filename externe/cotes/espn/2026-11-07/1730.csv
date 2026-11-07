@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T17:30:00+00:00,espn,DraftKings,courante,F1,2026-11-07T18:00+00:00,AJ Auxerre,Paris FC,401876411,5.25,4.1,1.625,30.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261107,5f3f439b2281be3f339dd49435f82ee06ed663b7d65c627f564b5c9ec24eaa41,1X2
