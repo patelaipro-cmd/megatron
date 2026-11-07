@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-07T12:34:00+00:00,espn,DraftKings,courante,SP1,2026-11-07T13:00+00:00,Málaga,Racing Santander,401882812,2.4,3.6,2.85,26.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107,0096e2967295e35dbf41c9efb246e615774090422cc49082a4c2b14372e175ec,1X2
