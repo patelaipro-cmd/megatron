@@ -1,9 +1,9 @@
 {
- "execution_le": "2026-11-07T21:55:25+00:00",
+ "execution_le": "2026-11-07T22:56:05+00:00",
  "sources": {
   "fpl": {
    "lignes": 189,
-   "fichier": "fpl/2026-11-07/2155.csv",
+   "fichier": "inchange",
    "statut": "ok"
   },
   "apifootball": {
@@ -11,9 +11,10 @@
    "erreur": "RuntimeError: API-Football /status : {'access': 'Your account is suspended, check on https://dashboard.api-football.com.'}"
   },
   "espn": {
-   "matchs_proches": 1,
-   "lignes": 0,
+   "matchs_proches": 8,
+   "lignes": 42,
    "erreurs_ligues": [],
+   "fichier": "espn/compos/2026-11-07/2256.csv",
    "statut": "ok"
   },
   "apify": {

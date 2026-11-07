@@ -1,0 +1,43 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Camilo Vargas,185147,G,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Jesús Serrato,383233,M,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Kevin Zenón,290593,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Adrián Mora,270210,D,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Gaddi Aguirre,233106,D,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Víctor Ríos,366679,M,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,José Lozano,271502,D,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Manuel Capasso,225440,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Sergio Hernandez,386935,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Jorge Rodríguez,312586,D,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Luís Esteves,312549,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Florián Monzón,309574,F,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,José Martín,407291,F,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Antonio Sánchez,291114,G,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Milton Valenzuela,233688,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Ryan Mmaee,219646,F,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Aldo Rocha,178839,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Alfonso González,12425,F,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Juanjo Purata,263224,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Elías Montiel,364455,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Atlas,4-2-2-2,Adonis Frias,234447,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Carlos Moreno,259439,G,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Sergio Barreto,268843,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Jorge Berlanga,364454,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Eduardo Bauermann,194921,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Francisco Venegas,228355,D,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Christian Rivera,233978,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Alan Bautista,326072,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Oussama Idrissi,229552,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Rodolfo Pizarro,176489,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Javier Vallejo,160562,M,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Salomón Rondón,127570,F,titulaire,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Adrián Alcaraz,333706,F,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Ian Josué Zavala Osorio,3145685,F,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Sebastian Santos,357437,M,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Pedro Budib,347613,D,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Jose Eulogio Téllez,313058,G,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Cristóbal Hernández,417623,F,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Thomas Alexander Contreras Hernández,3129848,M,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Mauricio Isais,302128,D,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Andrés Arroyo,286713,M,remplacant,espn
+2026-11-07T22:56:05+00:00,401876907,mex.1,MEX,2026-11-07T23:00:00+00:00,Pachuca,4-2-3-1,Kenedy,195349,M,remplacant,espn
