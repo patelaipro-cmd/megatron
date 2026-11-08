@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-08T10:46:00+00:00,espn,DraftKings,courante,I1,2026-11-08T11:30+00:00,Napoli,Lazio,401874810,2.15,3.5,3.1,44.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261108,5ea6c223d0c179c43e5f83c6268473da6406f4cb8ab10f2471dd0ea064d8647a,1X2
