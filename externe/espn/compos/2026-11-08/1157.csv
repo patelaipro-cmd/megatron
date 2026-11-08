@@ -1,0 +1,142 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Thomas Dähne,198171,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Jonas Föhrenbach,220815,CD-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Patrick Mainka,184075,CD-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Michael Heule,319400,LB,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Marnon Busch,208176,RB,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Jan Schöppner,291798,CM-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Tim Siersleben,290208,CM-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Paul Hennrich,397595,LM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Marcel Costly,269510,RM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Budu Zivzivadze,237727,CF-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Mikkel Kaufmann,277107,CF-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Sirlord Conteh,307508,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Frank Feller,334262,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Oualid Mhamdi,338849,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Julian Niehues,322555,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Christian Conteh,288371,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Alessandro Vogt,396011,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Leart Paqarada,205972,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Torben Leis,5331787,,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Heidenheim 1846,4-4-2,Maximilian Breunig,307892,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Taycan Macid Etcibasi,3099576,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Pascal Loretz,321208,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Bastian Allgeier,312519,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Manuel Braun,386436,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Noah Engelbreth,416456,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Mwisho Mhango,416639,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Kolja Oudenne,367647,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Mustapha Bundu,245512,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Ime Okon,358744,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Leo Weinkauf,255896,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Boris Tomiak,260171,CD,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Jean Hugonet,291983,CD-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Virgil Ghita,259802,CD-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Franz Roggow,323156,SW,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Waniss Taibi,297773,CM-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Husseyn Chakroun,386470,CM-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Stefán Teitur Thórdarson,301558,LM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Hayate Matsuda,341704,RM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Marcel Hartel,234125,CF-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885065,ger.2,D2,2026-11-08T12:30:00+00:00,Hannover 96,3-1-4-2,Benjamin Kallman,278038,CF-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Dominik Reimann,218716,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Anselmo Garcia MacNulty,320920,CD-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Tobias Müller,174546,CD-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Alexander Nollenberger,291146,LB,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Pierre Nadjombe,386467,RB,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Luka Hyryläinen,388352,CM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Leon Noel Mergner,3106502,LM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Torben Müsel,258976,RM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Mateusz Zukowski,290695,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Baris Atik,235097,LF,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Emmanuel Iyoha,228273,RF,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Paul Jaeckel,271606,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Herbert Bockhorn,260935,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Magnus Baars,402965,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Roko Simic,306273,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Richmond Tachie,306495,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Tony Reitz,3098560,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Felipe Chávez,408344,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Daniel Heber,306994,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,1. FC Magdeburg,4-3-3,Noah Kruth,324704,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Ben Voll,307489,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Eric Smith,204115,CD,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Lars Ritzka,253675,CD-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Dávid Németh,283952,CD-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Joel Chima Fujita,297567,CM-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Mathias Rasmussen,173141,CM-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Branimir Hrgota,174506,AM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Louis Oppie,364803,LM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Arkadiusz Pyrka,305716,RM,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Abdoulie Ceesay,387129,CF-L,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Connor Metcalfe,260643,CF-R,titulaire,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Samuel Klein,333820,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Marcus Mathiesen,219189,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Ricky-Jade Jones,294291,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Youssoupha Niang,417605,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Martijn Kaars,250459,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Tomoya Ando,399042,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Adam Dzwigala,280065,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Dimitar Mitov,209577,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401885059,ger.2,D2,2026-11-08T12:30:00+00:00,St. Pauli,3-4-1-2,Taichi Hara,271135,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Mats Pannewig,346374,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Maximilian Wittek,207139,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Koji Miyoshi,195105,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Mansour Ouro-Tagba,362415,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Christian Rasmussen,305588,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Tom Meyer,397746,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Charlie Patino,327167,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Tino Casali,200850,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Karol Mets,196297,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Sean Klaiber,189653,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Jarne Steuckers,312807,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Daniel Hanslik,290757,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Gerrit Holtmann,218779,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Lasse Isbruch,404531,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Yigit Karademir,340135,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Berkan Taz,261355,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Michael Steinwender,274020,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Philipp Hofmann,169412,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Timo Horn,160021,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,VfL Bochum,4-4-2,Leon Sawas,3102262,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Hans Christian Bernat,282427,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Sandro Tremoulet,345154,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Paul Scholl,406303,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Christoph Kobald,274352,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Santeri Vaananen,275471,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Marvin Wanitzek,217632,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Rafael Pedrosa,384156,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Kevin Wiethaup,340136,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Tim Civeja,290632,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Deniz Ofli,416461,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Shio Fukuda,362673,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Robin Himmelmann,123071,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Kwon Hyeok-Kyu,366221,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,John Davis Meyer,3122353,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Viktor Bergh,357204,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Jason Manuel Ponente Ramirez,3100709,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Louey Farhat,381471,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Helintón,269503,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Noel Eichinger,365727,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401885062,ger.2,D2,2026-11-08T12:30:00+00:00,Karlsruher SC,3-4-2-1,Danyal Zor,411442,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Argus Driessche,371691,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Cheveyo Tsawa,380662,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Jessi Silva,365317,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Hugo Siquet,310023,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Lee Han-Beom,297788,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Nordin Jackers,202101,G,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Yann Sommer,93197,G,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Kyriani Sabbe,351373,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Jorne Spileers,351301,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Matteo Dams,331153,D,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Brandon Mechele,191222,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Romeo Vermant,360422,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Milan Robberechts,328745,F,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Hugo Vetlesen,255261,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Carlos Forbs,78836,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Hans Vanaken,193849,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Joaquin Seys,363068,D,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Lynnt Audoor,329449,M,remplacant,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Felix Lemarechal,324419,M,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Nicolo Tresoldi,335201,F,titulaire,espn
+2026-11-08T11:57:42+00:00,401878946,bel.1,B1,2026-11-08T12:30:00+00:00,Club Brugge,4-2-3-1,Tian Nai Koren,417829,M,remplacant,espn
