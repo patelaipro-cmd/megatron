@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-08T12:27:00+00:00,espn,DraftKings,courante,SP1,2026-11-08T13:00+00:00,Elche,Real Betis,401882814,3.9,3.9,1.8696,33.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261108,6512697f711eb4de1ad0324c6eb3ba3ccca9e5c7764d425118b49d4f79114c82,1X2
