@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-08T17:14:00+00:00,espn,DraftKings,courante,SP1,2026-11-08T17:30+00:00,Celta Vigo,Levante,401882815,1.8696,3.6,4.3,16.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261108,8542c06d8cf2f6ac09d355677f7c19bf6f91f077314eccc1338b346634539eaa,1X2
+2026-11-08T17:14:00+00:00,espn,DraftKings,courante,SP1,2026-11-08T17:30+00:00,Villarreal,Getafe,401882807,1.5405,4.3,6.0,16.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261108,8542c06d8cf2f6ac09d355677f7c19bf6f91f077314eccc1338b346634539eaa,1X2
