@@ -1,0 +1,120 @@
+collecte_le,event_id,ligue,division,coup_envoi,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Pierre Landry Kabore,315335,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Laurent Mendy,408614,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Jordi Altena,367663,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Severin Sabri Guendouz,366334,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Finlay Pollock,318357,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Stuart Findlay,198906,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Leart Kabashi,397295,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Yan Dhanda,204352,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Ryan Fulton,222211,G,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Matthew Gillies,387534,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Jerome Williams,256238,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Aron Benjaminsen,383884,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Amadou Ba-Sy,356917,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Cláudio Braga,405624,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Jamie McCart,225632,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Joshua McPake,271194,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Sabah Kerjota,407780,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Malachi Walcott,279791,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,Beau Reus,277882,G,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Heart of Midlothian,4-2-3-1,James Wilson,362560,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Scott Bain,141859,G,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Liam Henderson,107568,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Lewis Neilson,302077,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Jack Mcmillan,215154,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Scott Tanser,186054,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Brad Spencer,261533,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Ethan Ross,229761,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Owen Eames,401293,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Deniss Melniks,326507,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Finley Barbrook,389686,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Jacob Murrell,380712,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Ben Krauhaus,346908,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Nicky Hogarth,271187,G,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Craig Sibbald,162891,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Keelan Adams,353068,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,CJ Fodrey,318486,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Ben Parkinson,350651,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Ross Maciver,239331,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Connor Mcleod,355418,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401878339,sco.1,SC0,2026-11-08T15:00:00+00:00,Falkirk,4-2-3-1,Finn Yeats,324745,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Marvin Schwäbe,205751,G,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Alessio Castro-Montes,236136,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Paul Okon-Engstler,403528,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Luka Lochoshvili,222477,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Malek El Mala,384155,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Mikey Moore,365332,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Gideon Mensah,264484,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Luca Waldschmidt,191352,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Sebastian Sebulonsen,302981,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Marius Bulter,275797,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Linton Maina,231173,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Borna Sosa,228319,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Jahmai Simpson-Pusey,357337,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Jan Thielmann,300444,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Reigan Heskey,378369,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Joel Schmied,306378,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Ron-Robert Zieler,121007,G,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Said El Mala,380795,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Ísak Jóhannesson,286815,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,FC Cologne,3-5-2,Tom Krauss,283683,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Mark Flekken,177821,G,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Edmond Tapsoba,257287,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Miguel Gutiérrez,290044,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Facundo Medina,249663,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Jarell Quansah,298524,D,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Afonso Moreira,361258,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Ibrahim Maza,361212,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Aleix García,219294,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Malik Tillman,301416,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Ezequiel Fernández,364080,M,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Patrik Schick,212330,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Lucas Vázquez,174967,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Tim Oermann,346376,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Robert Andrich,180998,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Montrell Culbreath,408703,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Loïc Badé,300410,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Victor Boniface,287276,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Jonas Hofmann,174617,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Eliesse Ben Seghir,346947,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401884738,ger.1,D1,2026-11-08T14:30:00+00:00,Bayer Leverkusen,4-2-3-1,Janis Blaswich,161825,G,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Paul Izzo,159494,G,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Nikolas Dyhr,291551,CD,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Nikolai Hopland,333779,CD-L,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Sabil Hansen,360259,CD-R,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Martin Sjolstad,333796,LB,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Amady Camara,376215,RB,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Mathias Greve,218706,CM-L,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Axel Henriksson,315674,CM-R,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Mike Themsen,380839,LM,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Elies Mahmoud,304214,RM,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Mohamed Sankoh,318391,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Cyril Edudzi,406151,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Oliver Jones,154973,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Kasper Junker,214372,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Warren Caddy,218527,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,John Bjorkengren,286726,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Jannich Storch,178351,G,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Felix Sommer,410978,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Hector Lux Høyrup,409483,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,Randers FC,5-4-1,Simon Stücker,407534,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Andreas Hansen,145645,G,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Tobias Salquist,238412,CD,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Noah Markmann,372633,CD-L,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Victor Nelsson,241138,CD-R,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Nicklas Rojkjaer,249171,CM-L,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Justin Janssen,387494,CM-R,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Peter Ankersen,146803,LM,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Runar Norheim,312960,RM,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Alexander Lind,202681,F,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Ibrahim Adel,299619,CF-L,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Hjalte Boe Rasmussen,402527,CF-R,titulaire,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Stephen Acquah,378549,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Prince Amoako,362789,F,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Juho Lähteenmäki,372632,D,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Villum Berthelsen,401465,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Mamadou Sadio,335421,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Malte Heyde,406537,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Mark Brink Christensen,238401,M,remplacant,espn
+2026-11-08T14:06:06+00:00,401874562,den.1,DEN,2026-11-08T15:00:00+00:00,FC Nordsjælland,3-4-3,Markus Walker,400779,D,remplacant,espn
