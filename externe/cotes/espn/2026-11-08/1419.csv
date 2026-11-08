@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-08T14:19:00+00:00,espn,DraftKings,courante,D1,2026-11-08T14:30+00:00,FC Cologne,Bayer Leverkusen,401884738,4.7,4.1,1.6061,11.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261108,0f065c9e2f71ec6f6bb5173804aca5b4cd2bb9983161325896d4ba68bb7e5400,1X2
+2026-11-08T14:19:00+00:00,espn,DraftKings,courante,SP1,2026-11-08T15:15+00:00,Real Sociedad,Rayo Vallecano,401882810,1.8696,3.85,3.95,56.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261108,9ad483d8fa6745f8abcb85058e8dbbfea68966c8d2d81e93a920bdc9ae8370b9,1X2
