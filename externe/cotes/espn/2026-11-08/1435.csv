@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-08T14:35:00+00:00,espn,DraftKings,courante,SP1,2026-11-08T15:15+00:00,Real Sociedad,Rayo Vallecano,401882810,1.8696,3.85,3.95,40.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261108,8f7d2957c947b2cf94a9b7968b2a1d54b60f5e0eb85b4d384f9b3e4386ed9308,1X2
