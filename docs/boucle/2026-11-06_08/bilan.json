@@ -1,0 +1,2209 @@
+{
+ "n_predits": 48,
+ "n_resolus": 48,
+ "n_officiels": 48,
+ "n_provisoires": 0,
+ "sans_resultat": [],
+ "modeles": {
+  "poisson-v5-cal": {
+   "n": 48,
+   "brier": 0.518832,
+   "log_loss": 0.888365,
+   "rps": 0.175465,
+   "calibration": [
+    {
+     "tranche": "0.0-0.2",
+     "n": 18,
+     "p_moyenne": 0.1454,
+     "frequence_observee": 0.0
+    },
+    {
+     "tranche": "0.2-0.4",
+     "n": 84,
+     "p_moyenne": 0.2758,
+     "frequence_observee": 0.25
+    },
+    {
+     "tranche": "0.4-0.6",
+     "n": 33,
+     "p_moyenne": 0.486,
+     "frequence_observee": 0.5455
+    },
+    {
+     "tranche": "0.6-0.8",
+     "n": 8,
+     "p_moyenne": 0.6635,
+     "frequence_observee": 1.0
+    },
+    {
+     "tranche": "0.8-1.0",
+     "n": 1,
+     "p_moyenne": 0.87,
+     "frequence_observee": 1.0
+    }
+   ],
+   "reussite_choix": 0.5833,
+   "p_nul_moyenne": 0.2472,
+   "frequence_nul": 0.2292
+  },
+  "xg-v1-cal": {
+   "n": 48,
+   "brier": 0.504836,
+   "log_loss": 0.867761,
+   "rps": 0.169015,
+   "calibration": [
+    {
+     "tranche": "0.0-0.2",
+     "n": 19,
+     "p_moyenne": 0.131,
+     "frequence_observee": 0.0
+    },
+    {
+     "tranche": "0.2-0.4",
+     "n": 82,
+     "p_moyenne": 0.2707,
+     "frequence_observee": 0.2439
+    },
+    {
+     "tranche": "0.4-0.6",
+     "n": 32,
+     "p_moyenne": 0.4829,
+     "frequence_observee": 0.5312
+    },
+    {
+     "tranche": "0.6-0.8",
+     "n": 9,
+     "p_moyenne": 0.6812,
+     "frequence_observee": 1.0
+    },
+    {
+     "tranche": "0.8-1.0",
+     "n": 2,
+     "p_moyenne": 0.8646,
+     "frequence_observee": 1.0
+    }
+   ],
+   "reussite_choix": 0.6458,
+   "p_nul_moyenne": 0.2274,
+   "frequence_nul": 0.2292
+  },
+  "bookmaker-b365": {
+   "n": 48,
+   "brier": 0.494985,
+   "log_loss": 0.855006,
+   "rps": 0.164352,
+   "calibration": [
+    {
+     "tranche": "0.0-0.2",
+     "n": 19,
+     "p_moyenne": 0.1367,
+     "frequence_observee": 0.0
+    },
+    {
+     "tranche": "0.2-0.4",
+     "n": 81,
+     "p_moyenne": 0.2675,
+     "frequence_observee": 0.2469
+    },
+    {
+     "tranche": "0.4-0.6",
+     "n": 34,
+     "p_moyenne": 0.4883,
+     "frequence_observee": 0.5294
+    },
+    {
+     "tranche": "0.6-0.8",
+     "n": 8,
+     "p_moyenne": 0.6839,
+     "frequence_observee": 1.0
+    },
+    {
+     "tranche": "0.8-1.0",
+     "n": 2,
+     "p_moyenne": 0.8326,
+     "frequence_observee": 1.0
+    }
+   ],
+   "reussite_choix": 0.6042,
+   "p_nul_moyenne": 0.2385,
+   "frequence_nul": 0.2292
+  },
+  "bookmaker-dk": {
+   "n": 47,
+   "brier": 0.494555,
+   "log_loss": 0.852545,
+   "rps": 0.162974,
+   "calibration": [
+    {
+     "tranche": "0.0-0.2",
+     "n": 25,
+     "p_moyenne": 0.1458,
+     "frequence_observee": 0.04
+    },
+    {
+     "tranche": "0.2-0.4",
+     "n": 74,
+     "p_moyenne": 0.2738,
+     "frequence_observee": 0.2703
+    },
+    {
+     "tranche": "0.4-0.6",
+     "n": 32,
+     "p_moyenne": 0.4971,
+     "frequence_observee": 0.5
+    },
+    {
+     "tranche": "0.6-0.8",
+     "n": 8,
+     "p_moyenne": 0.6873,
+     "frequence_observee": 1.0
+    },
+    {
+     "tranche": "0.8-1.0",
+     "n": 2,
+     "p_moyenne": 0.8441,
+     "frequence_observee": 1.0
+    }
+   ],
+   "reussite_choix": 0.5957,
+   "p_nul_moyenne": 0.239,
+   "frequence_nul": 0.234
+  }
+ },
+ "communs_avec_bookmakers": {
+  "bookmaker-b365": {
+   "n": 48,
+   "log_loss": {
+    "poisson-v5-cal": 0.888365,
+    "xg-v1-cal": 0.867761,
+    "bookmaker-b365": 0.855006
+   }
+  },
+  "bookmaker-dk": {
+   "n": 47,
+   "log_loss": {
+    "poisson-v5-cal": 0.890037,
+    "xg-v1-cal": 0.867952,
+    "bookmaker-dk": 0.852545
+   }
+  }
+ },
+ "syndicate": {
+  "syndicate_initial": {
+   "PASS": {
+    "n": 25,
+    "favori_gagne": 11,
+    "favori_par_2": 5,
+    "p_favori_moyenne": 0.4361,
+    "p_2plus_moyenne": 0.2072
+   },
+   "WATCH": {
+    "n": 23,
+    "favori_gagne": 18,
+    "favori_par_2": 8,
+    "p_favori_moyenne": 0.6074,
+    "p_2plus_moyenne": 0.3524
+   }
+  },
+  "syndicate_final": {
+   "PASS": {
+    "n": 28,
+    "favori_gagne": 13,
+    "favori_par_2": 5,
+    "p_favori_moyenne": 0.4481,
+    "p_2plus_moyenne": 0.2181
+   },
+   "WATCH": {
+    "n": 20,
+    "favori_gagne": 16,
+    "favori_par_2": 8,
+    "p_favori_moyenne": 0.6163,
+    "p_2plus_moyenne": 0.3589
+   }
+  }
+ },
+ "plus_grosses_surprises": [
+  {
+   "match_id": "E0:2026-11-07:Nott'm Forest-Man City",
+   "score": "3-1",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.212,
+   "syndicate_final": "WATCH"
+  },
+  {
+   "match_id": "F1:2026-11-08:Le Mans-Monaco",
+   "score": "1-1",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.23,
+   "syndicate_final": "WATCH"
+  },
+  {
+   "match_id": "I1:2026-11-07:Cagliari-Frosinone",
+   "score": "1-0",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.236,
+   "syndicate_final": "PASS"
+  },
+  {
+   "match_id": "SP1:2026-11-08:Celta-Levante",
+   "score": "0-0",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.248,
+   "syndicate_final": "WATCH"
+  },
+  {
+   "match_id": "E0:2026-11-08:Man United-Aston Villa",
+   "score": "4-4",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.249,
+   "syndicate_final": "PASS"
+  },
+  {
+   "match_id": "I1:2026-11-08:Fiorentina-Juventus",
+   "score": "2-2",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.265,
+   "syndicate_final": "WATCH"
+  },
+  {
+   "match_id": "E0:2026-11-07:Fulham-Newcastle",
+   "score": "1-1",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.268,
+   "syndicate_final": "PASS"
+  },
+  {
+   "match_id": "SP1:2026-11-06:Sevilla-Alaves",
+   "score": "0-0",
+   "statut": "officiel",
+   "p_poisson-v5-cal_issue": 0.274,
+   "syndicate_final": "PASS"
+  }
+ ],
+ "lecons": [
+  "n=48 < 300 : constats descriptifs, aucun poids modifié (EXP-014 à >= 1000).",
+  "poisson-v5-cal vs bookmaker-b365 (matchs communs n=48) : +0.0334 log-loss.",
+  "xg-v1-cal vs bookmaker-b365 (matchs communs n=48) : +0.0128 log-loss.",
+  "poisson-v5-cal vs bookmaker-dk (matchs communs n=47) : +0.0375 log-loss.",
+  "xg-v1-cal vs bookmaker-dk (matchs communs n=47) : +0.0154 log-loss.",
+  "SYNDICATE PASS (final) : favori gagne 13/28 (46%, prévu 45%), par 2+ 5/28 (prévu 22%).",
+  "SYNDICATE WATCH (final) : favori gagne 16/20 (80%, prévu 62%), par 2+ 8/20 (prévu 36%)."
+ ],
+ "lignes": [
+  {
+   "match_id": "D1:2026-11-06:Hamburg-M'gladbach",
+   "score": "3-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.30486951304869514,
+     "D": 0.2501749825017498,
+     "H": 0.44495550444955506
+    },
+    "xg-v1-cal": {
+     "A": 0.3223734476352969,
+     "D": 0.25396171446477733,
+     "H": 0.4236648378999257
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.4111855061047657,
+     "D": 0.26270185112248917,
+     "A": 0.32611264277274515
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2255,
+    "H_MARGE_3PLUS": 0.1048
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4488,
+   "p_favori_2plus": 0.2255,
+   "marge": 2
+  },
+  {
+   "match_id": "D1:2026-11-07:Dortmund-Elversberg",
+   "score": "2-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1362,
+     "D": 0.1811,
+     "H": 0.6827
+    },
+    "xg-v1-cal": {
+     "A": 0.09077747946700698,
+     "D": 0.14452604806414382,
+     "H": 0.7646964724688492
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.7251483679525222,
+     "D": 0.16394658753709201,
+     "A": 0.11090504451038577
+    },
+    "bookmaker-dk": {
+     "H": 0.7017543859649122,
+     "D": 0.17543859649122806,
+     "A": 0.12280701754385966
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.4448,
+    "H_MARGE_3PLUS": 0.2489
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.6921,
+   "p_favori_2plus": 0.4448,
+   "marge": 1
+  },
+  {
+   "match_id": "D1:2026-11-07:Mainz-Bayern Munich",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.7108289171082891,
+     "D": 0.15798420157984203,
+     "H": 0.1311868813118688
+    },
+    "xg-v1-cal": {
+     "A": 0.6953254936139992,
+     "D": 0.15057176632408786,
+     "H": 0.15410274006191307
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.13623827909542194,
+     "D": 0.14671814671814673,
+     "A": 0.7170435741864313
+    },
+    "bookmaker-dk": {
+     "H": 0.10883036615862131,
+     "D": 0.14231663266896633,
+     "A": 0.7488530011724125
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.4972,
+    "A_MARGE_3PLUS": 0.2983
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.7242,
+   "p_favori_2plus": 0.4972,
+   "marge": -1
+  },
+  {
+   "match_id": "D1:2026-11-07:Paderborn-Ein Frankfurt",
+   "score": "2-2",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3642,
+     "D": 0.2798,
+     "H": 0.356
+    },
+    "xg-v1-cal": {
+     "A": 0.41040440925785854,
+     "D": 0.2757062777032762,
+     "H": 0.31388931303886536
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.3069697538981777,
+     "D": 0.250422693969566,
+     "A": 0.4426075521322562
+    },
+    "bookmaker-dk": {
+     "H": 0.31332861046452787,
+     "D": 0.25675538913065477,
+     "A": 0.4299160004048173
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1625,
+    "A_MARGE_3PLUS": 0.0669
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.3727,
+   "p_favori_2plus": 0.1625,
+   "marge": 0
+  },
+  {
+   "match_id": "D1:2026-11-07:RB Leipzig-Augsburg",
+   "score": "5-2",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.15678432156784322,
+     "D": 0.1865813418658134,
+     "H": 0.6566343365663433
+    },
+    "xg-v1-cal": {
+     "A": 0.1319586902727272,
+     "D": 0.15210265179723112,
+     "H": 0.7159386579300417
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.6528835690968444,
+     "D": 0.18933623503808486,
+     "A": 0.15778019586507072
+    },
+    "bookmaker-dk": {
+     "H": 0.6634367507148085,
+     "D": 0.1759307893990774,
+     "A": 0.16063245988611413
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.4218,
+    "H_MARGE_3PLUS": 0.2349
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.6652,
+   "p_favori_2plus": 0.4218,
+   "marge": 3
+  },
+  {
+   "match_id": "D1:2026-11-07:Stuttgart-Werder Bremen",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1655,
+     "D": 0.1917,
+     "H": 0.6428
+    },
+    "xg-v1-cal": {
+     "A": 0.17213027226806882,
+     "D": 0.18248013121373477,
+     "H": 0.6453895965181964
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.5769230769230769,
+     "D": 0.2115384615384615,
+     "A": 0.2115384615384615
+    },
+    "bookmaker-dk": {
+     "H": 0.511326860841424,
+     "D": 0.23300970873786406,
+     "A": 0.255663430420712
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.4071,
+    "H_MARGE_3PLUS": 0.2243
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.6511,
+   "p_favori_2plus": 0.4071,
+   "marge": 1
+  },
+  {
+   "match_id": "D1:2026-11-08:FC Koln-Leverkusen",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.4938,
+     "D": 0.2351,
+     "H": 0.2711
+    },
+    "xg-v1-cal": {
+     "A": 0.48138733095140757,
+     "D": 0.2236270820823063,
+     "H": 0.29498558696628613
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.23821820529373788,
+     "D": 0.23240800516462234,
+     "A": 0.5293737895416398
+    },
+    "bookmaker-dk": {
+     "H": 0.19256613489051305,
+     "D": 0.22544327987182017,
+     "A": 0.5819905852376669
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.2728,
+    "A_MARGE_3PLUS": 0.1344
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.505,
+   "p_favori_2plus": 0.2728,
+   "marge": -1
+  },
+  {
+   "match_id": "D1:2026-11-08:Freiburg-Union Berlin",
+   "score": "2-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1721,
+     "D": 0.231,
+     "H": 0.5969
+    },
+    "xg-v1-cal": {
+     "A": 0.160698548723664,
+     "D": 0.2116041858574291,
+     "H": 0.6276972654189069
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.633472141270432,
+     "D": 0.21652165567672965,
+     "A": 0.15000620305283832
+    },
+    "bookmaker-dk": {
+     "H": 0.6417981185556121,
+     "D": 0.21558446568412235,
+     "A": 0.14261741576026557
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.3392,
+    "H_MARGE_3PLUS": 0.1671
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.6064,
+   "p_favori_2plus": 0.3392,
+   "marge": 2
+  },
+  {
+   "match_id": "D1:2026-11-08:Hoffenheim-Schalke 04",
+   "score": "2-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1481,
+     "D": 0.2612,
+     "H": 0.5907
+    },
+    "xg-v1-cal": {
+     "A": 0.13348581860718042,
+     "D": 0.20459212901633736,
+     "H": 0.6619220523764823
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.5972727631008525,
+     "D": 0.22070125195412565,
+     "A": 0.18202598494502173
+    },
+    "bookmaker-dk": {
+     "H": 0.5842867862190915,
+     "D": 0.2263327497251613,
+     "A": 0.18938046405574718
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.3112,
+    "H_MARGE_3PLUS": 0.1403
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.6032,
+   "p_favori_2plus": 0.3112,
+   "marge": 1
+  },
+  {
+   "match_id": "E0:2026-11-06:Everton-Coventry",
+   "score": "3-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1914,
+     "D": 0.2681,
+     "H": 0.5405
+    },
+    "xg-v1-cal": {
+     "A": 0.23329178163027067,
+     "D": 0.27541630916948734,
+     "H": 0.49129190920024196
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.5608856088560886,
+     "D": 0.23837638376383766,
+     "A": 0.2007380073800738
+    },
+    "bookmaker-dk": {
+     "H": 0.5725228909413712,
+     "D": 0.2327375371541423,
+     "A": 0.19473957190448637
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2757,
+    "H_MARGE_3PLUS": 0.123
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.5501,
+   "p_favori_2plus": 0.2757,
+   "marge": 2
+  },
+  {
+   "match_id": "E0:2026-11-07:Arsenal-Hull",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.0894,
+     "D": 0.2233,
+     "H": 0.6873
+    },
+    "xg-v1-cal": {
+     "A": 0.07251651232764202,
+     "D": 0.1762721991910143,
+     "H": 0.7512112884813438
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.8103727714748785,
+     "D": 0.12641815235008103,
+     "A": 0.06320907617504051
+    },
+    "bookmaker-dk": {
+     "H": 0.8333281250325519,
+     "D": 0.11905133926246296,
+     "A": 0.04762053570498519
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.4002,
+    "H_MARGE_3PLUS": 0.1925
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.7032,
+   "p_favori_2plus": 0.4002,
+   "marge": 1
+  },
+  {
+   "match_id": "E0:2026-11-07:Fulham-Newcastle",
+   "score": "1-1",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3146,
+     "D": 0.268,
+     "H": 0.4174
+    },
+    "xg-v1-cal": {
+     "A": 0.31577664330281546,
+     "D": 0.2653930330431635,
+     "H": 0.41883032365402106
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.4603234298608499,
+     "D": 0.26212861978187285,
+     "A": 0.27754795035727714
+    },
+    "bookmaker-dk": {
+     "H": 0.48635227263031255,
+     "D": 0.2498826781798479,
+     "A": 0.2637650491898395
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.1978,
+    "H_MARGE_3PLUS": 0.0864
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4212,
+   "p_favori_2plus": 0.1978,
+   "marge": 0
+  },
+  {
+   "match_id": "E0:2026-11-07:Leeds-Tottenham",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2752,
+     "D": 0.282,
+     "H": 0.4428
+    },
+    "xg-v1-cal": {
+     "A": 0.2735737966583281,
+     "D": 0.2774782427624192,
+     "H": 0.4489479605792527
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.3500611995104039,
+     "D": 0.2864137086903305,
+     "A": 0.36352509179926557
+    },
+    "bookmaker-dk": {
+     "H": 0.3408478802992519,
+     "D": 0.2848877805486284,
+     "A": 0.37426433915211976
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2066,
+    "H_MARGE_3PLUS": 0.0877
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4483,
+   "p_favori_2plus": 0.2066,
+   "marge": 1
+  },
+  {
+   "match_id": "E0:2026-11-07:Nott'm Forest-Man City",
+   "score": "3-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5308469153084692,
+     "D": 0.25737426257374263,
+     "H": 0.2117788221177882
+    },
+    "xg-v1-cal": {
+     "A": 0.5451106652968376,
+     "D": 0.24003302846265426,
+     "H": 0.2148563062405081
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.2007380073800738,
+     "D": 0.23837638376383766,
+     "A": 0.5608856088560886
+    },
+    "bookmaker-dk": {
+     "H": 0.1898470097357441,
+     "D": 0.22600834492350486,
+     "A": 0.5841446453407511
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.2815,
+    "A_MARGE_3PLUS": 0.13
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.545,
+   "p_favori_2plus": 0.2815,
+   "marge": 2
+  },
+  {
+   "match_id": "E0:2026-11-08:Brighton-Brentford",
+   "score": "2-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2234,
+     "D": 0.2387,
+     "H": 0.5379
+    },
+    "xg-v1-cal": {
+     "A": 0.2377255027091824,
+     "D": 0.23284334611312732,
+     "H": 0.5294311511776904
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.4966442953020134,
+     "D": 0.2483221476510067,
+     "A": 0.25503355704697983
+    },
+    "bookmaker-dk": {
+     "H": 0.5290697674418605,
+     "D": 0.24418604651162792,
+     "A": 0.22674418604651161
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2948,
+    "H_MARGE_3PLUS": 0.1433
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.5448,
+   "p_favori_2plus": 0.2948,
+   "marge": 2
+  },
+  {
+   "match_id": "E0:2026-11-08:Crystal Palace-Liverpool",
+   "score": "1-3",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5112,
+     "D": 0.2498,
+     "H": 0.239
+    },
+    "xg-v1-cal": {
+     "A": 0.49043519790488016,
+     "D": 0.24575858267318149,
+     "H": 0.2638062194219383
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.17320838460970087,
+     "D": 0.2200106501970796,
+     "A": 0.6067809651932196
+    },
+    "bookmaker-dk": {
+     "H": 0.16638015606577441,
+     "D": 0.2125968660840451,
+     "A": 0.6210229778501803
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.2741,
+    "A_MARGE_3PLUS": 0.1295
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.524,
+   "p_favori_2plus": 0.2741,
+   "marge": -2
+  },
+  {
+   "match_id": "E0:2026-11-08:Ipswich-Bournemouth",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5342,
+     "D": 0.2265,
+     "H": 0.2393
+    },
+    "xg-v1-cal": {
+     "A": 0.6231062035478162,
+     "D": 0.2020587663930073,
+     "H": 0.17483503005917647
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.24982124483353968,
+     "D": 0.25315219476465356,
+     "A": 0.49702656040180676
+    },
+    "bookmaker-dk": {
+     "H": 0.27467619472979005,
+     "D": 0.25636444841447076,
+     "A": 0.4689593568557392
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.3067,
+    "A_MARGE_3PLUS": 0.1554
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.5464,
+   "p_favori_2plus": 0.3067,
+   "marge": -1
+  },
+  {
+   "match_id": "E0:2026-11-08:Man United-Aston Villa",
+   "score": "4-4",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2827,
+     "D": 0.2494,
+     "H": 0.4679
+    },
+    "xg-v1-cal": {
+     "A": 0.2880863658763283,
+     "D": 0.24897795167732373,
+     "H": 0.4629356824463481
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.45051194539249145,
+     "D": 0.2627986348122867,
+     "A": 0.2866894197952219
+    },
+    "bookmaker-dk": {
+     "H": 0.4788732394366197,
+     "D": 0.23943661971830985,
+     "A": 0.28169014084507044
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2412,
+    "H_MARGE_3PLUS": 0.1131
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4726,
+   "p_favori_2plus": 0.2412,
+   "marge": 0
+  },
+  {
+   "match_id": "E0:2026-11-08:Sunderland-Chelsea",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.45664566456645667,
+     "D": 0.26142614261426145,
+     "H": 0.2819281928192819
+    },
+    "xg-v1-cal": {
+     "A": 0.48253378297633465,
+     "D": 0.24740793774751865,
+     "H": 0.2700582792761468
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.24241142252776313,
+     "D": 0.2626123744050767,
+     "A": 0.4949762030671602
+    },
+    "bookmaker-dk": {
+     "H": 0.2952924393723253,
+     "D": 0.27817403708987165,
+     "A": 0.42653352353780316
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.231,
+    "A_MARGE_3PLUS": 0.1046
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.4678,
+   "p_favori_2plus": 0.231,
+   "marge": 1
+  },
+  {
+   "match_id": "F1:2026-11-06:Toulouse-Strasbourg",
+   "score": "3-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3049,
+     "D": 0.2499,
+     "H": 0.4452
+    },
+    "xg-v1-cal": {
+     "A": 0.3011300049135302,
+     "D": 0.24595068451782057,
+     "H": 0.4529193105686493
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.4295665634674923,
+     "D": 0.25541795665634676,
+     "A": 0.315015479876161
+    },
+    "bookmaker-dk": {
+     "H": 0.4334223578786722,
+     "D": 0.26859977107974053,
+     "A": 0.29797787104158713
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2259,
+    "H_MARGE_3PLUS": 0.1051
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4491,
+   "p_favori_2plus": 0.2259,
+   "marge": 2
+  },
+  {
+   "match_id": "F1:2026-11-07:Auxerre-Paris FC",
+   "score": "0-1",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.4281,
+     "D": 0.2705,
+     "H": 0.3014
+    },
+    "xg-v1-cal": {
+     "A": 0.46914935282900017,
+     "D": 0.24758360325429313,
+     "H": 0.2832670439167068
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.21945293518300807,
+     "D": 0.23755780233560622,
+     "A": 0.5429892624813857
+    },
+    "bookmaker-dk": {
+     "H": 0.17323325422783323,
+     "D": 0.22685307101263874,
+     "A": 0.5999136747595282
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.2074,
+    "A_MARGE_3PLUS": 0.0907
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.4386,
+   "p_favori_2plus": 0.2074,
+   "marge": -1
+  },
+  {
+   "match_id": "F1:2026-11-07:Paris SG-Troyes",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.0342,
+     "D": 0.0958,
+     "H": 0.87
+    },
+    "xg-v1-cal": {
+     "A": 0.031076893662567304,
+     "D": 0.07953269575072777,
+     "H": 0.8893904105867049
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.8549206145143665,
+     "D": 0.09989072443273125,
+     "A": 0.045188661052902236
+    },
+    "bookmaker-dk": {
+     "H": 0.85479771822568,
+     "D": 0.09997534154953189,
+     "A": 0.04522694022478823
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.6792,
+    "H_MARGE_3PLUS": 0.4382
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.8804,
+   "p_favori_2plus": 0.6792,
+   "marge": 1
+  },
+  {
+   "match_id": "F1:2026-11-08:Angers-Nice",
+   "score": "0-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.4257,
+     "D": 0.2856,
+     "H": 0.2887
+    },
+    "xg-v1-cal": {
+     "A": 0.43457804635778713,
+     "D": 0.26541624044362344,
+     "H": 0.3000057131985893
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.2631578947368421,
+     "D": 0.2631578947368421,
+     "A": 0.47368421052631576
+    },
+    "bookmaker-dk": {
+     "H": 0.23330058939096268,
+     "D": 0.2550753110674525,
+     "A": 0.5116240995415848
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1982,
+    "A_MARGE_3PLUS": 0.0832
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.4369,
+   "p_favori_2plus": 0.1982,
+   "marge": -2
+  },
+  {
+   "match_id": "F1:2026-11-08:Brest-Lyon",
+   "score": "2-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.40455954404559547,
+     "D": 0.262973702629737,
+     "H": 0.3324667533246676
+    },
+    "xg-v1-cal": {
+     "A": 0.3867580812217353,
+     "D": 0.24965342019952003,
+     "H": 0.36358849857874465
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.34378159757330634,
+     "D": 0.2780586450960566,
+     "A": 0.378159757330637
+    },
+    "bookmaker-dk": {
+     "H": 0.34776163652534836,
+     "D": 0.277201304476727,
+     "A": 0.3750370589979247
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1962,
+    "A_MARGE_3PLUS": 0.0868
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.414,
+   "p_favori_2plus": 0.1962,
+   "marge": 2
+  },
+  {
+   "match_id": "F1:2026-11-08:Le Havre-Lorient",
+   "score": "0-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.36216378362163787,
+     "D": 0.3010698930106989,
+     "H": 0.3367663233676632
+    },
+    "xg-v1-cal": {
+     "A": 0.37001683415359266,
+     "D": 0.2769740288222928,
+     "H": 0.35300913702411457
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.3306083193075258,
+     "D": 0.2885308968502044,
+     "A": 0.3808607838422698
+    },
+    "bookmaker-dk": {
+     "H": 0.3081177167687142,
+     "D": 0.29389689907169664,
+     "A": 0.3979853841595892
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1527,
+    "A_MARGE_3PLUS": 0.0593
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.3714,
+   "p_favori_2plus": 0.1527,
+   "marge": -2
+  },
+  {
+   "match_id": "F1:2026-11-08:Le Mans-Monaco",
+   "score": "1-1",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5381461853814619,
+     "D": 0.2303769623037696,
+     "H": 0.23147685231476853
+    },
+    "xg-v1-cal": {
+     "A": 0.5496858650269119,
+     "D": 0.21672924441779665,
+     "H": 0.23358489055529147
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.21158844213423023,
+     "D": 0.238036997401009,
+     "A": 0.5503745604647607
+    },
+    "bookmaker-dk": {
+     "H": 0.17362270450751252,
+     "D": 0.2387312186978297,
+     "A": 0.5876460767946577
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.3064,
+    "A_MARGE_3PLUS": 0.1533
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.5508,
+   "p_favori_2plus": 0.3064,
+   "marge": 0
+  },
+  {
+   "match_id": "F1:2026-11-08:Lens-Marseille",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2829,
+     "D": 0.2349,
+     "H": 0.4822
+    },
+    "xg-v1-cal": {
+     "A": 0.2371400669709633,
+     "D": 0.20237122651725337,
+     "H": 0.5604887065117834
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.41473604253702995,
+     "D": 0.2445879225218382,
+     "A": 0.34067603494113174
+    },
+    "bookmaker-dk": {
+     "H": 0.4216726706260345,
+     "D": 0.26725732645312045,
+     "A": 0.31107000292084513
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2603,
+    "H_MARGE_3PLUS": 0.1278
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4866,
+   "p_favori_2plus": 0.2603,
+   "marge": -1
+  },
+  {
+   "match_id": "F1:2026-11-08:Rennes-Lille",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3667,
+     "D": 0.266,
+     "H": 0.3673
+    },
+    "xg-v1-cal": {
+     "A": 0.3881896719601811,
+     "D": 0.24410176341899492,
+     "H": 0.3677085646208241
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.45051194539249145,
+     "D": 0.2627986348122867,
+     "A": 0.2866894197952219
+    },
+    "bookmaker-dk": {
+     "H": 0.40680950983269737,
+     "D": 0.28969768124449663,
+     "A": 0.30349280892280595
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1702,
+    "A_MARGE_3PLUS": 0.073
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.3749,
+   "p_favori_2plus": 0.1702,
+   "marge": -1
+  },
+  {
+   "match_id": "I1:2026-11-06:Venezia-Udinese",
+   "score": "2-1",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.4178,
+     "D": 0.2847,
+     "H": 0.2975
+    },
+    "xg-v1-cal": {
+     "A": 0.3577922864840985,
+     "D": 0.24745817374533305,
+     "H": 0.3947495397705685
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.41349548842683403,
+     "D": 0.27971753628874063,
+     "A": 0.3067869752844252
+    },
+    "bookmaker-dk": {
+     "H": 0.3998727195587611,
+     "D": 0.28298684768773863,
+     "A": 0.3171404327535002
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1937,
+    "A_MARGE_3PLUS": 0.0812
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.4285,
+   "p_favori_2plus": 0.1937,
+   "marge": 1
+  },
+  {
+   "match_id": "I1:2026-11-07:Cagliari-Frosinone",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5376,
+     "D": 0.2265,
+     "H": 0.2359
+    },
+    "xg-v1-cal": {
+     "A": 0.43117480928497626,
+     "D": 0.21808043043374561,
+     "H": 0.3507447602812781
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.34653465346534656,
+     "D": 0.2722772277227723,
+     "A": 0.38118811881188125
+    },
+    "bookmaker-dk": {
+     "H": 0.30192058911334463,
+     "D": 0.2488804856204597,
+     "A": 0.44919892526619565
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.3091,
+    "A_MARGE_3PLUS": 0.1565
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.55,
+   "p_favori_2plus": 0.3091,
+   "marge": 1
+  },
+  {
+   "match_id": "I1:2026-11-07:Parma-Bologna",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.44645535446455353,
+     "D": 0.31236876312368766,
+     "H": 0.24117588241175883
+    },
+    "xg-v1-cal": {
+     "A": 0.4589025178238372,
+     "D": 0.2730249658761371,
+     "H": 0.2680725163000257
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.21076011846001974,
+     "D": 0.27097729516288255,
+     "A": 0.5182625863770978
+    },
+    "bookmaker-dk": {
+     "H": 0.17562177775994048,
+     "D": 0.27118068624696695,
+     "A": 0.5531975359930926
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1983,
+    "A_MARGE_3PLUS": 0.0782
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.4602,
+   "p_favori_2plus": 0.1983,
+   "marge": -1
+  },
+  {
+   "match_id": "I1:2026-11-07:Roma-Sassuolo",
+   "score": "3-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1137,
+     "D": 0.1716,
+     "H": 0.7147
+    },
+    "xg-v1-cal": {
+     "A": 0.06252710058454043,
+     "D": 0.0976759803325433,
+     "H": 0.8397969190829163
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.7296439901304195,
+     "D": 0.16496298907296442,
+     "A": 0.10539302079661615
+    },
+    "bookmaker-dk": {
+     "H": 0.7285679893684974,
+     "D": 0.16190681335914192,
+     "A": 0.10952519727236071
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.4761,
+    "H_MARGE_3PLUS": 0.2694
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.725,
+   "p_favori_2plus": 0.4761,
+   "marge": 3
+  },
+  {
+   "match_id": "I1:2026-11-07:Torino-Lecce",
+   "score": "1-1",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2397,
+     "D": 0.2862,
+     "H": 0.4741
+    },
+    "xg-v1-cal": {
+     "A": 0.20751139006281524,
+     "D": 0.2281337926291254,
+     "H": 0.5643548173080594
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.5281969817315331,
+     "D": 0.27164416203335984,
+     "A": 0.20015885623510724
+    },
+    "bookmaker-dk": {
+     "H": 0.5414343950711422,
+     "D": 0.2651945667058454,
+     "A": 0.1933710382230123
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2237,
+    "H_MARGE_3PLUS": 0.0947
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4813,
+   "p_favori_2plus": 0.2237,
+   "marge": 0
+  },
+  {
+   "match_id": "I1:2026-11-08:Fiorentina-Juventus",
+   "score": "2-2",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5103,
+     "D": 0.2654,
+     "H": 0.2243
+    },
+    "xg-v1-cal": {
+     "A": 0.5314741576999519,
+     "D": 0.23886692849563781,
+     "H": 0.2296589138044103
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.2806236080178174,
+     "D": 0.2650334075723831,
+     "A": 0.45434298440979953
+    },
+    "bookmaker-dk": {
+     "H": 0.2860022170714502,
+     "D": 0.2816688501461252,
+     "A": 0.4323289327824247
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.263,
+    "A_MARGE_3PLUS": 0.1188
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.524,
+   "p_favori_2plus": 0.263,
+   "marge": 0
+  },
+  {
+   "match_id": "I1:2026-11-08:Genoa-Milan",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.4879,
+     "D": 0.2782,
+     "H": 0.2339
+    },
+    "xg-v1-cal": {
+     "A": 0.5130997448098195,
+     "D": 0.24351051528313852,
+     "H": 0.24338973990704202
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.21052631578947367,
+     "D": 0.2631578947368421,
+     "A": 0.5263157894736842
+    },
+    "bookmaker-dk": {
+     "H": 0.2440311430480372,
+     "D": 0.2810055586613762,
+     "A": 0.4749632982905867
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.2411,
+    "A_MARGE_3PLUS": 0.1049
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.5015,
+   "p_favori_2plus": 0.2411,
+   "marge": -1
+  },
+  {
+   "match_id": "I1:2026-11-08:Inter-Como",
+   "score": "2-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.26607339266073393,
+     "D": 0.25437456254374563,
+     "H": 0.4795520447955205
+    },
+    "xg-v1-cal": {
+     "A": 0.2400921381499058,
+     "D": 0.20874154358310903,
+     "H": 0.5511663182669851
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.4959022086400889,
+     "D": 0.22551743297680232,
+     "A": 0.2785803583831088
+    },
+    "bookmaker-dk": {
+     "H": 0.4498816101026046,
+     "D": 0.2426992896606156,
+     "A": 0.30741910023677976
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2457,
+    "H_MARGE_3PLUS": 0.1137
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.485,
+   "p_favori_2plus": 0.2457,
+   "marge": 2
+  },
+  {
+   "match_id": "I1:2026-11-08:Monza-Atalanta",
+   "score": "0-1",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.5759,
+     "D": 0.2138,
+     "H": 0.2103
+    },
+    "xg-v1-cal": {
+     "A": 0.5278476899511059,
+     "D": 0.20611307007876367,
+     "H": 0.26603923997013057
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.2717731541152642,
+     "D": 0.2642238998342847,
+     "A": 0.46400294605045117
+    },
+    "bookmaker-dk": {
+     "H": 0.2646013263648732,
+     "D": 0.2502985519667719,
+     "A": 0.48510012166835487
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.3457,
+    "A_MARGE_3PLUS": 0.1814
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.5888,
+   "p_favori_2plus": 0.3457,
+   "marge": -1
+  },
+  {
+   "match_id": "I1:2026-11-08:Napoli-Lazio",
+   "score": "1-1",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2667,
+     "D": 0.2877,
+     "H": 0.4456
+    },
+    "xg-v1-cal": {
+     "A": 0.25548424623218957,
+     "D": 0.2476267958962621,
+     "H": 0.49688895787154835
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.42105263157894735,
+     "D": 0.2631578947368421,
+     "A": 0.3157894736842105
+    },
+    "bookmaker-dk": {
+     "H": 0.4606299212598425,
+     "D": 0.2559055118110236,
+     "A": 0.28346456692913385
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2054,
+    "H_MARGE_3PLUS": 0.0859
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4515,
+   "p_favori_2plus": 0.2054,
+   "marge": 0
+  },
+  {
+   "match_id": "SP1:2026-11-06:Sevilla-Alaves",
+   "score": "0-0",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2698,
+     "D": 0.2742,
+     "H": 0.456
+    },
+    "xg-v1-cal": {
+     "A": 0.3015609245003243,
+     "D": 0.2668485396078079,
+     "H": 0.4315905358918678
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.5155482815057284,
+     "D": 0.27250409165302786,
+     "A": 0.2119476268412439
+    },
+    "bookmaker-dk": {
+     "H": 0.478442280945758,
+     "D": 0.29902642559109877,
+     "A": 0.22253129346314326
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2189,
+    "H_MARGE_3PLUS": 0.0953
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4616,
+   "p_favori_2plus": 0.2189,
+   "marge": 0
+  },
+  {
+   "match_id": "SP1:2026-11-07:Espanol-La Coruna",
+   "score": "0-0",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3358,
+     "D": 0.2922,
+     "H": 0.372
+    },
+    "xg-v1-cal": {
+     "A": 0.3121757950533513,
+     "D": 0.27701884860214226,
+     "H": 0.4108053563445064
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.41585886002326483,
+     "D": 0.28984102365257847,
+     "A": 0.29430011632415665
+    },
+    "bookmaker-dk": {
+     "H": 0.38216243148978574,
+     "D": 0.293971101145989,
+     "A": 0.32386646736422514
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.1586,
+    "H_MARGE_3PLUS": 0.0632
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.3753,
+   "p_favori_2plus": 0.1586,
+   "marge": 0
+  },
+  {
+   "match_id": "SP1:2026-11-07:Malaga-Santander",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3153,
+     "D": 0.2389,
+     "H": 0.4458
+    },
+    "xg-v1-cal": {
+     "A": 0.32931182427940253,
+     "D": 0.25407882716552105,
+     "H": 0.4166093485550765
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.40506329113924056,
+     "D": 0.26441631504922647,
+     "A": 0.33052039381153303
+    },
+    "bookmaker-dk": {
+     "H": 0.4247829819708099,
+     "D": 0.26185252313269103,
+     "A": 0.31336449489649915
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2329,
+    "H_MARGE_3PLUS": 0.112
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4492,
+   "p_favori_2plus": 0.2329,
+   "marge": -1
+  },
+  {
+   "match_id": "SP1:2026-11-07:Osasuna-Ath Bilbao",
+   "score": "1-1",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.36796320367963203,
+     "D": 0.2933706629337066,
+     "H": 0.33866613338666135
+    },
+    "xg-v1-cal": {
+     "A": 0.36341557687227427,
+     "D": 0.27745829093748264,
+     "H": 0.3591261321902431
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.2642238998342847,
+     "D": 0.2717731541152642,
+     "A": 0.46400294605045117
+    },
+    "bookmaker-dk": {
+     "H": 0.24306185380010886,
+     "D": 0.28296753128967894,
+     "A": 0.47397061491021225
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.1592,
+    "A_MARGE_3PLUS": 0.0634
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.3771,
+   "p_favori_2plus": 0.1592,
+   "marge": 0
+  },
+  {
+   "match_id": "SP1:2026-11-07:Valencia-Real Madrid",
+   "score": "0-3",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.6035603560356035,
+     "D": 0.2372237223722372,
+     "H": 0.15921592159215922
+    },
+    "xg-v1-cal": {
+     "A": 0.5772899858338352,
+     "D": 0.23325825958275773,
+     "H": 0.18945175458340716
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.11174248986521604,
+     "D": 0.15196978621669383,
+     "A": 0.73628772391809
+    },
+    "bookmaker-dk": {
+     "H": 0.07961534133077779,
+     "D": 0.1469821686106667,
+     "A": 0.7734024900585554
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.3428,
+    "A_MARGE_3PLUS": 0.1658
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "A",
+   "p_favori": 0.6197,
+   "p_favori_2plus": 0.3428,
+   "marge": -3
+  },
+  {
+   "match_id": "SP1:2026-11-08:Ath Madrid-Barcelona",
+   "score": "1-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.4396,
+     "D": 0.2382,
+     "H": 0.3222
+    },
+    "xg-v1-cal": {
+     "A": 0.4928331880065763,
+     "D": 0.20877269796029463,
+     "H": 0.2983941140331292
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.25797388323311377,
+     "D": 0.22043957689665614,
+     "A": 0.5215865398702301
+    },
+    "bookmaker-dk": {
+     "H": 0.27129593883550973,
+     "D": 0.22082227579634514,
+     "A": 0.5078817853681452
+    }
+   },
+   "marges": {
+    "A_MARGE_2PLUS": 0.2338,
+    "A_MARGE_3PLUS": 0.1128
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "A",
+   "p_favori": 0.4493,
+   "p_favori_2plus": 0.2338,
+   "marge": -1
+  },
+  {
+   "match_id": "SP1:2026-11-08:Celta-Levante",
+   "score": "0-0",
+   "issue": "D",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2139,
+     "D": 0.2481,
+     "H": 0.538
+    },
+    "xg-v1-cal": {
+     "A": 0.24697108140815913,
+     "D": 0.2408248421084333,
+     "H": 0.5122040764834076
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.48908296943231444,
+     "D": 0.2724890829694323,
+     "A": 0.23842794759825325
+    },
+    "bookmaker-dk": {
+     "H": 0.5117382439047612,
+     "D": 0.265762728001206,
+     "A": 0.22249902809403288
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2879,
+    "H_MARGE_3PLUS": 0.1361
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.5457,
+   "p_favori_2plus": 0.2879,
+   "marge": 0
+  },
+  {
+   "match_id": "SP1:2026-11-08:Elche-Betis",
+   "score": "0-2",
+   "issue": "A",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.3596,
+     "D": 0.2618,
+     "H": 0.3786
+    },
+    "xg-v1-cal": {
+     "A": 0.40571027855905667,
+     "D": 0.2506081771336897,
+     "H": 0.3436815443072537
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.27754795035727714,
+     "D": 0.26212861978187285,
+     "A": 0.4603234298608499
+    },
+    "bookmaker-dk": {
+     "H": 0.22604211650649172,
+     "D": 0.23734422233181632,
+     "A": 0.5366136611616918
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.176,
+    "H_MARGE_3PLUS": 0.0767
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.3809,
+   "p_favori_2plus": 0.176,
+   "marge": -2
+  },
+  {
+   "match_id": "SP1:2026-11-08:Sociedad-Vallecano",
+   "score": "1-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.2578,
+     "D": 0.2485,
+     "H": 0.4937
+    },
+    "xg-v1-cal": {
+     "A": 0.2867184069862761,
+     "D": 0.23275656144864118,
+     "H": 0.4805250315650827
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.5685384402049366,
+     "D": 0.23157541344932783,
+     "A": 0.19988614634573557
+    },
+    "bookmaker-dk": {
+     "H": 0.5104835856407337,
+     "D": 0.24789613291270535,
+     "A": 0.2416202814465609
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.2588,
+    "H_MARGE_3PLUS": 0.1221
+   },
+   "syndicate_initial": "PASS",
+   "syndicate_final": "PASS",
+   "favori": "H",
+   "p_favori": 0.4993,
+   "p_favori_2plus": 0.2588,
+   "marge": 1
+  },
+  {
+   "match_id": "SP1:2026-11-08:Villarreal-Getafe",
+   "score": "2-0",
+   "issue": "H",
+   "statut": "officiel",
+   "x12": {
+    "poisson-v5-cal": {
+     "A": 0.1353,
+     "D": 0.2552,
+     "H": 0.6095
+    },
+    "xg-v1-cal": {
+     "A": 0.13136572822266016,
+     "D": 0.22329270186364913,
+     "H": 0.6453415699136907
+    }
+   },
+   "bookmakers": {
+    "bookmaker-b365": {
+     "H": 0.6697674418604651,
+     "D": 0.2113488372093023,
+     "A": 0.11888372093023256
+    },
+    "bookmaker-dk": {
+     "H": 0.6191928173633187,
+     "D": 0.2218294267786494,
+     "A": 0.15897775585803206
+    }
+   },
+   "marges": {
+    "H_MARGE_2PLUS": 0.327,
+    "H_MARGE_3PLUS": 0.1491
+   },
+   "syndicate_initial": "WATCH",
+   "syndicate_final": "WATCH",
+   "favori": "H",
+   "p_favori": 0.6228,
+   "p_favori_2plus": 0.327,
+   "marge": 2
+  }
+ ]
+}
