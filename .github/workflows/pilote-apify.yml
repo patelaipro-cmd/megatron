@@ -1,0 +1,38 @@
+name: pilote-apify-lecture-seule
+
+# Ne lance aucun Actor et n'ecrit dans aucun registre.
+on:
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: 'Nombre de lignes a auditer (1 a 1000)'
+        required: true
+        default: '100'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Tests isoles du pilote
+        run: python -m unittest discover -s tests -p test_pilote_apify.py -v
+      - name: Audit du dernier run Apify termine (lecture seule)
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_TACHE_SOFASCORE: ${{ secrets.APIFY_TACHE_SOFASCORE }}
+          LIMITE: ${{ inputs.limite }}
+        run: |
+          python scripts/pilote_apify.py --tache --limite "$LIMITE" --rapport rapports/pilote-apify.json
+      - name: Joindre le rapport sans donnees nominatives
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-pilote-apify
+          path: rapports/pilote-apify.json
+          if-no-files-found: ignore
+          retention-days: 7
