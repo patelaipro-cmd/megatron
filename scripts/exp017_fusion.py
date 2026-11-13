@@ -87,13 +87,22 @@ def main(argv=None) -> int:
     p.add_argument("--sortie", type=Path, required=True)
     a = p.parse_args(argv)
     dev = charger(a.dev, "270|2|0.35")
-    ll = -sum(math.log(max(r["v5"][r["issue"]], 1e-15)) for r in dev if r["v5"]) / sum(1 for r in dev if r["v5"])
-    n = sum(1 for r in dev if r["v5"] and r["bookmaker"])
+    dev_avec_cotes = [r for r in dev if r["v5"] and r["bookmaker"]]
+    n = len(dev_avec_cotes)
+    if n != CONTROLE_DEV[1]:
+        raise SystemExit(
+            f"cohorte dev non conforme à EXP-008 : {n} matchs avec cotes ≠ {CONTROLE_DEV[1]}"
+        )
+    ll = -sum(math.log(max(r["v5"][r["issue"]], 1e-15)) for r in dev_avec_cotes) / n
     if abs(ll - CONTROLE_DEV[0]) > 1e-5:
-        raise SystemExit(f"prévisions dev non conformes à EXP-008 : log-loss {ll:.6f} ≠ {CONTROLE_DEV[0]}")
+        raise SystemExit(
+            f"prévisions dev non conformes à EXP-008 : log-loss {ll:.6f} "
+            f"≠ {CONTROLE_DEV[0]} sur {n} matchs avec cotes"
+        )
     th = ajuster([r for r in dev if r["v5"] and r["bookmaker"]])
     out = {"protocole": "docs/experiences/EXP-017-fusion-marche.md",
-           "controle_dev": {"log_loss_v5": round(ll, 6), "n_avec_cotes": n},
+           "controle_dev": {"log_loss_v5": round(ll, 6), "n_avec_cotes": n,
+                            "tolerance": 1e-5, "cohorte": "v5 et bookmaker présents"},
            "parametres": {"alpha_v5cal": round(th[0], 6), "beta_bookmaker": round(th[1], 6),
                           "c_H": round(th[2], 6), "c_D": round(th[3], 6)},
            "dev": evaluer([r for r in dev if r["v5"]], th)}
