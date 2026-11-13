@@ -121,6 +121,7 @@ def evaluer(division: str, home: str, away: str, kickoff: str | datetime, *, at:
             "analyse_le": at_dt.isoformat(), "moment": moment,
             "niveaux": n, "reference_1x2_v5cal": {k: round(v, 4) for k, v in calibrer_1x2(poisson_1x2(lh, la), *CALIBRATION_1X2).items()},
             "angles_morts": {"questions": am["questions"], "a_verifier_hors_data": am["a_verifier_hors_data"],
+                             "comparateur_h2h": am["comparateur"],
                              "grille_13_angles": rapport},
             "fiche": f, "decision": decider(n, f, rapport, moment),
             "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"}

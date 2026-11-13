@@ -412,6 +412,46 @@ def comparateur_h2h(h2h: list[Match], recent: list[Match], details: dict[str, di
                     day: date, ind: dict[str, dict]) -> dict:
     """Ancien H2H → dernier H2H → situation actuelle, sur les 4 axes."""
     _check_past(h2h, day)
+    h2h = sorted(h2h, key=lambda m: (m.kickoff, m.match_id))
+    if any({m.home, m.away} != {fav, adv} for m in h2h):
+        raise ValueError("H2H : équipes différentes du match analysé")
+    if len({m.match_id for m in h2h}) != len(h2h):
+        raise ValueError("H2H : confrontations en double")
+
+    def fiche(m):
+        d = details.get(m.match_id) or {}
+        gf, ga, _, _, at_home = _team_view(m, fav)
+        ht = [d.get("HTHome"), d.get("HTAway")]
+        reds = [d.get("HomeRed"), d.get("AwayRed")]
+        ht_margin = None
+        if all(v is not None for v in ht):
+            ht_margin = int(ht[0] - ht[1]) * (1 if at_home else -1)
+        missing = [name for name, vals in (("mi_temps", ht), ("rouges", reds))
+                   if any(v is None for v in vals)]
+        if m.shots is None:
+            missing.append("tirs_cadres")
+        return {
+            "match_id": m.match_id, "date": m.day.isoformat(),
+            "domicile": m.home, "exterieur": m.away,
+            "score": [m.home_goals, m.away_goals],
+            "favori_a_domicile": at_home, "marge_favori": gf - ga,
+            "victoire": gf > ga, "marge_2plus": gf - ga >= 2,
+            "marge_3plus": gf - ga >= 3,
+            "mi_temps": [int(v) if v is not None else None for v in ht],
+            "rouges": [int(v) if v is not None else None for v in reds],
+            "tirs_cadres": [m.shots[2], m.shots[3]] if m.shots else None,
+            "construction_ecart": {
+                "marge_mi_temps_favori": ht_margin,
+                "seuil_2plus_atteint_en_seconde_periode": (
+                    ht_margin < 2 if gf - ga >= 2 and ht_margin is not None else None),
+                "rouges_adversaire": reds[1 if at_home else 0],
+                "limite": "Chronologie des buts, penalties et expulsions non disponible ; causalité non établie.",
+            },
+            "source": SOURCE_HISTORIQUE,
+            "informations_manquantes": missing + ["chronologie", "effectifs", "tactique"],
+        }
+
+    last3 = [fiche(m) for m in reversed(h2h[-3:])]
 
     def bilan(ms):
         if not ms:
@@ -427,8 +467,10 @@ def comparateur_h2h(h2h: list[Match], recent: list[Match], details: dict[str, di
         m = h2h[-1]
         d = details.get(m.match_id) or {}
         dernier = {"date": str(m.day), "score": f"{m.home} {m.home_goals}-{m.away_goals} {m.away}",
-                   "mi_temps": (f"{int(d['HTHome'])}-{int(d['HTAway'])}" if d.get("HTHome") is not None else None),
-                   "rouges": ([int(d["HomeRed"]), int(d["AwayRed"])] if d.get("HomeRed") is not None else None),
+                   "mi_temps": (f"{int(d['HTHome'])}-{int(d['HTAway'])}"
+                                if all(d.get(k) is not None for k in ("HTHome", "HTAway")) else None),
+                   "rouges": ([int(d["HomeRed"]), int(d["AwayRed"])]
+                              if all(d.get(k) is not None for k in ("HomeRed", "AwayRed")) else None),
                    "tirs_cadres": [m.shots[2], m.shots[3]] if m.shots else None}
     actuel = {}
     for t in (fav, adv):
@@ -441,6 +483,13 @@ def comparateur_h2h(h2h: list[Match], recent: list[Match], details: dict[str, di
         return [ind[c]["fait"] for c in cles if c in ind] or ["non mesurable avec data/"]
     return {
         "ancien_h2h": bilan(h2h[:-1]), "dernier_h2h": dernier, "situation_actuelle": actuel,
+        "derniers_3_h2h": last3,
+        "couverture_3_h2h": {
+            "attendus": 3, "disponibles": len(last3), "manquants": 3 - len(last3),
+            "statut": "TROIS_PRESENTS" if len(last3) == 3 else "HISTORIQUE_INSUFFISANT",
+            "ordre": "plus récent d'abord",
+            "limite": "Confrontations présentes dans l'historique fourni seulement ; couverture toutes compétitions non garantie.",
+        },
         "axes": {
             "adaptation_adverse": axe("adaptation_h2h", "adversaire_progression"),
             "construction_ecart": axe("ecart_trompeur"),
