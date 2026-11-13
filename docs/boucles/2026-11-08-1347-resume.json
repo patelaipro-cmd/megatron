@@ -1,0 +1,265 @@
+{
+  "execute_le": "2026-11-08T13:47:19.609265+00:00",
+  "objectif": 5,
+  "confirmes": 0,
+  "manquants": 5,
+  "statut": "CALENDRIER_EPUISE",
+  "blocages_globaux": [
+    "ZONE_GO_NON_VALIDEE"
+  ],
+  "passages": [
+    {
+      "numero": 1,
+      "examines": 8,
+      "confirmes": 0
+    }
+  ],
+  "instantane": "../megatron-externe/externe/cotes/espn/2026-11-08/1343.csv",
+  "sha256_instantane": "cc89b29fb672940977200a6472b5c82589fe77d2292c33ff3b3472e325053e81",
+  "historique": [
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/matches_top5_2000-2026.csv",
+      "sha256": "399f92c774a257dd68b680e709ae5b6b9cdaa8297ac4fb7056019b15d1ede01c"
+    },
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/complement_openfootball_2026-27.csv",
+      "sha256": "08be93b73a58fcced118002adee1fd7acc8081c443f08ec73484f1cb405a8d3a"
+    },
+    {
+      "fichier": "docs/boucles/2026-11-06/complement.csv",
+      "sha256": "0e5acd01c5096ba7d80a1d31fa2daef78555521512e280dd1c256059ca00bb76"
+    }
+  ],
+  "erreurs": [],
+  "commit_donnees": "88876427306d404293e8e6af0dc8e1d5b7f193bc",
+  "commit_modele": "f88dabe74c38225366dc031e74fbb7aee80913ff",
+  "analyses": [
+    {
+      "id": "E0:401878759",
+      "match": "Ipswich Town - AFC Bournemouth",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.5464,
+        "victoire_par_2_ou_plus": 0.3067,
+        "victoire_par_3_ou_plus": 0.1554
+      },
+      "victoire_exactement_un_but": 0.2397,
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "absences importantes chez le favori (indices 0.2578/0.1473, non calibrés)",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "E0:401879239",
+      "match": "Sunderland - Chelsea",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.4678,
+        "victoire_par_2_ou_plus": 0.231,
+        "victoire_par_3_ou_plus": 0.1046
+      },
+      "victoire_exactement_un_but": 0.2368,
+      "decision": {
+        "decision": "PASS",
+        "bloquants": [
+          "favori à 47% (< 50%)"
+        ],
+        "raisons": [
+          "absences importantes chez le favori (indices 0.35/0.2, non calibrés)",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "E0:401879243",
+      "match": "Crystal Palace - Liverpool",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.524,
+        "victoire_par_2_ou_plus": 0.2741,
+        "victoire_par_3_ou_plus": 0.1295
+      },
+      "victoire_exactement_un_but": 0.2499,
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "absences importantes chez le favori (indices 0.35/0.2, non calibrés)",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "E0:401879244",
+      "match": "Brighton & Hove Albion - Brentford",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.5448,
+        "victoire_par_2_ou_plus": 0.2948,
+        "victoire_par_3_ou_plus": 0.1433
+      },
+      "victoire_exactement_un_but": 0.25,
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "absences importantes chez le favori (indices 0.35/0.2, non calibrés)",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "F1:401876406",
+      "match": "Stade Rennais - Lille",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.3749,
+        "victoire_par_2_ou_plus": 0.1702,
+        "victoire_par_3_ou_plus": 0.073
+      },
+      "victoire_exactement_un_but": 0.2047,
+      "decision": {
+        "decision": "PASS",
+        "bloquants": [
+          "favori à 37% (< 50%)"
+        ],
+        "raisons": [
+          "compositions officielles non confirmées",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "I1:401874800",
+      "match": "Monza - Atalanta",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.5888,
+        "victoire_par_2_ou_plus": 0.3457,
+        "victoire_par_3_ou_plus": 0.1814
+      },
+      "victoire_exactement_un_but": 0.2431,
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "compositions officielles non confirmées",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "I1:401875018",
+      "match": "Genoa - AC Milan",
+      "coup_envoi": "2026-11-08T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.5015,
+        "victoire_par_2_ou_plus": 0.2411,
+        "victoire_par_3_ou_plus": 0.1049
+      },
+      "victoire_exactement_un_but": 0.2604,
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    },
+    {
+      "id": "D1:401884738",
+      "match": "FC Cologne - Bayer Leverkusen",
+      "coup_envoi": "2026-11-08T14:30+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.505,
+        "victoire_par_2_ou_plus": 0.2728,
+        "victoire_par_3_ou_plus": 0.1344
+      },
+      "victoire_exactement_un_but": 0.2322,
+      "decision": {
+        "decision": "WATCH",
+        "bloquants": [],
+        "raisons": [
+          "compositions officielles non confirmées",
+          "angles morts non documentés entièrement"
+        ],
+        "seuils": {
+          "favori_minimum": 0.5,
+          "secure_victoire": 0.6,
+          "go_marge_2": 0.6,
+          "indice_absence_majeur": 0.15
+        },
+        "activation_automatique": false,
+        "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+      }
+    }
+  ]
+}
