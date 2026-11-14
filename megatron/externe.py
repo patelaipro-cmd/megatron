@@ -15,6 +15,7 @@ from datetime import timedelta
 from pathlib import Path
 
 from .store import now_utc, parse_dt
+from .sources_prematch import SITES, valider_fiche
 
 SOURCES = {
     "apifootball": ("api-football", "https://v3.football.api-sports.io/injuries?fixture={fixture_id}"),
@@ -137,11 +138,56 @@ def _resume(f: dict) -> str:
     return f"{f['equipe']}" + (f" [{noms}]" if noms else "") + " — " + ("; ".join(parts) if parts else "aucun fait collecté")
 
 
+def faits_sites(dossier: Path, home: str, away: str, kickoff: str, *, at: str | None = None) -> list[dict]:
+    """Fiches éditoriales attribuées, sans transformer des pronostics en faits officiels."""
+    ko = parse_dt(kickoff)
+    avant = min(parse_dt(at or now_utc()), ko)
+    trouves = []
+    for source in SITES:
+        for fichier in sorted((Path(dossier) / "sites" / source).glob("*/*.json"), reverse=True):
+            try:
+                fiche = valider_fiche(json.loads(fichier.read_text(encoding="utf-8")), au=avant.isoformat())
+                if abs(parse_dt(fiche["coup_envoi"]) - ko) > FENETRE:
+                    continue
+                noms = [fiche["domicile"], fiche["exterieur"]]
+                if resoudre(home, noms)[0] != noms[0] or resoudre(away, noms)[0] != noms[1]:
+                    continue
+                trouves.append(fiche)
+            except (ValueError, KeyError, OSError, UnicodeError, json.JSONDecodeError):
+                continue
+    # Garder le dernier instantané *par famille et nature* pour l'analyse,
+    # tout en conservant l'historique complet des captures dans les fichiers.
+    plus_recents = {}
+    for f in sorted(trouves, key=lambda r: r["collecte_le"], reverse=True):
+        plus_recents.setdefault((f["source"], f["type"]), f)
+    return list(plus_recents.values())
+
+
+def _resume_sites(fiches: list[dict]) -> str:
+    textes = []
+    for f in fiches:
+        details, source = f["donnees"], f["source"]
+        if f["type"] == "analyse":
+            texte = ", ".join(f"{k}: {v}" for k, v in details.items())
+        elif f["type"] == "classement":
+            texte = f"rangs H/A {details['rang_domicile']}/{details['rang_exterieur']} au {details['classement_au']} ({details['portee']})"
+        elif f["type"] == "h2h":
+            texte = "; ".join(f"{r['domicile']} {r['buts_domicile']}-{r['buts_exterieur']} {r['exterieur']} ({r['date'][:10]})"
+                              for r in details["rencontres"])
+        elif f["type"] == "prediction":
+            texte = f"PRONOSTIC FOURNISSEUR 1X2 {details['probabilites']} (non assimilable à V+2)"
+        else:
+            texte = f"XI {details['statut']} (non officiel)"
+        textes.append(f"{source}/{f['type']} : {texte}")
+    return " | ".join(textes)
+
+
 def enrichir(doc: dict, dossier: Path, *, at: str | None = None, noms: dict | None = None) -> dict:
     """Copie de `doc` dont l'angle `informations_manquantes` reçoit les faits collectés avant le match."""
     noms = noms or {}
     equipes = [noms.get(doc["home"]) or doc["home"], noms.get(doc["away"]) or doc["away"]]
     tous = [faits(dossier, e, doc["kickoff"], at) for e in equipes]
+    sites = faits_sites(dossier, equipes[0], equipes[1], doc["kickoff"], at=at)
     sources, manques = [], ["importance des absents et remplaçants non évaluée"]
     for f in tous:
         for s in _sources(f):
@@ -150,16 +196,28 @@ def enrichir(doc: dict, dossier: Path, *, at: str | None = None, noms: dict | No
         for cle, n in f["noms"].items():
             if n["nom"] is None and n["methode"].startswith("ambigu"):
                 manques.append(f"{f['equipe']} / {cle} : nom {n['methode']} (ajouter un alias dans data/noms_equipes.json)")
-        if not (f["absences"] or f["compo"] or f["compo_espn"] or f["fpl"]):
+        if not (f["absences"] or f["compo"] or f["compo_espn"] or f["fpl"] or sites):
             manques.append(f"aucune donnée externe pour « {f['equipe']} » (absent des sources ou nom à ajouter dans data/noms_equipes.json)")
         elif not (f["compo"] or f["compo_espn"]):
             manques.append(f"compo officielle de {f['equipe']} non collectée")
+    preuves_contexte = []
+    for f in sites:
+        source = {"url": f["source_url"], "famille": f["source"],
+                  "publie_le": f["publie_le"], "collecte_le": f["collecte_le"]}
+        rapporte_absences = (f["type"] == "analyse" and "absences" in f["donnees"])
+        if f["type"] == "xi":
+            rapporte_absences = any(f["donnees"]["equipes"][c]["absents"] for c in ("H", "A"))
+        if rapporte_absences and source not in sources:
+            sources.append(source)
+        elif source not in preuves_contexte:
+            preuves_contexte.append(source)
     out = {**doc, "angles": [dict(a) for a in doc["angles"]]}
     for a in out["angles"]:
         if a.get("id") == "informations_manquantes":
-            a.update({"etat": "a_verifier", "constat": " | ".join(_resume(f) for f in tous),
+            a.update({"etat": "a_verifier", "constat": " | ".join([*(_resume(f) for f in tous), _resume_sites(sites)]).strip(" | "),
                       "sources": (a.get("sources") or []) + [s for s in sources if s not in (a.get("sources") or [])],
-                      "categorie_preuve": "absences", "informations_manquantes": manques})
+                      "sources_contexte": preuves_contexte,
+                      "categorie_preuve": "absences" if sources else "contexte", "informations_manquantes": manques})
     return out
 
 
