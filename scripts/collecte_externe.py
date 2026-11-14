@@ -57,9 +57,9 @@ APIFOOTBALL = "https://v3.football.api-sports.io"
 APIFOOTBALL_BUDGET_JOUR = 90  # plan gratuit : 100 requêtes/jour, 10 gardées en réserve
 COLONNES_BLESSURES = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "pays", "equipe",
                       "joueur", "joueur_id", "type", "motif")
-COLONNES_COMPOS_AF = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "equipe", "formation",
+COLONNES_COMPOS_AF = ("collecte_le", "fixture_id", "coup_envoi", "ligue_id", "ligue", "domicile", "exterieur", "equipe", "formation",
                       "joueur", "joueur_id", "poste", "statut")
-COLONNES_ESPN = ("collecte_le", "event_id", "ligue", "division", "coup_envoi", "equipe", "formation",
+COLONNES_ESPN = ("collecte_le", "event_id", "ligue", "division", "coup_envoi", "domicile", "exterieur", "equipe", "formation",
                  "joueur", "joueur_id", "poste", "statut", "source")
 COLONNES_SOFASCORE = ("collecte_le", "event_id", "division", "coup_envoi", "domicile", "exterieur", "cote",
                       "equipe", "joueur", "joueur_id", "poste", "statut", "motif", "compo_confirmee")
@@ -305,7 +305,9 @@ def calendrier_af(reponse: list[dict], ligues: set[int]) -> list[dict]:
     """Matchs non commencés des ligues suivies (pour les compos)."""
     out = {r["fixture"]["id"]: {"fixture_id": r["fixture"]["id"], "coup_envoi": r["fixture"]["date"],
                                 "debut_ts": r["fixture"].get("timestamp"), "ligue_id": r["league"]["id"],
-                                "ligue": r["league"]["name"]}
+                                "ligue": r["league"]["name"],
+                                "domicile": ((r.get("teams") or {}).get("home") or {}).get("name") or "",
+                                "exterieur": ((r.get("teams") or {}).get("away") or {}).get("name") or ""}
            for r in reponse if r["league"]["id"] in ligues and r["fixture"]["status"]["short"] in ("NS", "TBD")}
     return list(out.values())
 
@@ -368,7 +370,7 @@ def collecter_apifootball(dossier: Path, maintenant: float, config: dict, etat: 
         if 0 < m["debut_ts"] - maintenant <= 75 * 60 and compteur["requetes"] < APIFOOTBALL_BUDGET_JOUR:
             reponse = appel(f"/fixtures/lineups?fixture={m['fixture_id']}").get("response") or []
             if reponse:  # compo pas encore publiée : on retentera à l'heure suivante
-                lignes = lignes_compos_af({k: m[k] for k in ("fixture_id", "coup_envoi", "ligue_id", "ligue")}, reponse, collecte_le)
+                lignes = lignes_compos_af({k: m[k] for k in ("fixture_id", "coup_envoi", "ligue_id", "ligue", "domicile", "exterieur")}, reponse, collecte_le)
                 if deux_onze_complets(lignes):
                     compteur["compos_faites"].append(m["fixture_id"])
                 compos.extend(lignes)
@@ -442,8 +444,12 @@ def collecter_espn(maintenant: float, config: dict, etat: dict, lire, pause: flo
                 except Exception as exc:
                     erreurs.append(f"event {ev['id']}: {type(exc).__name__}: {exc}"[:120])
                     continue  # une erreur de match ne doit pas perdre les compositions déjà reçues
+                concurrents = ((ev.get("competitions") or [{}])[0].get("competitors") or [])
+                groupes = {c.get("homeAway"): (c.get("team") or {}).get("displayName") or ""
+                           for c in concurrents if c.get("homeAway") in ("home", "away")}
                 base = {"event_id": ev["id"], "ligue": ligue["slug"], "division": ligue.get("division") or "",
-                        "coup_envoi": utc(debut)}
+                        "coup_envoi": utc(debut), "domicile": groupes.get("home", ""),
+                        "exterieur": groupes.get("away", "")}
                 lignes = lignes_compos_espn(base, summary, utc(maintenant))
                 if lignes:  # compo pas encore publiée : on retentera à l'heure suivante
                     if deux_onze_complets(lignes):

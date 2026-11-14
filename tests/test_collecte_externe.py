@@ -211,6 +211,23 @@ class TestEspn(unittest.TestCase):
             m = ce.collecter(Path(d), ["espn"], MAINTENANT, lire, {"espn": [{"slug": "xxx.9", "division": None}]}, pause=0)
             self.assertEqual(m["sources"]["espn"]["statut"], "erreur")
 
+    def test_collecte_conserve_orientation_depuis_scoreboard(self):
+        def lire(url):
+            if "scoreboard" in url:
+                return json.dumps({"events": [{"id": "99", "date": "2026-10-29T13:00:00Z",
+                    "competitions": [{"competitors": [
+                        {"homeAway": "home", "team": {"displayName": "Equipe Maison"}},
+                        {"homeAway": "away", "team": {"displayName": "Equipe Voyage"}}]}]}]}).encode()
+            if "summary" in url:
+                return json.dumps({"rosters": [{"team": {"displayName": nom},
+                    "roster": [{"starter": True, "athlete": {"id": f"{nom}-{i}", "displayName": f"{nom} {i}"}}
+                               for i in range(11)]} for nom in ("Equipe Maison", "Equipe Voyage")]}).encode()
+            raise AssertionError(url)
+        r = ce.collecter_espn(MAINTENANT, {"espn": [{"slug": "fra.1", "division": "F1"}]}, {}, lire, pause=0)
+        self.assertEqual(len(r["compos"]), 22)
+        self.assertEqual({(x["domicile"], x["exterieur"]) for x in r["compos"]},
+                         {("Equipe Maison", "Equipe Voyage")})
+
 
 _spec2 = importlib.util.spec_from_file_location("lire_externe", ROOT / "scripts" / "lire_externe.py")
 le = importlib.util.module_from_spec(_spec2)
@@ -237,6 +254,14 @@ class TestLecture(unittest.TestCase):
 
 
 class TestApiFootball(unittest.TestCase):
+    def test_calendrier_preserve_domicile_exterieur(self):
+        reponse = [{"fixture": {"id": 16, "date": "2026-11-14T15:00:00Z", "timestamp": MAINTENANT + 60,
+                                 "status": {"short": "NS"}},
+                    "league": {"id": 61, "name": "Ligue 1"},
+                    "teams": {"home": {"name": "Alpha"}, "away": {"name": "Beta"}}}]
+        cal = ce.calendrier_af(reponse, {61})
+        self.assertEqual((cal[0]["domicile"], cal[0]["exterieur"]), ("Alpha", "Beta"))
+
     def faux(self, appels):
         debut = int(MAINTENANT + 3600)
         fixtures = {"response": [
