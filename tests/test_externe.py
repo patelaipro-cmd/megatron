@@ -5,8 +5,10 @@ from pathlib import Path
 import tempfile
 import unittest
 from contextlib import redirect_stdout
+from datetime import datetime, timezone
 
 from megatron import contexte_favori, externe
+from megatron.sources_prematch import importer_source
 from megatron.__main__ import main
 
 KO = '2099-01-01T15:00:00+00:00'
@@ -92,6 +94,28 @@ class TestExterne(unittest.TestCase):
         Path(h.name).unlink()
         self.assertEqual(code, 0)
         self.assertIn('Blesse Fictif', buf.getvalue())
+
+    def test_fiches_nouveaux_sites_vers_grille_sans_changer_probabilites(self):
+        obs = {'source': '180score', 'type': 'classement',
+               'source_url': 'https://180score.com/football/match/test/',
+               'match_id': 'observation:alpha-beta',
+               'domicile': 'Alpha Externe', 'exterieur': 'Beta FC',
+               'competition': 'Ligue Test', 'coup_envoi': KO,
+               'collecte_le': '2099-01-01T14:00:00+00:00', 'publie_le': None,
+               'donnees': {'classement_au': '2099-01-01T13:00:00+00:00',
+                           'rang_domicile': 1, 'rang_exterieur': 9, 'portee': 'general'}}
+        rep = self.d / 'imports' / '180score'
+        rep.mkdir(parents=True)
+        (rep / 'classement.json').write_text(json.dumps(obs))
+        self.assertEqual(importer_source(self.d, '180score', datetime(2099, 1, 1, 14, 30, tzinfo=timezone.utc).timestamp())['nouvelles'], 1)
+        out = externe.enrichir(self.doc, self.d, at=AT, noms={'Alpha FC': 'Alpha Externe'})
+        angle = next(a for a in out['angles'] if a['id'] == 'informations_manquantes')
+        self.assertIn('rangs H/A 1/9', angle['constat'])
+        self.assertIn('180score', {s['famille'] for s in angle['sources_contexte']})
+        self.assertNotIn('180score', {s['famille'] for s in angle['sources']})
+        validation = contexte_favori.verifier(out, at=AT)
+        self.assertFalse(validation['ajustement_probabilites'])
+        self.assertTrue(any('trois sites' in m for m in validation['manquants']))
 
 
 class TestNoms(unittest.TestCase):
