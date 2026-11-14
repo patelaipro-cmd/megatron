@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from megatron import compositions_prematch as compos  # noqa: E402
+from megatron.sources_prematch import SITES, valider_fiche  # noqa: E402
 
 
 def _instant(iso: str) -> datetime:
@@ -148,6 +149,25 @@ def importer_sofascore(dossier: Path, archive: Path, *, au: str) -> dict:
     return importer_externes(dossier, archive, au=au, sources=("sofascore", "sofascore_apify"))
 
 
+def importer_sites(dossier: Path, archive: Path, *, au: str) -> dict:
+    """Fiches XI vérifiées des nouveaux sites ; jamais leurs prévisions 1X2 en XI."""
+    compte = {"fiches": 0, "xi": 0, "ajoutes": 0, "doublons": 0, "autres_faits": 0, "erreurs": 0}
+    for source in SITES:
+        for fichier in sorted((dossier / "sites" / source).glob("*/*.json")):
+            compte["fiches"] += 1
+            try:
+                fiche = valider_fiche(json.loads(fichier.read_text(encoding="utf-8")), au=au)
+                if fiche["type"] != "xi":
+                    compte["autres_faits"] += 1
+                    continue
+                compte["xi"] += 1
+                reponse = compos.ajouter(archive, fiche["donnees"], au=au)
+                compte["ajoutes" if reponse["statut"] == "ajoute" else "doublons"] += 1
+            except (ValueError, KeyError, OSError, UnicodeError, json.JSONDecodeError):
+                compte["erreurs"] += 1
+    return compte
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sp = p.add_subparsers(dest="commande", required=True)
@@ -159,6 +179,10 @@ def main(argv=None) -> int:
     imp.add_argument("--dossier", type=Path, required=True)
     imp.add_argument("--archive", type=Path, required=True)
     imp.add_argument("--au", help="date d'audit ; défaut = maintenant en UTC")
+    sites = sp.add_parser("importer-sites", help="convertir les fiches XI des cinq sites, sans accès réseau")
+    sites.add_argument("--dossier", type=Path, required=True)
+    sites.add_argument("--archive", type=Path, required=True)
+    sites.add_argument("--au", help="date d'audit ; défaut = maintenant en UTC")
     an = sp.add_parser("analyser", help="comparer le XI au dernier historique confirmé")
     an.add_argument("--archive", type=Path, required=True)
     an.add_argument("--match-id", required=True)
@@ -170,6 +194,8 @@ def main(argv=None) -> int:
             result = compos.ajouter(args.archive, json.loads(args.fiche.read_text(encoding="utf-8")), au=au)
         elif args.commande == "importer-externes":
             result = importer_externes(args.dossier, args.archive, au=au)
+        elif args.commande == "importer-sites":
+            result = {"experience": "EXP-022", "import_sites": importer_sites(args.dossier, args.archive, au=au)}
         else:
             result = compos.analyser(compos.charger(args.archive), args.match_id, au)
     except (ValueError, OSError, json.JSONDecodeError) as exc:
