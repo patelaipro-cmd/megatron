@@ -142,6 +142,20 @@ class TestFicheEtDecision(Base):
         self.assertEqual(f["rubriques"]["forme"], f2["rubriques"]["forme"])  # le score du jour même n'est pas lu
         self.assertEqual(f["intensites_v5"], f2["intensites_v5"])
 
+    def test_controles_v2plus_sont_descriptifs_et_sans_fuite(self):
+        at = self.ko - timedelta(hours=2)
+        sans = self.evaluer(at)
+        annonce = {"controle": "rotation_et_xi_habituel", "etat": "alerte",
+                   "constat": "équipe remaniée annoncée", "source_url": "https://example.org/avant",
+                   "publie_le": (at - timedelta(hours=3)).isoformat(),
+                   "collecte_le": (at - timedelta(hours=1)).isoformat()}
+        avec = self.evaluer(at, signaux_v2plus=[annonce])
+        self.assertEqual(sans["niveaux"], avec["niveaux"])
+        self.assertEqual(sans["decision"]["decision"], avec["decision"]["decision"])
+        self.assertTrue(avec["decision"]["vigilance_v2plus_non_deployee"])
+        self.assertFalse(avec["controles_v2plus"]["ajustement_probabilites"])
+        self.assertEqual(sans["controles_v2plus"]["points"][0]["etat"], "inconnu")
+
     def test_analyse_apres_coup_envoi_refusee(self):
         with self.assertRaises(ValueError):
             wininvest.fiche(systeme.DIVISION, self.home, self.away, self.ko, at=self.ko, history=self.history)
