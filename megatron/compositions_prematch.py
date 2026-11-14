@@ -18,8 +18,11 @@ from urllib.parse import urlparse
 from .store import parse_dt
 
 SOURCES = {
+    "sportsmole": "sportsmole.co.uk",
     "sportsgambler": "sportsgambler.com",
     "pianetafanta": "pianetafanta.it",
+    "180score": "180score.com",
+    "xpertstats": "xpertstats.com",
     "sofascore": "sofascore.com",
     "espn": "espn.com",
     "api-football": "api-sports.io",
@@ -100,6 +103,8 @@ def valider(observation: dict, *, au: str | None = None) -> dict:
         raise ValueError("un fournisseur tiers ne constitue pas une source officielle directe")
     if source == "officiel" and statut != "confirmee_officielle":
         raise ValueError("une fiche officielle doit être une composition confirmée")
+    if source in ("sportsmole", "pianetafanta") and statut != "probable":
+        raise ValueError(f"{source} ne publie ici que des XI probables")
     equipes = observation.get("equipes")
     if not isinstance(equipes, dict) or set(equipes) != {"H", "A"}:
         raise ValueError("equipes H et A requises")
