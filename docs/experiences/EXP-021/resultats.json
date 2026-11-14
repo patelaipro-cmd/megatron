@@ -1,0 +1,66 @@
+{
+  "experience": "EXP-021",
+  "statut": "EXPLORATOIRE_NON_DEPLOYE",
+  "apprentissage_effectue": true,
+  "parametre_appris_non_deploye": 0.077966,
+  "ratio_moyen_train": 0.560469,
+  "periode_train": "2008/09-2015/16",
+  "periode_validation": "2016/17-2019/20",
+  "periode_test": "2020/21-2025/26 (déjà utilisée dans le projet ; non indépendante)",
+  "cohortes": {
+    "train": {
+      "n": 5475,
+      "frequence_observee": 0.343744,
+      "reference": {
+        "log_loss": 0.596448,
+        "brier": 0.204185
+      },
+      "candidat": {
+        "log_loss": 0.596396,
+        "brier": 0.204153
+      },
+      "delta_candidat_moins_reference": {
+        "log_loss": -5.3e-05,
+        "brier": -3.2e-05
+      }
+    },
+    "validation": {
+      "n": 2831,
+      "frequence_observee": 0.357471,
+      "reference": {
+        "log_loss": 0.601204,
+        "brier": 0.206894
+      },
+      "candidat": {
+        "log_loss": 0.601249,
+        "brier": 0.206916
+      },
+      "delta_candidat_moins_reference": {
+        "log_loss": 4.5e-05,
+        "brier": 2.2e-05
+      }
+    },
+    "test": {
+      "n": 4581,
+      "frequence_observee": 0.329841,
+      "reference": {
+        "log_loss": 0.603186,
+        "brier": 0.207337
+      },
+      "candidat": {
+        "log_loss": 0.602999,
+        "brier": 0.207256
+      },
+      "delta_candidat_moins_reference": {
+        "log_loss": -0.000187,
+        "brier": -8.1e-05
+      }
+    }
+  },
+  "limites": [
+    "championnats des cinq ligues seulement ; pas de coupes ni écarts de divisions",
+    "aucune composition/rotation/absence datée dans ce test",
+    "un match isolé, notamment Béthune–Nancy, ne valide pas un signal",
+    "coefficients SYNDICATE inchangés ; nouvelle cohorte indépendante requise"
+  ]
+}

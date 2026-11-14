@@ -17,7 +17,7 @@ from __future__ import annotations
 from datetime import datetime
 from pathlib import Path
 
-from . import angles_morts, contexte_favori, marches, marges, wininvest
+from . import angles_morts, contexte_favori, controle_v2plus, marches, marges, wininvest
 from .agents import poisson_1x2
 from .models import calibrer_1x2
 from .store import now_utc, parse_dt
@@ -57,7 +57,8 @@ def niveaux(lam_home: float, lam_away: float) -> dict:
             "risques_bruts": {"defaite": round(defaite, 4), "nul": round(nul, 4)}}
 
 
-def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = None) -> dict:
+def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = None,
+            signaux_v2plus: dict | None = None) -> dict:
     """Décision indicative et ses raisons ; rien n'est déclenché."""
     p = n["probabilites"]
     fav_nom = fiche["domicile"] if n["favori"] == "H" else fiche["exterieur"]
@@ -81,6 +82,8 @@ def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = No
         raisons.append("rubriques à vérifier : " + ", ".join(autres))
     if contexte is None or contexte["statut"] != "DOCUMENTE_NON_VERIFIE":
         raisons.append("angles morts non documentés entièrement")
+    # Les signaux EXP-021 sont visibles mais ne changent pas la décision :
+    # l'expérience n'a pas satisfait le critère de validation pré-enregistré.
     if bloquants:
         decision = "PASS"
     elif raisons or p["victoire_simple"] < SEUILS["secure_victoire"]:
@@ -92,14 +95,17 @@ def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = No
                            if n["statut"] == "RECALIBRE_EXP-012" else "GO bloqué : probabilités de marge non validées (EXP-012)")
     else:
         decision = "SECURE"
-    return {"decision": decision, "bloquants": bloquants, "raisons": raisons, "seuils": SEUILS,
+    return {"decision": decision, "bloquants": bloquants, "raisons": raisons,
+            "vigilance_v2plus_non_deployee": signaux_v2plus["alertes"] if signaux_v2plus else [],
+            "seuils": SEUILS,
             "activation_automatique": ACTIVATION_AUTOMATIQUE,
             "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"}
 
 
 def evaluer(division: str, home: str, away: str, kickoff: str | datetime, *, at: str | datetime | None = None,
             history=None, dossier_externe: Path | None = None, contexte: dict | None = None,
-            cotes: list[dict] | None = None, absents_declares: dict | None = None, moment: str | None = None) -> dict:
+            cotes: list[dict] | None = None, absents_declares: dict | None = None, moment: str | None = None,
+            signaux_v2plus: list[dict] | None = None) -> dict:
     at_dt = parse_dt(at or now_utc())
     f = wininvest.fiche(division, home, away, kickoff, at=at_dt, history=history, dossier_externe=dossier_externe,
                         cotes=cotes, absents_declares=absents_declares)
@@ -107,6 +113,8 @@ def evaluer(division: str, home: str, away: str, kickoff: str | datetime, *, at:
     n = niveaux(lh, la)
     day = parse_dt(kickoff).date()
     hist = [m for m in (history if history is not None else wininvest.historique(division, day)) if m.day < day]
+    fav_nom = home if n["favori"] == "H" else away
+    controle_marge = controle_v2plus.evaluer(hist, fav_nom, parse_dt(kickoff), at_dt, signaux_v2plus)
     fit_force = {t: v for t, v in f["rubriques"]["force_adversaires"]["force"].items()}
     try:
         details = angles_morts.load_details()
@@ -122,5 +130,6 @@ def evaluer(division: str, home: str, away: str, kickoff: str | datetime, *, at:
             "niveaux": n, "reference_1x2_v5cal": {k: round(v, 4) for k, v in calibrer_1x2(poisson_1x2(lh, la), *CALIBRATION_1X2).items()},
             "angles_morts": {"questions": am["questions"], "a_verifier_hors_data": am["a_verifier_hors_data"],
                              "grille_13_angles": rapport},
-            "fiche": f, "decision": decider(n, f, rapport, moment),
+            "fiche": f, "controles_v2plus": controle_marge,
+            "decision": decider(n, f, rapport, moment, controle_marge),
             "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"}
