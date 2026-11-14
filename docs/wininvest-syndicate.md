@@ -47,6 +47,14 @@ apprend un unique coefficient **hors production** pour tester si la proportion
 de victoires larges récentes apporte une information nouvelle. Les autres
 signaux exigent encore des historiques datés avant tout apprentissage.
 
+**EXP-022 (étape de collecte des compositions)** :
+[`docs/experiences/EXP-022-compositions.md`](experiences/EXP-022-compositions.md).
+`scripts/exp022_compositions.py` archive en JSONL des observations prématch
+attribuées à SportsGambler/PianetaFanta ou issues de CSV Sofascore/ESPN/API-Football,
+puis compare les XI observés à l'historique confirmé, sans inférer la cause des
+changements. À ce stade, il s'agit d'un **audit séparé**, non branché aux
+coefficients ou aux décisions du moteur.
+
 ## Modules
 
 | Module | Rôle | Réutilise |
@@ -55,6 +63,7 @@ signaux exigent encore des historiques datés avant tout apprentissage.
 | `megatron/absences.py` | Pondération expérimentale : importance (temps de jeu, apport offensif ou défensif), remplaçant, absences simultanées par ligne, consolidation des sources et contradictions | — |
 | `megatron/syndicate.py` | 3 niveaux du favori (victoire, 2+, 3+ de marge), risques nul/défaite, 3 questions des angles morts, grille des 13 angles, décision GO/SECURE/WATCH/PASS | `marges`, `angles_morts`, `contexte_favori`, `marches` (Platt) |
 | `megatron/controles.py` | Initial / T-30 / T-5 / révision ; changements détectés ; marchés de marge au registre immuable | `ledger`, `jeton`, `suivi.FENETRE` |
+| `megatron/compositions_prematch.py` | Instantanés XI attribués/dédupliqués, comparateur de changements et protections temporelles (EXP-022) | `store.parse_dt`, CSV collectés en amont |
 
 ## Règles
 
