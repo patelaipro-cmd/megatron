@@ -11,8 +11,11 @@ Sources (choix Luloki du 29/10/2026, voir docs/collecte-externe.md) :
 - apify : lecture du dernier run réussi de la tâche Apify Sofascore créée et lancée par Luloki
   dans son propre compte (secrets `APIFY_TOKEN`, `APIFY_TACHE_SOFASCORE`) ; aucun scraping ici,
   seulement la lecture de son jeu de données. `collecte_le` = fin du run Apify ;
-- apifootball : blessures/suspensions (toutes ligues) et compos officielles des ligues de
-  data/ligues_collecte.json, clé `API_FOOTBALL_KEY` (secret Actions), budget de 90 requêtes/jour.
+- sportsmole, sportsgambler, pianetafanta : fiches publiques d'analyse/XI probables,
+  importées uniquement depuis des captures structurées réellement consultées ;
+- 180score, xpertstats : probabilités publiées et statistiques/contextes, importés
+  depuis des relevés vérifiés (aucune connexion Premium automatisée) ;
+- apifootball : ancien connecteur conservé pour lire les archives, hors planification.
 
 Volume Sofascore : compos interrogées pour les matchs à moins de 3 h à chaque
 exécution, et pour tout l'horizon de 72 h seulement aux heures UTC multiples de 6.
@@ -41,6 +44,9 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+# Exécuté aussi comme `python scripts/collecte_externe.py` par GitHub Actions.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 SOFASCORE_API = "https://api.sofascore.com/api/v1"
 FPL_API = "https://fantasy.premierleague.com/api/bootstrap-static/"
 CLUBELO_API = "http://api.clubelo.com"
@@ -49,7 +55,8 @@ CLUBELO_PAYS = {"ENG": "E0", "ESP": "SP1", "ITA": "I1", "GER": "D1", "FRA": "F1"
                 "POR": "P1", "TUR": "T1", "GRE": "G1", "SCO": "SC0", "AUT": "AUT", "SUI": "SUI", "DEN": "DEN",
                 "SWE": "SWE", "NOR": "NOR", "FIN": "FIN", "POL": "POL", "ROM": "ROM", "RUS": "RUS", "IRL": "IRL"}
 FPL_STATUT = {"a": "disponible", "d": "incertain", "i": "blesse", "s": "suspendu", "u": "indisponible", "n": "non_eligible"}
-SOURCES = ("sofascore", "fpl", "clubelo", "understat", "apifootball", "espn", "apify")
+SOURCES = ("sofascore", "fpl", "clubelo", "understat", "espn", "apify",
+           "sportsmole", "sportsgambler", "pianetafanta", "180score", "xpertstats")
 APIFY_API = "https://api.apify.com/v2"
 APIFY_CHAMPS = "id,startTimestamp,statusType,homeTeam,awayTeam,tournamentId,lineups"
 ESPN_API = "https://site.api.espn.com/apis/site/v2/sports/soccer"
@@ -511,7 +518,11 @@ def collecter(dossier: Path, sources, maintenant: float | None = None, lire=lire
     manifeste = {"execution_le": utc(maintenant), "sources": {}}
     for source in sources:
         try:
-            if source == "sofascore":
+            if source in ("sportsmole", "sportsgambler", "pianetafanta", "180score", "xpertstats"):
+                from megatron.sources_prematch import importer_source
+                manifeste["sources"][source] = importer_source(dossier, source, maintenant)
+                continue  # conserver 'attente' lorsque la source n'a aucune capture
+            elif source == "sofascore":
                 vus = {}
                 try:
                     lignes = collecter_sofascore(maintenant, ligues_sofascore(config), lire, pause=pause, vus=vus)
