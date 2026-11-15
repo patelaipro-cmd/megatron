@@ -19,6 +19,7 @@ jobs:
       - run: python scripts/train_goals_v21.py
       - run: python scripts/train_goals_v22.py
       - run: python scripts/train_goals_v23.py
+      - run: python scripts/train_goals_v24.py
       - if: always()
         uses: actions/upload-artifact@v4
         with:
