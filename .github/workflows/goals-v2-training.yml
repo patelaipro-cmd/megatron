@@ -16,9 +16,10 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install pandas numpy scikit-learn
       - run: python scripts/train_goals_v2.py
+      - run: python scripts/train_goals_v21.py
       - if: always()
         uses: actions/upload-artifact@v4
         with:
           name: goals-v2-report
-          path: artifacts/goals_v2/report.json
+          path: artifacts/goals_v2/*.json
           if-no-files-found: warn
