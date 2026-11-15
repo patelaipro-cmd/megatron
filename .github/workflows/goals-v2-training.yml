@@ -1,0 +1,35 @@
+name: GOALS V2 isolated training
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  goals-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: experiment/goals-v2-training-20261115
+      - uses: actions/checkout@v4
+        with:
+          ref: donnees-externes
+          path: external-data
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install pandas numpy scikit-learn
+      - run: python scripts/train_goals_v2.py
+      - run: python scripts/train_goals_v21.py
+      - run: python scripts/train_goals_v22.py
+      - run: python scripts/train_goals_v23.py
+      - run: python scripts/train_goals_v24.py
+      - run: python scripts/train_goals_v25.py
+      - run: python scripts/train_goals_v26.py
+      - run: python scripts/train_goals_v27.py
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: goals-v2-report
+          path: artifacts/goals_v2/*.json
+          if-no-files-found: warn

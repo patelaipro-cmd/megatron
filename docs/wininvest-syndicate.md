@@ -18,6 +18,43 @@ python -m megatron syndicate controle --moment initial ... --acces claude --jeto
 Options : `--contexte-favori` (grille des 13 angles), `--cotes` (relevés datés), `--absents`
 (absents saisis à la main avec poste, temps de jeu, part offensive, niveau du remplaçant, sources).
 
+### Contrôles V+2 issus de Béthune–Nancy (EXP-021, 14/11/2026)
+
+`syndicate evaluer` ajoute `controles_v2plus` : marges réelles des cinq derniers
+matchs et des cinq dernières victoires du favori **dans sa division**, sans
+utiliser le résultat du match étudié. Un signal descriptif relève une série
+majoritairement constituée de victoires courtes : il **n'abaisse aucune
+probabilité** et n'autorise pas GO. Le signal est incomplet si le calendrier de
+coupe ou de divisions régionales n'est pas couvert.
+
+`--signaux-v2plus signaux.json` accepte des constats externes datés pour cinq
+contrôles : `rotation_et_xi_habituel`, `resistance_contre_division_superieure`,
+`classements_avant_h2h`, `motivation_et_enjeu_coupe`, `forme_regionale_croisee`.
+Chaque entrée contient `controle`, `etat` (`alerte`/`favorable`/`incertain`),
+`constat`, `source_url`, `publie_le`, `collecte_le` (horodatages avec fuseau).
+Une source postérieure à l'analyse ou au coup d'envoi est refusée. Les sources
+sont **déclaratives, non vérifiées automatiquement**, et les cinq points
+restent `inconnu` en absence de source. La grille des 13 angles reste applicable.
+
+La rotation annoncée ne prouve pas la rotation **réellement alignée** : à T-60
+et T-5, comparer la composition officielle aux titulaires habituels. La
+présence d'un groupe annoncé remanié peut motiver une vigilance, pas une
+correction numérique arbitraire. Exemple documenté :
+`docs/experiences/CAS-BETHUNE-NANCY-20261114.md`.
+
+L'expérience `python scripts/exp021_signaux_v2plus.py --sortie /tmp/exp021-resultats.json`
+apprend un unique coefficient **hors production** pour tester si la proportion
+de victoires larges récentes apporte une information nouvelle. Les autres
+signaux exigent encore des historiques datés avant tout apprentissage.
+
+**EXP-022 (étape de collecte des compositions)** :
+[`docs/experiences/EXP-022-compositions.md`](experiences/EXP-022-compositions.md).
+`scripts/exp022_compositions.py` archive en JSONL des observations prématch
+attribuées à SportsGambler/PianetaFanta ou issues de CSV Sofascore/ESPN/API-Football,
+puis compare les XI observés à l'historique confirmé, sans inférer la cause des
+changements. À ce stade, il s'agit d'un **audit séparé**, non branché aux
+coefficients ou aux décisions du moteur.
+
 ## Modules
 
 | Module | Rôle | Réutilise |
@@ -26,6 +63,7 @@ Options : `--contexte-favori` (grille des 13 angles), `--cotes` (relevés datés
 | `megatron/absences.py` | Pondération expérimentale : importance (temps de jeu, apport offensif ou défensif), remplaçant, absences simultanées par ligne, consolidation des sources et contradictions | — |
 | `megatron/syndicate.py` | 3 niveaux du favori (victoire, 2+, 3+ de marge), risques nul/défaite, 3 questions des angles morts, grille des 13 angles, décision GO/SECURE/WATCH/PASS | `marges`, `angles_morts`, `contexte_favori`, `marches` (Platt) |
 | `megatron/controles.py` | Initial / T-30 / T-5 / révision ; changements détectés ; marchés de marge au registre immuable | `ledger`, `jeton`, `suivi.FENETRE` |
+| `megatron/compositions_prematch.py` | Instantanés XI attribués/dédupliqués, comparateur de changements et protections temporelles (EXP-022) | `store.parse_dt`, CSV collectés en amont |
 
 ## Règles
 

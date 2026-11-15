@@ -57,6 +57,7 @@ def main(argv: list[str] | None = None) -> int:
     sd.add_argument("--contexte-favori", help="grille JSON des 13 angles morts")
     sd.add_argument("--cotes", help="JSON : liste de relevés {collecte_le, H, D, A, source}")
     sd.add_argument("--absents", help="JSON : {équipe: [{joueur, poste, statut, part_minutes, part_offensive, remplacant_niveau, sources}]}")
+    sd.add_argument("--signaux-v2plus", help="JSON : constats datés sur rotation, Coupe, classement H2H et forme régionale ; sans correction de probabilité")
     sd.add_argument("--au", help="instant d'analyse avec fuseau (défaut : maintenant)")
     sd.add_argument("--resume", action="store_true", help="n'affiche que niveaux, risques et décision")
     rs = sub.add_parser("resultat", help="saisit le résultat d'un match prévu (après le coup d'envoi)")
@@ -158,7 +159,8 @@ def main(argv: list[str] | None = None) -> int:
             ev = syndicate.evaluer(args.division, args.home, args.away, args.coup_envoi, at=args.au,
                                    dossier_externe=Path(args.dossier_externe) if args.dossier_externe else None,
                                    contexte=lire(args.contexte_favori), cotes=lire(args.cotes),
-                                   absents_declares=lire(args.absents), moment=args.moment)
+                                   absents_declares=lire(args.absents), moment=args.moment,
+                                   signaux_v2plus=lire(args.signaux_v2plus))
             if args.action == "controle":
                 if not args.moment:
                     raise ValueError("--moment requis pour controle")
@@ -166,7 +168,8 @@ def main(argv: list[str] | None = None) -> int:
                 out = controles.enregistrer(MemoryStore(args.memoire), match_id, ev, args.moment,
                                             now=args.au, acces=args.acces, jeton_id=args.jeton_id)
             else:
-                out = {k: ev[k] for k in ("niveaux", "reference_1x2_v5cal", "decision")} if args.resume else ev
+                out = ({**{k: ev[k] for k in ("niveaux", "reference_1x2_v5cal", "decision")},
+                        "vigilance_v2plus": ev["controles_v2plus"]["alertes"]} if args.resume else ev)
         except (ValueError, KeyError) as exc:
             print(f"refus : {exc}")
             return 2
