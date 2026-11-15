@@ -11,6 +11,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: experiment/goals-v2-training-20261115
+      - uses: actions/checkout@v4
+        with:
+          ref: donnees-externes
+          path: external-data
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -22,6 +26,7 @@ jobs:
       - run: python scripts/train_goals_v24.py
       - run: python scripts/train_goals_v25.py
       - run: python scripts/train_goals_v26.py
+      - run: python scripts/train_goals_v27.py
       - if: always()
         uses: actions/upload-artifact@v4
         with:
