@@ -1,0 +1,44 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Alberto Flores,185100,G,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Manu Lama,312144,CD-L,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Juanjo,412251,CD-R,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Diego Pampín,264488,LB,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Sergio López,173611,RB,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Pedro Alemañ,330246,AM,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Gerard Gumbau,186181,LM,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Rubén Alcaraz,214317,RM,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Jorge Pascual Medina,343634,F,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Kader Bamba,269263,AM-L,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Sergio Rodelas,384447,AM-R,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Chinaza Marvellous Onouha Okonyia,3128637,F,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Bourama Dembelé,423021,D,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Diego Hormigo,356227,D,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Mario Jiménez Gambin,409385,M,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Benedikt Gimber,220716,D,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Raúl Lizoain,153481,G,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Alejandro Marqués,271900,F,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Dylan Rodríguez Vellisca,3094331,M,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Granada,4-2-3-1,Ángelo García Hidalgo,3128636,D,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Caro,239387,G,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Andrés Rodríguez,375799,CD-L,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Giovanni Bonfanti,335952,CD-R,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Adrián Rodríguez Del Rosario,3144268,LB,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Álex Suárez,121611,RB,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Enzo Loiodice,272870,CM,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Manu Fuster,292774,LM,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Kirian Rodríguez,288936,RM,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Jesé,162453,F,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Taisei Miyashiro,265959,LF,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Iván Jaime,280489,RF,titulaire,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Jefté,165671,F,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Jeremía Recoba,380670,M,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Nicholas Opoku,256836,D,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Elías Romero,241461,F,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Aboubacar Bassinga,379136,M,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Jeredian José López Méndez,5333407,,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Mateo Acimovic,387901,M,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Jorge Valverde,136272,G,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Iñaki González,367731,M,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Marvin,307916,D,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Iván Medina,414085,F,remplacant,espn
+2026-11-15T14:57:28+00:00,401883116,esp.2,SP2,2026-11-15T15:15:00+00:00,Granada,Las Palmas,Las Palmas,4-3-3,Adri Suárez,406376,G,remplacant,espn
