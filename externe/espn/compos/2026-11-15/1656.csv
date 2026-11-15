@@ -1,0 +1,89 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Jon Mikel Magunagoitia,290751,G,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Arana,354555,CD-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Peru Nolaskoain,271822,CD-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Anaitz Arbilla,150806,LB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Álvaro Rodríguez Pérez,251661,RB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Iván Gil,331283,AM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Aleix Garrido,361257,LM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Ander Madariaga,367721,RM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Jon Bautista,234335,F,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Malcom Adu Ares,347412,AM-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Jon Guruzeta,376033,AM-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Sergio Álvarez,87963,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Luis López,304321,G,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Sergio Cubero,300512,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Pejiño,270597,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Jair Amador Silos,238894,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Unai Elgezabel,231214,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Eric Pérez,385027,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Lander Olaetxea,224587,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Jon Magunacelaya,325010,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Lucas Nuñez,307986,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Eibar,4-2-3-1,Javier Martón,324351,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,David Gil,195604,G,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Manuel Rivera Domínguez,3105656,CD-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Noah Ukwuije,415372,CD-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Sergio Arribas,399240,LB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Giorgi Gocholeishvili,306347,RB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Urko Izeta,354205,AM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Marc-Oliver Doué,291262,LM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Dilan Zárate,387838,RM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Vladyslav Kopotun,394420,F,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Antonio Cordero,375875,AM-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Borja Vázquez,384598,AM-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Efe Ugiagbe,409298,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Ibon Sánchez,411758,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Jokin Ezkieta,209578,G,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Damián Rodríguez,341269,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Rubén Domínguez,400253,G,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Juan Díaz,397417,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Cristian Gutiérrez,331977,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Aimen Moueffek,291401,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Javi Ontiveros,230894,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Manuel Fernández,409477,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Beñat De Jesús,374633,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883117,esp.2,SP2,2026-11-15T17:30:00+00:00,Eibar,Cádiz,Cádiz,4-2-3-1,Gonzalo Petit,361366,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Ramon Vila,354450,G,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Iker Ortega,310837,CD-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Floris Smand,346837,CD-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,David Ruiz Montero,412135,LB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Jesus Clemente,311264,RB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Pau Cabanes,384544,AM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Justin Smith,113146,LM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Marcos Bustillo,354251,RM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Mariano Carmona,395201,F,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Jordi Martín,331710,AM-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Aingeru Olabarrieta,377833,AM-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Waldo Rubio,269583,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Javier Olaizola,11719,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Dinis Rodrigues,407541,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Juan Palomares,331424,G,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Borja Calvo,354252,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Roberto López,308145,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Jorge Rastrojo,374618,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Manuel Nieto,299935,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Álex Ibarrondo,407406,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Julien Yanda,396893,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Javier Martínez,278205,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,Eldense,4-2-3-1,Álex Serra,375724,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Diego Fuoli,306293,G,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Edgar González,128669,CD-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Óscar Sanz,155283,CD-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Gerard Fornés,300270,LB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Arthur Bonaldo,253008,RB,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Pere Pons,178565,CM-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Ton Ripoll,300272,CM-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Javi López,347354,LM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Ángel Baena,303843,RM,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Gastón Valles,380822,CF-L,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Joel Priego,307709,CF-R,titulaire,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Nikolai Óbolo,218510,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Jose Ortega,311302,G,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Yanis Rahmani,245840,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Yussif Owusu,388399,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Alain Ribeiro,300303,M,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Marc Vidal,138674,G,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,José Luis Català Vázquez,376662,D,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Quim Utgés,412261,F,remplacant,espn
+2026-11-15T16:56:54+00:00,401883137,esp.2,SP2,2026-11-15T17:30:00+00:00,Eldense,CD Sabadell,CD Sabadell,4-4-2,Juan Carlos Lázaro Cervera,242434,D,remplacant,espn
