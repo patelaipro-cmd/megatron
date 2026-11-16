@@ -44,6 +44,50 @@ Le pilote **50 matchs** sera prospectif : un match déjà joué ne peut être
 REFUS aussi bien que les WATCH afin de mesurer la couverture réelle. Aucun
 seuil de 60 % ne valide à lui seul une probabilité non calibrée au direct.
 
+## Première source LIVE : ESPN, observation isolée
+
+`scripts/collecter_score_t15_espn.py` interroge le calendrier JSON public ESPN
+**uniquement** pour des fixtures ESPN pré-identifiées dont le coup d'envoi
+référencé se situe à T+12 à T+18. Il exige que le fournisseur confirme encore
+la première période, donne une minute cohérente et deux scores entiers. Il
+capture l'identifiant du match, l'heure, le SHA-256 de la réponse et l'URL
+publique du match. Une indisponibilité, un match absent, un conflit d'heure ou
+une minute hors fenêtre sont consignés en `REFUS`.
+
+Exemple de fichier de configuration (remplacer par des identifiants vérifiés et
+des horaires réellement à venir, jamais par les identifiants de démonstration) :
+
+```json
+{"fixtures": [{"event_id": "<identifiant ESPN réel>", "ligue": "esp.2",
+              "coup_envoi": "<date ISO avec fuseau>"}]}
+```
+
+Exécution ponctuelle au bon créneau :
+
+```sh
+python scripts/collecter_score_t15_espn.py --decouvrir --horizon-heures 24 --sortie-fixtures /tmp/fixtures_jour.json
+# Nouveau relevé trois heures avant les prochains matchs :
+python scripts/collecter_score_t15_espn.py --decouvrir --horizon-heures 3 --sortie-fixtures /tmp/fixtures_reelles.json
+# Après le coup d'envoi, seulement durant les minutes 12 à 18 :
+python scripts/collecter_score_t15_espn.py --entree /tmp/fixtures_reelles.json --journal /tmp/scores_t15_espn.jsonl
+```
+
+Le mode découverte couvre les ligues ESPN réellement configurées ainsi que
+Ligue des nations, amicaux internationaux masculins/féminins et qualifications
+EURO U21 publiées sur ESPN. Il balaie le calendrier jusqu'à 24 h, puis
+resserre les contrôles des **trois heures à venir** ; il exclut les rencontres
+déjà commencées et limite
+la liste à 50 rencontres. Le fichier de découverte est créé sans écraser un
+fichier existant ; chaque nouveau passage exige un nouveau nom de sortie.
+La première commande peut légitimement trouver zéro rencontre, et la seconde
+refuser toute fixture qui ne se trouve pas exactement à T+12–18.
+
+**Ce n'est pas une boucle planifiée** et le programme n'extrait pas de contenu
+Premium. ESPN est **une seule** famille de scores ; l'absence de confirmation
+sur VAR et cartons rouges, la nécessité d'une source primaire pour les XI et
+l'absence de modèle LIVE calibré imposent `REFUS` même avec un score ESPN valide.
+Le journal est append-only dans un dossier externe à `memoire/` et `data/`.
+
 ### État de la collecte à vérifier à chaque passage
 
 - ESPN : compositions historiques utilisables pour tester l'hygiène des données ;
