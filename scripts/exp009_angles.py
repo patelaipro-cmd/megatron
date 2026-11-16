@@ -151,10 +151,13 @@ def bootstrap(diffs: list[float], level: float = 0.95, draws: int = 2000, seed: 
             f"ic{int(level * 100)}": [round(means[int(lo * draws)], 5), round(means[int((1 - lo) * draws) - 1], 5)]}
 
 
-def evaluer(out: Path) -> dict:
+def evaluer(out: Path, dev_seasons: set[str] | None = None) -> dict:
+    dev_seasons = DEV if dev_seasons is None else dev_seasons
+    if dev_seasons & (VAL | TEST):
+        raise ValueError('Development seasons overlap validation or test')
     with (out / "variables.csv").open(newline="", encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh))
-    dev = [r for r in rows if r["saison"] in DEV]
+    dev = [r for r in rows if r["saison"] in dev_seasons]
     mean = {k: sum(float(r[k]) for r in dev) / len(dev) for k in INDICATEURS}
     sd = {k: (sum((float(r[k]) - mean[k]) ** 2 for r in dev) / len(dev)) ** 0.5 or 1.0 for k in INDICATEURS}
 
@@ -173,7 +176,7 @@ def evaluer(out: Path) -> dict:
         def pred(beta, xs):
             return _sig(sum(b * v for b, v in zip(beta, xs)))
         res = {"B": [round(v, 5) for v in b_beta], "A": dict(zip(["const", "logit_p"] + INDICATEURS, (round(v, 5) for v in a_beta)))}
-        for role, seasons in (("dev", DEV), ("validation", VAL), ("test", TEST)):
+        for role, seasons in (("dev", dev_seasons), ("validation", VAL), ("test", TEST)):
             part = [r for r in rows if r["saison"] in seasons]
             la = [_ll(pred(a_beta, feats[id(r)]), y[id(r)]) for r in part]
             lb = [_ll(pred(b_beta, base[id(r)]), y[id(r)]) for r in part]
