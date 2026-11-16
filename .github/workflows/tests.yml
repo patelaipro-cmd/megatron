@@ -30,6 +30,8 @@ jobs:
           assert actual==expected, f'SHA mismatch: {actual}'
           print('Verified historical dataset:',p.stat().st_size,'bytes')
           PY
+      - name: Inventory historical V1 coverage
+        run: PYTHONPATH=. python scripts/audit_domination_coverage.py --output artifacts/domination_v1/coverage.json
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Validate historical report
