@@ -64,7 +64,7 @@ def main():
     snapshot=capture(datetime.now(timezone.utc),names)
     a.output.parent.mkdir(parents=True,exist_ok=True)
     a.output.write_text(json.dumps(snapshot,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-    print(json.dumps({"raw_n":len(snapshot["raw_fixtures"]),"mapped_n":len(snapshot["fixtures"]),
+    print(json.dumps({"league_counts":snapshot["league_counts"],"raw_n":len(snapshot["raw_fixtures"]),"mapped_n":len(snapshot["fixtures"]),
                       "unmapped_n":snapshot["unmapped_n"],"errors":len(snapshot["source_errors"]),
                       "empty_snapshot":snapshot["empty_snapshot"],
                       "coverage_assessable":snapshot["coverage_assessable"]}))
