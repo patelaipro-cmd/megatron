@@ -23,7 +23,8 @@ def build(snapshot):
             "mapping_status":"UNVERIFIED","canonical_team":""}
            for league,group in sorted(groups.items())
            for name,count in sorted(group["teams"].items())]
-    return {"raw_n":len(rows),"unmapped_fixtures_n":len(missing),
+    ranked_leagues=sorted(({"league":k,"unmapped_fixtures":v["fixtures"],"unique_raw_teams":len(v["teams"])} for k,v in groups.items()),key=lambda x:(-x["unmapped_fixtures"],x["league"]))
+    return {"priority_leagues":ranked_leagues,"raw_n":len(rows),"unmapped_fixtures_n":len(missing),
             "league_summary":{k:{"unmapped_fixtures":v["fixtures"],
                                   "unique_raw_teams":len(v["teams"])}
                               for k,v in sorted(groups.items())},
@@ -45,5 +46,5 @@ def main():
         w.writeheader();w.writerows(result["teams"])
     print(json.dumps({"unmapped_fixtures_n":result["unmapped_fixtures_n"],
                       "unmapped_teams_n":len(result["teams"]),
-                      "league_summary":result["league_summary"]}))
+                      "league_summary":result["league_summary"],"priority_leagues":result["priority_leagues"]}))
 if __name__=="__main__":main()
