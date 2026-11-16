@@ -19,12 +19,16 @@ def main():
     p.add_argument('--division',required=True,choices=LIGUES)
     p.add_argument('--season',required=True)
     p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--allow-empty',action='store_true',help='skip unavailable league-season with explicit status')
     a=p.parse_args()
     existing=set()
     with open('docs/experiences/EXP-009/variables.csv',newline='',encoding='utf-8') as f:
         existing={r['match_id'] for r in csv.DictReader(f)}
     target=[m for m in data.load(data.CURRENT,divisions={a.division}) if season_of(m.day)==a.season]
     if not target:
+        if a.allow_empty:
+            print(f'SKIP no historical matches: {a.division} {a.season}')
+            return
         raise ValueError('No matches in selected league-season')
     if any(m.match_id in existing for m in target):
         raise ValueError('Selected season overlaps frozen EXP-009 features; refusing to overwrite')
