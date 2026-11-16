@@ -30,6 +30,16 @@ jobs:
         run: PYTHONPATH=. python scripts/audit_domination_prospective.py --registre artifacts/prospective_registry --output artifacts/prospective_audit.json
       - name: Archive future fixtures independently (do not score future matches)
         run: PYTHONPATH=. python scripts/capture_domination_fixture_snapshot.py --output artifacts/fixture_snapshot.json
+      - name: Inventory unmapped exploratory league teams
+        run: PYTHONPATH=. python scripts/inventory_domination_unmapped_teams.py --snapshot artifacts/fixture_snapshot.json --output artifacts/unmapped_teams.json --csv artifacts/unmapped_teams.csv
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-unmapped-teams
+          path: |
+            artifacts/unmapped_teams.json
+            artifacts/unmapped_teams.csv
+          if-no-files-found: warn
       - name: Compare independently captured fixtures to prospective registry
         run: PYTHONPATH=. python scripts/audit_domination_prospective_coverage.py --registre artifacts/prospective_registry --fixtures-json artifacts/fixture_snapshot.json --output artifacts/prospective_coverage.json
       - if: always()
