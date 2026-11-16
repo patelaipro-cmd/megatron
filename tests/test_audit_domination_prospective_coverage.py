@@ -45,5 +45,23 @@ class ProspectiveCoverageTests(unittest.TestCase):
                          as_of="2026-11-23T14:00:00+00:00")
             self.assertEqual(report["status_counts"]["no_prediction"],1)
 
+    def test_as_of_excludes_predictions_recorded_later(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            mid="E0:2026-11-23:H-A"
+            kickoff="2026-11-23T15:00:00+00:00"
+            store=MemoryStore(root)
+            for market in ("H_MARGE_2PLUS","H_MARGE_3PLUS"):
+                store.record("performances",f"pred:{mid}:{market}:v1",
+                    {"match_id":mid,"kickoff":kickoff,"market":market,
+                     "data_cutoff":"2026-11-23T12:00:00+00:00",
+                     "probs":{"oui":0.6,"non":0.4}},
+                    source="test",recorded_at="2026-11-23T14:00:00+00:00",supersede=False)
+            fixture={"match_id":mid,"kickoff":kickoff}
+            before=audit(root,[fixture],as_of="2026-11-23T13:30:00+00:00")
+            after=audit(root,[fixture],as_of="2026-11-23T14:30:00+00:00")
+            self.assertEqual(before["status_counts"]["no_prediction"],1)
+            self.assertEqual(after["status_counts"]["covered_2plus_3plus"],1)
+
 if __name__=="__main__":
     unittest.main()
