@@ -47,6 +47,8 @@ jobs:
         run: PYTHONPATH=. python scripts/consolidate_domination_features.py --plan artifacts/domination_v1/extension_plan.json --batch-dir artifacts/domination_v1/batch --output artifacts/domination_v1/historical_pre2008.csv
       - name: Prepare audited expanded V1 training input
         run: PYTHONPATH=. python scripts/prepare_domination_training.py --historical artifacts/domination_v1/historical_pre2008.csv --output artifacts/domination_v1/training_expanded.csv
+      - name: Audit V1 chronological training validation test split
+        run: PYTHONPATH=. python scripts/audit_domination_splits.py --input artifacts/domination_v1/training_expanded.csv --output artifacts/domination_v1/splits_audit.json
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Validate historical report
