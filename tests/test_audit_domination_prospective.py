@@ -1,5 +1,6 @@
 """Regression tests for the read-only V1 prospective auditor."""
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -31,7 +32,7 @@ class ProspectiveAuditTests(unittest.TestCase):
             out=root/'audit.json'
             proc=subprocess.run([sys.executable,str(ROOT/'scripts/audit_domination_prospective.py'),
                 '--registre',str(root/'memoire'),'--output',str(out)],
-                cwd=ROOT,capture_output=True,text=True)
+                cwd=ROOT,capture_output=True,text=True,env={**os.environ,'PYTHONPATH':str(ROOT)})
             self.assertEqual(proc.returncode,0,proc.stderr)
             report=json.loads(out.read_text())
             self.assertEqual(report['decision'],'NO_GO')
