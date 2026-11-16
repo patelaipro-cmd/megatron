@@ -29,5 +29,21 @@ class ProspectiveCoverageTests(unittest.TestCase):
                 self.assertEqual(report["status_counts"][status],1)
             self.assertEqual(report["decision"],"NO_GO")
 
+    def test_future_fixture_is_not_a_missing_prediction(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            fixture={"match_id":"E0:2026-11-23:A-B","kickoff":"2026-11-23T15:00:00+00:00"}
+            report=audit(root,[fixture],observed_at="2026-11-16T15:00:00+00:00")
+            self.assertEqual(report["status_counts"]["not_yet_in_initial_window"],1)
+            self.assertNotIn("no_prediction",report["status_counts"])
+
+    def test_archived_snapshot_can_be_reaudited_after_window(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            fixture={"match_id":"E0:2026-11-23:A-B","kickoff":"2026-11-23T15:00:00+00:00"}
+            report=audit(root,[fixture],observed_at="2026-11-16T15:00:00+00:00",
+                         as_of="2026-11-23T14:00:00+00:00")
+            self.assertEqual(report["status_counts"]["no_prediction"],1)
+
 if __name__=="__main__":
     unittest.main()
