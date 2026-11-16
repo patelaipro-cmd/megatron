@@ -15,9 +15,9 @@ def main():
     a=p.parse_args()
     a.output_dir.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(a.expanded,a.output_dir/'variables.csv')
-    expanded=evaluer(a.output_dir)
+    expanded=evaluer(a.output_dir, dev_seasons={f'{y}/{str(y+1)[-2:]}' for y in range(2000,2016)})
     report={'status':'experimental_refit','baseline_path':str(a.baseline),
-            'test_period_unchanged':True,'production_modified':False,
+            'development_period':'2000/01-2015/16','test_period_unchanged':True,'production_modified':False,
             'questions':{}}
     if a.baseline.is_file():
         baseline=json.loads(a.baseline.read_text(encoding='utf-8'))
