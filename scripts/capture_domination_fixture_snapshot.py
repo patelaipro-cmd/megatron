@@ -6,7 +6,13 @@ be compared to the ledger. A snapshot is NOT a historical completeness claim.
 import argparse,json
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
-from scripts.registre_prospectif import ESPN,LIGUES,NOMS,lire_json
+from scripts.registre_prospectif import ESPN,LIGUES as BASE_LIGUES,NOMS,lire_json
+# Exploration only: new leagues are not authorized for live prediction.
+EXPLORATORY_LIGUES = {
+    'PT1':'por.1', 'NL1':'ned.1', 'BE1':'bel.1', 'TR1':'tur.1', 'SC0':'sco.1',
+    'E1':'eng.2', 'F2':'fra.2', 'D2':'ger.2', 'I2':'ita.2', 'SP2':'esp.2',
+}
+LIGUES = {**BASE_LIGUES, **EXPLORATORY_LIGUES}
 from megatron.store import parse_dt
 
 def capture(now, noms, lire=lire_json):
@@ -38,7 +44,7 @@ def capture(now, noms, lire=lire_json):
                                 "mapping_status":"mapped" if home and away else "unmapped"})
     unique={(x["league"],x["espn_id"],x["kickoff"]):x for x in records}
     rows=sorted(unique.values(),key=lambda x:(x["kickoff"],x["league"],x["espn_id"]))
-    return {"captured_at":now.isoformat(),"source":"ESPN public fixture scoreboard","leagues":list(LIGUES),
+    return {"captured_at":now.isoformat(),"source":"ESPN public fixture scoreboard","leagues":list(LIGUES),"exploratory_leagues":list(EXPLORATORY_LIGUES),
             "raw_fixtures":rows,"fixtures":[{"match_id":r["match_id"],"kickoff":r["kickoff"]}
                     for r in rows if r["mapping_status"]=="mapped" and r["state"]=="pre"],
             "unmapped_n":sum(r["mapping_status"]=="unmapped" for r in rows),
