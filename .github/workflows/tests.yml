@@ -43,6 +43,8 @@ jobs:
         run: PYTHONPATH=. python scripts/plan_domination_extension.py --output artifacts/domination_v1/extension_plan.json
       - name: Batch reconstruct all eligible pre-2008 league-seasons
         run: PYTHONPATH=. python scripts/batch_domination_extension.py --plan artifacts/domination_v1/extension_plan.json --output-dir artifacts/domination_v1/batch --max-seasons 100
+      - name: Consolidate and audit historical V1 features
+        run: PYTHONPATH=. python scripts/consolidate_domination_features.py --plan artifacts/domination_v1/extension_plan.json --batch-dir artifacts/domination_v1/batch --output artifacts/domination_v1/historical_pre2008.csv
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Validate historical report
