@@ -34,6 +34,7 @@ jobs:
         run: PYTHONPATH=. python scripts/audit_domination_coverage.py --output artifacts/domination_v1/coverage.json
       - name: Pilot V1 historical features E0 2007-08
         run: PYTHONPATH=. python scripts/extend_domination_features.py --division E0 --season 2007/08 --output artifacts/domination_v1/*.csv
+            artifacts/domination_v1/batch/
       - name: Expand V1 historical pilot to five leagues 2006-07
         run: |
           for division in E0 SP1 I1 F1 D1; do
@@ -41,6 +42,8 @@ jobs:
           done
       - name: Plan available historical V1 league-seasons
         run: PYTHONPATH=. python scripts/plan_domination_extension.py --output artifacts/domination_v1/extension_plan.json
+      - name: Batch reconstruct five eligible pre-2008 league-seasons
+        run: PYTHONPATH=. python scripts/batch_domination_extension.py --plan artifacts/domination_v1/extension_plan.json --output-dir artifacts/domination_v1/batch --max-seasons 5
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Validate historical report
