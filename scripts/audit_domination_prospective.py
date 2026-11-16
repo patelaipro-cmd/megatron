@@ -27,11 +27,18 @@ def main():
     entries=store.active(DOMAIN)
     results={e.value['match_id']:e for e in entries if e.key.startswith('result:')}
     groups=defaultdict(list)
+    version_counts=defaultdict(int)
+    predicted_counts=defaultdict(int)
+    probability_bins=defaultdict(lambda: defaultdict(int))
     excluded=defaultdict(int)
     for e in entries:
         if not e.key.startswith('pred:'):continue
         v=e.value;market=market_of(v)
         if not any(market.endswith('_'+m) for m in MARKETS):continue
+        league=v['match_id'].split(':',1)[0]
+        margin=2 if market.endswith('MARGE_2PLUS') else 3
+        predicted_counts[f'{league}:margin_{margin}']+=1
+        version_counts[str(v.get('model_version','unknown'))]+=1
         kickoff=parse_dt(v['kickoff'])
         if parse_dt(e.recorded_at)>=kickoff or (v.get('data_cutoff') and parse_dt(v['data_cutoff'])>=kickoff):
             excluded['temporal_violation']+=1;continue
@@ -49,7 +56,7 @@ def main():
         prob=v['probs']['oui']
         if not (0<=prob<=1):
             excluded['invalid_probability']+=1;continue
-        league=mid.split(':',1)[0]
+        probability_bins[f'{league}:margin_{margin}'][f'{min(int(prob*10),9)*10:02d}-{min(int(prob*10),9)*10+10:02d}%']+=1
         groups[(league,margin)].append((prob,int(diff>=margin)))
     report={'decision':'NO_GO','source':'prospective_ledger_read_only',
             'exclusions':dict(excluded),'groups':{},'production_modified':False}
@@ -57,12 +64,18 @@ def main():
         high=[(pr,y) for pr,y in rows if pr>=0.60]
         n=len(high);k=sum(y for _,y in high)
         report['groups'][f'{league}:margin_{margin}']={
+            'predictions_registered':predicted_counts[f'{league}:margin_{margin}'],
+            'probability_histogram_10pct':dict(sorted(probability_bins[f'{league}:margin_{margin}'].items())),
+            'probability_max':round(max(pr for pr,_ in rows),4),
+            'probability_mean':round(sum(pr for pr,_ in rows)/len(rows),4),
             'resolved_n':len(rows),'p60_n':n,'p60_wins':k,
             'p60_observed':round(k/n,4) if n else None,
             'p60_predicted':round(sum(pr for pr,_ in high)/n,4) if n else None,
             'p60_wilson95':wilson(k,n),'p60_insufficient':n<100,
             'brier':round(sum((pr-y)**2 for pr,y in rows)/len(rows),5),
             'log_loss':round(sum(-math.log(max(min(pr if y else 1-pr,1-1e-15),1e-15)) for pr,y in rows)/len(rows),5)}
+    report['model_versions']=dict(sorted(version_counts.items()))
+    report['registered_predictions_by_group']=dict(sorted(predicted_counts.items()))
     a.output.parent.mkdir(parents=True,exist_ok=True)
     a.output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'groups':len(groups),'exclusions':report['exclusions'],'decision':'NO_GO'}))
