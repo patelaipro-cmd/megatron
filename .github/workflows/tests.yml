@@ -44,9 +44,30 @@ jobs:
               print(key,'test:',x['test']['C']['n'],'logloss:',x['test']['C']['log_loss'],'p>=0.60:',x['test']['C']['tranche_p60'])
           print('Retrospective replay ONLY; no prospective validation, no deployment')
           PY
+      - name: Audit confidence intervals and prevent premature GO
+        run: |
+          python - <<'PY'
+          import json, math
+          from pathlib import Path
+          p=Path('artifacts/domination_v1/resultats.json')
+          d=json.loads(p.read_text())
+          audit={'type':'retrospective_replay_not_prospective','decision':'NO_GO','levels':{}}
+          for name in ('victoire_par_2_ou_plus','victoire_par_3_ou_plus'):
+              v=d['niveaux'][name]['test']['C']['tranche_p60']
+              n=v['n']; rate=v['frequence']; k=round(rate*n)
+              z=1.959963984540054
+              den=1+z*z/n
+              center=(k/n+z*z/(2*n))/den
+              half=z*math.sqrt((k/n)*(1-k/n)/n+z*z/(4*n*n))/den
+              lo,hi=max(0,center-half),min(1,center+half)
+              audit['levels'][name]={'n':n,'wins':k,'observed_rate':rate,'forecast_mean':v['p_moyenne'],'wilson95':[round(lo,4),round(hi,4)],'min_1500_p60':n>=1500,'lower_bound_above_60pct':lo>=0.60}
+              print(name,audit['levels'][name])
+          Path('artifacts/domination_v1/audit_p60.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False)+'\\n')
+          print('NO_GO: historical reused test period, no independent prospective cohort')
+          PY
       - if: always()
         uses: actions/upload-artifact@v4
         with:
           name: domination-v1-experimental-report
-          path: artifacts/domination_v1/resultats.json
+          path: artifacts/domination_v1/*.json
           if-no-files-found: warn
