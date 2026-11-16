@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, controles, data, contexte_favori, externe, syndicate, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
+from . import goals, backtest, checkpoint, controles, data, contexte_favori, externe, syndicate, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -114,9 +114,21 @@ def main(argv: list[str] | None = None) -> int:
     sy = sub.add_parser("synchro", help="contrôles de la mémoire avant reprise (rien n'est écrit)")
     sy.add_argument("action", choices=["verifier"])
     sy.add_argument("--reference", help="branche de référence, ex. origin/main : signale un retard")
+    gv = sub.add_parser("goals", help="V2 indépendante : totaux Over/Under, sans V1 ni mi-temps ; lecture seule")
+    gv.add_argument("--calendrier", required=True, help="JSON liste complète : division, home, away, kickoff avec fuseau")
+    gv.add_argument("--au", help="instant d'analyse avec fuseau")
+    gv.add_argument("--seuil", type=float, default=0.60)
     args = parser.parse_args(argv)
 
-    if args.cmd == "reprise":
+    if args.cmd == "goals":
+        try:
+            fixtures = json.loads(Path(args.calendrier).read_text(encoding="utf-8"))
+            out = goals.screen(fixtures, at=args.au, threshold=args.seuil)
+        except (ValueError, KeyError, TypeError, OSError) as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False))
+    elif args.cmd == "reprise":
         ckpt = checkpoint.load(MemoryStore(args.memoire))
         print(json.dumps(ckpt, indent=2, ensure_ascii=False) if ckpt else "aucun checkpoint")
     elif args.cmd == "inventaire":
