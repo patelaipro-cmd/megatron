@@ -9,6 +9,31 @@ jobs:
         with:
           python-version: "3.13"
       - run: python -m unittest discover -s tests -t . -v
+  domination-v1-prospective-audit:
+    if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Read actual prospective registry branch without modifying it
+        run: |
+          git fetch --depth 1 origin refs/heads/registre-memoire:refs/remotes/origin/registre-memoire
+          mkdir -p artifacts/prospective_registry
+          git show origin/registre-memoire:memoire/performances.jsonl > artifacts/prospective_registry/performances.jsonl
+          test -s artifacts/prospective_registry/performances.jsonl
+      - name: Audit confirmed 2+ and 3+ predictions
+        run: PYTHONPATH=. python scripts/audit_domination_prospective.py --registre artifacts/prospective_registry --output artifacts/prospective_audit.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-prospective-audit
+          path: artifacts/prospective_audit.json
+          if-no-files-found: warn
   domination-v1-experimental:
     if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
     runs-on: ubuntu-latest
