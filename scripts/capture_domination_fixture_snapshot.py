@@ -10,12 +10,15 @@ from scripts.registre_prospectif import ESPN,LIGUES,NOMS,lire_json
 from megatron.store import parse_dt
 
 def capture(now, noms, lire=lire_json):
-    records=[];errors=[]
+    records=[];errors=[];source_diagnostics=[]
     for div,slug in LIGUES.items():
         for offset in (0,1):
             day=now+timedelta(days=offset)
             try:
-                events=lire(ESPN.format(slug=slug,jour=day.strftime("%Y%m%d"))).get("events") or []
+                payload=lire(ESPN.format(slug=slug,jour=day.strftime("%Y%m%d")))
+                events=payload.get("events") or []
+                source_diagnostics.append({"league":div,"date":day.date().isoformat(),
+                                           "returned_events":len(events),"response_has_events":isinstance(payload.get("events"),list)})
             except Exception as exc:
                 errors.append({"league":div,"date":day.date().isoformat(),"error":type(exc).__name__})
                 continue
@@ -39,7 +42,11 @@ def capture(now, noms, lire=lire_json):
             "raw_fixtures":rows,"fixtures":[{"match_id":r["match_id"],"kickoff":r["kickoff"]}
                     for r in rows if r["mapping_status"]=="mapped" and r["state"]=="pre"],
             "unmapped_n":sum(r["mapping_status"]=="unmapped" for r in rows),
-            "source_errors":errors,"complete":not errors}
+            "source_errors":errors,"source_diagnostics":source_diagnostics,
+            "complete":not errors and len(source_diagnostics)==2*len(LIGUES)
+                       and all(d["response_has_events"] for d in source_diagnostics),
+            "empty_snapshot":not rows,
+            "coverage_assessable":bool(rows) and not errors}
 
 def main():
     p=argparse.ArgumentParser()
@@ -50,6 +57,8 @@ def main():
     a.output.parent.mkdir(parents=True,exist_ok=True)
     a.output.write_text(json.dumps(snapshot,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     print(json.dumps({"raw_n":len(snapshot["raw_fixtures"]),"mapped_n":len(snapshot["fixtures"]),
-                      "unmapped_n":snapshot["unmapped_n"],"errors":len(snapshot["source_errors"])}))
+                      "unmapped_n":snapshot["unmapped_n"],"errors":len(snapshot["source_errors"]),
+                      "empty_snapshot":snapshot["empty_snapshot"],
+                      "coverage_assessable":snapshot["coverage_assessable"]}))
     if snapshot["source_errors"]:raise SystemExit(2)
 if __name__=="__main__":main()
