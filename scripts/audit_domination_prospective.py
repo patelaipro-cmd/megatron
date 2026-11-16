@@ -38,7 +38,7 @@ def main():
         mid=v['match_id'];res=results.get(mid)
         if res is None or not res.value.get('score'):
             excluded['no_verified_score']+=1;continue
-        if parse_dt(res.observed_at)<=kickoff:
+        if not res.observed_at or parse_dt(res.observed_at)<=kickoff:
             excluded['result_not_after_kickoff']+=1;continue
         home,away=res.value['score']
         side=market.split('_',1)[0]
