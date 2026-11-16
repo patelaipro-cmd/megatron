@@ -5,6 +5,7 @@ import json
 import math
 import tempfile
 import unittest
+from datetime import datetime
 from pathlib import Path
 from unittest import mock
 
@@ -19,16 +20,34 @@ def exemple():
     return json.loads(DEMO.read_text(encoding="utf-8"))
 
 
+def evaluer_demo(snapshot):
+    return live_t15.evaluer(snapshot, simulation=True)
+
+
 class LiveT15Tests(unittest.TestCase):
-    def test_v1_et_v2_sont_distincts_et_emboites(self):
+    def test_mode_normal_refuse_toute_preuve_declarative(self):
         r = live_t15.evaluer(exemple())
+        self.assertEqual(r["statut"], "REFUS")
+        self.assertIsNone(r["V1_DOMINATION"])
+        self.assertIsNone(r["V2_GOALS"])
+        self.assertIn("collecteur authentifié", " ".join(r["motifs"]))
+
+    def test_observation_future_refusee_meme_si_proche(self):
+        avant_observation = datetime.fromisoformat("2026-11-15T20:14:00+01:00")
+        with mock.patch.object(live_t15, "now_utc", return_value=avant_observation):
+            with self.assertRaisesRegex(ValueError, "futur"):
+                evaluer_demo(exemple())
+
+    def test_v1_et_v2_sont_distincts_et_emboites(self):
+        r = evaluer_demo(exemple())
         self.assertEqual(r["statut"], "WATCH")
         self.assertEqual(r["phase"], "LIVE_T15")
         self.assertFalse(r["poids_modifies"])
         self.assertFalse(r["activation_automatique"])
         self.assertFalse(r["registre_prospectif_modifie"])
         self.assertEqual(r["validation"], "NON_CALIBRE_EN_DIRECT")
-        self.assertEqual(r["nature"], "REJEU_NON_PROSPECTIF")
+        self.assertEqual(r["nature"], "SIMULATION_REJEU_NON_PROSPECTIF")
+        self.assertEqual(r["authentification"], "NON_VERIFIEE")
         m = r["V1_DOMINATION"]["marges_brutes"]
         self.assertLessEqual(m["H_MARGE_3PLUS"], m["H_MARGE_2PLUS"])
         self.assertLessEqual(m["A_MARGE_3PLUS"], m["A_MARGE_2PLUS"])
@@ -41,7 +60,7 @@ class LiveT15Tests(unittest.TestCase):
     def test_score_conditionne_over_deja_acquis(self):
         d = exemple()
         d["score"] = {"H": 4, "A": 0}
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         self.assertTrue(all(p == 1.0 for p in r["V2_GOALS"]["over_match_brut"].values()))
         self.assertLess(r["V1_DOMINATION"]["marges_brutes"]["H_MARGE_3PLUS"], 1.0)
 
@@ -49,7 +68,7 @@ class LiveT15Tests(unittest.TestCase):
         d = exemple()
         d["baseline"]["lambda_H"] = 0
         d["baseline"]["lambda_A"] = 0
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         self.assertAlmostEqual(r["V1_DOMINATION"]["1X2_brut"]["H"], 1.0)
         self.assertEqual(r["V1_DOMINATION"]["marges_brutes"]["H_MARGE_2PLUS"], 0.0)
         self.assertEqual(r["V2_GOALS"]["over_match_brut"]["OVER_1_5"], 0.0)
@@ -57,7 +76,7 @@ class LiveT15Tests(unittest.TestCase):
     def test_score_zero_et_total_poisson_reference(self):
         d = exemple()
         d["score"] = {"H": 0, "A": 0}
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         mu = (1.8 + .9) * 75 / 90
         p_over_1_5 = 1 - math.exp(-mu) * (1 + mu)
         self.assertAlmostEqual(r["V2_GOALS"]["over_match_brut"]["OVER_1_5"], p_over_1_5, places=12)
@@ -68,16 +87,16 @@ class LiveT15Tests(unittest.TestCase):
                 d = exemple()
                 d["baseline"]["lambda_H"] = value
                 with self.assertRaises(ValueError):
-                    live_t15.evaluer(d)
+                    evaluer_demo(d)
         d = exemple()
         d["score"]["H"] = 1.5
         with self.assertRaises(ValueError):
-            live_t15.evaluer(d)
+            evaluer_demo(d)
 
     def test_absence_baseline_refuse_sans_probabilites(self):
         d = exemple()
         del d["baseline"]
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         self.assertEqual(r["statut"], "REFUS")
         self.assertIsNone(r["V1_DOMINATION"])
         self.assertIsNone(r["V2_GOALS"])
@@ -85,21 +104,21 @@ class LiveT15Tests(unittest.TestCase):
     def test_taux_post_kickoff_refuses(self):
         d = exemple()
         d["baseline"]["calcule_le"] = d["observed_at"]
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         self.assertEqual(r["statut"], "REFUS")
         self.assertIn("fuite temporelle", " ".join(r["motifs"]))
 
     def test_xi_ulterieurs_au_snapshot_refuses(self):
         d = exemple()
         d["verification"]["xi_collecte_le"] = "2026-11-15T20:30:00+01:00"
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         self.assertEqual(r["statut"], "REFUS")
         self.assertIn("fuite temporelle", " ".join(r["motifs"]))
 
     def test_score_perime_refus(self):
         d = exemple()
         d["verification"]["score_collecte_le"] = "2026-11-15T20:10:00+01:00"
-        r = live_t15.evaluer(d)
+        r = evaluer_demo(d)
         self.assertEqual(r["statut"], "REFUS")
         self.assertIn("score périmé", " ".join(r["motifs"]))
 
@@ -110,7 +129,7 @@ class LiveT15Tests(unittest.TestCase):
             with self.subTest(path=path):
                 d = exemple()
                 d["verification"][path] = value
-                r = live_t15.evaluer(d)
+                r = evaluer_demo(d)
                 self.assertEqual(r["statut"], "REFUS")
                 self.assertIsNone(r["V1_DOMINATION"])
 
@@ -118,26 +137,26 @@ class LiveT15Tests(unittest.TestCase):
         d = exemple()
         d["minute"] = 22
         with self.assertRaisesRegex(ValueError, "hors T\\+15"):
-            live_t15.evaluer(d)
+            evaluer_demo(d)
         d = exemple()
         d["observed_at"] = "2026-11-15T20:40:00+01:00"
         with self.assertRaisesRegex(ValueError, "heure de relevé incohérente"):
-            live_t15.evaluer(d)
+            evaluer_demo(d)
 
     def test_bascule_domicile_exterieur(self):
         d = exemple()
-        p = live_t15.evaluer(d)["V1_DOMINATION"]
+        p = evaluer_demo(d)["V1_DOMINATION"]
         inverse = copy.deepcopy(d)
         inverse["score"] = {"H": d["score"]["A"], "A": d["score"]["H"]}
         inverse["baseline"]["lambda_H"] = d["baseline"]["lambda_A"]
         inverse["baseline"]["lambda_A"] = d["baseline"]["lambda_H"]
-        q = live_t15.evaluer(inverse)["V1_DOMINATION"]
+        q = evaluer_demo(inverse)["V1_DOMINATION"]
         self.assertAlmostEqual(p["1X2_brut"]["H"], q["1X2_brut"]["A"], places=12)
         self.assertAlmostEqual(p["marges_brutes"]["H_MARGE_2PLUS"],
                                q["marges_brutes"]["A_MARGE_2PLUS"], places=12)
 
     def test_journal_distinct_append_only_et_dedoublonnage(self):
-        r = live_t15.evaluer(exemple())
+        r = evaluer_demo(exemple())
         with tempfile.TemporaryDirectory() as tmp:
             dest = Path(tmp) / "live_t15.jsonl"
             live_t15.enregistrer_journal(dest, r)
@@ -145,8 +164,8 @@ class LiveT15Tests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "doublon"):
                 live_t15.enregistrer_journal(dest, r)
             with self.assertRaisesRegex(ValueError, "doublon"):
-                live_t15.enregistrer_journal(dest, live_t15.evaluer(exemple()))
-            r2 = live_t15.evaluer({**exemple(), "score": {"H": 2, "A": 0}})
+                live_t15.enregistrer_journal(dest, evaluer_demo(exemple()))
+            r2 = evaluer_demo({**exemple(), "score": {"H": 2, "A": 0}})
             live_t15.enregistrer_journal(dest, r2)
             self.assertEqual(len(dest.read_text(encoding="utf-8").splitlines()), 2)
             with self.assertRaises(ValueError):
@@ -154,7 +173,8 @@ class LiveT15Tests(unittest.TestCase):
 
     def test_cli_sans_ecriture_par_defaut(self):
         with mock.patch("builtins.print") as printer, mock.patch("megatron.store.MemoryStore.record") as record:
-            self.assertEqual(main(["live-t15", str(DEMO)]), 0)
+            self.assertEqual(main(["live-t15", str(DEMO)]), 2)
+            self.assertEqual(main(["live-t15", str(DEMO), "--simulation"]), 0)
             self.assertIn("LIVE_T15", printer.call_args.args[0])
             record.assert_not_called()
 

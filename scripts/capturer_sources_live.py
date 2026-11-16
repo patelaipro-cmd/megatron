@@ -17,7 +17,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import parse_qsl, urlsplit
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -31,7 +31,6 @@ TIMEOUT = 12
 TOLERANCES_MIN = {"T-3h": 10, "T-60": 8, "T-30": 8, "T-5": 3, "T+15": 3}
 HEADERS = {"User-Agent": "megatron-veille/0.1 (contact: repository patelaipro-cmd/megatron)",
            "Accept": "text/html,application/json;q=0.9,*/*;q=0.1"}
-QUERY_SENSIBLE = {"token", "password", "passwd", "apikey", "api_key", "secret", "access_token", "key"}
 
 
 class _RedirectionAutorisee(urllib.request.HTTPRedirectHandler):
@@ -59,12 +58,12 @@ def _valider_url(source: str, url: str) -> None:
     domain = DOMAINES[source]
     if p.scheme != "https" or not p.hostname or p.username or p.password:
         raise ValueError("URL publique HTTPS sans identifiants requise")
+    if p.query or p.fragment:
+        raise ValueError("URL avec paramètres ou fragment refusée : risque de divulgation de session")
     if not (p.hostname.lower() == domain or p.hostname.lower().endswith("." + domain)):
         raise ValueError("nom de domaine incompatible avec la source")
     if p.port not in (None, 443):
         raise ValueError("port HTTPS non standard refusé")
-    if any(k.casefold() in QUERY_SENSIBLE for k, _ in parse_qsl(p.query, keep_blank_values=True)):
-        raise ValueError("URL contenant des identifiants en paramètres refusée")
 
 
 def capturer(doc: dict, *, ouvrir=None, au: datetime | None = None) -> list[dict]:

@@ -49,7 +49,9 @@ class CapturerSourcesTests(unittest.TestCase):
 
     def test_mauvaise_source_ou_secret_refuse_avant_http(self):
         for url in ("http://sportsmole.co.uk/", "https://evil.example.com/test",
-                    "https://www.sportsmole.co.uk/?token=secret"):
+                    "https://www.sportsmole.co.uk/?token=secret",
+                    "https://www.sportsmole.co.uk/?sessionid=secret",
+                    "https://www.sportsmole.co.uk/?id=123#secret"):
             with self.subTest(url=url):
                 doc = {"match_id": "fictif", "checkpoint": "SONDE_RESEAU", "urls": [
                     {"source": "sportsmole", "url": url}]}

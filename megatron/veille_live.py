@@ -48,6 +48,8 @@ def _source(preuve, at):
     u = urlsplit(url)
     if u.scheme != "https" or not u.hostname or u.username or u.password:
         raise ValueError("source_url HTTPS sans identifiants requis")
+    if u.query or u.fragment:
+        raise ValueError("source_url avec paramètres ou fragment refusée : risque de divulgation de session")
     domaine = DOMAINES[fournisseur]
     h = u.hostname.lower()
     if domaine is not None and h != domaine and not h.endswith("." + domaine):

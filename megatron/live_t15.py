@@ -97,11 +97,12 @@ def _comparaison_mi_temps(observes, mu_mt1_restant, mu_mt2):
     return {"MT1_plus": avant, "MT2_plus": apres, "egal": egal}
 
 
-def evaluer(snapshot: dict) -> dict:
+def evaluer(snapshot: dict, *, simulation: bool = False) -> dict:
     """Évalue un instantané T+15 horodaté, en restant strictement exploratoire.
 
-    Les sources, XI et événements sont déclarés par l'appelant : ce module
-    valide leur cohérence temporelle, sans prétendre les avoir lus sur le Web.
+    Les sources, XI et événements sont déclarés par l'appelant. En l'absence
+    d'un collecteur authentifié, seul le mode simulation explicite peut produire
+    des probabilités ; le mode normal reste REFUS.
     """
     if not isinstance(snapshot, dict):
         raise ValueError("instantané JSON objet requis")
@@ -124,14 +125,17 @@ def evaluer(snapshot: dict) -> dict:
     sh, sa = _entier(score.get("H"), "score.H"), _entier(score.get("A"), "score.A")
 
     calcul_at = now_utc()
+    if observed_at > calcul_at:
+        raise ValueError("fuite temporelle : instantané daté dans le futur")
     resultat = {"version": VERSION, "phase": "LIVE_T15", "match_id": match_id,
                 "kickoff": kickoff.isoformat(), "observed_at": observed_at.isoformat(),
                 "calcule_le": calcul_at.isoformat(),
-                "nature": "REJEU_NON_PROSPECTIF" if abs((calcul_at - observed_at).total_seconds()) > 300 else "LIVE_A_CONFIRMER",
+                "nature": "REJEU_NON_PROSPECTIF" if (calcul_at - observed_at).total_seconds() > 300 else "OBSERVATION_NON_AUTHENTIFIEE",
                 "minute": minute, "score": {"H": sh, "A": sa},
                 "statut": "REFUS", "motifs": [], "V1_DOMINATION": None,
                 "V2_GOALS": None, "poids_modifies": False, "activation_automatique": False,
-                "validation": "NON_CALIBRE_EN_DIRECT", "registre_prospectif_modifie": False}
+                "validation": "NON_CALIBRE_EN_DIRECT", "registre_prospectif_modifie": False,
+                "authentification": "NON_VERIFIEE", "simulation_explicite": simulation}
     motifs = resultat["motifs"]
 
     base = snapshot.get("baseline")
@@ -182,6 +186,8 @@ def evaluer(snapshot: dict) -> dict:
         motifs.append("VAR ou incident en cours non exclu")
     if verif.get("cartons_rouges") != {"H": 0, "A": 0}:
         motifs.append("cartons rouges inconnus ou présents : taux non adaptés")
+    if not simulation:
+        motifs.append("preuves sources/XI déclaratives : collecteur authentifié non intégré")
     if motifs:
         return resultat
 
@@ -195,6 +201,9 @@ def evaluer(snapshot: dict) -> dict:
     mu_mt1 = total_rate * (45 - minute) / 90
     mu_mt2 = total_rate * 45 / 90
     resultat["statut"] = "WATCH"
+    resultat["nature"] = ("SIMULATION_REJEU_NON_PROSPECTIF"
+                          if (calcul_at - observed_at).total_seconds() > 300
+                          else "SIMULATION_DECLARATIVE_NON_PROSPECTIVE")
     resultat["V1_DOMINATION"] = {
         "1X2_brut": p1x2,
         "marges_brutes": marges,
@@ -218,7 +227,7 @@ def evaluer(snapshot: dict) -> dict:
     resultat["hypotheses"] = ["intensités de buts constantes par minute",
                               "aucun ajustement des taux après le score ou selon la composition",
                               "aucune recalibration live validée ; ne pas interpréter WATCH comme GO",
-                              "sources déclarées par l'appelant, non authentifiées par le programme",
+                              "simulation explicite : sources déclarées et non authentifiées par le programme",
                               "les calculs rétrospectifs sont marqués REJEU_NON_PROSPECTIF"]
     return resultat
 

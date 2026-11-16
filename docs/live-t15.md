@@ -1,17 +1,22 @@
 # SYNDICATE LIVE — prototype T+15 (V1 et V2 séparés)
 
 Statut : **exploratoire, non calibré, non déployé automatiquement**.
+Sans collecteur authentifié, le mode normal **REFUSE** tout calcul à partir de
+simples déclarations JSON. Les probabilités d'exemple exigent `--simulation` :
+elles sont étiquetées `SIMULATION_DECLARATIVE_NON_PROSPECTIVE` ou
+`SIMULATION_REJEU_NON_PROSPECTIF`, jamais LIVE vérifié.
 
 ## Règles temporelles
 
 1. **T-180 à T-1** : collecte et contrôles pré-match inchangés. Les prévisions
    enregistrées avant le coup d'envoi restent gelées et évaluables après le match.
-2. **T+15** : un état daté distinct est accepté si l'horloge est entre les minutes
+2. **T+15** : un état daté distinct est accepté en simulation si l'horloge est entre les minutes
    12 et 18, si le score provient d'au moins trois sources déclarées concordantes,
    s'il date de moins de trois minutes, et si les compositions officielles ont
    été déclarées confirmées et compatibles avec la référence prématch.
 3. Carton rouge, VAR en cours, désaccord de sources, score trop ancien, XI
-   différent ou taux prématch absents → **REFUS**, aucune probabilité recalculée.
+   différent, taux prématch absents, observation dans le futur ou source déclarative
+   hors simulation explicite → **REFUS**, aucune probabilité recalculée.
 4. **V1** : probabilités brutes 1X2 et victoire d'un côté par ≥2 / ≥3 buts d'écart.
    **V2** : Over 1,5 / 2,5 / 3,5 fin de match, Over par mi-temps et répartition
    attendue MT1/MT2. La nomenclature des marchés reste distincte.
@@ -43,18 +48,19 @@ EXP-019) **ne sont pas réutilisés en live**.
 ## Entrée et commande
 
 ```bash
-python -m megatron live-t15 tests/fixtures/live_t15_demo.json
+python -m megatron live-t15 tests/fixtures/live_t15_demo.json --simulation
 # journal dédié choisi explicitement ; jamais performances.jsonl
-python -m megatron live-t15 tests/fixtures/live_t15_demo.json --journal /tmp/live_t15.jsonl
+python -m megatron live-t15 tests/fixtures/live_t15_demo.json --simulation --journal /tmp/live_t15.jsonl
 python -m megatron veille-live planifier --coup-envoi 2026-11-16T20:00:00+01:00
-python -m megatron veille-live assembler --entree tests/fixtures/veille_live_demo.json
+python -m megatron veille-live assembler --entree tests/fixtures/veille_live_demo.json --simulation
 ```
 
 L'exemple est entièrement **fictif** ; la présence de sources dans le JSON
-ne signifie pas que le programme les vérifie en ligne. Le journal ne s'écrit
-que pour les snapshots `WATCH` et refuse les doublons identiques.
-La sortie distingue `observed_at` de `calcule_le` et classe toute analyse
-rejouée plus de cinq minutes après son observation `REJEU_NON_PROSPECTIF`.
+ne signifie pas que le programme les vérifie en ligne. Sans `--simulation`,
+les données déclaratives produisent `REFUS`. Le journal ne s'écrit
+que pour les snapshots `WATCH` expérimentaux et refuse les doublons identiques.
+La sortie distingue `observed_at` de `calcule_le` et classe toute simulation
+rejouée plus de cinq minutes après son observation `SIMULATION_REJEU_NON_PROSPECTIF`.
 Un rejeu n'est **jamais** une prévision horodatée avant son résultat final.
 
 La commande `veille-live` expose cinq jalons T-3h/T-60/T-30/T-5/T+15. Elle
@@ -69,7 +75,8 @@ vérification des publications peuvent transformer les exemples en faits.
 La sonde publique `scripts/capturer_sources_live.py` capture les statuts HTTP,
 horodatages, empreintes SHA-256 et URLs de pages nommées SportsMole,
 SportsGambler, PianetaFanta, 180Score, Xpertstats ou Sofascore. Elle refuse
-les URLs avec secrets et n'extrait ni XI, ni buts, ni chiffres des abonnements.
+les URLs comportant des paramètres ou fragments (susceptibles de contenir des
+sessions) et n'extrait ni XI, ni buts, ni chiffres des abonnements.
 Elle conserve les échecs HTTP : une sonde inaccessible ne devient pas une
 source confirmée. Les liens de la fixture fictive ne prouvent aucun match réel.
 `SONDE_RESEAU` teste seulement l'accès au domaine. Les véritables contrôles
