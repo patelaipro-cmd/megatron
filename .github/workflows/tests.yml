@@ -55,6 +55,8 @@ jobs:
         run: PYTHONPATH=. python scripts/compare_domination_windows.py --expanded artifacts/domination_v1/training_expanded.csv --output-dir artifacts/domination_v1/windows
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
+      - name: Audit 2+ and 3+ reliability per league
+        run: PYTHONPATH=. python scripts/audit_domination_leagues.py --input artifacts/domination_v1/resultats.json --output artifacts/domination_v1/audit_ligues_p60.json
       - name: Validate historical report
         run: |
           python - <<'PY'
