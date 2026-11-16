@@ -56,24 +56,43 @@ def main():
         prob=v['probs']['oui']
         if not (0<=prob<=1):
             excluded['invalid_probability']+=1;continue
-        probability_bins[f'{league}:margin_{margin}'][f'{min(int(prob*10),9)*10:02d}-{min(int(prob*10),9)*10+10:02d}%']+=1
         groups[(league,margin)].append((prob,int(diff>=margin)))
     report={'decision':'NO_GO','source':'prospective_ledger_read_only',
             'exclusions':dict(excluded),'groups':{},'production_modified':False}
+    all_margins=defaultdict(list)
     for (league,margin),rows in sorted(groups.items()):
+        all_margins[margin].extend(rows)
         high=[(pr,y) for pr,y in rows if pr>=0.60]
         n=len(high);k=sum(y for _,y in high)
+        bins={}
+        for lower in range(0,100,10):
+            subset=[(pr,y) for pr,y in rows if lower/100<=pr<(lower+10)/100 or (lower==90 and pr==1)]
+            if subset:
+                bins[f'{lower:02d}-{lower+10:02d}%']={
+                    'n':len(subset),'observed':round(sum(y for _,y in subset)/len(subset),4),
+                    'predicted':round(sum(pr for pr,_ in subset)/len(subset),4)}
         report['groups'][f'{league}:margin_{margin}']={
             'predictions_registered':predicted_counts[f'{league}:margin_{margin}'],
-            'probability_histogram_10pct':dict(sorted(probability_bins[f'{league}:margin_{margin}'].items())),
+            'calibration_bins_10pct':bins,
             'probability_max':round(max(pr for pr,_ in rows),4),
             'probability_mean':round(sum(pr for pr,_ in rows)/len(rows),4),
-            'resolved_n':len(rows),'p60_n':n,'p60_wins':k,
+            'resolved_n':len(rows),'observed_base_rate':round(sum(y for _,y in rows)/len(rows),4),
+            'p60_n':n,'p60_wins':k,
             'p60_observed':round(k/n,4) if n else None,
             'p60_predicted':round(sum(pr for pr,_ in high)/n,4) if n else None,
             'p60_wilson95':wilson(k,n),'p60_insufficient':n<100,
             'brier':round(sum((pr-y)**2 for pr,y in rows)/len(rows),5),
             'log_loss':round(sum(-math.log(max(min(pr if y else 1-pr,1-1e-15),1e-15)) for pr,y in rows)/len(rows),5)}
+    report['overall_by_margin']={}
+    for margin,rows in sorted(all_margins.items()):
+        high=[(p,y) for p,y in rows if p>=0.60]
+        report['overall_by_margin'][str(margin)]={
+            'resolved_n':len(rows),
+            'observed_base_rate':round(sum(y for _,y in rows)/len(rows),4),
+            'predicted_mean':round(sum(p for p,_ in rows)/len(rows),4),
+            'p60_n':len(high),
+            'p60_wins':sum(y for _,y in high),
+            'p60_wilson95':wilson(sum(y for _,y in high),len(high))}
     report['model_versions']=dict(sorted(version_counts.items()))
     report['registered_predictions_by_group']=dict(sorted(predicted_counts.items()))
     a.output.parent.mkdir(parents=True,exist_ok=True)
