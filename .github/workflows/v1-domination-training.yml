@@ -1,0 +1,46 @@
+name: V1 DOMINATION experimental training
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  domination-v1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen EXP-012 inputs
+        run: |
+          test -s docs/experiences/EXP-009/variables.csv
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p = Path("docs/experiences/EXP-009/variables.csv")
+          expected = "52ce2b08c769793f775a0a385b72b47fbf77bed3d4da2d1b29e562662fd94f6f"
+          actual = hashlib.sha256(p.read_bytes()).hexdigest()
+          assert actual == expected, f"Dataset SHA mismatch: {actual}"
+          print("EXP-012 frozen input verified", actual)
+          PY
+      - name: Reproduce V1 DOMINATION EXP-012 (win, 2+, 3+)
+        run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
+      - name: Check V1 report without promotion
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r = json.loads(Path("artifacts/domination_v1/resultats.json").read_text())
+          assert r["effectifs"]["test"] >= 1500
+          for level in ("victoire_simple", "victoire_par_2_ou_plus", "victoire_par_3_ou_plus"):
+              x = r["niveaux"][level]
+              print(level, "test_n=", x["test"]["C"]["n"], "criteria=", x["criteres"], "p60=", x["test"]["C"]["tranche_p60"])
+          print("Historical replay only; test period reused in earlier research; NO prospective GO or promotion.")
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v1-domination-exp012-replay
+          path: artifacts/domination_v1/*.json
+          if-no-files-found: error
