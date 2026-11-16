@@ -44,8 +44,9 @@ def capture(now, noms, lire=lire_json):
                                 "mapping_status":"mapped" if home and away else "unmapped"})
     unique={(x["league"],x["espn_id"],x["kickoff"]):x for x in records}
     rows=sorted(unique.values(),key=lambda x:(x["kickoff"],x["league"],x["espn_id"]))
+    league_counts={league:{"raw":sum(r["league"]==league for r in rows),"mapped":sum(r["league"]==league and r["mapping_status"]=="mapped" for r in rows),"unmapped":sum(r["league"]==league and r["mapping_status"]=="unmapped" for r in rows)} for league in LIGUES}
     return {"captured_at":now.isoformat(),"source":"ESPN public fixture scoreboard","leagues":list(LIGUES),"exploratory_leagues":list(EXPLORATORY_LIGUES),
-            "raw_fixtures":rows,"fixtures":[{"match_id":r["match_id"],"kickoff":r["kickoff"]}
+            "raw_fixtures":rows,"league_counts":league_counts,"fixtures":[{"match_id":r["match_id"],"kickoff":r["kickoff"]}
                     for r in rows if r["mapping_status"]=="mapped" and r["state"]=="pre"],
             "unmapped_n":sum(r["mapping_status"]=="unmapped" for r in rows),
             "source_errors":errors,"source_diagnostics":source_diagnostics,
