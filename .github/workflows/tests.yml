@@ -9,3 +9,44 @@ jobs:
         with:
           python-version: "3.13"
       - run: python -m unittest discover -s tests -t . -v
+  domination-v1-experimental:
+    if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check historical dataset integrity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p=Path('docs/experiences/EXP-009/variables.csv')
+          assert p.is_file() and p.stat().st_size>0, 'EXP-009 variables.csv missing'
+          expected='52ce2b08c769793f775a0a385b72b47fbf77bed3d4da2d1b29e562662fd94f6f'
+          actual=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert actual==expected, f'SHA mismatch: {actual}'
+          print('Verified historical dataset:',p.stat().st_size,'bytes')
+          PY
+      - name: Replay frozen EXP-012 (no model promotion)
+        run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
+      - name: Validate historical report
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('artifacts/domination_v1/resultats.json').read_text())
+          assert d['effectifs']['test']>=1500
+          for key in ['victoire_par_2_ou_plus','victoire_par_3_ou_plus']:
+              x=d['niveaux'][key]
+              print(key,'test:',x['test']['C']['n'],'logloss:',x['test']['C']['log_loss'],'p>=0.60:',x['test']['C']['tranche_p60'])
+          print('Retrospective replay ONLY; no prospective validation, no deployment')
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-experimental-report
+          path: artifacts/domination_v1/resultats.json
+          if-no-files-found: warn
