@@ -22,6 +22,14 @@ jobs:
           python-version: "3.11"
       - name: Acquire historical E1 and SP2 results (research only)
         run: PYTHONPATH=. python scripts/collect_domination_historical_e1_sp2.py --output artifacts/historical_e1_sp2.json
+      - name: Audit strict historical coverage for 46 priority teams
+        run: PYTHONPATH=. python scripts/audit_domination_e1_sp2_historical_team_coverage.py --historical artifacts/historical_e1_sp2.json --output artifacts/e1_sp2_team_coverage.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-e1-sp2-team-coverage
+          path: artifacts/e1_sp2_team_coverage.json
+          if-no-files-found: warn
       - if: always()
         uses: actions/upload-artifact@v4
         with:
