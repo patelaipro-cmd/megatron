@@ -5,7 +5,7 @@ from pathlib import Path
 from megatron.store import MemoryStore,parse_dt
 from megatron.ledger import DOMAIN,market_of
 
-def audit(registre,fixtures,observed_at=None):
+def audit(registre,fixtures,observed_at=None,as_of=None):
     entries=MemoryStore(registre).active(DOMAIN)
     by_match=defaultdict(list)
     for e in entries:
@@ -17,9 +17,9 @@ def audit(registre,fixtures,observed_at=None):
         mid=fixture["match_id"];kickoff=parse_dt(fixture["kickoff"])
         rows=by_match.get(mid,[])
         if observed_at is not None:
-            minutes=(kickoff-parse_dt(observed_at)).total_seconds()/60
-            if minutes>300 or minutes<35:
-                status="not_yet_in_initial_window" if minutes>300 else "initial_window_passed"
+            minutes=(kickoff-parse_dt(as_of or observed_at)).total_seconds()/60
+            if minutes>300:
+                status="not_yet_in_initial_window"
                 counts[status]+=1
                 counts[f"{mid.split(':',1)[0]}:{status}"]+=1
                 details.append({"match_id":mid,"status":status,"valid_markets":[]})
@@ -37,12 +37,13 @@ def main():
     p.add_argument("--registre",type=Path,required=True)
     p.add_argument("--fixtures-json",type=Path,required=True)
     p.add_argument("--output",type=Path,required=True)
+    p.add_argument("--as-of",help="UTC ISO audit time; defaults to snapshot capture time")
     a=p.parse_args()
     raw=json.loads(a.fixtures_json.read_text(encoding="utf-8"))
     fixtures=raw["fixtures"] if isinstance(raw,dict) else raw
     report=audit(a.registre,fixtures,raw.get("captured_at") if isinstance(raw,dict) else None)
     if isinstance(raw,dict):
-        report["snapshot_metadata"]={"captured_at":raw.get("captured_at"),"raw_fixtures_n":len(raw.get("raw_fixtures",[])),"unmapped_n":raw.get("unmapped_n"),"source_errors":raw.get("source_errors",[]),"complete":raw.get("complete"),"coverage_assessable":raw.get("coverage_assessable")}
+        report["snapshot_metadata"]={"audit_as_of":a.as_of or raw.get("captured_at"),"captured_at":raw.get("captured_at"),"raw_fixtures_n":len(raw.get("raw_fixtures",[])),"unmapped_n":raw.get("unmapped_n"),"source_errors":raw.get("source_errors",[]),"complete":raw.get("complete"),"coverage_assessable":raw.get("coverage_assessable")}
         if not raw.get("coverage_assessable"):
             report["coverage_quality"]="NOT_ASSESSABLE"
         elif not fixtures:
