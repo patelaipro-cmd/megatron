@@ -32,6 +32,8 @@ jobs:
           PY
       - name: Inventory historical V1 coverage
         run: PYTHONPATH=. python scripts/audit_domination_coverage.py --output artifacts/domination_v1/coverage.json
+      - name: Pilot V1 historical features E0 2007-08
+        run: PYTHONPATH=. python scripts/extend_domination_features.py --division E0 --season 2007/08 --output artifacts/domination_v1/E0_2007-08.csv
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Validate historical report
@@ -71,5 +73,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: domination-v1-experimental-report
-          path: artifacts/domination_v1/*.json
+          path: |
+            artifacts/domination_v1/*.json
+            artifacts/domination_v1/E0_2007-08.csv
           if-no-files-found: warn
