@@ -51,6 +51,8 @@ jobs:
         run: PYTHONPATH=. python scripts/audit_domination_splits.py --input artifacts/domination_v1/training_expanded.csv --output artifacts/domination_v1/splits_audit.json
       - name: Experimental V1 expanded refit on unchanged holdout
         run: PYTHONPATH=. python scripts/refit_domination_expanded.py --expanded artifacts/domination_v1/training_expanded.csv --output-dir artifacts/domination_v1/refit
+      - name: Compare V1 training windows on validation only
+        run: PYTHONPATH=. python scripts/compare_domination_windows.py --expanded artifacts/domination_v1/training_expanded.csv --output-dir artifacts/domination_v1/windows
       - name: Replay frozen EXP-012 (no model promotion)
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Validate historical report
@@ -95,4 +97,5 @@ jobs:
             artifacts/domination_v1/*.csv
             artifacts/domination_v1/batch/
             artifacts/domination_v1/refit/
+            artifacts/domination_v1/windows/window_comparison.json
           if-no-files-found: warn
