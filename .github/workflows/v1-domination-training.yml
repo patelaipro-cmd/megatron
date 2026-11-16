@@ -1,6 +1,11 @@
 name: V1 DOMINATION experimental training
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - experiment/v1-domination-training-20261116
+    paths:
+      - .github/workflows/v1-domination-training.yml
 permissions:
   contents: read
 jobs:
