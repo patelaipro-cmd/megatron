@@ -51,6 +51,7 @@ class ESPNLiveEvidenceTests(unittest.TestCase):
                 r = collecteur.collecter([fixture()], au=now, lire=ne_pas_appeler)[0]
                 self.assertIn("HORS_FENETRE", r["motif"])
                 self.assertNotIn("score", r)
+                self.assertEqual(r["score_sources_independantes"], 0)
 
     def test_le_statut_final_et_la_periode_deux_refusent(self):
         for attr, value in (("period", 2), ("displayClock", "46:00")):
@@ -95,6 +96,7 @@ class ESPNLiveEvidenceTests(unittest.TestCase):
         r = collecteur.collecter([fixture()], au=NOW, lire=erreur)[0]
         self.assertEqual(r["statut"], "REFUS")
         self.assertIn("ESPN_INUTILISABLE", r["motif"])
+        self.assertEqual(r["score_sources_independantes"], 0)
 
     def test_cache_une_requete_par_ligue_et_jour(self):
         compteur = []

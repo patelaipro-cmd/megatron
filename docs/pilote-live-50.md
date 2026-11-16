@@ -87,6 +87,32 @@ Premium. ESPN est **une seule** famille de scores ; l'absence de confirmation
 sur VAR et cartons rouges, la nécessité d'une source primaire pour les XI et
 l'absence de modèle LIVE calibré imposent `REFUS` même avec un score ESPN valide.
 Le journal est append-only dans un dossier externe à `memoire/` et `data/`.
+Le compteur `score_sources_independantes` reste **0** tant qu'aucun score ESPN
+valide n'a été capturé, y compris lorsque le contrôle est hors fenêtre ; il
+devient 1 uniquement pour une capture effectivement validée par le décodeur.
+
+## Planification des contrôles : créneaux connus, pas de tâche activée
+
+Après une découverte authentifiée par l'empreinte SHA256 d'une réponse ESPN,
+générer le plan de vérification de chaque fixture :
+
+```sh
+python scripts/planifier_controles_t15.py \
+  --entree /tmp/fixtures_jour.json --sortie /tmp/plan_controles_jour.json
+```
+
+Le plan précise **T-3h, T-90, T-60, T-30, T-5, T+15**, en UTC et à Kinshasa.
+Pour T+15, la cible est coup d'envoi +15 minutes et la fenêtre autorisée
+s'étend de **+12 à +18 minutes**. Les rencontres simultanées sont découpées en
+lots de cinq. Il refuse toute découverte ESPN sans empreinte de calendrier,
+datée après le coup d'envoi, tronquée ou contradictoire. Une échéance manquée
+devient `ECHEANCE_PASSEE_SANS_CAPTURE`, jamais un instantané reconstitué.
+
+**Important :** `PLAN_MANUEL_NON_ACTIVE` signifie que le fichier d'horaires
+est prêt ; aucun ordonnanceur ni surveillance de fond n'a été créé par la
+commande. Aucun contrôle planifié ne démontre que le score ou les compositions
+ont été réellement observés. L'activation future devra consigner l'heure
+effective de chaque requête et accepter l'échec des fenêtres trop étroites.
 
 ### État de la collecte à vérifier à chaque passage
 

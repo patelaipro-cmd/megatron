@@ -211,7 +211,7 @@ def collecter(fixtures: list[dict], *, au: datetime, lire=lire_public, horloge=N
         base = {"match_id": f"espn:{f['ligue']}:{f['event_id']}",
                 "ligue": f["ligue"], "coup_envoi": f["coup_envoi"].isoformat(),
                 "capture_le": au.isoformat(), "source": "espn",
-                "score_sources_independantes": 1, "xi_officiel_primaire_verifie": False,
+                "score_sources_independantes": 0, "xi_officiel_primaire_verifie": False,
                 "var_et_cartons_rouges": "INCONNUS", "V1_DOMINATION": None,
                 "V2_GOALS": None, "statut": "REFUS"}
         minute_reelle = (au - f["coup_envoi"]).total_seconds() / 60
@@ -238,6 +238,7 @@ def collecter(fixtures: list[dict], *, au: datetime, lire=lire_public, horloge=N
                 raise ValueError("match absent ou dupliqué dans le calendrier ESPN")
             resultat = decoder(evenements[0], f, fin)
             resultats.append({**base, **resultat, "capture_le": fin.isoformat(), "sha256_reponse_espn": digest,
+                              "score_sources_independantes": 1,
                               "source_url": f"https://www.espn.com/soccer/match/_/gameId/{f['event_id']}",
                               "motif": "SOURCE_ESPN_UNIQUE : trois scores indépendants, XI primaire, incidents et calibration LIVE manquants"})
         except (ValueError, OSError, UnicodeError, TypeError, AttributeError, KeyError) as exc:
