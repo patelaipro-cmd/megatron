@@ -57,6 +57,8 @@ jobs:
         run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
       - name: Audit 2+ and 3+ reliability per league
         run: PYTHONPATH=. python scripts/audit_domination_leagues.py --input artifacts/domination_v1/resultats.json --output artifacts/domination_v1/audit_ligues_p60.json
+      - name: Enforce V1 prospective promotion gate
+        run: PYTHONPATH=. python scripts/gate_domination_prospective.py --audit artifacts/domination_v1/audit_ligues_p60.json --output artifacts/domination_v1/promotion_gate.json
       - name: Validate historical report
         run: |
           python - <<'PY'
