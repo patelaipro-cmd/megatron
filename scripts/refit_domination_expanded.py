@@ -29,7 +29,13 @@ def main():
                     'test_log_loss_A_expanded':new['test']['log_loss_A'],
                     'delta_expanded_minus_baseline':round(new['test']['log_loss_A']-old['test']['log_loss_A'],6),
                     'validation_log_loss_A_baseline':old['validation']['log_loss_A'],
-                    'validation_log_loss_A_expanded':new['validation']['log_loss_A']}
+                    'validation_log_loss_A_expanded':new['validation']['log_loss_A'],
+                    'delta_validation':round(new['validation']['log_loss_A']-old['validation']['log_loss_A'],6),
+                    'baseline_coefficients_A':old['A'],
+                    'expanded_coefficients_A':new['A'],
+                    'coefficients_changed':old['A']!=new['A'],
+                    'test_improved':new['test']['log_loss_A']<old['test']['log_loss_A'],
+                    'validation_improved':new['validation']['log_loss_A']<old['validation']['log_loss_A']}
     else:
         report['baseline_missing']=True
     (a.output_dir/'comparison.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
