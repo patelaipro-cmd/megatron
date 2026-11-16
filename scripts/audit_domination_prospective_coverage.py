@@ -24,7 +24,7 @@ def audit(registre,fixtures,observed_at=None,as_of=None):
                 counts[f"{mid.split(':',1)[0]}:{status}"]+=1
                 details.append({"match_id":mid,"status":status,"valid_markets":[]})
                 continue
-        valid=[e for e in rows if parse_dt(e.recorded_at)<kickoff and (not e.value.get("data_cutoff") or parse_dt(e.value["data_cutoff"])<kickoff)]
+        valid=[e for e in rows if parse_dt(e.recorded_at)<kickoff and (as_of is None or parse_dt(e.recorded_at)<=parse_dt(as_of)) and (not e.value.get("data_cutoff") or parse_dt(e.value["data_cutoff"])<kickoff)]
         markets={market_of(e.value) for e in valid}
         status="covered_2plus_3plus" if any(m.endswith("MARGE_2PLUS") for m in markets) and any(m.endswith("MARGE_3PLUS") for m in markets) else ("partial_prediction" if markets else ("invalid_timing" if rows else "no_prediction"))
         counts[status]+=1;counts[f"{mid.split(':',1)[0]}:{status}"]+=1
