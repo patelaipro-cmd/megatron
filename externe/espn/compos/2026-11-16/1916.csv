@@ -1,0 +1,44 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Diego Mariño,140342,G,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Lluis López,236153,CD-L,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Jesús Vallejo,209592,CD-R,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Carlos Neva,283862,LB,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Lorenzo Aguado,388337,RB,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Antonio Pacheco Ruiz,297361,CM-L,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Ortu,331513,CM-R,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Víctor Valverde Da Silva,356770,LM,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Roberto González,282682,RM,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Mario Soberón,279697,CF-L,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Álex Rubio,375419,CF-R,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Agustín Albarracín,381354,F,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Antonio Moreno,411953,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Carlos Marín,240648,G,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Joaquín Domingo,399605,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Daniel Bernabeu,403331,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Capi,371567,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Pepe Sanchez,300877,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Fabio Garcia-Moreno,423018,F,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Antonio Velilla,409512,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Javi Villar,374612,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,Albacete,4-4-2,Agus Medina,207352,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Coke Carrillo,329669,G,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Anxo Rodríguez,421889,CD,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Raúl Chirveches Sánchez,5323812,CD-L,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Frank Germain Jonathan Miller,3100792,CD-R,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Stefan Bajcetic,330605,CM-L,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Andrés Antañón,414292,CM-R,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Jan Oliveras,333981,LM,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Vladimir Silva,411412,RM,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Alvaro Marin,367442,F,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Ángel Arcos,415036,CF-L,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Óscar Marcos,405521,CF-R,titulaire,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Seyni Ndiaye,408018,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Alexis Olmedo,388287,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Jorge Pérez-Lafuente Rey,3100796,F,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Noah Rodríguez Guallar,3100798,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Marcos González,376424,G,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Hugo López,194253,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,David Sueiro Muiños,3143478,M,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Angel Davila Outerelo,3107949,F,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Pablo Meixús,414291,D,remplacant,espn
+2026-11-16T19:16:00+00:00,401883305,esp.2,SP2,2026-11-16T19:30:00+00:00,Albacete,RC Celta Fortuna,RC Celta Fortuna,3-4-3,Caio Albado Barone,357201,G,remplacant,espn
