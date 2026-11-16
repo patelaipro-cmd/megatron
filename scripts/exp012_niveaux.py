@@ -142,7 +142,8 @@ def main() -> int:
             "test": {"F": resume(test, n, "f"), "B": resume(test, n, "p"), "C": res_c},
             "calibration_periode": {m: resume(calib, n, m)["log_loss"] for m in ("f", "p", "c")},
             "C_moins_F": n1, "B_moins_F": bootstrap(test, n, "p", "f"), "C_moins_B": bootstrap(test, n, "c", "p"),
-            "ligues_test": ligues, "ligues_C_meilleur_que_F": n2,
+            "ligues_test": ligues, "ligues_test_detail": {lg: resume([r for r in test if r["ligue"] == lg], n, "c") for lg in ligues},
+            "ligues_C_meilleur_que_F": n2,
             "criteres": {"N1": n1["ic95"][1] < 0, "N2": n2 >= 4, "N3": n3},
         }
         out["niveaux"][n]["valide"] = all(out["niveaux"][n]["criteres"].values())
