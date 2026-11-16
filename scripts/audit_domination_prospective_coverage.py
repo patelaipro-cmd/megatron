@@ -26,7 +26,7 @@ def audit(registre,fixtures,observed_at=None,as_of=None):
                 continue
         valid=[e for e in rows if parse_dt(e.recorded_at)<kickoff and (as_of is None or parse_dt(e.recorded_at)<=parse_dt(as_of)) and (not e.value.get("data_cutoff") or parse_dt(e.value["data_cutoff"])<kickoff)]
         markets={market_of(e.value) for e in valid}
-        status="covered_2plus_3plus" if any(m.endswith("MARGE_2PLUS") for m in markets) and any(m.endswith("MARGE_3PLUS") for m in markets) else ("partial_prediction" if markets else ("invalid_timing" if rows else "no_prediction"))
+        status="covered_2plus_3plus" if any(m.endswith("MARGE_2PLUS") for m in markets) and any(m.endswith("MARGE_3PLUS") for m in markets) else ("partial_prediction" if markets else ("invalid_timing" if (any(parse_dt(e.recorded_at)<=parse_dt(as_of) for e in rows) if as_of else bool(rows)) else "no_prediction"))
         counts[status]+=1;counts[f"{mid.split(':',1)[0]}:{status}"]+=1
         details.append({"match_id":mid,"status":status,"valid_markets":sorted(markets)})
     return {"decision":"NO_GO","fixtures_n":len(fixtures),"status_counts":dict(sorted(counts.items())),"details":details,
@@ -41,7 +41,7 @@ def main():
     a=p.parse_args()
     raw=json.loads(a.fixtures_json.read_text(encoding="utf-8"))
     fixtures=raw["fixtures"] if isinstance(raw,dict) else raw
-    report=audit(a.registre,fixtures,raw.get("captured_at") if isinstance(raw,dict) else None)
+    report=audit(a.registre,fixtures,raw.get("captured_at") if isinstance(raw,dict) else None,as_of=a.as_of)
     if isinstance(raw,dict):
         report["snapshot_metadata"]={"audit_as_of":a.as_of or raw.get("captured_at"),"captured_at":raw.get("captured_at"),"raw_fixtures_n":len(raw.get("raw_fixtures",[])),"unmapped_n":raw.get("unmapped_n"),"source_errors":raw.get("source_errors",[]),"complete":raw.get("complete"),"coverage_assessable":raw.get("coverage_assessable")}
         if not raw.get("coverage_assessable"):
