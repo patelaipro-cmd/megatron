@@ -1,6 +1,12 @@
 name: domination-v1-fixture-inventory-experiment
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - experiment/v1-domination-training-20261116
+    paths:
+      - scripts/capture_domination_fixture_inventory.py
+      - .github/workflows/domination-v1-fixture-inventory-experiment.yml
 permissions:
   contents: read
 jobs:
