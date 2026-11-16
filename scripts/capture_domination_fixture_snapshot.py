@@ -12,7 +12,7 @@ from megatron.store import parse_dt
 def capture(now, noms, lire=lire_json):
     records=[];errors=[];source_diagnostics=[]
     for div,slug in LIGUES.items():
-        for offset in (0,1):
+        for offset in range(8):
             day=now+timedelta(days=offset)
             try:
                 payload=lire(ESPN.format(slug=slug,jour=day.strftime("%Y%m%d")))
@@ -43,9 +43,10 @@ def capture(now, noms, lire=lire_json):
                     for r in rows if r["mapping_status"]=="mapped" and r["state"]=="pre"],
             "unmapped_n":sum(r["mapping_status"]=="unmapped" for r in rows),
             "source_errors":errors,"source_diagnostics":source_diagnostics,
-            "complete":not errors and len(source_diagnostics)==2*len(LIGUES)
+            "complete":not errors and len(source_diagnostics)==8*len(LIGUES)
                        and all(d["response_has_events"] for d in source_diagnostics),
             "empty_snapshot":not rows,
+            "lookahead_days":8,
             "coverage_assessable":bool(rows) and not errors}
 
 def main():
