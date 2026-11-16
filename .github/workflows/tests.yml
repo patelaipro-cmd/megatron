@@ -31,7 +31,7 @@ jobs:
       - name: Archive future fixtures independently (do not score future matches)
         run: PYTHONPATH=. python scripts/capture_domination_fixture_snapshot.py --output artifacts/fixture_snapshot.json
       - name: Inventory unmapped exploratory league teams
-        run: PYTHONPATH=. python scripts/inventory_domination_unmapped_teams.py --snapshot artifacts/fixture_snapshot.json --output artifacts/unmapped_teams.json --csv artifacts/unmapped_teams.csv
+        run: PYTHONPATH=. python scripts/inventory_domination_unmapped_teams.py --snapshot artifacts/fixture_snapshot.json --output artifacts/unmapped_teams.json --csv artifacts/unmapped_teams.csv --reference docs/resultats-2026-27/audit.json
       - if: always()
         uses: actions/upload-artifact@v4
         with:
