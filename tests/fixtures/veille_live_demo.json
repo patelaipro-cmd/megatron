@@ -1,0 +1,60 @@
+{
+  "match_id": "FICTIF:2026-11-15:DOM-EXT",
+  "kickoff": "2026-11-15T20:00:00+01:00",
+  "au": "2026-11-15T20:15:00+01:00",
+  "minute": 15,
+  "baseline": {
+    "lambda_H": 1.8,
+    "lambda_A": 0.9,
+    "modele": "poisson-v5-EXEMPLE-FICTIF",
+    "calcule_le": "2026-11-15T19:30:00+01:00",
+    "source": "simulation locale, aucune donnée sportive réelle",
+    "titulaires_attendus": {
+      "H": ["H01", "H02", "H03", "H04", "H05", "H06", "H07", "H08", "H09", "H10", "H11"],
+      "A": ["A01", "A02", "A03", "A04", "A05", "A06", "A07", "A08", "A09", "A10", "A11"]
+    }
+  },
+  "xi_officiel": {
+    "source": "officiel",
+    "source_url": "https://example.org/fiction/lineups",
+    "organisme": "Fédération imaginaire de simulation",
+    "statut": "confirmee_officielle",
+    "collecte_le": "2026-11-15T19:50:00+01:00",
+    "titulaires": {
+      "H": ["H01", "H02", "H03", "H04", "H05", "H06", "H07", "H08", "H09", "H10", "H11"],
+      "A": ["A01", "A02", "A03", "A04", "A05", "A06", "A07", "A08", "A09", "A10", "A11"]
+    }
+  },
+  "scores": [
+    {
+      "source": "180score",
+      "source_url": "https://180score.com/fiction/score",
+      "collecte_le": "2026-11-15T20:14:40+01:00",
+      "match_id": "FICTIF:2026-11-15:DOM-EXT",
+      "minute": 15,
+      "score": {"H": 1, "A": 0},
+      "cartons_rouges": {"H": 0, "A": 0},
+      "var_en_cours": false
+    },
+    {
+      "source": "xpertstats",
+      "source_url": "https://xpertstats.com/fiction/score",
+      "collecte_le": "2026-11-15T20:14:45+01:00",
+      "match_id": "FICTIF:2026-11-15:DOM-EXT",
+      "minute": 15,
+      "score": {"H": 1, "A": 0},
+      "cartons_rouges": {"H": 0, "A": 0},
+      "var_en_cours": false
+    },
+    {
+      "source": "sofascore",
+      "source_url": "https://sofascore.com/fiction/score",
+      "collecte_le": "2026-11-15T20:14:50+01:00",
+      "match_id": "FICTIF:2026-11-15:DOM-EXT",
+      "minute": 15,
+      "score": {"H": 1, "A": 0},
+      "cartons_rouges": {"H": 0, "A": 0},
+      "var_en_cours": false
+    }
+  ]
+}

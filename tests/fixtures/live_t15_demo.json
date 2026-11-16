@@ -1,0 +1,25 @@
+{
+  "match_id": "FICTIF:2026-11-15:DOM-EXT",
+  "kickoff": "2026-11-15T20:00:00+01:00",
+  "observed_at": "2026-11-15T20:15:00+01:00",
+  "minute": 15,
+  "score": {"H": 1, "A": 0},
+  "baseline": {
+    "lambda_H": 1.8,
+    "lambda_A": 0.9,
+    "modele": "poisson-v5-EXEMPLE-FICTIF",
+    "calcule_le": "2026-11-15T19:30:00+01:00",
+    "source": "simulation locale, aucune donnée sportive réelle"
+  },
+  "verification": {
+    "score_sources": ["simulation-score-A", "simulation-score-B", "simulation-score-C"],
+    "conflit_sources": false,
+    "score_collecte_le": "2026-11-15T20:14:30+01:00",
+    "xi_officiels": true,
+    "xi_source": "simulation-compositions",
+    "xi_collecte_le": "2026-11-15T19:50:00+01:00",
+    "xi_identiques_hypothese_base": true,
+    "var_en_cours": false,
+    "cartons_rouges": {"H": 0, "A": 0}
+  }
+}

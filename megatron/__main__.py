@@ -8,7 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from . import backtest, checkpoint, controles, data, contexte_favori, externe, syndicate, inventory, jeton, llm, marches, marges, suivi, synchro, systeme
+from . import backtest, checkpoint, controles, data, contexte_favori, externe, syndicate, inventory, jeton, llm, live_t15, marches, marges, suivi, synchro, systeme, veille_live
 from .agents import StatsAgent, fuse
 from .store import MemoryStore
 
@@ -111,6 +111,17 @@ def main(argv: list[str] | None = None) -> int:
     mg = sub.add_parser("marges", help="calcul brut expérimental des marges de victoire ; aucune écriture")
     mg.add_argument("--xg-home", type=float, required=True)
     mg.add_argument("--xg-away", type=float, required=True)
+    lt = sub.add_parser("live-t15", help="V1 et V2 au direct T+15 : Poisson conditionnel expérimental, sans modifier les poids")
+    lt.add_argument("instantane", help="fichier JSON horodaté : score, baseline prématch, XI et sources")
+    lt.add_argument("--journal", help="chemin live_t15.jsonl à ajouter ; aucune écriture sans cette option")
+    lt.add_argument("--simulation", action="store_true", help="autorise un calcul fictif WATCH non authentifié ; jamais en exploitation")
+    vl = sub.add_parser("veille-live", help="planifie T-3h/T-60/T-30/T-5/T+15 ou assemble les preuves source")
+    vl.add_argument("action", choices=["planifier", "assembler"])
+    vl.add_argument("--coup-envoi", help="heure réelle du coup d'envoi avec fuseau, pour planifier")
+    vl.add_argument("--au", help="instant courant avec fuseau (planifier)")
+    vl.add_argument("--entree", help="fichier JSON de preuves datées (assembler)")
+    vl.add_argument("--sortie", help="écrit un nouvel instantané JSON, refuse d'écraser (assembler)")
+    vl.add_argument("--simulation", action="store_true", help="autorise un calcul fictif à partir de déclarations non vérifiées")
     sy = sub.add_parser("synchro", help="contrôles de la mémoire avant reprise (rien n'est écrit)")
     sy.add_argument("action", choices=["verifier"])
     sy.add_argument("--reference", help="branche de référence, ex. origin/main : signale un retard")
@@ -247,6 +258,37 @@ def main(argv: list[str] | None = None) -> int:
             print(f"refus : {exc}")
             return 2
         print(json.dumps(out, indent=2, ensure_ascii=False))
+    elif args.cmd == "live-t15":
+        try:
+            snapshot = json.loads(Path(args.instantane).read_text(encoding="utf-8"))
+            out = live_t15.evaluer(snapshot, simulation=args.simulation)
+            if args.journal:
+                live_t15.enregistrer_journal(args.journal, out)
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False, allow_nan=False))
+        return 0 if out["statut"] == "WATCH" else 2
+    elif args.cmd == "veille-live":
+        try:
+            if args.action == "planifier":
+                if not args.coup_envoi:
+                    raise ValueError("--coup-envoi requis")
+                out = veille_live.planifier(args.coup_envoi, au=args.au)
+            else:
+                if not args.entree:
+                    raise ValueError("--entree requis")
+                dossier = json.loads(Path(args.entree).read_text(encoding="utf-8"))
+                instantane = veille_live.assembler_t15(dossier)
+                out = {"instantane": instantane, "evaluation": live_t15.evaluer(instantane, simulation=args.simulation)}
+                if args.sortie:
+                    with Path(args.sortie).open("x", encoding="utf-8") as fh:
+                        fh.write(json.dumps(instantane, indent=2, ensure_ascii=False) + "\n")
+        except (ValueError, KeyError, TypeError, OSError) as exc:
+            print(f"refus : {exc}")
+            return 2
+        print(json.dumps(out, indent=2, ensure_ascii=False, allow_nan=False))
+        return 0 if args.action == "planifier" or out["evaluation"]["statut"] == "WATCH" else 2
     elif args.cmd == "synchro":
         rapport = synchro.verifier(args.memoire, args.reference)
         print(json.dumps(rapport, indent=2, ensure_ascii=False))

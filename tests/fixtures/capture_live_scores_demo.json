@@ -1,0 +1,9 @@
+{
+  "match_id": "FICTIF:2026-11-15:DOM-EXT",
+  "checkpoint": "SONDE_RESEAU",
+  "urls": [
+    {"source": "180score", "url": "https://180score.com/"},
+    {"source": "xpertstats", "url": "https://xpertstats.com/"},
+    {"source": "sofascore", "url": "https://www.sofascore.com/"}
+  ]
+}
