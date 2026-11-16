@@ -19,7 +19,14 @@ python -m megatron resultat <match_id> 2-1 --source <url>   # après le coup d'e
 python -m megatron bilan       # scores par version (fusion et chaque agent), résultats à saisir
 python -m megatron backtest --division F1   # backtest chronologique (EXP-001)
 python -m megatron backtest --division F1 --fixe 90,3,0,moyenne,cadres,0.25 --reference 90,3,0   # poisson-v4 contre v1 (EXP-004)
+python -m megatron live-t15 tests/fixtures/live_t15_demo.json   # instantané FICTIF ; V1/V2 bruts, non calibrés, aucune écriture
+python -m megatron veille-live planifier --coup-envoi 2026-11-16T20:00:00+01:00
+python -m megatron veille-live assembler --entree tests/fixtures/veille_live_demo.json   # 3 scores fictifs + XI officiels simulés
+python scripts/capturer_sources_live.py --entree tests/fixtures/capture_live_demo.json --sortie /tmp/captures_t15.jsonl   # sondes HTTP publiques, sans extraction XI
 python -m unittest discover -s tests -t . -v
 ```
 
 Architecture, diagnostic, plan et journal de décisions : [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+Extension exploratoire T+15 : [docs/live-t15.md](docs/live-t15.md). Elle ne touche ni au registre
+prospectif immuable ni aux coefficients des modèles V1/V2 pré-match.

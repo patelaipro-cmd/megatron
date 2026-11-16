@@ -1,0 +1,9 @@
+{
+  "match_id": "FICTIF:2026-11-15:DOM-EXT",
+  "checkpoint": "SONDE_RESEAU",
+  "urls": [
+    {"source": "sportsmole", "url": "https://www.sportsmole.co.uk/football/"},
+    {"source": "sportsgambler", "url": "https://www.sportsgambler.com/lineups/football/"},
+    {"source": "pianetafanta", "url": "https://www.pianetafanta.it/"}
+  ]
+}
