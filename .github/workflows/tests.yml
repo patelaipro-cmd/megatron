@@ -9,6 +9,25 @@ jobs:
         with:
           python-version: "3.13"
       - run: python -m unittest discover -s tests -t . -v
+  domination-v1-historical-e1-sp2:
+    if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Acquire historical E1 and SP2 results (research only)
+        run: PYTHONPATH=. python scripts/collect_domination_historical_e1_sp2.py --output artifacts/historical_e1_sp2.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-historical-e1-sp2
+          path: artifacts/historical_e1_sp2.json
+          if-no-files-found: warn
   domination-v1-prospective-audit:
     if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
     runs-on: ubuntu-latest
