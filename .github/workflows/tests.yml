@@ -30,6 +30,14 @@ jobs:
         run: PYTHONPATH=. python scripts/audit_domination_prospective.py --registre artifacts/prospective_registry --output artifacts/prospective_audit.json
       - name: Archive future fixtures independently (do not score future matches)
         run: PYTHONPATH=. python scripts/capture_domination_fixture_snapshot.py --output artifacts/fixture_snapshot.json
+      - name: Compare independently captured fixtures to prospective registry
+        run: PYTHONPATH=. python scripts/audit_domination_prospective_coverage.py --registre artifacts/prospective_registry --fixtures-json artifacts/fixture_snapshot.json --output artifacts/prospective_coverage.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-prospective-coverage
+          path: artifacts/prospective_coverage.json
+          if-no-files-found: warn
       - if: always()
         uses: actions/upload-artifact@v4
         with:
