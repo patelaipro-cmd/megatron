@@ -40,6 +40,14 @@ jobs:
             artifacts/unmapped_teams.json
             artifacts/unmapped_teams.csv
           if-no-files-found: warn
+      - name: Audit exploratory league admission gates
+        run: PYTHONPATH=. python scripts/audit_domination_league_admission.py --snapshot artifacts/fixture_snapshot.json --reference docs/resultats-2026-27/audit.json --output artifacts/league_admission.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-league-admission
+          path: artifacts/league_admission.json
+          if-no-files-found: warn
       - name: Compare independently captured fixtures to prospective registry
         run: PYTHONPATH=. python scripts/audit_domination_prospective_coverage.py --registre artifacts/prospective_registry --fixtures-json artifacts/fixture_snapshot.json --output artifacts/prospective_coverage.json
       - if: always()
