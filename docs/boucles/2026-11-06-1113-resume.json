@@ -1,0 +1,446 @@
+{
+  "execute_le": "2026-11-06T11:13:09.957716+00:00",
+  "objectif": 5,
+  "confirmes": 0,
+  "manquants": 5,
+  "statut": "CALENDRIER_EPUISE",
+  "blocages_globaux": [
+    "ZONE_GO_NON_VALIDEE"
+  ],
+  "passages": [
+    {
+      "numero": 1,
+      "examines": 10,
+      "confirmes": 0
+    },
+    {
+      "numero": 2,
+      "examines": 10,
+      "confirmes": 0
+    },
+    {
+      "numero": 3,
+      "examines": 3,
+      "confirmes": 0
+    }
+  ],
+  "instantane": "../megatron-externe/externe/cotes/espn/2026-11-06/1100.csv",
+  "sha256_instantane": "e3a5a63eabb8be1ab25fae14c0557c8e63e9294cad910784871795ccbe32ca64",
+  "historique": [
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/matches_top5_2000-2026.csv",
+      "sha256": "399f92c774a257dd68b680e709ae5b6b9cdaa8297ac4fb7056019b15d1ede01c"
+    },
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/complement_openfootball_2026-27.csv",
+      "sha256": "08be93b73a58fcced118002adee1fd7acc8081c443f08ec73484f1cb405a8d3a"
+    },
+    {
+      "fichier": "docs/boucles/2026-11-06/complement.csv",
+      "sha256": "0e5acd01c5096ba7d80a1d31fa2daef78555521512e280dd1c256059ca00bb76"
+    }
+  ],
+  "erreurs": [],
+  "commit_donnees": "c4f6ec837110fbf366be1a2f546ffbb20f71756c",
+  "decisions": {
+    "PASS": 12,
+    "WATCH": 11
+  },
+  "analyses": [
+    {
+      "match": "Paris Saint-Germain - Troyes",
+      "coup_envoi": "2026-11-07T20:05+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.8804,
+        "victoire_par_2_ou_plus": 0.6792,
+        "victoire_par_3_ou_plus": 0.4382
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Mainz - Bayern Munich",
+      "coup_envoi": "2026-11-07T14:30+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.7242,
+        "victoire_par_2_ou_plus": 0.4972,
+        "victoire_par_3_ou_plus": 0.2983
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "AS Roma - Sassuolo",
+      "coup_envoi": "2026-11-07T19:45+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.725,
+        "victoire_par_2_ou_plus": 0.4761,
+        "victoire_par_3_ou_plus": 0.2694
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Borussia Dortmund - SV Elversberg",
+      "coup_envoi": "2026-11-07T14:30+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.6921,
+        "victoire_par_2_ou_plus": 0.4448,
+        "victoire_par_3_ou_plus": 0.2489
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "rubriques à vérifier : confrontations",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "RB Leipzig - FC Augsburg",
+      "coup_envoi": "2026-11-07T14:30+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.6652,
+        "victoire_par_2_ou_plus": 0.4218,
+        "victoire_par_3_ou_plus": 0.2349
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "VfB Stuttgart - Werder Bremen",
+      "coup_envoi": "2026-11-07T17:30+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.6511,
+        "victoire_par_2_ou_plus": 0.4071,
+        "victoire_par_3_ou_plus": 0.2243
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Arsenal - Hull City",
+      "coup_envoi": "2026-11-07T15:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.7032,
+        "victoire_par_2_ou_plus": 0.4002,
+        "victoire_par_3_ou_plus": 0.1925
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "absences importantes chez le favori (indices 0.1618/0.0925, non calibrés)",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Valencia - Real Madrid",
+      "coup_envoi": "2026-11-07T20:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.6197,
+        "victoire_par_2_ou_plus": 0.3428,
+        "victoire_par_3_ou_plus": 0.1658
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Cagliari - Frosinone",
+      "coup_envoi": "2026-11-07T14:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.55,
+        "victoire_par_2_ou_plus": 0.3091,
+        "victoire_par_3_ou_plus": 0.1565
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Nottingham Forest - Manchester City",
+      "coup_envoi": "2026-11-07T17:30+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.545,
+        "victoire_par_2_ou_plus": 0.2815,
+        "victoire_par_3_ou_plus": 0.13
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Everton - Coventry City",
+      "coup_envoi": "2026-11-06T20:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.5501,
+        "victoire_par_2_ou_plus": 0.2757,
+        "victoire_par_3_ou_plus": 0.123
+      },
+      "decision": "WATCH",
+      "bloquants": [],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Málaga - Racing Santander",
+      "coup_envoi": "2026-11-07T13:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.4492,
+        "victoire_par_2_ou_plus": 0.2329,
+        "victoire_par_3_ou_plus": 0.112
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 45% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Toulouse - Strasbourg",
+      "coup_envoi": "2026-11-06T19:45+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.4491,
+        "victoire_par_2_ou_plus": 0.2259,
+        "victoire_par_3_ou_plus": 0.1051
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 45% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Torino - Lecce",
+      "coup_envoi": "2026-11-07T14:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.4813,
+        "victoire_par_2_ou_plus": 0.2237,
+        "victoire_par_3_ou_plus": 0.0947
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 48% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Sevilla - Alavés",
+      "coup_envoi": "2026-11-06T20:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.4616,
+        "victoire_par_2_ou_plus": 0.2189,
+        "victoire_par_3_ou_plus": 0.0953
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 46% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "AJ Auxerre - Paris FC",
+      "coup_envoi": "2026-11-07T18:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.4386,
+        "victoire_par_2_ou_plus": 0.2074,
+        "victoire_par_3_ou_plus": 0.0907
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 44% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Leeds United - Tottenham Hotspur",
+      "coup_envoi": "2026-11-07T12:30+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.4483,
+        "victoire_par_2_ou_plus": 0.2066,
+        "victoire_par_3_ou_plus": 0.0877
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 45% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "absences importantes chez le favori (indices 0.1779/0.1017, non calibrés)",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Parma - Bologna",
+      "coup_envoi": "2026-11-07T17:00+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.4602,
+        "victoire_par_2_ou_plus": 0.1983,
+        "victoire_par_3_ou_plus": 0.0782
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 46% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Fulham - Newcastle United",
+      "coup_envoi": "2026-11-07T15:00+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.4212,
+        "victoire_par_2_ou_plus": 0.1978,
+        "victoire_par_3_ou_plus": 0.0864
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 42% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Venezia - Udinese",
+      "coup_envoi": "2026-11-06T19:45+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.4285,
+        "victoire_par_2_ou_plus": 0.1937,
+        "victoire_par_3_ou_plus": 0.0812
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 43% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "SC Paderborn 07 - Eintracht Frankfurt",
+      "coup_envoi": "2026-11-07T14:30+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.3727,
+        "victoire_par_2_ou_plus": 0.1625,
+        "victoire_par_3_ou_plus": 0.0669
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 37% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Osasuna - Athletic Club",
+      "coup_envoi": "2026-11-07T17:30+00:00",
+      "favori": "A",
+      "probabilites": {
+        "victoire_simple": 0.3771,
+        "victoire_par_2_ou_plus": 0.1592,
+        "victoire_par_3_ou_plus": 0.0634
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 38% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    },
+    {
+      "match": "Espanyol - Deportivo",
+      "coup_envoi": "2026-11-07T15:15+00:00",
+      "favori": "H",
+      "probabilites": {
+        "victoire_simple": 0.3753,
+        "victoire_par_2_ou_plus": 0.1586,
+        "victoire_par_3_ou_plus": 0.0632
+      },
+      "decision": "PASS",
+      "bloquants": [
+        "favori à 38% (< 50%)"
+      ],
+      "raisons": [
+        "compositions officielles non confirmées",
+        "angles morts non documentés entièrement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2448 @@
+{
+  "objectif": 5,
+  "confirmes": 0,
+  "manquants": 5,
+  "statut": "CALENDRIER_EPUISE",
+  "blocages_globaux": [
+    "ZONE_GO_NON_VALIDEE"
+  ],
+  "passages": [
+    {
+      "numero": 1,
+      "examines": 10,
+      "confirmes": 0
+    },
+    {
+      "numero": 2,
+      "examines": 10,
+      "confirmes": 0
+    },
+    {
+      "numero": 3,
+      "examines": 3,
+      "confirmes": 0
+    }
+  ],
+  "analyses": [
+    {
+      "rencontre": {
+        "id": "F1:401876405",
+        "division": "F1",
+        "domicile": "Toulouse",
+        "exterieur": "Strasbourg",
+        "coup_envoi": "2026-11-06T19:45+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261106",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261106",
+            "H": 2.2,
+            "D": 3.65,
+            "A": 3.15
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Toulouse",
+          "Strasbourg"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.4491,
+            "victoire_par_2_ou_plus": 0.2259,
+            "victoire_par_3_ou_plus": 0.1051
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4399,
+            "victoire_par_2_ou_plus": 0.2282,
+            "victoire_par_3_ou_plus": 0.0957
+          },
+          "risques": {
+            "defaite": 0.3166,
+            "nul": 0.2343
+          },
+          "risques_bruts": {
+            "defaite": 0.3219,
+            "nul": 0.2382
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 45% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-04-07",
+              "domicile": "Toulouse",
+              "exterieur": "Strasbourg",
+              "score": "0-0"
+            },
+            {
+              "date": "2025-01-12",
+              "domicile": "Toulouse",
+              "exterieur": "Strasbourg",
+              "score": "1-2"
+            },
+            {
+              "date": "2025-03-16",
+              "domicile": "Strasbourg",
+              "exterieur": "Toulouse",
+              "score": "2-1"
+            },
+            {
+              "date": "2025-12-06",
+              "domicile": "Toulouse",
+              "exterieur": "Strasbourg",
+              "score": "1-0"
+            },
+            {
+              "date": "2026-05-03",
+              "domicile": "Strasbourg",
+              "exterieur": "Toulouse",
+              "score": "1-2"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Toulouse": "2026-11-01",
+          "Strasbourg": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "I1:401874815",
+        "division": "I1",
+        "domicile": "Venezia",
+        "exterieur": "Udinese",
+        "coup_envoi": "2026-11-06T19:45+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261106",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261106",
+            "H": 2.2,
+            "D": 3.35,
+            "A": 3.0
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Venezia",
+          "Udinese"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.4285,
+            "victoire_par_2_ou_plus": 0.1937,
+            "victoire_par_3_ou_plus": 0.0812
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4225,
+            "victoire_par_2_ou_plus": 0.1982,
+            "victoire_par_3_ou_plus": 0.0731
+          },
+          "risques": {
+            "defaite": 0.3077,
+            "nul": 0.2638
+          },
+          "risques_bruts": {
+            "defaite": 0.3109,
+            "nul": 0.2666
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 43% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2002-04-21",
+              "domicile": "Udinese",
+              "exterieur": "Venezia",
+              "score": "1-0"
+            },
+            {
+              "date": "2021-08-27",
+              "domicile": "Udinese",
+              "exterieur": "Venezia",
+              "score": "3-0"
+            },
+            {
+              "date": "2022-04-10",
+              "domicile": "Venezia",
+              "exterieur": "Udinese",
+              "score": "1-2"
+            },
+            {
+              "date": "2024-10-30",
+              "domicile": "Venezia",
+              "exterieur": "Udinese",
+              "score": "3-2"
+            },
+            {
+              "date": "2025-02-01",
+              "domicile": "Udinese",
+              "exterieur": "Venezia",
+              "score": "3-2"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Venezia": "2026-11-01",
+          "Udinese": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "E0:401879242",
+        "division": "E0",
+        "domicile": "Everton",
+        "exterieur": "Coventry City",
+        "coup_envoi": "2026-11-06T20:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261106",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261106",
+            "H": 1.6897,
+            "D": 4.0,
+            "A": 4.8
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Everton",
+          "Coventry"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.5501,
+            "victoire_par_2_ou_plus": 0.2757,
+            "victoire_par_3_ou_plus": 0.123
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.526,
+            "victoire_par_2_ou_plus": 0.2742,
+            "victoire_par_3_ou_plus": 0.1129
+          },
+          "risques": {
+            "defaite": 0.2069,
+            "nul": 0.243
+          },
+          "risques_bruts": {
+            "defaite": 0.218,
+            "nul": 0.256
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2000-12-26",
+              "domicile": "Everton",
+              "exterieur": "Coventry",
+              "score": "1-2"
+            },
+            {
+              "date": "2001-01-20",
+              "domicile": "Coventry",
+              "exterieur": "Everton",
+              "score": "1-3"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Everton": "2026-11-02",
+          "Coventry": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "SP1:401882809",
+        "division": "SP1",
+        "domicile": "Sevilla",
+        "exterieur": "Alavés",
+        "coup_envoi": "2026-11-06T20:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261106",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261106",
+            "H": 1.9091,
+            "D": 3.5,
+            "A": 4.3
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Sevilla",
+          "Alaves"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.4616,
+            "victoire_par_2_ou_plus": 0.2189,
+            "victoire_par_3_ou_plus": 0.0953
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4505,
+            "victoire_par_2_ou_plus": 0.2218,
+            "victoire_par_3_ou_plus": 0.0864
+          },
+          "risques": {
+            "defaite": 0.2848,
+            "nul": 0.2537
+          },
+          "risques_bruts": {
+            "defaite": 0.2906,
+            "nul": 0.2589
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 46% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-01-12",
+              "domicile": "Sevilla",
+              "exterieur": "Alaves",
+              "score": "2-3"
+            },
+            {
+              "date": "2024-09-20",
+              "domicile": "Alaves",
+              "exterieur": "Sevilla",
+              "score": "2-1"
+            },
+            {
+              "date": "2025-04-20",
+              "domicile": "Sevilla",
+              "exterieur": "Alaves",
+              "score": "1-1"
+            },
+            {
+              "date": "2025-09-20",
+              "domicile": "Alaves",
+              "exterieur": "Sevilla",
+              "score": "1-2"
+            },
+            {
+              "date": "2026-02-14",
+              "domicile": "Sevilla",
+              "exterieur": "Alaves",
+              "score": "1-1"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Sevilla": "2026-11-01",
+          "Alaves": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "E0:401878758",
+        "division": "E0",
+        "domicile": "Leeds United",
+        "exterieur": "Tottenham Hotspur",
+        "coup_envoi": "2026-11-07T12:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+            "H": 2.8,
+            "D": 3.4,
+            "A": 2.55
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Leeds",
+          "Tottenham"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.4483,
+            "victoire_par_2_ou_plus": 0.2066,
+            "victoire_par_3_ou_plus": 0.0877
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4392,
+            "victoire_par_2_ou_plus": 0.2103,
+            "victoire_par_3_ou_plus": 0.0792
+          },
+          "risques": {
+            "defaite": 0.2908,
+            "nul": 0.2609
+          },
+          "risques_bruts": {
+            "defaite": 0.2956,
+            "nul": 0.2652
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 45% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "absences importantes chez le favori (indices 0.1779/0.1017, non calibrés)",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2022-02-26",
+              "domicile": "Leeds",
+              "exterieur": "Tottenham",
+              "score": "0-4"
+            },
+            {
+              "date": "2022-11-12",
+              "domicile": "Tottenham",
+              "exterieur": "Leeds",
+              "score": "4-3"
+            },
+            {
+              "date": "2023-05-28",
+              "domicile": "Leeds",
+              "exterieur": "Tottenham",
+              "score": "1-4"
+            },
+            {
+              "date": "2025-10-04",
+              "domicile": "Leeds",
+              "exterieur": "Tottenham",
+              "score": "1-2"
+            },
+            {
+              "date": "2026-05-11",
+              "domicile": "Tottenham",
+              "exterieur": "Leeds",
+              "score": "1-1"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Leeds": "2026-10-31",
+          "Tottenham": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "SP1:401882812",
+        "division": "SP1",
+        "domicile": "Málaga",
+        "exterieur": "Racing Santander",
+        "coup_envoi": "2026-11-07T13:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+            "H": 2.4,
+            "D": 3.55,
+            "A": 2.85
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Malaga",
+          "Santander"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.4492,
+            "victoire_par_2_ou_plus": 0.2329,
+            "victoire_par_3_ou_plus": 0.112
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.44,
+            "victoire_par_2_ou_plus": 0.2348,
+            "victoire_par_3_ou_plus": 0.1023
+          },
+          "risques": {
+            "defaite": 0.3256,
+            "nul": 0.2252
+          },
+          "risques_bruts": {
+            "defaite": 0.331,
+            "nul": 0.229
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 45% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2010-02-14",
+              "domicile": "Santander",
+              "exterieur": "Malaga",
+              "score": "0-3"
+            },
+            {
+              "date": "2010-12-05",
+              "domicile": "Malaga",
+              "exterieur": "Santander",
+              "score": "4-1"
+            },
+            {
+              "date": "2011-04-24",
+              "domicile": "Santander",
+              "exterieur": "Malaga",
+              "score": "1-2"
+            },
+            {
+              "date": "2011-11-21",
+              "domicile": "Santander",
+              "exterieur": "Malaga",
+              "score": "1-3"
+            },
+            {
+              "date": "2012-04-09",
+              "domicile": "Malaga",
+              "exterieur": "Santander",
+              "score": "3-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Malaga": "2026-10-31",
+          "Santander": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "I1:401874791",
+        "division": "I1",
+        "domicile": "Cagliari",
+        "exterieur": "Frosinone",
+        "coup_envoi": "2026-11-07T14:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+            "H": 2.65,
+            "D": 3.55,
+            "A": 2.35
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Cagliari",
+          "Frosinone"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.55,
+            "victoire_par_2_ou_plus": 0.3091,
+            "victoire_par_3_ou_plus": 0.1565
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.5258,
+            "victoire_par_2_ou_plus": 0.3048,
+            "victoire_par_3_ou_plus": 0.1454
+          },
+          "risques": {
+            "defaite": 0.2419,
+            "nul": 0.2081
+          },
+          "risques_bruts": {
+            "defaite": 0.2549,
+            "nul": 0.2193
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2018-12-02",
+              "domicile": "Frosinone",
+              "exterieur": "Cagliari",
+              "score": "1-1"
+            },
+            {
+              "date": "2019-04-20",
+              "domicile": "Cagliari",
+              "exterieur": "Frosinone",
+              "score": "1-0"
+            },
+            {
+              "date": "2023-10-29",
+              "domicile": "Cagliari",
+              "exterieur": "Frosinone",
+              "score": "4-3"
+            },
+            {
+              "date": "2024-01-21",
+              "domicile": "Frosinone",
+              "exterieur": "Cagliari",
+              "score": "3-1"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Cagliari": "2026-11-01",
+          "Frosinone": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "I1:401874811",
+        "division": "I1",
+        "domicile": "Torino",
+        "exterieur": "Lecce",
+        "coup_envoi": "2026-11-07T14:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+            "H": 1.7692,
+            "D": 3.55,
+            "A": 4.2
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Torino",
+          "Lecce"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.4813,
+            "victoire_par_2_ou_plus": 0.2237,
+            "victoire_par_3_ou_plus": 0.0947
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4673,
+            "victoire_par_2_ou_plus": 0.2262,
+            "victoire_par_3_ou_plus": 0.0858
+          },
+          "risques": {
+            "defaite": 0.2563,
+            "nul": 0.2623
+          },
+          "risques_bruts": {
+            "defaite": 0.2633,
+            "nul": 0.2694
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 48% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-02-16",
+              "domicile": "Torino",
+              "exterieur": "Lecce",
+              "score": "2-0"
+            },
+            {
+              "date": "2024-09-15",
+              "domicile": "Torino",
+              "exterieur": "Lecce",
+              "score": "0-0"
+            },
+            {
+              "date": "2025-05-18",
+              "domicile": "Lecce",
+              "exterieur": "Torino",
+              "score": "1-0"
+            },
+            {
+              "date": "2025-11-30",
+              "domicile": "Lecce",
+              "exterieur": "Torino",
+              "score": "2-1"
+            },
+            {
+              "date": "2026-02-01",
+              "domicile": "Torino",
+              "exterieur": "Lecce",
+              "score": "1-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Torino": "2026-11-01",
+          "Lecce": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "D1:401884737",
+        "division": "D1",
+        "domicile": "SC Paderborn 07",
+        "exterieur": "Eintracht Frankfurt",
+        "coup_envoi": "2026-11-07T14:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+            "H": 2.95,
+            "D": 3.75,
+            "A": 2.1
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Paderborn",
+          "Ein Frankfurt"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.3727,
+            "victoire_par_2_ou_plus": 0.1625,
+            "victoire_par_3_ou_plus": 0.0669
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.3749,
+            "victoire_par_2_ou_plus": 0.1687,
+            "victoire_par_3_ou_plus": 0.0597
+          },
+          "risques": {
+            "defaite": 0.3639,
+            "nul": 0.2634
+          },
+          "risques_bruts": {
+            "defaite": 0.3626,
+            "nul": 0.2625
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 37% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2014-10-19",
+              "domicile": "Paderborn",
+              "exterieur": "Ein Frankfurt",
+              "score": "3-1"
+            },
+            {
+              "date": "2015-03-14",
+              "domicile": "Ein Frankfurt",
+              "exterieur": "Paderborn",
+              "score": "4-0"
+            },
+            {
+              "date": "2019-12-22",
+              "domicile": "Paderborn",
+              "exterieur": "Ein Frankfurt",
+              "score": "2-1"
+            },
+            {
+              "date": "2020-06-27",
+              "domicile": "Ein Frankfurt",
+              "exterieur": "Paderborn",
+              "score": "3-2"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Paderborn": "2026-10-31",
+          "Ein Frankfurt": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "D1:401884740",
+        "division": "D1",
+        "domicile": "Mainz",
+        "exterieur": "Bayern Munich",
+        "coup_envoi": "2026-11-07T14:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+            "H": 6.5,
+            "D": 6.0,
+            "A": 1.3125
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Mainz",
+          "Bayern Munich"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.7242,
+            "victoire_par_2_ou_plus": 0.4972,
+            "victoire_par_3_ou_plus": 0.2983
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.6803,
+            "victoire_par_2_ou_plus": 0.4766,
+            "victoire_par_3_ou_plus": 0.2866
+          },
+          "risques": {
+            "defaite": 0.1348,
+            "nul": 0.141
+          },
+          "risques_bruts": {
+            "defaite": 0.1563,
+            "nul": 0.1634
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-03-09",
+              "domicile": "Bayern Munich",
+              "exterieur": "Mainz",
+              "score": "8-1"
+            },
+            {
+              "date": "2024-12-14",
+              "domicile": "Mainz",
+              "exterieur": "Bayern Munich",
+              "score": "2-1"
+            },
+            {
+              "date": "2025-04-26",
+              "domicile": "Bayern Munich",
+              "exterieur": "Mainz",
+              "score": "3-0"
+            },
+            {
+              "date": "2025-12-14",
+              "domicile": "Bayern Munich",
+              "exterieur": "Mainz",
+              "score": "2-2"
+            },
+            {
+              "date": "2026-04-25",
+              "domicile": "Mainz",
+              "exterieur": "Bayern Munich",
+              "score": "3-4"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Mainz": "2026-10-30",
+          "Bayern Munich": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "D1:401884744",
+        "division": "D1",
+        "domicile": "RB Leipzig",
+        "exterieur": "FC Augsburg",
+        "coup_envoi": "2026-11-07T14:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+            "H": 1.4444,
+            "D": 5.0,
+            "A": 5.25
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "RB Leipzig",
+          "Augsburg"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.6652,
+            "victoire_par_2_ou_plus": 0.4218,
+            "victoire_par_3_ou_plus": 0.2349
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.6266,
+            "victoire_par_2_ou_plus": 0.4076,
+            "victoire_par_3_ou_plus": 0.2228
+          },
+          "risques": {
+            "defaite": 0.1657,
+            "nul": 0.1691
+          },
+          "risques_bruts": {
+            "defaite": 0.1848,
+            "nul": 0.1886
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-02-10",
+              "domicile": "Augsburg",
+              "exterieur": "RB Leipzig",
+              "score": "2-2"
+            },
+            {
+              "date": "2024-09-28",
+              "domicile": "RB Leipzig",
+              "exterieur": "Augsburg",
+              "score": "4-0"
+            },
+            {
+              "date": "2025-02-14",
+              "domicile": "Augsburg",
+              "exterieur": "RB Leipzig",
+              "score": "0-0"
+            },
+            {
+              "date": "2025-10-25",
+              "domicile": "Augsburg",
+              "exterieur": "RB Leipzig",
+              "score": "0-6"
+            },
+            {
+              "date": "2026-03-07",
+              "domicile": "RB Leipzig",
+              "exterieur": "Augsburg",
+              "score": "2-1"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "RB Leipzig": "2026-10-31",
+          "Augsburg": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "D1:401884745",
+        "division": "D1",
+        "domicile": "Borussia Dortmund",
+        "exterieur": "SV Elversberg",
+        "coup_envoi": "2026-11-07T14:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+            "H": 1.2857,
+            "D": 5.75,
+            "A": 7.5
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Dortmund",
+          "Elversberg"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.6921,
+            "victoire_par_2_ou_plus": 0.4448,
+            "victoire_par_3_ou_plus": 0.2489
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.6509,
+            "victoire_par_2_ou_plus": 0.4286,
+            "victoire_par_3_ou_plus": 0.2368
+          },
+          "risques": {
+            "defaite": 0.145,
+            "nul": 0.1628
+          },
+          "risques_bruts": {
+            "defaite": 0.1645,
+            "nul": 0.1847
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "rubriques à vérifier : confrontations",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "a_verifier",
+          "matchs": [],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Dortmund": "2026-10-31",
+          "Elversberg": "2026-10-30"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "E0:401878760",
+        "division": "E0",
+        "domicile": "Arsenal",
+        "exterieur": "Hull City",
+        "coup_envoi": "2026-11-07T15:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+            "H": 1.1667,
+            "D": 8.0,
+            "A": 17.0
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Arsenal",
+          "Hull"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.7032,
+            "victoire_par_2_ou_plus": 0.4002,
+            "victoire_par_3_ou_plus": 0.1925
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.661,
+            "victoire_par_2_ou_plus": 0.3879,
+            "victoire_par_3_ou_plus": 0.1807
+          },
+          "risques": {
+            "defaite": 0.1012,
+            "nul": 0.1956
+          },
+          "risques_bruts": {
+            "defaite": 0.1156,
+            "nul": 0.2234
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "absences importantes chez le favori (indices 0.1618/0.0925, non calibrés)",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2014-04-20",
+              "domicile": "Hull",
+              "exterieur": "Arsenal",
+              "score": "0-3"
+            },
+            {
+              "date": "2014-10-18",
+              "domicile": "Arsenal",
+              "exterieur": "Hull",
+              "score": "2-2"
+            },
+            {
+              "date": "2015-05-04",
+              "domicile": "Hull",
+              "exterieur": "Arsenal",
+              "score": "1-3"
+            },
+            {
+              "date": "2016-09-17",
+              "domicile": "Hull",
+              "exterieur": "Arsenal",
+              "score": "1-4"
+            },
+            {
+              "date": "2017-02-11",
+              "domicile": "Arsenal",
+              "exterieur": "Hull",
+              "score": "2-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Arsenal": "2026-11-01",
+          "Hull": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "E0:401879241",
+        "division": "E0",
+        "domicile": "Fulham",
+        "exterieur": "Newcastle United",
+        "coup_envoi": "2026-11-07T15:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+            "H": 2.1,
+            "D": 3.65,
+            "A": 3.4
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Fulham",
+          "Newcastle"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.4212,
+            "victoire_par_2_ou_plus": 0.1978,
+            "victoire_par_3_ou_plus": 0.0864
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4162,
+            "victoire_par_2_ou_plus": 0.202,
+            "victoire_par_3_ou_plus": 0.078
+          },
+          "risques": {
+            "defaite": 0.3279,
+            "nul": 0.2509
+          },
+          "risques_bruts": {
+            "defaite": 0.3307,
+            "nul": 0.2531
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 42% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-04-06",
+              "domicile": "Fulham",
+              "exterieur": "Newcastle",
+              "score": "0-1"
+            },
+            {
+              "date": "2024-09-21",
+              "domicile": "Fulham",
+              "exterieur": "Newcastle",
+              "score": "3-1"
+            },
+            {
+              "date": "2025-02-01",
+              "domicile": "Newcastle",
+              "exterieur": "Fulham",
+              "score": "1-2"
+            },
+            {
+              "date": "2025-10-25",
+              "domicile": "Newcastle",
+              "exterieur": "Fulham",
+              "score": "2-1"
+            },
+            {
+              "date": "2026-05-24",
+              "domicile": "Fulham",
+              "exterieur": "Newcastle",
+              "score": "2-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Fulham": "2026-10-31",
+          "Newcastle": "2026-11-02"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "SP1:401882813",
+        "division": "SP1",
+        "domicile": "Espanyol",
+        "exterieur": "Deportivo",
+        "coup_envoi": "2026-11-07T15:15+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+            "H": 2.3,
+            "D": 3.35,
+            "A": 3.15
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Espanol",
+          "La Coruna"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.3753,
+            "victoire_par_2_ou_plus": 0.1586,
+            "victoire_par_3_ou_plus": 0.0632
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.3771,
+            "victoire_par_2_ou_plus": 0.165,
+            "victoire_par_3_ou_plus": 0.0563
+          },
+          "risques": {
+            "defaite": 0.3511,
+            "nul": 0.2736
+          },
+          "risques_bruts": {
+            "defaite": 0.3501,
+            "nul": 0.2728
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 38% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2016-02-20",
+              "domicile": "Espanol",
+              "exterieur": "La Coruna",
+              "score": "1-0"
+            },
+            {
+              "date": "2017-01-06",
+              "domicile": "Espanol",
+              "exterieur": "La Coruna",
+              "score": "1-1"
+            },
+            {
+              "date": "2017-05-07",
+              "domicile": "La Coruna",
+              "exterieur": "Espanol",
+              "score": "1-2"
+            },
+            {
+              "date": "2017-09-24",
+              "domicile": "Espanol",
+              "exterieur": "La Coruna",
+              "score": "4-1"
+            },
+            {
+              "date": "2018-02-23",
+              "domicile": "La Coruna",
+              "exterieur": "Espanol",
+              "score": "0-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Espanol": "2026-10-30",
+          "La Coruna": "2026-11-02"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "I1:401874974",
+        "division": "I1",
+        "domicile": "Parma",
+        "exterieur": "Bologna",
+        "coup_envoi": "2026-11-07T17:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+            "H": 4.3,
+            "D": 3.4,
+            "A": 1.8333
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Parma",
+          "Bologna"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.4602,
+            "victoire_par_2_ou_plus": 0.1983,
+            "victoire_par_3_ou_plus": 0.0782
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.4493,
+            "victoire_par_2_ou_plus": 0.2025,
+            "victoire_par_3_ou_plus": 0.0703
+          },
+          "risques": {
+            "defaite": 0.2554,
+            "nul": 0.2844
+          },
+          "risques_bruts": {
+            "defaite": 0.2606,
+            "nul": 0.2901
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 46% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2021-02-07",
+              "domicile": "Parma",
+              "exterieur": "Bologna",
+              "score": "0-3"
+            },
+            {
+              "date": "2024-10-06",
+              "domicile": "Bologna",
+              "exterieur": "Parma",
+              "score": "0-0"
+            },
+            {
+              "date": "2025-02-22",
+              "domicile": "Parma",
+              "exterieur": "Bologna",
+              "score": "2-0"
+            },
+            {
+              "date": "2025-11-02",
+              "domicile": "Parma",
+              "exterieur": "Bologna",
+              "score": "1-3"
+            },
+            {
+              "date": "2026-02-08",
+              "domicile": "Bologna",
+              "exterieur": "Parma",
+              "score": "0-1"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Parma": "2026-11-02",
+          "Bologna": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "D1:401884743",
+        "division": "D1",
+        "domicile": "VfB Stuttgart",
+        "exterieur": "Werder Bremen",
+        "coup_envoi": "2026-11-07T17:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107",
+            "H": 1.6452,
+            "D": 4.4,
+            "A": 4.1
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Stuttgart",
+          "Werder Bremen"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.6511,
+            "victoire_par_2_ou_plus": 0.4071,
+            "victoire_par_3_ou_plus": 0.2243
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.614,
+            "victoire_par_2_ou_plus": 0.3942,
+            "victoire_par_3_ou_plus": 0.2122
+          },
+          "risques": {
+            "defaite": 0.1747,
+            "nul": 0.1742
+          },
+          "risques_bruts": {
+            "defaite": 0.1933,
+            "nul": 0.1927
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-04-21",
+              "domicile": "Werder Bremen",
+              "exterieur": "Stuttgart",
+              "score": "2-1"
+            },
+            {
+              "date": "2024-11-30",
+              "domicile": "Werder Bremen",
+              "exterieur": "Stuttgart",
+              "score": "2-2"
+            },
+            {
+              "date": "2025-04-13",
+              "domicile": "Stuttgart",
+              "exterieur": "Werder Bremen",
+              "score": "1-2"
+            },
+            {
+              "date": "2025-12-14",
+              "domicile": "Werder Bremen",
+              "exterieur": "Stuttgart",
+              "score": "0-4"
+            },
+            {
+              "date": "2026-04-26",
+              "domicile": "Stuttgart",
+              "exterieur": "Werder Bremen",
+              "score": "1-1"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Stuttgart": "2026-10-31",
+          "Werder Bremen": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "E0:401878757",
+        "division": "E0",
+        "domicile": "Nottingham Forest",
+        "exterieur": "Manchester City",
+        "coup_envoi": "2026-11-07T17:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107",
+            "H": 4.6,
+            "D": 4.1,
+            "A": 1.7143
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Nott'm Forest",
+          "Man City"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.545,
+            "victoire_par_2_ou_plus": 0.2815,
+            "victoire_par_3_ou_plus": 0.13
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.5216,
+            "victoire_par_2_ou_plus": 0.2795,
+            "victoire_par_3_ou_plus": 0.1197
+          },
+          "risques": {
+            "defaite": 0.2215,
+            "nul": 0.2335
+          },
+          "risques_bruts": {
+            "defaite": 0.2329,
+            "nul": 0.2455
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2025-03-08",
+              "domicile": "Nott'm Forest",
+              "exterieur": "Man City",
+              "score": "1-0"
+            },
+            {
+              "date": "2025-12-27",
+              "domicile": "Nott'm Forest",
+              "exterieur": "Man City",
+              "score": "1-2"
+            },
+            {
+              "date": "2026-03-04",
+              "domicile": "Man City",
+              "exterieur": "Nott'm Forest",
+              "score": "2-2"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Nott'm Forest": "2026-10-31",
+          "Man City": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "SP1:401882811",
+        "division": "SP1",
+        "domicile": "Osasuna",
+        "exterieur": "Athletic Club",
+        "coup_envoi": "2026-11-07T17:30+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+            "H": 3.6,
+            "D": 3.45,
+            "A": 2.1
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Osasuna",
+          "Ath Bilbao"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.3771,
+            "victoire_par_2_ou_plus": 0.1592,
+            "victoire_par_3_ou_plus": 0.0634
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.3787,
+            "victoire_par_2_ou_plus": 0.1656,
+            "victoire_par_3_ou_plus": 0.0564
+          },
+          "risques": {
+            "defaite": 0.3486,
+            "nul": 0.2743
+          },
+          "risques_bruts": {
+            "defaite": 0.3477,
+            "nul": 0.2736
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 38% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-05-11",
+              "domicile": "Ath Bilbao",
+              "exterieur": "Osasuna",
+              "score": "2-2"
+            },
+            {
+              "date": "2024-12-21",
+              "domicile": "Osasuna",
+              "exterieur": "Ath Bilbao",
+              "score": "1-2"
+            },
+            {
+              "date": "2025-03-30",
+              "domicile": "Ath Bilbao",
+              "exterieur": "Osasuna",
+              "score": "0-0"
+            },
+            {
+              "date": "2026-01-03",
+              "domicile": "Osasuna",
+              "exterieur": "Ath Bilbao",
+              "score": "1-1"
+            },
+            {
+              "date": "2026-04-21",
+              "domicile": "Ath Bilbao",
+              "exterieur": "Osasuna",
+              "score": "1-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Osasuna": "2026-11-02",
+          "Ath Bilbao": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "F1:401876411",
+        "division": "F1",
+        "domicile": "AJ Auxerre",
+        "exterieur": "Paris FC",
+        "coup_envoi": "2026-11-07T18:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261107",
+            "H": 4.2,
+            "D": 4.0,
+            "A": 1.7692
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Auxerre",
+          "Paris FC"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.4386,
+            "victoire_par_2_ou_plus": 0.2074,
+            "victoire_par_3_ou_plus": 0.0907
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.431,
+            "victoire_par_2_ou_plus": 0.211,
+            "victoire_par_3_ou_plus": 0.0821
+          },
+          "risques": {
+            "defaite": 0.3099,
+            "nul": 0.2515
+          },
+          "risques_bruts": {
+            "defaite": 0.3141,
+            "nul": 0.2549
+          }
+        },
+        "decision": {
+          "decision": "PASS",
+          "bloquants": [
+            "favori à 44% (< 50%)"
+          ],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2025-11-29",
+              "domicile": "Paris FC",
+              "exterieur": "Auxerre",
+              "score": "1-1"
+            },
+            {
+              "date": "2026-02-08",
+              "domicile": "Auxerre",
+              "exterieur": "Paris FC",
+              "score": "0-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Auxerre": "2026-11-01",
+          "Paris FC": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "I1:401874803",
+        "division": "I1",
+        "domicile": "AS Roma",
+        "exterieur": "Sassuolo",
+        "coup_envoi": "2026-11-07T19:45+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107",
+            "H": 1.2778,
+            "D": 5.75,
+            "A": 8.0
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Roma",
+          "Sassuolo"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.725,
+            "victoire_par_2_ou_plus": 0.4761,
+            "victoire_par_3_ou_plus": 0.2694
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.681,
+            "victoire_par_2_ou_plus": 0.4573,
+            "victoire_par_3_ou_plus": 0.2574
+          },
+          "risques": {
+            "defaite": 0.1221,
+            "nul": 0.1529
+          },
+          "risques_bruts": {
+            "defaite": 0.1416,
+            "nul": 0.1774
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2023-03-12",
+              "domicile": "Roma",
+              "exterieur": "Sassuolo",
+              "score": "3-4"
+            },
+            {
+              "date": "2023-12-03",
+              "domicile": "Sassuolo",
+              "exterieur": "Roma",
+              "score": "1-2"
+            },
+            {
+              "date": "2024-03-17",
+              "domicile": "Roma",
+              "exterieur": "Sassuolo",
+              "score": "1-0"
+            },
+            {
+              "date": "2025-10-26",
+              "domicile": "Sassuolo",
+              "exterieur": "Roma",
+              "score": "0-1"
+            },
+            {
+              "date": "2026-01-10",
+              "domicile": "Roma",
+              "exterieur": "Sassuolo",
+              "score": "2-0"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Roma": "2026-10-31",
+          "Sassuolo": "2026-11-02"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "SP1:401882808",
+        "division": "SP1",
+        "domicile": "Valencia",
+        "exterieur": "Real Madrid",
+        "coup_envoi": "2026-11-07T20:00+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107",
+            "H": 9.0,
+            "D": 6.0,
+            "A": 1.2941
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Valencia",
+          "Real Madrid"
+        ],
+        "niveaux": {
+          "favori": "A",
+          "probabilites": {
+            "victoire_simple": 0.6197,
+            "victoire_par_2_ou_plus": 0.3428,
+            "victoire_par_3_ou_plus": 0.1658
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.5863,
+            "victoire_par_2_ou_plus": 0.3356,
+            "victoire_par_3_ou_plus": 0.1545
+          },
+          "risques": {
+            "defaite": 0.1685,
+            "nul": 0.2117
+          },
+          "risques_bruts": {
+            "defaite": 0.1834,
+            "nul": 0.2303
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2024-03-02",
+              "domicile": "Valencia",
+              "exterieur": "Real Madrid",
+              "score": "2-2"
+            },
+            {
+              "date": "2025-01-03",
+              "domicile": "Valencia",
+              "exterieur": "Real Madrid",
+              "score": "1-2"
+            },
+            {
+              "date": "2025-04-05",
+              "domicile": "Real Madrid",
+              "exterieur": "Valencia",
+              "score": "1-2"
+            },
+            {
+              "date": "2025-11-01",
+              "domicile": "Real Madrid",
+              "exterieur": "Valencia",
+              "score": "4-0"
+            },
+            {
+              "date": "2026-02-08",
+              "domicile": "Valencia",
+              "exterieur": "Real Madrid",
+              "score": "0-2"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Valencia": "2026-11-01",
+          "Real Madrid": "2026-11-01"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    },
+    {
+      "rencontre": {
+        "id": "F1:401876407",
+        "division": "F1",
+        "domicile": "Paris Saint-Germain",
+        "exterieur": "Troyes",
+        "coup_envoi": "2026-11-07T20:05+00:00",
+        "collecte_le": "2026-11-06T08:04:00+00:00",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261107",
+        "cotes": [
+          {
+            "collecte_le": "2026-11-06T08:04:00+00:00",
+            "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261107",
+            "H": 1.1111,
+            "D": 11.0,
+            "A": 17.0
+          }
+        ]
+      },
+      "analyse": {
+        "analyse_le": "2026-11-06T08:15:43.306649+00:00",
+        "noms_modele": [
+          "Paris SG",
+          "Troyes"
+        ],
+        "niveaux": {
+          "favori": "H",
+          "probabilites": {
+            "victoire_simple": 0.8804,
+            "victoire_par_2_ou_plus": 0.6792,
+            "victoire_par_3_ou_plus": 0.4382
+          },
+          "statut": "RECALIBRE_EXP-012",
+          "brut": {
+            "victoire_simple": 0.8367,
+            "victoire_par_2_ou_plus": 0.6476,
+            "victoire_par_3_ou_plus": 0.4298
+          },
+          "risques": {
+            "defaite": 0.0381,
+            "nul": 0.0815
+          },
+          "risques_bruts": {
+            "defaite": 0.0521,
+            "nul": 0.1113
+          }
+        },
+        "decision": {
+          "decision": "WATCH",
+          "bloquants": [],
+          "raisons": [
+            "compositions officielles non confirmées",
+            "angles morts non documentés entièrement"
+          ],
+          "seuils": {
+            "favori_minimum": 0.5,
+            "secure_victoire": 0.6,
+            "go_marge_2": 0.6,
+            "indice_absence_majeur": 0.15
+          },
+          "activation_automatique": false,
+          "nature": "indicative, règles provisoires non calibrées ; aucune action déclenchée"
+        },
+        "h2h_championnat": {
+          "statut": "partiel",
+          "matchs": [
+            {
+              "date": "2018-03-03",
+              "domicile": "Troyes",
+              "exterieur": "Paris SG",
+              "score": "0-2"
+            },
+            {
+              "date": "2021-08-07",
+              "domicile": "Troyes",
+              "exterieur": "Paris SG",
+              "score": "1-2"
+            },
+            {
+              "date": "2022-05-08",
+              "domicile": "Paris SG",
+              "exterieur": "Troyes",
+              "score": "2-2"
+            },
+            {
+              "date": "2022-10-29",
+              "domicile": "Paris SG",
+              "exterieur": "Troyes",
+              "score": "4-3"
+            },
+            {
+              "date": "2023-05-07",
+              "domicile": "Troyes",
+              "exterieur": "Paris SG",
+              "score": "1-3"
+            }
+          ],
+          "evolution_tactique": "a_verifier : systèmes, entraîneurs et plans de jeu non mesurés"
+        },
+        "dernier_resultat_par_equipe": {
+          "Paris SG": "2026-10-30",
+          "Troyes": "2026-10-31"
+        },
+        "ajustement_probabilites": "aucun : absences et angles restent descriptifs (EXP-009, EXP-013)"
+      },
+      "domination_confirmee": false
+    }
+  ],
+  "erreurs": [],
+  "surveillance_active": false,
+  "limite": "Pas de répétition sans nouvelles données ; aucune domination forcée pour remplir le quota.",
+  "execute_le": "2026-11-06T08:15:43.306649+00:00",
+  "horizon_heures": 72,
+  "instantane": "../megatron-externe/externe/cotes/espn/2026-11-06/0804.csv",
+  "sha256_instantane": "a8184c0841b56219c31e0d44784d46260b99621daaea5a4c6a9d9f7e5a555ee0",
+  "exclus": [],
+  "audit_resultats": "docs/boucles/2026-11-06/audit-resultats.json",
+  "historique": [
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/matches_top5_2000-2026.csv",
+      "sha256": "399f92c774a257dd68b680e709ae5b6b9cdaa8297ac4fb7056019b15d1ede01c"
+    },
+    {
+      "fichier": "/workspace/scratch/37e8636606ca/megatron/data/complement_openfootball_2026-27.csv",
+      "sha256": "08be93b73a58fcced118002adee1fd7acc8081c443f08ec73484f1cb405a8d3a"
+    },
+    {
+      "fichier": "docs/boucles/2026-11-06/complement.csv",
+      "sha256": "0e5acd01c5096ba7d80a1d31fa2daef78555521512e280dd1c256059ca00bb76"
+    }
+  ]
+}
