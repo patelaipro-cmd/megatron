@@ -1,5 +1,5 @@
 """Fetch available football-data.org fixtures and finished matches. No fake data."""
-import json,os,urllib.request,urllib.parse
+import json,os,urllib.request,urllib.parse,urllib.error
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
 from model import score
@@ -9,7 +9,10 @@ def fetch(path,params):
     if not token:raise RuntimeError("GitHub secret FOOTBALL_DATA_API_KEY is required")
     url=BASE+path+"?"+urllib.parse.urlencode(params)
     req=urllib.request.Request(url,headers={"X-Auth-Token":token,"Accept":"application/json"})
-    with urllib.request.urlopen(req,timeout=35) as resp:return json.load(resp).get("matches",[])
+    with urllib.request.urlopen(req,timeout=35) as resp:
+        payload=json.load(resp)
+        if not isinstance(payload.get("matches"),list):raise ValueError("API response has no matches list")
+        return payload["matches"]
 def normalize(m,league):
     h=m.get("homeTeam") or {};a=m.get("awayTeam") or {}
     h=str(h.get("id") or "");a=str(a.get("id") or "")
@@ -22,7 +25,7 @@ def run():
     for code in codes:
         try:
             finished=fetch("/competitions/"+code+"/matches",{"status":"FINISHED"})
-            scheduled=fetch("/competitions/"+code+"/matches",{"status":"SCHEDULED","dateFrom":today.date().isoformat(),"dateTo":(today+timedelta(days=2)).date().isoformat()})
+            scheduled=fetch("/competitions/"+code+"/matches",{"dateFrom":today.date().isoformat(),"dateTo":(today+timedelta(days=2)).date().isoformat()})
         except Exception as exc:
             errors.append({"competition":code,"error":type(exc).__name__});continue
         for m in finished:
@@ -31,7 +34,7 @@ def run():
                 row.update(hg=ft["home"],ag=ft["away"]);history.append(row)
         for m in scheduled:
             row=normalize(m,code)
-            if row and row["date"]>today.isoformat().replace("+00:00","Z"):upcoming.append(row)
+            if row and m.get("status") in ("SCHEDULED","TIMED") and row["date"]>today.isoformat().replace("+00:00","Z"):upcoming.append(row)
     history.sort(key=lambda x:x["date"])
     results=[]
     for m in upcoming:
@@ -44,5 +47,5 @@ def run():
     target=Path(__file__).parent/"data"/"predictions.json";target.parent.mkdir(parents=True,exist_ok=True)
     target.write_text(json.dumps(output,ensure_ascii=False,indent=2),encoding="utf-8")
     print("Matches:",len(results),"Errors:",len(errors))
-    if not history or not upcoming:raise RuntimeError("No historical data or upcoming fixtures available")
+    if not history:raise RuntimeError("No historical data available")\n    if errors and not results:raise RuntimeError("API errors prevented prediction generation")
 if __name__=="__main__":run()
