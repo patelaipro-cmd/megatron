@@ -9,3 +9,183 @@ jobs:
         with:
           python-version: "3.13"
       - run: python -m unittest discover -s tests -t . -v
+  domination-v1-historical-e1-sp2:
+    if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Acquire historical E1 and SP2 results (research only)
+        run: PYTHONPATH=. python scripts/collect_domination_historical_e1_sp2.py --output artifacts/historical_e1_sp2.json
+      - name: Audit strict historical coverage for 46 priority teams
+        run: PYTHONPATH=. python scripts/audit_domination_e1_sp2_historical_team_coverage.py --historical artifacts/historical_e1_sp2.json --output artifacts/e1_sp2_team_coverage.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-e1-sp2-team-coverage
+          path: artifacts/e1_sp2_team_coverage.json
+          if-no-files-found: warn
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-historical-e1-sp2
+          path: artifacts/historical_e1_sp2.json
+          if-no-files-found: warn
+  domination-v1-prospective-audit:
+    if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Read actual prospective registry branch without modifying it
+        run: |
+          git fetch --depth 1 origin refs/heads/registre-memoire:refs/remotes/origin/registre-memoire
+          mkdir -p artifacts/prospective_registry
+          git show origin/registre-memoire:memoire/performances.jsonl > artifacts/prospective_registry/performances.jsonl
+          test -s artifacts/prospective_registry/performances.jsonl
+      - name: Audit confirmed 2+ and 3+ predictions
+        run: PYTHONPATH=. python scripts/audit_domination_prospective.py --registre artifacts/prospective_registry --output artifacts/prospective_audit.json
+      - name: Archive future fixtures independently (do not score future matches)
+        run: PYTHONPATH=. python scripts/capture_domination_fixture_snapshot.py --output artifacts/fixture_snapshot.json
+      - name: Inventory unmapped exploratory league teams
+        run: PYTHONPATH=. python scripts/inventory_domination_unmapped_teams.py --snapshot artifacts/fixture_snapshot.json --output artifacts/unmapped_teams.json --csv artifacts/unmapped_teams.csv --reference docs/resultats-2026-27/audit.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-unmapped-teams
+          path: |
+            artifacts/unmapped_teams.json
+            artifacts/unmapped_teams.csv
+          if-no-files-found: warn
+      - name: Audit exploratory league admission gates
+        run: PYTHONPATH=. python scripts/audit_domination_league_admission.py --snapshot artifacts/fixture_snapshot.json --reference docs/resultats-2026-27/audit.json --output artifacts/league_admission.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-league-admission
+          path: artifacts/league_admission.json
+          if-no-files-found: warn
+      - name: Compare independently captured fixtures to prospective registry
+        run: PYTHONPATH=. python scripts/audit_domination_prospective_coverage.py --registre artifacts/prospective_registry --fixtures-json artifacts/fixture_snapshot.json --output artifacts/prospective_coverage.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-prospective-coverage
+          path: artifacts/prospective_coverage.json
+          if-no-files-found: warn
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-fixture-snapshot
+          path: artifacts/fixture_snapshot.json
+          if-no-files-found: warn
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-prospective-audit
+          path: artifacts/prospective_audit.json
+          if-no-files-found: warn
+  domination-v1-experimental:
+    if: github.head_ref == 'experiment/v1-domination-training-20261116' || github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check historical dataset integrity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p=Path('docs/experiences/EXP-009/variables.csv')
+          assert p.is_file() and p.stat().st_size>0, 'EXP-009 variables.csv missing'
+          expected='52ce2b08c769793f775a0a385b72b47fbf77bed3d4da2d1b29e562662fd94f6f'
+          actual=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert actual==expected, f'SHA mismatch: {actual}'
+          print('Verified historical dataset:',p.stat().st_size,'bytes')
+          PY
+      - name: Inventory historical V1 coverage
+        run: PYTHONPATH=. python scripts/audit_domination_coverage.py --output artifacts/domination_v1/coverage.json
+      - name: Pilot V1 historical features E0 2007-08
+        run: PYTHONPATH=. python scripts/extend_domination_features.py --division E0 --season 2007/08 --output artifacts/domination_v1/E0_2007-08.csv
+      - name: Expand V1 historical pilot to five leagues 2006-07
+        run: |
+          for division in E0 SP1 I1 F1 D1; do
+            PYTHONPATH=. python scripts/extend_domination_features.py --division "$division" --season 2006/07 --allow-empty --output "artifacts/domination_v1/${division}_2006-07.csv"
+          done
+      - name: Plan available historical V1 league-seasons
+        run: PYTHONPATH=. python scripts/plan_domination_extension.py --output artifacts/domination_v1/extension_plan.json
+      - name: Batch reconstruct all eligible pre-2008 league-seasons
+        run: PYTHONPATH=. python scripts/batch_domination_extension.py --plan artifacts/domination_v1/extension_plan.json --output-dir artifacts/domination_v1/batch --max-seasons 100
+      - name: Consolidate and audit historical V1 features
+        run: PYTHONPATH=. python scripts/consolidate_domination_features.py --plan artifacts/domination_v1/extension_plan.json --batch-dir artifacts/domination_v1/batch --output artifacts/domination_v1/historical_pre2008.csv
+      - name: Prepare audited expanded V1 training input
+        run: PYTHONPATH=. python scripts/prepare_domination_training.py --historical artifacts/domination_v1/historical_pre2008.csv --output artifacts/domination_v1/training_expanded.csv
+      - name: Audit V1 chronological training validation test split
+        run: PYTHONPATH=. python scripts/audit_domination_splits.py --input artifacts/domination_v1/training_expanded.csv --output artifacts/domination_v1/splits_audit.json
+      - name: Experimental V1 expanded refit on unchanged holdout
+        run: PYTHONPATH=. python scripts/refit_domination_expanded.py --expanded artifacts/domination_v1/training_expanded.csv --output-dir artifacts/domination_v1/refit
+      - name: Compare V1 training windows on validation only
+        run: PYTHONPATH=. python scripts/compare_domination_windows.py --expanded artifacts/domination_v1/training_expanded.csv --output-dir artifacts/domination_v1/windows
+      - name: Replay frozen EXP-012 (no model promotion)
+        run: python scripts/exp012_niveaux.py --sortie artifacts/domination_v1
+      - name: Audit 2+ and 3+ reliability per league
+        run: PYTHONPATH=. python scripts/audit_domination_leagues.py --input artifacts/domination_v1/resultats.json --output artifacts/domination_v1/audit_ligues_p60.json
+      - name: Enforce V1 prospective promotion gate
+        run: PYTHONPATH=. python scripts/gate_domination_prospective.py --audit artifacts/domination_v1/audit_ligues_p60.json --output artifacts/domination_v1/promotion_gate.json
+      - name: Validate historical report
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('artifacts/domination_v1/resultats.json').read_text())
+          assert d['effectifs']['test']>=1500
+          for key in ['victoire_par_2_ou_plus','victoire_par_3_ou_plus']:
+              x=d['niveaux'][key]
+              print(key,'test:',x['test']['C']['n'],'logloss:',x['test']['C']['log_loss'],'p>=0.60:',x['test']['C']['tranche_p60'])
+          print('Retrospective replay ONLY; no prospective validation, no deployment')
+          PY
+      - name: Audit confidence intervals and prevent premature GO
+        run: |
+          python - <<'PY'
+          import json, math
+          from pathlib import Path
+          p=Path('artifacts/domination_v1/resultats.json')
+          d=json.loads(p.read_text())
+          audit={'type':'retrospective_replay_not_prospective','decision':'NO_GO','levels':{}}
+          for name in ('victoire_par_2_ou_plus','victoire_par_3_ou_plus'):
+              v=d['niveaux'][name]['test']['C']['tranche_p60']
+              n=v['n']; rate=v['frequence']; k=round(rate*n)
+              z=1.959963984540054
+              den=1+z*z/n
+              center=(k/n+z*z/(2*n))/den
+              half=z*math.sqrt((k/n)*(1-k/n)/n+z*z/(4*n*n))/den
+              lo,hi=max(0,center-half),min(1,center+half)
+              audit['levels'][name]={'n':n,'wins':k,'observed_rate':rate,'forecast_mean':v['p_moyenne'],'wilson95':[round(lo,4),round(hi,4)],'min_1500_p60':n>=1500,'lower_bound_above_60pct':lo>=0.60}
+              print(name,audit['levels'][name])
+          Path('artifacts/domination_v1/audit_p60.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False)+'\\n')
+          print('NO_GO: historical reused test period, no independent prospective cohort')
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-experimental-report
+          path: |
+            artifacts/domination_v1/*.json
+            artifacts/domination_v1/*.csv
+            artifacts/domination_v1/batch/
+            artifacts/domination_v1/refit/
+            artifacts/domination_v1/windows/window_comparison.json
+          if-no-files-found: warn

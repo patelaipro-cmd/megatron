@@ -1,0 +1,30 @@
+name: domination-v1-fixture-inventory-experiment
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - experiment/v1-domination-training-20261116
+    paths:
+      - scripts/capture_domination_fixture_inventory.py
+      - .github/workflows/domination-v1-fixture-inventory-experiment.yml
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    if: github.ref == 'refs/heads/experiment/v1-domination-training-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Capture raw ESPN fixtures before mapping
+        run: PYTHONPATH=. python scripts/capture_domination_fixture_inventory.py --output artifacts/fixture_inventory.json
+      - name: Upload immutable run artifact (no repository write)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domination-v1-fixture-inventory
+          path: artifacts/fixture_inventory.json
+          if-no-files-found: warn
