@@ -18,6 +18,15 @@ fusionner dans `main`.
 | ESPN (API publique, sans clé) | Compos officielles (titulaires, remplaçants, formation) | 27 ligues + 3 coupes UEFA (`espn` de `data/ligues_collecte.json`) | Chaque heure, matchs qui débutent dans les 75 min, une fois par match publié |
 | API-Football (clé, secret `API_FOOTBALL_KEY`) | Blessures/suspensions (toutes ligues) ; compos officielles des ligues `apifootball` de `data/ligues_collecte.json` | Toutes ligues pour les blessures ; 19 ligues + coupes UEFA pour les compos | Statut + calendrier J/J+1 au premier passage du jour, blessures aux heures 0/6/12/18 UTC, compo de chaque match suivi à moins de 75 min ; plafond 90 requêtes/jour |
 
+**Mise à jour du 14/11/2026 :** API-Football est **retiré des sources
+programmées** après suspension du compte fournisseur ; sa ligne ci-dessus ne
+décrit que l'ancien circuit historique. Le remplacement demandé utilise
+Sports Mole, SportsGambler, PianetaFanta, 180Score et Xpertstats sous forme
+de **fiches structurées datées**. En l'absence de capture, le manifeste
+affiche `attente`, pas `ok` : **aucune extraction automatique de ces sites ni
+connexion Premium GitHub n'est affirmée**. Contrat et procédure :
+[`sources-prematch-remplacement.md`](sources-prematch-remplacement.md).
+
 ## Format de la branche `donnees-externes`
 
 ```

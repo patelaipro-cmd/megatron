@@ -4,6 +4,11 @@
 coefficient, aucun ordre de pari, aucun changement dans `syndicate.niveaux` ou dans
 `memoire/`. Le protocole expérimental précède toute évaluation d'un effet V+2.
 
+Depuis le 14/11, les cinq familles de fiches Web (Sports Mole, SportsGambler,
+PianetaFanta, 180Score, Xpertstats) disposent d'un importateur strict sans
+réseau (`megatron/sources_prematch.py`, commande `importer-sites`). Il ne remplace
+pas un accès HTML/Premium automatisé. Voir `docs/sources-prematch-remplacement.md`.
+
 ## Les données et leur statut
 
 | Famille | Utilisation | Limite vérifiée |
