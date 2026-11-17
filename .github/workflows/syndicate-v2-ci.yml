@@ -1,0 +1,21 @@
+name: Syndicate V2 checks
+on:
+  pull_request:
+    paths:
+      - 'syndicate_v2/**'
+      - '.github/workflows/syndicate-v2*.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile Python sources
+        run: python -m compileall -q syndicate_v2
+      - name: Run unit tests
+        run: python -m unittest discover -s syndicate_v2/tests -v
