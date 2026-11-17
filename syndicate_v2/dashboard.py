@@ -18,7 +18,7 @@ except (ValueError, OSError) as exc:
     st.stop()
 rows = [r for r in rows if isinstance(r.get("p_btts_oui"), (int, float))]
 rows.sort(key=lambda r: r["p_btts_oui"], reverse=True)
-st.metric("Rencontres analysées", len(rows))
+st.metric("Rencontres avec estimation", len(rows))\nst.caption("Couverture limitée aux compétitions accessibles par la clé API.")
 st.caption("Calculées le : " + str(payload.get("generated_at", "inconnu")))
 st.dataframe([{"Date UTC": r.get("date"), "Ligue": r.get("league"), "Domicile": r.get("home"), "Extérieur": r.get("away"), "BTTS OUI (%)": round(r["p_btts_oui"] * 100, 1), "Statut": r.get("status")} for r in rows[:10]], use_container_width=True, hide_index=True)
-st.info("SYNDICATE MAX/TTF exige validation humaine des H2H, compositions, absences et motivation.")
+if payload.get("errors"):\n    st.warning("Certaines compétitions n’ont pas pu être chargées : " + ", ".join(e.get("competition", "?") for e in payload["errors"]))\nif not rows:\n    st.warning("Aucune estimation BTTS exploitable aujourd’hui. Pas de sélection artificielle.")\nst.info("SYNDICATE MAX/TTF exige validation humaine des H2H, compositions, absences et motivation.")
