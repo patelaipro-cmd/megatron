@@ -1,0 +1,92 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Otávio Costa,337996,G,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Lucas Villalba,176810,CD-L,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Fabrício Bruno,236111,CD-R,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Gabriel Rojas,238734,LB,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,William,212077,RB,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Matheus Pereira,216098,AM,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Zé Lucas,402423,LM,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Lucas Romero,77577,RM,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Kaio Jorge,280978,F,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Gerson,210135,AM-L,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Marquinhos,297070,AM-R,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Matheus Henrique,268221,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Lucas Silva,108103,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Luciano Rodríguez,118688,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Wanderson,11632,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,João Costa,373806,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Matías Viña,254032,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Fagner,108342,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Vitor Hugo,404207,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Neyser Villareal,370814,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Gustavo Alves,410897,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Cássio,108347,G,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Cruzeiro,4-2-3-1,Leó Aragão,361949,G,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Carlos Miguel,276741,G,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Bruno Fuchs,257050,CD,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Alexander Barboza,222631,CD-L,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Luiz Benedetti,361457,CD-R,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Lucas Evangelista,186776,CM-L,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Marlon Freitas,234016,CM-R,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Andreas Pereira,210143,AM,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Arthur Gabriel,382965,LM,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Khellven,288669,RM,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Ramón Sosa,301653,CF-L,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Vitor Roque,329383,CF-R,titulaire,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Bruno Bertinato,225541,G,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Emiliano Martínez,109962,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Fabiano,361658,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Marcelo Lomba,201622,G,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Felipe Anderson,152812,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Erick Machado,402695,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Jhon Arias,239566,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Luis Felipe,402701,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Larson,387989,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,José Manuel López,311743,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841314,bra.1,BRA,2026-11-18T23:30:00+00:00,Cruzeiro,Palmeiras,Palmeiras,3-5-2,Agustín Giay,315619,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Agustín Rossi,215388,G,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Alex Sandro,125514,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Guillermo Varela,188368,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Léo Pereira,145405,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Léo Ortiz,252316,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Giorgian de Arrascaeta,179767,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Jorginho,165778,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Samuel Lino,253937,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Jorge Carrascal,208700,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Erick Pulgar,202533,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Pedro,235017,F,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Saúl Ñíguez,172269,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Vitão,254145,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Lucas Paquetá,234715,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Luiz Araújo,234765,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Ayrton Lucas,203077,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Emerson Royal,246844,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Bruno Henrique,201683,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Joaquin Freitas,414769,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Gonzalo Plata,277352,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Evertton,334752,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Andrew,278802,G,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Flamengo,4-2-3-1,Danilo,170369,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Mycael,322655,G,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Lucas Esquivel,309499,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Gastón Benavídez,287688,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Juan Felipe Aguirre,270242,D,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Juan Portilla,94976,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Jádson,173351,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Bruno Zapelli,296574,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Kerwin Vargas,340596,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Filipinho,315789,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Gilberto,198761,M,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Stiven Mendoza,197049,F,titulaire,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Santos,153754,G,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Jorge Rivaldo,378910,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Leonardo Derik,338881,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,João Cruz,361359,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Renan,315283,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Léo,200660,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Eduardo,361357,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Leozinho,380327,F,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Gilberto Junior,361454,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Chiqueti,361383,M,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Bruno Baldini,400904,D,remplacant,espn
+2026-11-18T23:26:30+00:00,401841313,bra.1,BRA,2026-11-18T23:30:00+00:00,Flamengo,Athletico-PR,Athletico Paranaense,3-4-2-1,Diogo Riquelme,382858,M,remplacant,espn
