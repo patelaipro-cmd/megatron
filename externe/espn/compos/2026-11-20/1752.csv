@@ -1,0 +1,81 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Jesper Hansen,99920,G,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Colin Rösler,279135,CD,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Eric Kahl,296461,CD-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Tobias Henriksen,274979,CD-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Kristian Malt Arnstad,307481,CM-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Magnus Knudsen,287274,CM-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Frederik Emmery,384470,LM,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Jacob Andersen,214373,RM,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Stefen Tchamche,403062,F,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Callum McCowatt,228279,CF-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Tobias Bech,288813,CF-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Mads Hedenstad Christiansen,257639,G,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Luka Callo,383942,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,James Bogere,398701,F,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Sebastian Jorgensen,290034,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Rasmus Carstensen,290035,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Daniel Grétarsson,238084,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Markus Solbakken,290107,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Gift Links,265366,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,AGF,3-4-2-1,Mikkel Anderson,250697,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Jonathan Aegidius,309640,G,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Arttu Hoskonen,289723,CD-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Mikkel Fischer,358514,CD-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Renzo Tytens,343604,LB,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Oskar Buur,229058,RB,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Zidan Sertdemir,322760,CM-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Lauge Sandgrav,312022,CM-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Simon Colyn,272726,LM,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Gustav Fraulo,359287,RM,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Isak Thorvaldsson,295807,CF-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Frederik Gytkjaer,238404,CF-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Nemanja Nedic,258574,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,William Steindorsson,372841,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Cornelius Allen,3108091,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Sanders Ngabo,343960,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Jens Jakob Thomasen,218707,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Davíd Aronsson,387976,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Oliver Højer,384302,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Daníel Kristjánsson,364652,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401874492,den.1,DEN,2026-11-20T18:00:00+00:00,AGF,Lyngby Boldklub,Lyngby Boldklub,4-4-2,Diego Kochen,368359,G,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Mads Myklebust,376500,G,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Birk Risa,255259,CD-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Eirik Haugan,205140,CD-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Fredrik Dahl,359186,LB,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Martin Linnes,146381,RB,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Sondre Granaas,379152,AM,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Daniel Daga,362269,LM,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Mats Daehli,182347,RM,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Kristian Lonebu,415427,F,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Sander Kilen,361822,AM-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Caleb Sery,280651,AM-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Eirik Hestad,179157,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Sivert Hansen,416561,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Emil Breivik,280801,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Halldor Stenevik,240684,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Niklas Odegard,325047,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Jalal Abdulai,364995,F,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Oskar Spiten-Nysæter,360409,F,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Mathias Løvik,323788,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Molde,4-2-3-1,Peder Hoel Lervik,320181,G,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Nikita Haykin,217655,G,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Jostein Gundersen,218466,CD-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Odin Bjørtuft,269732,CD-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Isak Dybvik Määttä,302019,LB,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Fredrik Sjøvold,333755,RB,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Sondre Brunstad Fet,208353,CM-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Patrick Berg,205924,CM-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Jens Petter Hauge,235789,LM,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Sondre Auklend,303740,RM,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Ola Brynhildsen,255311,CF-L,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Ole Didrik Blomberg,307798,CF-R,titulaire,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Haitam Aleesami,176883,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Villads Nielsen,387380,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Andreas Helmersen,218561,F,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Fredrik André Bjørkan,238088,D,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Joshua Kitolano,268460,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Julian Faye Lund,227625,G,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Joel Mvuka,324932,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Magnus Riisnaes,319066,M,remplacant,espn
+2026-11-20T17:52:28+00:00,401843486,nor.1,NOR,2026-11-20T18:00:00+00:00,Molde,Bodo/Glimt,Bodo/Glimt,4-4-2,Ulrik Saltnes,203670,M,remplacant,espn
