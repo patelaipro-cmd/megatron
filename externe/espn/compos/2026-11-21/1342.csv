@@ -1,0 +1,607 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Frederik Ronnow,165424,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Zeno Van Den Bosch,314184,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Derrick Köhn,263202,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Marvin Friedrich,202642,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Janik Haberer,170604,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Rani Khedira,159152,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Michel Aebischer,245623,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Kastriot Imeri,289527,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,András Schäfer,284702,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Andrej Ilić,341441,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Oliver Burke,212478,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Mekhi Anthony Gray,3113344,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Aljoscha Kemlein,349922,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Jeong Woo-Yeong,276323,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Tom Rothe,324269,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Linus Güther,421735,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Leopold Querfeld,330455,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Tim Skarke,220796,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Christopher Trimmel,146485,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,1. FC Union Berlin,4-1-3-2,Matheo Raab,238706,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Maarten Vandevoordt,277377,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,David Raum,249548,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Ridle Baku,258963,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Willi Orbán,162162,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Castello Lukeba,319100,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Christoph Baumgartner,274897,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Ezechiel Banzuzi,330233,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Neil El Aynaoui,323807,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Rômulo,324766,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Brajan Gruda,357683,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Antonio Nusa,319368,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Tidiam Gomis,366911,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Maxime Estève,318316,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Benjamin Henrichs,220711,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Nicolas Seiwald,305956,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Ørjan Nyland,193610,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Christopher Nkunku,222176,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Andrija Maksimovic,372232,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Max Finkgrafe,368003,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884732,ger.1,D1,2026-11-21T14:30:00+00:00,1. FC Union Berlin,RB Leipzig,RB Leipzig,4-3-3,Rocco Reitz,307364,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Mark Flekken,177821,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Edmond Tapsoba,257287,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Jarell Quansah,298524,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Loïc Badé,300410,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Miguel Gutiérrez,290044,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Aleix García,219294,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Malik Tillman,301416,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Afonso Moreira,361258,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Nathan Tella,263134,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Ezequiel Fernández,364080,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Patrik Schick,212330,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Janis Blaswich,161825,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Moussa Diaby,270670,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Montrell Culbreath,408703,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Tim Oermann,346376,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Robert Andrich,180998,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Christian Kofane,398709,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Ibrahim Maza,361212,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Facundo Medina,249663,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,Bayer Leverkusen,4-2-3-1,Jonas Hofmann,174617,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Nahuel Nicolas Noll,319415,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Jano Horst,366370,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Mattes Hansen,364892,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Tjark Scheller,371806,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Gabriel Vidovic,323936,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Raphael Obermair,251639,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Tom Baack,220823,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Ruben Müller,406466,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Laurin Curda,364593,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Santiago Castaneda,338837,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Stefano Marino,332543,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Steffen Tigges,231764,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Deniz Zeitler,386466,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Rayan Philippe,291849,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Jonah Sticker,366828,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Laurin Ulrich,345394,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Marvin Pieringer,312389,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Markus Schubert,225579,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Clemens Lippmann,3098337,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884735,ger.1,D1,2026-11-21T14:30:00+00:00,Bayer Leverkusen,SC Paderborn 07,SC Paderborn 07,3-4-2-1,Felix Götze,245940,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Daniel Batz,149297,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Fabio Chiarodia,323061,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Philipp Sander,275805,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Kevin Diks,206863,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Robin Hack,258876,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Florian Neuhaus,238527,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Wael Mohya,408539,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Joe Scally,272135,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Jens Castrop,304793,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Zento Uno,341707,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Shuto Machino,271352,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,David Herold,345873,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Nicolas Kühn,260262,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Franck Honorat,196029,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Moritz Nicolas,238536,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Kevin Stöger,175006,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Mathieu Nguefack,403898,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Isac Lidberg,221690,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Yukhym Konoplia,276082,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Mönchengladbach,3-4-2-1,Fritz Fleck,415726,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Gregor Kobel,238544,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Nico Schlotterbeck,286828,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Ramy Bensebaini,220703,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Kouakou Gadou,371500,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Jobe Bellingham,324820,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Felix Nmecha,281122,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Daniel Svensson,310709,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Julian Ryerson,222991,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Fábio Silva,291629,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Maximilian Beier,290639,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Konstantinos Karetsas,357801,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Marcel Sabitzer,173907,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Waldemar Anton,220714,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Kauã Prates,399455,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Enzo De Pina Duarte Dos Santos,401450,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Filippo Mané,387437,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Joey Veerman,240912,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Mathis Albert,403781,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Alexander Meyer,178380,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884731,ger.1,D1,2026-11-21T14:30:00+00:00,Borussia Mönchengladbach,Borussia Dortmund,Borussia Dortmund,3-4-2-1,Ethan Nwaneri,349733,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Noah Atubolu,321064,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Lilian Brassier,290141,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Robin Koch,208285,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Keita Kosugi,371596,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Ansgar Knauff,305555,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Noël Aséko,352179,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Raphael Onyedika,320882,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Farès Chaïbi,337306,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Ritsu Doan,219627,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Jonathan Burkardt,274887,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Younes Ebnoutalib,359793,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Niko Iličević,3109554,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Oscar Højlund,365997,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Mario Götze,143020,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Ayoube Amaimouni,416636,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Nnamdi Collins,305556,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Jeremiaha Maluze,406374,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Kauã Santos,338950,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Timothy Chandler,128521,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,Eintracht Frankfurt,4-4-2,Malik Pimpong,418030,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Oliver Baumann,138213,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Bernardo,218980,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Koki Machida,238025,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Ozan Kabak,266565,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Vladimír Coufal,191209,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Andrej Kramaric,139520,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Wouter Burger,274860,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Alexander Prass,320939,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Leon Avdullahu,362590,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Fisnik Asllani,331057,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Tim Lemperle,303792,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Mats Rots,359744,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Adam Hlozek,292169,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Natnael Abraha,403802,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Max Moerstedt,372035,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Luca Philipp,304795,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Adam Daghim,338854,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Cajetan Lenz,407682,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Bambasé Conté,336355,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884734,ger.1,D1,2026-11-21T14:30:00+00:00,Eintracht Frankfurt,TSG Hoffenheim,TSG Hoffenheim,4-4-2,Patrick Wimmer,300095,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Nicolas Kristof,324021,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Maximilian Rohr,190167,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Lukas Finn Pinckert,341826,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Lasse Günther,321061,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Jan Gyamerah,188031,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Lukasz Poreba,326499,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Lukas Petkov,310692,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Felix Keidel,340739,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Francis-Ikechukwu Onyeka,379180,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Cole Campbell,379024,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,David Mokwa,398004,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Raif Adam,417336,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Amara Conde,222614,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Frederik Schmahl,386454,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Florian Le Joncour,215035,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Maurice Krattenmacher,358496,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Tim Boss,275817,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Noel Futkeu,306991,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Tom Zimmerschied,364790,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SV Elversberg,4-2-3-1,Luca Sirch,323882,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Mio Backhaus,338852,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Matthias Ginter,170209,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Jordy Makengo,367558,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Philipp Treu,364596,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Philipp Lienhart,219316,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Maximilian Eggestein,214203,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Derry Scherhant,346619,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Niklas Beste,231190,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Yannick Engelhardt,337079,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Lucas Höler,238525,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Igor Matanovic,310883,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Christian Günter,174618,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Yuito Suzuki,303031,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Lukas Kübler,171701,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Cyriaque Irié,390031,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Florian Müller,122292,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Vincenzo Grifo,179571,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Rihito Yamamoto,347980,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Max Rosenfelder,367557,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401884728,ger.1,D1,2026-11-21T14:30:00+00:00,SV Elversberg,SC Freiburg,SC Freiburg,4-2-3-1,Keisuke Goto,346208,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Alberto Dossena,252372,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Kevin Fustini,5334073,-,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Máximo Perrone,309241,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Robert Sánchez,108662,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Mattia Liberali,387723,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Tasos Douvikas,262071,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Ivan Smolcic,323273,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Yan Couto,297084,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Jean Butez,214740,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Matteo Papaccioli,411276,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Lucas Da Cunha,291285,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Edoardo Goldaniga,181060,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Marc-Oliver Kempf,175887,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Kaiki,317233,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Jacobo Ramón,380318,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Samuele Ricci,276822,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Trevoh Chalobah,227784,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Mauro Vigorito,115025,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Adrian Lahdo,380970,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Álex Valle,192146,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Nico Paz,337970,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Martin Baturina,311475,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Como,4-2-3-1,Luis Milla,264211,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Elia Caprile,278987,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Alessandro Deiola,186437,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Raphael Kofler,346596,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Zé Pedro,332684,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Adam Obert,322913,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Nicola Grandu,411232,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Jacopo Fazzini,333938,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Alessandro Romano,6729,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Daniel Maldini,290545,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Michel Adopo,272745,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Paul Mendy,418819,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Roberto Gagliardini,193977,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Yanis Massolin,345390,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Juan Rodríguez,361506,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,M'Bala Nzola,261173,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Boris Radunovic,224187,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Ivan Sulev,407932,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Yukinari Sugawara,265965,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Yael Trepy,407931,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Alessandro Sugamele,387844,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Kevin Carlos,304151,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Giuseppe Aurelio,303910,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Riyad Idrissi,387036,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Alieu Fadera,324705,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Riccardo Ciervo,307860,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401875056,ita.1,I1,2026-11-21T14:00:00+00:00,Como,Cagliari,Cagliari,4-2-3-1,Alen Sherri,306210,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Christos Mandas,265140,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Diogo Leite,258910,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Danilho Doekhi,233622,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Alfonso Pedraza,218439,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Romano Floriani,330041,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Reda Belahyane,345323,CM,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Kenneth Taylor,282228,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Davide Frattesi,250850,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Andrea Pinamonti,239086,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Tijjani Noslin,323113,LF,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Gustav Isaksen,291550,RF,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Edoardo Motta,367320,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Oliver Provstgaard,333311,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Fisayo Dele-Bashiru,295515,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Manuel Lazzari,241430,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Adrian Przyborek,364224,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Matteo Cancellieri,308944,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Danilo Cataldi,178627,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Nicolò Rovella,285969,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Filipe Bordon,359380,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Albert Gudmundsson,224044,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Federico Serra,399454,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Ricardo Bordon,3127847,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Luca Pellegrini,251144,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Valerio Farcomeni,411164,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lazio,4-3-3,Davide Renzetti,359647,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Wladimiro Falcone,177812,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Tiago Gabriel,379865,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Jamil Siebert,307391,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Antonino Gallo,277441,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Danilo Veiga,344844,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Mohamed Kaba,223292,CM,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Youssef Maleh,241405,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Lassana Coulibaly,223947,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Willem Geubbels,259744,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Amar Ahmed,330550,LF,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Konan N’Dri,286582,RF,titulaire,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Marco Bleve,192570,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Elijah Scott,399632,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Oumar Ngom,334793,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Nikola Stulic,304512,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Corrie Ndaba,287673,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Francisco Esteban Sánchez,3123406,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Kialonda Gaspar,318604,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Olaf Gorter,374812,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Joel Monteiro,307893,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Alexandru Borbei,308318,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Ali Dembélé,356576,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Gaby Jean,346283,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Medon Berisha,341756,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Omri Gandelman,326642,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401874981,ita.1,I1,2026-11-21T14:00:00+00:00,Lazio,Lecce,Lecce,4-3-3,Sadik Fofana,324661,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Samuele Vitale,307715,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Marcos Curado,206307,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Nicholas Rizzo,291037,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Lorenzo Venuti,199726,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Don Bolsius,245920,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Giovanni Corradini,293415,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Samuele Damiani,236040,AM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Abdoul Guiebre,308060,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Andrea Silipo,345161,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Simone D'Uffizi,365694,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Matteo Brunori Sandri,224516,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Rok Brzan,321983,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Federico Gattoni,276026,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Luca Lo Scalzo,357411,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Andrea Oliveri,329737,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Gabriele Gori,262479,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Tommaso Milanese,309581,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Giacomo De Pieri,399017,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Manuel Nicoletti,214202,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Mohammed Amine Chakir,3099476,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Sergiu Perciun,389461,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Matteo Ricci,165771,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Ascoli,3-5-2,Gian Marco Crespi,307058,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Riccardo Gagno,226114,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Niccolò Brighenti,170650,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Thomas Sandon,325048,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Giuseppe Cuomo,243160,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Alessandro Bellemo,192254,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Armand Rada,367359,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Filippo Alessio,332023,AM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Tommaso Corazza,367436,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Lorenzo Caferri,408747,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Silvio Merkaj,323155,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Gabriele Moncini,196085,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Filippo Costa,139990,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Raul Talarico,346961,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Marco Carraro,255917,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Loris Zonta,232263,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Mattia Valoti,153327,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Andrea Papetti,303576,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Nicola Rauti,291212,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Claudio Morra,219398,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Elia Tantalocchi,346384,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Maxime Leverbe,260486,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Matteo Vescovi,408744,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899548,ita.2,I2,2026-11-21T14:00:00+00:00,Ascoli,Vicenza,Vicenza,3-5-2,Riccardo Marchizza,227272,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Semuel Pizzignacco,270186,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Filippo Oliana,387879,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Lorenzo Romani,403083,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Fabio Ruggeri,359648,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Matthias Braunöder,305676,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Gabriele Parlanti,388551,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Nicholas Schiavi,205331,AM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Jonas Rouhi,355999,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Niccolò Belloni,181286,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Tommaso Rubino,394995,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Fabio Abiuso,346625,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Yanis Khafi,411462,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Giacomo Marconi,325173,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Giovanni Garofani,310963,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Nicolò Cudrig,297215,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Colin Dagba,276335,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Moustapha Cissé,337127,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Mattia Finotto,208525,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Tommaso Macchioni,415197,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Filippo Reale,379646,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Tommaso Guercio,355412,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Jacopo Martini,366914,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Carrarese,3-5-2,Luka Topalovic,364026,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Federico Del Frate,303355,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Riccardo Turicchia,340703,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Ivan Marconi,130732,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Nicolas Previtali,265782,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Bernat Guiu,289069,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Andrea Franzoni,406445,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Niccolò Squizzato,297217,AM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Stefano Di Mario,366988,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Francesco Mezzoni,250879,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Mattia Tirelli,418603,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Francesco Forte,185734,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Mattia Valori,3127970,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Mattia Motolese,333342,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Leonardo Benedetti,261400,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Luca Vignali,224414,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Luigi Cuppone,253680,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Giacomo Corona,346549,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Edoardo Torrielli,3127968,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Riccardo Brighenti,3114934,-,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Francesco D'Alterio,5327301,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Tommaso Annoni,3127967,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Lucas Felippe Martello Nascimento,286422,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899546,ita.2,I2,2026-11-21T14:00:00+00:00,Carrarese,Virtus Entella,Virtus Entella,3-5-2,Gabriele Costa,366985,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Leandro Chichizola,129881,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Davide Adorni,260178,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Bryant Nieling,346826,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Francesco Folino,386293,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Alessandro Bianco,251776,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Simone Santoro,263700,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Gastón Brugman,156228,AM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Paulo Azzi,198799,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Antonio Imputato,357340,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Giuseppe Ambrosino,331279,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Andrea Belotti,170755,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Leonardo Consiglio,3101691,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Martino Odero,3101690,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Luca Bacchin,3100684,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Brando Fontana,5331820,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Kleis Bozhanaj,343973,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Daniele Montevago,336352,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Folly Nador,330422,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Giacomo Olzer,303814,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Abdullah Laidani,324815,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Modena,3-5-2,Diego Ronco,368299,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Ante Vukovic,362420,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Marco Bellich,263790,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Davide Bettella,275151,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Terrence Douglas,287173,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Tommaso Maggioni,323747,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Federico Artioli,317302,CM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Christian Pierobon,304075,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Nermin Karic,308063,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Antonio Di Nardo,89286,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Giuseppe Sibilli,307359,LF,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Fabio Maistro,250954,RF,titulaire,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Davide Buglio,255856,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Francesco Gallea Beidi,3107714,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Daniel Perin,3099491,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Pietro Boer,307198,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Luigi Caccavo,308212,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Saná Fernandes,369003,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Leonardo Candellone,235809,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Matteo Baldi,323202,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Manuel Ricciardi,323135,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Thomas Battistella,286990,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Justin Kumi,333380,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899542,ita.2,I2,2026-11-21T14:00:00+00:00,Modena,Juve Stabia,Juve Stabia,4-3-3,Kevin Piscopo,291565,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Andrey Krastev,400246,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Filippo Delli Carri,250672,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Stefan Gartenmann,221715,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Luca Ravanelli,219216,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Kevin Mbabu,176497,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Lorenzo Insigne,139028,CM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Oliver Abildgaard,223561,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Liam Henderson,107568,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Gennaro Tutino,194752,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Tjas Begic,326761,LF,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Lorenzo Mezzotero,3135643,RF,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Yann Karamoh,225555,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Stefan Amarandei,422169,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Samuele Massolo,210107,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Karim Diop,409636,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Peter Vindahl Jensen,238403,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Fabio Depaoli,233409,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Francesco Conti,150713,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Bjorn Meijer,304618,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Antoine Makoumbou,269143,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Alex Ferrari,186302,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Manuel Cicconi,231847,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Sampdoria,4-3-3,Tobias Lauritsen,223138,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Gianmarco Vannucchi,180714,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Pietro Saio,310796,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Stefano Scognamillo,165468,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Mattia Maita,153307,DM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Pietro Beruatto,276253,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Leonardo Sernicola,234425,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Christian Kouan,269096,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Antonis Siatounis,323150,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Luigi Cherubini,353352,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Davide Lamesta,308300,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Francesco Salvemini,222658,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Raffaele Romano,3099478,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,David Okereke,233087,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Mattia Mannini,372786,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Angelo Talia,325013,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Pier Luigi Simonetti,279953,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Antonio Prisco,333742,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Guglielmo Mignani,3099459,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Manuel Esposito,3099490,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Luca Caldirola,132063,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Simone Verdi,142164,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Christian Dalle Mura,297232,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899541,ita.2,I2,2026-11-21T14:00:00+00:00,Sampdoria,Benevento,Benevento,4-1-4-1,Marco Tumminello,227274,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Alessandro Plizzari,245632,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Andrea Giorgini,357410,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Elias Schrott,3128563,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Riccardo Stivanello,333671,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Simone Davi,210066,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Salvatore Molina,189796,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Simone Tronchin,307194,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Fabio Rispoli,377613,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Rares Burnete,325051,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Vasco Lopes,318629,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Okoro Obinna,340139,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Rok Vadjunec,3127350,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Federico Davi,386301,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Davide Veroli,353091,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Niklas Pyyhtia,322104,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Fabian Tait,277452,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Giacomo Stabile,366342,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Alessio Cragno,165768,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Mattia Pellini,416520,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Kenny Mixtur,365226,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Dhirar Brik,388707,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Sudtirol,5-4-1,Lorenzo Anghelè,387439,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Andrea Fulignati,180863,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Tommaso Barbieri,297783,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Giuseppe Pezzella,224249,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Federico Baschirotto,324225,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Sebastiano Luperto,192573,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Jari Vandeputte,197345,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Simone Lottici Tessadri,421697,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Morten Thorsby,202686,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Tommaso Berti,323983,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Michele Collocolo,277475,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Federico Bonazzoli,197062,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Milan Djuric,116477,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Simone Marsi,3144057,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Fellipe Jack,384367,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Federico Agazzi,340138,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Marco Nasti,340706,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Dachi Lordkipanidze,388553,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Yuri Rocchetti,369882,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Manuel De Luca,154423,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Marco Festa,222459,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Alberto Grassi,209869,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,Adin Licina,388139,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401899540,ita.2,I2,2026-11-21T14:00:00+00:00,Sudtirol,Cremonese,Cremonese,4-2-3-1,David Stuckler,386272,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Kristoffer Nordfeldt,133993,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Lars Bergquist,400371,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Charlie Pavey,353460,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Hervé Matthys,210823,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Fredrik Nissen,356382,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Martin Ellingsen,261249,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Axel Kouame,409815,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Dino Besirovic,237759,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Johan Hove,236162,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Lucas Assadi,297772,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Sixten Gustafsson,414367,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Kevin Filling,406318,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Abdihakim Ali,357135,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Stanley Wilson,369996,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Kalle Joelsson,218410,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Linus Carlstrand,343826,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Mads Thychosen,229692,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Linus Jareteg,384304,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Wilmer Olofsson,359755,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,AIK,4-2-3-1,Adrián Helm,409497,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Matvei Igonen,194803,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Ahmad Faqa,330244,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Samba Diatara,419952,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Daniel Sundgren,235489,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Nikolai Skuseth,390697,D,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Noel Milleskog,309271,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Bilal Hussein,264482,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Nahom Netabay,301374,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Gideon Yaw,418299,M,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Dijan Vukojevic,334867,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Robin Dzabic,396525,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Nasiru Moro,324395,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Jesús Hernández,392194,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Armann Taranis,304144,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Willie Jakobsson,286770,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Elias Barsoum,400141,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Ludvig Fritzson,253666,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842882,swe.1,SWE,2026-11-21T14:00:00+00:00,AIK,Degerfors IF,Degerfors IF,4-4-2,Karim Boutera,3124421,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Alexander Lundin,151931,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Axel Norén,306289,CD,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Ludvig Tidstrand,346501,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Abdullah Iqbal,356281,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Viktor Gustafson,303651,CM-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Jesper Gustavsson,192793,CM-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Martin Agnarsson,305080,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Villiam Granath,357140,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Jacob Bergstrom,293925,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Ali Youssef,282562,CF-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Jeppe Kjaer Jensen,305758,CF-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Romeo Leandersson,389637,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Måns Isaksson,399510,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Áki Debes Samuelsen,305836,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Sebastian Hansen,284209,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Tom Pettersson,172917,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Max Nielsen,416646,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Ludvig Svanberg,317238,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Teo Helge,419211,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Mjällby AIF,3-4-3,Olle Lindberg,403153,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Robin Olsen,178176,G,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Malte Palsson,404787,CD-L,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Stian Gregersen,188454,CD-R,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Busanello,301219,LB,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Jens Stryger Larsen,193186,RB,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Adrian Skogmar,364698,CM,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Jovan Milosavljevic,386844,LM,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Otto Rosengren,315679,RM,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Diego García,395376,F,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Mayckel Lahdo,304257,LF,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Anton Höög,411015,RF,titulaire,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Johan Dahlin,129289,G,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Daniel Gudjohnsen,360023,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Theodor Lundbergh,413450,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Noah Astrand John,360406,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Anders Christiansen,149538,M,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Bleon Kurtulus,381647,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Isaac Assibu,3102237,F,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Carl Amadeus Sundgren,3145857,D,remplacant,espn
+2026-11-21T13:42:24+00:00,401842886,swe.1,SWE,2026-11-21T14:00:00+00:00,Mjällby AIF,Malmö FF,Malmö FF,4-3-3,Sead Haksabanovic,218450,M,remplacant,espn

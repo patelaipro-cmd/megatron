@@ -1,19 +1,32 @@
 {
- "execution_le": "2026-11-21T07:19:04+00:00",
+ "execution_le": "2026-11-21T13:42:24+00:00",
  "sources": {
+  "sofascore": {
+   "statut": "erreur",
+   "erreur": "RuntimeError: HTTP 403 sur https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-11-21"
+  },
   "fpl": {
-   "lignes": 192,
-   "fichier": "inchange",
+   "lignes": 190,
+   "fichier": "fpl/2026-11-21/1342.csv",
    "statut": "ok"
+  },
+  "clubelo": {
+   "statut": "erreur",
+   "erreur": "HTTPError: HTTP Error 502: Bad Gateway"
+  },
+  "understat": {
+   "statut": "erreur",
+   "erreur": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   "apifootball": {
    "statut": "erreur",
    "erreur": "RuntimeError: API-Football /status : {'access': 'Your account is suspended, check on https://dashboard.api-football.com.'}"
   },
   "espn": {
-   "matchs_proches": 0,
-   "lignes": 0,
+   "matchs_proches": 14,
+   "lignes": 606,
    "erreurs_ligues": [],
+   "fichier": "espn/compos/2026-11-21/1342.csv",
    "statut": "ok"
   },
   "apify": {
