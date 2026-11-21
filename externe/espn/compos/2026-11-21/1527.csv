@@ -1,0 +1,232 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Samuel Giovane,297226,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Alejo Garnica,3118183,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Gabriele Alesi,380081,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Pietro Iemmello,139418,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Emanuele Pecorino,362189,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Franky Tchaouna,409872,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Bruno Verrengia,409112,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Marco D'Alessandro,132070,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Franck Tchaouna,409871,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Nicolò Postiglione,392575,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Ruggero Frosinini,367378,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Nicola Mosti,236039,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,N'Dri Koffi,327907,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Antonio Candela,250668,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Jacopo Petriccione,211773,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Mirko Pigliacelli,151665,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Gabriel Arditi,402967,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Marco Ruggero,288353,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Matias Antonini Lui,250576,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Nicoló Buso,279952,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Marco Imperiale,270267,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Emile Dorval,345860,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401899545,ita.2,I2,2026-11-21T16:15:00+00:00,Catanzaro,Palermo,Catanzaro,3-4-2-1,Christian Marietta,324139,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Yehvann Diouf,241029,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Nathan N'Goumou,282676,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Elye Wahi,311118,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Ali Abdi,265234,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Gauthier Hein,239905,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Xavier Junior Mandza Tsiendi,3117261,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Djibril Coulibaly,357425,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Youssouf Ndayishimiye,255192,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Morgan Sanson,176816,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Aboulaye Camara,3131927,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Hamza Koutoune,376344,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Niels Nkounkou,298030,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Teddy Boulhendi,310859,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Hicham Boudaoui,287078,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Jonathan Clauss,232089,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Alidu Seidu,305669,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Sofiane Diop,276995,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Djelan Morana,3135995,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Axel Witsel,164895,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Nice,3-4-2-1,Mohamed Amoura,315384,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Matvei Safonov,248699,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Nuno Mendes,290591,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Lucas Hernández,196200,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Illia Zabarnyi,304503,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Achraf Hakimi,240233,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Fabián Ruiz,214596,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Warren Zaïre-Emery,345581,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,João Neves,355061,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Maghnes Akliouche,329690,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Senny Mayulu,379088,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Désiré Doué,336388,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Ousmane Dembélé,229744,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Mika Godts,353363,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Lucas Beraldo,316128,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Ferran Torres,265869,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Marquinhos,159047,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Willian Pacho,287005,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Dro Fernández,403578,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Lucas Chevalier,288925,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401876398,fra.1,F1,2026-11-21T16:15:00+00:00,Nice,Paris Saint-Germain,Paris Saint-Germain,4-3-3,Vitinha,288897,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Gonzalo Crettaz,292223,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Ahmetcan Kaplan,306806,CD,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Deveron Fonville,335203,CD-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Gabi Brás,364642,CD-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Noé Lebreton,340685,CM-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Darko Nejasmic,276579,CM-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Mitchel Bakker,267573,LM,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Kevin Kers,363412,RM,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Bryan Linssen,122954,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Dusan Tadic,122575,CF-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Tjaronn Chery,116893,CF-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Dennis Geiger,221466,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Ayodele Thomas,380942,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Nikolas Polster,309090,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Joep Geneste,392584,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Kaj Sierhuis,250529,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Adam Tahaui,388585,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Clement Bischoff,372851,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Jamiro Monteiro,227441,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Tobias Storm,345556,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Isak Hansen-Aarøen,308227,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Willum Thór Willumsson,285471,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,NEC Nijmegen,3-4-2-1,Almugera Kabar,372034,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Matej Kovár,277313,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Armando Obispo,245918,CD-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Lutsharel Geertruida,264828,CD-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Filip Kostic,174496,LB,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Sergiño Dest,266291,RB,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Sven Mijnans,287279,AM,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Mauro Júnior,259136,LM,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Kodai Sano,341715,RM,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Guus Til,240965,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Ruben Van Bommel,340252,AM-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Ivan Perisic,103485,AM-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Ricardo Pepi,289120,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Noah Fernandez,386885,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Dennis Man,245805,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Tijn Smolenaars,343607,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Kiliann Sildillia,301279,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Ayoni Santos,405673,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Yarek Gasiorowski,364814,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Esmir Bajraktarevic,325410,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Nick Olij,190976,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Paul Wanner,333399,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Ryan Flamingo,304478,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401875541,ned.1,N1,2026-11-21T15:30:00+00:00,NEC Nijmegen,PSV Eindhoven,PSV Eindhoven,4-2-3-1,Sam Lammers,224042,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Tayfur Bingöl,261307,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Onur Öztonga,290462,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Anfernee Dijksteel,246924,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Onurcan Piri,187744,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Fati̇Hhan Demi̇R,5325903,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Bedirhan Yildiz,406842,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Mahamadou Susoho,365331,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Matej Maglica,324323,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Rigoberto Rivas,256895,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Muharrem Cinan,406835,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Ugur Kaan Yildiz,295169,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Berkan Kutlu,292252,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Serhat Öztasdelen,408090,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Gonçalo Santos Sousa,384295,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Emir Ortakaya,310848,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Metehan Altunbas,287207,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Ege Bilim,406849,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Daniel Agyei,142521,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Florian Ayé,223325,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Tobias Gulliksen,295863,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Kocaelispor,4-3-3,Makana Baku,269467,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Ederson,176948,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Nélson Semedo,222670,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Milan Skriniar,175195,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Munir Mercan,290511,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Kojo Peprah Oppong,357205,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Oguz Aydin,322813,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Mason Greenwood,276221,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Matteo Guendouzi,248676,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Irfan Can Kahveci,211923,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Ismail Yüksek,305629,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Romelu Lukaku,139437,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Ognjen Mimovic,380332,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Mert Müldür,266002,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Mert Yandas,261302,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Vedat Muriqi,240209,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Mert Günok,124880,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Kerem Aktürkoglu,306789,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,N'Golo Kanté,173556,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Bartug Elmaz,311984,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Yigit Demir,340186,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401888244,tur.1,T1,2026-11-21T16:00:00+00:00,Kocaelispor,Fenerbahce,Fenerbahce,4-2-3-1,Nene Dorgeles,329486,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Lukas Jungwirth,352661,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Alemão,338948,CD,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Andrés Andrade,189775,CD-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Xavier Mbuyamba,283026,CD-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Yvan Dibango,365165,LB,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Kasper Jørgensen,286853,RB,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Melayro Bogarde,290638,CM,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Sascha Horvath,193294,CM-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Robert Ljubicic,273480,CM-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Sasa Kalajdzic,259131,CF-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Moses Usor,340760,CF-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Tobias Schützenauer,224704,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Krystof Danek,306899,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Manoël Louis-Philippe Verhaeghe,3093829,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Alessandro Schöpf,203868,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Samuel Adeniran,318956,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Jonas Ilk,365962,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Christoph Lang,37442,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Amin Ibrahim,108977,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,LASK Linz,5-3-2,Art Smakaj,341760,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Ármin Pécsi,345673,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Benjamin Markus,321974,CD,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Habib Coulibaly,408234,CD-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Konstantin Schopp,393323,CD-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Magnus Dalpiaz,403804,LB,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Luca Pazourek,365288,RB,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Oliver Lukic,364943,CM,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Youba Diarra,274353,CM-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Nikolaus Feldhofer,3104201,CM-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Angelo Gattermayer,319397,CF-L,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Marco Hoffman,388097,CF-R,titulaire,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Lukas Spendlhofer,186199,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Tobias Kainz,152366,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Matthias Postl,365867,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Manuel Pfeifer,276179,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Luka Maric,190314,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Jonas Karner,386372,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Agustín Urrutia,383142,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Andrija Radulovic,304010,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881749,aut.1,AUT,2026-11-21T16:00:00+00:00,LASK Linz,TSV Hartberg,TSV Hartberg,5-3-2,Jed Drew,338744,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Salko Hamzic,334814,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Marco Boras,322607,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,David Kubatta,332840,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,David Gugganig,266262,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Matthäus Taferner,281387,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Moritz Oswald,330040,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Husein Balic,238302,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Moritz Wels,325610,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Michael Olakigbe,301231,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Marc Striednig,388065,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Nikolai Baden Frederiksen,260405,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Drew Murray,360132,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Nemanja Celic,267802,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Raphael Gschösser,408231,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Murat Satin,274920,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Thomas Goiginger,214633,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Lukas Hinterseer,157479,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,David Jaunegg,345284,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Thomas Sabitzer,289936,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,WSG Swarovski Tirol,3-4-2-1,Alexander Eckmayr,282365,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Domenik Schierl,214638,G,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Robin Voisine,340555,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Fabian Gmeiner,238908,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Danilo Soares,189538,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Matthias Maak,156565,D,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Lord Afrifa,3099565,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Seydou Diarra,3099561,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Albin Gashi,238298,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Dominik Weixelbraun,342103,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Dion Kacuri,330409,M,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Lenn Jastremski,327166,F,titulaire,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Pius Grabher,344000,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Precious Benjamin,404716,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Niklas Pertlwieser,338856,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Phillip Böhm,388190,G,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Anilson Dourado Santiago,307676,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Sacha Delaye,319434,M,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Lukas Ibertsberger,329460,D,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Alieu Conateh,3103098,F,remplacant,espn
+2026-11-21T15:27:22+00:00,401881744,aut.1,AUT,2026-11-21T16:00:00+00:00,WSG Swarovski Tirol,Austria Lustenau,Austria Lustenau,4-1-4-1,Antonio Verinac,409197,F,remplacant,espn
