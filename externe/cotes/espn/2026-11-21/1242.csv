@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-21T12:42:00+00:00,espn,DraftKings,courante,SP1,2026-11-21T13:00+00:00,Alavés,Deportivo,401882806,2.15,3.3,3.6,18.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261121,34f2202f4a7f3931821c57f787fc89aec091a31d43d4220675ae89f58d027c86,1X2
