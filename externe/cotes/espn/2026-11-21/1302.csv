@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-21T13:02:00+00:00,espn,DraftKings,courante,I1,2026-11-21T14:00+00:00,Como,Cagliari,401875056,1.2632,5.5,9.0,58.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261121,d041aeaf0f9bf34f964c6114ad6ee00a9f818dbaff31655be43e1708dc0ba5cd,1X2
+2026-11-21T13:02:00+00:00,espn,DraftKings,courante,I1,2026-11-21T14:00+00:00,Lazio,Lecce,401874981,1.4762,4.2,6.0,58.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261121,d041aeaf0f9bf34f964c6114ad6ee00a9f818dbaff31655be43e1708dc0ba5cd,1X2
