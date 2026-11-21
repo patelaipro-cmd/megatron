@@ -1,8 +1,8 @@
 {
  "apifootball": {
   "compos_faites": [],
-  "jour": "2026-11-20",
-  "requetes": 4
+  "jour": "2026-11-21",
+  "requetes": 1
  },
  "apifootball/blessures": {
   "empreinte": "a677ffdd6e78a961bd06a79411769ae0e4643107ed0c7c634f08027da1ac3ce2",
@@ -14,8 +14,6 @@
  },
  "espn": {
   "compos_faites": [
-   "401915386",
-   "401915387",
    "401915384",
    "401915307",
    "401915385",
@@ -217,7 +215,7 @@
    "401874492",
    "401843486"
   ],
-  "jour": "2026-11-20"
+  "jour": "2026-11-21"
  },
  "espn/compos": {
   "empreinte": "d6fa902c23fddc28559ce4ba6142660d22f6d59d72ac5c55a03c6756d10751fd",
