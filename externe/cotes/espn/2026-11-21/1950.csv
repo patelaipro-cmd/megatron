@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-21T19:50:00+00:00,espn,DraftKings,courante,SP1,2026-11-21T20:00+00:00,Real Madrid,Celta Vigo,401882798,1.1538,8.0,16.0,10.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261121,37cd254886a5b64c75618fc5be39902b8415c145176d6b8ae9673148eb2cfecc,1X2
