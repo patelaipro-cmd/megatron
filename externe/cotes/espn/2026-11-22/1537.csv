@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-22T15:37:00+00:00,espn,DraftKings,courante,E0,2026-11-22T16:30+00:00,Liverpool,Manchester United,401878755,1.7692,4.1,4.2,53.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261122,1bcfad95da844e944bd622b38af4d34889fea3ce7901780422d5ab8b91631464,1X2
+2026-11-22T15:37:00+00:00,espn,DraftKings,courante,F1,2026-11-22T16:15+00:00,Lorient,Stade Rennais,401876401,3.65,3.2,2.15,38.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261122,400197aafc84130fa343067d80cae2efb4b8bdf18af673a044a5ca441514affc,1X2
