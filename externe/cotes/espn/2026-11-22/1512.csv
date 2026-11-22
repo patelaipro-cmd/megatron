@@ -1,0 +1,3 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-22T15:12:00+00:00,espn,DraftKings,courante,F1,2026-11-22T16:15+00:00,Lorient,Stade Rennais,401876401,3.45,3.2,2.25,63.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261122,675500d045ea861ef76faa69e32afbcbd439a4157940bb6a979e7fa6483f6c98,1X2
+2026-11-22T15:12:00+00:00,espn,DraftKings,courante,SP1,2026-11-22T15:15+00:00,Racing Santander,Real Sociedad,401882800,3.2,3.95,2.05,3.0,T-5,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261122,6d0bb8e399c8936a7bde03a31e6012647360aa6470998b276388e7b058fb68ec,1X2
