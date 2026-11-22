@@ -1,0 +1,119 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Matthias Pieklak,369642,G,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Shawn Adewoye,277375,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Tristan Gooijer,336542,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Timothy Eyoma,261451,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Jason Van Duiven,346894,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Stredair Appuah,360228,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Tom Reyners,277378,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Sverre Nypan,334109,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Lucas Schoofs,240975,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Joel Pelupessy,179131,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Don-Angelo Konadu,386841,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Isaiah Dada-Mascoll,365336,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Nicolas Rommens,208428,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Rik Vercauteren,302927,G,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Jesper Tolinsson,298070,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Alexander Reumers,422223,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Niek Corthouts,422228,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Elijah Odede,405703,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Djordje Gordic,338303,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Lommel SK,4-2-3-1,Dries Wouters,225483,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Matthieu Epolo,319371,G,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Henry Lawrence,291538,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Gustav Julius Mortensen,319386,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Ibrahim Karamoko,283824,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Ibe Hautekiet,343978,D,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Rayan Touzghar,355977,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Ryan Fosso,345794,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Alexis Trouillet,303315,M,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Adnane Abid,353362,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Dennis Dargahi,272489,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Salieu Drammeh,416555,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Daan Dierckx,312386,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Bruny Nsimba,304839,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Lucas Pirard,207287,G,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Marco Ilaimaharitra,195565,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Sylvester Jasper,296633,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Dimitri Lavelée,248673,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Tobias Mohr,275821,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Laurens Goemaere,3098890,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401878934,bel.1,B1,2026-11-22T18:15:00+00:00,Lommel SK,Standard Liege,Standard Liege,4-3-3,Bernard Nguene,397592,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Emil Odegaard,218492,G,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Brage Skaret,303104,CD,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Daniel Schneider,402441,CD-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Hakon Rosten,331109,CD-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Robin Rasch,378940,CM-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Brage Tobiassen,3114367,CM-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Jonas Hjorth,378950,LM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Håkon Hoseth,378938,RM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Bjørn Martin Kristensen,348319,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Bilal Njie,266145,CF-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Rasmus Vinge,366394,CF-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Julian Gonstad,333793,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Sander Hansen Sjokvist,300088,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Håvar Jensen,378930,G,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Amin Nouri,129211,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Magnus Wolff Eikrem,141189,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Samuel Tochukwu,3131932,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Magnus Retsius Grødem,242000,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,David Hickson,379952,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,KFUM Oslo,3-4-3,Ola Visted,361738,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Simen Vidtun Nilsen,301564,G,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Neraysho Kasanwirjo,292393,CD-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Fredrik Knudsen,214177,CD-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Joachim Soltvedt,205582,LB,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Leo Cornic,282397,RB,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Niklas Jensen,314371,CM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Jonas Torsvik,356390,LM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Kristall Máni Ingason,305403,RM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Noah Holm,277007,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Julian Laegreid,403145,LF,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Ulrick Mathisen,274042,RF,titulaire,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Vetle Dragsnes,287240,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Matias Dyngeland,234970,G,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Brage Berg Haugen,3107528,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Andreas Kilhus Wilhelmsen,3132242,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Sondre Blumenfeldt Vindenes,3128979,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Torjus Østervold Mellingen,5334152,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843488,nor.1,NOR,2026-11-22T18:00:00+00:00,KFUM Oslo,SK Brann,SK Brann,4-3-3,Saevar Atli Magnússon,326637,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Jacob Pryts Larsen,12577,G,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Marius Lode,271086,CD-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Bjørn Inge Utvik,238109,CD-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Anders Hiim,368577,LB,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Peter Reinhardsen,356987,RB,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Victor Halvorsen,379133,CM-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Sander Christiansen,347328,CM-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Olaus Skarsem,235963,LM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Sondre Sörli,251612,RM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Camil Mmaee,324174,CF-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Daniel Karlsbakk,334112,CF-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Ljung Maximilian,3143901,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Luca Høyland,405551,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Andreas Nibe Hansen,349945,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Bop Guèye,408598,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Aimar Sher,287723,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Magnus Eidal,422126,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Michael Opoku,380656,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Noa Williams,418804,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Sarpsborg FK,4-4-2,Leander Oy,320877,G,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Pontus Dahlberg,235504,G,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Stian Kristiansen,368078,CD-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Sander Moen Foss,271767,CD-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Filip Ottosson,357025,DM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Yaw Paintsil,358392,LB,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Sturla Ottesen,308547,RB,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Gustav Nyheim,363001,CM-L,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Ylldren Ibrahimaj,284210,CM-R,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Vá,255219,LM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Gustav Nordh,312881,RM,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Camil Jebara,363494,F,titulaire,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Lars Ranger,267062,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Linus Alperud,416559,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Frederik Elkaer,304140,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Thomas Lehne Olsen,221124,F,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Henrik Melland,333776,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Stefan Hagerup,234973,G,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Eric Kitolano,223137,M,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Ruben Gabrielsen,133099,D,remplacant,espn
+2026-11-22T17:52:22+00:00,401843484,nor.1,NOR,2026-11-22T18:15:00+00:00,Sarpsborg FK,Lillestrom,Lillestrom,4-1-4-1,Kevin Martin Krygard,236589,M,remplacant,espn
