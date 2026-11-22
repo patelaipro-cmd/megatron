@@ -1,0 +1,43 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Ertugrul Taskiran,153939,G,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Orhan Ovacikli,203903,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Nihad Mujakic,257942,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Guram Giorbelidze,305852,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Amar Gerxhaliu,347624,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Elisha Owusu,266057,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Gyrano Kerk,199663,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Mustafa Yumlu,152836,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Martín Rodríguez,160974,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Brandon Baiye,276264,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Ibrahim Diabate,308726,F,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Matija Orbanic,290282,G,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Festy Ebosele,290106,D,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Eren Tozlu,180758,F,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Mustafa Fettahoglu,308833,F,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Sefa Akgün,266572,M,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Nariman Akhundzade,346634,F,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Miguel Cardoso,214311,M,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Yakup Kırtay,3124162,D,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Cengizhan Bayrak,307195,D,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Erzurum BB,4-1-4-1,Lawrence Agyekum,334129,M,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Arda Ozcimen,284251,G,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Malcom Bokele,319440,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Noah Sonko Sundberg,195086,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Taha Altikardes,330711,D,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Richard Akonnor,355150,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Alexis Antunes,290184,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Novatus Miroshi,320217,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Arda Okan Kurtulan,325022,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Rhaldney,303072,M,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,André Henrique,361901,F,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Juan,297074,F,titulaire,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Santos,285141,D,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Alex Matos,335913,M,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Ege Yildirim,387319,D,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Mehmet Ozturk,266196,G,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Sinclair Armstrong,330006,F,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Faustino Anjorin,282642,M,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Efkan Bekiroglu,271737,M,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Turaç Böke,387299,F,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Janderson,358165,F,remplacant,espn
+2026-11-22T09:56:18+00:00,401888243,tur.1,T1,2026-11-22T10:30:00+00:00,Erzurum BB,Goztepe,Goztepe,3-4-1-2,Gökdeniz Bayrakdar,290465,F,remplacant,espn
