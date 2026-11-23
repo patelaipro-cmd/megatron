@@ -23,4 +23,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: h2h-results
-          path: h2h-results.json
+          path: |
+            h2h-results.json
+            h2h-coverage.csv
