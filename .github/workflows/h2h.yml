@@ -1,0 +1,26 @@
+name: Recuperation H2H
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/h2h-retrieval-20261123]
+    paths:
+      - scripts/recuperer_h2h.py
+      - data/fixtures_h2h_2026-11-23.csv
+      - .github/workflows/h2h.yml
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Extraire les H2H
+        run: python scripts/recuperer_h2h.py --fixtures data/fixtures_h2h_2026-11-23.csv --output h2h-results.json
+      - name: Publier les resultats
+        uses: actions/upload-artifact@v4
+        with:
+          name: h2h-results
+          path: h2h-results.json
