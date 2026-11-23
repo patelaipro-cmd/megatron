@@ -67,6 +67,7 @@ def main():
     parser.add_argument("--output", default="h2h-results.json")
     parser.add_argument("--sources", nargs="+", default=DEFAULT_SOURCES)
     parser.add_argument("--aliases", default="data/noms_equipes.json")
+    parser.add_argument("--coverage-output", default="h2h-coverage.csv")
     args = parser.parse_args()
     groups = aliases(args.aliases)
     records = load(args.sources)
@@ -82,7 +83,17 @@ def main():
                                h2h=matches, count=len(matches),
                                status="COMPLETE" if len(matches) == 3 else "DATA LIMITED"))
     Path(args.output).write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"{len(output)} fixtures, {sum(x['count'] for x in output)} H2H found")
+    with open(args.coverage_output, "w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=["home", "away", "fixture_date", "count", "missing", "status"])
+        writer.writeheader()
+        for entry in output:
+            writer.writerow({
+                "home": entry["home"], "away": entry["away"],
+                "fixture_date": entry["fixture_date"], "count": entry["count"],
+                "missing": 3 - entry["count"], "status": entry["status"],
+            })
+    print(f"{len(output)} fixtures, {sum(x['count'] for x in output)} H2H found; "
+          f"{sum(3-x['count'] for x in output)} missing")
 
 if __name__ == "__main__":
     main()
