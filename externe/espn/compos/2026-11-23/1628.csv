@@ -1,0 +1,43 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Muhammed Sengezer,241800,G,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Jerome Opoku,261505,CD-L,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Emin Bayram,299391,CD-R,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Saba Kharebashvili,387157,LB,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Michal Karbownik,305864,RB,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Eldor Shomurodov,216937,AM,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Jakub Kaluzinski,341702,LM,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Olivier Kemen,212149,RM,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Davie Selke,196032,F,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Ivan Brnic,306611,AM-L,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Andreas Skov Olsen,259707,AM-R,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Edin Visca,154647,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Onur Ergün,305571,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Onur Bulut,173335,D,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Bertug Yildirim,324813,F,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Umut Günes,266576,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Umut Bozok,252159,F,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Omer Sahiner,193147,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Ömer Doğan,5334298,-,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Deniz Dilmen,307274,G,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Istanbul Basaksehir,4-2-3-1,Berkay Özcan,241168,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Erhan Erentürk,330710,G,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Hrvoje Smolcic,292170,CD-L,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Çaglar Söyüncü,230757,CD-R,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Ylber Ramadani,237455,DM,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Andrei Borza,335861,LB,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Alexandre Penetra,306510,RB,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Mohammed Diomande,303049,CM-L,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Markus Karlsbakk,259179,CM-R,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Alexandros Kyziridis,298350,LM,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Goktan Gurpuz,306932,RM,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Jesús Ramírez,82009,F,titulaire,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Emircan Gürlük,364422,F,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Cemali Sertel,287209,D,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Ahmed Ildiz,249073,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Atakan Akkaynak,231175,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Marcos Felipe,191997,G,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Fredy,205323,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Ermin Mahmic,414676,M,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Huseyin Bulut,266015,D,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Serdar Saatci,308739,D,remplacant,espn
+2026-11-23T16:28:50+00:00,401888370,tur.1,T1,2026-11-23T17:00:00+00:00,Istanbul Basaksehir,Çorum FK,Çorum FK,4-1-4-1,Youssoufa Moukoko,305554,F,remplacant,espn
