@@ -20,9 +20,14 @@ class TestH2HReadonly(unittest.TestCase):
             r = lookup(path,"Alpha","Beta","2026-11-23T18:00:00+01:00","2026-11-21T10:00:00+01:00")
             self.assertEqual(r["count"],2)
             self.assertEqual(r["status"],"DATA LIMITED")
+            self.assertEqual(r["verification_status"], "UNVERIFIED")
+            self.assertFalse(r["verified"])
             self.assertFalse(r["probability_adjustment"])
             self.assertEqual(lookup(path,"Other","Beta","2026-11-23","2026-11-22")["count"],0)
-            self.assertEqual(lookup(path,"Alpha","Beta","2026-11-23","2026-11-23")["count"],3)
+            complete = lookup(path,"Alpha","Beta","2026-11-23","2026-11-23")
+            self.assertEqual(complete["count"],3)
+            self.assertEqual(complete["status"], "COMPLETE")
+            self.assertFalse(complete["verified"])
 
 if __name__ == "__main__":
     unittest.main()
