@@ -132,6 +132,22 @@ class TestNiveaux(unittest.TestCase):
 
 
 class TestFicheEtDecision(Base):
+    def test_h2h_metadata_does_not_change_v1_decision(self):
+        at = self.ko - timedelta(hours=2)
+        baseline = self.evaluer(at)
+        h2h_path = Path(self.tmp.name) / "h2h.csv"
+        with h2h_path.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=["date","match","h2h_1","h2h_2","h2h_3","h2h_count","status"])
+            writer.writeheader()
+            writer.writerow({"date":self.ko.date().isoformat(),"match":f"{self.home} - {self.away}",
+                             "h2h_1":"2020-01-01 | Alpha FC 1-0 Zeta Rovers",
+                             "h2h_2":"","h2h_3":"","h2h_count":1,"status":"DATA LIMITED"})
+        enriched = self.evaluer(at, h2h_csv=h2h_path)
+        self.assertEqual(baseline["niveaux"], enriched["niveaux"])
+        self.assertEqual(baseline["decision"], enriched["decision"])
+        self.assertEqual(enriched["h2h_external"]["status"], "DATA LIMITED")
+        self.assertFalse(enriched["h2h_external"]["probability_adjustment"])
+
     def test_fiche_huit_rubriques_sans_fuite(self):
         at = self.ko - timedelta(hours=3)
         f = wininvest.fiche(systeme.DIVISION, self.home, self.away, self.ko, at=at, history=self.history)
