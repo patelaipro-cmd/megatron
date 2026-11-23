@@ -6,6 +6,7 @@ on:
     paths:
       - scripts/recuperer_h2h.py
       - data/fixtures_h2h_2026-11-23.csv
+      - data/h2h_verifies_2026-11-23.csv
       - .github/workflows/h2h.yml
 jobs:
   extract:
