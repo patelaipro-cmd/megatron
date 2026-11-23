@@ -17,7 +17,7 @@ from __future__ import annotations
 from datetime import datetime
 from pathlib import Path
 
-from . import angles_morts, contexte_favori, controle_v2plus, marches, marges, wininvest
+from . import angles_morts, contexte_favori, controle_v2plus, marches, marges, wininvest, h2h_readonly
 from .agents import poisson_1x2
 from .models import calibrer_1x2
 from .store import now_utc, parse_dt
@@ -105,7 +105,7 @@ def decider(n: dict, fiche: dict, contexte: dict | None, moment: str | None = No
 def evaluer(division: str, home: str, away: str, kickoff: str | datetime, *, at: str | datetime | None = None,
             history=None, dossier_externe: Path | None = None, contexte: dict | None = None,
             cotes: list[dict] | None = None, absents_declares: dict | None = None, moment: str | None = None,
-            signaux_v2plus: list[dict] | None = None) -> dict:
+            signaux_v2plus: list[dict] | None = None, h2h_csv: Path | None = None) -> dict:
     at_dt = parse_dt(at or now_utc())
     f = wininvest.fiche(division, home, away, kickoff, at=at_dt, history=history, dossier_externe=dossier_externe,
                         cotes=cotes, absents_declares=absents_declares)
@@ -124,7 +124,8 @@ def evaluer(division: str, home: str, away: str, kickoff: str | datetime, *, at:
     rapport = contexte_favori.verifier(contexte, at=at_dt) if contexte is not None else None
     if rapport is not None and rapport["ok"] and (contexte.get("home"), contexte.get("away")) != (home, away):
         rapport = {**rapport, "ok": False, "erreurs": rapport["erreurs"] + ["grille d'un autre match"]}
-    return {"version": VERSION, "match": {"division": division, "domicile": home, "exterieur": away,
+    h2h_external = h2h_readonly.lookup(h2h_csv, home, away, parse_dt(kickoff).isoformat(), at_dt.isoformat()) if h2h_csv is not None else None
+    return {"h2h_external": h2h_external, "version": VERSION, "match": {"division": division, "domicile": home, "exterieur": away,
                                           "coup_envoi": parse_dt(kickoff).isoformat()},
             "analyse_le": at_dt.isoformat(), "moment": moment,
             "niveaux": n, "reference_1x2_v5cal": {k: round(v, 4) for k, v in calibrer_1x2(poisson_1x2(lh, la), *CALIBRATION_1X2).items()},
