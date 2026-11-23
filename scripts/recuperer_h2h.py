@@ -13,6 +13,7 @@ DEFAULT_SOURCES = [
     "data/matches_autres_2000-2026.csv",
     "data/complement_openfootball_2026-27.csv",
     "data/complement_resultats_2026-27.csv",
+    "data/h2h_verifies_2026-11-23.csv",
 ]
 
 def normalize(value):
