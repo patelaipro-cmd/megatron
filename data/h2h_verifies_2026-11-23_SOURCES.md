@@ -11,3 +11,9 @@ Les lignes de `data/h2h_verifies_2026-11-23.csv` sont des résultats historiques
 | Jong PSV–Jong Utrecht | 2026-01-19, 2025-11-21, 2025-05-09 | https://goalsignal.com/int/matches/jong-psv-vs-jong-fc-utrecht |
 
 Note: la présence d'un amical doit être visible lors de l'analyse; il n'a pas la même valeur qu'un match officiel. Les rencontres sans 3 H2H restent DATA LIMITED. Ne pas extrapoler.
+
+| Al Ain–Esteghlal | 2019-05-20, 2019-03-12, 2018-03-12 | https://fulltimestats.com/match/al-ain-vs-esteghlal-fc-2026-11-23 ; https://pitchlabstats.com/match/2026-11-23-al-ain-esteghlal |
+| Internacional–Vitoria | 2026-05-23, 2025-11-05, 2025-07-12 | https://www.worldsoccerdata.com/stats/brazil/seriea/matches/internacional-vs-vitoria-22-11-2026 ; https://www.worldfootball.net/match-report/co112/brazil-serie-a/ma11809798/vitoria---ba_internacional/head-to-head/ |
+| Bayern Munich Women–Hoffenheim Women | 2026-05-06, 2025-11-23, 2025-03-22 | https://fbref.com/en/stathead/matchup/teams/87705c62/51ec22be/Hoffenheim-vs-Bayern-Munich-History |
+
+**Absence de précédents:** PFC Neftchi Fergana–Al Hilal est officiellement annoncé comme leur première rencontre par l'AFC (https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/preview-pfc-neftchi-uzb-v-al-hilal-sfc-ksa). Ne pas inventer trois H2H. Le cas Basaksehir–Corum reste DATA LIMITED en l'absence de résultats antérieurs suffisamment corroborés.
