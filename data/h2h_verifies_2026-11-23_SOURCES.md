@@ -17,3 +17,5 @@ Note: la présence d'un amical doit être visible lors de l'analyse; il n'a pas 
 | Bayern Munich Women–Hoffenheim Women | 2026-05-06, 2025-11-23, 2025-03-22 | https://fbref.com/en/stathead/matchup/teams/87705c62/51ec22be/Hoffenheim-vs-Bayern-Munich-History |
 
 **Absence de précédents:** PFC Neftchi Fergana–Al Hilal est officiellement annoncé comme leur première rencontre par l'AFC (https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/preview-pfc-neftchi-uzb-v-al-hilal-sfc-ksa). Ne pas inventer trois H2H. Le cas Basaksehir–Corum reste DATA LIMITED en l'absence de résultats antérieurs suffisamment corroborés.
+
+| Başakşehir–Çorum FK | 2025-02-04 | https://www.totalcorner.com/h2h/corum-fk-vs-istanbul-basaksehir ; https://www--worldfootball--net.c.hs-data.com/match-report/co116/turkey-sueperlig/ma12280255/stanbul-basaksehir_corum-fk/ |
