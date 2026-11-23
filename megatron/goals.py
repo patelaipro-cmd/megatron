@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import math
-from . import marches, models, wininvest
+from . import marches, models, wininvest, h2h_readonly
 from .store import now_utc, parse_dt
 
 VERSION = 'goals-v2-independent-1'
@@ -21,7 +21,7 @@ def probabilities(home_rate, away_rate):
     }
 
 
-def evaluate(fixture, *, at=None, history=None, threshold=0.60):
+def evaluate(fixture, *, at=None, history=None, threshold=0.60, h2h_csv=None):
     """Evaluate independently of V1; no favorite, margin or half-time input."""
     if not math.isfinite(threshold) or not 0.5 < threshold <= 1:
         raise ValueError('Seuil attendu dans ]0.5, 1]')
@@ -32,6 +32,8 @@ def evaluate(fixture, *, at=None, history=None, threshold=0.60):
     result = {'version': VERSION, 'match': {k: fixture[k] for k in ('division', 'home', 'away', 'kickoff')},
               'analyse_le': instant.isoformat(), 'markets': {}, 'candidates': [],
               'status': 'PASS', 'automatic_activation': False}
+    if h2h_csv is not None:
+        result['h2h_external'] = h2h_readonly.lookup(h2h_csv, fixture['home'], fixture['away'], kickoff.isoformat(), instant.isoformat())
     if kickoff <= instant:
         return {**result, 'status': 'EXCLU_COMMENCE'}
     # Day-only histories cannot prove same-day availability. Use earlier dates only.
