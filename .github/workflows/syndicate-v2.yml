@@ -1,0 +1,29 @@
+name: MEGATRON Syndicate V2
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 6 * * *'
+permissions:
+  contents: read
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests
+        run: python -m unittest discover -s syndicate_v2/tests -v
+      - name: Generate predictions
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          COMPETITIONS: ${{ vars.COMPETITIONS || 'PL,BL1' }}
+        run: python syndicate_v2/daily.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: syndicate-v2-predictions
+          path: syndicate_v2/data/predictions.json
+          if-no-files-found: warn
+          retention-days: 7
