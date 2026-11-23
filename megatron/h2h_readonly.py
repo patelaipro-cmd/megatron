@@ -21,6 +21,9 @@ def lookup(path, home, away, kickoff, at):
                     selected.append(value)
             return {"matches": selected, "count": len(selected),
                     "status": "COMPLETE" if len(selected) == 3 else "DATA LIMITED",
+                    "verification_status": "UNVERIFIED",
+                    "verified": False,
                     "cutoff": cutoff.isoformat(), "probability_adjustment": False}
     return {"matches": [], "count": 0, "status": "DATA LIMITED",
+            "verification_status": "UNVERIFIED", "verified": False,
             "cutoff": cutoff.isoformat(), "probability_adjustment": False}
