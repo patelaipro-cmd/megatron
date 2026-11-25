@@ -1,10 +1,22 @@
 {
- "execution_le": "2026-11-25T09:54:38+00:00",
+ "execution_le": "2026-11-25T16:03:12+00:00",
  "sources": {
+  "sofascore": {
+   "statut": "erreur",
+   "erreur": "RuntimeError: HTTP 403 sur https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-11-25"
+  },
   "fpl": {
-   "lignes": 193,
-   "fichier": "inchange",
+   "lignes": 194,
+   "fichier": "fpl/2026-11-25/1603.csv",
    "statut": "ok"
+  },
+  "clubelo": {
+   "statut": "erreur",
+   "erreur": "URLError: <urlopen error timed out>"
+  },
+  "understat": {
+   "statut": "erreur",
+   "erreur": "OSError: Failed to download the required TLS library."
   },
   "apifootball": {
    "statut": "erreur",
