@@ -1,0 +1,33 @@
+{
+  "collecte_le": "2026-11-26T16:47:13+00:00",
+  "depuis": "2026-08-01",
+  "jusqua": "2026-11-26",
+  "sources": {
+    "espn": {
+      "pages": 590,
+      "evenements": 548,
+      "erreurs": {}
+    },
+    "apifootball": {
+      "matchs": {},
+      "erreurs": {
+        "E0": "RuntimeError: {'plan': 'Free plans do not have access to this season, try from 2022 to 2024.'}",
+        "F1": "RuntimeError: {'plan': 'Free plans do not have access to this season, try from 2022 to 2024.'}",
+        "D1": "RuntimeError: {'plan': 'Free plans do not have access to this season, try from 2022 to 2024.'}",
+        "SP1": "RuntimeError: {'plan': 'Free plans do not have access to this season, try from 2022 to 2024.'}",
+        "I1": "RuntimeError: {'plan': 'Free plans do not have access to this season, try from 2022 to 2024.'}"
+      },
+      "requetes": 5
+    },
+    "footballdata": {
+      "octets": {
+        "E0": 53914,
+        "F1": 47278,
+        "D1": 43272,
+        "SP1": 61535,
+        "I1": 57029
+      },
+      "erreurs": {}
+    }
+  }
+}
