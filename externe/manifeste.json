@@ -1,10 +1,22 @@
 {
- "execution_le": "2026-11-26T12:45:43+00:00",
+ "execution_le": "2026-11-26T15:46:18+00:00",
  "sources": {
+  "sofascore": {
+   "statut": "erreur",
+   "erreur": "RuntimeError: HTTP 403 sur https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-11-26"
+  },
   "fpl": {
-   "lignes": 192,
-   "fichier": "fpl/2026-11-26/1245.csv",
+   "lignes": 191,
+   "fichier": "fpl/2026-11-26/1546.csv",
    "statut": "ok"
+  },
+  "clubelo": {
+   "statut": "erreur",
+   "erreur": "URLError: <urlopen error timed out>"
+  },
+  "understat": {
+   "statut": "erreur",
+   "erreur": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   "apifootball": {
    "statut": "erreur",
