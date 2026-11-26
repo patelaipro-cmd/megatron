@@ -1,0 +1,45 @@
+collecte_le,event_id,ligue,division,coup_envoi,domicile,exterieur,equipe,formation,joueur,joueur_id,poste,statut,source
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Rafael,199013,G,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Robert Arboleda,201531,CD,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Luis Osorio,383055,CD-L,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Pablo Maia,319168,CD-R,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Luciano,190483,CM-L,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Damián Bobadilla,301516,CM-R,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Iago,252800,LM,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Pedro Lima,376489,RM,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Jonathan Calleri,162558,F,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Lucas Moura,130711,CF-L,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Artur,236596,CF-R,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Pedro Ferreira,399075,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Joao Victor,259879,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Lucas Ramon,206953,D,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Danielzinho,196824,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Bezerra,399079,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Ryan Francisco,383042,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Gustavo Santana,402683,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Ferreira,296573,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Carlos Coronel,215961,G,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Lucca Marques,399076,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Newton,357362,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,São Paulo,3-4-2-1,Djhordney Ferreira,402686,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Marcelo Rangel,206952,G,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Zé Ivaldo,319270,CD,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Leonel Picco,286532,CD-L,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Duplexe Tchamba,254447,CD-R,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Mayk,277092,LB,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Marcelinho,304826,RB,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,David Francisco,359364,CM-L,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,José Welison,201793,CM-R,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Antonio Galeano,254464,LM,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Edson Fernando,290028,RM,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Gabriel Taliari,235385,F,titulaire,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Jaderson,252833,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Yago Pikachu,186832,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Zé Ricardo,276661,M,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Ygor Vinhas,269643,G,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Ivan,202493,G,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,João,285280,D,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Eduardo,338668,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Marlon Lopes,215815,D,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Gabriel Poveda,274517,F,remplacant,espn
+2026-11-26T22:24:02+00:00,401841329,bra.1,BRA,2026-11-26T23:00:00+00:00,São Paulo,Remo,Remo,5-4-1,Vitor Bueno,200775,F,remplacant,espn
