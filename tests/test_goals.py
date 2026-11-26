@@ -50,6 +50,23 @@ class GoalsTests(unittest.TestCase):
         self.assertGreater(p['OVER_3_5'][0],p['OVER_4_5'][0])
         self.assertAlmostEqual(p['UNDER_1_5'][0],1-goals.marches.probs_buts_calibrees(2,2)['2+']['oui'])
 
+    def test_h2h_metadata_does_not_change_v2_probabilities(self):
+        import csv
+        import tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "h2h.csv"
+            with path.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=["date","match","h2h_1","h2h_2","h2h_3","h2h_count","status"])
+                writer.writeheader()
+                writer.writerow({"date":"2026-11-16","match":"A - B","h2h_1":"2026-11-15 | A 2-2 B",
+                                 "h2h_2":"2026-11-14 | B 1-1 A","h2h_3":"2026-11-13 | A 1-0 B",
+                                 "h2h_count":3,"status":"COMPLETE"})
+            baseline = self.run_model((2.5, 2.5))
+            enriched = self.run_model((2.5, 2.5), h2h_csv=path)
+            self.assertEqual(baseline, {k:v for k,v in enriched.items() if k != "h2h_external"})
+            self.assertEqual(enriched["h2h_external"]["count"], 3)
+
     def test_full_calendar(self):
         with patch('megatron.goals.evaluate',return_value={'status':'PASS'}) as evaluate:
             r=goals.screen([self.fixture,self.fixture],at=self.at)

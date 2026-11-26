@@ -1,0 +1,26 @@
+line,date,home,away,score,source_url,verified_at,match_type,competition,missing_evidence,verification_status
+2,2026-09-10,Asteras,Aris,1-1,,,,GR1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+3,2025-12-20,Asteras,Aris,0-1,,,,GR1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+4,2025-11-09,Aris,Asteras,0-0,,,,GR1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+5,2026-09-14,Midtjylland,Brondby,4-1,,,,DK1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+6,2026-05-17,Midtjylland,Brondby,2-3,,,,DK1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+7,2026-04-12,Brondby,Midtjylland,1-2,,,,DK1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+8,2026-05-09,Goteborg,Hammarby,0-1,,,,SE1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+9,2025-10-05,Goteborg,Hammarby,1-2,,,,SE1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+10,2025-03-30,Hammarby,Goteborg,4-0,,,,SE1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+11,2026-07-17,Jong AZ,Jong Ajax,3-0,,,,NL2,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+12,2026-01-12,Jong AZ,Jong Ajax,1-2,,,,NL2,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+13,2025-08-18,Jong Ajax,Jong AZ,4-1,,,,NL2,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+14,2026-01-19,Jong Utrecht,Jong PSV,5-3,,,,NL2,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+15,2025-11-21,Jong PSV,Jong Utrecht,3-3,,,,NL2,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+16,2025-05-09,Jong PSV,Jong Utrecht,3-1,,,,NL2,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+17,2019-05-20,Al Ain,Esteghlal,1-2,,,,ACL,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+18,2019-03-12,Esteghlal,Al Ain,1-1,,,,ACL,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+19,2018-03-12,Esteghlal,Al Ain,1-1,,,,ACL,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+20,2026-05-23,Vitoria,Internacional,2-0,,,,BR1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+21,2025-11-05,Vitoria,Internacional,1-0,,,,BR1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+22,2025-07-12,Internacional,Vitoria,1-0,,,,BR1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+23,2026-05-06,Bayern Munich Women,Hoffenheim Women,1-1,,,,DEW1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+24,2025-11-23,Hoffenheim Women,Bayern Munich Women,1-5,,,,DEW1,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+25,2025-03-22,Bayern Munich Women,Hoffenheim Women,3-2,,,,DEWC,source_url|verified_at|match_type|competition_detail,UNVERIFIED
+26,2025-02-04,Basaksehir,Corum,4-1,,,,TRC,source_url|verified_at|match_type|competition_detail,UNVERIFIED
