@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-28T13:00:00+00:00,espn,DraftKings,courante,I1,2026-11-28T14:00+00:00,Frosinone,Parma,401875081,1.4255,4.8,5.75,60.0,T-60,https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261128,4d5cee6ac9e686c6160e6cf8b5c2336950306872b9209ba72953f2f865268a72,1X2
