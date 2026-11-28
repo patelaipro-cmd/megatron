@@ -1,0 +1,2 @@
+collecte_le,source,bookmaker,type_ligne,division,coup_envoi,domicile,exterieur,evenement_id,cote_H,cote_D,cote_A,minutes_avant,horizon,url,sha256_brut,marche
+2026-11-28T12:20:00+00:00,espn,DraftKings,courante,SP1,2026-11-28T13:00+00:00,Real Betis,Rayo Vallecano,401882796,1.625,4.3,5.0,40.0,T-30,https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261128,f184fe1dbf3799b72bd7f0861073b514a020dbef278306b8e355c49a10ff68c5,1X2
